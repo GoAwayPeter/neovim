@@ -8,8 +8,10 @@ default_target: all
 # Allow only one "make -f Makefile2" at a time, but pass parallelism.
 .NOTPARALLEL:
 
-#=============================================================================
-# Special targets provided by cmake.
+CMAKE_FLAGS := -DCMAKE_BUILD_TYPE=$(CMAKE_BUILD_TYPE)
+DOC_DOWNLOAD_URL_BASE := https://raw.githubusercontent.com/neovim/doc/gh-pages
+CLINT_ERRORS_FILE_PATH := /reports/clint/errors.json
+>>>>>>> upstream/master
 
 # Disable implicit rules so canonical targets will work.
 .SUFFIXES:
@@ -66,9 +68,16 @@ edit_cache:
 	/usr/local/Cellar/cmake/3.2.3/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
+<<<<<<< HEAD
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+=======
+testlint: | nvim
+	$(BUILD_CMD) -C build testlint
+
+test: functionaltest
+>>>>>>> upstream/master
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -1421,10 +1430,10 @@ help:
 #=============================================================================
 # Special targets to cleanup operation of make.
 
-# Special rule to run CMake to check the build system integrity.
-# No rule that depends on this can have commands that come from listfiles
-# because they might be regenerated.
-cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
-.PHONY : cmake_check_build_system
+lint:
+	cmake -DLINT_PRG=./clint.py \
+		-DLINT_DIR=src \
+		-DLINT_SUPPRESS_URL="$(DOC_DOWNLOAD_URL_BASE)$(CLINT_ERRORS_FILE_PATH)" \
+		-P cmake/RunLint.cmake
 
+.PHONY: test testlint functionaltest unittest lint clean distclean nvim libnvim cmake deps install
