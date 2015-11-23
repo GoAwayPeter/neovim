@@ -1,0 +1,1213 @@
+The system is: Darwin - 14.3.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Users/George/Documents/Programs/C/neovim/CMakeFiles/3.2.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is AppleClang, found in "/Users/George/Documents/Programs/C/neovim/CMakeFiles/3.2.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1212726643/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1212726643.dir/build.make CMakeFiles/cmTryCompileExec1212726643.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1212726643.dir/testCCompiler.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1212726643.dir/testCCompiler.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1212726643
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1212726643.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1212726643.dir/testCCompiler.c.o  -o cmTryCompileExec1212726643  
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec510972395/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec510972395.dir/build.make CMakeFiles/cmTryCompileExec510972395.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec510972395
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec510972395.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec510972395   
+Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.3.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTryCompileExec510972395 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-242
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec510972395/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec510972395.dir/build.make CMakeFiles/cmTryCompileExec510972395.dir/build]
+  ignore line: [/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -o CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec510972395]
+  ignore line: [/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec510972395.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec510972395   ]
+  ignore line: [Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)]
+  ignore line: [Target: x86_64-apple-darwin14.3.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTryCompileExec510972395 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.10.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec510972395] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec510972395.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3804200542/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3804200542.dir/build.make CMakeFiles/cmTryCompileExec3804200542.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3804200542.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec3804200542.dir/feature_tests.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3804200542
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3804200542.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3804200542.dir/feature_tests.c.o  -o cmTryCompileExec3804200542  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3284099628/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3284099628.dir/build.make CMakeFiles/cmTryCompileExec3284099628.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3284099628.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec3284099628.dir/feature_tests.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3284099628
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3284099628.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3284099628.dir/feature_tests.c.o  -o cmTryCompileExec3284099628  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec488853355/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec488853355.dir/build.make CMakeFiles/cmTryCompileExec488853355.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec488853355.dir/feature_tests.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec488853355.dir/feature_tests.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec488853355
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec488853355.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec488853355.dir/feature_tests.c.o  -o cmTryCompileExec488853355  
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec843781573/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec843781573.dir/build.make CMakeFiles/cmTryCompileExec843781573.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec843781573.dir/testCXXCompiler.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -o CMakeFiles/cmTryCompileExec843781573.dir/testCXXCompiler.cxx.o -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec843781573
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec843781573.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec843781573.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec843781573  
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1612480379/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1612480379.dir/build.make CMakeFiles/cmTryCompileExec1612480379.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1612480379
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1612480379.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1612480379   
+Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.3.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTryCompileExec1612480379 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-242
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec1612480379/fast"]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1612480379.dir/build.make CMakeFiles/cmTryCompileExec1612480379.dir/build]
+  ignore line: [/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1612480379]
+  ignore line: [/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1612480379.dir/link.txt --verbose=1]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1612480379   ]
+  ignore line: [Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)]
+  ignore line: [Target: x86_64-apple-darwin14.3.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTryCompileExec1612480379 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.10.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1612480379] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec1612480379.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [c++;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+
+
+Detecting CXX [-std=c++1y] compiler features compiled with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2490054387/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2490054387.dir/build.make CMakeFiles/cmTryCompileExec2490054387.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2490054387.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTryCompileExec2490054387.dir/feature_tests.cxx.o -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2490054387
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2490054387.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2490054387.dir/feature_tests.cxx.o  -o cmTryCompileExec2490054387  
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3958956199/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3958956199.dir/build.make CMakeFiles/cmTryCompileExec3958956199.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3958956199.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec3958956199.dir/feature_tests.cxx.o -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec3958956199
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3958956199.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3958956199.dir/feature_tests.cxx.o  -o cmTryCompileExec3958956199  
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3568357280/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3568357280.dir/build.make CMakeFiles/cmTryCompileExec3568357280.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3568357280.dir/feature_tests.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec3568357280.dir/feature_tests.cxx.o -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec3568357280
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3568357280.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3568357280.dir/feature_tests.cxx.o  -o cmTryCompileExec3568357280  
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Performing C SOURCE FILE Test HAS_ACCEPTABLE_FORTIFY succeded with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3963483835/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3963483835.dir/build.make CMakeFiles/cmTryCompileExec3963483835.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3963483835.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_ACCEPTABLE_FORTIFY -O2 -g -DNDEBUG   -o CMakeFiles/cmTryCompileExec3963483835.dir/src.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3963483835
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3963483835.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_ACCEPTABLE_FORTIFY -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3963483835.dir/src.c.o  -o cmTryCompileExec3963483835  
+
+Source file was:
+
+#if defined(_FORTIFY_SOURCE) && _FORTIFY_SOURCE > 1
+#error "_FORTIFY_SOURCE > 1"
+#endif
+int
+main(void)
+{
+  return 0;
+}
+
+Determining if the function dlopen exists in the dl passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1991609871/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1991609871.dir/build.make CMakeFiles/cmTryCompileExec1991609871.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1991609871.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=dlopen -O2 -g -DNDEBUG   -o CMakeFiles/cmTryCompileExec1991609871.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1991609871
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1991609871.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=dlopen -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1991609871.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1991609871  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/dlfcn.h  -ldl -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/dlfcn.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/dlfcn.h'
+
+
+Performing C SOURCE FILE Test HAVE_WORKING_LIBINTL succeded with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec823883961/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec823883961.dir/build.make CMakeFiles/cmTryCompileExec823883961.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec823883961.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAVE_WORKING_LIBINTL -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec823883961.dir/src.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec823883961
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec823883961.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAVE_WORKING_LIBINTL -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec823883961.dir/src.c.o  -o cmTryCompileExec823883961  /opt/local/lib/libintl.dylib 
+
+Source file was:
+
+#include <libintl.h>
+
+int main(int argc, char** argv) {
+  gettext("foo");
+  bindtextdomain("foo", "bar");
+  bind_textdomain_codeset("foo", "bar");
+  textdomain("foo");
+}
+Determining if the variable _nl_msg_cat_cntr exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2987522258/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2987522258.dir/build.make CMakeFiles/cmTryCompileExec2987522258.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2987522258.dir/CheckVariableExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_VARIABLE_EXISTS=_nl_msg_cat_cntr -g   -o CMakeFiles/cmTryCompileExec2987522258.dir/CheckVariableExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckVariableExists.c
+Linking C executable cmTryCompileExec2987522258
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2987522258.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_VARIABLE_EXISTS=_nl_msg_cat_cntr -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2987522258.dir/CheckVariableExists.c.o  -o cmTryCompileExec2987522258  /opt/local/lib/libintl.dylib 
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3014175460/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3014175460.dir/build.make CMakeFiles/cmTryCompileExec3014175460.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3014175460.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3014175460.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3014175460
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3014175460.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3014175460.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3014175460  
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1739291691/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1739291691.dir/build.make CMakeFiles/cmTryCompileExec1739291691.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1739291691.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1739291691.dir/CheckSymbolExists.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1739291691
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1739291691.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1739291691.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1739291691  /opt/local/lib/libintl.dylib 
+
+File /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2168837792/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2168837792.dir/build.make CMakeFiles/cmTryCompileExec2168837792.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2168837792.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2168837792.dir/CheckIncludeFile.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2168837792
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2168837792.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2168837792.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2168837792  
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec180459476/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec180459476.dir/build.make CMakeFiles/cmTryCompileExec180459476.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec180459476.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec180459476.dir/CheckIncludeFile.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec180459476
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec180459476.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec180459476.dir/CheckIncludeFile.c.o  -o cmTryCompileExec180459476  
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec545920826/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec545920826.dir/build.make CMakeFiles/cmTryCompileExec545920826.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec545920826.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec545920826.dir/CheckIncludeFile.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec545920826
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec545920826.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec545920826.dir/CheckIncludeFile.c.o  -o cmTryCompileExec545920826  
+
+
+Determining size of int passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1057751221/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1057751221.dir/build.make CMakeFiles/cmTryCompileExec1057751221.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1057751221.dir/SIZEOF_INT.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1057751221.dir/SIZEOF_INT.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTryCompileExec1057751221
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1057751221.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1057751221.dir/SIZEOF_INT.c.o  -o cmTryCompileExec1057751221  /opt/local/lib/libintl.dylib 
+
+
+Determining size of long passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec172065215/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec172065215.dir/build.make CMakeFiles/cmTryCompileExec172065215.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec172065215.dir/SIZEOF_LONG.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec172065215.dir/SIZEOF_LONG.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTryCompileExec172065215
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec172065215.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec172065215.dir/SIZEOF_LONG.c.o  -o cmTryCompileExec172065215  /opt/local/lib/libintl.dylib 
+
+
+Determining size of intmax_t passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1675263535/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1675263535.dir/build.make CMakeFiles/cmTryCompileExec1675263535.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1675263535.dir/SIZEOF_INTMAX_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1675263535.dir/SIZEOF_INTMAX_T.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CheckTypeSize/SIZEOF_INTMAX_T.c
+Linking C executable cmTryCompileExec1675263535
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1675263535.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1675263535.dir/SIZEOF_INTMAX_T.c.o  -o cmTryCompileExec1675263535  /opt/local/lib/libintl.dylib 
+
+
+Determining size of off_t passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1503650363/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1503650363.dir/build.make CMakeFiles/cmTryCompileExec1503650363.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1503650363.dir/SIZEOF_OFF_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1503650363.dir/SIZEOF_OFF_T.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CheckTypeSize/SIZEOF_OFF_T.c
+Linking C executable cmTryCompileExec1503650363
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1503650363.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1503650363.dir/SIZEOF_OFF_T.c.o  -o cmTryCompileExec1503650363  /opt/local/lib/libintl.dylib 
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2603964965/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2603964965.dir/build.make CMakeFiles/cmTryCompileExec2603964965.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2603964965.dir/SIZEOF_SIZE_T.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2603964965.dir/SIZEOF_SIZE_T.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTryCompileExec2603964965
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2603964965.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2603964965.dir/SIZEOF_SIZE_T.c.o  -o cmTryCompileExec2603964965  /opt/local/lib/libintl.dylib 
+
+
+Determining size of long long passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1197991959/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1197991959.dir/build.make CMakeFiles/cmTryCompileExec1197991959.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1197991959.dir/SIZEOF_LONG_LONG.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1197991959.dir/SIZEOF_LONG_LONG.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTryCompileExec1197991959
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1197991959.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1197991959.dir/SIZEOF_LONG_LONG.c.o  -o cmTryCompileExec1197991959  /opt/local/lib/libintl.dylib 
+
+
+Determining size of void * passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1729413355/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1729413355.dir/build.make CMakeFiles/cmTryCompileExec1729413355.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1729413355.dir/SIZEOF_VOID_PTR.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1729413355.dir/SIZEOF_VOID_PTR.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CheckTypeSize/SIZEOF_VOID_PTR.c
+Linking C executable cmTryCompileExec1729413355
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1729413355.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1729413355.dir/SIZEOF_VOID_PTR.c.o  -o cmTryCompileExec1729413355  /opt/local/lib/libintl.dylib 
+
+
+Determining if the _NSGetEnviron exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3046368669/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3046368669.dir/build.make CMakeFiles/cmTryCompileExec3046368669.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3046368669.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3046368669.dir/CheckSymbolExists.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3046368669
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3046368669.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3046368669.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3046368669  /opt/local/lib/libintl.dylib 
+
+File /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <crt_externs.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _NSGetEnviron
+  return ((int*)(&_NSGetEnviron))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files dirent.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2783498172/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2783498172.dir/build.make CMakeFiles/cmTryCompileExec2783498172.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2783498172.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2783498172.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2783498172
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2783498172.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2783498172.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2783498172  
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2443642546/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2443642546.dir/build.make CMakeFiles/cmTryCompileExec2443642546.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2443642546.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2443642546.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2443642546
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2443642546.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2443642546.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2443642546  
+
+
+Determining if files iconv.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec503691942/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec503691942.dir/build.make CMakeFiles/cmTryCompileExec503691942.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec503691942.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec503691942.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec503691942
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec503691942.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec503691942.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec503691942  
+
+
+Determining if files langinfo.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2006311875/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2006311875.dir/build.make CMakeFiles/cmTryCompileExec2006311875.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2006311875.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2006311875.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2006311875
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2006311875.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2006311875.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2006311875  
+
+
+Determining if files libgen.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2400019993/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2400019993.dir/build.make CMakeFiles/cmTryCompileExec2400019993.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2400019993.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2400019993.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2400019993
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2400019993.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2400019993.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2400019993  
+
+
+Determining if files locale.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2297004843/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2297004843.dir/build.make CMakeFiles/cmTryCompileExec2297004843.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2297004843.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2297004843.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2297004843
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2297004843.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2297004843.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2297004843  
+
+
+Determining if files pwd.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4098541110/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4098541110.dir/build.make CMakeFiles/cmTryCompileExec4098541110.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4098541110.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec4098541110.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec4098541110
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4098541110.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4098541110.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec4098541110  
+
+
+Determining if files strings.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1466684255/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1466684255.dir/build.make CMakeFiles/cmTryCompileExec1466684255.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1466684255.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1466684255.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1466684255
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1466684255.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1466684255.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1466684255  
+
+
+Determining if files sys/param.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1189561488/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1189561488.dir/build.make CMakeFiles/cmTryCompileExec1189561488.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1189561488.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1189561488.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1189561488
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1189561488.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1189561488.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1189561488  
+
+
+Determining if files sys/time.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1266221030/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1266221030.dir/build.make CMakeFiles/cmTryCompileExec1266221030.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1266221030.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1266221030.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1266221030
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1266221030.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1266221030.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1266221030  
+
+
+Determining if files sys/wait.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec992764809/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec992764809.dir/build.make CMakeFiles/cmTryCompileExec992764809.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec992764809.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec992764809.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec992764809
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec992764809.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec992764809.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec992764809  
+
+
+Determining if files sys/utsname.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2038099297/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2038099297.dir/build.make CMakeFiles/cmTryCompileExec2038099297.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2038099297.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2038099297.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2038099297
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2038099297.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2038099297.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2038099297  
+
+
+Determining if files utime.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3231654513/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3231654513.dir/build.make CMakeFiles/cmTryCompileExec3231654513.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3231654513.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3231654513.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3231654513
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3231654513.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3231654513.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3231654513  
+
+
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2058606192/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2058606192.dir/build.make CMakeFiles/cmTryCompileExec2058606192.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2058606192.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2058606192.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2058606192
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2058606192.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2058606192.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2058606192  
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3807911368/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3807911368.dir/build.make CMakeFiles/cmTryCompileExec3807911368.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3807911368.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=fseeko -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3807911368.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3807911368
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3807911368.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=fseeko -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3807911368.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3807911368  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function fsync exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3066567816/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3066567816.dir/build.make CMakeFiles/cmTryCompileExec3066567816.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3066567816.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=fsync -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3066567816.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3066567816
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3066567816.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=fsync -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3066567816.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3066567816  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function getpwent exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec688927261/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec688927261.dir/build.make CMakeFiles/cmTryCompileExec688927261.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec688927261.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=getpwent -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec688927261.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec688927261
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec688927261.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=getpwent -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec688927261.dir/CheckFunctionExists.c.o  -o cmTryCompileExec688927261  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function getpwnam exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3257259866/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3257259866.dir/build.make CMakeFiles/cmTryCompileExec3257259866.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3257259866.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=getpwnam -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3257259866.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3257259866
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3257259866.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=getpwnam -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3257259866.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3257259866  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function getpwuid exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3919629296/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3919629296.dir/build.make CMakeFiles/cmTryCompileExec3919629296.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3919629296.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=getpwuid -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3919629296.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3919629296
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3919629296.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=getpwuid -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3919629296.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3919629296  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function putenv exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3106120864/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3106120864.dir/build.make CMakeFiles/cmTryCompileExec3106120864.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3106120864.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=putenv -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3106120864.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3106120864
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3106120864.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=putenv -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3106120864.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3106120864  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function opendir exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec987795008/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec987795008.dir/build.make CMakeFiles/cmTryCompileExec987795008.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec987795008.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=opendir -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec987795008.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec987795008
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec987795008.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=opendir -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec987795008.dir/CheckFunctionExists.c.o  -o cmTryCompileExec987795008  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function readlink exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1497357303/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1497357303.dir/build.make CMakeFiles/cmTryCompileExec1497357303.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1497357303.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=readlink -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1497357303.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1497357303
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1497357303.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=readlink -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1497357303.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1497357303  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function setenv exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3858053383/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3858053383.dir/build.make CMakeFiles/cmTryCompileExec3858053383.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3858053383.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=setenv -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3858053383.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3858053383
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3858053383.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=setenv -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3858053383.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3858053383  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function unsetenv exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3255585498/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3255585498.dir/build.make CMakeFiles/cmTryCompileExec3255585498.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3255585498.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=unsetenv -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3255585498.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3255585498
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3255585498.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=unsetenv -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3255585498.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3255585498  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function setpgid exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1952241743/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1952241743.dir/build.make CMakeFiles/cmTryCompileExec1952241743.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1952241743.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=setpgid -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1952241743.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1952241743
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1952241743.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=setpgid -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1952241743.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1952241743  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function setsid exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec212500114/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec212500114.dir/build.make CMakeFiles/cmTryCompileExec212500114.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec212500114.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=setsid -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec212500114.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec212500114
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec212500114.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=setsid -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec212500114.dir/CheckFunctionExists.c.o  -o cmTryCompileExec212500114  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function sigaction exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2951672800/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2951672800.dir/build.make CMakeFiles/cmTryCompileExec2951672800.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2951672800.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=sigaction -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2951672800.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2951672800
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2951672800.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=sigaction -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2951672800.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2951672800  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec728985845/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec728985845.dir/build.make CMakeFiles/cmTryCompileExec728985845.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec728985845.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=strcasecmp -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec728985845.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c:3:6: warning: incompatible redeclaration of library function 'strcasecmp' [-Wincompatible-library-redeclaration]
+char CHECK_FUNCTION_EXISTS();
+     ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strcasecmp
+                              ^
+/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c:3:6: note: 'strcasecmp' is a builtin with type 'int (const char *, const char *)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strcasecmp
+                              ^
+1 warning generated.
+Linking C executable cmTryCompileExec728985845
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec728985845.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=strcasecmp -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec728985845.dir/CheckFunctionExists.c.o  -o cmTryCompileExec728985845  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function strncasecmp exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec500578535/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec500578535.dir/build.make CMakeFiles/cmTryCompileExec500578535.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec500578535.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=strncasecmp -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec500578535.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c:3:6: warning: incompatible redeclaration of library function 'strncasecmp' [-Wincompatible-library-redeclaration]
+char CHECK_FUNCTION_EXISTS();
+     ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strncasecmp
+                              ^
+/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c:3:6: note: 'strncasecmp' is a builtin with type 'int (const char *, const char *, unsigned long)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strncasecmp
+                              ^
+1 warning generated.
+Linking C executable cmTryCompileExec500578535
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec500578535.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=strncasecmp -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec500578535.dir/CheckFunctionExists.c.o  -o cmTryCompileExec500578535  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function utime exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec472846461/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec472846461.dir/build.make CMakeFiles/cmTryCompileExec472846461.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec472846461.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=utime -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec472846461.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec472846461
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec472846461.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=utime -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec472846461.dir/CheckFunctionExists.c.o  -o cmTryCompileExec472846461  /opt/local/lib/libintl.dylib 
+
+
+Determining if the function utimes exists passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2347215415/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2347215415.dir/build.make CMakeFiles/cmTryCompileExec2347215415.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2347215415.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=utimes -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2347215415.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2347215415
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2347215415.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=utimes -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2347215415.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2347215415  /opt/local/lib/libintl.dylib 
+
+
+Determining if the FD_CLOEXEC exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2442008804/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2442008804.dir/build.make CMakeFiles/cmTryCompileExec2442008804.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2442008804.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec2442008804.dir/CheckSymbolExists.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2442008804
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2442008804.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2442008804.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2442008804  /opt/local/lib/libintl.dylib 
+
+File /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FD_CLOEXEC
+  return ((int*)(&FD_CLOEXEC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CODESET exist passed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1099858601/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1099858601.dir/build.make CMakeFiles/cmTryCompileExec1099858601.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1099858601.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1099858601.dir/CheckSymbolExists.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1099858601
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1099858601.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1099858601.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1099858601  /opt/local/lib/libintl.dylib 
+
+File /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <langinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CODESET
+  return ((int*)(&CODESET))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

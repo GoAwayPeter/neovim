@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -pagezero_size 10000 -image_base 100000000 CMakeFiles/tty-test.dir/tty-test.c.o  -o ../../../bin/tty-test  ../../../.deps/usr/lib/libuv.a -lpthread -ldl -ldl 

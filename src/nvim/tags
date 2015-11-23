@@ -1,0 +1,2628 @@
+ADD_STATE_IF_MATCH	regexp_nfa.c	/^#define ADD_STATE_IF_MATCH(state)                 /
+ADVANCE_REGINPUT	regexp.c	/^#define ADVANCE_REGINPUT() mb_ptr_adv(reginput)$/
+ATTR_ENTRY	syntax.c	/^#define ATTR_ENTRY(idx) ((attrentry_T *)attr_table/
+AUGROUP_NAME	fileio.c	/^#define AUGROUP_NAME(i) (((char_u **)augroups.ga_d/
+A_firstc_laa	arabic.c	/^static int A_firstc_laa(int c, int c1)$/
+A_is_a	arabic.c	/^static bool A_is_a(int cur_c)$/
+A_is_f	arabic.c	/^static bool A_is_f(int cur_c)$/
+A_is_formb	arabic.c	/^static bool A_is_formb(int c)$/
+A_is_harakat	arabic.c	/^static bool A_is_harakat(int c)$/
+A_is_iso	arabic.c	/^static bool A_is_iso(int c)$/
+A_is_ok	arabic.c	/^static bool A_is_ok(int c)$/
+A_is_s	arabic.c	/^static bool A_is_s(int cur_c)$/
+A_is_valid	arabic.c	/^static bool A_is_valid(int c)$/
+Allocates	memory.c	/^\/\/\/ Allocates (len + 1) bytes of memory, duplic/
+AppendCharToRedobuff	getchar.c	/^void AppendCharToRedobuff(int c)$/
+AppendNumberToRedobuff	getchar.c	/^void AppendNumberToRedobuff(long n)$/
+AppendToRedobuff	getchar.c	/^void AppendToRedobuff(char_u *s)$/
+AppendToRedobuffLit	getchar.c	/^AppendToRedobuffLit ($/
+AutoCmd	fileio.c	/^} AutoCmd;$/
+AutoPat	fileio.c	/^} AutoPat;$/
+AutoPatCmd	fileio.c	/^} AutoPatCmd;$/
+BREAKP	ex_cmds2.c	/^#define BREAKP(idx)             (((struct debuggy /
+CHECK	memline.c	/^#define CHECK(c, s)$/
+CNT	ui.c	/^#define CNT(...) SELECT_NTH(__VA_ARGS__, MORE, MOR/
+CTRL_X_MODE_LINE_OR_EVAL	edit.c	/^#define CTRL_X_MODE_LINE_OR_EVAL(m) (m == CTRL_X_W/
+CTRL_X_MSG	edit.c	/^#define CTRL_X_MSG(i) ctrl_x_msgs[(i) & ~CTRL_X_WA/
+CUR_STATE	syntax.c	/^#define CUR_STATE(idx)  ((stateitem_T *)(current_s/
+CancelRedo	getchar.c	/^void CancelRedo(void)$/
+Combination	arabic.c	/^\/\/ Change shape - from Combination (2 char) to a/
+DATA_BL	memline.c	/^typedef struct data_block DATA_BL;          \/* co/
+DEBUGGY	ex_cmds2.c	/^#define DEBUGGY(gap, idx)       (((struct debuggy /
+DI2HIKEY	eval.c	/^#define DI2HIKEY(di) ((di)->di_key)$/
+EMIT	regexp_nfa.c	/^#define EMIT(c) do {                            \\/
+EMIT2	regexp_nfa.c	/^#define EMIT2(c)    EMIT(c); EMIT(NFA_CONCAT);$/
+EMSG2_RET_FAIL	regexp.c	/^#define EMSG2_RET_FAIL(m, \\$/
+EMSG2_RET_NULL	regexp.c	/^#define EMSG2_RET_NULL(m, \\$/
+EMSG_RET_FAIL	regexp.c	/^#define EMSG_RET_FAIL(m) return (EMSG(m), rc_did_e/
+EMSG_RET_NULL	regexp.c	/^#define EMSG_RET_NULL(m) return (EMSG(m), rc_did_e/
+ExpandBufnames	buffer.c	/^int ExpandBufnames(char_u *pat, int *num_file, cha/
+ExpandOldSetting	option.c	/^void ExpandOldSetting(int *num_file, char_u ***fil/
+ExpandSettings	option.c	/^int ExpandSettings(expand_T *xp, regmatch_T *regma/
+F0	sha256.c	/^#define F0(x, y, z) ((x & y) | (z & (x | y)))$/
+F1	sha256.c	/^#define F1(x, y, z) (z ^ (x & (y ^ z)))$/
+FREE_MENUTRANS	menu.c	/^#define FREE_MENUTRANS(mt) \\$/
+FREE_WCMD	ex_docmd.c	/^#define FREE_WCMD(wcmd) xfree((wcmd)->line)$/
+FUNCARG	eval.c	/^#define FUNCARG(fp, j)  ((char_u **)(fp->uf_args.g/
+FUNCLINE	eval.c	/^#define FUNCLINE(fp, j) ((char_u **)(fp->uf_lines./
+F_is_TyB_TyC_TyD	farsi.c	/^static bool F_is_TyB_TyC_TyD(int src, int offset)$/
+F_is_TyC_TyD	farsi.c	/^static bool F_is_TyC_TyD(int c)$/
+F_is_TyE	farsi.c	/^static bool F_is_TyE(int c)$/
+F_isalpha	farsi.c	/^bool F_isalpha(int c)$/
+F_ischar	farsi.c	/^bool F_ischar(int c)$/
+F_isdigit	farsi.c	/^bool F_isdigit(int c)$/
+F_isterm	farsi.c	/^static bool F_isterm(char_u c)$/
+Findmatch	indent.c	/^\/\/ Findmatch() should be adapted for lisp, also /
+Frag	regexp_nfa.c	/^struct Frag {$/
+Frag_T	regexp_nfa.c	/^typedef struct Frag Frag_T;$/
+FreeWild	misc1.c	/^void FreeWild(int count, char_u **files)$/
+GA_CHAR	charset.c	/^#define GA_CHAR(i) ((char_u *)ga.ga_data)[i]$/
+GA_PTR	charset.c	/^#define GA_PTR(i) ((char_u *)ga.ga_data + i)$/
+GET_CHARTAB	charset.c	/^#define GET_CHARTAB(buf, c) \\$/
+GET_LOC_LIST	quickfix.c	/^#define GET_LOC_LIST(wp) (IS_LL_WINDOW(wp) ? wp->w/
+GetWin32Error	if_cscope.c	/^static char *GetWin32Error(void)$/
+HI2AH	spell.c	/^#define HI2AH(hi)   ((affheader_T *)(hi)->hi_key)$/
+HI2CI	spell.c	/^#define HI2CI(hi)   ((compitem_T *)(hi)->hi_key)$/
+HI2DI	eval.c	/^#define HI2DI(hi)     HIKEY2DI((hi)->hi_key)$/
+HI2KE	syntax.c	/^#define HI2KE(hi)      HIKEY2KE((hi)->hi_key)$/
+HI2UF	eval.c	/^#define HI2UF(hi)     HIKEY2UF((hi)->hi_key)$/
+HI2WN	spell.c	/^#define HI2WN(hi)    (wordnode_T *)((hi)->hi_key)$/
+HIKEY2DI	eval.c	/^#define HIKEY2DI(p)  ((dictitem_T *)(p - (dumdi.di/
+HIKEY2KE	syntax.c	/^#define HIKEY2KE(p)   ((keyentry_T *)((p) - (dumke/
+HIKEY2UF	eval.c	/^#define HIKEY2UF(p)  ((ufunc_T *)(p - (dumuf.uf_na/
+HL_TABLE	syntax.c	/^#define HL_TABLE() ((struct hl_group *)((highlight/
+INITIALIZER	map.c	/^#define INITIALIZER(T, U) T##_##U##_initializer$/
+INITIALIZER_DECLARE	map.c	/^#define INITIALIZER_DECLARE(T, U, ...) const U INI/
+INVALID_STATE	syntax.c	/^#define INVALID_STATE(ssp)  ((ssp)->ga_itemsize ==/
+IS_LL_WINDOW	quickfix.c	/^#define IS_LL_WINDOW(wp) (bt_quickfix(wp->w_buffer/
+IS_QF_WINDOW	quickfix.c	/^#define IS_QF_WINDOW(wp) (bt_quickfix(wp->w_buffer/
+JobEvent	eval.c	/^} JobEvent;$/
+KE2HIKEY	syntax.c	/^#define KE2HIKEY(kp)  ((kp)->keyword)$/
+LANGP_ENTRY	spell.c	/^#define LANGP_ENTRY(ga, i)      (((langp_T *)(ga)./
+L_MATCH	screen.c	/^#define L_MATCH(m) (showtail ? sm_gettail(matches[/
+L_SHOWFILE	ex_getln.c	/^#define L_SHOWFILE(m) (showtail ? sm_gettail(files/
+MAP_HASH	getchar.c	/^#define MAP_HASH(mode, \\$/
+MAP_IMPL	map.c	/^#define MAP_IMPL(T, U, ...)                       /
+ML_SIMPLE	memline.c	/^#define ML_SIMPLE(x)    (x & 0x10)  \/* DEL, INS o/
+Magic	regexp.c	/^#define Magic(x)        ((int)(x) - 256)$/
+NEXT	regexp.c	/^#define NEXT(p)         (((*((p) + 1) & 0377) << 8/
+NULL	ops.c	/^ \/\/\/ `reg` must not be NULL (but `reg->y_array`/
+OP	regexp.c	/^#define OP(p)           ((int)*(p))$/
+OPERAND	regexp.c	/^#define OPERAND(p)      ((p) + 3)$/
+OPERAND_CMP	regexp.c	/^#define OPERAND_CMP(p)  (p)[7]$/
+OPERAND_MAX	regexp.c	/^#define OPERAND_MAX(p)  OPERAND_MIN((p) + 4)$/
+OPERAND_MIN	regexp.c	/^#define OPERAND_MIN(p)  (((long)(p)[3] << 24) + ((/
+OPT_BOTH	option.c	/^#define OPT_BOTH(x) (idopt_T)(PV_BOTH + (int)(x))$/
+OPT_BUF	option.c	/^#define OPT_BUF(x)  (idopt_T)(PV_BUF + (int)(x))$/
+OPT_WIN	option.c	/^#define OPT_WIN(x)  (idopt_T)(PV_WIN + (int)(x))$/
+P	sha256.c	/^#define P(a, b, c, d, e, f, g, h, x, K) { \\$/
+POP	regexp_nfa.c	/^#define POP()       st_pop(&stackp, stack);       /
+PRINTSOME	spell.c	/^#define PRINTSOME(l, depth, fmt, a1, a2) vim_snpri/
+PRT_PS_FONT_TO_USER	hardcopy.c	/^#define PRT_PS_FONT_TO_USER(scale, size)    ((size/
+PTR_BL	memline.c	/^typedef struct pointer_block PTR_BL;        \/* co/
+PTR_EN	memline.c	/^typedef struct pointer_entry PTR_EN;        \/* bl/
+PUSH	regexp_nfa.c	/^#define PUSH(s)     st_push((s), &stackp, stack_en/
+PUT_UINT32	sha256.c	/^#define PUT_UINT32(n, b, i) { \\$/
+Ptrlist	regexp_nfa.c	/^typedef union Ptrlist Ptrlist;$/
+R	sha256.c	/^#define R(t) \\$/
+RESET_CHARTAB	charset.c	/^#define RESET_CHARTAB(buf, c) \\$/
+RET_WIN_BUF_CHARTABSIZE	charset.c	/^#define RET_WIN_BUF_CHARTABSIZE(wp, buf, p, col) /
+ROTR	sha256.c	/^#define ROTR(x, n) (SHR(x, n) | (x << (32 - n)))$/
+ResetRedobuff	getchar.c	/^void ResetRedobuff(void)$/
+S0	sha256.c	/^#define S0(x) (ROTR(x, 7) ^ ROTR(x, 18) ^  SHR(x, /
+S1	sha256.c	/^#define S1(x) (ROTR(x, 17) ^ ROTR(x, 19) ^  SHR(x,/
+S2	sha256.c	/^#define S2(x) (ROTR(x, 2) ^ ROTR(x, 13) ^ ROTR(x, /
+S3	sha256.c	/^#define S3(x) (ROTR(x, 6) ^ ROTR(x, 11) ^ ROTR(x, /
+SCRIPT_ITEM	ex_cmds2.c	/^#define SCRIPT_ITEM(id) (((scriptitem_T *)script_i/
+SCRIPT_SV	eval.c	/^#define SCRIPT_SV(id) (((scriptvar_T **)ga_scripts/
+SCRIPT_VARS	eval.c	/^#define SCRIPT_VARS(id) (SCRIPT_SV(id)->sv_dict.dv/
+SELECT_NTH	ui.c	/^#define SELECT_NTH(a1, a2, a3, a4, a5, a6, ...) a6/
+SET_CHARTAB	charset.c	/^#define SET_CHARTAB(buf, c) \\$/
+SHR	sha256.c	/^#define  SHR(x, n) ((x & 0xFFFFFFFF) >> n)$/
+SIGDEFARG	if_cscope.c	/^sig_handler SIGDEFARG(sigarg) {$/
+SIZEOF_CSTR	hardcopy.c	/^#define SIZEOF_CSTR(s)      (sizeof(s) - 1)$/
+STR	version.c	/^#define STR(x) STR_(x)$/
+STR_	version.c	/^#define STR_(x) #x$/
+STR_CHAR	charset.c	/^#define STR_CHAR(i) (buf == NULL ? GA_CHAR(i) : bu/
+STR_PTR	charset.c	/^#define STR_PTR(i) (buf == NULL ? GA_PTR(i) : buf /
+SUG_MAX_COUNT	spell.c	/^#define SUG_MAX_COUNT(su)       (SUG_CLEAN_COUNT(s/
+SYN_CLSTR	syntax.c	/^#define SYN_CLSTR(buf)  ((syn_cluster_T *)((buf)->/
+SYN_ITEMS	syntax.c	/^#define SYN_ITEMS(buf)  ((synpat_T *)((buf)->b_syn/
+SYN_STATE_P	syntax.c	/^#define SYN_STATE_P(ssp)    ((bufstate_T *)((ssp)-/
+SearchedFile	search.c	/^} SearchedFile;$/
+String_eq	map.c	/^static inline bool String_eq(String a, String b)$/
+String_hash	map.c	/^static inline khint_t String_hash(String s)$/
+TerminalJobData	eval.c	/^} TerminalJobData;$/
+UCHARAT	regexp.c	/^#define UCHARAT(p)      ((int)*(char_u *)(p))$/
+UF2HIKEY	eval.c	/^#define UF2HIKEY(fp) ((fp)->uf_name)$/
+UI_CALL	ui.c	/^#define UI_CALL(...)                              /
+UI_CALL_HELPER	ui.c	/^#define UI_CALL_HELPER(c, ...) UI_CALL_HELPER2(c, /
+UI_CALL_HELPER2	ui.c	/^#define UI_CALL_HELPER2(c, ...) UI_CALL_##c(__VA_A/
+UI_CALL_MORE	ui.c	/^#define UI_CALL_MORE(method, ...) if (ui->method) /
+UI_CALL_ZERO	ui.c	/^#define UI_CALL_ZERO(method) if (ui->method) ui->m/
+USER_CMD	ex_docmd.c	/^#define USER_CMD(i) (&((ucmd_T *)(ucmds.ga_data))[/
+USER_CMD_GA	ex_docmd.c	/^#define USER_CMD_GA(gap, i) (&((ucmd_T *)((gap)->g/
+VALID_STATE	syntax.c	/^#define VALID_STATE(ssp)    ((ssp)->ga_itemsize !=/
+VV_NAME	eval.c	/^#define VV_NAME(s, t)   s, {{t, 0, {0}}, 0, {0}}, /
+WITH_NL	regexp.c	/^#define WITH_NL(op)     ((op) >= FIRST_NL && (op) /
+W_ENDCOL	screen.c	/^#define W_ENDCOL(wp)   (wp->w_wincol + wp->w_width/
+ZERO_BL	memline.c	/^typedef struct block0 ZERO_BL;              \/* co/
+aborted_in_try	ex_eval.c	/^int aborted_in_try(void)$/
+aborting	ex_eval.c	/^int aborting(void)$/
+add_b0_fenc	memline.c	/^static void add_b0_fenc(ZERO_BL *b0p, buf_T *buf)$/
+add_buff	getchar.c	/^add_buff ($/
+add_bufnum	ex_cmds2.c	/^static void add_bufnum(int *bufnrs, int *bufnump, /
+add_char_buff	getchar.c	/^static void add_char_buff(buffheader_T *buf, int c/
+add_keyword	syntax.c	/^static void add_keyword(char_u *name,$/
+add_menu_path	menu.c	/^add_menu_path ($/
+add_msg_hist	message.c	/^add_msg_hist ($/
+add_num_buff	getchar.c	/^static void add_num_buff(buffheader_T *buf, long n/
+add_sound_suggest	spell.c	/^\/\/ structure used to store soundfolded words tha/
+add_tag_field	tag.c	/^add_tag_field ($/
+add_to_showcmd	normal.c	/^bool add_to_showcmd(int c)$/
+add_to_showcmd_c	normal.c	/^void add_to_showcmd_c(int c)$/
+addstate	regexp_nfa.c	/^addstate ($/
+addstate_here	regexp_nfa.c	/^addstate_here ($/
+adjust_cursor_eol	ops.c	/^void adjust_cursor_eol(void)$/
+advance_color_col	screen.c	/^static int advance_color_col(int vcol, int **color/
+affentry_S	spell.c	/^struct affentry_S {$/
+affentry_T	spell.c	/^typedef struct affentry_S affentry_T;$/
+affheader_T	spell.c	/^} affheader_T;$/
+after_label	indent_c.c	/^static char_u *after_label(char_u *l)$/
+alist_add_list	ex_cmds2.c	/^alist_add_list ($/
+alist_check_arg_idx	ex_cmds2.c	/^static void alist_check_arg_idx(void)$/
+alist_name	buffer.c	/^char_u *alist_name(aentry_T *aep)$/
+allbuf_locked	ex_getln.c	/^int allbuf_locked(void)$/
+alloc_state	regexp_nfa.c	/^static nfa_state_T *alloc_state(int c, nfa_state_T/
+alloc_typebuf	getchar.c	/^void alloc_typebuf(void)$/
+append	regexp_nfa.c	/^static Ptrlist *append(Ptrlist *l1, Ptrlist *l2)$/
+append_arg_number	buffer.c	/^append_arg_number ($/
+append_command	ex_docmd.c	/^static void append_command(char_u *cmd)$/
+appended_lines	misc1.c	/^void appended_lines(linenr_T lnum, long count)$/
+appended_lines_mark	misc1.c	/^void appended_lines_mark(linenr_T lnum, long count/
+apply_autocmds	fileio.c	/^apply_autocmds ($/
+apply_autocmds_exarg	fileio.c	/^static int apply_autocmds_exarg(event_T event, cha/
+apply_autocmds_group	fileio.c	/^apply_autocmds_group ($/
+apply_autocmds_retval	fileio.c	/^apply_autocmds_retval ($/
+approximate_botline_win	move.c	/^void approximate_botline_win(win_T *wp)$/
+arabic_combine	arabic.c	/^bool arabic_combine(int one, int two)$/
+arabic_maycombine	arabic.c	/^bool arabic_maycombine(int two)$/
+arabic_shape	arabic.c	/^int arabic_shape(int c, int *ccp, int *c1p, int pr/
+ask_yesno	misc1.c	/^int ask_yesno(char_u *str, int direct)$/
+attention_message	memline.c	/^attention_message ($/
+attributes	syntax.c	/^\/\/ Combine special attributes (e.g., for spellin/
+au_cleanup	fileio.c	/^static void au_cleanup(void)$/
+au_del_group	fileio.c	/^static void au_del_group(char_u *name)$/
+au_event_disable	fileio.c	/^char_u *au_event_disable(char *what)$/
+au_event_restore	fileio.c	/^void au_event_restore(char_u *old_ei)$/
+au_find_group	fileio.c	/^static int au_find_group(char_u *name)$/
+au_get_grouparg	fileio.c	/^static int au_get_grouparg(char_u **argp)$/
+au_has_group	fileio.c	/^int au_has_group(char_u *name)$/
+au_new_group	fileio.c	/^static int au_new_group(char_u *name)$/
+au_remove_cmds	fileio.c	/^static void au_remove_cmds(AutoPat *ap)$/
+au_remove_pat	fileio.c	/^static void au_remove_pat(AutoPat *ap)$/
+aubuflocal_remove	fileio.c	/^void aubuflocal_remove(buf_T *buf)$/
+aucmd_prepbuf	fileio.c	/^aucmd_prepbuf ($/
+aucmd_restbuf	fileio.c	/^aucmd_restbuf ($/
+auto_format	edit.c	/^auto_format ($/
+autoload_name	eval.c	/^static char_u *autoload_name(char_u *name)$/
+b0_magic_wrong	memline.c	/^static int b0_magic_wrong(ZERO_BL *b0p)$/
+back_in_line	search.c	/^static void back_in_line(void)$/
+backpos_T	regexp.c	/^} backpos_T;$/
+backslash_trans	regexp.c	/^static int backslash_trans(int c)$/
+bck_word	search.c	/^int bck_word(long count, int bigword, int stop)$/
+bckend_word	search.c	/^bckend_word ($/
+beep_flush	misc1.c	/^void beep_flush(void)$/
+before_blocking	getchar.c	/^void before_blocking(void)$/
+block0	memline.c	/^struct block0 {$/
+block_def	ops.c	/^struct block_def {$/
+block_insert	ops.c	/^static void block_insert(oparg_T *oap, char_u *s, /
+bomb_size	mbyte.c	/^int bomb_size(void)$/
+botline_forw	move.c	/^static void botline_forw(lineoff_T *lp)$/
+botline_topline	move.c	/^static void botline_topline(lineoff_T *lp)$/
+briopt_check	option.c	/^static bool briopt_check(win_T *wp)$/
+bt_regcomp	regexp.c	/^static regprog_T *bt_regcomp(char_u *expr, int re_/
+bt_regexec	regexp_nfa.c	/^\/\/\/ @note The body is the same as bt_regexec() /
+bt_regexec_both	regexp.c	/^static long bt_regexec_both(char_u *line,$/
+bt_regexec_multi	regexp.c	/^static long bt_regexec_multi(regmmatch_T *rmp, win/
+bt_regexec_nl	regexp.c	/^bt_regexec_nl ($/
+bt_regfree	regexp.c	/^static void bt_regfree(regprog_T *prog)$/
+bufIsChanged	undo.c	/^int bufIsChanged(buf_T *buf)$/
+buf_addsign	buffer.c	/^void buf_addsign($/
+buf_change_sign_type	buffer.c	/^linenr_T buf_change_sign_type($/
+buf_check_timestamp	fileio.c	/^buf_check_timestamp ($/
+buf_clear_file	buffer.c	/^void buf_clear_file(buf_T *buf)$/
+buf_copy_options	option.c	/^void buf_copy_options(buf_T *buf, int flags)$/
+buf_delete_signs	buffer.c	/^void buf_delete_signs(buf_T *buf)$/
+buf_delsign	buffer.c	/^linenr_T buf_delsign($/
+buf_findsign	buffer.c	/^int buf_findsign($/
+buf_findsign_id	buffer.c	/^int buf_findsign_id($/
+buf_freeall	buffer.c	/^void buf_freeall(buf_T *buf, int flags)$/
+buf_getsigntype	buffer.c	/^int buf_getsigntype($/
+buf_init_chartab	charset.c	/^int buf_init_chartab(buf_T *buf, int global)$/
+buf_name_changed	buffer.c	/^void buf_name_changed(buf_T *buf)$/
+buf_reload	fileio.c	/^void buf_reload(buf_T *buf, int orig_mode)$/
+buf_same_file_id	buffer.c	/^static bool buf_same_file_id(buf_T *buf, FileID *f/
+buf_set_file_id	buffer.c	/^void buf_set_file_id(buf_T *buf)$/
+buf_set_name	buffer.c	/^void buf_set_name(int fnum, char_u *name)$/
+buf_spname	buffer.c	/^char_u *buf_spname(buf_T *buf)$/
+buf_store_file_info	fileio.c	/^void buf_store_file_info(buf_T *buf, FileInfo *fil/
+buf_valid	buffer.c	/^int buf_valid(buf_T *buf)$/
+buf_write	fileio.c	/^buf_write ($/
+buf_write_all	ex_cmds2.c	/^int buf_write_all(buf_T *buf, int forceit)$/
+buf_write_bytes	fileio.c	/^static int buf_write_bytes(struct bw_info *ip)$/
+buflist_add	buffer.c	/^int buflist_add(char_u *fname, int flags)$/
+buflist_altfpos	buffer.c	/^void buflist_altfpos(win_T *win)$/
+buflist_findfpos	buffer.c	/^pos_T *buflist_findfpos(buf_T *buf)$/
+buflist_findlnum	buffer.c	/^linenr_T buflist_findlnum(buf_T *buf)$/
+buflist_findname	buffer.c	/^buf_T *buflist_findname(char_u *ffname)$/
+buflist_findname_exp	buffer.c	/^buf_T *buflist_findname_exp(char_u *fname)$/
+buflist_findname_file_id	buffer.c	/^static buf_T *buflist_findname_file_id(char_u *ffn/
+buflist_findnr	buffer.c	/^buf_T *buflist_findnr(int nr)$/
+buflist_findpat	buffer.c	/^buflist_findpat ($/
+buflist_getfile	buffer.c	/^int buflist_getfile(int n, linenr_T lnum, int opti/
+buflist_getfpos	buffer.c	/^void buflist_getfpos(void)$/
+buflist_list	buffer.c	/^void buflist_list(exarg_T *eap)$/
+buflist_match	buffer.c	/^static char_u *buflist_match(regmatch_T *rmp, buf_/
+buflist_name_nr	buffer.c	/^int buflist_name_nr(int fnum, char_u **fname, line/
+buflist_new	buffer.c	/^buflist_new ($/
+buflist_nr2name	buffer.c	/^buflist_nr2name ($/
+buflist_setfpos	buffer.c	/^static void buflist_setfpos(buf_T *buf, win_T *win/
+buflist_slash_adjust	buffer.c	/^void buflist_slash_adjust(void)$/
+build_stl_str_hl	buffer.c	/^build_stl_str_hl ($/
+bw_info	fileio.c	/^struct bw_info {$/
+bytes2offset	spell.c	/^static int bytes2offset(char_u **pp)$/
+c	undo.c	/^\/\/\/ Must match with undo_read_?c() functions.$/
+call_func_retlist	eval.c	/^call_func_retlist ($/
+call_func_retnr	eval.c	/^call_func_retnr ($/
+call_func_retstr	eval.c	/^call_func_retstr ($/
+call_shell	misc2.c	/^int call_shell(char_u *cmd, ShellOpts opts, char_u/
+call_user_func	eval.c	/^call_user_func ($/
+call_vim_function	eval.c	/^call_vim_function ($/
+caller_scope	eval.c	/^  provider_caller_scope = (struct caller_scope) {$/
+calloc	memory.c	/^\/\/\/ calloc() wrapper$/
+canF_Ljoin	farsi.c	/^static bool canF_Ljoin(char_u c)$/
+canF_Rjoin	farsi.c	/^static bool canF_Rjoin(char_u c)$/
+can_abandon	ex_cmds2.c	/^int can_abandon(buf_T *buf, int forceit)$/
+can_bs	option.c	/^can_bs ($/
+cap	normal.c	/^typedef void (*nv_func_T)(cmdarg_T *cap);$/
+cat_func_name	eval.c	/^static void cat_func_name(char_u *buf, ufunc_T *fp/
+catch_exception	ex_eval.c	/^static void catch_exception(except_T *excp)$/
+cause_errthrow	ex_eval.c	/^int cause_errthrow(char_u *mesg, int severe, int */
+change_warning	misc1.c	/^change_warning ($/
+changed	misc1.c	/^void changed(void)$/
+changedOneline	misc1.c	/^static void changedOneline(buf_T *buf, linenr_T ln/
+changed_bytes	indent.c	/^\/\/  SIN_CHANGED:    call changed_bytes() if the /
+changed_cline_bef_curs	move.c	/^void changed_cline_bef_curs(void)$/
+changed_cline_bef_curs_win	move.c	/^void changed_cline_bef_curs_win(win_T *wp)$/
+changed_common	misc1.c	/^static void changed_common(linenr_T lnum, colnr_T /
+changed_int	misc1.c	/^void changed_int(void)$/
+changed_line_abv_curs	move.c	/^void changed_line_abv_curs(void)$/
+changed_line_abv_curs_win	move.c	/^void changed_line_abv_curs_win(win_T *wp)$/
+changed_lines	misc1.c	/^changed_lines ($/
+changed_lines_buf	misc1.c	/^changed_lines_buf ($/
+changed_window_setting	move.c	/^void changed_window_setting(void)$/
+changed_window_setting_win	move.c	/^void changed_window_setting_win(win_T *wp)$/
+char_avail	getchar.c	/^int char_avail(void)$/
+char_needs_redraw	screen.c	/^static int char_needs_redraw(int off_from, int off/
+char_to_long	memline.c	/^static long char_to_long(char_u *s)$/
+charstab	option.c	/^  struct charstab {$/
+checkCloseRec	fold.c	/^static int checkCloseRec(garray_T *gap, linenr_T l/
+checkSmall	fold.c	/^checkSmall ($/
+check_arg_idx	ex_cmds2.c	/^void check_arg_idx(win_T *win)$/
+check_auto_format	edit.c	/^check_auto_format ($/
+check_buf_options	option.c	/^void check_buf_options(buf_T *buf)$/
+check_cedit	option.c	/^static char_u *check_cedit(void)$/
+check_changed_any	ex_cmds2.c	/^check_changed_any ($/
+check_char_class	regexp_nfa.c	/^static int check_char_class(int class, int c)$/
+check_closed	fold.c	/^check_closed ($/
+check_col	mbyte.c	/^static int check_col(int col)$/
+check_colorcolumn	option.c	/^char_u *check_colorcolumn(win_T *wp)$/
+check_cursor_moved	move.c	/^void check_cursor_moved(win_T *wp)$/
+check_ei	fileio.c	/^int check_ei(void)$/
+check_ff_value	option.c	/^int check_ff_value(char_u *p)$/
+check_fname	ex_cmds2.c	/^int check_fname(void)$/
+check_for_bom	fileio.c	/^static char_u *check_for_bom(char_u *p, long size,/
+check_for_delay	screen.c	/^void check_for_delay(int check_msg_scroll)$/
+check_help_lang	ex_cmds.c	/^char_u *check_help_lang(char_u *arg)$/
+check_keepend	syntax.c	/^static void check_keepend(void)$/
+check_keyword_id	syntax.c	/^check_keyword_id ($/
+check_linecomment	search.c	/^static int check_linecomment(char_u *line)$/
+check_mark	mark.c	/^int check_mark(pos_T *pos)$/
+check_marks_read	fileio.c	/^static void check_marks_read(void)$/
+check_mtime	fileio.c	/^static int check_mtime(buf_T *buf, FileInfo *file_/
+check_need_swap	memline.c	/^check_need_swap ($/
+check_nomodeline	fileio.c	/^int check_nomodeline(char_u **argp)$/
+check_opt_strings	option.c	/^check_opt_strings ($/
+check_opt_wim	option.c	/^static int check_opt_wim(void)$/
+check_options	option.c	/^void check_options(void)$/
+check_overwrite	ex_cmds.c	/^check_overwrite ($/
+check_prevcol	search.c	/^static int check_prevcol(char_u *linep, int col, i/
+check_provider	eval.c	/^#define check_provider(name)                      /
+check_readonly	ex_cmds.c	/^static int check_readonly(int *forceit, buf_T *buf/
+check_redraw	option.c	/^static void check_redraw(uint32_t flags)$/
+check_restricted	ex_cmds.c	/^int check_restricted(void)$/
+check_row	mbyte.c	/^static int check_row(int row)$/
+check_scrollbind	normal.c	/^void check_scrollbind(linenr_T topline_diff, long /
+check_secure	ex_cmds.c	/^int check_secure(void)$/
+check_spell_redraw	edit.c	/^static void check_spell_redraw(void)$/
+check_state_ends	syntax.c	/^static void check_state_ends(void)$/
+check_status	misc1.c	/^void check_status(buf_T *buf)$/
+check_stl_option	option.c	/^char_u *check_stl_option(char_u *s)$/
+check_string_option	option.c	/^static void check_string_option(char_u **pp)$/
+check_timestamps	fileio.c	/^check_timestamps ($/
+check_top_offset	move.c	/^static int check_top_offset(void)$/
+check_topfill	move.c	/^check_topfill ($/
+check_visual_highlight	normal.c	/^void check_visual_highlight(void)$/
+check_win_options	option.c	/^void check_win_options(win_T *win)$/
+check_winopt	option.c	/^static void check_winopt(winopt_T *wop)$/
+checkclearop	normal.c	/^static bool checkclearop(oparg_T *oap)$/
+checkclearopq	normal.c	/^static bool checkclearopq(oparg_T *oap)$/
+checkforcmd	ex_docmd.c	/^checkforcmd ($/
+checkpcmark	mark.c	/^void checkpcmark(void)$/
+checkupdate	fold.c	/^static void checkupdate(win_T *wp)$/
+chg_c_a2f	arabic.c	/^static int chg_c_a2f(int cur_c)$/
+chg_c_a2i	arabic.c	/^static int chg_c_a2i(int cur_c)$/
+chg_c_a2m	arabic.c	/^static int chg_c_a2m(int cur_c)$/
+chg_c_a2s	arabic.c	/^static int chg_c_a2s(int cur_c)$/
+chg_c_f2m	arabic.c	/^static int chg_c_f2m(int cur_c)$/
+chg_c_i2m	arabic.c	/^static int chg_c_i2m(int cur_c)$/
+chg_c_laa2f	arabic.c	/^static int chg_c_laa2f(int hid_c)$/
+chg_c_toX_orX	farsi.c	/^static void chg_c_toX_orX(void)$/
+chg_c_to_X_orX_	farsi.c	/^static void chg_c_to_X_orX_(void)$/
+chg_c_to_X_or_X	farsi.c	/^static void chg_c_to_X_or_X(void)$/
+chg_l_toXor_X	farsi.c	/^static void chg_l_toXor_X(void)$/
+chg_l_to_X_orX_	farsi.c	/^static void chg_l_to_X_orX_(void)$/
+chg_r_to_Xor_X_	farsi.c	/^static void chg_r_to_Xor_X_(void)$/
+chk_modeline	buffer.c	/^chk_modeline ($/
+cin_ends_in	indent_c.c	/^static int cin_ends_in(char_u *s, char_u *find, ch/
+cin_first_id_amount	indent_c.c	/^static int cin_first_id_amount(void)$/
+cin_get_equal_amount	indent_c.c	/^static int cin_get_equal_amount(linenr_T lnum)$/
+cin_has_js_key	indent_c.c	/^static bool cin_has_js_key(char_u *text)$/
+cin_is_cinword	indent_c.c	/^bool cin_is_cinword(char_u *line)$/
+cin_is_cpp_baseclass	indent_c.c	/^cin_is_cpp_baseclass ($/
+cin_is_cpp_namespace	indent_c.c	/^static int cin_is_cpp_namespace(char_u *s)$/
+cin_is_if_for_while_before_offset	indent_c.c	/^static int cin_is_if_for_while_before_offset(char_/
+cin_isbreak	indent_c.c	/^static int cin_isbreak(char_u *p)$/
+cin_iscase	indent_c.c	/^cin_iscase ($/
+cin_iscomment	indent_c.c	/^static int cin_iscomment(char_u *p)$/
+cin_isdefault	indent_c.c	/^static int cin_isdefault(char_u *s)$/
+cin_isdo	indent_c.c	/^static int cin_isdo(char_u *p)$/
+cin_iselse	indent_c.c	/^static int cin_iselse(char_u *p)$/
+cin_isfuncdecl	indent_c.c	/^static int cin_isfuncdecl(char_u **sp, linenr_T fi/
+cin_isif	indent_c.c	/^static int cin_isif(char_u *p)$/
+cin_isinit	indent_c.c	/^static int cin_isinit(void)$/
+cin_islabel	indent_c.c	/^int cin_islabel(void)$/
+cin_islinecomment	indent_c.c	/^static int cin_islinecomment(char_u *p)$/
+cin_ispreproc	indent_c.c	/^static int cin_ispreproc(char_u *s)$/
+cin_ispreproc_cont	indent_c.c	/^static int cin_ispreproc_cont(char_u **pp, linenr_/
+cin_isscopedecl	indent_c.c	/^int cin_isscopedecl(char_u *s)$/
+cin_isterminated	indent_c.c	/^cin_isterminated ($/
+cin_iswhileofdo	indent_c.c	/^cin_iswhileofdo ( \/* XXX *\/$/
+cin_iswhileofdo_end	indent_c.c	/^static int cin_iswhileofdo_end(int terminated)$/
+cin_nocode	indent_c.c	/^static int cin_nocode(char_u *s)$/
+cin_skip2pos	indent_c.c	/^static int cin_skip2pos(pos_T *trypos)$/
+cin_skipcomment	indent_c.c	/^static char_u *cin_skipcomment(char_u *s)$/
+cin_starts_with	indent_c.c	/^static int cin_starts_with(char_u *s, char *word)$/
+cleanup_conditionals	ex_eval.c	/^int cleanup_conditionals(struct condstack *cstack,/
+cleanup_jumplist	mark.c	/^static void cleanup_jumplist(void)$/
+cleanup_subexpr	regexp.c	/^static void cleanup_subexpr(void)$/
+cleanup_zsubexpr	regexp.c	/^static void cleanup_zsubexpr(void)$/
+clearFolding	fold.c	/^void clearFolding(win_T *win)$/
+clear_csinfo	if_cscope.c	/^static void clear_csinfo(int i)$/
+clear_current_state	syntax.c	/^static void clear_current_state(void)$/
+clear_hl_tables	syntax.c	/^void clear_hl_tables(void)$/
+clear_keywtab	syntax.c	/^static void clear_keywtab(hashtab_T *ht)$/
+clear_midword	spell.c	/^static void clear_midword(win_T *wp)$/
+clear_oparg	ops.c	/^void clear_oparg(oparg_T *oap)$/
+clear_registers	ops.c	/^void clear_registers(void)$/
+clear_sb_text	message.c	/^void clear_sb_text(void)$/
+clear_showcmd	normal.c	/^void clear_showcmd(void)$/
+clear_string_option	option.c	/^void clear_string_option(char_u **pp)$/
+clear_sub	regexp_nfa.c	/^static void clear_sub(regsub_T *sub)$/
+clear_syn_state	syntax.c	/^static void clear_syn_state(synstate_T *p)$/
+clear_tv	eval.c	/^void clear_tv(typval_T *varp)$/
+clear_winopt	option.c	/^void clear_winopt(winopt_T *wop)$/
+clearop	normal.c	/^static void clearop(oparg_T *oap)$/
+clearopbeep	normal.c	/^static void clearopbeep(oparg_T *oap)$/
+clinterval	mbyte.c	/^  static struct clinterval {$/
+cloneFoldGrowArray	fold.c	/^void cloneFoldGrowArray(garray_T *from, garray_T */
+closeFold	fold.c	/^void closeFold(linenr_T lnum, long count)$/
+closeFoldRecurse	fold.c	/^void closeFoldRecurse(linenr_T lnum)$/
+close_all_scripts	getchar.c	/^void close_all_scripts(void)$/
+close_buffer	buffer.c	/^close_buffer ($/
+close_spellbuf	spell.c	/^static void close_spellbuf(buf_T *buf)$/
+closescript	getchar.c	/^static void closescript(void)$/
+clrallmarks	mark.c	/^void clrallmarks(buf_T *buf)$/
+cls	search.c	/^static int cls(void)$/
+cmd_exists	ex_docmd.c	/^int cmd_exists(char_u *name)$/
+cmd_source	ex_cmds2.c	/^static void cmd_source(char_u *fname, exarg_T *eap/
+cmd_with_count	window.c	/^static void cmd_with_count(char *cmd, char_u *bufp/
+cmdline_charsize	ex_getln.c	/^static int cmdline_charsize(int idx)$/
+cmdline_info	ex_getln.c	/^struct cmdline_info {$/
+cmdmod	ex_docmd.c	/^static struct cmdmod {$/
+col_adjust	mark.c	/^#define col_adjust(pp) \\$/
+col_print	buffer.c	/^void col_print(char_u *buf, size_t buflen, int col/
+coladvance	cursor.c	/^int coladvance(colnr_T wcol)$/
+coladvance2	cursor.c	/^static int coladvance2($/
+coladvance_force	cursor.c	/^int coladvance_force(colnr_T wcol)$/
+coll_get_char	regexp.c	/^static int coll_get_char(void)$/
+comp_botline	move.c	/^static void comp_botline(win_T *wp)$/
+comp_char_differs	screen.c	/^static int comp_char_differs(int off_from, int off/
+comp_col	option.c	/^void comp_col(void)$/
+comp_textwidth	edit.c	/^comp_textwidth ($/
+compile_cap_prog	option.c	/^static char_u *compile_cap_prog(synblock_T *synblo/
+compitem_T	spell.c	/^} compitem_T;$/
+compute_buffer_local_count	ex_docmd.c	/^static int compute_buffer_local_count(int addr_typ/
+concat_str	strings.c	/^char_u *concat_str(const char_u *restrict str1, co/
+conceal_check_cursur_line	screen.c	/^void conceal_check_cursur_line(void)$/
+conceal_cursor_line	screen.c	/^int conceal_cursor_line(win_T *wp)$/
+console_dialog_alloc	message.c	/^static char_u * console_dialog_alloc(const char_u /
+conv_to_pstd	farsi.c	/^void conv_to_pstd(void)$/
+conv_to_pvim	farsi.c	/^void conv_to_pvim(void)$/
+convertStruct	mbyte.c	/^} convertStruct;$/
+convert_setup	mbyte.c	/^int convert_setup(vimconv_T *vcp, char_u *from, ch/
+convert_setup_ext	mbyte.c	/^int convert_setup_ext(vimconv_T *vcp, char_u *from/
+copyFoldingState	fold.c	/^void copyFoldingState(win_T *wp_from, win_T *wp_to/
+copy_char	message.c	/^copy_char ($/
+copy_id_list	syntax.c	/^static short *copy_id_list(short *list)$/
+copy_jumplist	mark.c	/^void copy_jumplist(win_T *from, win_T *to)$/
+copy_option_part	misc2.c	/^size_t copy_option_part(char_u **option, char_u *b/
+copy_pim	regexp_nfa.c	/^static void copy_pim(nfa_pim_T *to, nfa_pim_T *fro/
+copy_redo	getchar.c	/^static void copy_redo(int old_redo)$/
+copy_sub	regexp_nfa.c	/^static void copy_sub(regsub_T *to, regsub_T *from)/
+copy_sub_off	regexp_nfa.c	/^static void copy_sub_off(regsub_T *to, regsub_T *f/
+copy_text_attr	screen.c	/^static void copy_text_attr(int off, char_u *buf, i/
+copy_tv	eval.c	/^void copy_tv(typval_T *from, typval_T *to)$/
+copy_viminfo_marks	mark.c	/^void copy_viminfo_marks(vir_T *virp, FILE *fp_out,/
+copy_winopt	option.c	/^void copy_winopt(winopt_T *from, winopt_T *to)$/
+copy_ze_off	regexp_nfa.c	/^static void copy_ze_off(regsub_T *to, regsub_T *fr/
+correct_cmdspos	ex_getln.c	/^static void correct_cmdspos(int idx, int cells)$/
+corruption_error	undo.c	/^static void corruption_error(char *mesg, char_u *f/
+cs_add	if_cscope.c	/^static int cs_add(exarg_T *eap)$/
+cs_add_common	if_cscope.c	/^cs_add_common ($/
+cs_check_for_connections	if_cscope.c	/^static int cs_check_for_connections(void)$/
+cs_check_for_tags	if_cscope.c	/^static int cs_check_for_tags(void)$/
+cs_cnt_connections	if_cscope.c	/^static int cs_cnt_connections(void)$/
+cs_cnt_matches	if_cscope.c	/^static int cs_cnt_matches(int idx)$/
+cs_connection	if_cscope.c	/^int cs_connection(int num, char_u *dbpath, char_u /
+cs_create_cmd	if_cscope.c	/^static char *cs_create_cmd(char *csoption, char *p/
+cs_create_connection	if_cscope.c	/^static int cs_create_connection(int i)$/
+cs_end	if_cscope.c	/^void cs_end(void)$/
+cs_fgets	if_cscope.c	/^int cs_fgets(char_u *buf, int size)$/
+cs_file_results	if_cscope.c	/^static void cs_file_results(FILE *f, int *nummatch/
+cs_fill_results	if_cscope.c	/^static void cs_fill_results(char *tagstr, int totm/
+cs_find	if_cscope.c	/^static int cs_find(exarg_T *eap)$/
+cs_find_common	if_cscope.c	/^static int cs_find_common(char *opt, char *pat, in/
+cs_free_tags	if_cscope.c	/^void cs_free_tags(void)$/
+cs_help	if_cscope.c	/^static int cs_help(exarg_T *eap)$/
+cs_insert_filelist	if_cscope.c	/^static int cs_insert_filelist(char *fname, char *p/
+cs_kill	if_cscope.c	/^static int cs_kill(exarg_T *eap)$/
+cs_kill_execute	if_cscope.c	/^cs_kill_execute ($/
+cs_lookup_cmd	if_cscope.c	/^static cscmd_T * cs_lookup_cmd(exarg_T *eap)$/
+cs_make_vim_style_matches	if_cscope.c	/^static char *cs_make_vim_style_matches(char *fname/
+cs_manage_matches	if_cscope.c	/^static char *cs_manage_matches(char **matches, cha/
+cs_parse_results	if_cscope.c	/^static char *cs_parse_results(int cnumber, char *b/
+cs_pathcomponents	if_cscope.c	/^static char *cs_pathcomponents(char *path)$/
+cs_print_tags	if_cscope.c	/^void cs_print_tags(void)$/
+cs_print_tags_priv	if_cscope.c	/^static void cs_print_tags_priv(char **matches, cha/
+cs_read_prompt	if_cscope.c	/^static int cs_read_prompt(int i)$/
+cs_reading_emsg	if_cscope.c	/^cs_reading_emsg ($/
+cs_release_csp	if_cscope.c	/^static void cs_release_csp(int i, int freefnpp)$/
+cs_reset	if_cscope.c	/^static int cs_reset(exarg_T *eap)$/
+cs_resolve_file	if_cscope.c	/^static char *cs_resolve_file(int i, char *name)$/
+cs_show	if_cscope.c	/^static int cs_show(exarg_T *eap)$/
+cs_stat_emsg	if_cscope.c	/^static void cs_stat_emsg(char *fname)$/
+cs_usage_msg	if_cscope.c	/^static void cs_usage_msg(csid_e x)$/
+csh_like_shell	misc2.c	/^int csh_like_shell(void)$/
+cstrchr	regexp.c	/^static char_u *cstrchr(char_u *s, int c)$/
+cstrncmp	regexp.c	/^static int cstrncmp(char_u *s1, char_u *s2, int *n/
+curbufIsChanged	undo.c	/^int curbufIsChanged(void)$/
+curbuf_locked	ex_getln.c	/^int curbuf_locked(void)$/
+current_block	search.c	/^current_block ($/
+current_func_returned	eval.c	/^int current_func_returned(void)$/
+current_par	search.c	/^current_par ($/
+current_quote	search.c	/^current_quote ($/
+current_search	search.c	/^current_search ($/
+current_sent	search.c	/^int current_sent(oparg_T *oap, long count, int inc/
+current_tab_nr	ex_docmd.c	/^static int current_tab_nr(tabpage_T *tab)$/
+current_tagblock	search.c	/^current_tagblock ($/
+current_win_nr	ex_docmd.c	/^static int current_win_nr(win_T *win)$/
+current_word	search.c	/^current_word ($/
+curs_columns	move.c	/^curs_columns ($/
+curs_rows	move.c	/^static void curs_rows(win_T *wp)$/
+cursor_correct	move.c	/^void cursor_correct(void)$/
+cursor_pos_info	ops.c	/^void cursor_pos_info(void)$/
+cursor_valid	move.c	/^int cursor_valid(void)$/
+curwin_col_off	move.c	/^int curwin_col_off(void)$/
+curwin_col_off2	move.c	/^int curwin_col_off2(void)$/
+darken_rgb	hardcopy.c	/^static uint32_t darken_rgb(uint32_t rgb)$/
+data_block	memline.c	/^struct data_block {$/
+dbcs_char2bytes	mbyte.c	/^static int dbcs_char2bytes(int c, char_u *buf)$/
+dbcs_char2cells	mbyte.c	/^static int dbcs_char2cells(int c)$/
+dbcs_char2len	mbyte.c	/^static int dbcs_char2len(int c)$/
+dbcs_class	mbyte.c	/^int dbcs_class(unsigned lead, unsigned trail)$/
+dbcs_head_off	mbyte.c	/^int dbcs_head_off(const char_u *base, const char_u/
+dbcs_off2cells	mbyte.c	/^int dbcs_off2cells(unsigned off, unsigned max_off)/
+dbcs_ptr2cells	mbyte.c	/^int dbcs_ptr2cells(const char_u *p)$/
+dbcs_ptr2cells_len	mbyte.c	/^static int dbcs_ptr2cells_len(const char_u *p, int/
+dbcs_ptr2char	mbyte.c	/^static int dbcs_ptr2char(const char_u *p)$/
+dbcs_ptr2len	mbyte.c	/^static int dbcs_ptr2len(const char_u *p)$/
+dbcs_ptr2len_len	mbyte.c	/^static int dbcs_ptr2len_len(const char_u *p, int s/
+dbcs_screen_head_off	mbyte.c	/^int dbcs_screen_head_off(const char_u *base, const/
+dbg_breakpoint	ex_cmds2.c	/^void dbg_breakpoint(char_u *name, linenr_T lnum)$/
+dbg_check_breakpoint	ex_cmds2.c	/^void dbg_check_breakpoint(exarg_T *eap)$/
+dbg_check_skipped	ex_cmds2.c	/^int dbg_check_skipped(exarg_T *eap)$/
+dbg_find_breakpoint	ex_cmds2.c	/^dbg_find_breakpoint ($/
+dbg_parsearg	ex_cmds2.c	/^dbg_parsearg ($/
+dbg_stuff	ex_docmd.c	/^struct dbg_stuff {$/
+debuggy	ex_cmds2.c	/^struct debuggy {$/
+debuggy_find	ex_cmds2.c	/^debuggy_find ($/
+dec	misc2.c	/^int dec(pos_T *lp)$/
+decl	misc2.c	/^int decl(pos_T *lp)$/
+decomp_T	regexp.c	/^} decomp_T;$/
+default_fileformat	misc2.c	/^int default_fileformat(void)$/
+del_bytes	misc1.c	/^del_bytes ($/
+del_char	misc1.c	/^int del_char(int fixpos)$/
+del_chars	misc1.c	/^int del_chars(long count, int fixpos)$/
+del_from_showcmd	normal.c	/^static void del_from_showcmd(int len)$/
+del_lines	misc1.c	/^del_lines ($/
+del_trailing_spaces	strings.c	/^void del_trailing_spaces(char_u *ptr)$/
+del_typebuf	getchar.c	/^void del_typebuf(int len, int offset)$/
+delbuf_msg	ex_cmds.c	/^static void delbuf_msg(char_u *name)$/
+deleteFold	fold.c	/^deleteFold ($/
+deleteFoldEntry	fold.c	/^static void deleteFoldEntry(garray_T *gap, int idx/
+deleteFoldMarkers	fold.c	/^deleteFoldMarkers ($/
+deleteFoldRecurse	fold.c	/^void deleteFoldRecurse(garray_T *gap)$/
+delete_first_msg	message.c	/^int delete_first_msg(void)$/
+delete_var	eval.c	/^static void delete_var(hashtab_T *ht, hashitem_T */
+deleted_lines	misc1.c	/^void deleted_lines(linenr_T lnum, long count)$/
+deleted_lines_mark	misc1.c	/^void deleted_lines_mark(linenr_T lnum, long count)/
+dialog_changed	ex_cmds2.c	/^dialog_changed ($/
+did_match_already	syntax.c	/^static int did_match_already(int idx, garray_T *ga/
+did_set_option	option.c	/^did_set_option ($/
+did_set_string_option	option.c	/^did_set_string_option ($/
+did_set_title	option.c	/^did_set_title ($/
+didset_options	option.c	/^static void didset_options(void)$/
+diff_buf_add	diff.c	/^void diff_buf_add(buf_T *buf)$/
+diff_buf_adjust	diff.c	/^void diff_buf_adjust(win_T *win)$/
+diff_buf_delete	diff.c	/^void diff_buf_delete(buf_T *buf)$/
+diffopt_changed	diff.c	/^int diffopt_changed(void)$/
+digr_T	digraph.c	/^} digr_T;$/
+dir_stack_T	quickfix.c	/^struct dir_stack_T {$/
+dis_msg	ops.c	/^dis_msg ($/
+discard_current_exception	ex_eval.c	/^void discard_current_exception(void)$/
+discard_exception	ex_eval.c	/^static void discard_exception(except_T *excp, int /
+disp_sb_line	message.c	/^static msgchunk_T *disp_sb_line(int row, msgchunk_/
+display_showcmd	normal.c	/^static void display_showcmd(void)$/
+do_Lower	regexp.c	/^static fptr_T do_Lower(int *d, int c)$/
+do_Upper	regexp.c	/^static fptr_T do_Upper(int *d, int c)$/
+do_arg_all	buffer.c	/^do_arg_all ($/
+do_argfile	ex_cmds2.c	/^void do_argfile(exarg_T *eap, int argn)$/
+do_arglist	ex_cmds2.c	/^do_arglist ($/
+do_ascii	ex_cmds.c	/^void do_ascii(exarg_T *eap)$/
+do_augroup	fileio.c	/^void do_augroup(char_u *arg, int del_group)$/
+do_autochdir	buffer.c	/^void do_autochdir(void)$/
+do_autocmd	fileio.c	/^void do_autocmd(char_u *arg, int forceit)$/
+do_autocmd_event	fileio.c	/^static int do_autocmd_event(event_T event, char_u /
+do_bang	ex_cmds.c	/^void do_bang(int addr_count, exarg_T *eap, int for/
+do_bufdel	buffer.c	/^do_bufdel ($/
+do_buffer	buffer.c	/^do_buffer ($/
+do_check_cursorbind	move.c	/^void do_check_cursorbind(void)$/
+do_check_scrollbind	normal.c	/^void do_check_scrollbind(bool check)$/
+do_cmdline	ex_docmd.c	/^int do_cmdline(char_u *cmdline, LineGetter fgetlin/
+do_cmdline_cmd	ex_docmd.c	/^int do_cmdline_cmd(char *cmd)$/
+do_cscope	if_cscope.c	/^void do_cscope(exarg_T *eap)$/
+do_cscope_general	if_cscope.c	/^do_cscope_general ($/
+do_cstag	if_cscope.c	/^void do_cstag(exarg_T *eap)$/
+do_debug	ex_cmds2.c	/^void do_debug(char_u *cmd)$/
+do_dialog	message.c	/^do_dialog ($/
+do_doautocmd	fileio.c	/^do_doautocmd ($/
+do_ecmd	ex_cmds.c	/^do_ecmd ($/
+do_errthrow	ex_eval.c	/^void do_errthrow(struct condstack *cstack, char_u /
+do_exmode	ex_docmd.c	/^do_exmode ($/
+do_filter	ex_cmds.c	/^do_filter ($/
+do_finish	ex_cmds2.c	/^void do_finish(exarg_T *eap, int reanimate)$/
+do_highlight	syntax.c	/^do_highlight ($/
+do_in_runtimepath	ex_cmds2.c	/^int do_in_runtimepath(char_u *name, int all, DoInR/
+do_intro_line	version.c	/^static void do_intro_line(long row, char_u *mesg, /
+do_intthrow	ex_eval.c	/^int do_intthrow(struct condstack *cstack)$/
+do_log	log.c	/^bool do_log(int log_level, const char *func_name, /
+do_lower	regexp.c	/^static fptr_T do_lower(int *d, int c)$/
+do_marks	mark.c	/^void do_marks(exarg_T *eap)$/
+do_modelines	buffer.c	/^void do_modelines(int flags)$/
+do_more_prompt	message.c	/^static int do_more_prompt(int typed_char)$/
+do_mouse	normal.c	/^do_mouse ($/
+do_move	ex_cmds.c	/^int do_move(linenr_T line1, linenr_T line2, linenr/
+do_nv_ident	normal.c	/^void do_nv_ident(int c1, int c2)$/
+do_one_arg	ex_cmds2.c	/^static char_u *do_one_arg(char_u *str)$/
+do_one_cmd	ex_docmd.c	/^static char_u * do_one_cmd(char_u **cmdlinep,$/
+do_pending_operator	normal.c	/^void do_pending_operator(cmdarg_T *cap, int old_co/
+do_put	ops.c	/^void do_put(int regname, yankreg_T *reg, int dir, /
+do_scscope	if_cscope.c	/^void do_scscope(exarg_T *eap)$/
+do_search	search.c	/^int do_search($/
+do_searchpair	eval.c	/^do_searchpair ($/
+do_set	option.c	/^do_set ($/
+do_shell	ex_cmds.c	/^do_shell ($/
+do_sort_uniq	eval.c	/^static void do_sort_uniq(typval_T *argvars, typval/
+do_source	ex_cmds2.c	/^do_source ($/
+do_sub	ex_cmds.c	/^void do_sub(exarg_T *eap)$/
+do_sub_msg	ex_cmds.c	/^do_sub_msg ($/
+do_swapexists	memline.c	/^static int do_swapexists(buf_T *buf, char_u *fname/
+do_tag	tag.c	/^do_tag ($/
+do_tags	tag.c	/^void do_tags(exarg_T *eap)$/
+do_throw	ex_eval.c	/^void do_throw(struct condstack *cstack)$/
+do_upper	regexp.c	/^static fptr_T do_upper(int *d, int c)$/
+do_viminfo	ex_cmds.c	/^static void do_viminfo(FILE *fp_in, FILE *fp_out, /
+do_window	window.c	/^do_window ($/
+do_wqall	ex_cmds.c	/^void do_wqall(exarg_T *eap)$/
+do_write	ex_cmds.c	/^int do_write(exarg_T *eap)$/
+draw_signcolumn	screen.c	/^static int draw_signcolumn(win_T *wp)$/
+draw_tabline	screen.c	/^static void draw_tabline(void)$/
+draw_vsep_win	screen.c	/^static void draw_vsep_win(win_T *wp, int row)$/
+early_init	main.c	/^void early_init(void)$/
+editing_arg_idx	ex_cmds2.c	/^static int editing_arg_idx(win_T *win)$/
+efm_S	quickfix.c	/^struct efm_S {$/
+efm_T	quickfix.c	/^typedef struct efm_S efm_T;$/
+empty_curbuf	buffer.c	/^static int empty_curbuf(int close_others, int forc/
+emsg	message.c	/^int emsg(char_u *s)$/
+emsg2	message.c	/^int emsg2(char_u *s, char_u *a1)$/
+emsg3	message.c	/^int emsg3(char_u *s, char_u *a1, char_u *a2)$/
+emsg_invreg	message.c	/^void emsg_invreg(int name)$/
+emsg_not_now	message.c	/^int emsg_not_now(void)$/
+enc_alias_search	mbyte.c	/^static int enc_alias_search(char_u *name)$/
+enc_canon_props	mbyte.c	/^int enc_canon_props(const char_u *name)$/
+enc_canon_search	mbyte.c	/^static int enc_canon_search(const char_u *name)$/
+enc_canonize	mbyte.c	/^char_u *enc_canonize(char_u *enc) FUNC_ATTR_NONNUL/
+enc_locale	mbyte.c	/^char_u * enc_locale(void)$/
+enc_skip	mbyte.c	/^char_u * enc_skip(char_u *p)$/
+end_search_hl	screen.c	/^static void end_search_hl(void)$/
+end_visual_mode	normal.c	/^void end_visual_mode(void)$/
+end_word	search.c	/^int end_word(long count, int bigword, int stop, in/
+enter_buffer	buffer.c	/^void enter_buffer(buf_T *buf)$/
+enter_cleanup	ex_eval.c	/^void enter_cleanup(cleanup_T *csp)$/
+eval_charconvert	eval.c	/^int eval_charconvert(char_u *enc_from, char_u *enc/
+eval_clear	eval.c	/^void eval_clear(void)$/
+eval_diff	eval.c	/^void eval_diff(char_u *origfile, char_u *newfile, /
+eval_expr	eval.c	/^typval_T *eval_expr(char_u *arg, char_u **nextcmd)/
+eval_fname_script	eval.c	/^static int eval_fname_script(char_u *p)$/
+eval_fname_sid	eval.c	/^static int eval_fname_sid(char_u *p)$/
+eval_init	eval.c	/^void eval_init(void)$/
+eval_isnamec	eval.c	/^static int eval_isnamec(int c)$/
+eval_isnamec1	eval.c	/^static int eval_isnamec1(int c)$/
+eval_patch	eval.c	/^void eval_patch(char_u *origfile, char_u *difffile/
+eval_printexpr	eval.c	/^int eval_printexpr(char_u *fname, char_u *args)$/
+eval_spell_expr	eval.c	/^list_T *eval_spell_expr(char_u *badword, char_u *e/
+eval_to_bool	eval.c	/^eval_to_bool ($/
+eval_to_number	eval.c	/^int eval_to_number(char_u *expr)$/
+eval_to_string	eval.c	/^char_u *eval_to_string(char_u *arg, char_u **nextc/
+eval_to_string_safe	eval.c	/^char_u *eval_to_string_safe(char_u *arg, char_u **/
+eval_to_string_skip	eval.c	/^eval_to_string_skip ($/
+event_ignored	fileio.c	/^static int event_ignored(event_T event)$/
+event_name	fileio.c	/^static struct event_name {$/
+event_name2nr	fileio.c	/^static event_T event_name2nr(char_u *start, char_u/
+event_nr2name	fileio.c	/^static char_u *event_nr2name(event_T event)$/
+ex_align	ex_cmds.c	/^void ex_align(exarg_T *eap)$/
+ex_append	ex_cmds.c	/^void ex_append(exarg_T *eap)$/
+ex_argadd	ex_cmds2.c	/^void ex_argadd(exarg_T *eap)$/
+ex_argdelete	ex_cmds2.c	/^void ex_argdelete(exarg_T *eap)$/
+ex_argedit	ex_cmds2.c	/^void ex_argedit(exarg_T *eap)$/
+ex_args	ex_cmds2.c	/^void ex_args(exarg_T *eap)$/
+ex_argument	ex_cmds2.c	/^void ex_argument(exarg_T *eap)$/
+ex_break	ex_eval.c	/^void ex_break(exarg_T *eap)$/
+ex_breakadd	ex_cmds2.c	/^void ex_breakadd(exarg_T *eap)$/
+ex_breakdel	ex_cmds2.c	/^void ex_breakdel(exarg_T *eap)$/
+ex_breaklist	ex_cmds2.c	/^void ex_breaklist(exarg_T *eap)$/
+ex_buffer_all	buffer.c	/^void ex_buffer_all(exarg_T *eap)$/
+ex_catch	ex_eval.c	/^void ex_catch(exarg_T *eap)$/
+ex_change	ex_cmds.c	/^void ex_change(exarg_T *eap)$/
+ex_changes	mark.c	/^void ex_changes(exarg_T *eap)$/
+ex_checktime	ex_cmds2.c	/^void ex_checktime(exarg_T *eap)$/
+ex_compiler	ex_cmds2.c	/^void ex_compiler(exarg_T *eap)$/
+ex_continue	ex_eval.c	/^void ex_continue(exarg_T *eap)$/
+ex_copy	ex_cmds.c	/^void ex_copy(linenr_T line1, linenr_T line2, linen/
+ex_debug	ex_cmds2.c	/^void ex_debug(exarg_T *eap)$/
+ex_debuggreedy	ex_cmds2.c	/^void ex_debuggreedy(exarg_T *eap)$/
+ex_delfunction	eval.c	/^void ex_delfunction(exarg_T *eap)$/
+ex_delmarks	mark.c	/^void ex_delmarks(exarg_T *eap)$/
+ex_diffpatch	diff.c	/^void ex_diffpatch(exarg_T *eap)$/
+ex_display	ops.c	/^void ex_display(exarg_T *eap)$/
+ex_doautoall	fileio.c	/^void ex_doautoall(exarg_T *eap)$/
+ex_drop	ex_cmds2.c	/^void ex_drop(exarg_T   *eap)$/
+ex_echo	eval.c	/^void ex_echo(exarg_T *eap)$/
+ex_echohl	eval.c	/^void ex_echohl(exarg_T *eap)$/
+ex_else	ex_eval.c	/^void ex_else(exarg_T *eap)$/
+ex_emenu	menu.c	/^void ex_emenu(exarg_T *eap)$/
+ex_endfunction	ex_eval.c	/^void ex_endfunction(exarg_T *eap)$/
+ex_endif	ex_eval.c	/^void ex_endif(exarg_T *eap)$/
+ex_endtry	ex_eval.c	/^void ex_endtry(exarg_T *eap)$/
+ex_endwhile	ex_eval.c	/^void ex_endwhile(exarg_T *eap)$/
+ex_execute	eval.c	/^void ex_execute(exarg_T *eap)$/
+ex_file	ex_cmds.c	/^void ex_file(exarg_T *eap)$/
+ex_finally	ex_eval.c	/^void ex_finally(exarg_T *eap)$/
+ex_finish	ex_cmds2.c	/^void ex_finish(exarg_T *eap)$/
+ex_function	eval.c	/^void ex_function(exarg_T *eap)$/
+ex_global	ex_cmds.c	/^void ex_global(exarg_T *eap)$/
+ex_hardcopy	hardcopy.c	/^void ex_hardcopy(exarg_T *eap)$/
+ex_help	ex_cmds.c	/^void ex_help(exarg_T *eap)$/
+ex_helpclose	ex_cmds.c	/^void ex_helpclose(exarg_T *eap)$/
+ex_if	ex_eval.c	/^void ex_if(exarg_T *eap)$/
+ex_intro	version.c	/^void ex_intro(exarg_T *eap)$/
+ex_jumps	mark.c	/^void ex_jumps(exarg_T *eap)$/
+ex_language	ex_cmds2.c	/^void ex_language(exarg_T *eap)$/
+ex_last	ex_cmds2.c	/^void ex_last(exarg_T *eap)$/
+ex_listdo	ex_cmds2.c	/^void ex_listdo(exarg_T *eap)$/
+ex_menu	menu.c	/^ex_menu ($/
+ex_menutranslate	menu.c	/^void ex_menutranslate(exarg_T *eap)$/
+ex_messages	message.c	/^void ex_messages(exarg_T *eap)$/
+ex_next	ex_cmds2.c	/^void ex_next(exarg_T *eap)$/
+ex_options	ex_cmds2.c	/^void ex_options(exarg_T *eap)$/
+ex_ownsyntax	syntax.c	/^void ex_ownsyntax(exarg_T *eap)$/
+ex_previous	ex_cmds2.c	/^void ex_previous(exarg_T *eap)$/
+ex_profile	ex_cmds2.c	/^void ex_profile(exarg_T *eap)$/
+ex_py3file	ex_cmds2.c	/^void ex_py3file(exarg_T *eap)$/
+ex_pydo	ex_cmds2.c	/^void ex_pydo(exarg_T *eap)$/
+ex_pydo3	ex_cmds2.c	/^void ex_pydo3(exarg_T *eap)$/
+ex_pyfile	ex_cmds2.c	/^void ex_pyfile(exarg_T *eap)$/
+ex_python	ex_cmds2.c	/^void ex_python(exarg_T *eap)$/
+ex_python3	ex_cmds2.c	/^void ex_python3(exarg_T *eap)$/
+ex_retab	ex_cmds.c	/^void ex_retab(exarg_T *eap)$/
+ex_rewind	ex_cmds2.c	/^void ex_rewind(exarg_T *eap)$/
+ex_runtime	ex_cmds2.c	/^void ex_runtime(exarg_T *eap)$/
+ex_scriptencoding	ex_cmds2.c	/^void ex_scriptencoding(exarg_T *eap)$/
+ex_scriptnames	ex_cmds2.c	/^void ex_scriptnames(exarg_T *eap)$/
+ex_sign	ex_cmds.c	/^void ex_sign(exarg_T *eap)$/
+ex_sort	ex_cmds.c	/^void ex_sort(exarg_T *eap)$/
+ex_source	ex_cmds2.c	/^void ex_source(exarg_T *eap)$/
+ex_syntax	syntax.c	/^void ex_syntax(exarg_T *eap)$/
+ex_syntime	syntax.c	/^void ex_syntime(exarg_T *eap)$/
+ex_throw	ex_eval.c	/^void ex_throw(exarg_T *eap)$/
+ex_try	ex_eval.c	/^void ex_try(exarg_T *eap)$/
+ex_undojoin	undo.c	/^void ex_undojoin(exarg_T *eap)$/
+ex_undolist	undo.c	/^void ex_undolist(exarg_T *eap)$/
+ex_update	ex_cmds.c	/^void ex_update(exarg_T *eap)$/
+ex_version	version.c	/^void ex_version(exarg_T *eap)$/
+ex_while	ex_eval.c	/^void ex_while(exarg_T *eap)$/
+ex_wnext	ex_cmds.c	/^void ex_wnext(exarg_T *eap)$/
+ex_write	ex_cmds.c	/^void ex_write(exarg_T *eap)$/
+ex_z	ex_cmds.c	/^void ex_z(exarg_T *eap)$/
+expand_tag_fname	tag.c	/^static char_u *expand_tag_fname(char_u *fname, cha/
+expand_tags	tag.c	/^expand_tags ($/
+expgen	ex_getln.c	/^    static struct expgen {$/
+exptype_T	eval.c	/^} exptype_T;$/
+extract_modifiers	keymap.c	/^int extract_modifiers(int key, int *modp)$/
+f_rename	eval.c	/^static void f_rename(typval_T *argvars, typval_T */
+f_repeat	eval.c	/^static void f_repeat(typval_T *argvars, typval_T */
+f_resolve	eval.c	/^static void f_resolve(typval_T *argvars, typval_T /
+f_reverse	eval.c	/^static void f_reverse(typval_T *argvars, typval_T /
+f_round	eval.c	/^static void f_round(typval_T *argvars, typval_T *r/
+f_rpcnotify	eval.c	/^static void f_rpcnotify(typval_T *argvars, typval_/
+f_rpcrequest	eval.c	/^static void f_rpcrequest(typval_T *argvars, typval/
+f_rpcstart	eval.c	/^static void f_rpcstart(typval_T *argvars, typval_T/
+f_rpcstop	eval.c	/^static void f_rpcstop(typval_T *argvars, typval_T /
+f_screenattr	eval.c	/^static void f_screenattr(typval_T *argvars, typval/
+f_screenchar	eval.c	/^static void f_screenchar(typval_T *argvars, typval/
+f_screencol	eval.c	/^static void f_screencol(typval_T *argvars, typval_/
+f_screenrow	eval.c	/^static void f_screenrow(typval_T *argvars, typval_/
+f_search	eval.c	/^static void f_search(typval_T *argvars, typval_T */
+f_searchdecl	eval.c	/^static void f_searchdecl(typval_T *argvars, typval/
+f_searchpair	eval.c	/^static void f_searchpair(typval_T *argvars, typval/
+f_searchpairpos	eval.c	/^static void f_searchpairpos(typval_T *argvars, typ/
+f_searchpos	eval.c	/^static void f_searchpos(typval_T *argvars, typval_/
+f_serverlist	eval.c	/^static void f_serverlist(typval_T *argvars, typval/
+f_serverstart	eval.c	/^static void f_serverstart(typval_T *argvars, typva/
+f_serverstop	eval.c	/^static void f_serverstop(typval_T *argvars, typval/
+f_setbufvar	eval.c	/^static void f_setbufvar(typval_T *argvars, typval_/
+f_setcmdpos	eval.c	/^static void f_setcmdpos(typval_T *argvars, typval_/
+f_setline	eval.c	/^static void f_setline(typval_T *argvars, typval_T /
+f_setloclist	eval.c	/^static void f_setloclist(typval_T *argvars, typval/
+f_setmatches	eval.c	/^static void f_setmatches(typval_T *argvars, typval/
+f_setpos	eval.c	/^static void f_setpos(typval_T *argvars, typval_T */
+f_setqflist	eval.c	/^static void f_setqflist(typval_T *argvars, typval_/
+f_setreg	eval.c	/^static void f_setreg(typval_T *argvars, typval_T */
+f_settabvar	eval.c	/^static void f_settabvar(typval_T *argvars, typval_/
+f_settabwinvar	eval.c	/^static void f_settabwinvar(typval_T *argvars, typv/
+f_setwinvar	eval.c	/^static void f_setwinvar(typval_T *argvars, typval_/
+f_shellescape	eval.c	/^static void f_shellescape(typval_T *argvars, typva/
+f_shiftwidth	eval.c	/^static void f_shiftwidth(typval_T *argvars, typval/
+f_simplify	eval.c	/^static void f_simplify(typval_T *argvars, typval_T/
+f_sin	eval.c	/^static void f_sin(typval_T *argvars, typval_T *ret/
+f_sinh	eval.c	/^static void f_sinh(typval_T *argvars, typval_T *re/
+f_tabpagewinnr	eval.c	/^static void f_tabpagewinnr(typval_T *argvars, typv/
+f_tagfiles	eval.c	/^static void f_tagfiles(typval_T *argvars, typval_T/
+f_taglist	eval.c	/^static void f_taglist(typval_T *argvars, typval_T /
+f_tan	eval.c	/^static void f_tan(typval_T *argvars, typval_T *ret/
+f_tanh	eval.c	/^static void f_tanh(typval_T *argvars, typval_T *re/
+f_tempname	eval.c	/^static void f_tempname(typval_T *argvars, typval_T/
+f_termopen	eval.c	/^static void f_termopen(typval_T *argvars, typval_T/
+f_test	eval.c	/^static void f_test(typval_T *argvars, typval_T *re/
+f_tolower	eval.c	/^static void f_tolower(typval_T *argvars, typval_T /
+f_toupper	eval.c	/^static void f_toupper(typval_T *argvars, typval_T /
+f_tr	eval.c	/^static void f_tr(typval_T *argvars, typval_T *rett/
+f_trunc	eval.c	/^static void f_trunc(typval_T *argvars, typval_T *r/
+f_type	eval.c	/^static void f_type(typval_T *argvars, typval_T *re/
+f_undofile	eval.c	/^static void f_undofile(typval_T *argvars, typval_T/
+f_undotree	eval.c	/^static void f_undotree(typval_T *argvars, typval_T/
+f_values	eval.c	/^static void f_values(typval_T *argvars, typval_T */
+f_virtcol	eval.c	/^static void f_virtcol(typval_T *argvars, typval_T /
+f_visualmode	eval.c	/^static void f_visualmode(typval_T *argvars, typval/
+f_wildmenumode	eval.c	/^static void f_wildmenumode(typval_T *argvars, typv/
+f_winbufnr	eval.c	/^static void f_winbufnr(typval_T *argvars, typval_T/
+f_wincol	eval.c	/^static void f_wincol(typval_T *argvars, typval_T */
+f_winheight	eval.c	/^static void f_winheight(typval_T *argvars, typval_/
+f_winline	eval.c	/^static void f_winline(typval_T *argvars, typval_T /
+f_winnr	eval.c	/^static void f_winnr(typval_T *argvars, typval_T *r/
+f_winrestcmd	eval.c	/^static void f_winrestcmd(typval_T *argvars, typval/
+f_winrestview	eval.c	/^static void f_winrestview(typval_T *argvars, typva/
+f_winsaveview	eval.c	/^static void f_winsaveview(typval_T *argvars, typva/
+f_winwidth	eval.c	/^static void f_winwidth(typval_T *argvars, typval_T/
+f_writefile	eval.c	/^static void f_writefile(typval_T *argvars, typval_/
+f_xor	eval.c	/^static void f_xor(typval_T *argvars, typval_T *ret/
+failure_chance	regexp_nfa.c	/^static int failure_chance(nfa_state_T *state, int /
+farsi_fkey	farsi.c	/^void farsi_fkey(cmdarg_T *cap)$/
+fast_breakcheck	misc1.c	/^void fast_breakcheck(void)$/
+ff_check_visited	file_search.c	/^static int ff_check_visited(ff_visited_T **visited/
+ff_clear	file_search.c	/^static void ff_clear(ff_search_ctx_T *search_ctx)$/
+ff_create_stack_element	file_search.c	/^static ff_stack_T *ff_create_stack_element(char_u /
+ff_free_stack_element	file_search.c	/^static void ff_free_stack_element(ff_stack_T *stac/
+ff_free_visited_list	file_search.c	/^static void ff_free_visited_list(ff_visited_T *vl)/
+ff_get_visited_list	file_search.c	/^static ff_visited_list_hdr_T *ff_get_visited_list(/
+ff_path_in_stoplist	file_search.c	/^static int ff_path_in_stoplist(char_u *path, int p/
+ff_pop	file_search.c	/^static ff_stack_T *ff_pop(ff_search_ctx_T *search_/
+ff_push	file_search.c	/^static void ff_push(ff_search_ctx_T *search_ctx, f/
+ff_search_ctx_T	file_search.c	/^} ff_search_ctx_T;$/
+ff_stack_T	file_search.c	/^} ff_stack_T;$/
+ff_visited_T	file_search.c	/^} ff_visited_T;$/
+ff_visited_list_hdr_T	file_search.c	/^} ff_visited_list_hdr_T;$/
+ff_wc_equal	file_search.c	/^static int ff_wc_equal(char_u *s1, char_u *s2)$/
+file_ff_differs	option.c	/^int file_ff_differs(buf_T *buf, int ignore_empty)$/
+fileinfo	buffer.c	/^fileinfo ($/
+filemess	fileio.c	/^void filemess(buf_T *buf, char_u *name, char_u *s,/
+fill_breakat_flags	option.c	/^static void fill_breakat_flags(void)$/
+fill_foldcolumn	screen.c	/^fill_foldcolumn ($/
+fillchar_status	screen.c	/^static int fillchar_status(int *attr, int is_curwi/
+fillchar_vsep	screen.c	/^static int fillchar_vsep(int *attr)$/
+find_command	ex_docmd.c	/^static char_u *find_command(exarg_T *eap, int *ful/
+find_decl	normal.c	/^find_decl ($/
+find_directory_in_path	file_search.c	/^find_directory_in_path ($/
+find_end_event	fileio.c	/^find_end_event ($/
+find_end_of_word	normal.c	/^static void find_end_of_word(pos_T *pos)$/
+find_endpos	syntax.c	/^find_endpos ($/
+find_extra	tag.c	/^static int find_extra(char_u **pp)$/
+find_file_in_path	file_search.c	/^find_file_in_path ($/
+find_file_in_path_option	file_search.c	/^find_file_in_path_option ($/
+find_first_blank	search.c	/^static void find_first_blank(pos_T *posp)$/
+find_func	eval.c	/^static ufunc_T *find_func(char_u *name)$/
+find_help_tags	ex_cmds.c	/^int find_help_tags(char_u *arg, int *num_matches, /
+find_ident_at_pos	normal.c	/^size_t find_ident_at_pos(win_T *wp, linenr_T lnum,/
+find_ident_under_cursor	normal.c	/^size_t find_ident_under_cursor(char_u **string, in/
+find_key_option	option.c	/^static int find_key_option(char_u *arg)$/
+find_line_comment	indent_c.c	/^static pos_T *find_line_comment(void)   \/* XXX */
+find_locales	ex_cmds2.c	/^static char_u **find_locales(void)$/
+find_match_char	indent_c.c	/^static pos_T * find_match_char(char_u c, int ind_m/
+find_match_paren	indent_c.c	/^static pos_T *find_match_paren(int ind_maxparen)$/
+find_match_text	regexp_nfa.c	/^static long find_match_text(colnr_T startcol, int /
+find_mps_values	option.c	/^void find_mps_values(int *initc, int *findc, int */
+find_name_end	eval.c	/^static char_u *find_name_end(char_u *arg, char_u */
+find_next_quote	search.c	/^find_next_quote ($/
+find_option_end	eval.c	/^static char_u *find_option_end(char_u **arg, int */
+find_pattern_in_path	search.c	/^find_pattern_in_path ($/
+find_prev_quote	search.c	/^find_prev_quote ($/
+find_special_key	keymap.c	/^find_special_key ($/
+find_special_key_in_table	keymap.c	/^int find_special_key_in_table(int c)$/
+find_start_brace	indent_c.c	/^static pos_T *find_start_brace(void)$/
+find_start_comment	indent_c.c	/^find_start_comment (  \/* XXX *\/$/
+find_start_of_word	normal.c	/^static void find_start_of_word(pos_T *pos)$/
+find_tags	tag.c	/^find_tags ($/
+find_ucmd	ex_docmd.c	/^find_ucmd ($/
+find_var	eval.c	/^static dictitem_T *find_var(char_u *name, hashtab_/
+find_var_ht	eval.c	/^static hashtab_T *find_var_ht(char_u *name, char_u/
+find_var_in_ht	eval.c	/^static dictitem_T *find_var_in_ht(hashtab_T *ht, i/
+find_viminfo_parameter	option.c	/^char_u *find_viminfo_parameter(int type)$/
+find_win_for_buf	buffer.c	/^bool find_win_for_buf(buf_T *buf, win_T **wp, tabp/
+find_wininfo	buffer.c	/^static wininfo_T *find_wininfo(buf_T *buf, int ski/
+find_wl_entry	fold.c	/^int find_wl_entry(win_T *win, linenr_T lnum)$/
+find_word	spell.c	/^static void find_word(matchinf_T *mip, int mode)$/
+findmatch	search.c	/^pos_T *findmatch(oparg_T *oap, int initc)$/
+findmatchlimit	search.c	/^pos_T *findmatchlimit(oparg_T *oap, int initc, int/
+findoption	option.c	/^static int findoption(char_u *arg)$/
+findpar	search.c	/^findpar ($/
+findsent	search.c	/^int findsent(int dir, long count)$/
+findsent_forward	search.c	/^findsent_forward ($/
+findswapname	memline.c	/^findswapname ($/
+finish_exception	ex_eval.c	/^static void finish_exception(except_T *excp)$/
+first_submatch	search.c	/^static int first_submatch(regmmatch_T *rp)$/
+fix_input_buffer	getchar.c	/^fix_input_buffer ($/
+fkmap	farsi.c	/^int fkmap(int c)$/
+flag	syntax.c	/^  static struct flag {$/
+fline_T	fold.c	/^} fline_T;$/
+flush_buffers	getchar.c	/^void flush_buffers(int flush_typeahead)$/
+flush_cursor_update	ui.c	/^static void flush_cursor_update(void)$/
+fm_getname	mark.c	/^char_u *fm_getname(fmark_T *fmark, int lead_len)$/
+fmarks_check_names	mark.c	/^void fmarks_check_names(buf_T *buf)$/
+fmarks_check_one	mark.c	/^static void fmarks_check_one(xfmark_T *fm, char_u /
+fmtpattern	quickfix.c	/^  static struct fmtpattern {$/
+fname2fnum	mark.c	/^static void fname2fnum(xfmark_T *fm)$/
+fname_expand	buffer.c	/^void fname_expand(buf_T *buf, char_u **ffname, cha/
+fname_match	buffer.c	/^static char_u *fname_match(regmatch_T *rmp, char_u/
+fnamecmp_ino	memline.c	/^fnamecmp_ino ($/
+foldAddMarker	fold.c	/^static void foldAddMarker(linenr_T lnum, char_u *m/
+foldAdjustCursor	fold.c	/^void foldAdjustCursor(void)$/
+foldAdjustVisual	fold.c	/^void foldAdjustVisual(void)$/
+foldCheckClose	fold.c	/^void foldCheckClose(void)$/
+foldCreate	fold.c	/^void foldCreate(linenr_T start, linenr_T end)$/
+foldCreateMarkers	fold.c	/^static void foldCreateMarkers(linenr_T start, line/
+foldDelMarker	fold.c	/^static void foldDelMarker(linenr_T lnum, char_u *m/
+foldFind	fold.c	/^static int foldFind(garray_T *gap, linenr_T lnum, /
+foldInitWin	fold.c	/^void foldInitWin(win_T *new_win)$/
+foldInsert	fold.c	/^static void foldInsert(garray_T *gap, int i)$/
+foldLevel	fold.c	/^int foldLevel(linenr_T lnum)$/
+foldLevelWin	fold.c	/^static int foldLevelWin(win_T *wp, linenr_T lnum)$/
+foldManualAllowed	fold.c	/^int foldManualAllowed(int create)$/
+foldMarkAdjust	fold.c	/^void foldMarkAdjust(win_T *wp, linenr_T line1, lin/
+foldMarkAdjustRecurse	fold.c	/^static void foldMarkAdjustRecurse(garray_T *gap, l/
+foldMerge	fold.c	/^static void foldMerge(fold_T *fp1, garray_T *gap, /
+foldMoveTo	fold.c	/^foldMoveTo ($/
+foldOpenCursor	fold.c	/^void foldOpenCursor(void)$/
+foldOpenNested	fold.c	/^static void foldOpenNested(fold_T *fpr)$/
+foldRemove	fold.c	/^static void foldRemove(garray_T *gap, linenr_T top/
+foldSplit	fold.c	/^static void foldSplit(garray_T *gap, int i, linenr/
+foldUpdate	fold.c	/^void foldUpdate(win_T *wp, linenr_T top, linenr_T /
+foldUpdateAll	fold.c	/^void foldUpdateAll(win_T *win)$/
+foldUpdateIEMS	fold.c	/^static void foldUpdateIEMS(win_T *wp, linenr_T top/
+foldUpdateIEMSRecurse	fold.c	/^static linenr_T foldUpdateIEMSRecurse(garray_T *ga/
+fold_T	fold.c	/^} fold_T;$/
+fold_line	screen.c	/^static void fold_line(win_T *wp, long fold_count, /
+foldedCount	fold.c	/^long foldedCount(win_T *win, linenr_T lnum, foldin/
+foldlevelDiff	fold.c	/^static void foldlevelDiff(fline_T *flp)$/
+foldlevelExpr	fold.c	/^static void foldlevelExpr(fline_T *flp)$/
+foldlevelIndent	fold.c	/^static void foldlevelIndent(fline_T *flp)$/
+foldlevelMarker	fold.c	/^static void foldlevelMarker(fline_T *flp)$/
+foldlevelSyntax	fold.c	/^static void foldlevelSyntax(fline_T *flp)$/
+foldmethodIsDiff	fold.c	/^int foldmethodIsDiff(win_T *wp)$/
+foldmethodIsExpr	fold.c	/^int foldmethodIsExpr(win_T *wp)$/
+foldmethodIsIndent	fold.c	/^int foldmethodIsIndent(win_T *wp)$/
+foldmethodIsManual	fold.c	/^int foldmethodIsManual(win_T *wp)$/
+foldmethodIsMarker	fold.c	/^int foldmethodIsMarker(win_T *wp)$/
+foldmethodIsSyntax	fold.c	/^int foldmethodIsSyntax(win_T *wp)$/
+foldtext_cleanup	fold.c	/^void foldtext_cleanup(char_u *str)$/
+fopen_noinh_readbin	ex_cmds2.c	/^static FILE *fopen_noinh_readbin(char *filename)$/
+for	eval.c	/^  for (;; ) {$/
+forinfo_T	eval.c	/^} forinfo_T;$/
+forward_slash	fileio.c	/^void forward_slash(char_u *fname)$/
+found_tagfile_cb	tag.c	/^static void found_tagfile_cb(char_u *fname, void */
+frag	regexp_nfa.c	/^static Frag_T frag(nfa_state_T *start, Ptrlist *ou/
+free_all_autocmds	fileio.c	/^void free_all_autocmds(void)$/
+free_all_functions	eval.c	/^void free_all_functions(void)$/
+free_all_marks	mark.c	/^void free_all_marks(void)$/
+free_all_mem	memory.c	/^void free_all_mem(void)$/
+free_all_options	option.c	/^void free_all_options(void)$/
+free_buf_options	buffer.c	/^void free_buf_options(buf_T *buf, int free_p_ff)$/
+free_buff	getchar.c	/^void free_buff(buffheader_T *buf)$/
+free_buffer	buffer.c	/^static void free_buffer(buf_T *buf)$/
+free_findfile	file_search.c	/^void free_findfile(void)$/
+free_global_msglist	ex_eval.c	/^void free_global_msglist(void)$/
+free_highlight	syntax.c	/^void free_highlight(void)$/
+free_jumplist	mark.c	/^void free_jumplist(win_T *wp)$/
+free_locales	ex_cmds2.c	/^void free_locales(void)$/
+free_menu	menu.c	/^static void free_menu(vimmenu_T **menup)$/
+free_menu_string	menu.c	/^static void free_menu_string(vimmenu_T *menu, int /
+free_msglist	ex_eval.c	/^static void free_msglist(struct msglist *l)$/
+free_old_sub	ex_cmds.c	/^void free_old_sub(void)$/
+free_prev_shellcmd	ex_cmds.c	/^void free_prev_shellcmd(void)$/
+free_regexp_stuff	regexp.c	/^void free_regexp_stuff(void)$/
+free_screenlines	screen.c	/^void free_screenlines(void)$/
+free_scriptnames	ex_cmds2.c	/^void free_scriptnames()$/
+free_search_patterns	search.c	/^void free_search_patterns(void)$/
+free_signs	ex_cmds.c	/^void free_signs()$/
+free_string_option	option.c	/^void free_string_option(char_u *p)$/
+free_tag_stuff	tag.c	/^void free_tag_stuff(void)$/
+free_titles	buffer.c	/^void free_titles(void)$/
+free_tv	eval.c	/^void free_tv(typval_T *varp)$/
+free_typebuf	getchar.c	/^void free_typebuf(void)$/
+free_users	misc1.c	/^void free_users(void)$/
+freed	hashtab.c	/^\/\/\/ If "ht" is not freed (after calling this) t/
+fst	eval.c	/^static struct fst {$/
+func_breakpoint	eval.c	/^linenr_T *func_breakpoint(void *cookie)$/
+func_dbg_tick	eval.c	/^int *func_dbg_tick(void *cookie)$/
+func_free	eval.c	/^static void func_free(ufunc_T *fp)$/
+func_level	eval.c	/^int func_level(void *cookie)$/
+func_name	eval.c	/^char_u *func_name(void *cookie)$/
+func_ref	eval.c	/^void func_ref(char_u *name)$/
+func_unref	eval.c	/^void func_unref(char_u *name)$/
+funccall_S	eval.c	/^struct funccall_S {$/
+funccall_T	eval.c	/^typedef struct funccall_S funccall_T;$/
+funcdict_T	eval.c	/^} funcdict_T;$/
+function_exists	eval.c	/^static int function_exists(char_u *name)$/
+fwd_word	search.c	/^fwd_word ($/
+ga_append	garray.c	/^void ga_append(garray_T *gap, char c)$/
+ga_clear	garray.c	/^void ga_clear(garray_T *gap)$/
+ga_clear_strings	garray.c	/^void ga_clear_strings(garray_T *gap)$/
+ga_concat	garray.c	/^void ga_concat(garray_T *gap, const char_u *restri/
+ga_concat_strings	garray.c	/^char_u* ga_concat_strings(const garray_T *gap) FUN/
+ga_concat_strings_sep	garray.c	/^char_u *ga_concat_strings_sep(const garray_T *gap,/
+ga_grow	garray.c	/^void ga_grow(garray_T *gap, int n)$/
+ga_init	garray.c	/^void ga_init(garray_T *gap, int itemsize, int grow/
+ga_remove_duplicate_strings	garray.c	/^void ga_remove_duplicate_strings(garray_T *gap)$/
+ga_set_growsize	garray.c	/^void ga_set_growsize(garray_T *gap, int growsize)$/
+gchar_pos	misc1.c	/^int gchar_pos(pos_T *pos)$/
+get2c	misc2.c	/^int get2c(FILE *fd)$/
+get3c	misc2.c	/^int get3c(FILE *fd)$/
+get4c	misc2.c	/^int get4c(FILE *fd)$/
+get8ctime	misc2.c	/^time_t get8ctime(FILE *fd)$/
+getDeepestNesting	fold.c	/^int getDeepestNesting(void)$/
+getDeepestNestingRecurse	fold.c	/^static int getDeepestNestingRecurse(garray_T *gap)/
+get_arglist	ex_cmds2.c	/^void get_arglist(garray_T *gap, char_u *str)$/
+get_arglist_exp	ex_cmds2.c	/^int get_arglist_exp(char_u *str, int *fcountp, cha/
+get_attr_entry	syntax.c	/^int get_attr_entry(attrentry_T *aep)$/
+get_baseclass_amount	indent_c.c	/^static int get_baseclass_amount(int col)$/
+get_bkc_value	option.c	/^unsigned int get_bkc_value(buf_T *buf)$/
+get_buffcont	getchar.c	/^static char_u *get_buffcont(buffheader_T *buffer,$/
+get_char_class	regexp.c	/^static int get_char_class(char_u **pp)$/
+get_clipboard	ops.c	/^static bool get_clipboard(int name, yankreg_T **ta/
+get_cmd_output	misc1.c	/^get_cmd_output ($/
+get_coll_element	regexp.c	/^static int get_coll_element(char_u **pp)$/
+get_cpo_flags	regexp.c	/^static void get_cpo_flags(void)$/
+get_cscope_name	if_cscope.c	/^char_u *get_cscope_name(expand_T *xp, int idx)$/
+get_emsg_lnum	message.c	/^static char_u *get_emsg_lnum(void)$/
+get_emsg_source	message.c	/^static char_u *get_emsg_source(void)$/
+get_encoding_default	option.c	/^char_u *get_encoding_default(void)$/
+get_end_emsg	ex_eval.c	/^static char_u *get_end_emsg(struct condstack *csta/
+get_env_len	eval.c	/^static int get_env_len(char_u **arg)$/
+get_equalprg	option.c	/^char_u *get_equalprg(void)$/
+get_equi_class	regexp.c	/^static int get_equi_class(char_u **pp)$/
+get_exception_string	ex_eval.c	/^char_u *get_exception_string(void *value, int type/
+get_expr_line	ops.c	/^char_u *get_expr_line(void)$/
+get_expr_line_src	ops.c	/^char_u *get_expr_line_src(void)$/
+get_expr_register	ops.c	/^int get_expr_register(void)$/
+get_extra_op_char	ops.c	/^int get_extra_op_char(int optype)$/
+get_file_in_dir	memline.c	/^get_file_in_dir ($/
+get_fileformat	misc2.c	/^int get_fileformat(buf_T *buf)$/
+get_fileformat_force	misc2.c	/^get_fileformat_force ($/
+get_fio_flags	fileio.c	/^static int get_fio_flags(char_u *ptr)$/
+get_foldtext	fold.c	/^char_u *get_foldtext(win_T *wp, linenr_T lnum, lin/
+get_group_name	syntax.c	/^get_group_name ($/
+get_highlight_default	option.c	/^char_u *get_highlight_default(void)$/
+get_highlight_name	syntax.c	/^char_u *get_highlight_name(expand_T *xp, int idx)$/
+get_iconv_import_func	mbyte.c	/^static void * get_iconv_import_func(HINSTANCE hIns/
+get_id_len	eval.c	/^static int get_id_len(char_u **arg)$/
+get_id_list	syntax.c	/^get_id_list ($/
+get_indent_nolabel	indent_c.c	/^get_indent_nolabel (     \/* XXX *\/$/
+get_inserted	getchar.c	/^char_u *get_inserted(void)$/
+get_keymap_str	screen.c	/^get_keymap_str ($/
+get_keystroke	misc1.c	/^int get_keystroke(void)$/
+get_lang_arg	ex_cmds2.c	/^char_u *get_lang_arg(expand_T *xp, int idx)$/
+get_last_leader_offset	misc1.c	/^int get_last_leader_offset(char_u *line, char_u **/
+get_leader_len	misc1.c	/^int get_leader_len(char_u *line, char_u **flags, i/
+get_literal	edit.c	/^int get_literal(void)$/
+get_locale_val	ex_cmds2.c	/^static char *get_locale_val(int what)$/
+get_locales	ex_cmds2.c	/^char_u *get_locales(expand_T *xp, int idx)$/
+get_loop_line	ex_docmd.c	/^static char_u *get_loop_line(int c, void *cookie, /
+get_menu_cmd_modes	menu.c	/^get_menu_cmd_modes ($/
+get_menu_name	menu.c	/^char_u *get_menu_name(expand_T *xp, int idx)$/
+get_menu_names	menu.c	/^char_u *get_menu_names(expand_T *xp, int idx)$/
+get_mess_env	ex_cmds2.c	/^static char_u *get_mess_env(void)$/
+get_mess_lang	ex_cmds2.c	/^char *get_mess_lang(void)$/
+get_mouse_button	keymap.c	/^int get_mouse_button(int code, bool *is_click, boo/
+get_mouse_class	normal.c	/^static int get_mouse_class(char_u *p)$/
+get_name_len	eval.c	/^static int get_name_len(char_u **arg, char_u **ali/
+get_number	misc1.c	/^get_number ($/
+get_one_sourceline	ex_cmds2.c	/^static char_u *get_one_sourceline(struct source_co/
+get_op_char	ops.c	/^int get_op_char(int optype)$/
+get_op_type	ops.c	/^int get_op_type(int char1, int char2)$/
+get_option_value	option.c	/^get_option_value ($/
+get_option_value_strict	option.c	/^int get_option_value_strict(char *name,$/
+get_profile_name	ex_cmds2.c	/^char_u *get_profile_name(expand_T *xp, int idx)$/
+get_real_state	misc2.c	/^int get_real_state(void)$/
+get_recorded	getchar.c	/^char_u *get_recorded(void)$/
+get_reg_contents	ops.c	/^void *get_reg_contents(int regname, int flags)$/
+get_reg_wrap_one_line	ops.c	/^static void *get_reg_wrap_one_line(char_u *s, int /
+get_register_name	ops.c	/^int get_register_name(int num)$/
+get_rel_pos	buffer.c	/^void get_rel_pos(win_T *wp, char_u *buf, int bufle/
+get_scriptname	ex_cmds2.c	/^char_u *get_scriptname(scid_T id)$/
+get_scroll_overlap	move.c	/^static void get_scroll_overlap(lineoff_T *lp, int /
+get_search_arg	eval.c	/^static int get_search_arg(typval_T *varp, int *fla/
+get_search_pat	search.c	/^char_u *get_search_pat(void)$/
+get_sign_name	ex_cmds.c	/^char_u * get_sign_name(expand_T *xp, int idx)$/
+get_special_key_code	keymap.c	/^int get_special_key_code(char_u *name)$/
+get_special_key_name	keymap.c	/^char_u *get_special_key_name(int c, int modifiers)/
+get_spellword	eval.c	/^int get_spellword(list_T *list, char_u **pp)$/
+get_sts_value	option.c	/^int get_sts_value(void)$/
+get_sw_value	option.c	/^int get_sw_value(buf_T *buf)$/
+get_syn_options	syntax.c	/^get_syn_options ($/
+get_syn_pattern	syntax.c	/^static char_u *get_syn_pattern(char_u *arg, synpat/
+get_syntax_attr	syntax.c	/^get_syntax_attr ($/
+get_syntax_info	syntax.c	/^int get_syntax_info(int *seqnrp)$/
+get_syntax_name	syntax.c	/^char_u *get_syntax_name(expand_T *xp, int idx)$/
+get_syntime_arg	syntax.c	/^char_u *get_syntime_arg(expand_T *xp, int idx)$/
+get_tagfname	tag.c	/^get_tagfname ($/
+get_tags	tag.c	/^int get_tags(list_T *list, char_u *pat)$/
+get_trans_bufname	screen.c	/^void get_trans_bufname(buf_T *buf)$/
+get_tty_option	option.c	/^bool get_tty_option(char *name, char **value)$/
+get_tv_lnum	eval.c	/^static linenr_T get_tv_lnum(typval_T *argvars)$/
+get_tv_lnum_buf	eval.c	/^static linenr_T get_tv_lnum_buf(typval_T *argvars,/
+get_tv_number	eval.c	/^static long get_tv_number(typval_T *varp)$/
+get_tv_number_chk	eval.c	/^long get_tv_number_chk(typval_T *varp, int *denote/
+get_tv_string	eval.c	/^static char_u *get_tv_string(const typval_T *varp)/
+get_tv_string_buf	eval.c	/^static char_u *get_tv_string_buf(const typval_T *v/
+get_tv_string_buf_chk	eval.c	/^static char_u *get_tv_string_buf_chk(const typval_/
+get_tv_string_chk	eval.c	/^char_u *get_tv_string_chk(const typval_T *varp)$/
+get_undolevel	undo.c	/^static long get_undolevel(void)$/
+get_user_func_name	eval.c	/^char_u *get_user_func_name(expand_T *xp, int idx)$/
+get_users	misc1.c	/^char_u *get_users(expand_T *xp, int idx)$/
+get_var_tv	eval.c	/^get_var_tv ($/
+get_var_value	eval.c	/^char_u *get_var_value(char_u *name)$/
+get_vim_var_dict	eval.c	/^dict_T *get_vim_var_dict(int idx) FUNC_ATTR_PURE F/
+get_vim_var_list	eval.c	/^list_T *get_vim_var_list(int idx) FUNC_ATTR_PURE F/
+get_vim_var_nr	eval.c	/^long get_vim_var_nr(int idx) FUNC_ATTR_PURE$/
+get_vim_var_str	eval.c	/^char_u *get_vim_var_str(int idx) FUNC_ATTR_PURE FU/
+get_viminfo_parameter	option.c	/^int get_viminfo_parameter(int type)$/
+get_visual_text	normal.c	/^get_visual_text ($/
+get_wincmd_addr_type	ex_docmd.c	/^static void get_wincmd_addr_type(char_u *arg, exar/
+get_winopts	buffer.c	/^void get_winopts(buf_T *buf)$/
+getaltfname	buffer.c	/^getaltfname ($/
+getchr	regexp.c	/^static int getchr(void)$/
+getcmdline	ex_getln.c	/^getcmdline ($/
+getcmdline_prompt	ex_getln.c	/^getcmdline_prompt ($/
+getdecchrs	regexp.c	/^static int getdecchrs(void)$/
+getexline	ex_getln.c	/^getexline ($/
+getexmodeline	ex_getln.c	/^getexmodeline ($/
+getfile	ex_cmds.c	/^int getfile(int fnum, char_u *ffname, char_u *sfna/
+gethexchrs	regexp.c	/^static int gethexchrs(int maxinputlen)$/
+getline_cookie	ex_docmd.c	/^void * getline_cookie(LineGetter fgetline,$/
+getline_equal	ex_docmd.c	/^int getline_equal(LineGetter fgetline,$/
+getmark	mark.c	/^pos_T *getmark(int c, int changefile)$/
+getmark_buf	mark.c	/^pos_T *getmark_buf(buf_T *buf, int c, int changefi/
+getmark_buf_fnum	mark.c	/^pos_T *getmark_buf_fnum(buf_T *buf, int c, int cha/
+getnextmark	mark.c	/^getnextmark ($/
+getoctchrs	regexp.c	/^static int getoctchrs(void)$/
+getsourceline	ex_cmds2.c	/^char_u *getsourceline(int c, void *cookie, int ind/
+getviscol	cursor.c	/^int getviscol(void)$/
+getviscol2	cursor.c	/^int getviscol2(colnr_T col, colnr_T coladd)$/
+give_warning	message.c	/^void give_warning(char_u *message, bool hl) FUNC_A/
+global_exe	ex_cmds.c	/^void global_exe(char_u *cmd)$/
+gotchars	getchar.c	/^static void gotchars(char_u *chars, int len)$/
+goto_byte	memline.c	/^void goto_byte(long cnt)$/
+goto_im	misc1.c	/^int goto_im(void)$/
+gui_find_menu	menu.c	/^vimmenu_T *gui_find_menu(char_u *path_name)$/
+half_shape	arabic.c	/^static int half_shape(int c)$/
+halfpage	move.c	/^void halfpage(bool flag, linenr_T Prenum)$/
+handle_subscript	eval.c	/^handle_subscript ($/
+handle_x_keys	keymap.c	/^int handle_x_keys(int key)$/
+hardcopy_line	hardcopy.c	/^static colnr_T hardcopy_line(prt_settings_T *psett/
+hasAnyFolding	fold.c	/^int hasAnyFolding(win_T *win)$/
+hasFolding	fold.c	/^int hasFolding(linenr_T lnum, linenr_T *firstp, li/
+hasFoldingWin	fold.c	/^hasFoldingWin ($/
+has_cmdundefined	fileio.c	/^int has_cmdundefined(void)$/
+has_cursorhold	fileio.c	/^int has_cursorhold(void)$/
+has_cursormoved	fileio.c	/^int has_cursormoved(void)$/
+has_cursormovedI	fileio.c	/^int has_cursormovedI(void)$/
+has_format_option	option.c	/^int has_format_option(int x)$/
+has_insertcharpre	fileio.c	/^int has_insertcharpre(void)$/
+has_loop_cmd	ex_eval.c	/^int has_loop_cmd(char_u *p)$/
+has_non_ascii	strings.c	/^bool has_non_ascii(const char_u *s)$/
+has_patch	version.c	/^int has_patch(int n)$/
+has_profiling	ex_cmds2.c	/^has_profiling ($/
+has_state_with_pos	regexp_nfa.c	/^has_state_with_pos ($/
+has_textchanged	fileio.c	/^int has_textchanged(void)$/
+has_textchangedI	fileio.c	/^int has_textchangedI(void)$/
+hash_add	hashtab.c	/^int hash_add(hashtab_T *ht, char_u *key)$/
+hash_clear_all	hashtab.c	/^void hash_clear_all(hashtab_T *ht, unsigned int of/
+hash_debug_results	hashtab.c	/^void hash_debug_results(void)$/
+hash_find	hashtab.c	/^hashitem_T* hash_find(hashtab_T *ht, char_u *key)$/
+hash_init	hashtab.c	/^void hash_init(hashtab_T *ht)$/
+hash_lookup	hashtab.c	/^hashitem_T* hash_lookup(hashtab_T *ht, char_u *key/
+hash_remove	hashtab.c	/^void hash_remove(hashtab_T *ht, hashitem_T *hi)$/
+have_dollars	os_unix.c	/^static int have_dollars(int num, char_u **file)$/
+have_wildcard	os_unix.c	/^static int have_wildcard(int num, char_u **file)$/
+help_compare	ex_cmds.c	/^static int help_compare(const void *s1, const void/
+help_heuristic	ex_cmds.c	/^help_heuristic ($/
+highlight_changed	syntax.c	/^int highlight_changed(void)$/
+highlight_clear	syntax.c	/^static void highlight_clear(int idx)$/
+highlight_color	syntax.c	/^highlight_color ($/
+highlight_exists	syntax.c	/^int highlight_exists(char_u *name)$/
+highlight_has_attr	syntax.c	/^highlight_has_attr ($/
+highlight_list	syntax.c	/^static void highlight_list(void)$/
+highlight_list_two	syntax.c	/^static void highlight_list_two(int cnt, int attr)$/
+histentry_T	ex_getln.c	/^} histentry_T;$/
+hit_return_msg	message.c	/^static void hit_return_msg(void)$/
+hl_group	syntax.c	/^struct hl_group {$/
+hl_has_settings	syntax.c	/^static int hl_has_settings(int idx, int check_link/
+iconv_enabled	mbyte.c	/^bool iconv_enabled(bool verbose)$/
+iconv_end	mbyte.c	/^void iconv_end(void)$/
+iconv_string	mbyte.c	/^static char_u * iconv_string(vimconv_T *vcp, char_/
+idopt_T	option.c	/^} idopt_T;$/
+if	eval.c	/^  if (tv1->v_type == VAR_STRING) {$/
+ignorecase	search.c	/^int ignorecase(char_u *pat)$/
+illegal_char	option.c	/^static char_u *illegal_char(char_u *errbuf, int c)/
+in_html_tag	search.c	/^static int in_html_tag(int end_tag)$/
+in_id_list	syntax.c	/^in_id_list ($/
+inc	misc2.c	/^int inc(pos_T *lp)$/
+inc_msg_scrolled	message.c	/^static void inc_msg_scrolled(void)$/
+inchar	getchar.c	/^inchar ($/
+incl	misc2.c	/^int incl(pos_T *lp)$/
+ind_find_start_comment	indent_c.c	/^static pos_T *ind_find_start_comment(void)$/
+init_chartab	charset.c	/^int init_chartab(void)$/
+init_class_tab	regexp.c	/^static void init_class_tab(void)$/
+init_locales	ex_cmds2.c	/^static void init_locales(void)$/
+init_normal_cmds	normal.c	/^void init_normal_cmds(void)$/
+init_search_hl	screen.c	/^static void init_search_hl(win_T *wp)$/
+init_spellfile	spell.c	/^static void init_spellfile(void)$/
+init_syn_patterns	syntax.c	/^static void init_syn_patterns(void)$/
+init_tv	eval.c	/^static void init_tv(typval_T *varp)$/
+init_typebuf	getchar.c	/^static void init_typebuf(void)$/
+init_users	misc1.c	/^static void init_users(void)$/
+init_var_dict	eval.c	/^void init_var_dict(dict_T *dict, dictitem_T *dict_/
+init_yank	ops.c	/^void init_yank(void)$/
+initchr	regexp.c	/^static void initchr(char_u *str)$/
+inmacro	search.c	/^static int inmacro(char_u *opt, char_u *s)$/
+ins_bytes	misc1.c	/^void ins_bytes(char_u *p)$/
+ins_bytes_len	misc1.c	/^void ins_bytes_len(char_u *p, int len)$/
+ins_char	misc1.c	/^void ins_char(int c)$/
+ins_char_bytes	misc1.c	/^void ins_char_bytes(char_u *buf, int charlen)$/
+ins_char_typebuf	getchar.c	/^void ins_char_typebuf(int c)$/
+ins_compl_check_keys	edit.c	/^void ins_compl_check_keys(int frequency)$/
+ins_compl_key2count	edit.c	/^static int ins_compl_key2count(int c)$/
+ins_compl_key2dir	edit.c	/^static int ins_compl_key2dir(int c)$/
+ins_compl_pum_key	edit.c	/^static int ins_compl_pum_key(int c)$/
+ins_compl_use_match	edit.c	/^static int ins_compl_use_match(int c)$/
+ins_complete	edit.c	/^static int ins_complete(int c)$/
+ins_str	misc1.c	/^void ins_str(char_u *s)$/
+ins_typebuf	getchar.c	/^int ins_typebuf(char_u *str, int noremap, int offs/
+insecure_flag	option.c	/^static uint32_t *insecure_flag(int opt_idx, int op/
+insert_sign	buffer.c	/^static void insert_sign($/
+insert_special	edit.c	/^insert_special ($/
+insertchar	edit.c	/^insertchar ($/
+int_cmp	option.c	/^static int int_cmp(const void *a, const void *b)$/
+intable	mbyte.c	/^static bool intable(const struct interval *table, /
+internal_format	edit.c	/^internal_format ($/
+interval	mbyte.c	/^struct interval {$/
+invalidate_botline	move.c	/^void invalidate_botline(void)$/
+invalidate_botline_win	move.c	/^void invalidate_botline_win(win_T *wp)$/
+invalidate_current_state	syntax.c	/^static void invalidate_current_state(void)$/
+is_Magic	regexp.c	/^#define is_Magic(x)     ((x) < 0)$/
+is_dev_fd_file	fileio.c	/^static int is_dev_fd_file(char_u *fname)$/
+is_mouse_key	misc1.c	/^int is_mouse_key(int c)$/
+is_one_char	search.c	/^static int is_one_char(char_u *pattern, bool move)/
+is_tty_option	option.c	/^bool is_tty_option(char *name)$/
+item_compare2	eval.c	/^static int item_compare2(const void *s1, const voi/
+item_compare2_keeping_zero	eval.c	/^static int item_compare2_keeping_zero(const void */
+item_compare2_not_keeping_zero	eval.c	/^static int item_compare2_not_keeping_zero(const vo/
+item_compare_keeping_zero	eval.c	/^static int item_compare_keeping_zero(const void *s/
+item_compare_not_keeping_zero	eval.c	/^static int item_compare_not_keeping_zero(const voi/
+item_copy	eval.c	/^static int item_copy(typval_T *from, typval_T *to,/
+join_T	eval.c	/^} join_T;$/
+jumpto_tag	tag.c	/^jumpto_tag ($/
+key_name_entry	keymap.c	/^static struct key_name_entry {$/
+langmap_adjust_mb	option.c	/^int langmap_adjust_mb(int c)$/
+langmap_entry_T	option.c	/^} langmap_entry_T;$/
+langmap_init	option.c	/^static void langmap_init(void)$/
+langmap_set	option.c	/^static void langmap_set(void)$/
+langmap_set_entry	option.c	/^static void langmap_set_entry(int from, int to)$/
+langp_T	spell.c	/^} langp_T;$/
+last_pat_prog	search.c	/^void last_pat_prog(regmmatch_T *regmatch)$/
+last_search_pat	search.c	/^char_u *last_search_pat(void)$/
+latin_char2bytes	mbyte.c	/^int latin_char2bytes(int c, char_u *buf)$/
+latin_char2cells	mbyte.c	/^int latin_char2cells(int c)$/
+latin_char2len	mbyte.c	/^int latin_char2len(int c)$/
+latin_head_off	mbyte.c	/^int latin_head_off(const char_u *base, const char_/
+latin_off2cells	mbyte.c	/^int latin_off2cells(unsigned off, unsigned max_off/
+latin_ptr2cells	mbyte.c	/^int latin_ptr2cells(const char_u *p)$/
+latin_ptr2cells_len	mbyte.c	/^int latin_ptr2cells_len(const char_u *p, int size)/
+latin_ptr2char	mbyte.c	/^int latin_ptr2char(const char_u *p)$/
+latin_ptr2len	mbyte.c	/^int latin_ptr2len(const char_u *p)$/
+latin_ptr2len_len	mbyte.c	/^int latin_ptr2len_len(const char_u *p, int size)$/
+leave_cleanup	ex_eval.c	/^void leave_cleanup(cleanup_T *csp)$/
+limit_pos	syntax.c	/^static void limit_pos(lpos_T *pos, lpos_T *limit)$/
+limit_pos_zero	syntax.c	/^static void limit_pos_zero(lpos_T *pos, lpos_T *li/
+limitscore_T	spell.c	/^} limitscore_T;$/
+lineFolded	fold.c	/^int lineFolded(win_T *win, linenr_T lnum)$/
+line_breakcheck	misc1.c	/^void line_breakcheck(void)$/
+line_count_info	ops.c	/^static long line_count_info(char_u *line, long *wc/
+lineclear	screen.c	/^static void lineclear(unsigned off, int width)$/
+linecopy	screen.c	/^static void linecopy(int to, int from, win_T *wp)$/
+linelen	ex_cmds.c	/^static int linelen(int *has_tab)$/
+lineoff_T	move.c	/^} lineoff_T;$/
+linepos	regexp_nfa.c	/^    struct linepos {$/
+lines	ops.c	/^\/\/ Join 'count' lines (minimal 2) at cursor posi/
+linewhite	search.c	/^int linewhite(linenr_T lnum)$/
+list1	regexp_nfa.c	/^static Ptrlist *list1(nfa_state_T **outp)$/
+list2fpos	eval.c	/^static int list2fpos(typval_T *arg, pos_T *posp, i/
+list_features	version.c	/^static void list_features(void)$/
+list_func_head	eval.c	/^static void list_func_head(ufunc_T *fp, int indent/
+list_one_var	eval.c	/^static void list_one_var(dictitem_T *v, char_u *pr/
+list_one_var_a	eval.c	/^list_one_var_a ($/
+load_colors	syntax.c	/^int load_colors(char_u *name)$/
+load_current_state	syntax.c	/^static void load_current_state(synstate_T *from)$/
+log_subexpr	regexp_nfa.c	/^static void log_subexpr(regsub_T *sub)$/
+log_subsexpr	regexp_nfa.c	/^static void log_subsexpr(regsubs_T *subs)$/
+long_to_char	memline.c	/^static void long_to_char(long n, char_u *s)$/
+loop_cookie	ex_docmd.c	/^struct loop_cookie {$/
+lrF_sub	farsi.c	/^char_u* lrF_sub(char_u *ibuf)$/
+lrFswap	farsi.c	/^char_u* lrFswap(char_u *cmdbuf, int len)$/
+lrswap	farsi.c	/^char_u* lrswap(char_u *ibuf)$/
+lrswapbuf	farsi.c	/^static void lrswapbuf(char_u *buf, int len)$/
+lval_T	eval.c	/^} lval_T;$/
+make_bom	fileio.c	/^static int make_bom(char_u *buf, char_u *name)$/
+make_expanded_name	eval.c	/^static char_u *make_expanded_name(char_u *in_start/
+make_extmatch	regexp.c	/^static reg_extmatch_T *make_extmatch(void)$/
+make_filter_cmd	ex_cmds.c	/^char_u *make_filter_cmd(char_u *cmd, char_u *itmp,/
+make_percent_swname	memline.c	/^static char *make_percent_swname(const char *dir, /
+makefoldset	option.c	/^int makefoldset(FILE *fd)$/
+makeset	option.c	/^int makeset(FILE *fd, int opt_flags, int local_onl/
+makeswapname	memline.c	/^char_u *makeswapname(char_u *fname, char_u *ffname/
+maketitle	buffer.c	/^void maketitle(void)$/
+malloc	memory.c	/^\/\/\/ malloc() wrapper$/
+mark_adjust	mark.c	/^void mark_adjust(linenr_T line1, linenr_T line2, l/
+mark_col_adjust	mark.c	/^void mark_col_adjust(linenr_T lnum, colnr_T mincol/
+mark_line	mark.c	/^static char_u *mark_line(pos_T *mp, int lead_len)$/
+match_backref	regexp_nfa.c	/^match_backref ($/
+match_follows	regexp_nfa.c	/^static int match_follows(nfa_state_T *startstate, /
+match_found	tag.c	/^  struct match_found {$/
+match_keyword	syntax.c	/^static keyentry_T *match_keyword(char_u *keyword, /
+match_user	misc1.c	/^int match_user(char_u *name)$/
+match_with_backref	regexp.c	/^static int match_with_backref(linenr_T start_lnum,/
+match_zref	regexp_nfa.c	/^match_zref ($/
+max_topfill	move.c	/^static void max_topfill(void)$/
+may_clear_sb_text	message.c	/^void may_clear_sb_text(void)$/
+may_start_select	normal.c	/^void may_start_select(int c)$/
+may_sync_undo	getchar.c	/^static void may_sync_undo(void)$/
+mb_adjust_cursor	mbyte.c	/^void mb_adjust_cursor(void)$/
+mb_adjust_opend	ops.c	/^static void mb_adjust_opend(oparg_T *oap)$/
+mb_adjustpos	mbyte.c	/^void mb_adjustpos(buf_T *buf, pos_T *lp)$/
+mb_charlen	mbyte.c	/^int mb_charlen(char_u *str)$/
+mb_charlen_len	mbyte.c	/^int mb_charlen_len(char_u *str, int len)$/
+mb_copy_char	mbyte.c	/^void mb_copy_char(const char_u **fp, char_u **tp)$/
+mb_cptr2char_adv	mbyte.c	/^int mb_cptr2char_adv(char_u **pp)$/
+mb_decompose	regexp.c	/^static void mb_decompose(int c, int *c1, int *c2, /
+mb_fix_col	mbyte.c	/^int mb_fix_col(int col, int row)$/
+mb_get_class	mbyte.c	/^int mb_get_class(const char_u *p)$/
+mb_get_class_buf	mbyte.c	/^int mb_get_class_buf(const char_u *p, buf_T *buf)$/
+mb_init	mbyte.c	/^char_u * mb_init(void)$/
+mb_lefthalve	mbyte.c	/^bool mb_lefthalve(int row, int col)$/
+mb_off_next	mbyte.c	/^int mb_off_next(char_u *base, char_u *p)$/
+mb_prevptr	mbyte.c	/^char_u * mb_prevptr($/
+mb_ptr2char_adv	mbyte.c	/^int mb_ptr2char_adv(char_u **pp)$/
+mb_stricmp	mbyte.c	/^int mb_stricmp(char_u *s1, char_u *s2)$/
+mb_string2cells	mbyte.c	/^size_t mb_string2cells(const char_u *str)$/
+mb_strnicmp	mbyte.c	/^int mb_strnicmp(char_u *s1, char_u *s2, size_t nn)/
+mb_tail_off	mbyte.c	/^int mb_tail_off(char_u *base, char_u *p)$/
+mb_unescape	mbyte.c	/^char_u * mb_unescape(char_u **pp)$/
+mch_copy_sec	os_unix.c	/^void mch_copy_sec(char_u *from_file, char_u *to_fi/
+mch_errmsg	message.c	/^void mch_errmsg(char *str)$/
+mch_exit	os_unix.c	/^void mch_exit(int r)$/
+mch_expand_wildcards	os_unix.c	/^int mch_expand_wildcards(int num_pat, char_u **pat/
+mch_free_acl	os_unix.c	/^void mch_free_acl(vim_acl_T aclent)$/
+mch_get_acl	os_unix.c	/^vim_acl_T mch_get_acl(char_u *fname)$/
+mch_msg	message.c	/^void mch_msg(char *str)$/
+mch_nodetype	os_unix.c	/^int mch_nodetype(char_u *name)$/
+mch_print_begin	hardcopy.c	/^int mch_print_begin(prt_settings_T *psettings)$/
+mch_print_begin_page	hardcopy.c	/^int mch_print_begin_page(char_u *str)$/
+mch_print_blank_page	hardcopy.c	/^int mch_print_blank_page(void)$/
+mch_print_cleanup	hardcopy.c	/^void mch_print_cleanup(void)$/
+mch_print_end	hardcopy.c	/^void mch_print_end(prt_settings_T *psettings)$/
+mch_print_end_page	hardcopy.c	/^int mch_print_end_page(void)$/
+mch_print_init	hardcopy.c	/^int mch_print_init(prt_settings_T *psettings, char/
+mch_print_set_bg	hardcopy.c	/^void mch_print_set_bg(uint32_t bgcol)$/
+mch_print_set_fg	hardcopy.c	/^void mch_print_set_fg(uint32_t fgcol)$/
+mch_print_set_font	hardcopy.c	/^void mch_print_set_font(int iBold, int iItalic, in/
+mch_print_start_line	hardcopy.c	/^void mch_print_start_line(int margin, int page_lin/
+mch_print_text_out	hardcopy.c	/^int mch_print_text_out(char_u *p, size_t len)$/
+mch_set_acl	os_unix.c	/^void mch_set_acl(char_u *fname, vim_acl_T aclent)$/
+memchrsub	memory.c	/^void memchrsub(void *data, char c, char x, size_t /
+memcnt	memory.c	/^size_t memcnt(const void *data, char c, size_t len/
+menu_is_hidden	menu.c	/^static int menu_is_hidden(char_u *name)$/
+menu_is_menubar	menu.c	/^int menu_is_menubar(char_u *name)$/
+menu_is_popup	menu.c	/^int menu_is_popup(char_u *name)$/
+menu_is_separator	menu.c	/^int menu_is_separator(char_u *name)$/
+menu_is_tearoff	menu.c	/^static int menu_is_tearoff(char_u *name)$/
+menu_is_toolbar	menu.c	/^int menu_is_toolbar(char_u *name)$/
+menu_nable_recurse	menu.c	/^static int menu_nable_recurse(vimmenu_T *menu, cha/
+menu_name_equal	menu.c	/^static int menu_name_equal(char_u *name, vimmenu_T/
+menu_name_skip	menu.c	/^char_u *menu_name_skip(char_u *name)$/
+menu_namecmp	menu.c	/^static int menu_namecmp(char_u *name, char_u *mnam/
+menu_skip_part	menu.c	/^static char_u *menu_skip_part(char_u *p)$/
+menu_text	menu.c	/^static char_u *menu_text(const char_u *str, int *m/
+menu_translate_tab_and_shift	menu.c	/^static char_u *menu_translate_tab_and_shift(char_u/
+menu_unescape_name	menu.c	/^static void menu_unescape_name(char_u *name)$/
+menutrans_T	menu.c	/^} menutrans_T;$/
+menutrans_lookup	menu.c	/^static char_u *menutrans_lookup(char_u *name, int /
+messaging	screen.c	/^int messaging(void)$/
+mf_close	memfile.c	/^void mf_close(memfile_T *mfp, bool del_file)$/
+mf_close_file	memfile.c	/^void mf_close_file(buf_T *buf, bool getlines)$/
+mf_get	memfile.c	/^bhdr_T *mf_get(memfile_T *mfp, blocknr_T nr, unsig/
+mf_new	memfile.c	/^bhdr_T *mf_new(memfile_T *mfp, bool negative, unsi/
+mf_new_page_size	memfile.c	/^void mf_new_page_size(memfile_T *mfp, unsigned new/
+mf_open	memfile.c	/^\/\/\/ mf_open()         open a new or existing me/
+mf_open_file	memfile.c	/^int mf_open_file(memfile_T *mfp, char_u *fname)$/
+mf_sync	memfile.c	/^int mf_sync(memfile_T *mfp, int flags)$/
+ml_add_stack	memline.c	/^static int ml_add_stack(buf_T *buf)$/
+ml_append	memline.c	/^ml_append ($/
+ml_append_buf	memline.c	/^ml_append_buf ($/
+ml_append_int	memline.c	/^ml_append_int ($/
+ml_check_b0_id	memline.c	/^static bool ml_check_b0_id(ZERO_BL *b0p)$/
+ml_check_b0_strings	memline.c	/^static bool ml_check_b0_strings(ZERO_BL *b0p)$/
+ml_clearmarked	memline.c	/^void ml_clearmarked(void)$/
+ml_close	memline.c	/^void ml_close(buf_T *buf, int del_file)$/
+ml_close_all	memline.c	/^void ml_close_all(int del_file)$/
+ml_close_notmod	memline.c	/^void ml_close_notmod(void)$/
+ml_delete	memline.c	/^int ml_delete(linenr_T lnum, int message)$/
+ml_delete_int	memline.c	/^static int ml_delete_int(buf_T *buf, linenr_T lnum/
+ml_find_line	memline.c	/^static bhdr_T *ml_find_line(buf_T *buf, linenr_T l/
+ml_find_line_or_offset	memline.c	/^long ml_find_line_or_offset(buf_T *buf, linenr_T l/
+ml_firstmarked	memline.c	/^linenr_T ml_firstmarked(void)$/
+ml_flush_line	memline.c	/^static void ml_flush_line(buf_T *buf)$/
+ml_get	memline.c	/^char_u *ml_get(linenr_T lnum)$/
+ml_get_buf	memline.c	/^ml_get_buf ($/
+ml_get_pos	memline.c	/^char_u *ml_get_pos(pos_T *pos)$/
+ml_line_alloced	memline.c	/^int ml_line_alloced(void)$/
+ml_lineadd	memline.c	/^static void ml_lineadd(buf_T *buf, int count)$/
+ml_new_data	memline.c	/^static bhdr_T *ml_new_data(memfile_T *mfp, int neg/
+ml_new_ptr	memline.c	/^static bhdr_T *ml_new_ptr(memfile_T *mfp)$/
+ml_open	memline.c	/^int ml_open(buf_T *buf)$/
+ml_open_file	memline.c	/^void ml_open_file(buf_T *buf)$/
+ml_open_files	memline.c	/^void ml_open_files(void)$/
+ml_preserve	memline.c	/^void ml_preserve(buf_T *buf, int message)$/
+ml_recover	memline.c	/^void ml_recover(void)$/
+ml_replace	memline.c	/^int ml_replace(linenr_T lnum, char_u *line, int co/
+ml_setflags	memline.c	/^void ml_setflags(buf_T *buf)$/
+ml_setmarked	memline.c	/^void ml_setmarked(linenr_T lnum)$/
+ml_setname	memline.c	/^void ml_setname(buf_T *buf)$/
+ml_sync_all	memline.c	/^void ml_sync_all(int check_file, int check_char)$/
+ml_timestamp	memline.c	/^void ml_timestamp(buf_T *buf)$/
+ml_upd_block0	memline.c	/^static void ml_upd_block0(buf_T *buf, upd_block0_T/
+ml_updatechunk	memline.c	/^static void ml_updatechunk(buf_T *buf, linenr_T li/
+modifier_len	ex_docmd.c	/^int modifier_len(char_u *cmd)$/
+modmasktable	keymap.c	/^static struct modmasktable {$/
+mouse_comp_pos	mouse.c	/^bool mouse_comp_pos(win_T *win, int *rowp, int *co/
+mousetable	keymap.c	/^static struct mousetable {$/
+move_lines	fileio.c	/^static int move_lines(buf_T *frombuf, buf_T *tobuf/
+movechangelist	mark.c	/^pos_T *movechangelist(int count)$/
+movemark	mark.c	/^pos_T *movemark(int count)$/
+mparm_T	main.c	/^} mparm_T;$/
+msg	message.c	/^int msg(char_u *s)$/
+msg_add_eol	fileio.c	/^static void msg_add_eol(void)$/
+msg_add_fileformat	fileio.c	/^static int msg_add_fileformat(int eol_type)$/
+msg_add_fname	fileio.c	/^void msg_add_fname(buf_T *buf, char_u *fname)$/
+msg_add_lines	fileio.c	/^void msg_add_lines(int insert_space, long lnum, of/
+msg_advance	message.c	/^void msg_advance(int col)$/
+msg_attr	message.c	/^int msg_attr(char_u *s, int attr) FUNC_ATTR_NONNUL/
+msg_attr_keep	message.c	/^msg_attr_keep ($/
+msg_check	message.c	/^void msg_check(void)$/
+msg_clr_cmdline	message.c	/^void msg_clr_cmdline(void)$/
+msg_clr_eos	message.c	/^void msg_clr_eos(void)$/
+msg_clr_eos_force	message.c	/^void msg_clr_eos_force(void)$/
+msg_end	message.c	/^int msg_end(void)$/
+msg_end_prompt	message.c	/^void msg_end_prompt(void)$/
+msg_hist	message.c	/^struct msg_hist {$/
+msg_home_replace	message.c	/^void msg_home_replace(char_u *fname)$/
+msg_home_replace_attr	message.c	/^static void msg_home_replace_attr(char_u *fname, i/
+msg_home_replace_hl	message.c	/^void msg_home_replace_hl(char_u *fname)$/
+msg_make	message.c	/^void msg_make(char_u *arg)$/
+msg_may_trunc	message.c	/^char_u *msg_may_trunc(int force, char_u *s)$/
+msg_moremsg	message.c	/^void msg_moremsg(int full)$/
+msg_outnum	message.c	/^void msg_outnum(long n)$/
+msg_outtrans	message.c	/^int msg_outtrans(char_u *str)$/
+msg_outtrans_attr	message.c	/^int msg_outtrans_attr(char_u *str, int attr)$/
+msg_outtrans_len	message.c	/^int msg_outtrans_len(char_u *str, int len)$/
+msg_outtrans_len_attr	message.c	/^int msg_outtrans_len_attr(char_u *msgstr, int len,/
+msg_outtrans_one	message.c	/^char_u *msg_outtrans_one(char_u *p, int attr)$/
+msg_outtrans_special	message.c	/^msg_outtrans_special ($/
+msg_pos_mode	screen.c	/^static void msg_pos_mode(void)$/
+msg_prt_line	message.c	/^void msg_prt_line(char_u *s, int list)$/
+msg_putchar	message.c	/^void msg_putchar(int c)$/
+msg_putchar_attr	message.c	/^void msg_putchar_attr(int c, int attr)$/
+msg_puts	message.c	/^void msg_puts(char_u *s)$/
+msg_puts_attr	message.c	/^void msg_puts_attr(char_u *s, int attr)$/
+msg_puts_attr_len	message.c	/^static void msg_puts_attr_len(char_u *str, int max/
+msg_puts_display	message.c	/^static void msg_puts_display(char_u *str, int maxl/
+msg_puts_long_attr	message.c	/^void msg_puts_long_attr(char_u *longstr, int attr)/
+msg_puts_long_len_attr	message.c	/^void msg_puts_long_len_attr(char_u *longstr, int l/
+msg_puts_printf	message.c	/^static void msg_puts_printf(char_u *str, int maxle/
+msg_puts_title	message.c	/^void msg_puts_title(char_u *s)$/
+msg_sb_eol	message.c	/^void msg_sb_eol(void)$/
+msg_sb_start	message.c	/^static msgchunk_T *msg_sb_start(msgchunk_T *mps)$/
+msg_screen_putchar	message.c	/^static void msg_screen_putchar(int c, int attr)$/
+msg_scroll_up	message.c	/^static void msg_scroll_up(void)$/
+msg_source	message.c	/^void msg_source(int attr)$/
+msg_start	message.c	/^void msg_start(void)$/
+msg_starthere	message.c	/^void msg_starthere(void)$/
+msg_strtrunc	message.c	/^msg_strtrunc ($/
+msg_trunc_attr	message.c	/^char_u *msg_trunc_attr(char_u *s, int force, int a/
+msg_use_printf	message.c	/^int msg_use_printf(void)$/
+msgchunk_S	message.c	/^struct msgchunk_S {$/
+msgchunk_T	message.c	/^typedef struct msgchunk_S msgchunk_T;$/
+msgmore	misc1.c	/^void msgmore(long n)$/
+multipos	regexp_nfa.c	/^    struct multipos {$/
+my_iconv_open	mbyte.c	/^void * my_iconv_open(char_u *to, char_u *from)$/
+n_opencmd	normal.c	/^static void n_opencmd(cmdarg_T *cap)$/
+n_start_visual_mode	normal.c	/^static void n_start_visual_mode(int c)$/
+n_swapchar	normal.c	/^static void n_swapchar(cmdarg_T *cap)$/
+name_list	syntax.c	/^struct name_list {$/
+name_to_color	syntax.c	/^RgbValue name_to_color(uint8_t *name)$/
+name_to_mod_mask	keymap.c	/^int name_to_mod_mask(int c)$/
+need_conversion	fileio.c	/^static int need_conversion(char_u *fenc)$/
+newFoldLevel	fold.c	/^void newFoldLevel(void)$/
+newFoldLevelWin	fold.c	/^static void newFoldLevelWin(win_T *wp)$/
+new_script_vars	eval.c	/^void new_script_vars(scid_T id)$/
+next_fenc	fileio.c	/^static char_u *next_fenc(char_u **pp)$/
+next_search_hl	screen.c	/^next_search_hl ($/
+next_search_hl_pos	screen.c	/^next_search_hl_pos($/
+nfa_dump	regexp_nfa.c	/^static void nfa_dump(nfa_regprog_T *prog)$/
+nfa_emit_equi_class	regexp_nfa.c	/^static void nfa_emit_equi_class(int c)$/
+nfa_get_match_text	regexp_nfa.c	/^static char_u *nfa_get_match_text(nfa_state_T *sta/
+nfa_get_reganch	regexp_nfa.c	/^static int nfa_get_reganch(nfa_state_T *start, int/
+nfa_get_regstart	regexp_nfa.c	/^static int nfa_get_regstart(nfa_state_T *start, in/
+nfa_list_T	regexp_nfa.c	/^} nfa_list_T;$/
+nfa_max_width	regexp_nfa.c	/^static int nfa_max_width(nfa_state_T *startstate, /
+nfa_pim_S	regexp_nfa.c	/^struct nfa_pim_S {$/
+nfa_pim_T	regexp_nfa.c	/^typedef struct nfa_pim_S nfa_pim_T;$/
+nfa_postfix_dump	regexp_nfa.c	/^static void nfa_postfix_dump(char_u *expr, int ret/
+nfa_postprocess	regexp_nfa.c	/^static void nfa_postprocess(nfa_regprog_T *prog)$/
+nfa_print_state	regexp_nfa.c	/^static void nfa_print_state(FILE *debugf, nfa_stat/
+nfa_print_state2	regexp_nfa.c	/^static void nfa_print_state2(FILE *debugf, nfa_sta/
+nfa_re_num_cmp	regexp_nfa.c	/^static bool nfa_re_num_cmp(uintmax_t val, int op, /
+nfa_recognize_char_class	regexp_nfa.c	/^static int nfa_recognize_char_class(char_u *start,/
+nfa_reg	regexp_nfa.c	/^nfa_reg ($/
+nfa_regatom	regexp_nfa.c	/^static int nfa_regatom(void)$/
+nfa_regbranch	regexp_nfa.c	/^static int nfa_regbranch(void)$/
+nfa_regcomp	regexp_nfa.c	/^static regprog_T *nfa_regcomp(char_u *expr, int re/
+nfa_regcomp_start	regexp_nfa.c	/^nfa_regcomp_start ($/
+nfa_regconcat	regexp_nfa.c	/^static int nfa_regconcat(void)$/
+nfa_regexec_both	regexp_nfa.c	/^nfa_regexec_both ($/
+nfa_regexec_nl	regexp_nfa.c	/^nfa_regexec_nl ($/
+nfa_regfree	regexp_nfa.c	/^static void nfa_regfree(regprog_T *prog)$/
+nfa_regmatch	regexp_nfa.c	/^static int nfa_regmatch(nfa_regprog_T *prog, nfa_s/
+nfa_regpiece	regexp_nfa.c	/^static int nfa_regpiece(void)$/
+nfa_restore_listids	regexp_nfa.c	/^static void nfa_restore_listids(nfa_regprog_T *pro/
+nfa_save_listids	regexp_nfa.c	/^static void nfa_save_listids(nfa_regprog_T *prog, /
+nfa_set_code	regexp_nfa.c	/^static void nfa_set_code(int c)$/
+nfa_thread_T	regexp_nfa.c	/^} nfa_thread_T;$/
+no_Magic	regexp.c	/^static int no_Magic(int x)$/
+no_viminfo	ex_cmds.c	/^static int no_viminfo(void)$/
+normal_cmd	normal.c	/^normal_cmd ($/
+normal_search	normal.c	/^static int normal_search($/
+not_writing	ex_cmds.c	/^int not_writing(void)$/
+number_width	screen.c	/^int number_width(win_T *wp)$/
+nv_Replace	normal.c	/^static void nv_Replace(cmdarg_T *cap)$/
+nv_Undo	normal.c	/^static void nv_Undo(cmdarg_T *cap)$/
+nv_Zet	normal.c	/^static void nv_Zet(cmdarg_T *cap)$/
+nv_abbrev	normal.c	/^static void nv_abbrev(cmdarg_T *cap)$/
+nv_addsub	normal.c	/^static void nv_addsub(cmdarg_T *cap)$/
+nv_bck_word	normal.c	/^static void nv_bck_word(cmdarg_T *cap)$/
+nv_brace	normal.c	/^static void nv_brace(cmdarg_T *cap)$/
+nv_brackets	normal.c	/^static void nv_brackets(cmdarg_T *cap)$/
+nv_clear	normal.c	/^static void nv_clear(cmdarg_T *cap)$/
+nv_cmd	normal.c	/^static const struct nv_cmd {$/
+nv_colon	normal.c	/^static void nv_colon(cmdarg_T *cap)$/
+nv_compare	normal.c	/^static int nv_compare(const void *s1, const void */
+nv_csearch	normal.c	/^static void nv_csearch(cmdarg_T *cap)$/
+nv_ctrlg	normal.c	/^static void nv_ctrlg(cmdarg_T *cap)$/
+nv_ctrlh	normal.c	/^static void nv_ctrlh(cmdarg_T *cap)$/
+nv_ctrlo	normal.c	/^static void nv_ctrlo(cmdarg_T *cap)$/
+nv_cursormark	normal.c	/^static void nv_cursormark(cmdarg_T *cap, int flag,/
+nv_dollar	normal.c	/^static void nv_dollar(cmdarg_T *cap)$/
+nv_dot	normal.c	/^static void nv_dot(cmdarg_T *cap)$/
+nv_down	normal.c	/^static void nv_down(cmdarg_T *cap)$/
+nv_end	normal.c	/^static void nv_end(cmdarg_T *cap)$/
+nv_error	normal.c	/^static void nv_error(cmdarg_T *cap)$/
+nv_exmode	normal.c	/^static void nv_exmode(cmdarg_T *cap)$/
+nv_findpar	normal.c	/^static void nv_findpar(cmdarg_T *cap)$/
+nv_g_cmd	normal.c	/^static void nv_g_cmd(cmdarg_T *cap)$/
+nv_gd	normal.c	/^nv_gd ($/
+nv_gomark	normal.c	/^static void nv_gomark(cmdarg_T *cap)$/
+nv_gotofile	normal.c	/^static void nv_gotofile(cmdarg_T *cap)$/
+nv_hat	normal.c	/^static void nv_hat(cmdarg_T *cap)$/
+nv_help	normal.c	/^static void nv_help(cmdarg_T *cap)$/
+nv_home	normal.c	/^static void nv_home(cmdarg_T *cap)$/
+nv_ident	normal.c	/^static void nv_ident(cmdarg_T *cap)$/
+nv_ignore	normal.c	/^static void nv_ignore(cmdarg_T *cap)$/
+nv_kundo	normal.c	/^static void nv_kundo(cmdarg_T *cap)$/
+nv_left	normal.c	/^static void nv_left(cmdarg_T *cap)$/
+nv_lineop	normal.c	/^static void nv_lineop(cmdarg_T *cap)$/
+nv_mark	normal.c	/^static void nv_mark(cmdarg_T *cap)$/
+nv_mouse	normal.c	/^static void nv_mouse(cmdarg_T *cap)$/
+nv_mousescroll	normal.c	/^static void nv_mousescroll(cmdarg_T *cap)$/
+nv_next	normal.c	/^static void nv_next(cmdarg_T *cap)$/
+nv_nop	normal.c	/^static void nv_nop(cmdarg_T *cap)$/
+nv_operator	normal.c	/^static void nv_operator(cmdarg_T *cap)$/
+nv_optrans	normal.c	/^static void nv_optrans(cmdarg_T *cap)$/
+nv_page	normal.c	/^static void nv_page(cmdarg_T *cap)$/
+nv_pcmark	normal.c	/^static void nv_pcmark(cmdarg_T *cap)$/
+nv_percent	normal.c	/^static void nv_percent(cmdarg_T *cap)$/
+nv_pipe	normal.c	/^static void nv_pipe(cmdarg_T *cap)$/
+nv_redo	normal.c	/^static void nv_redo(cmdarg_T *cap)$/
+nv_regname	normal.c	/^static void nv_regname(cmdarg_T *cap)$/
+nv_replace	normal.c	/^static void nv_replace(cmdarg_T *cap)$/
+nv_right	normal.c	/^static void nv_right(cmdarg_T *cap)$/
+nv_screengo	normal.c	/^static bool nv_screengo(oparg_T *oap, int dir, lon/
+nv_scroll	normal.c	/^static void nv_scroll(cmdarg_T *cap)$/
+nv_scroll_line	normal.c	/^static void nv_scroll_line(cmdarg_T *cap)$/
+nv_search	normal.c	/^static void nv_search(cmdarg_T *cap)$/
+nv_subst	normal.c	/^static void nv_subst(cmdarg_T *cap)$/
+nv_suspend	normal.c	/^static void nv_suspend(cmdarg_T *cap)$/
+nv_tagpop	normal.c	/^static void nv_tagpop(cmdarg_T *cap)$/
+nv_tilde	normal.c	/^static void nv_tilde(cmdarg_T *cap)$/
+nv_undo	normal.c	/^static void nv_undo(cmdarg_T *cap)$/
+nv_up	normal.c	/^static void nv_up(cmdarg_T *cap)$/
+nv_visual	normal.c	/^static void nv_visual(cmdarg_T *cap)$/
+nv_vreplace	normal.c	/^static void nv_vreplace(cmdarg_T *cap)$/
+nv_window	normal.c	/^static void nv_window(cmdarg_T *cap)$/
+nv_wordcmd	normal.c	/^static void nv_wordcmd(cmdarg_T *cap)$/
+nv_zet	normal.c	/^static void nv_zet(cmdarg_T *cap)$/
+offset2bytes	spell.c	/^static int offset2bytes(int nr, char_u *buf)$/
+one	message.c	/^\/\/\/ Print an error message with one "%" PRId64 /
+one_adjust	mark.c	/^#define one_adjust(add) \\$/
+one_adjust_nodel	mark.c	/^#define one_adjust_nodel(add) \\$/
+onepage	move.c	/^int onepage(int dir, long count)$/
+opFoldRange	fold.c	/^opFoldRange ($/
+op_change	ops.c	/^int op_change(oparg_T *oap)$/
+op_colon	normal.c	/^static void op_colon(oparg_T *oap)$/
+op_function	normal.c	/^static void op_function(oparg_T *oap)$/
+op_insert	ops.c	/^void op_insert(oparg_T *oap, long count1)$/
+op_on_lines	ops.c	/^int op_on_lines(int op)$/
+op_reindent	ops.c	/^void op_reindent(oparg_T *oap, Indenter how)$/
+op_replace	ops.c	/^int op_replace(oparg_T *oap, int c)$/
+op_shift	ops.c	/^void op_shift(oparg_T *oap, int curs_top, int amou/
+op_tilde	ops.c	/^void op_tilde(oparg_T *oap)$/
+op_yank	ops.c	/^bool op_yank(oparg_T *oap, bool message)$/
+op_yank_reg	ops.c	/^static void op_yank_reg(oparg_T *oap, bool message/
+openFold	fold.c	/^void openFold(linenr_T lnum, long count)$/
+openFoldRecurse	fold.c	/^void openFoldRecurse(linenr_T lnum)$/
+open_buffer	buffer.c	/^open_buffer ($/
+open_line	misc1.c	/^open_line ($/
+open_log_file	log.c	/^FILE *open_log_file(void)$/
+open_spellbuf	spell.c	/^static buf_T *open_spellbuf(void)$/
+openscript	getchar.c	/^openscript ($/
+opt_strings_flags	option.c	/^opt_strings_flags ($/
+option_expand	option.c	/^static char_u *option_expand(int opt_idx, char_u */
+option_value2string	option.c	/^option_value2string ($/
+option_was_set	option.c	/^int option_was_set(char_u *name)$/
+optval_default	option.c	/^static int optval_default(vimoption_T *p, char_u */
+other_sourcing_name	message.c	/^static int other_sourcing_name(void)$/
+otherfile	buffer.c	/^int otherfile(char_u *ffname)$/
+otherfile_buf	buffer.c	/^static int otherfile_buf(buf_T *buf, char_u *ffnam/
+parseMarker	fold.c	/^static void parseMarker(win_T *wp)$/
+parse_control_character	ui.c	/^static void parse_control_character(uint8_t c)$/
+parse_list_options	hardcopy.c	/^static char_u *parse_list_options(char_u *option_s/
+parse_match	tag.c	/^parse_match ($/
+parse_printmbfont	hardcopy.c	/^char_u *parse_printmbfont(void)$/
+parse_printoptions	hardcopy.c	/^char_u *parse_printoptions(void)$/
+parse_shape_opt	cursor_shape.c	/^char_u *parse_shape_opt(int what)$/
+parse_state_T	regexp.c	/^} parse_state_T;$/
+parse_tag_line	tag.c	/^parse_tag_line ($/
+paste_option_changed	option.c	/^static void paste_option_changed(void)$/
+pat_T	tag.c	/^} pat_T;$/
+pat_has_uppercase	search.c	/^int pat_has_uppercase(char_u *pat)$/
+pat_ptr	syntax.c	/^  struct pat_ptr {$/
+patch	regexp_nfa.c	/^static void patch(Ptrlist *l, nfa_state_T *s)$/
+path_tail_with_sep	path.c	/^char_u *path_tail_with_sep(char_u *fname)$/
+pchar	ops.c	/^static inline void pchar(pos_T lp, int c)$/
+peekchr	regexp.c	/^static int peekchr(void)$/
+pim_equal	regexp_nfa.c	/^static int pim_equal(nfa_pim_T *one, nfa_pim_T *tw/
+pim_info	regexp_nfa.c	/^static char *pim_info(nfa_pim_T *pim)$/
+plain_vgetc	getchar.c	/^int plain_vgetc(void)$/
+plines	misc1.c	/^int plines(linenr_T lnum)$/
+plines_m_win	misc1.c	/^int plines_m_win(win_T *wp, linenr_T first, linenr/
+plines_nofill	misc1.c	/^int plines_nofill(linenr_T lnum)$/
+plines_win	misc1.c	/^plines_win ($/
+plines_win_col	misc1.c	/^int plines_win_col(win_T *wp, linenr_T lnum, long /
+plines_win_nofill	misc1.c	/^plines_win_nofill ($/
+plines_win_nofold	misc1.c	/^int plines_win_nofold(win_T *wp, linenr_T lnum)$/
+pointer_block	memline.c	/^struct pointer_block {$/
+pointer_entry	memline.c	/^struct pointer_entry {$/
+pop_current_state	syntax.c	/^static void pop_current_state(void)$/
+pop_showcmd	normal.c	/^void pop_showcmd(void)$/
+popup_mode_name	menu.c	/^static char_u *popup_mode_name(char_u *name, int i/
+post2nfa	regexp_nfa.c	/^static nfa_state_T *post2nfa(int *postfix, int *en/
+prep_exarg	fileio.c	/^void prep_exarg(exarg_T *eap, buf_T *buf)$/
+prep_redo	normal.c	/^static void prep_redo(int regname, long num, int c/
+prep_redo_cmd	normal.c	/^static void prep_redo_cmd(cmdarg_T *cap)$/
+prepare_help_buffer	ex_cmds.c	/^static void prepare_help_buffer(void)$/
+prepare_pats	tag.c	/^static void prepare_pats(pat_T *pats, int has_re)$/
+prepare_search_hl	screen.c	/^static void prepare_search_hl(win_T *wp, linenr_T /
+prepare_tagpreview	ex_cmds.c	/^prepare_tagpreview ($/
+prepare_vimvar	eval.c	/^static void prepare_vimvar(int idx, typval_T *save/
+preprocs_left	ops.c	/^int preprocs_left(void)$/
+preserve_exit	misc1.c	/^void preserve_exit(void)$/
+print_line	ex_cmds.c	/^void print_line(linenr_T lnum, int use_number, int/
+print_line_no_prefix	ex_cmds.c	/^void print_line_no_prefix(linenr_T lnum, int use_n/
+prof_child_enter	eval.c	/^void prof_child_enter(proftime_T *tm \/* place to /
+prof_child_exit	eval.c	/^void prof_child_exit(proftime_T *tm \/* where wait/
+profile_add	profile.c	/^proftime_T profile_add(proftime_T tm1, proftime_T /
+profile_divide	profile.c	/^proftime_T profile_divide(proftime_T tm, int count/
+profile_dump	ex_cmds2.c	/^void profile_dump(void)$/
+profile_end	profile.c	/^proftime_T profile_end(proftime_T tm) FUNC_ATTR_WA/
+profile_msg	profile.c	/^const char *profile_msg(proftime_T tm) FUNC_ATTR_W/
+profile_passed_limit	profile.c	/^bool profile_passed_limit(proftime_T tm) FUNC_ATTR/
+profile_setlimit	profile.c	/^proftime_T profile_setlimit(int64_t msec) FUNC_ATT/
+profile_start	profile.c	/^proftime_T profile_start(void) FUNC_ATTR_WARN_UNUS/
+profile_sub	profile.c	/^proftime_T profile_sub(proftime_T tm1, proftime_T /
+profile_zero	profile.c	/^proftime_T profile_zero(void) FUNC_ATTR_CONST$/
+prog_magic_wrong	regexp.c	/^static int prog_magic_wrong(void)$/
+prompt_for_number	misc1.c	/^int prompt_for_number(int *mouse_used)$/
+prt_add_resource	hardcopy.c	/^static int prt_add_resource(struct prt_ps_resource/
+prt_build_cid_fontname	hardcopy.c	/^static void prt_build_cid_fontname(int font, char_/
+prt_check_resource	hardcopy.c	/^static int prt_check_resource(struct prt_ps_resour/
+prt_def_cidfont	hardcopy.c	/^static void prt_def_cidfont(char *new_name, int he/
+prt_def_font	hardcopy.c	/^static void prt_def_font(char *new_name, char *enc/
+prt_def_var	hardcopy.c	/^static void prt_def_var(char *name, double value, /
+prt_dsc_atend	hardcopy.c	/^#define prt_dsc_atend(c)        prt_dsc_text((c), /
+prt_dsc_comment_S	hardcopy.c	/^struct prt_dsc_comment_S {$/
+prt_dsc_docmedia	hardcopy.c	/^static void prt_dsc_docmedia(char *paper_name, dou/
+prt_dsc_font_resource	hardcopy.c	/^static void prt_dsc_font_resource(char *resource, /
+prt_dsc_ints	hardcopy.c	/^static void prt_dsc_ints(char *comment, int count,/
+prt_dsc_line_S	hardcopy.c	/^struct prt_dsc_line_S {$/
+prt_dsc_noarg	hardcopy.c	/^static void prt_dsc_noarg(char *comment)$/
+prt_dsc_requirements	hardcopy.c	/^static void prt_dsc_requirements(int duplex, int t/
+prt_dsc_resources	hardcopy.c	/^prt_dsc_resources ($/
+prt_dsc_start	hardcopy.c	/^static void prt_dsc_start(void)$/
+prt_dsc_text	hardcopy.c	/^static void prt_dsc_text(char *comment, char *text/
+prt_dsc_textline	hardcopy.c	/^static void prt_dsc_textline(char *comment, char */
+prt_dup_cidfont	hardcopy.c	/^static void prt_dup_cidfont(char *original_name, c/
+prt_find_resource	hardcopy.c	/^static int prt_find_resource(char *name, struct pr/
+prt_flush_buffer	hardcopy.c	/^static void prt_flush_buffer(void)$/
+prt_font_metrics	hardcopy.c	/^static void prt_font_metrics(int font_scale)$/
+prt_get_attr	hardcopy.c	/^static void prt_get_attr(int hl_id, prt_text_attr_/
+prt_get_cpl	hardcopy.c	/^static int prt_get_cpl(void)$/
+prt_get_lpp	hardcopy.c	/^static int prt_get_lpp(void)$/
+prt_get_term_color	hardcopy.c	/^static uint32_t prt_get_term_color(int colorindex)/
+prt_get_unit	hardcopy.c	/^int prt_get_unit(int idx)$/
+prt_header	hardcopy.c	/^static void prt_header(prt_settings_T *psettings, /
+prt_header_height	hardcopy.c	/^int prt_header_height(void)$/
+prt_line_number	hardcopy.c	/^static void prt_line_number(prt_settings_T *psetti/
+prt_match_charset	hardcopy.c	/^static int prt_match_charset(char *p_charset, stru/
+prt_match_encoding	hardcopy.c	/^static int prt_match_encoding(char *p_encoding, st/
+prt_mediasize_S	hardcopy.c	/^struct prt_mediasize_S {$/
+prt_message	hardcopy.c	/^static void prt_message(char_u *s)$/
+prt_next_dsc	hardcopy.c	/^static int prt_next_dsc(struct prt_dsc_line_S *p_d/
+prt_open_resource	hardcopy.c	/^static int prt_open_resource(struct prt_ps_resourc/
+prt_page_margins	hardcopy.c	/^static void prt_page_margins(double width, double /
+prt_pos_T	hardcopy.c	/^} prt_pos_T;$/
+prt_ps_charset_S	hardcopy.c	/^struct prt_ps_charset_S {$/
+prt_ps_encoding_S	hardcopy.c	/^struct prt_ps_encoding_S {$/
+prt_ps_font_S	hardcopy.c	/^struct prt_ps_font_S {$/
+prt_ps_mbfont_S	hardcopy.c	/^struct prt_ps_mbfont_S {$/
+prt_ps_resource_S	hardcopy.c	/^struct prt_ps_resource_S {$/
+prt_real_bits	hardcopy.c	/^static void prt_real_bits(double real, int precisi/
+prt_resfile_buffer_S	hardcopy.c	/^struct prt_resfile_buffer_S {$/
+prt_resfile_next_line	hardcopy.c	/^static int prt_resfile_next_line(void)$/
+prt_resfile_skip_nonws	hardcopy.c	/^static int prt_resfile_skip_nonws(int offset)$/
+prt_resfile_skip_ws	hardcopy.c	/^static int prt_resfile_skip_ws(int offset)$/
+prt_resfile_strncmp	hardcopy.c	/^static int prt_resfile_strncmp(int offset, char *s/
+prt_resource_name	hardcopy.c	/^static void prt_resource_name(char_u *filename, vo/
+prt_set_bg	hardcopy.c	/^static void prt_set_bg(uint32_t bg)$/
+prt_set_fg	hardcopy.c	/^static void prt_set_fg(uint32_t fg)$/
+prt_set_font	hardcopy.c	/^static void prt_set_font(int bold, int italic, int/
+prt_use_number	hardcopy.c	/^int prt_use_number(void)$/
+prt_write_boolean	hardcopy.c	/^static void prt_write_boolean(int b)$/
+prt_write_file	hardcopy.c	/^static void prt_write_file(char_u *buffer)$/
+prt_write_file_len	hardcopy.c	/^static void prt_write_file_len(char_u *buffer, siz/
+prt_write_file_raw_len	hardcopy.c	/^static void prt_write_file_raw_len(char_u *buffer,/
+prt_write_int	hardcopy.c	/^static void prt_write_int(int i)$/
+prt_write_real	hardcopy.c	/^static void prt_write_real(double val, int prec)$/
+prt_write_string	hardcopy.c	/^static void prt_write_string(char *s)$/
+ptr_t_eq	map.c	/^#define ptr_t_eq(a, b) uint64_t_eq((uint64_t)a, (u/
+ptr_t_hash	map.c	/^#define ptr_t_hash(key) uint64_t_hash((uint64_t)ke/
+pum_redraw	popupmnu.c	/^void pum_redraw(void)$/
+pum_undisplay	popupmnu.c	/^\/\/\/ "array" must remain valid until pum_undispl/
+push_current_state	syntax.c	/^static void push_current_state(int idx)$/
+push_next_match	syntax.c	/^static stateitem_T *push_next_match(stateitem_T *c/
+push_showcmd	normal.c	/^void push_showcmd(void)$/
+put_and_redo	farsi.c	/^static void put_and_redo(char_u c)$/
+put_bytes	misc2.c	/^bool put_bytes(FILE *fd, uintmax_t number, size_t /
+put_curr_and_l_to_X	farsi.c	/^static void put_curr_and_l_to_X(char_u c)$/
+put_fold_open_close	fold.c	/^static int put_fold_open_close(FILE *fd, fold_T *f/
+put_foldopen_recurse	fold.c	/^static int put_foldopen_recurse(FILE *fd, win_T *w/
+put_folds	fold.c	/^int put_folds(FILE *fd, win_T *wp)$/
+put_folds_recurse	fold.c	/^static int put_folds_recurse(FILE *fd, garray_T *g/
+put_header_ptr	undo.c	/^static void put_header_ptr(bufinfo_T *bi, u_header/
+put_id_list	syntax.c	/^static void put_id_list(char_u *name, short *list,/
+put_pattern	syntax.c	/^static void put_pattern(char *s, int c, synpat_T */
+put_setbool	option.c	/^static int put_setbool(FILE *fd, char *cmd, char */
+put_setnum	option.c	/^static int put_setnum(FILE *fd, char *cmd, char *n/
+put_setstring	option.c	/^static int put_setstring(FILE *fd, char *cmd, char/
+put_time	misc2.c	/^void put_time(FILE *fd, time_t time_)$/
+qf_info_S	quickfix.c	/^struct qf_info_S {$/
+qf_init	quickfix.c	/^qf_init ($/
+qf_init_ext	quickfix.c	/^qf_init_ext ($/
+qf_list_T	quickfix.c	/^} qf_list_T;$/
+qf_new_list	quickfix.c	/^static void qf_new_list(qf_info_T *qi, char_u *qf_/
+qf_store_title	quickfix.c	/^static void qf_store_title(qf_info_T *qi, char_u */
+qfline_S	quickfix.c	/^struct qfline_S {$/
+qfline_T	quickfix.c	/^typedef struct qfline_S qfline_T;$/
+quote_meta	edit.c	/^static unsigned quote_meta(char_u *dest, char_u *s/
+rbuffer_capacity	rbuffer.c	/^size_t rbuffer_capacity(RBuffer *buf) FUNC_ATTR_NO/
+rbuffer_cmp	rbuffer.c	/^int rbuffer_cmp(RBuffer *buf, const char *str, siz/
+rbuffer_consumed	rbuffer.c	/^void rbuffer_consumed(RBuffer *buf, size_t count)$/
+rbuffer_free	rbuffer.c	/^void rbuffer_free(RBuffer *buf)$/
+rbuffer_get	rbuffer.c	/^char *rbuffer_get(RBuffer *buf, size_t index)$/
+rbuffer_new	rbuffer.c	/^RBuffer *rbuffer_new(size_t capacity)$/
+rbuffer_produced	rbuffer.c	/^void rbuffer_produced(RBuffer *buf, size_t count) /
+rbuffer_read	rbuffer.c	/^size_t rbuffer_read(RBuffer *buf, char *dst, size_/
+rbuffer_read_ptr	rbuffer.c	/^char *rbuffer_read_ptr(RBuffer *buf, size_t *read_/
+rbuffer_reset	rbuffer.c	/^void rbuffer_reset(RBuffer *buf) FUNC_ATTR_NONNULL/
+rbuffer_size	rbuffer.c	/^size_t rbuffer_size(RBuffer *buf) FUNC_ATTR_NONNUL/
+rbuffer_space	rbuffer.c	/^size_t rbuffer_space(RBuffer *buf) FUNC_ATTR_NONNU/
+rbuffer_write	rbuffer.c	/^size_t rbuffer_write(RBuffer *buf, char *src, size/
+rbuffer_write_ptr	rbuffer.c	/^char *rbuffer_write_ptr(RBuffer *buf, size_t *writ/
+re2post	regexp_nfa.c	/^static int *re2post(void)$/
+re_mult_next	regexp.c	/^static bool re_mult_next(char *what)$/
+re_multi_type	regexp.c	/^static int re_multi_type(int c)$/
+re_multiline	regexp.c	/^int re_multiline(regprog_T *prog)$/
+re_num_cmp	regexp.c	/^static int re_num_cmp(uint32_t val, char_u *scan)$/
+re_put_uint32	regexp.c	/^static char_u *re_put_uint32(char_u *p, uint32_t v/
+read_limits	regexp.c	/^static int read_limits(long *minval, long *maxval)/
+read_readbuf	getchar.c	/^static int read_readbuf(buffheader_T *buf, int adv/
+read_readbuffers	getchar.c	/^static int read_readbuffers(int advance)$/
+read_redo	getchar.c	/^static int read_redo(int init, int old_redo)$/
+read_string	misc2.c	/^char *read_string(FILE *fd, size_t cnt)$/
+read_viminfo	ex_cmds.c	/^read_viminfo ($/
+read_viminfo_bufferlist	buffer.c	/^int read_viminfo_bufferlist(vir_T *virp, int writi/
+read_viminfo_filemark	mark.c	/^int read_viminfo_filemark(vir_T *virp, int force)$/
+read_viminfo_search_pattern	search.c	/^int read_viminfo_search_pattern(vir_T *virp, int f/
+read_viminfo_sub_string	ex_cmds.c	/^int read_viminfo_sub_string(vir_T *virp, int force/
+read_viminfo_up_to_marks	ex_cmds.c	/^static int read_viminfo_up_to_marks(vir_T *virp, i/
+readbuf1_empty	getchar.c	/^int readbuf1_empty(void)$/
+readfile	fileio.c	/^readfile ($/
+readfile_charconvert	fileio.c	/^readfile_charconvert ($/
+readfile_linenr	fileio.c	/^readfile_linenr ($/
+realloc	memory.c	/^\/\/\/ realloc() wrapper$/
+realloc_post_list	regexp_nfa.c	/^static void realloc_post_list(void)$/
+recov_file_names	memline.c	/^static int recov_file_names(char_u **names, char_u/
+recover_names	memline.c	/^recover_names ($/
+recursive_regmatch	regexp_nfa.c	/^static int recursive_regmatch(nfa_state_T *state, /
+redir_write	message.c	/^static void redir_write(char_u *str, int maxlen)$/
+redirecting	message.c	/^int redirecting(void)$/
+redo_literal	edit.c	/^static void redo_literal(int c)$/
+redrawWinline	screen.c	/^redrawWinline ($/
+redraw_all_later	screen.c	/^void redraw_all_later(int type)$/
+redraw_buf_later	screen.c	/^void redraw_buf_later(buf_T *buf, int type)$/
+redraw_curbuf_later	screen.c	/^void redraw_curbuf_later(int type)$/
+redraw_custom_statusline	screen.c	/^static void redraw_custom_statusline(win_T *wp)$/
+redraw_for_cursorline	move.c	/^static void redraw_for_cursorline(win_T *wp)$/
+redraw_later	screen.c	/^void redraw_later(int type)$/
+redraw_later_clear	screen.c	/^void redraw_later_clear(void)$/
+redraw_statuslines	screen.c	/^void redraw_statuslines(void)$/
+redraw_titles	option.c	/^static void redraw_titles(void) {$/
+redraw_win_later	screen.c	/^void redraw_win_later(win_T *wp, int type)$/
+redrawing	screen.c	/^int redrawing(void)$/
+ref_extmatch	regexp.c	/^reg_extmatch_T *ref_extmatch(reg_extmatch_T *em)$/
+refresh	ui.c	/^static void refresh(Event event)$/
+reg	regexp.c	/^reg ($/
+reg_equi_class	regexp.c	/^static void reg_equi_class(int c)$/
+reg_getline	regexp.c	/^static char_u *reg_getline(linenr_T lnum)$/
+reg_getline_submatch	regexp.c	/^static char_u *reg_getline_submatch(linenr_T lnum)/
+reg_match_visual	regexp.c	/^static int reg_match_visual(void)$/
+reg_nextline	regexp.c	/^static void reg_nextline(void)$/
+reg_prev_class	regexp.c	/^static int reg_prev_class(void)$/
+reg_restore	regexp.c	/^static void reg_restore(regsave_T *save, garray_T /
+reg_save	regexp.c	/^static void reg_save(regsave_T *save, garray_T *ga/
+reg_save_equal	regexp.c	/^static int reg_save_equal(regsave_T *save)$/
+reg_submatch	regexp.c	/^char_u *reg_submatch(int no)$/
+regatom	regexp.c	/^static char_u *regatom(int *flagp)$/
+regbehind_T	regexp.c	/^} regbehind_T;$/
+regbranch	regexp.c	/^static char_u *regbranch(int *flagp)$/
+regc	regexp.c	/^static void regc(int b)$/
+regcomp_start	regexp.c	/^regcomp_start ($/
+regconcat	regexp.c	/^static char_u *regconcat(int *flagp)$/
+regdump	regexp.c	/^static void regdump(char_u *pattern, bt_regprog_T /
+reginsert	regexp.c	/^static void reginsert(int op, char_u *opnd)$/
+reginsert_limits	regexp.c	/^static void reginsert_limits(int op, long minval, /
+reginsert_nr	regexp.c	/^static void reginsert_nr(int op, long val, char_u /
+register	ops.c	/^\/\/\/ Check if the default register (used in an u/
+regitem_T	regexp.c	/^} regitem_T;$/
+regmatch	regexp.c	/^regmatch ($/
+regmbc	regexp.c	/^static void regmbc(int c)$/
+regnext	regexp.c	/^static char_u *regnext(char_u *p)$/
+regnode	regexp.c	/^static char_u *regnode(int op)$/
+regoptail	regexp.c	/^static void regoptail(char_u *p, char_u *val)$/
+regpiece	regexp.c	/^static char_u *regpiece(int *flagp)$/
+regprop	regexp.c	/^static char_u *regprop(char_u *op)$/
+regrepeat	regexp.c	/^regrepeat ($/
+regsave_T	regexp.c	/^} regsave_T;$/
+regstack_pop	regexp.c	/^static void regstack_pop(char_u **scan)$/
+regstack_push	regexp.c	/^static regitem_T *regstack_push(regstate_T state, /
+regstar_T	regexp.c	/^} regstar_T;$/
+regstate_T	regexp.c	/^} regstate_T;$/
+regsub_T	regexp_nfa.c	/^} regsub_T;$/
+regsubs_T	regexp_nfa.c	/^} regsubs_T;$/
+regtail	regexp.c	/^static void regtail(char_u *p, char_u *val)$/
+regtilde	regexp.c	/^char_u *regtilde(char_u *source, int magic)$/
+regtry	regexp.c	/^static long regtry(bt_regprog_T *prog, colnr_T col/
+removable	mark.c	/^int removable(char_u *name)$/
+remove_bom	mbyte.c	/^void remove_bom(char_u *s)$/
+remove_menu	menu.c	/^remove_menu ($/
+rename_buffer	ex_cmds.c	/^int rename_buffer(char_u *new_fname)$/
+repeat_message	message.c	/^void repeat_message(void)$/
+replace_termcodes	keymap.c	/^char_u * replace_termcodes ($/
+report_discard_pending	ex_eval.c	/^void report_discard_pending(int pending, void *val/
+report_make_pending	ex_eval.c	/^void report_make_pending(int pending, void *value)/
+report_pending	ex_eval.c	/^static void report_pending(int action, int pending/
+report_re_switch	regexp.c	/^static void report_re_switch(char_u *pat)$/
+report_resume_pending	ex_eval.c	/^void report_resume_pending(int pending, void *valu/
+report_state	regexp_nfa.c	/^static void report_state(char *action,$/
+reset_VIsual	normal.c	/^void reset_VIsual(void)$/
+reset_VIsual_and_resel	normal.c	/^void reset_VIsual_and_resel(void)$/
+reset_expand_highlight	syntax.c	/^void reset_expand_highlight(void)$/
+reset_last_sourcing	message.c	/^void reset_last_sourcing(void)$/
+reset_modifiable	option.c	/^void reset_modifiable(void)$/
+reset_search_dir	search.c	/^void reset_search_dir(void)$/
+reset_synblock	syntax.c	/^void reset_synblock(win_T *wp)$/
+resettitle	buffer.c	/^void resettitle(void)$/
+resolve_symlink	memline.c	/^int resolve_symlink(char_u *fname, char_u *buf)$/
+restoreRedobuff	getchar.c	/^void restoreRedobuff(void)$/
+restore_cterm_colors	syntax.c	/^void restore_cterm_colors(void)$/
+restore_dbg_stuff	ex_docmd.c	/^static void restore_dbg_stuff(struct dbg_stuff *ds/
+restore_funccal	eval.c	/^void restore_funccal(void *vfc)$/
+restore_parse_state	regexp.c	/^static void restore_parse_state(parse_state_T *ps)/
+restore_se	regexp.c	/^#define restore_se(savep, posp, pp) { \\$/
+restore_search_patterns	search.c	/^void restore_search_patterns(void)$/
+restore_subexpr	regexp.c	/^static void restore_subexpr(regbehind_T *bp)$/
+restore_typeahead	getchar.c	/^void restore_typeahead(tasave_T *tp)$/
+restore_vimvar	eval.c	/^static void restore_vimvar(int idx, typval_T *save/
+result_T	digraph.c	/^typedef int result_T;$/
+reverse_text	search.c	/^char_u *reverse_text(char_u *s) FUNC_ATTR_NONNULL_/
+rewind_conditionals	ex_eval.c	/^void rewind_conditionals(struct condstack *cstack,/
+rl_mirror	screen.c	/^void rl_mirror(char_u *str)$/
+safe_vgetc	getchar.c	/^int safe_vgetc(void)$/
+salfirst_T	spell.c	/^typedef int salfirst_T;$/
+salitem_T	spell.c	/^} salitem_T;$/
+saveRedobuff	getchar.c	/^void saveRedobuff(void)$/
+save_dbg_stuff	ex_docmd.c	/^static void save_dbg_stuff(struct dbg_stuff *dsp)$/
+save_file_ff	option.c	/^void save_file_ff(buf_T *buf)$/
+save_funccal	eval.c	/^void *save_funccal(void)$/
+save_parse_state	regexp.c	/^static void save_parse_state(parse_state_T *ps)$/
+save_patterns	os_unix.c	/^static void save_patterns(int num_pat, char_u **pa/
+save_re_pat	search.c	/^void save_re_pat(int idx, char_u *pat, int magic)$/
+save_se	regexp.c	/^#define save_se(savep, posp, pp) \\$/
+save_se_T	regexp.c	/^} save_se_T;$/
+save_se_multi	regexp.c	/^static void save_se_multi(save_se_T *savep, lpos_T/
+save_se_one	regexp.c	/^static void save_se_one(save_se_T *savep, char_u */
+save_search_patterns	search.c	/^void save_search_patterns(void)$/
+save_subexpr	regexp.c	/^static void save_subexpr(regbehind_T *bp)$/
+save_tv_as_string	eval.c	/^static char_u *save_tv_as_string(typval_T *tv, ssi/
+save_typeahead	getchar.c	/^void save_typeahead(tasave_T *tp)$/
+save_typebuf	getchar.c	/^void save_typebuf(void)$/
+sblock_S	spell.c	/^struct sblock_S {$/
+sblock_T	spell.c	/^typedef struct sblock_S sblock_T;$/
+screen_char	screen.c	/^static void screen_char(unsigned off, int row, int/
+screen_char_2	screen.c	/^static void screen_char_2(unsigned off, int row, i/
+screen_comp_differs	screen.c	/^static int screen_comp_differs(int off, int *u8cc)/
+screen_del_lines	screen.c	/^int screen_del_lines ($/
+screen_fill	screen.c	/^void screen_fill(int start_row, int end_row, int s/
+screen_getbytes	screen.c	/^void screen_getbytes(int row, int col, char_u *byt/
+screen_ins_lines	screen.c	/^int screen_ins_lines ($/
+screen_line	screen.c	/^static void screen_line(int row, int coloff, int e/
+screen_putchar	screen.c	/^void screen_putchar(int c, int row, int col, int a/
+screen_puts	screen.c	/^void screen_puts(char_u *text, int row, int col, i/
+screen_puts_len	screen.c	/^void screen_puts_len(char_u *text, int textlen, in/
+screen_puts_mbyte	message.c	/^static char_u *screen_puts_mbyte(char_u *s, int l,/
+screen_resize	screen.c	/^void screen_resize(int width, int height)$/
+screen_start_highlight	screen.c	/^static void screen_start_highlight(int attr)$/
+screen_stop_highlight	screen.c	/^void screen_stop_highlight(void)$/
+screen_valid	screen.c	/^int screen_valid(int doclear)$/
+screenalloc	screen.c	/^void screenalloc(bool doclear)$/
+screenclear	screen.c	/^void screenclear(void)$/
+screenclear2	screen.c	/^static void screenclear2(void)$/
+script_do_profile	ex_cmds2.c	/^static void script_do_profile(scriptitem_T *si)$/
+script_host_do_range	ex_cmds2.c	/^static void script_host_do_range(char *name, exarg/
+script_host_execute	ex_cmds2.c	/^static void script_host_execute(char *name, exarg_/
+script_host_execute_file	ex_cmds2.c	/^static void script_host_execute_file(char *name, e/
+script_line_end	ex_cmds2.c	/^void script_line_end(void)$/
+script_line_exec	ex_cmds2.c	/^void script_line_exec(void)$/
+script_line_start	ex_cmds2.c	/^void script_line_start(void)$/
+script_prof_restore	ex_cmds2.c	/^void script_prof_restore(proftime_T *tm)$/
+script_prof_save	ex_cmds2.c	/^void script_prof_save($/
+scriptitem_T	ex_cmds2.c	/^} scriptitem_T;$/
+scriptnames_slash_adjust	ex_cmds2.c	/^void scriptnames_slash_adjust(void)$/
+scriptvar_T	eval.c	/^} scriptvar_T;$/
+scroll_cursor_bot	move.c	/^void scroll_cursor_bot(int min_scroll, int set_top/
+scroll_cursor_halfway	move.c	/^void scroll_cursor_halfway(int atend)$/
+scroll_cursor_top	move.c	/^void scroll_cursor_top(int min_scroll, int always)/
+scroll_redraw	normal.c	/^void scroll_redraw(int up, long count)$/
+scrolldown	move.c	/^scrolldown ($/
+scrolldown_clamp	move.c	/^void scrolldown_clamp(void)$/
+scrolljump_value	move.c	/^static int scrolljump_value(void)$/
+scrollup	move.c	/^scrollup ($/
+scrollup_clamp	move.c	/^void scrollup_clamp(void)$/
+search_cmn	eval.c	/^static int search_cmn(typval_T *argvars, pos_T *ma/
+search_for_exact_line	search.c	/^int search_for_exact_line(buf_T *buf, pos_T *pos, /
+search_regcomp	search.c	/^search_regcomp ($/
+searchc	search.c	/^int searchc(cmdarg_T *cap, int t_cmd)$/
+searchit	search.c	/^int searchit($/
+searchpair_cmn	eval.c	/^static int searchpair_cmn(typval_T *argvars, pos_T/
+send_output	ui.c	/^static void send_output(uint8_t **ptr)$/
+serialize_header	undo.c	/^static bool serialize_header(bufinfo_T *bi, char_u/
+serialize_pos	undo.c	/^static void serialize_pos(bufinfo_T *bi, pos_T pos/
+serialize_uep	undo.c	/^static bool serialize_uep(bufinfo_T *bi, u_entry_T/
+serialize_uhp	undo.c	/^static bool serialize_uhp(bufinfo_T *bi, u_header_/
+serialize_visualinfo	undo.c	/^static void serialize_visualinfo(bufinfo_T *bi, vi/
+setFoldRepeat	fold.c	/^static void setFoldRepeat(linenr_T lnum, long coun/
+setManualFold	fold.c	/^setManualFold ($/
+setManualFoldWin	fold.c	/^setManualFoldWin ($/
+setSmallMaybe	fold.c	/^static void setSmallMaybe(garray_T *gap)$/
+set_b0_dir_flag	memline.c	/^static void set_b0_dir_flag(ZERO_BL *b0p, buf_T *b/
+set_b0_fname	memline.c	/^static void set_b0_fname(ZERO_BL *b0p, buf_T *buf)/
+set_bool_option	option.c	/^set_bool_option ($/
+set_chars_option	option.c	/^static char_u *set_chars_option(char_u **varp)$/
+set_clipboard	ops.c	/^static void set_clipboard(int name, yankreg_T *reg/
+set_cmdarg	eval.c	/^char_u *set_cmdarg(exarg_T *eap, char_u *oldarg)$/
+set_cmdspos	ex_getln.c	/^static void set_cmdspos(void)$/
+set_cmdspos_cursor	ex_getln.c	/^static void set_cmdspos_cursor(void)$/
+set_context_in_cscope_cmd	if_cscope.c	/^void set_context_in_cscope_cmd(expand_T *xp, char_/
+set_context_in_echohl_cmd	syntax.c	/^void set_context_in_echohl_cmd(expand_T *xp, char_/
+set_context_in_highlight_cmd	syntax.c	/^void set_context_in_highlight_cmd(expand_T *xp, ch/
+set_context_in_menu_cmd	menu.c	/^char_u *set_context_in_menu_cmd(expand_T *xp, char/
+set_context_in_profile_cmd	ex_cmds2.c	/^void set_context_in_profile_cmd(expand_T *xp, char/
+set_context_in_set_cmd	option.c	/^set_context_in_set_cmd ($/
+set_context_in_sign_cmd	ex_cmds.c	/^void set_context_in_sign_cmd(expand_T *xp, char_u /
+set_context_in_syntax_cmd	syntax.c	/^void set_context_in_syntax_cmd(expand_T *xp, char_/
+set_curbuf	buffer.c	/^void set_curbuf(buf_T *buf, int action)$/
+set_empty_rows	move.c	/^void set_empty_rows(win_T *wp, int used)$/
+set_expr_line	ops.c	/^void set_expr_line(char_u *new_line)$/
+set_file_options	fileio.c	/^void set_file_options(int set_options, exarg_T *ea/
+set_file_time	fileio.c	/^set_file_time ($/
+set_fileformat	misc2.c	/^void set_fileformat(int eol_style, int opt_flags)$/
+set_forced_fenc	fileio.c	/^void set_forced_fenc(exarg_T *eap)$/
+set_helplang_default	option.c	/^void set_helplang_default(const char *lang)$/
+set_highlight_args	ui.c	/^static void set_highlight_args(int attr_code)$/
+set_hl_attr	syntax.c	/^set_hl_attr ($/
+set_iminsert_global	option.c	/^void set_iminsert_global(void)$/
+set_imsearch_global	option.c	/^void set_imsearch_global(void)$/
+set_init_1	option.c	/^void set_init_1(void)$/
+set_init_2	option.c	/^void set_init_2(void)$/
+set_init_3	option.c	/^void set_init_3(void)$/
+set_internal_string_var	eval.c	/^void set_internal_string_var(char_u *name, char_u /
+set_keep_msg	message.c	/^void set_keep_msg(char_u *s, int attr)$/
+set_lang_var	ex_cmds2.c	/^void set_lang_var(void)$/
+set_last_cursor	mark.c	/^void set_last_cursor(win_T *win)$/
+set_last_search_pat	search.c	/^void set_last_search_pat(const char_u *s, int idx,/
+set_num_option	option.c	/^set_num_option ($/
+set_number_default	option.c	/^void set_number_default(char *name, long val)$/
+set_one_cmd_context	ex_docmd.c	/^set_one_cmd_context ($/
+set_op_var	normal.c	/^static void set_op_var(int optype)$/
+set_option_default	option.c	/^set_option_default ($/
+set_option_scriptID_idx	option.c	/^static void set_option_scriptID_idx(int opt_idx, i/
+set_option_value	option.c	/^set_option_value ($/
+set_options_bin	option.c	/^set_options_bin ($/
+set_options_default	option.c	/^set_options_default ($/
+set_qf_ll_list	eval.c	/^static void set_qf_ll_list(win_T *wp, typval_T *li/
+set_reg_var	eval.c	/^void set_reg_var(int c)$/
+set_rw_fname	fileio.c	/^static int set_rw_fname(char_u *fname, char_u *sfn/
+set_sal_first	spell.c	/^static void set_sal_first(slang_T *lp)$/
+set_search_direction	search.c	/^void set_search_direction(int cdir)$/
+set_sofo	spell.c	/^static int set_sofo(slang_T *lp, char_u *from, cha/
+set_string_default	option.c	/^void set_string_default(const char *name, const ch/
+set_string_option	option.c	/^set_string_option ($/
+set_string_option_direct	option.c	/^set_string_option_direct ($/
+set_string_option_global	option.c	/^set_string_option_global ($/
+set_title_defaults	option.c	/^void set_title_defaults(void)$/
+set_topline	move.c	/^void set_topline(win_T *wp, linenr_T lnum)$/
+set_tty_option	option.c	/^bool set_tty_option(char *name, char *value)$/
+set_var	eval.c	/^set_var ($/
+set_vcount	eval.c	/^void set_vcount(long count, long count1, int set_p/
+set_vcount_ca	normal.c	/^static void set_vcount_ca(cmdarg_T *cap, bool *set/
+set_vim_var_char	eval.c	/^void set_vim_var_char(int c)$/
+set_vim_var_dict	eval.c	/^void set_vim_var_dict(int idx, dict_T *val) FUNC_A/
+set_vim_var_list	eval.c	/^void set_vim_var_list(int idx, list_T *val)$/
+set_vim_var_nr	eval.c	/^void set_vim_var_nr(int idx, long val)$/
+set_vim_var_string	eval.c	/^void set_vim_var_string ($/
+set_vv_searchforward	search.c	/^static void set_vv_searchforward(void)$/
+setaltfname	buffer.c	/^buf_T *setaltfname(char_u *ffname, char_u *sfname,/
+setcursor	screen.c	/^void setcursor(void)$/
+setfname	buffer.c	/^setfname ($/
+setmark	mark.c	/^int setmark(int c)$/
+setmark_pos	mark.c	/^int setmark_pos(int c, pos_T *pos, int fnum)$/
+setpcmark	mark.c	/^void setpcmark(void)$/
+setwinvar	eval.c	/^static void setwinvar(typval_T *argvars, typval_T /
+sha256	eval.c	/^\/\/\/ f_sha256 - sha256({string}) function$/
+sha256_bytes	sha256.c	/^char_u *sha256_bytes(const char_u *restrict buf,  /
+sha256_finish	sha256.c	/^void sha256_finish(context_sha256_T *ctx, char_u d/
+sha256_process	sha256.c	/^static void sha256_process(context_sha256_T *ctx,$/
+sha256_self_test	sha256.c	/^\/\/\/ sha256_self_test() is implicitly called onc/
+sha256_start	sha256.c	/^void sha256_start(context_sha256_T *ctx)$/
+sha256_update	sha256.c	/^void sha256_update(context_sha256_T *ctx, const ch/
+shift_block	ops.c	/^static void shift_block(oparg_T *oap, int amount)$/
+shift_line	ops.c	/^shift_line ($/
+shorten_fnames	fileio.c	/^void shorten_fnames(int force)$/
+shortmess	option.c	/^int shortmess(int x)$/
+should_abort	ex_eval.c	/^int should_abort(int retcode)$/
+show_autocmd	fileio.c	/^static void show_autocmd(AutoPat *ap, event_T even/
+show_menus	menu.c	/^static int show_menus(char_u *path_name, int modes/
+show_menus_recursive	menu.c	/^static void show_menus_recursive(vimmenu_T *menu, /
+show_one_mark	mark.c	/^show_one_mark ($/
+show_pat_in_path	search.c	/^static void show_pat_in_path(char_u *line, int typ/
+show_sb_text	message.c	/^void show_sb_text(void)$/
+show_utf8	mbyte.c	/^void show_utf8(void)$/
+showmatch	search.c	/^showmatch ($/
+showmode	screen.c	/^int showmode(void)$/
+showoneopt	option.c	/^showoneopt ($/
+showoptions	option.c	/^showoptions ($/
+showruler	screen.c	/^void showruler(int always)$/
+sign_T	ex_cmds.c	/^typedef struct sign sign_T;$/
+sign_cmd_idx	ex_cmds.c	/^static int sign_cmd_idx($/
+sign_get_attr	ex_cmds.c	/^int sign_get_attr(int typenr, int line)$/
+sign_get_text	ex_cmds.c	/^char_u * sign_get_text(int typenr)$/
+sign_list_defined	ex_cmds.c	/^static void sign_list_defined(sign_T *sp)$/
+sign_typenr2name	ex_cmds.c	/^char_u * sign_typenr2name(int typenr)$/
+sign_undefine	ex_cmds.c	/^static void sign_undefine(sign_T *sp, sign_T *sp_p/
+simplify_key	keymap.c	/^int simplify_key(int key, int *modifiers)$/
+size	indent.c	/^\/\/ Count the size (in window cells) of the inden/
+skip_anyof	regexp.c	/^static char_u *skip_anyof(char_u *p)$/
+skip_chars	search.c	/^static int skip_chars(int cclass, int dir)$/
+skip_comment	ops.c	/^static char_u *skip_comment(char_u *line, int proc/
+skip_expr	eval.c	/^int skip_expr(char_u **pp)$/
+skip_label	indent_c.c	/^static int skip_label(linenr_T lnum, char_u **pp)$/
+skip_range	ex_docmd.c	/^skip_range ($/
+skip_regexp	regexp.c	/^char_u *skip_regexp(char_u *startp, int dirc, int /
+skip_status_match_char	screen.c	/^static int skip_status_match_char(expand_T *xp, ch/
+skip_string	indent_c.c	/^static char_u *skip_string(char_u *p)$/
+skip_to_option_part	misc1.c	/^char_u *skip_to_option_part(char_u *p)$/
+skip_to_start	regexp_nfa.c	/^static int skip_to_start(int c, colnr_T *colp)$/
+skipchr	regexp.c	/^static void skipchr(void)$/
+skipchr_keepstart	regexp.c	/^static void skipchr_keepstart(void)$/
+slang_S	spell.c	/^struct slang_S {$/
+slang_T	spell.c	/^typedef struct slang_S slang_T;$/
+smsg	message.c	/^int smsg(char *s, ...)$/
+smsg_attr	message.c	/^int smsg_attr(int attr, char *s, ...)$/
+sn_prl_T	ex_cmds2.c	/^} sn_prl_T;$/
+soffset	search.c	/^struct soffset {$/
+sort_compare	ex_cmds.c	/^static int sort_compare(const void *s1, const void/
+sort_strings	strings.c	/^void sort_strings(char_u **files, int count)$/
+sorti_T	ex_cmds.c	/^} sorti_T;$/
+source_breakpoint	ex_cmds2.c	/^linenr_T *source_breakpoint(void *cookie)$/
+source_callback	ex_cmds2.c	/^static void source_callback(char_u *fname, void *c/
+source_cookie	ex_cmds2.c	/^struct source_cookie {$/
+source_dbg_tick	ex_cmds2.c	/^int *source_dbg_tick(void *cookie)$/
+source_finished	ex_cmds2.c	/^int source_finished(LineGetter fgetline, void *coo/
+source_level	ex_cmds2.c	/^int source_level(void *cookie)$/
+source_runtime	ex_cmds2.c	/^int source_runtime(char_u *name, int all)$/
+spat	search.c	/^struct spat {$/
+spell_back_to_badword	edit.c	/^static void spell_back_to_badword(void)$/
+spell_check	spell.c	/^spell_check ($/
+spell_clear_flags	spell.c	/^static void spell_clear_flags(wordnode_T *node)$/
+spell_print_node	spell.c	/^static void spell_print_node(wordnode_T *node, int/
+spell_print_tree	spell.c	/^static void spell_print_tree(wordnode_T *root)$/
+spell_read_aff	spell.c	/^static afffile_T *spell_read_aff(spellinfo_T *spin/
+spellinfo_T	spell.c	/^} spellinfo_T;$/
+st_error	regexp_nfa.c	/^static void st_error(int *postfix, int *end, int */
+st_pop	regexp_nfa.c	/^static Frag_T st_pop(Frag_T **p, Frag_T *stack)$/
+st_push	regexp_nfa.c	/^static void st_push(Frag_T s, Frag_T **p, Frag_T */
+startPS	search.c	/^int startPS(linenr_T lnum, int para, int both)$/
+start_arrow	edit.c	/^start_arrow ($/
+start_redo	getchar.c	/^int start_redo(long count, int old_redo)$/
+start_redo_ins	getchar.c	/^int start_redo_ins(void)$/
+start_search_hl	screen.c	/^static void start_search_hl(void)$/
+start_selection	normal.c	/^void start_selection(void)$/
+start_stuff	getchar.c	/^static void start_stuff(void)$/
+state_in_list	regexp_nfa.c	/^state_in_list ($/
+stateitem_T	syntax.c	/^} stateitem_T;$/
+status_match_len	screen.c	/^static int status_match_len(expand_T *xp, char_u */
+status_redraw_all	screen.c	/^void status_redraw_all(void)$/
+status_redraw_curbuf	screen.c	/^void status_redraw_curbuf(void)$/
+stl_connected	screen.c	/^int stl_connected(win_T *wp)$/
+stl_item	buffer.c	/^  struct stl_item {$/
+stop_arrow	edit.c	/^int stop_arrow(void)$/
+stop_redo_ins	getchar.c	/^void stop_redo_ins(void)$/
+store_current_state	syntax.c	/^static synstate_T *store_current_state(void)$/
+store_loop_line	ex_docmd.c	/^static void store_loop_line(garray_T *gap, char_u /
+store_sb_text	message.c	/^store_sb_text ($/
+str2special	message.c	/^str2special ($/
+str2special_save	message.c	/^str2special_save ($/
+str2specialbuf	message.c	/^void str2specialbuf(char_u *sp, char_u *buf, int l/
+strchr	memory.c	/^\/\/\/ A version of strchr() that returns a pointe/
+strchrsub	memory.c	/^void strchrsub(char *str, char c, char x)$/
+strcnt	memory.c	/^size_t strcnt(const char *str, char c)$/
+strdup	memory.c	/^\/\/\/ strdup() wrapper$/
+string_convert	mbyte.c	/^char_u * string_convert(vimconv_T *vcp, char_u *pt/
+string_convert_ext	mbyte.c	/^char_u * string_convert_ext(vimconv_T *vcp, char_u/
+string_to_key	option.c	/^static int string_to_key(char_u *arg)$/
+strncpy	memory.c	/^\/\/\/ out the result like strncpy() does.$/
+strup_save	strings.c	/^char_u *strup_save(const char_u *orig)$/
+stuffReadbuff	getchar.c	/^void stuffReadbuff(char_u *s)$/
+stuffReadbuffLen	getchar.c	/^void stuffReadbuffLen(char_u *s, long len)$/
+stuffReadbuffSpec	getchar.c	/^void stuffReadbuffSpec(char_u *s)$/
+stuffRedoReadbuff	getchar.c	/^void stuffRedoReadbuff(char_u *s)$/
+stuff_empty	getchar.c	/^int stuff_empty(void)$/
+stuffcharReadbuff	getchar.c	/^void stuffcharReadbuff(int c)$/
+stuffnumReadbuff	getchar.c	/^void stuffnumReadbuff(long n)$/
+sub_equal	regexp_nfa.c	/^static int sub_equal(regsub_T *sub1, regsub_T *sub/
+subcommand	syntax.c	/^struct subcommand {$/
+submatch	regexp.c	/^\/\/ Used for the submatch() function with the opt/
+sug_write	spell.c	/^static void sug_write(spellinfo_T *spin, char_u *f/
+swapchar	ops.c	/^int swapchar(int op_type, pos_T *pos)$/
+swapchars	ops.c	/^static int swapchars(int op_type, pos_T *pos, int /
+swapfile_info	memline.c	/^static time_t swapfile_info(char_u *fname)$/
+syn_add_cluster	syntax.c	/^static int syn_add_cluster(char_u *name)$/
+syn_add_end_off	syntax.c	/^syn_add_end_off ($/
+syn_add_group	syntax.c	/^static int syn_add_group(char_u *name)$/
+syn_add_start_off	syntax.c	/^syn_add_start_off ($/
+syn_check_group	syntax.c	/^int syn_check_group(char_u *pp, int len)$/
+syn_clear_cluster	syntax.c	/^static void syn_clear_cluster(synblock_T *block, i/
+syn_clear_keyword	syntax.c	/^static void syn_clear_keyword(int id, hashtab_T *h/
+syn_clear_one	syntax.c	/^static void syn_clear_one(int id, int syncing)$/
+syn_clear_pattern	syntax.c	/^static void syn_clear_pattern(synblock_T *block, i/
+syn_clear_time	syntax.c	/^static void syn_clear_time(syn_time_T *st)$/
+syn_cluster_T	syntax.c	/^} syn_cluster_T;$/
+syn_cmd_case	syntax.c	/^static void syn_cmd_case(exarg_T *eap, int syncing/
+syn_cmd_clear	syntax.c	/^static void syn_cmd_clear(exarg_T *eap, int syncin/
+syn_cmd_cluster	syntax.c	/^static void syn_cmd_cluster(exarg_T *eap, int sync/
+syn_cmd_conceal	syntax.c	/^static void syn_cmd_conceal(exarg_T *eap, int sync/
+syn_cmd_enable	syntax.c	/^static void syn_cmd_enable(exarg_T *eap, int synci/
+syn_cmd_include	syntax.c	/^static void syn_cmd_include(exarg_T *eap, int sync/
+syn_cmd_keyword	syntax.c	/^static void syn_cmd_keyword(exarg_T *eap, int sync/
+syn_cmd_list	syntax.c	/^syn_cmd_list ($/
+syn_cmd_manual	syntax.c	/^static void syn_cmd_manual(exarg_T *eap, int synci/
+syn_cmd_match	syntax.c	/^syn_cmd_match ($/
+syn_cmd_off	syntax.c	/^static void syn_cmd_off(exarg_T *eap, int syncing)/
+syn_cmd_on	syntax.c	/^static void syn_cmd_on(exarg_T *eap, int syncing)$/
+syn_cmd_onoff	syntax.c	/^static void syn_cmd_onoff(exarg_T *eap, char *name/
+syn_cmd_region	syntax.c	/^syn_cmd_region ($/
+syn_cmd_reset	syntax.c	/^static void syn_cmd_reset(exarg_T *eap, int syncin/
+syn_cmd_spell	syntax.c	/^static void syn_cmd_spell(exarg_T *eap, int syncin/
+syn_cmd_sync	syntax.c	/^static void syn_cmd_sync(exarg_T *eap, int syncing/
+syn_combine_list	syntax.c	/^static void syn_combine_list(short **clstr1, short/
+syn_compare_stub	syntax.c	/^static int syn_compare_stub(const void *v1, const /
+syn_compare_syntime	syntax.c	/^static int syn_compare_syntime(const void *v1, con/
+syn_current_attr	syntax.c	/^syn_current_attr ($/
+syn_finish_line	syntax.c	/^syn_finish_line ($/
+syn_get_final_id	syntax.c	/^int syn_get_final_id(int hl_id)$/
+syn_get_foldlevel	syntax.c	/^int syn_get_foldlevel(win_T *wp, long lnum)$/
+syn_get_id	syntax.c	/^syn_get_id ($/
+syn_get_stack_item	syntax.c	/^int syn_get_stack_item(int i)$/
+syn_get_sub_char	syntax.c	/^int syn_get_sub_char(void)$/
+syn_getcurline	syntax.c	/^static char_u *syn_getcurline(void)$/
+syn_id2attr	syntax.c	/^int syn_id2attr(int hl_id)$/
+syn_id2name	syntax.c	/^char_u *syn_id2name(int id)$/
+syn_incl_toplevel	syntax.c	/^static void syn_incl_toplevel(int id, int *flagsp)/
+syn_lines_msg	syntax.c	/^static void syn_lines_msg(void)$/
+syn_list_cluster	syntax.c	/^static void syn_list_cluster(int id)$/
+syn_list_flags	syntax.c	/^static void syn_list_flags(struct name_list *nlist/
+syn_list_header	syntax.c	/^syn_list_header ($/
+syn_list_keywords	syntax.c	/^syn_list_keywords ($/
+syn_list_one	syntax.c	/^syn_list_one ($/
+syn_match_linecont	syntax.c	/^static int syn_match_linecont(linenr_T lnum)$/
+syn_match_msg	syntax.c	/^static void syn_match_msg(void)$/
+syn_name2id	syntax.c	/^int syn_name2id(char_u *name)$/
+syn_namen2id	syntax.c	/^int syn_namen2id(char_u *linep, int len)$/
+syn_opt_arg_T	syntax.c	/^} syn_opt_arg_T;$/
+syn_regexec	syntax.c	/^static int syn_regexec(regmmatch_T *rmp, linenr_T /
+syn_remove_pattern	syntax.c	/^static void syn_remove_pattern(synblock_T *block, /
+syn_scl_name2id	syntax.c	/^static int syn_scl_name2id(char_u *name)$/
+syn_stack_alloc	syntax.c	/^static void syn_stack_alloc(void)$/
+syn_stack_apply_changes	syntax.c	/^void syn_stack_apply_changes(buf_T *buf)$/
+syn_stack_apply_changes_block	syntax.c	/^static void syn_stack_apply_changes_block(synblock/
+syn_stack_cleanup	syntax.c	/^static int syn_stack_cleanup(void)$/
+syn_stack_equal	syntax.c	/^static int syn_stack_equal(synstate_T *sp)$/
+syn_stack_find_entry	syntax.c	/^static synstate_T *syn_stack_find_entry(linenr_T l/
+syn_stack_free_all	syntax.c	/^void syn_stack_free_all(synblock_T *block)$/
+syn_stack_free_block	syntax.c	/^static void syn_stack_free_block(synblock_T *block/
+syn_stack_free_entry	syntax.c	/^static void syn_stack_free_entry(synblock_T *block/
+syn_start_line	syntax.c	/^static void syn_start_line(void)$/
+syn_sync	syntax.c	/^static void syn_sync(win_T *wp, linenr_T start_lnu/
+syn_unadd_group	syntax.c	/^static void syn_unadd_group(void)$/
+syn_update_ends	syntax.c	/^static void syn_update_ends(int startofline)$/
+synpat_T	syntax.c	/^} synpat_T;$/
+syntax_check_changed	syntax.c	/^int syntax_check_changed(linenr_T lnum)$/
+syntax_clear	syntax.c	/^void syntax_clear(synblock_T *block)$/
+syntax_end_parsing	syntax.c	/^void syntax_end_parsing(linenr_T lnum)$/
+syntax_present	syntax.c	/^int syntax_present(win_T *win)$/
+syntax_start	syntax.c	/^void syntax_start(win_T *wp, linenr_T lnum)$/
+syntax_sync_clear	syntax.c	/^static void syntax_sync_clear(void)$/
+syntime_clear	syntax.c	/^static void syntime_clear(void)$/
+syntime_report	syntax.c	/^static void syntime_report(void)$/
+t_puts	message.c	/^static void t_puts(int *t_col, char_u *t_s, char_u/
+tag_freematch	tag.c	/^void tag_freematch(void)$/
+tag_full_fname	tag.c	/^static char_u *tag_full_fname(tagptrs_T *tagp)$/
+tag_strnicmp	tag.c	/^static int tag_strnicmp(char_u *s1, char_u *s2, si/
+taglen_advance	tag.c	/^static void taglen_advance(int l)$/
+tagname_free	tag.c	/^void tagname_free(tagname_T *tnp)$/
+tagptrs_T	tag.c	/^} tagptrs_T;$/
+tail	path.c	/^\/\/\/ Gets the tail (i.e., the filename segment) /
+test_for_current	tag.c	/^static int test_for_current(char_u *fname, char_u /
+test_for_static	tag.c	/^static int test_for_static(tagptrs_T *tagp)$/
+text_locked	ex_getln.c	/^int text_locked(void) {$/
+text_locked_msg	ex_getln.c	/^void text_locked_msg(void)$/
+throw_exception	ex_eval.c	/^static int throw_exception(void *value, int type, /
+ti_change	buffer.c	/^static int ti_change(char_u *str, char_u **last)$/
+time_differs	fileio.c	/^static int time_differs(long t1, long t2)$/
+time_entry_T	syntax.c	/^} time_entry_T;$/
+time_msg	profile.c	/^void time_msg(const char *mesg, const proftime_T */
+time_to_bytes	misc2.c	/^void time_to_bytes(time_t time_, uint8_t buf[8])$/
+toF_Rjoin	farsi.c	/^static char_u toF_Rjoin(char_u c)$/
+toF_TyA	farsi.c	/^char_u toF_TyA(char_u c)$/
+toF_TyB	farsi.c	/^static char_u toF_TyB(int c)$/
+toF_Xor_X_	farsi.c	/^static char_u toF_Xor_X_(int c)$/
+toF_ending	farsi.c	/^static char_u toF_ending(char_u c)$/
+toF_leading	farsi.c	/^static char_u toF_leading(char_u c)$/
+to_device_units	hardcopy.c	/^static double to_device_units(int idx, double phys/
+toggle_Magic	regexp.c	/^static int toggle_Magic(int x)$/
+topline_back	move.c	/^static void topline_back(lineoff_T *lp)$/
+topline_botline	move.c	/^static void topline_botline(lineoff_T *lp)$/
+trans_special	keymap.c	/^trans_special ($/
+translated_function_exists	eval.c	/^int translated_function_exists(char_u *name)$/
+trigger_cursorhold	fileio.c	/^int trigger_cursorhold(void)$/
+trunc_string	message.c	/^void trunc_string(char_u *s, char_u *buf, int room/
+truncate_line	misc1.c	/^truncate_line ($/
+try_malloc	memory.c	/^void *try_malloc(size_t size) FUNC_ATTR_MALLOC FUN/
+try_to_free_memory	memory.c	/^static void try_to_free_memory(void)$/
+tv_check_lock	eval.c	/^static int tv_check_lock(int lock, char_u *name)$/
+typeahead_noflush	getchar.c	/^void typeahead_noflush(int c)$/
+typebuf_changed	getchar.c	/^typebuf_changed ($/
+typebuf_maplen	getchar.c	/^int typebuf_maplen(void)$/
+typebuf_typed	getchar.c	/^int typebuf_typed(void)$/
+u_add_time	undo.c	/^static void u_add_time(char_u *buf, size_t buflen,/
+u_blockfree	undo.c	/^void u_blockfree(buf_T *buf)$/
+u_check	undo.c	/^static void u_check(int newhead_may_be_NULL)      /
+u_check_tree	undo.c	/^static void u_check_tree(u_header_T *uhp,$/
+u_clearall	undo.c	/^void u_clearall(buf_T *buf)$/
+u_clearline	undo.c	/^void u_clearline(void)$/
+u_compute_hash	undo.c	/^void u_compute_hash(char_u *hash)$/
+u_doit	undo.c	/^static void u_doit(int startcount)$/
+u_eval_tree	undo.c	/^void u_eval_tree(u_header_T *first_uhp, list_T *li/
+u_find_first_changed	undo.c	/^void u_find_first_changed(void)$/
+u_free_uhp	undo.c	/^static void u_free_uhp(u_header_T *uhp)$/
+u_freebranch	undo.c	/^u_freebranch ($/
+u_freeentries	undo.c	/^u_freeentries ($/
+u_freeentry	undo.c	/^static void u_freeentry(u_entry_T *uep, long n)$/
+u_freeheader	undo.c	/^u_freeheader ($/
+u_get_headentry	undo.c	/^static u_entry_T *u_get_headentry(void)$/
+u_get_undo_file_name	undo.c	/^char_u *u_get_undo_file_name(char_u *buf_ffname, i/
+u_getbot	undo.c	/^static void u_getbot(void)$/
+u_inssub	undo.c	/^int u_inssub(linenr_T lnum)$/
+u_read_undo	undo.c	/^void u_read_undo(char_u *name, char_u *hash, char_/
+u_redo	undo.c	/^void u_redo(int count)$/
+u_save	undo.c	/^int u_save(linenr_T top, linenr_T bot)$/
+u_save_cursor	undo.c	/^int u_save_cursor(void)$/
+u_save_line	undo.c	/^static char_u *u_save_line(linenr_T lnum)$/
+u_savecommon	undo.c	/^int u_savecommon(linenr_T top, linenr_T bot, linen/
+u_savedel	undo.c	/^int u_savedel(linenr_T lnum, long nlines)$/
+u_saveline	undo.c	/^void u_saveline(linenr_T lnum)$/
+u_savesub	undo.c	/^int u_savesub(linenr_T lnum)$/
+u_sync	undo.c	/^u_sync ($/
+u_unch_branch	undo.c	/^static void u_unch_branch(u_header_T *uhp)$/
+u_unchanged	undo.c	/^void u_unchanged(buf_T *buf)$/
+u_undo	undo.c	/^void u_undo(int count)$/
+u_undo_end	undo.c	/^u_undo_end ($/
+u_undoline	undo.c	/^void u_undoline(void)$/
+u_undoredo	undo.c	/^static void u_undoredo(int undo)$/
+u_update_save_nr	undo.c	/^void u_update_save_nr(buf_T *buf)$/
+u_write_undo	undo.c	/^void u_write_undo(char_u *name, int forceit, buf_T/
+ucmd_T	ex_docmd.c	/^} ucmd_T;$/
+ucs2bytes	fileio.c	/^ucs2bytes ($/
+ufunc	eval.c	/^struct ufunc {$/
+ufunc_T	eval.c	/^typedef struct ufunc ufunc_T;$/
+ui_active	ui.c	/^bool ui_active(void)$/
+ui_append_lines	ui.c	/^void ui_append_lines(int count)$/
+ui_attach	ui.c	/^void ui_attach(UI *ui)$/
+ui_builtin_start	ui.c	/^void ui_builtin_start(void)$/
+ui_builtin_stop	ui.c	/^void ui_builtin_stop(void)$/
+ui_busy_start	ui.c	/^void ui_busy_start(void)$/
+ui_busy_stop	ui.c	/^void ui_busy_stop(void)$/
+ui_carriage_return	ui.c	/^static void ui_carriage_return(void)$/
+ui_change_mode	ui.c	/^static void ui_change_mode(void)$/
+ui_clear	ui.c	/^void ui_clear(void)$/
+ui_current_col	ui.c	/^int ui_current_col(void)$/
+ui_current_row	ui.c	/^int ui_current_row(void)$/
+ui_cursor_goto	ui.c	/^void ui_cursor_goto(int new_row, int new_col)$/
+ui_cursor_left	ui.c	/^static void ui_cursor_left(void)$/
+ui_cursor_right	ui.c	/^static void ui_cursor_right(void)$/
+ui_cursor_shape	ui.c	/^void ui_cursor_shape(void)$/
+ui_delete_lines	ui.c	/^void ui_delete_lines(int count)$/
+ui_detach	ui.c	/^void ui_detach(UI *ui)$/
+ui_eol_clear	ui.c	/^void ui_eol_clear(void)$/
+ui_flush	ui.c	/^void ui_flush(void)$/
+ui_linefeed	ui.c	/^static void ui_linefeed(void)$/
+ui_mouse_off	ui.c	/^void ui_mouse_off(void)$/
+ui_mouse_on	ui.c	/^void ui_mouse_on(void)$/
+ui_putc	ui.c	/^void ui_putc(uint8_t c)$/
+ui_puts	ui.c	/^void ui_puts(uint8_t *str)$/
+ui_refresh	ui.c	/^void ui_refresh(void)$/
+ui_reset_scroll_region	ui.c	/^void ui_reset_scroll_region(void)$/
+ui_resize	ui.c	/^void ui_resize(int new_width, int new_height)$/
+ui_rgb_attached	ui.c	/^bool ui_rgb_attached(void)$/
+ui_set_icon	ui.c	/^void ui_set_icon(char *icon)$/
+ui_set_scroll_region	ui.c	/^void ui_set_scroll_region(win_T *wp, int off)$/
+ui_set_title	ui.c	/^void ui_set_title(char *title)$/
+ui_start_highlight	ui.c	/^void ui_start_highlight(int attr_code)$/
+ui_stop_highlight	ui.c	/^void ui_stop_highlight(void)$/
+ui_suspend	ui.c	/^void ui_suspend(void)$/
+ui_update_encoding	ui.c	/^void ui_update_encoding(void)$/
+ui_visual_bell	ui.c	/^void ui_visual_bell(void)$/
+un_Magic	regexp.c	/^#define un_Magic(x)     ((x) + 256)$/
+unchanged	misc1.c	/^unchanged ($/
+undo_allowed	undo.c	/^int undo_allowed(void)$/
+undo_read	undo.c	/^static bool undo_read(bufinfo_T *bi, uint8_t *buff/
+undo_read_2c	undo.c	/^static int undo_read_2c(bufinfo_T *bi)$/
+undo_read_4c	undo.c	/^static int undo_read_4c(bufinfo_T *bi)$/
+undo_read_byte	undo.c	/^static int undo_read_byte(bufinfo_T *bi)$/
+undo_read_string	undo.c	/^static uint8_t *undo_read_string(bufinfo_T *bi, si/
+undo_read_time	undo.c	/^static time_t undo_read_time(bufinfo_T *bi)$/
+undo_time	undo.c	/^void undo_time(long step, int sec, int file, int a/
+undo_write	undo.c	/^static bool undo_write(bufinfo_T *bi, uint8_t *ptr/
+ungetchr	regexp.c	/^static void ungetchr(void)$/
+unref_extmatch	regexp.c	/^void unref_extmatch(reg_extmatch_T *em)$/
+unref_var_dict	eval.c	/^void unref_var_dict(dict_T *dict)$/
+unserialize_pos	undo.c	/^static void unserialize_pos(bufinfo_T *bi, pos_T */
+unserialize_uep	undo.c	/^static u_entry_T *unserialize_uep(bufinfo_T * bi, /
+unserialize_uhp	undo.c	/^static u_header_T *unserialize_uhp(bufinfo_T *bi, /
+unserialize_visualinfo	undo.c	/^static void unserialize_visualinfo(bufinfo_T *bi, /
+unset_global_local_option	option.c	/^void unset_global_local_option(char *name, void *f/
+unshift_special	normal.c	/^static void unshift_special(cmdarg_T *cap)$/
+unshowmode	screen.c	/^void unshowmode(int force)$/
+upd_block0_T	memline.c	/^} upd_block0_T;$/
+update_curbuf	screen.c	/^void update_curbuf(int type)$/
+update_curswant	move.c	/^void update_curswant(void)$/
+update_debug_sign	screen.c	/^void update_debug_sign(buf_T *buf, linenr_T lnum)$/
+update_finish	screen.c	/^static void update_finish(void)$/
+update_force_abort	ex_eval.c	/^void update_force_abort(void)$/
+update_prepare	screen.c	/^static void update_prepare(void)$/
+update_screen	screen.c	/^void update_screen(int type)$/
+update_si_attr	syntax.c	/^static void update_si_attr(int idx)$/
+update_si_end	syntax.c	/^update_si_end ($/
+update_single_line	screen.c	/^void update_single_line(win_T *wp, linenr_T lnum)$/
+update_topline	move.c	/^void update_topline(void)$/
+update_topline_redraw	move.c	/^void update_topline_redraw(void)$/
+update_topline_win	move.c	/^void update_topline_win(win_T* win)$/
+updatescript	getchar.c	/^void updatescript(int c)$/
+use_midword	spell.c	/^static void use_midword(slang_T *lp, win_T *wp)$/
+use_multibytecode	regexp.c	/^static int use_multibytecode(int c)$/
+user_expand_func_T	ex_getln.c	/^typedef void *(*user_expand_func_T)(char_u *, int,/
+user_func_unref	eval.c	/^static void user_func_unref(ufunc_T *fp)$/
+using_script	getchar.c	/^int using_script(void)$/
+utf_byte2len	mbyte.c	/^int utf_byte2len(int b)$/
+utf_char2bytes	mbyte.c	/^int utf_char2bytes(int c, char_u *buf)$/
+utf_char2cells	mbyte.c	/^int utf_char2cells(int c)$/
+utf_char2len	mbyte.c	/^int utf_char2len(int c)$/
+utf_class	mbyte.c	/^int utf_class(int c)$/
+utf_composinglike	mbyte.c	/^bool utf_composinglike(const char_u *p1, const cha/
+utf_convert	mbyte.c	/^static int utf_convert(int a, convertStruct *table/
+utf_find_illegal	mbyte.c	/^void utf_find_illegal(void)$/
+utf_fold	mbyte.c	/^int utf_fold(int a)$/
+utf_head_off	mbyte.c	/^int utf_head_off(const char_u *base, const char_u /
+utf_iscomposing	mbyte.c	/^bool utf_iscomposing(int c)$/
+utf_islower	mbyte.c	/^bool utf_islower(int a)$/
+utf_isupper	mbyte.c	/^bool utf_isupper(int a)$/
+utf_off2cells	mbyte.c	/^int utf_off2cells(unsigned off, unsigned max_off)$/
+utf_printable	mbyte.c	/^bool utf_printable(int c)$/
+utf_ptr2cells	mbyte.c	/^int utf_ptr2cells(const char_u *p)$/
+utf_ptr2cells_len	mbyte.c	/^static int utf_ptr2cells_len(const char_u *p, int /
+utf_ptr2char	mbyte.c	/^int utf_ptr2char(const char_u *p)$/
+utf_ptr2len	mbyte.c	/^int utf_ptr2len(const char_u *p)$/
+utf_ptr2len_len	mbyte.c	/^int utf_ptr2len_len(const char_u *p, int size)$/
+utf_safe_read_char_adv	mbyte.c	/^static int utf_safe_read_char_adv(char_u **s, size/
+utf_strnicmp	mbyte.c	/^static int utf_strnicmp(char_u *s1, char_u *s2, si/
+utf_tolower	mbyte.c	/^int utf_tolower(int a)$/
+utf_toupper	mbyte.c	/^int utf_toupper(int a)$/
+utfc_char2bytes	mbyte.c	/^int utfc_char2bytes(int off, char_u *buf)$/
+utfc_ptr2char	mbyte.c	/^int utfc_ptr2char(const char_u *p, int *pcc)$/
+utfc_ptr2char_len	mbyte.c	/^int utfc_ptr2char_len(const char_u *p, int *pcc, i/
+utfc_ptr2len	mbyte.c	/^int utfc_ptr2len(const char_u *p)$/
+utfc_ptr2len_len	mbyte.c	/^int utfc_ptr2len_len(const char_u *p, int size)$/
+v_exception	eval.c	/^char_u *v_exception(char_u *oldval)$/
+v_swap_corners	normal.c	/^static void v_swap_corners(int cmdchar)$/
+v_throwpoint	eval.c	/^char_u *v_throwpoint(char_u *oldval)$/
+v_visop	normal.c	/^static void v_visop(cmdarg_T *cap)$/
+valid_varname	eval.c	/^static int valid_varname(char_u *varname)$/
+valid_yank_reg	ops.c	/^bool valid_yank_reg(int regname, bool writing)$/
+validate_botline	move.c	/^void validate_botline(void)$/
+validate_cheight	move.c	/^static void validate_cheight(void)$/
+validate_current_state	syntax.c	/^static void validate_current_state(void)$/
+validate_cursor	move.c	/^void validate_cursor(void)$/
+validate_cursor_col	move.c	/^void validate_cursor_col(void)$/
+validate_virtcol	move.c	/^void validate_virtcol(void)$/
+validate_virtcol_win	move.c	/^void validate_virtcol_win(win_T *wp)$/
+var2fpos	eval.c	/^var2fpos ($/
+var_check_fixed	eval.c	/^static int var_check_fixed(int flags, char_u *name/
+var_check_func_name	eval.c	/^var_check_func_name ($/
+var_check_ro	eval.c	/^static int var_check_ro(int flags, char_u *name)$/
+var_flavour_T	eval.c	/^} var_flavour_T;$/
+var_redir_start	eval.c	/^var_redir_start ($/
+var_redir_stop	eval.c	/^void var_redir_stop(void)$/
+var_redir_str	eval.c	/^void var_redir_str(char_u *value, int value_len)$/
+vars_clear	eval.c	/^void vars_clear(hashtab_T *ht)$/
+vars_clear_ext	eval.c	/^static void vars_clear_ext(hashtab_T *ht, int free/
+verb_msg	message.c	/^int verb_msg(char_u *s)$/
+verbose_enter	message.c	/^void verbose_enter(void)$/
+verbose_enter_scroll	message.c	/^void verbose_enter_scroll(void)$/
+verbose_leave	message.c	/^void verbose_leave(void)$/
+verbose_leave_scroll	message.c	/^void verbose_leave_scroll(void)$/
+verbose_open	message.c	/^int verbose_open(void)$/
+verbose_stop	message.c	/^void verbose_stop(void)$/
+verbose_try_malloc	memory.c	/^void *verbose_try_malloc(size_t size) FUNC_ATTR_MA/
+vgetc	getchar.c	/^int vgetc(void)$/
+vgetorpeek	getchar.c	/^static int vgetorpeek(int advance)$/
+vim_beep	misc1.c	/^void vim_beep(void)$/
+vim_chdir	misc2.c	/^int vim_chdir(char_u *new_dir)$/
+vim_chdirfile	misc2.c	/^int vim_chdirfile(char_u *fname)$/
+vim_deltempdir	tempfile.c	/^void vim_deltempdir(void)$/
+vim_findfile	file_search.c	/^char_u *vim_findfile(void *search_ctx_arg)$/
+vim_findfile_cleanup	file_search.c	/^void vim_findfile_cleanup(void *ctx)$/
+vim_findfile_free_visited	file_search.c	/^void vim_findfile_free_visited(void *search_ctx_ar/
+vim_findfile_free_visited_list	file_search.c	/^static void vim_findfile_free_visited_list(ff_visi/
+vim_findfile_init	file_search.c	/^vim_findfile_init ($/
+vim_findfile_stopdir	file_search.c	/^char_u *vim_findfile_stopdir(char_u *buf)$/
+vim_gettempdir	tempfile.c	/^char_u *vim_gettempdir(void)$/
+vim_maketempdir	tempfile.c	/^static void vim_maketempdir(void)$/
+vim_regcomp_had_eol	regexp.c	/^int vim_regcomp_had_eol(void)$/
+vim_regexec_both	regexp.c	/^static int vim_regexec_both(regmatch_T *rmp, char_/
+vim_regfree	regexp.c	/^void vim_regfree(regprog_T *prog)$/
+vim_regsub	regexp.c	/^int vim_regsub(regmatch_T *rmp, char_u *source, ch/
+vim_regsub_both	regexp.c	/^static int vim_regsub_both(char_u *source, char_u /
+vim_regsub_multi	regexp.c	/^int vim_regsub_multi(regmmatch_T *rmp, linenr_T ln/
+vim_settempdir	tempfile.c	/^static bool vim_settempdir(char *tempdir)$/
+vim_strbyte	strings.c	/^char_u *vim_strbyte(const char_u *string, int c)$/
+vim_strcat	strings.c	/^void vim_strcat(char_u *restrict to, const char_u /
+vim_strchr	strings.c	/^char_u *vim_strchr(const char_u *string, int c)$/
+vim_stricmp	strings.c	/^int vim_stricmp(const char *s1, const char *s2)$/
+vim_strnicmp	strings.c	/^int vim_strnicmp(const char *s1, const char *s2, s/
+vim_strnsave	strings.c	/^char_u *vim_strnsave(const char_u *string, size_t /
+vim_strnsave_up	strings.c	/^char_u *vim_strnsave_up(const char_u *string, size/
+vim_strrchr	strings.c	/^char_u *vim_strrchr(const char_u *string, int c)$/
+vim_strsave	strings.c	/^char_u *vim_strsave(const char_u *string)$/
+vim_strsave_escaped	strings.c	/^char_u *vim_strsave_escaped(const char_u *string, /
+vim_strsave_escaped_ext	strings.c	/^char_u *vim_strsave_escaped_ext(const char_u *stri/
+vim_strsave_shellescape	strings.c	/^char_u *vim_strsave_shellescape(const char_u *stri/
+vim_strsave_up	strings.c	/^char_u *vim_strsave_up(const char_u *string)$/
+vim_strup	strings.c	/^void vim_strup(char_u *p)$/
+viminfo_encoding	ex_cmds.c	/^static int viminfo_encoding(vir_T *virp)$/
+viminfo_error	ex_cmds.c	/^int viminfo_error(char *errnum, char *message, cha/
+viminfo_filename	ex_cmds.c	/^static char_u *viminfo_filename(char_u *file)$/
+viminfo_readline	ex_cmds.c	/^int viminfo_readline(vir_T *virp)$/
+viminfo_readstring	ex_cmds.c	/^viminfo_readstring ($/
+viminfo_writestring	ex_cmds.c	/^void viminfo_writestring(FILE *fd, char_u *p)$/
+vimoption_T	option.c	/^} vimoption_T;$/
+vimrc_found	option.c	/^void vimrc_found(char_u *fname, char_u *envname)$/
+vimvar	eval.c	/^static struct vimvar {$/
+virtual_active	misc2.c	/^int virtual_active(void)$/
+void	regexp.c	/^typedef void (*(*fptr_T)(int *, int))(void);$/
+vpeekc	getchar.c	/^int vpeekc(void)$/
+vpeekc_any	getchar.c	/^int vpeekc_any(void)$/
+vungetc	getchar.c	/^vungetc ( \/* unget one character (can only be don/
+wait_return	message.c	/^void wait_return(int redraw)$/
+was_set_insecurely	option.c	/^int was_set_insecurely(char_u *opt, int opt_flags)/
+wc_use_keyname	option.c	/^static int wc_use_keyname(char_u *varp, long *wcp)/
+wcmd_T	ex_docmd.c	/^} wcmd_T;$/
+while	eval.c	/^  while (*p != ')') {$/
+win_col_off	move.c	/^int win_col_off(win_T *wp)$/
+win_col_off2	move.c	/^int win_col_off2(win_T *wp)$/
+win_copy_options	option.c	/^void win_copy_options(win_T *wp_from, win_T *wp_to/
+win_del_lines	screen.c	/^int win_del_lines(win_T *wp, int row, int line_cou/
+win_draw_end	screen.c	/^static void win_draw_end(win_T *wp, int c1, int c2/
+win_ins_lines	screen.c	/^int win_ins_lines(win_T *wp, int row, int line_cou/
+win_line	screen.c	/^win_line ($/
+win_redr_custom	screen.c	/^win_redr_custom ($/
+win_redr_ruler	screen.c	/^static void win_redr_ruler(win_T *wp, int always)$/
+win_redr_status	screen.c	/^void win_redr_status(win_T *wp)$/
+win_redr_status_matches	screen.c	/^win_redr_status_matches ($/
+win_redraw_last_status	screen.c	/^void win_redraw_last_status(frame_T *frp)$/
+win_rest_invalid	screen.c	/^static void win_rest_invalid(win_T *wp)$/
+win_split	window.c	/^int win_split(int size, int flags)$/
+win_split_ins	window.c	/^int win_split_ins(int size, int flags, win_T *new_/
+win_update	screen.c	/^static void win_update(win_T *wp)$/
+wininfo_other_tab_diff	buffer.c	/^static bool wininfo_other_tab_diff(wininfo_T *wip)/
+word	spell.c	/^\/\/ if they were words.  At each word (prefix) en/
+wordnode_S	spell.c	/^struct wordnode_S {$/
+wordnode_T	spell.c	/^typedef struct wordnode_S wordnode_T;$/
+write_list	eval.c	/^static bool write_list(FILE *fd, list_T *list, boo/
+write_lnum_adjust	fileio.c	/^void write_lnum_adjust(linenr_T offset)$/
+write_one_filemark	mark.c	/^static void write_one_filemark(FILE *fp, xfmark_T /
+write_one_mark	mark.c	/^static void write_one_mark(FILE *fp_out, int c, po/
+write_viminfo	ex_cmds.c	/^void write_viminfo(char_u *file, int forceit)$/
+write_viminfo_bufferlist	buffer.c	/^void write_viminfo_bufferlist(FILE *fp)$/
+write_viminfo_filemarks	mark.c	/^void write_viminfo_filemarks(FILE *fp)$/
+write_viminfo_marks	mark.c	/^int write_viminfo_marks(FILE *fp_out)$/
+write_viminfo_search_pattern	search.c	/^void write_viminfo_search_pattern(FILE *fp)$/
+write_viminfo_sub_string	ex_cmds.c	/^void write_viminfo_sub_string(FILE *fp)$/
+wvsp_one	search.c	/^wvsp_one ($/
+xcalloc	memory.c	/^void *xcalloc(size_t count, size_t size)$/
+xfree	memory.c	/^void xfree(void *ptr)$/
+xmalloc	fileio.c	/^  \/\/ Avoid xmalloc() here as vim_rename() is cal/
+xmallocz	memory.c	/^void *xmallocz(size_t size)$/
+xmemdupz	memory.c	/^void *xmemdupz(const void *data, size_t len)$/
+xrealloc	memory.c	/^void *xrealloc(void *ptr, size_t size)$/
+xstpcpy	memory.c	/^\/\/\/ The xstpcpy() function shall copy the strin/
+xstrdup	memory.c	/^char *xstrdup(const char *str)$/
+yank_copy_line	ops.c	/^static void yank_copy_line(yankreg_T *reg, struct /
+yreg_mode_t	ops.c	/^} yreg_mode_t;$/

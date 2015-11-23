@@ -1,0 +1,129 @@
+Determining if the function kstat_lookup exists in the kstat failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2488165952/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2488165952.dir/build.make CMakeFiles/cmTryCompileExec2488165952.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2488165952.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=kstat_lookup -O2 -g -DNDEBUG   -o CMakeFiles/cmTryCompileExec2488165952.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2488165952
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2488165952.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=kstat_lookup -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2488165952.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2488165952  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/kstat.h  -lkstat -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/kstat.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/kstat.h'
+ld: library not found for -lkstat
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec2488165952] Error 1
+make: *** [cmTryCompileExec2488165952/fast] Error 2
+
+
+Determining if the function kvm_open exists in the kvm failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4089172923/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4089172923.dir/build.make CMakeFiles/cmTryCompileExec4089172923.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4089172923.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=kvm_open -O2 -g -DNDEBUG   -o CMakeFiles/cmTryCompileExec4089172923.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4089172923
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4089172923.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=kvm_open -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4089172923.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4089172923  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/kvm.h  -lkvm -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/kvm.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/kvm.h'
+ld: library not found for -lkvm
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec4089172923] Error 1
+make: *** [cmTryCompileExec4089172923/fast] Error 2
+
+
+Determining if the function gethostbyname exists in the nsl failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1263092759/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1263092759.dir/build.make CMakeFiles/cmTryCompileExec1263092759.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1263092759.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=gethostbyname -O2 -g -DNDEBUG   -o CMakeFiles/cmTryCompileExec1263092759.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1263092759
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1263092759.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=gethostbyname -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1263092759.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1263092759  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/nsl.h  -lnsl -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/nsl.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/nsl.h'
+ld: library not found for -lnsl
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec1263092759] Error 1
+make: *** [cmTryCompileExec1263092759/fast] Error 2
+
+
+Determining if the function perfstat_cpu exists in the perfstat failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1866566577/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1866566577.dir/build.make CMakeFiles/cmTryCompileExec1866566577.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1866566577.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=perfstat_cpu -O2 -g -DNDEBUG   -o CMakeFiles/cmTryCompileExec1866566577.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1866566577
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1866566577.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=perfstat_cpu -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1866566577.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1866566577  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/libperfstat.h  -lperfstat -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/libperfstat.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/libperfstat.h'
+ld: library not found for -lperfstat
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec1866566577] Error 1
+make: *** [cmTryCompileExec1866566577/fast] Error 2
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec108265285/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec108265285.dir/build.make CMakeFiles/cmTryCompileExec108265285.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec108265285.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=clock_gettime -O2 -g -DNDEBUG   -o CMakeFiles/cmTryCompileExec108265285.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec108265285
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec108265285.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=clock_gettime -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec108265285.dir/CheckFunctionExists.c.o  -o cmTryCompileExec108265285  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/time.h  -lrt -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/time.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/time.h'
+ld: library not found for -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec108265285] Error 1
+make: *** [cmTryCompileExec108265285/fast] Error 2
+
+
+Determining if the function sendfile exists in the sendfile failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2987837829/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2987837829.dir/build.make CMakeFiles/cmTryCompileExec2987837829.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2987837829.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=sendfile -O2 -g -DNDEBUG   -o CMakeFiles/cmTryCompileExec2987837829.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2987837829
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2987837829.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=sendfile -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2987837829.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2987837829  -lsendfile 
+ld: library not found for -lsendfile
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec2987837829] Error 1
+make: *** [cmTryCompileExec2987837829/fast] Error 2
+
+
+Determining if files stropts.h exist failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec764552869/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec764552869.dir/build.make CMakeFiles/cmTryCompileExec764552869.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec764552869.dir/CheckIncludeFiles.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec764552869.dir/CheckIncludeFiles.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'stropts.h' file not found
+#include <stropts.h>
+         ^
+1 error generated.
+make[2]: *** [CMakeFiles/cmTryCompileExec764552869.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: *** [cmTryCompileExec764552869/fast] Error 2
+
+Source:
+/* */
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
