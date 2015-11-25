@@ -3,7 +3,7 @@
  *
  * Do ":help uganda"  in Vim to read copying and usage conditions.
  * Do ":help credits" in Vim to see a list of people who contributed.
- * See README.txt for an overview of the Vim source code.
+ * See README.md for an overview of the Vim source code.
  */
 /*
  * search.c: code for normal mode searching commands
@@ -4623,6 +4623,7 @@ void set_search_pattern(const SearchPattern pat)
 {
   free_spat(&spats[0]);
   memcpy(&(spats[0]), &pat, sizeof(spats[0]));
+  set_vv_searchforward();
 }
 
 /// Set last substitute pattern
