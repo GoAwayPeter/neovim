@@ -44,8 +44,6 @@ int fex_format(linenr_T lnum, long count, int c );
 void format_lines(linenr_T line_count, int avoid_fex );
 int paragraph_start(linenr_T lnum);
 int do_addsub(int command, linenr_T Prenum1);
-int read_viminfo_register(vir_T *virp, int force);
-void write_viminfo_registers(FILE *fp);
 char_u get_reg_type(int regname, long *reglen);
 void *get_reg_contents(int regname, int flags);
 void write_reg_contents(int name, const char_u *str, ssize_t len, int must_append);
@@ -54,4 +52,10 @@ void write_reg_contents_ex(int name, const char_u *str, ssize_t len, _Bool must_
 void clear_oparg(oparg_T *oap);
 void cursor_pos_info(void);
 int get_default_register_name(void);
+void start_global_changes(void);
+void end_global_changes(void);
+const void *op_register_iter(const void *const iter, char *const name, yankreg_T *const reg) FUNC_ATTR_NONNULL_ARG(2, 3) FUNC_ATTR_WARN_UNUSED_RESULT;
+size_t op_register_amount(void) FUNC_ATTR_WARN_UNUSED_RESULT;
+_Bool op_register_set(const char name, const yankreg_T reg);
+const yankreg_T *op_register_get(const char name);
 #include "nvim/func_attr.h"

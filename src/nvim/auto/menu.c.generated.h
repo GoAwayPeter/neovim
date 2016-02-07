@@ -16,7 +16,6 @@ static int get_menu_cmd_modes(char_u *cmd, int forceit, int *noremap, int *unmen
 static char_u *popup_mode_name(char_u *name, int idx);
 static char_u *menu_text(const char_u *str, int *mnemonic, char_u **actext) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC FUNC_ATTR_WARN_UNUSED_RESULT FUNC_ATTR_NONNULL_ARG(1);
 static int menu_is_hidden(char_u *name);
-static int menu_is_tearoff(char_u *name);
 static char_u *menu_skip_part(char_u *p);
 static char_u *menutrans_lookup(char_u *name, int len);
 static void menu_unescape_name(char_u *name);

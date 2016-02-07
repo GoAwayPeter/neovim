@@ -5,8 +5,8 @@
 #undef DEFINE_FUNC_ATTRIBUTES
 void copyFoldingState(win_T *wp_from, win_T *wp_to);
 int hasAnyFolding(win_T *win);
-int hasFolding(linenr_T lnum, linenr_T *firstp, linenr_T *lastp);
-int hasFoldingWin(win_T *win, linenr_T lnum, linenr_T *firstp, linenr_T *lastp, int cache, foldinfo_T *infop );
+_Bool hasFolding(linenr_T lnum, linenr_T *firstp, linenr_T *lastp);
+_Bool hasFoldingWin(win_T *win, linenr_T lnum, linenr_T *firstp, linenr_T *lastp, int cache, foldinfo_T *infop );
 int foldLevel(linenr_T lnum);
 int lineFolded(win_T *win, linenr_T lnum);
 long foldedCount(win_T *win, linenr_T lnum, foldinfo_T *infop);

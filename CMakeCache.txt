@@ -65,6 +65,10 @@ CMAKE_C_FLAGS:STRING=
 //Flags used by the compiler during debug builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
 
+//Flags used by the compiler during development (optimized, but
+// with debug info and logging) builds.
+CMAKE_C_FLAGS_DEV:STRING=-O2 -g
+
 //Flags used by the compiler during release builds for minimum
 // size.
 CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
@@ -80,6 +84,10 @@ CMAKE_EXE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during debug builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
+
+//Flags used for linking binaries during development (optimized,
+// but with debug info and logging) builds.
+CMAKE_EXE_LINKER_FLAGS_DEV:STRING=
 
 //Flags used by the linker during release minsize builds.
 CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=
@@ -197,6 +205,10 @@ CMAKE_SHARED_LINKER_FLAGS:STRING=
 //Flags used by the linker during debug builds.
 CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=
 
+//Flags used by the shared libraries linker during development
+// (optimized, but with debug info and logging) builds.
+CMAKE_SHARED_LINKER_FLAGS_DEV:STRING=
+
 //Flags used by the linker during release minsize builds.
 CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=
 
@@ -240,8 +252,62 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable to build OSX bundles
+CPACK_BINARY_BUNDLE:BOOL=OFF
+
+//Enable to build Debian packages
+CPACK_BINARY_DEB:BOOL=OFF
+
+//Enable to build OSX Drag And Drop package
+CPACK_BINARY_DRAGNDROP:BOOL=OFF
+
+//Enable to build IFW packages
+CPACK_BINARY_IFW:BOOL=OFF
+
+//Enable to build NSIS packages
+CPACK_BINARY_NSIS:BOOL=OFF
+
+//Enable to build OSX X11 packages
+CPACK_BINARY_OSXX11:BOOL=OFF
+
+//Enable to build PackageMaker packages
+CPACK_BINARY_PACKAGEMAKER:BOOL=OFF
+
+//Enable to build RPM packages
+CPACK_BINARY_RPM:BOOL=OFF
+
+//Enable to build STGZ packages
+CPACK_BINARY_STGZ:BOOL=ON
+
+//Enable to build TBZ2 packages
+CPACK_BINARY_TBZ2:BOOL=OFF
+
+//Enable to build TGZ packages
+CPACK_BINARY_TGZ:BOOL=ON
+
+//Enable to build TXZ packages
+CPACK_BINARY_TXZ:BOOL=OFF
+
+//Enable to build TBZ2 source packages
+CPACK_SOURCE_TBZ2:BOOL=ON
+
+//Enable to build TGZ source packages
+CPACK_SOURCE_TGZ:BOOL=ON
+
+//Enable to build TXZ source packages
+CPACK_SOURCE_TXZ:BOOL=ON
+
+//Enable to build TZ source packages
+CPACK_SOURCE_TZ:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=OFF
+
 //Path prefix for finding dependencies
 DEPS_PREFIX:PATH=/Users/George/Documents/Programs/C/neovim/.deps/usr
+
+//enable jemalloc
+ENABLE_JEMALLOC:BOOL=ON
 
 //Path to a program.
 GETTEXT_MSGFMT_EXECUTABLE:FILEPATH=/opt/local/bin/msgfmt
@@ -290,6 +356,9 @@ LIBVTERM_INCLUDE_DIR:PATH=/Users/George/Documents/Programs/C/neovim/.deps/usr/in
 
 //Path to a library.
 LIBVTERM_LIBRARY:FILEPATH=/Users/George/Documents/Programs/C/neovim/.deps/usr/lib/libvterm.a
+
+//Path to a program.
+LUACHECK_PRG:FILEPATH=LUACHECK_PRG-NOTFOUND
 
 //Path to a file.
 LUAJIT_INCLUDE_DIR:PATH=/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0
@@ -353,7 +422,7 @@ nvim-test_LIB_DEPENDS:STATIC=general;/opt/local/lib/libintl.dylib;general;/opt/l
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //STRINGS property for variable: CMAKE_BUILD_TYPE
-CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release;MinSizeRel;RelWithDebInfo
+CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Dev;Release;MinSizeRel;RelWithDebInfo
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/Users/George/Documents/Programs/C/neovim
 //Major version of cmake used to create the current loaded cache
@@ -388,6 +457,8 @@ CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
 CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_DEV
+CMAKE_C_FLAGS_DEV-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
 CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_RELEASE
@@ -402,6 +473,8 @@ CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
 CMAKE_EXE_LINKER_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEV
+CMAKE_EXE_LINKER_FLAGS_DEV-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_MINSIZEREL
 CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELEASE
@@ -474,7 +547,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -487,6 +560,8 @@ CMAKE_ROOT:INTERNAL=/usr/local/Cellar/cmake/3.2.3/share/cmake
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
 CMAKE_SHARED_LINKER_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEV
+CMAKE_SHARED_LINKER_FLAGS_DEV-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL
 CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_RELEASE
@@ -515,6 +590,40 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_BUNDLE
+CPACK_BINARY_BUNDLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_DEB
+CPACK_BINARY_DEB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_DRAGNDROP
+CPACK_BINARY_DRAGNDROP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_IFW
+CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_NSIS
+CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_OSXX11
+CPACK_BINARY_OSXX11-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_PACKAGEMAKER
+CPACK_BINARY_PACKAGEMAKER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_RPM
+CPACK_BINARY_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_STGZ
+CPACK_BINARY_STGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TBZ2
+CPACK_BINARY_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TGZ
+CPACK_BINARY_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TXZ
+CPACK_BINARY_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TBZ2
+CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TGZ
+CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TXZ
+CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TZ
+CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //Details about finding Gettext
 FIND_PACKAGE_MESSAGE_DETAILS_Gettext:INTERNAL=[/opt/local/bin/msgmerge][/opt/local/bin/msgfmt][v0.19.4()]
 //Details about finding JeMalloc
@@ -528,7 +637,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_LibVterm:INTERNAL=[/Users/George/Documents/Programs
 //Details about finding LuaJit
 FIND_PACKAGE_MESSAGE_DETAILS_LuaJit:INTERNAL=[/Users/George/Documents/Programs/C/neovim/.deps/usr/lib/libluajit-5.1.a][/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0][v()]
 //Details about finding Msgpack
-FIND_PACKAGE_MESSAGE_DETAILS_Msgpack:INTERNAL=[/Users/George/Documents/Programs/C/neovim/.deps/usr/lib/libmsgpack.a][/Users/George/Documents/Programs/C/neovim/.deps/usr/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_Msgpack:INTERNAL=[/Users/George/Documents/Programs/C/neovim/.deps/usr/lib/libmsgpack.a][/Users/George/Documents/Programs/C/neovim/.deps/usr/include][v1.0.0(1.0.0)]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/opt/local/bin/pkg-config][v0.28()]
 //Details about finding Threads
@@ -539,6 +648,18 @@ FIND_PACKAGE_MESSAGE_DETAILS_unibilium:INTERNAL=[/Users/George/Documents/Program
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Test HAS_ACCEPTABLE_FORTIFY
 HAS_ACCEPTABLE_FORTIFY:INTERNAL=1
+//Test HAS_DIAG_COLOR_FLAG
+HAS_DIAG_COLOR_FLAG:INTERNAL=1
+//Test HAS_FSTACK_PROTECTOR_FLAG
+HAS_FSTACK_PROTECTOR_FLAG:INTERNAL=1
+//Test HAS_FSTACK_PROTECTOR_STRONG_FLAG
+HAS_FSTACK_PROTECTOR_STRONG_FLAG:INTERNAL=1
+//Test HAS_WVLA_FLAG
+HAS_WVLA_FLAG:INTERNAL=1
+//Have function be64toh
+HAVE_BE64TOH_FUNC:INTERNAL=
+//Test HAVE_BE64TOH_MACROS
+HAVE_BE64TOH_MACROS:INTERNAL=
 //Have include dirent.h
 HAVE_DIRENT_H:INTERNAL=1
 //Have include fcntl.h
@@ -563,6 +684,8 @@ HAVE_LANGINFO_H:INTERNAL=1
 HAVE_LIBDL:INTERNAL=1
 //Have include libgen.h
 HAVE_LIBGEN_H:INTERNAL=1
+//Have library iphlpapi
+HAVE_LIBIPHLPAPI:INTERNAL=
 //Have library kstat
 HAVE_LIBKSTAT:INTERNAL=
 //Have library kvm
@@ -571,10 +694,16 @@ HAVE_LIBKVM:INTERNAL=
 HAVE_LIBNSL:INTERNAL=
 //Have library perfstat
 HAVE_LIBPERFSTAT:INTERNAL=
+//Have library psapi
+HAVE_LIBPSAPI:INTERNAL=
 //Have library rt
 HAVE_LIBRT:INTERNAL=
 //Have library sendfile
 HAVE_LIBSENDFILE:INTERNAL=
+//Have library userenv
+HAVE_LIBUSERENV:INTERNAL=
+//Have library ws2_32
+HAVE_LIBWS232:INTERNAL=
 //Have include locale.h
 HAVE_LOCALE_H:INTERNAL=1
 //Have symbol CODESET
@@ -585,6 +714,8 @@ HAVE_NL_MSG_CAT_CNTR:INTERNAL=1
 HAVE_OPENDIR:INTERNAL=1
 //Have function putenv
 HAVE_PUTENV:INTERNAL=1
+//Have function _putenv_s
+HAVE_PUTENV_S:INTERNAL=
 //Have include pwd.h
 HAVE_PWD_H:INTERNAL=1
 //Have function readlink
@@ -679,6 +810,12 @@ LibIntl_LIBRARY-ADVANCED:INTERNAL=1
 MSGPACK_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MSGPACK_LIBRARY
 MSGPACK_LIBRARY-ADVANCED:INTERNAL=1
+//Test ORDER_BIG_ENDIAN
+ORDER_BIG_ENDIAN:INTERNAL=
+//Result of TRY_COMPILE
+ORDER_BIG_ENDIAN_COMPILED:INTERNAL=TRUE
+//Result of TRY_RUN
+ORDER_BIG_ENDIAN_EXITCODE:INTERNAL=1
 PC_JEMALLOC_CFLAGS:INTERNAL=
 PC_JEMALLOC_CFLAGS_I:INTERNAL=
 PC_JEMALLOC_CFLAGS_OTHER:INTERNAL=

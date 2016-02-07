@@ -4,7 +4,7 @@
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
 void init_normal_cmds(void);
-void normal_cmd(oparg_T *oap, _Bool toplevel );
+void normal_enter(_Bool cmdwin, _Bool noexmode);
 void do_pending_operator(cmdarg_T *cap, int old_col, _Bool gui_yank);
 _Bool do_mouse(oparg_T *oap, int c, int dir, long count, _Bool fixindent );
 void check_visual_highlight(void);
@@ -26,4 +26,5 @@ void do_nv_ident(int c1, int c2);
 _Bool get_visual_text(cmdarg_T *cap, char_u **pp, size_t *lenp );
 void start_selection(void);
 void may_start_select(int c);
+void normal_cmd(oparg_T *oap, _Bool toplevel);
 #include "nvim/func_attr.h"

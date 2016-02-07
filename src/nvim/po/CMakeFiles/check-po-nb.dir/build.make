@@ -48,7 +48,7 @@ include src/nvim/po/CMakeFiles/check-po-nb.dir/progress.make
 src/nvim/po/CMakeFiles/check-po-nb: src/nvim/po/nb.po
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Checking nb.po"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim/po && ../../../bin/nvim -u NONE -n -e -X -S /Users/George/Documents/Programs/C/neovim/src/nvim/po/check.vim -c "if error == 0 | q | endif" -c cq /Users/George/Documents/Programs/C/neovim/src/nvim/po/nb.po || /usr/local/Cellar/cmake/3.2.3/bin/cmake -E echo "nb.po failed the check."
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim/po && ../../../bin/nvim -u NONE -n -e -S /Users/George/Documents/Programs/C/neovim/src/nvim/po/check.vim -c "if error == 0 | q | endif" -c cq /Users/George/Documents/Programs/C/neovim/src/nvim/po/nb.po || /usr/local/Cellar/cmake/3.2.3/bin/cmake -E echo "nb.po failed the check."
 
 check-po-nb: src/nvim/po/CMakeFiles/check-po-nb
 check-po-nb: src/nvim/po/CMakeFiles/check-po-nb.dir/build.make

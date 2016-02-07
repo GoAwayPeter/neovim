@@ -3,6 +3,12 @@
 #endif
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
+static void insert_enter(InsertState *s);
+static int insert_check(VimState *state);
+static int insert_execute(VimState *state, int key);
+static int insert_handle_key(InsertState *s);
+static void insert_do_complete(InsertState *s);
+static void insert_do_cindent(InsertState *s);
 static void ins_redraw(int ready );
 static void ins_ctrl_v(void);
 static void undisplay_dollar(void);
@@ -53,6 +59,8 @@ static void internal_format(int textwidth, int second_indent, int flags, int for
 static void check_auto_format(int end_insert );
 static void redo_literal(int c);
 static void start_arrow(pos_T *end_insert_pos );
+static void start_arrow_with_change(pos_T *end_insert_pos, _Bool end_change);
+static void start_arrow_common(pos_T *end_insert_pos, _Bool end_change);
 static void check_spell_redraw(void);
 static void spell_back_to_badword(void);
 static void stop_insert(pos_T *end_insert_pos, int esc, int nomove );
@@ -78,11 +86,11 @@ static void ins_bs_one(colnr_T *vcolp);
 static int ins_bs(int c, int mode, int *inserted_space_p);
 static void ins_mouse(int c);
 static void ins_mousescroll(int dir);
-static void ins_left(void);
+static void ins_left(_Bool end_change);
 static void ins_home(int c);
 static void ins_end(int c);
 static void ins_s_left(void);
-static void ins_right(void);
+static void ins_right(_Bool end_change);
 static void ins_s_right(void);
 static void ins_up(int startcol );
 static void ins_pageup(void);

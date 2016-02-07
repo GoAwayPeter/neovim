@@ -5,7 +5,8 @@
 #undef DEFINE_FUNC_ATTRIBUTES
 _Bool server_init(void);
 void server_teardown(void);
-int server_start(const char *endpoint) FUNC_ATTR_NONNULL_ALL;
+char *server_address_new(void);
+int server_start(const char *endpoint);
 void server_stop(char *endpoint);
 char **server_address_list(size_t *size) FUNC_ATTR_NONNULL_ALL;
 #include "nvim/func_attr.h"

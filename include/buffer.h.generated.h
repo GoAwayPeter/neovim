@@ -25,6 +25,7 @@ int buflist_findpat(char_u *pattern, char_u *pattern_end, int unlisted, int diff
 int ExpandBufnames(char_u *pat, int *num_file, char_u ***file, int options);
 buf_T *buflist_findnr(int nr);
 char_u *buflist_nr2name(int n, int fullname, int helptail );
+void buflist_setfpos(buf_T *const buf, win_T *const win, linenr_T lnum, colnr_T col, _Bool copy_options) FUNC_ATTR_NONNULL_ALL;
 void get_winopts(buf_T *buf);
 pos_T *buflist_findfpos(buf_T *buf);
 linenr_T buflist_findlnum(buf_T *buf);
@@ -50,8 +51,6 @@ char_u *alist_name(aentry_T *aep);
 void do_arg_all(int count, int forceit, int keep_tabs );
 void ex_buffer_all(exarg_T *eap);
 void do_modelines(int flags);
-int read_viminfo_bufferlist(vir_T *virp, int writing);
-void write_viminfo_bufferlist(FILE *fp);
 char_u *buf_spname(buf_T *buf);
 _Bool find_win_for_buf(buf_T *buf, win_T **wp, tabpage_T **tp);
 void buf_addsign(buf_T *buf, int id, linenr_T lnum, int typenr );

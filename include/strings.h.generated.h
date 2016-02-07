@@ -19,5 +19,6 @@ char_u *vim_strbyte(const char_u *string, int c) FUNC_ATTR_NONNULL_ALL FUNC_ATTR
 char_u *vim_strrchr(const char_u *string, int c) FUNC_ATTR_NONNULL_ALL FUNC_ATTR_PURE;
 void sort_strings(char_u **files, int count);
 _Bool has_non_ascii(const char_u *s) FUNC_ATTR_PURE;
+_Bool has_non_ascii_len(const char *const s, const size_t len) FUNC_ATTR_PURE;
 char_u *concat_str(const char_u *restrict str1, const char_u *restrict str2) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC FUNC_ATTR_NONNULL_ALL;
 #include "nvim/func_attr.h"

@@ -3,8 +3,26 @@
 #endif
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
+static inline void normal_state_init(NormalState *s);
 static int nv_compare(const void *s1, const void *s2);
 static int find_command(int cmdchar);
+static void normal_prepare(NormalState *s);
+static _Bool normal_handle_special_visual_command(NormalState *s);
+static _Bool normal_need_aditional_char(NormalState *s);
+static _Bool normal_need_redraw_mode_message(NormalState *s);
+static void normal_redraw_mode_message(NormalState *s);
+static void normal_get_additional_char(NormalState *s);
+static void normal_invert_horizontal(NormalState *s);
+static _Bool normal_get_command_count(NormalState *s);
+static void normal_finish_command(NormalState *s);
+static int normal_execute(VimState *state, int key);
+static void normal_check_stuff_buffer(NormalState *s);
+static void normal_check_interrupt(NormalState *s);
+static void normal_check_cursor_moved(NormalState *s);
+static void normal_check_text_changed(NormalState *s);
+static void normal_check_folds(NormalState *s);
+static void normal_redraw(NormalState *s);
+static int normal_check(VimState *state);
 static void set_vcount_ca(cmdarg_T *cap, _Bool *set_prevcount);
 static void op_colon(oparg_T *oap);
 static void op_function(oparg_T *oap);
@@ -108,6 +126,8 @@ static void nv_halfpage(cmdarg_T *cap);
 static void nv_join(cmdarg_T *cap);
 static void nv_put(cmdarg_T *cap);
 static void nv_open(cmdarg_T *cap);
-static void nv_cursorhold(cmdarg_T *cap);
+static void nv_event(cmdarg_T *cap);
+static void nv_focusgained(cmdarg_T *cap);
+static void nv_focuslost(cmdarg_T *cap);
 static int mouse_model_popup(void);
 #include "nvim/func_attr.h"

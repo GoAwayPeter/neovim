@@ -3,6 +3,7 @@
 #endif
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
+static int terminal_execute(VimState *state, int key);
 static int term_damage(VTermRect rect, void *data);
 static int term_moverect(VTermRect dest, VTermRect src, void *data);
 static int term_movecursor(VTermPos new, VTermPos old, int visible, void *data);
@@ -16,16 +17,16 @@ static void mouse_action(Terminal *term, int button, int row, int col, _Bool dra
 static _Bool send_mouse_event(Terminal *term, int c);
 static void fetch_cell(Terminal *term, int row, int col, VTermScreenCell *cell);
 static void invalidate_terminal(Terminal *term, int start_row, int end_row);
-static void refresh_timer_cb(uv_timer_t *handle);
-static void on_refresh(Event event);
-static void refresh_size(Terminal *term);
-static void refresh_scrollback(Terminal *term);
-static void refresh_screen(Terminal *term);
+static void refresh_terminal(Terminal *term);
+static void refresh_timer_cb(TimeWatcher *watcher, void *data);
+static void refresh_size(Terminal *term, buf_T *buf);
+static void refresh_scrollback(Terminal *term, buf_T *buf);
+static void refresh_screen(Terminal *term, buf_T *buf);
 static void redraw(_Bool restore_cursor);
-static void adjust_topline(Terminal *term, _Bool force);
+static void adjust_topline(Terminal *term, buf_T *buf, _Bool force);
 static int row_to_linenr(Terminal *term, int row);
 static int linenr_to_row(Terminal *term, int linenr);
 static _Bool is_focused(Terminal *term);
-static char *get_config_string(Terminal *term, char *key);
-static int get_config_int(Terminal *term, char *key);
+static char *get_config_string(char *key);
+static int get_config_int(char *key);
 #include "nvim/func_attr.h"

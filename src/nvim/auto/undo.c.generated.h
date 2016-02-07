@@ -4,13 +4,14 @@
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
 static long get_undolevel(void);
-static void corruption_error(char *mesg, char_u *file_name);
+static inline void zero_fmark_additional_data(fmark_T *fmarks);
+static void corruption_error(const char *const mesg, const char *const file_name) FUNC_ATTR_NONNULL_ALL;
 static void u_free_uhp(u_header_T *uhp);
 static _Bool serialize_header(bufinfo_T *bi, char_u *hash) FUNC_ATTR_NONNULL_ALL;
 static _Bool serialize_uhp(bufinfo_T *bi, u_header_T *uhp);
-static u_header_T *unserialize_uhp(bufinfo_T *bi, char_u *file_name);
+static u_header_T *unserialize_uhp(bufinfo_T *bi, const char *file_name);
 static _Bool serialize_uep(bufinfo_T *bi, u_entry_T *uep);
-static u_entry_T *unserialize_uep(bufinfo_T *bi, _Bool *error, char_u *file_name);
+static u_entry_T *unserialize_uep(bufinfo_T *bi, _Bool *error, const char *file_name);
 static void serialize_pos(bufinfo_T *bi, pos_T pos);
 static void unserialize_pos(bufinfo_T *bi, pos_T *pos);
 static void serialize_visualinfo(bufinfo_T *bi, visualinfo_T *info);

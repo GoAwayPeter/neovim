@@ -1211,3 +1211,59 @@ int main(int argc, char** argv)
 #endif
 }
 
+Performing C SOURCE FILE Test HAS_WVLA_FLAG succeded with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec331590073/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec331590073.dir/build.make CMakeFiles/cmTryCompileExec331590073.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec331590073.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_WVLA_FLAG -g   -Wvla -o CMakeFiles/cmTryCompileExec331590073.dir/src.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec331590073
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec331590073.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_WVLA_FLAG -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec331590073.dir/src.c.o  -o cmTryCompileExec331590073  
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_FSTACK_PROTECTOR_STRONG_FLAG succeded with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3895219759/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3895219759.dir/build.make CMakeFiles/cmTryCompileExec3895219759.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3895219759.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_FSTACK_PROTECTOR_STRONG_FLAG -g   -fstack-protector-strong -o CMakeFiles/cmTryCompileExec3895219759.dir/src.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3895219759
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3895219759.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_FSTACK_PROTECTOR_STRONG_FLAG -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3895219759.dir/src.c.o  -o cmTryCompileExec3895219759  
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_FSTACK_PROTECTOR_FLAG succeded with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1923213827/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1923213827.dir/build.make CMakeFiles/cmTryCompileExec1923213827.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1923213827.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_FSTACK_PROTECTOR_FLAG -g   -fstack-protector -o CMakeFiles/cmTryCompileExec1923213827.dir/src.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1923213827
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1923213827.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_FSTACK_PROTECTOR_FLAG -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1923213827.dir/src.c.o  -o cmTryCompileExec1923213827  
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_DIAG_COLOR_FLAG succeded with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec617153384/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec617153384.dir/build.make CMakeFiles/cmTryCompileExec617153384.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec617153384.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_DIAG_COLOR_FLAG -g   -fdiagnostics-color=auto -o CMakeFiles/cmTryCompileExec617153384.dir/src.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec617153384
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec617153384.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAS_DIAG_COLOR_FLAG -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec617153384.dir/src.c.o  -o cmTryCompileExec617153384  
+
+Source file was:
+int main(void) { return 0; }

@@ -127,3 +127,177 @@ Source:
 
 int main(void){return 0;}
 
+Determining if the function GetAdaptersAddresses exists in the iphlpapi failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3883695998/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3883695998.dir/build.make CMakeFiles/cmTryCompileExec3883695998.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3883695998.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=GetAdaptersAddresses -g   -o CMakeFiles/cmTryCompileExec3883695998.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3883695998
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3883695998.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=GetAdaptersAddresses -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3883695998.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3883695998  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/iphlpapi.h  -liphlpapi -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/iphlpapi.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/iphlpapi.h'
+ld: library not found for -liphlpapi
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec3883695998] Error 1
+make: *** [cmTryCompileExec3883695998/fast] Error 2
+
+
+Determining if the function GetProcessMemoryInfo exists in the psapi failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec855142990/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec855142990.dir/build.make CMakeFiles/cmTryCompileExec855142990.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec855142990.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=GetProcessMemoryInfo -g   -o CMakeFiles/cmTryCompileExec855142990.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec855142990
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec855142990.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=GetProcessMemoryInfo -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec855142990.dir/CheckFunctionExists.c.o  -o cmTryCompileExec855142990  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/psapi.h  -lpsapi -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/psapi.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/psapi.h'
+ld: library not found for -lpsapi
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec855142990] Error 1
+make: *** [cmTryCompileExec855142990/fast] Error 2
+
+
+Determining if the function GetUserProfileDirectoryW exists in the userenv failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3287561491/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3287561491.dir/build.make CMakeFiles/cmTryCompileExec3287561491.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3287561491.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=GetUserProfileDirectoryW -g   -o CMakeFiles/cmTryCompileExec3287561491.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3287561491
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3287561491.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=GetUserProfileDirectoryW -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3287561491.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3287561491  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/userenv.h  -luserenv -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/userenv.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/userenv.h'
+ld: library not found for -luserenv
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec3287561491] Error 1
+make: *** [cmTryCompileExec3287561491/fast] Error 2
+
+
+Determining if the function WSAStartup exists in the ws2_32 failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1624578081/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1624578081.dir/build.make CMakeFiles/cmTryCompileExec1624578081.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1624578081.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=WSAStartup -g   -o CMakeFiles/cmTryCompileExec1624578081.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1624578081
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1624578081.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=WSAStartup -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1624578081.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1624578081  -L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/winsock2.h  -lws2_32 -Wl,-rpath,/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/winsock2.h 
+ld: warning: directory not found for option '-L/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/winsock2.h'
+ld: library not found for -lws2_32
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec1624578081] Error 1
+make: *** [cmTryCompileExec1624578081/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_BE64TOH_MACROS failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4086232410/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4086232410.dir/build.make CMakeFiles/cmTryCompileExec4086232410.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4086232410.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DHAVE_BE64TOH_MACROS -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec4086232410.dir/src.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c
+/Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c:6:12: fatal error: 'endian.h' file not found
+  #include <endian.h>
+           ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec4086232410.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec4086232410/fast] Error 2
+
+Source file was:
+
+  #define _BSD_SOURCE 1
+  #define _DEFAULT_SOURCE 1
+  #include <stdint.h>
+
+  #include <endian.h>
+  #ifndef be64toh
+  # error No be64toh macros
+  #endif
+  int main(int argc,char**argv)
+{
+  uint64_t i=0x0102030405060708ULL;
+    uint64_t j = be64toh(i);
+    return (j == 0);  // j must not be zero
+  }
+Determining if the function be64toh exists failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1415766116/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1415766116.dir/build.make CMakeFiles/cmTryCompileExec1415766116.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1415766116.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=be64toh -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1415766116.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1415766116
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1415766116.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=be64toh -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1415766116.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1415766116  /opt/local/lib/libintl.dylib 
+Undefined symbols for architecture x86_64:
+  "_be64toh", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec1415766116] Error 1
+make: *** [cmTryCompileExec1415766116/fast] Error 2
+
+
+Performing C SOURCE FILE Test ORDER_BIG_ENDIAN failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1567261052/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1567261052.dir/build.make CMakeFiles/cmTryCompileExec1567261052.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1567261052.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DORDER_BIG_ENDIAN -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec1567261052.dir/src.c.o   -c /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1567261052
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1567261052.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DORDER_BIG_ENDIAN -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1567261052.dir/src.c.o  -o cmTryCompileExec1567261052  /opt/local/lib/libintl.dylib 
+
+Return value: 1
+Source file was:
+
+      #include <stdint.h>
+
+      int main(int argc,char**argv)
+{
+  uint64_t i=0x0102030405060708ULL;
+        char *s = (char *) &i;
+        return (
+          s[0] == 0x01
+          && s[1] == 0x02
+          && s[2] == 0x03
+          && s[3] == 0x04
+          && s[4] == 0x05
+          && s[5] == 0x06
+          && s[6] == 0x07
+          && s[7] == 0x08) ? 0 : 1;
+      }
+Determining if the function _putenv_s exists failed with the following output:
+Change Dir: /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3309036652/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3309036652.dir/build.make CMakeFiles/cmTryCompileExec3309036652.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3309036652.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=_putenv_s -g -I/Library/Frameworks/R.framework/Headers    -o CMakeFiles/cmTryCompileExec3309036652.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3309036652
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3309036652.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wconversion -DCHECK_FUNCTION_EXISTS=_putenv_s -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3309036652.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3309036652  /opt/local/lib/libintl.dylib 
+Undefined symbols for architecture x86_64:
+  "__putenv_s", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec3309036652] Error 1
+make: *** [cmTryCompileExec3309036652/fast] Error 2
+
+

@@ -7,6 +7,7 @@ end
 
 module.test_include_path = "/Users/George/Documents/Programs/C/neovim/test/includes/post"
 module.test_libnvim_path = "/Users/George/Documents/Programs/C/neovim/lib/libnvim-test.so"
+module.test_source_path = "/Users/George/Documents/Programs/C/neovim"
 table.insert(module.include_paths, "/Users/George/Documents/Programs/C/neovim/include")
 
 return module

@@ -14,7 +14,6 @@ static int read_redo(int init, int old_redo);
 static void copy_redo(int old_redo);
 static void init_typebuf(void);
 static void gotchars(char_u *chars, int len);
-static void may_sync_undo(void);
 static void closescript(void);
 static int vgetorpeek(int advance);
 static void map_free(mapblock_T **mpp);
@@ -22,4 +21,5 @@ static void validate_maphash(void);
 static void showmap(mapblock_T *mp, int local );
 static char_u *eval_map_expr(char_u *str, int c );
 static char_u *translate_mapping(char_u *str, int expmap );
+static _Bool typebuf_match_len(const uint8_t *str, int *mlen);
 #include "nvim/func_attr.h"

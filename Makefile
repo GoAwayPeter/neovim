@@ -8,10 +8,8 @@ default_target: all
 # Allow only one "make -f Makefile2" at a time, but pass parallelism.
 .NOTPARALLEL:
 
-CMAKE_FLAGS := -DCMAKE_BUILD_TYPE=$(CMAKE_BUILD_TYPE)
-DOC_DOWNLOAD_URL_BASE := https://raw.githubusercontent.com/neovim/doc/gh-pages
-CLINT_ERRORS_FILE_PATH := /reports/clint/errors.json
->>>>>>> upstream/master
+#=============================================================================
+# Special targets provided by cmake.
 
 # Disable implicit rules so canonical targets will work.
 .SUFFIXES:
@@ -68,16 +66,9 @@ edit_cache:
 	/usr/local/Cellar/cmake/3.2.3/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
-<<<<<<< HEAD
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
-=======
-testlint: | nvim
-	$(BUILD_CMD) -C build testlint
-
-test: functionaltest
->>>>>>> upstream/master
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -109,6 +100,26 @@ list_install_components:
 # Special rule for the target list_install_components
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/local/Cellar/cmake/3.2.3/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/local/Cellar/cmake/3.2.3/bin/cpack --config ./CPackSourceConfig.cmake /Users/George/Documents/Programs/C/neovim/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -1321,6 +1332,19 @@ tty-test/fast:
 	$(MAKE) -f test/functional/fixtures/CMakeFiles/tty-test.dir/build.make test/functional/fixtures/CMakeFiles/tty-test.dir/build
 .PHONY : tty-test/fast
 
+#=============================================================================
+# Target rules for targets named runtime
+
+# Build rule for target.
+runtime: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 runtime
+.PHONY : runtime
+
+# fast build rule for target.
+runtime/fast:
+	$(MAKE) -f runtime/CMakeFiles/runtime.dir/build.make runtime/CMakeFiles/runtime.dir/build
+.PHONY : runtime/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1336,8 +1360,10 @@ help:
 	@echo "... functionaltest-prereqs"
 	@echo "... benchmark"
 	@echo "... list_install_components"
+	@echo "... package"
 	@echo "... benchmark-prereqs"
 	@echo "... unittest"
+	@echo "... package_source"
 	@echo "... install/local"
 	@echo "... nvim-test"
 	@echo "... nvim"
@@ -1423,6 +1449,7 @@ help:
 	@echo "... unittest-headers"
 	@echo "... shell-test"
 	@echo "... tty-test"
+	@echo "... runtime"
 .PHONY : help
 
 
@@ -1430,10 +1457,10 @@ help:
 #=============================================================================
 # Special targets to cleanup operation of make.
 
-lint:
-	cmake -DLINT_PRG=./clint.py \
-		-DLINT_DIR=src \
-		-DLINT_SUPPRESS_URL="$(DOC_DOWNLOAD_URL_BASE)$(CLINT_ERRORS_FILE_PATH)" \
-		-P cmake/RunLint.cmake
+# Special rule to run CMake to check the build system integrity.
+# No rule that depends on this can have commands that come from listfiles
+# because they might be regenerated.
+cmake_check_build_system:
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+.PHONY : cmake_check_build_system
 
-.PHONY: test testlint functionaltest unittest lint clean distclean nvim libnvim cmake deps install

@@ -14,12 +14,12 @@
 # 1 "/usr/include/assert.h" 1 3 4
 # 42 "/usr/include/assert.h" 3 4
 # 1 "/usr/include/sys/cdefs.h" 1 3 4
-# 506 "/usr/include/sys/cdefs.h" 3 4
+# 533 "/usr/include/sys/cdefs.h" 3 4
 # 1 "/usr/include/sys/_symbol_aliasing.h" 1 3 4
-# 507 "/usr/include/sys/cdefs.h" 2 3 4
-# 572 "/usr/include/sys/cdefs.h" 3 4
+# 534 "/usr/include/sys/cdefs.h" 2 3 4
+# 599 "/usr/include/sys/cdefs.h" 3 4
 # 1 "/usr/include/sys/_posix_availability.h" 1 3 4
-# 573 "/usr/include/sys/cdefs.h" 2 3 4
+# 600 "/usr/include/sys/cdefs.h" 2 3 4
 # 43 "/usr/include/assert.h" 2 3 4
 # 76 "/usr/include/assert.h" 3 4
 void __assert_rtn(const char *, const char *, int, const char *) __attribute__((noreturn));
@@ -27,9 +27,9 @@ void __assert_rtn(const char *, const char *, int, const char *) __attribute__((
 # 1 "/usr/include/inttypes.h" 1 3 4
 # 224 "/usr/include/inttypes.h" 3 4
 # 1 "/usr/include/Availability.h" 1 3 4
-# 153 "/usr/include/Availability.h" 3 4
+# 164 "/usr/include/Availability.h" 3 4
 # 1 "/usr/include/AvailabilityInternal.h" 1 3 4
-# 154 "/usr/include/Availability.h" 2 3 4
+# 165 "/usr/include/Availability.h" 2 3 4
 # 225 "/usr/include/inttypes.h" 2 3 4
 
 # 1 "/usr/include/_types.h" 1 3 4
@@ -369,102 +369,290 @@ wcstoumax(const wchar_t * restrict __nptr,
 # 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
-# 94 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
-static inline _Bool ascii_iswhite(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isdigit(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isxdigit(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isspace(int) __attribute__((always_inline)) __attribute__((const));
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 1
+
+
+
+# 1 "/usr/include/ctype.h" 1 3 4
+# 70 "/usr/include/ctype.h" 3 4
+# 1 "/usr/include/runetype.h" 1 3 4
+# 46 "/usr/include/runetype.h" 3 4
+# 1 "/usr/include/sys/_types/_size_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_size_t.h" 3 4
+typedef __darwin_size_t size_t;
+# 47 "/usr/include/runetype.h" 2 3 4
+# 1 "/usr/include/sys/_types/_ct_rune_t.h" 1 3 4
+# 31 "/usr/include/sys/_types/_ct_rune_t.h" 3 4
+typedef __darwin_ct_rune_t ct_rune_t;
+# 48 "/usr/include/runetype.h" 2 3 4
+# 1 "/usr/include/sys/_types/_rune_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_rune_t.h" 3 4
+typedef __darwin_rune_t rune_t;
+# 49 "/usr/include/runetype.h" 2 3 4
+# 1 "/usr/include/sys/_types/_wchar_t.h" 1 3 4
+# 50 "/usr/include/runetype.h" 2 3 4
+# 1 "/usr/include/sys/_types/_wint_t.h" 1 3 4
+# 31 "/usr/include/sys/_types/_wint_t.h" 3 4
+typedef __darwin_wint_t wint_t;
+# 51 "/usr/include/runetype.h" 2 3 4
+# 60 "/usr/include/runetype.h" 3 4
+typedef struct {
+ __darwin_rune_t __min;
+ __darwin_rune_t __max;
+ __darwin_rune_t __map;
+ __uint32_t *__types;
+} _RuneEntry;
+
+typedef struct {
+ int __nranges;
+ _RuneEntry *__ranges;
+} _RuneRange;
+
+typedef struct {
+ char __name[14];
+ __uint32_t __mask;
+} _RuneCharClass;
+
+typedef struct {
+ char __magic[8];
+ char __encoding[32];
+
+ __darwin_rune_t (*__sgetrune)(const char *, __darwin_size_t, char const **);
+ int (*__sputrune)(__darwin_rune_t, char *, __darwin_size_t, char **);
+ __darwin_rune_t __invalid_rune;
+
+ __uint32_t __runetype[(1 <<8 )];
+ __darwin_rune_t __maplower[(1 <<8 )];
+ __darwin_rune_t __mapupper[(1 <<8 )];
 
 
 
 
-static inline _Bool ascii_iswhite(int c)
+
+
+ _RuneRange __runetype_ext;
+ _RuneRange __maplower_ext;
+ _RuneRange __mapupper_ext;
+
+ void *__variable;
+ int __variable_len;
+
+
+
+
+ int __ncharclasses;
+ _RuneCharClass *__charclasses;
+} _RuneLocale;
+
+
+
+
+extern _RuneLocale _DefaultRuneLocale;
+extern _RuneLocale *_CurrentRuneLocale;
+# 71 "/usr/include/ctype.h" 2 3 4
+# 129 "/usr/include/ctype.h" 3 4
+unsigned long ___runetype(__darwin_ct_rune_t);
+__darwin_ct_rune_t ___tolower(__darwin_ct_rune_t);
+__darwin_ct_rune_t ___toupper(__darwin_ct_rune_t);
+
+
+inline int
+isascii(int _c)
 {
-  return c == ' ' || c == '\t';
+ return ((_c & ~0x7F) == 0);
 }
-# 116 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
-static inline _Bool ascii_isdigit(int c)
+# 148 "/usr/include/ctype.h" 3 4
+int __maskrune(__darwin_ct_rune_t, unsigned long);
+
+
+
+inline int
+__istype(__darwin_ct_rune_t _c, unsigned long _f)
 {
-  return c >= '0' && c <= '9';
+
+
+
+ return (isascii(_c) ? !!(_DefaultRuneLocale.__runetype[_c] & _f)
+  : !!__maskrune(_c, _f));
+
 }
 
-
-
-
-static inline _Bool ascii_isxdigit(int c)
+inline __darwin_ct_rune_t
+__isctype(__darwin_ct_rune_t _c, unsigned long _f)
 {
-  return (c >= '0' && c <= '9')
-         || (c >= 'a' && c <= 'f')
-         || (c >= 'A' && c <= 'F');
+
+
+
+ return (_c < 0 || _c >= (1 <<8 )) ? 0 :
+  !!(_DefaultRuneLocale.__runetype[_c] & _f);
+
 }
+# 188 "/usr/include/ctype.h" 3 4
+__darwin_ct_rune_t __toupper(__darwin_ct_rune_t);
+__darwin_ct_rune_t __tolower(__darwin_ct_rune_t);
 
 
 
-
-
-static inline _Bool ascii_isspace(int c)
+inline int
+__wcwidth(__darwin_ct_rune_t _c)
 {
-  return (c >= 9 && c <= 13) || c == ' ';
+ unsigned int _x;
+
+ if (_c == 0)
+  return (0);
+ _x = (unsigned int)__maskrune(_c, 0xe0000000L|0x00040000L);
+ if ((_x & 0xe0000000L) != 0)
+  return ((_x & 0xe0000000L) >> 30);
+ return ((_x & 0x00040000L) != 0 ? 1 : -1);
 }
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c" 2
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc2.h" 1
 
 
 
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/shell.h" 1
 
 
 
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h"
-typedef void *vim_acl_T;
+inline int
+isalnum(int _c)
+{
+ return (__istype(_c, 0x00000100L|0x00000400L));
+}
+
+inline int
+isalpha(int _c)
+{
+ return (__istype(_c, 0x00000100L));
+}
+
+inline int
+isblank(int _c)
+{
+ return (__istype(_c, 0x00020000L));
+}
+
+inline int
+iscntrl(int _c)
+{
+ return (__istype(_c, 0x00000200L));
+}
 
 
+inline int
+isdigit(int _c)
+{
+ return (__isctype(_c, 0x00000400L));
+}
 
-typedef unsigned char char_u;
+inline int
+isgraph(int _c)
+{
+ return (__istype(_c, 0x00000800L));
+}
+
+inline int
+islower(int _c)
+{
+ return (__istype(_c, 0x00001000L));
+}
+
+inline int
+isprint(int _c)
+{
+ return (__istype(_c, 0x00040000L));
+}
+
+inline int
+ispunct(int _c)
+{
+ return (__istype(_c, 0x00002000L));
+}
+
+inline int
+isspace(int _c)
+{
+ return (__istype(_c, 0x00004000L));
+}
+
+inline int
+isupper(int _c)
+{
+ return (__istype(_c, 0x00008000L));
+}
 
 
-typedef uint32_t u8char_T;
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/shell.h" 2
+inline int
+isxdigit(int _c)
+{
+ return (__isctype(_c, 0x00010000L));
+}
+
+inline int
+toascii(int _c)
+{
+ return (_c & 0x7F);
+}
+
+inline int
+tolower(int _c)
+{
+        return (__tolower(_c));
+}
+
+inline int
+toupper(int _c)
+{
+        return (__toupper(_c));
+}
 
 
-typedef enum {
-  kShellOptFilter = 1,
-  kShellOptExpand = 2,
-  kShellOptDoOut = 4,
-  kShellOptSilent = 8,
-  kShellOptRead = 16,
-  kShellOptWrite = 32,
-  kShellOptHideMess = 64,
-} ShellOpts;
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc2.h" 2
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c" 2
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 1
+inline int
+digittoint(int _c)
+{
+ return (__maskrune(_c, 0x0F));
+}
 
+inline int
+ishexnumber(int _c)
+{
+ return (__istype(_c, 0x00010000L));
+}
 
+inline int
+isideogram(int _c)
+{
+ return (__istype(_c, 0x00080000L));
+}
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
-# 47 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 3 4
-typedef long int ptrdiff_t;
-# 58 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 3 4
-typedef long unsigned int size_t;
-# 72 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 3 4
-typedef long unsigned int rsize_t;
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 2
+inline int
+isnumber(int _c)
+{
+ return (__istype(_c, 0x00000400L));
+}
 
+inline int
+isphonogram(int _c)
+{
+ return (__istype(_c, 0x00200000L));
+}
 
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/log.h" 1
+inline int
+isrune(int _c)
+{
+ return (__istype(_c, 0xFFFFFFF0L));
+}
 
-
-
+inline int
+isspecial(int _c)
+{
+ return (__istype(_c, 0x00100000L));
+}
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
 # 1 "/usr/include/stdio.h" 1 3 4
 # 71 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/sys/_types/_va_list.h" 1 3 4
 # 31 "/usr/include/sys/_types/_va_list.h" 3 4
 typedef __darwin_va_list va_list;
 # 72 "/usr/include/stdio.h" 2 3 4
-# 1 "/usr/include/sys/_types/_size_t.h" 1 3 4
-# 73 "/usr/include/stdio.h" 2 3 4
+
 # 1 "/usr/include/sys/_types/_null.h" 1 3 4
 # 74 "/usr/include/stdio.h" 2 3 4
 
@@ -700,7 +888,1936 @@ extern int __vsprintf_chk (char * restrict, int, size_t,
 extern int __vsnprintf_chk (char * restrict, size_t, int, size_t,
        const char * restrict, va_list);
 # 493 "/usr/include/stdio.h" 2 3 4
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/log.h" 2
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
+# 1 "/usr/include/stdlib.h" 1 3 4
+# 65 "/usr/include/stdlib.h" 3 4
+# 1 "/usr/include/sys/wait.h" 1 3 4
+# 79 "/usr/include/sys/wait.h" 3 4
+typedef enum {
+ P_ALL,
+ P_PID,
+ P_PGID
+} idtype_t;
+
+
+
+
+
+
+# 1 "/usr/include/sys/_types/_pid_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_pid_t.h" 3 4
+typedef __darwin_pid_t pid_t;
+# 90 "/usr/include/sys/wait.h" 2 3 4
+# 1 "/usr/include/sys/_types/_id_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_id_t.h" 3 4
+typedef __darwin_id_t id_t;
+# 91 "/usr/include/sys/wait.h" 2 3 4
+# 109 "/usr/include/sys/wait.h" 3 4
+# 1 "/usr/include/sys/signal.h" 1 3 4
+# 73 "/usr/include/sys/signal.h" 3 4
+# 1 "/usr/include/sys/appleapiopts.h" 1 3 4
+# 74 "/usr/include/sys/signal.h" 2 3 4
+
+
+
+
+
+
+
+
+# 1 "/usr/include/machine/signal.h" 1 3 4
+# 32 "/usr/include/machine/signal.h" 3 4
+# 1 "/usr/include/i386/signal.h" 1 3 4
+# 39 "/usr/include/i386/signal.h" 3 4
+typedef int sig_atomic_t;
+# 33 "/usr/include/machine/signal.h" 2 3 4
+# 83 "/usr/include/sys/signal.h" 2 3 4
+# 146 "/usr/include/sys/signal.h" 3 4
+# 1 "/usr/include/machine/_mcontext.h" 1 3 4
+# 29 "/usr/include/machine/_mcontext.h" 3 4
+# 1 "/usr/include/i386/_mcontext.h" 1 3 4
+# 33 "/usr/include/i386/_mcontext.h" 3 4
+# 1 "/usr/include/mach/i386/_structs.h" 1 3 4
+# 43 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_i386_thread_state
+{
+    unsigned int __eax;
+    unsigned int __ebx;
+    unsigned int __ecx;
+    unsigned int __edx;
+    unsigned int __edi;
+    unsigned int __esi;
+    unsigned int __ebp;
+    unsigned int __esp;
+    unsigned int __ss;
+    unsigned int __eflags;
+    unsigned int __eip;
+    unsigned int __cs;
+    unsigned int __ds;
+    unsigned int __es;
+    unsigned int __fs;
+    unsigned int __gs;
+};
+# 89 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_fp_control
+{
+    unsigned short __invalid :1,
+        __denorm :1,
+    __zdiv :1,
+    __ovrfl :1,
+    __undfl :1,
+    __precis :1,
+      :2,
+    __pc :2,
+
+
+
+
+
+    __rc :2,
+
+
+
+
+
+
+             :1,
+      :3;
+};
+typedef struct __darwin_fp_control __darwin_fp_control_t;
+# 147 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_fp_status
+{
+    unsigned short __invalid :1,
+        __denorm :1,
+    __zdiv :1,
+    __ovrfl :1,
+    __undfl :1,
+    __precis :1,
+    __stkflt :1,
+    __errsumm :1,
+    __c0 :1,
+    __c1 :1,
+    __c2 :1,
+    __tos :3,
+    __c3 :1,
+    __busy :1;
+};
+typedef struct __darwin_fp_status __darwin_fp_status_t;
+# 191 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_mmst_reg
+{
+ char __mmst_reg[10];
+ char __mmst_rsrv[6];
+};
+# 210 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_xmm_reg
+{
+ char __xmm_reg[16];
+};
+# 232 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_i386_float_state
+{
+ int __fpu_reserved[2];
+ struct __darwin_fp_control __fpu_fcw;
+ struct __darwin_fp_status __fpu_fsw;
+ __uint8_t __fpu_ftw;
+ __uint8_t __fpu_rsrv1;
+ __uint16_t __fpu_fop;
+ __uint32_t __fpu_ip;
+ __uint16_t __fpu_cs;
+ __uint16_t __fpu_rsrv2;
+ __uint32_t __fpu_dp;
+ __uint16_t __fpu_ds;
+ __uint16_t __fpu_rsrv3;
+ __uint32_t __fpu_mxcsr;
+ __uint32_t __fpu_mxcsrmask;
+ struct __darwin_mmst_reg __fpu_stmm0;
+ struct __darwin_mmst_reg __fpu_stmm1;
+ struct __darwin_mmst_reg __fpu_stmm2;
+ struct __darwin_mmst_reg __fpu_stmm3;
+ struct __darwin_mmst_reg __fpu_stmm4;
+ struct __darwin_mmst_reg __fpu_stmm5;
+ struct __darwin_mmst_reg __fpu_stmm6;
+ struct __darwin_mmst_reg __fpu_stmm7;
+ struct __darwin_xmm_reg __fpu_xmm0;
+ struct __darwin_xmm_reg __fpu_xmm1;
+ struct __darwin_xmm_reg __fpu_xmm2;
+ struct __darwin_xmm_reg __fpu_xmm3;
+ struct __darwin_xmm_reg __fpu_xmm4;
+ struct __darwin_xmm_reg __fpu_xmm5;
+ struct __darwin_xmm_reg __fpu_xmm6;
+ struct __darwin_xmm_reg __fpu_xmm7;
+ char __fpu_rsrv4[14*16];
+ int __fpu_reserved1;
+};
+
+
+struct __darwin_i386_avx_state
+{
+ int __fpu_reserved[2];
+ struct __darwin_fp_control __fpu_fcw;
+ struct __darwin_fp_status __fpu_fsw;
+ __uint8_t __fpu_ftw;
+ __uint8_t __fpu_rsrv1;
+ __uint16_t __fpu_fop;
+ __uint32_t __fpu_ip;
+ __uint16_t __fpu_cs;
+ __uint16_t __fpu_rsrv2;
+ __uint32_t __fpu_dp;
+ __uint16_t __fpu_ds;
+ __uint16_t __fpu_rsrv3;
+ __uint32_t __fpu_mxcsr;
+ __uint32_t __fpu_mxcsrmask;
+ struct __darwin_mmst_reg __fpu_stmm0;
+ struct __darwin_mmst_reg __fpu_stmm1;
+ struct __darwin_mmst_reg __fpu_stmm2;
+ struct __darwin_mmst_reg __fpu_stmm3;
+ struct __darwin_mmst_reg __fpu_stmm4;
+ struct __darwin_mmst_reg __fpu_stmm5;
+ struct __darwin_mmst_reg __fpu_stmm6;
+ struct __darwin_mmst_reg __fpu_stmm7;
+ struct __darwin_xmm_reg __fpu_xmm0;
+ struct __darwin_xmm_reg __fpu_xmm1;
+ struct __darwin_xmm_reg __fpu_xmm2;
+ struct __darwin_xmm_reg __fpu_xmm3;
+ struct __darwin_xmm_reg __fpu_xmm4;
+ struct __darwin_xmm_reg __fpu_xmm5;
+ struct __darwin_xmm_reg __fpu_xmm6;
+ struct __darwin_xmm_reg __fpu_xmm7;
+ char __fpu_rsrv4[14*16];
+ int __fpu_reserved1;
+ char __avx_reserved1[64];
+ struct __darwin_xmm_reg __fpu_ymmh0;
+ struct __darwin_xmm_reg __fpu_ymmh1;
+ struct __darwin_xmm_reg __fpu_ymmh2;
+ struct __darwin_xmm_reg __fpu_ymmh3;
+ struct __darwin_xmm_reg __fpu_ymmh4;
+ struct __darwin_xmm_reg __fpu_ymmh5;
+ struct __darwin_xmm_reg __fpu_ymmh6;
+ struct __darwin_xmm_reg __fpu_ymmh7;
+};
+# 402 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_i386_exception_state
+{
+ __uint16_t __trapno;
+ __uint16_t __cpu;
+ __uint32_t __err;
+ __uint32_t __faultvaddr;
+};
+# 422 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_x86_debug_state32
+{
+ unsigned int __dr0;
+ unsigned int __dr1;
+ unsigned int __dr2;
+ unsigned int __dr3;
+ unsigned int __dr4;
+ unsigned int __dr5;
+ unsigned int __dr6;
+ unsigned int __dr7;
+};
+# 454 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_x86_thread_state64
+{
+ __uint64_t __rax;
+ __uint64_t __rbx;
+ __uint64_t __rcx;
+ __uint64_t __rdx;
+ __uint64_t __rdi;
+ __uint64_t __rsi;
+ __uint64_t __rbp;
+ __uint64_t __rsp;
+ __uint64_t __r8;
+ __uint64_t __r9;
+ __uint64_t __r10;
+ __uint64_t __r11;
+ __uint64_t __r12;
+ __uint64_t __r13;
+ __uint64_t __r14;
+ __uint64_t __r15;
+ __uint64_t __rip;
+ __uint64_t __rflags;
+ __uint64_t __cs;
+ __uint64_t __fs;
+ __uint64_t __gs;
+};
+# 509 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_x86_float_state64
+{
+ int __fpu_reserved[2];
+ struct __darwin_fp_control __fpu_fcw;
+ struct __darwin_fp_status __fpu_fsw;
+ __uint8_t __fpu_ftw;
+ __uint8_t __fpu_rsrv1;
+ __uint16_t __fpu_fop;
+
+
+ __uint32_t __fpu_ip;
+ __uint16_t __fpu_cs;
+
+ __uint16_t __fpu_rsrv2;
+
+
+ __uint32_t __fpu_dp;
+ __uint16_t __fpu_ds;
+
+ __uint16_t __fpu_rsrv3;
+ __uint32_t __fpu_mxcsr;
+ __uint32_t __fpu_mxcsrmask;
+ struct __darwin_mmst_reg __fpu_stmm0;
+ struct __darwin_mmst_reg __fpu_stmm1;
+ struct __darwin_mmst_reg __fpu_stmm2;
+ struct __darwin_mmst_reg __fpu_stmm3;
+ struct __darwin_mmst_reg __fpu_stmm4;
+ struct __darwin_mmst_reg __fpu_stmm5;
+ struct __darwin_mmst_reg __fpu_stmm6;
+ struct __darwin_mmst_reg __fpu_stmm7;
+ struct __darwin_xmm_reg __fpu_xmm0;
+ struct __darwin_xmm_reg __fpu_xmm1;
+ struct __darwin_xmm_reg __fpu_xmm2;
+ struct __darwin_xmm_reg __fpu_xmm3;
+ struct __darwin_xmm_reg __fpu_xmm4;
+ struct __darwin_xmm_reg __fpu_xmm5;
+ struct __darwin_xmm_reg __fpu_xmm6;
+ struct __darwin_xmm_reg __fpu_xmm7;
+ struct __darwin_xmm_reg __fpu_xmm8;
+ struct __darwin_xmm_reg __fpu_xmm9;
+ struct __darwin_xmm_reg __fpu_xmm10;
+ struct __darwin_xmm_reg __fpu_xmm11;
+ struct __darwin_xmm_reg __fpu_xmm12;
+ struct __darwin_xmm_reg __fpu_xmm13;
+ struct __darwin_xmm_reg __fpu_xmm14;
+ struct __darwin_xmm_reg __fpu_xmm15;
+ char __fpu_rsrv4[6*16];
+ int __fpu_reserved1;
+};
+
+
+struct __darwin_x86_avx_state64
+{
+ int __fpu_reserved[2];
+ struct __darwin_fp_control __fpu_fcw;
+ struct __darwin_fp_status __fpu_fsw;
+ __uint8_t __fpu_ftw;
+ __uint8_t __fpu_rsrv1;
+ __uint16_t __fpu_fop;
+
+
+ __uint32_t __fpu_ip;
+ __uint16_t __fpu_cs;
+
+ __uint16_t __fpu_rsrv2;
+
+
+ __uint32_t __fpu_dp;
+ __uint16_t __fpu_ds;
+
+ __uint16_t __fpu_rsrv3;
+ __uint32_t __fpu_mxcsr;
+ __uint32_t __fpu_mxcsrmask;
+ struct __darwin_mmst_reg __fpu_stmm0;
+ struct __darwin_mmst_reg __fpu_stmm1;
+ struct __darwin_mmst_reg __fpu_stmm2;
+ struct __darwin_mmst_reg __fpu_stmm3;
+ struct __darwin_mmst_reg __fpu_stmm4;
+ struct __darwin_mmst_reg __fpu_stmm5;
+ struct __darwin_mmst_reg __fpu_stmm6;
+ struct __darwin_mmst_reg __fpu_stmm7;
+ struct __darwin_xmm_reg __fpu_xmm0;
+ struct __darwin_xmm_reg __fpu_xmm1;
+ struct __darwin_xmm_reg __fpu_xmm2;
+ struct __darwin_xmm_reg __fpu_xmm3;
+ struct __darwin_xmm_reg __fpu_xmm4;
+ struct __darwin_xmm_reg __fpu_xmm5;
+ struct __darwin_xmm_reg __fpu_xmm6;
+ struct __darwin_xmm_reg __fpu_xmm7;
+ struct __darwin_xmm_reg __fpu_xmm8;
+ struct __darwin_xmm_reg __fpu_xmm9;
+ struct __darwin_xmm_reg __fpu_xmm10;
+ struct __darwin_xmm_reg __fpu_xmm11;
+ struct __darwin_xmm_reg __fpu_xmm12;
+ struct __darwin_xmm_reg __fpu_xmm13;
+ struct __darwin_xmm_reg __fpu_xmm14;
+ struct __darwin_xmm_reg __fpu_xmm15;
+ char __fpu_rsrv4[6*16];
+ int __fpu_reserved1;
+ char __avx_reserved1[64];
+ struct __darwin_xmm_reg __fpu_ymmh0;
+ struct __darwin_xmm_reg __fpu_ymmh1;
+ struct __darwin_xmm_reg __fpu_ymmh2;
+ struct __darwin_xmm_reg __fpu_ymmh3;
+ struct __darwin_xmm_reg __fpu_ymmh4;
+ struct __darwin_xmm_reg __fpu_ymmh5;
+ struct __darwin_xmm_reg __fpu_ymmh6;
+ struct __darwin_xmm_reg __fpu_ymmh7;
+ struct __darwin_xmm_reg __fpu_ymmh8;
+ struct __darwin_xmm_reg __fpu_ymmh9;
+ struct __darwin_xmm_reg __fpu_ymmh10;
+ struct __darwin_xmm_reg __fpu_ymmh11;
+ struct __darwin_xmm_reg __fpu_ymmh12;
+ struct __darwin_xmm_reg __fpu_ymmh13;
+ struct __darwin_xmm_reg __fpu_ymmh14;
+ struct __darwin_xmm_reg __fpu_ymmh15;
+};
+# 751 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_x86_exception_state64
+{
+    __uint16_t __trapno;
+    __uint16_t __cpu;
+    __uint32_t __err;
+    __uint64_t __faultvaddr;
+};
+# 771 "/usr/include/mach/i386/_structs.h" 3 4
+struct __darwin_x86_debug_state64
+{
+ __uint64_t __dr0;
+ __uint64_t __dr1;
+ __uint64_t __dr2;
+ __uint64_t __dr3;
+ __uint64_t __dr4;
+ __uint64_t __dr5;
+ __uint64_t __dr6;
+ __uint64_t __dr7;
+};
+# 34 "/usr/include/i386/_mcontext.h" 2 3 4
+
+
+
+
+struct __darwin_mcontext32
+{
+ struct __darwin_i386_exception_state __es;
+ struct __darwin_i386_thread_state __ss;
+ struct __darwin_i386_float_state __fs;
+};
+
+
+struct __darwin_mcontext_avx32
+{
+ struct __darwin_i386_exception_state __es;
+ struct __darwin_i386_thread_state __ss;
+ struct __darwin_i386_avx_state __fs;
+};
+# 76 "/usr/include/i386/_mcontext.h" 3 4
+struct __darwin_mcontext64
+{
+ struct __darwin_x86_exception_state64 __es;
+ struct __darwin_x86_thread_state64 __ss;
+ struct __darwin_x86_float_state64 __fs;
+};
+
+
+struct __darwin_mcontext_avx64
+{
+ struct __darwin_x86_exception_state64 __es;
+ struct __darwin_x86_thread_state64 __ss;
+ struct __darwin_x86_avx_state64 __fs;
+};
+# 115 "/usr/include/i386/_mcontext.h" 3 4
+typedef struct __darwin_mcontext64 *mcontext_t;
+# 30 "/usr/include/machine/_mcontext.h" 2 3 4
+# 147 "/usr/include/sys/signal.h" 2 3 4
+
+# 1 "/usr/include/sys/_pthread/_pthread_attr_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_attr_t.h" 3 4
+typedef __darwin_pthread_attr_t pthread_attr_t;
+# 149 "/usr/include/sys/signal.h" 2 3 4
+
+# 1 "/usr/include/sys/_types/_sigaltstack.h" 1 3 4
+# 36 "/usr/include/sys/_types/_sigaltstack.h" 3 4
+struct __darwin_sigaltstack
+{
+ void *ss_sp;
+ __darwin_size_t ss_size;
+ int ss_flags;
+};
+typedef struct __darwin_sigaltstack stack_t;
+# 151 "/usr/include/sys/signal.h" 2 3 4
+# 1 "/usr/include/sys/_types/_ucontext.h" 1 3 4
+# 34 "/usr/include/sys/_types/_ucontext.h" 3 4
+struct __darwin_ucontext
+{
+ int uc_onstack;
+ __darwin_sigset_t uc_sigmask;
+ struct __darwin_sigaltstack uc_stack;
+ struct __darwin_ucontext *uc_link;
+ __darwin_size_t uc_mcsize;
+ struct __darwin_mcontext64 *uc_mcontext;
+
+
+
+};
+
+
+typedef struct __darwin_ucontext ucontext_t;
+# 152 "/usr/include/sys/signal.h" 2 3 4
+
+
+# 1 "/usr/include/sys/_types/_sigset_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_sigset_t.h" 3 4
+typedef __darwin_sigset_t sigset_t;
+# 155 "/usr/include/sys/signal.h" 2 3 4
+
+# 1 "/usr/include/sys/_types/_uid_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_uid_t.h" 3 4
+typedef __darwin_uid_t uid_t;
+# 157 "/usr/include/sys/signal.h" 2 3 4
+
+union sigval {
+
+ int sival_int;
+ void *sival_ptr;
+};
+
+
+
+
+
+struct sigevent {
+ int sigev_notify;
+ int sigev_signo;
+ union sigval sigev_value;
+ void (*sigev_notify_function)(union sigval);
+ pthread_attr_t *sigev_notify_attributes;
+};
+
+
+typedef struct __siginfo {
+ int si_signo;
+ int si_errno;
+ int si_code;
+ pid_t si_pid;
+ uid_t si_uid;
+ int si_status;
+ void *si_addr;
+ union sigval si_value;
+ long si_band;
+ unsigned long __pad[7];
+} siginfo_t;
+# 269 "/usr/include/sys/signal.h" 3 4
+union __sigaction_u {
+ void (*__sa_handler)(int);
+ void (*__sa_sigaction)(int, struct __siginfo *,
+         void *);
+};
+
+
+struct __sigaction {
+ union __sigaction_u __sigaction_u;
+ void (*sa_tramp)(void *, int, int, siginfo_t *, void *);
+ sigset_t sa_mask;
+ int sa_flags;
+};
+
+
+
+
+struct sigaction {
+ union __sigaction_u __sigaction_u;
+ sigset_t sa_mask;
+ int sa_flags;
+};
+# 331 "/usr/include/sys/signal.h" 3 4
+typedef void (*sig_t)(int);
+# 348 "/usr/include/sys/signal.h" 3 4
+struct sigvec {
+ void (*sv_handler)(int);
+ int sv_mask;
+ int sv_flags;
+};
+# 367 "/usr/include/sys/signal.h" 3 4
+struct sigstack {
+ char *ss_sp;
+ int ss_onstack;
+};
+# 390 "/usr/include/sys/signal.h" 3 4
+void (*signal(int, void (*)(int)))(int);
+# 110 "/usr/include/sys/wait.h" 2 3 4
+# 1 "/usr/include/sys/resource.h" 1 3 4
+# 80 "/usr/include/sys/resource.h" 3 4
+# 1 "/usr/include/sys/_types/_timeval.h" 1 3 4
+# 30 "/usr/include/sys/_types/_timeval.h" 3 4
+struct timeval
+{
+ __darwin_time_t tv_sec;
+ __darwin_suseconds_t tv_usec;
+};
+# 81 "/usr/include/sys/resource.h" 2 3 4
+
+
+
+
+
+
+
+
+typedef __uint64_t rlim_t;
+# 152 "/usr/include/sys/resource.h" 3 4
+struct rusage {
+ struct timeval ru_utime;
+ struct timeval ru_stime;
+# 163 "/usr/include/sys/resource.h" 3 4
+ long ru_maxrss;
+
+ long ru_ixrss;
+ long ru_idrss;
+ long ru_isrss;
+ long ru_minflt;
+ long ru_majflt;
+ long ru_nswap;
+ long ru_inblock;
+ long ru_oublock;
+ long ru_msgsnd;
+ long ru_msgrcv;
+ long ru_nsignals;
+ long ru_nvcsw;
+ long ru_nivcsw;
+
+
+};
+# 192 "/usr/include/sys/resource.h" 3 4
+typedef void *rusage_info_t;
+
+struct rusage_info_v0 {
+ uint8_t ri_uuid[16];
+ uint64_t ri_user_time;
+ uint64_t ri_system_time;
+ uint64_t ri_pkg_idle_wkups;
+ uint64_t ri_interrupt_wkups;
+ uint64_t ri_pageins;
+ uint64_t ri_wired_size;
+ uint64_t ri_resident_size;
+ uint64_t ri_phys_footprint;
+ uint64_t ri_proc_start_abstime;
+ uint64_t ri_proc_exit_abstime;
+};
+
+struct rusage_info_v1 {
+ uint8_t ri_uuid[16];
+ uint64_t ri_user_time;
+ uint64_t ri_system_time;
+ uint64_t ri_pkg_idle_wkups;
+ uint64_t ri_interrupt_wkups;
+ uint64_t ri_pageins;
+ uint64_t ri_wired_size;
+ uint64_t ri_resident_size;
+ uint64_t ri_phys_footprint;
+ uint64_t ri_proc_start_abstime;
+ uint64_t ri_proc_exit_abstime;
+ uint64_t ri_child_user_time;
+ uint64_t ri_child_system_time;
+ uint64_t ri_child_pkg_idle_wkups;
+ uint64_t ri_child_interrupt_wkups;
+ uint64_t ri_child_pageins;
+ uint64_t ri_child_elapsed_abstime;
+};
+
+struct rusage_info_v2 {
+ uint8_t ri_uuid[16];
+ uint64_t ri_user_time;
+ uint64_t ri_system_time;
+ uint64_t ri_pkg_idle_wkups;
+ uint64_t ri_interrupt_wkups;
+ uint64_t ri_pageins;
+ uint64_t ri_wired_size;
+ uint64_t ri_resident_size;
+ uint64_t ri_phys_footprint;
+ uint64_t ri_proc_start_abstime;
+ uint64_t ri_proc_exit_abstime;
+ uint64_t ri_child_user_time;
+ uint64_t ri_child_system_time;
+ uint64_t ri_child_pkg_idle_wkups;
+ uint64_t ri_child_interrupt_wkups;
+ uint64_t ri_child_pageins;
+ uint64_t ri_child_elapsed_abstime;
+ uint64_t ri_diskio_bytesread;
+ uint64_t ri_diskio_byteswritten;
+};
+
+struct rusage_info_v3 {
+ uint8_t ri_uuid[16];
+ uint64_t ri_user_time;
+ uint64_t ri_system_time;
+ uint64_t ri_pkg_idle_wkups;
+ uint64_t ri_interrupt_wkups;
+ uint64_t ri_pageins;
+ uint64_t ri_wired_size;
+ uint64_t ri_resident_size;
+ uint64_t ri_phys_footprint;
+ uint64_t ri_proc_start_abstime;
+ uint64_t ri_proc_exit_abstime;
+ uint64_t ri_child_user_time;
+ uint64_t ri_child_system_time;
+ uint64_t ri_child_pkg_idle_wkups;
+ uint64_t ri_child_interrupt_wkups;
+ uint64_t ri_child_pageins;
+ uint64_t ri_child_elapsed_abstime;
+ uint64_t ri_diskio_bytesread;
+ uint64_t ri_diskio_byteswritten;
+ uint64_t ri_cpu_time_qos_default;
+ uint64_t ri_cpu_time_qos_maintenance;
+ uint64_t ri_cpu_time_qos_background;
+ uint64_t ri_cpu_time_qos_utility;
+ uint64_t ri_cpu_time_qos_legacy;
+ uint64_t ri_cpu_time_qos_user_initiated;
+ uint64_t ri_cpu_time_qos_user_interactive;
+ uint64_t ri_billed_system_time;
+ uint64_t ri_serviced_system_time;
+};
+
+typedef struct rusage_info_v3 rusage_info_current;
+# 325 "/usr/include/sys/resource.h" 3 4
+struct rlimit {
+ rlim_t rlim_cur;
+ rlim_t rlim_max;
+};
+# 353 "/usr/include/sys/resource.h" 3 4
+struct proc_rlimit_control_wakeupmon {
+ uint32_t wm_flags;
+ int32_t wm_rate;
+};
+# 383 "/usr/include/sys/resource.h" 3 4
+int getpriority(int, id_t);
+
+int getiopolicy_np(int, int) __attribute__((availability(macosx,introduced=10.5)));
+
+int getrlimit(int, struct rlimit *) __asm("_" "getrlimit" );
+int getrusage(int, struct rusage *);
+int setpriority(int, id_t, int);
+
+int setiopolicy_np(int, int, int) __attribute__((availability(macosx,introduced=10.5)));
+
+int setrlimit(int, const struct rlimit *) __asm("_" "setrlimit" );
+# 111 "/usr/include/sys/wait.h" 2 3 4
+# 186 "/usr/include/sys/wait.h" 3 4
+# 1 "/usr/include/machine/endian.h" 1 3 4
+# 35 "/usr/include/machine/endian.h" 3 4
+# 1 "/usr/include/i386/endian.h" 1 3 4
+# 99 "/usr/include/i386/endian.h" 3 4
+# 1 "/usr/include/sys/_endian.h" 1 3 4
+# 130 "/usr/include/sys/_endian.h" 3 4
+# 1 "/usr/include/libkern/_OSByteOrder.h" 1 3 4
+# 66 "/usr/include/libkern/_OSByteOrder.h" 3 4
+# 1 "/usr/include/libkern/i386/_OSByteOrder.h" 1 3 4
+# 44 "/usr/include/libkern/i386/_OSByteOrder.h" 3 4
+static inline
+__uint16_t
+_OSSwapInt16(
+    __uint16_t _data
+)
+{
+    return ((__uint16_t)((_data << 8) | (_data >> 8)));
+}
+
+static inline
+__uint32_t
+_OSSwapInt32(
+    __uint32_t _data
+)
+{
+
+    return __builtin_bswap32(_data);
+
+
+
+
+}
+
+
+static inline
+__uint64_t
+_OSSwapInt64(
+    __uint64_t _data
+)
+{
+    return __builtin_bswap64(_data);
+}
+# 67 "/usr/include/libkern/_OSByteOrder.h" 2 3 4
+# 131 "/usr/include/sys/_endian.h" 2 3 4
+# 100 "/usr/include/i386/endian.h" 2 3 4
+# 36 "/usr/include/machine/endian.h" 2 3 4
+# 187 "/usr/include/sys/wait.h" 2 3 4
+
+
+
+
+
+
+
+union wait {
+ int w_status;
+
+
+
+ struct {
+
+  unsigned int w_Termsig:7,
+    w_Coredump:1,
+    w_Retcode:8,
+    w_Filler:16;
+
+
+
+
+
+
+
+ } w_T;
+
+
+
+
+
+ struct {
+
+  unsigned int w_Stopval:8,
+    w_Stopsig:8,
+    w_Filler:16;
+
+
+
+
+
+
+ } w_S;
+};
+# 248 "/usr/include/sys/wait.h" 3 4
+pid_t wait(int *) __asm("_" "wait" );
+pid_t waitpid(pid_t, int *, int) __asm("_" "waitpid" );
+
+int waitid(idtype_t, id_t, siginfo_t *, int) __asm("_" "waitid" );
+
+
+pid_t wait3(int *, int, struct rusage *);
+pid_t wait4(pid_t, int *, int, struct rusage *);
+# 66 "/usr/include/stdlib.h" 2 3 4
+
+# 1 "/usr/include/alloca.h" 1 3 4
+# 32 "/usr/include/alloca.h" 3 4
+void *alloca(size_t);
+# 68 "/usr/include/stdlib.h" 2 3 4
+# 80 "/usr/include/stdlib.h" 3 4
+# 1 "/usr/include/sys/_types/_wchar_t.h" 1 3 4
+# 81 "/usr/include/stdlib.h" 2 3 4
+
+typedef struct {
+ int quot;
+ int rem;
+} div_t;
+
+typedef struct {
+ long quot;
+ long rem;
+} ldiv_t;
+
+
+typedef struct {
+ long long quot;
+ long long rem;
+} lldiv_t;
+# 117 "/usr/include/stdlib.h" 3 4
+extern int __mb_cur_max;
+# 128 "/usr/include/stdlib.h" 3 4
+void abort(void) __attribute__((noreturn));
+int abs(int) __attribute__((const));
+int atexit(void (*)(void));
+double atof(const char *);
+int atoi(const char *);
+long atol(const char *);
+
+long long
+  atoll(const char *);
+
+void *bsearch(const void *, const void *, size_t,
+     size_t, int (*)(const void *, const void *));
+void *calloc(size_t, size_t);
+div_t div(int, int) __attribute__((const));
+void exit(int) __attribute__((noreturn));
+void free(void *);
+char *getenv(const char *);
+long labs(long) __attribute__((const));
+ldiv_t ldiv(long, long) __attribute__((const));
+
+long long
+  llabs(long long);
+lldiv_t lldiv(long long, long long);
+
+void *malloc(size_t);
+int mblen(const char *, size_t);
+size_t mbstowcs(wchar_t * restrict , const char * restrict, size_t);
+int mbtowc(wchar_t * restrict, const char * restrict, size_t);
+int posix_memalign(void **, size_t, size_t) __attribute__((availability(macosx,introduced=10.6)));
+void qsort(void *, size_t, size_t,
+     int (*)(const void *, const void *));
+int rand(void);
+void *realloc(void *, size_t);
+void srand(unsigned);
+double strtod(const char *, char **) __asm("_" "strtod" );
+float strtof(const char *, char **) __asm("_" "strtof" );
+long strtol(const char *, char **, int);
+long double
+  strtold(const char *, char **);
+
+long long
+  strtoll(const char *, char **, int);
+
+unsigned long
+  strtoul(const char *, char **, int);
+
+unsigned long long
+  strtoull(const char *, char **, int);
+
+int system(const char *) __asm("_" "system" ) __attribute__((availability(macosx,introduced=10.0))) ;
+size_t wcstombs(char * restrict, const wchar_t * restrict, size_t);
+int wctomb(char *, wchar_t);
+
+
+void _Exit(int) __attribute__((noreturn));
+long a64l(const char *);
+double drand48(void);
+char *ecvt(double, int, int *restrict, int *restrict);
+double erand48(unsigned short[3]);
+char *fcvt(double, int, int *restrict, int *restrict);
+char *gcvt(double, int, char *);
+int getsubopt(char **, char * const *, char **);
+int grantpt(int);
+
+char *initstate(unsigned, char *, size_t);
+
+
+
+long jrand48(unsigned short[3]);
+char *l64a(long);
+void lcong48(unsigned short[7]);
+long lrand48(void);
+char *mktemp(char *);
+int mkstemp(char *);
+long mrand48(void);
+long nrand48(unsigned short[3]);
+int posix_openpt(int);
+char *ptsname(int);
+int putenv(char *) __asm("_" "putenv" );
+long random(void);
+int rand_r(unsigned *);
+
+char *realpath(const char * restrict, char * restrict) __asm("_" "realpath" "$DARWIN_EXTSN");
+
+
+
+unsigned short
+ *seed48(unsigned short[3]);
+int setenv(const char *, const char *, int) __asm("_" "setenv" );
+
+void setkey(const char *) __asm("_" "setkey" );
+
+
+
+char *setstate(const char *);
+void srand48(long);
+
+void srandom(unsigned);
+
+
+
+int unlockpt(int);
+
+int unsetenv(const char *) __asm("_" "unsetenv" );
+
+
+
+
+
+
+
+# 1 "/usr/include/machine/types.h" 1 3 4
+# 35 "/usr/include/machine/types.h" 3 4
+# 1 "/usr/include/i386/types.h" 1 3 4
+# 81 "/usr/include/i386/types.h" 3 4
+typedef unsigned char u_int8_t;
+typedef unsigned short u_int16_t;
+typedef unsigned int u_int32_t;
+typedef unsigned long long u_int64_t;
+
+
+typedef int64_t register_t;
+# 97 "/usr/include/i386/types.h" 3 4
+typedef u_int64_t user_addr_t;
+typedef u_int64_t user_size_t;
+typedef int64_t user_ssize_t;
+typedef int64_t user_long_t;
+typedef u_int64_t user_ulong_t;
+typedef int64_t user_time_t;
+typedef int64_t user_off_t;
+
+
+
+
+
+
+
+typedef u_int64_t syscall_arg_t;
+# 36 "/usr/include/machine/types.h" 2 3 4
+# 239 "/usr/include/stdlib.h" 2 3 4
+
+# 1 "/usr/include/sys/_types/_dev_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_dev_t.h" 3 4
+typedef __darwin_dev_t dev_t;
+# 241 "/usr/include/stdlib.h" 2 3 4
+# 1 "/usr/include/sys/_types/_mode_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_mode_t.h" 3 4
+typedef __darwin_mode_t mode_t;
+# 242 "/usr/include/stdlib.h" 2 3 4
+
+u_int32_t arc4random(void);
+void arc4random_addrandom(unsigned char * , int );
+void arc4random_buf(void * , size_t ) __attribute__((availability(macosx,introduced=10.7)));
+void arc4random_stir(void);
+u_int32_t
+  arc4random_uniform(u_int32_t ) __attribute__((availability(macosx,introduced=10.7)));
+
+int atexit_b(void (^)(void)) __attribute__((availability(macosx,introduced=10.6)));
+void *bsearch_b(const void *, const void *, size_t,
+     size_t, int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+
+
+
+char *cgetcap(char *, const char *, int);
+int cgetclose(void);
+int cgetent(char **, char **, const char *);
+int cgetfirst(char **, char **);
+int cgetmatch(const char *, const char *);
+int cgetnext(char **, char **);
+int cgetnum(char *, const char *, long *);
+int cgetset(const char *);
+int cgetstr(char *, const char *, char **);
+int cgetustr(char *, const char *, char **);
+
+int daemon(int, int) __asm("_" "daemon" "$1050") __attribute__((availability(macosx,introduced=10.0,deprecated=10.5,message="Use posix_spawn APIs instead."))) ;
+char *devname(dev_t, mode_t);
+char *devname_r(dev_t, mode_t, char *buf, int len);
+char *getbsize(int *, long *);
+int getloadavg(double [], int);
+const char
+ *getprogname(void);
+
+int heapsort(void *, size_t, size_t,
+     int (*)(const void *, const void *));
+
+int heapsort_b(void *, size_t, size_t,
+     int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+
+int mergesort(void *, size_t, size_t,
+     int (*)(const void *, const void *));
+
+int mergesort_b(void *, size_t, size_t,
+     int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+
+void psort(void *, size_t, size_t,
+     int (*)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+
+void psort_b(void *, size_t, size_t,
+     int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+
+void psort_r(void *, size_t, size_t, void *,
+     int (*)(void *, const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+
+void qsort_b(void *, size_t, size_t,
+     int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+
+void qsort_r(void *, size_t, size_t, void *,
+     int (*)(void *, const void *, const void *));
+int radixsort(const unsigned char **, int, const unsigned char *,
+     unsigned);
+void setprogname(const char *);
+int sradixsort(const unsigned char **, int, const unsigned char *,
+     unsigned);
+void sranddev(void);
+void srandomdev(void);
+void *reallocf(void *, size_t);
+
+long long
+  strtoq(const char *, char **, int);
+unsigned long long
+  strtouq(const char *, char **, int);
+
+extern char *suboptarg;
+void *valloc(size_t);
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
+# 1 "/usr/include/sys/stat.h" 1 3 4
+# 78 "/usr/include/sys/stat.h" 3 4
+# 1 "/usr/include/sys/_types/_timespec.h" 1 3 4
+# 30 "/usr/include/sys/_types/_timespec.h" 3 4
+struct timespec
+{
+ __darwin_time_t tv_sec;
+ long tv_nsec;
+};
+# 79 "/usr/include/sys/stat.h" 2 3 4
+
+
+
+
+
+
+# 1 "/usr/include/sys/_types/_blkcnt_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_blkcnt_t.h" 3 4
+typedef __darwin_blkcnt_t blkcnt_t;
+# 86 "/usr/include/sys/stat.h" 2 3 4
+# 1 "/usr/include/sys/_types/_blksize_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_blksize_t.h" 3 4
+typedef __darwin_blksize_t blksize_t;
+# 87 "/usr/include/sys/stat.h" 2 3 4
+
+# 1 "/usr/include/sys/_types/_ino_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_ino_t.h" 3 4
+typedef __darwin_ino_t ino_t;
+# 89 "/usr/include/sys/stat.h" 2 3 4
+
+
+# 1 "/usr/include/sys/_types/_ino64_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_ino64_t.h" 3 4
+typedef __darwin_ino64_t ino64_t;
+# 92 "/usr/include/sys/stat.h" 2 3 4
+
+
+
+# 1 "/usr/include/sys/_types/_nlink_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_nlink_t.h" 3 4
+typedef __uint16_t nlink_t;
+# 96 "/usr/include/sys/stat.h" 2 3 4
+
+# 1 "/usr/include/sys/_types/_gid_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_gid_t.h" 3 4
+typedef __darwin_gid_t gid_t;
+# 98 "/usr/include/sys/stat.h" 2 3 4
+
+# 1 "/usr/include/sys/_types/_time_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_time_t.h" 3 4
+typedef __darwin_time_t time_t;
+# 100 "/usr/include/sys/stat.h" 2 3 4
+# 110 "/usr/include/sys/stat.h" 3 4
+struct ostat {
+ __uint16_t st_dev;
+ ino_t st_ino;
+ mode_t st_mode;
+ nlink_t st_nlink;
+ __uint16_t st_uid;
+ __uint16_t st_gid;
+ __uint16_t st_rdev;
+ __int32_t st_size;
+ struct timespec st_atimespec;
+ struct timespec st_mtimespec;
+ struct timespec st_ctimespec;
+ __int32_t st_blksize;
+ __int32_t st_blocks;
+ __uint32_t st_flags;
+ __uint32_t st_gen;
+};
+# 182 "/usr/include/sys/stat.h" 3 4
+struct stat { dev_t st_dev; mode_t st_mode; nlink_t st_nlink; __darwin_ino64_t st_ino; uid_t st_uid; gid_t st_gid; dev_t st_rdev; struct timespec st_atimespec; struct timespec st_mtimespec; struct timespec st_ctimespec; struct timespec st_birthtimespec; off_t st_size; blkcnt_t st_blocks; blksize_t st_blksize; __uint32_t st_flags; __uint32_t st_gen; __int32_t st_lspare; __int64_t st_qspare[2]; };
+# 221 "/usr/include/sys/stat.h" 3 4
+struct stat64 { dev_t st_dev; mode_t st_mode; nlink_t st_nlink; __darwin_ino64_t st_ino; uid_t st_uid; gid_t st_gid; dev_t st_rdev; struct timespec st_atimespec; struct timespec st_mtimespec; struct timespec st_ctimespec; struct timespec st_birthtimespec; off_t st_size; blkcnt_t st_blocks; blksize_t st_blksize; __uint32_t st_flags; __uint32_t st_gen; __int32_t st_lspare; __int64_t st_qspare[2]; };
+# 241 "/usr/include/sys/stat.h" 3 4
+# 1 "/usr/include/sys/_types/_s_ifmt.h" 1 3 4
+# 242 "/usr/include/sys/stat.h" 2 3 4
+# 352 "/usr/include/sys/stat.h" 3 4
+int chmod(const char *, mode_t) __asm("_" "chmod" );
+int fchmod(int, mode_t) __asm("_" "fchmod" );
+int fstat(int, struct stat *) __asm("_" "fstat" "$INODE64");
+int lstat(const char *, struct stat *) __asm("_" "lstat" "$INODE64");
+int mkdir(const char *, mode_t);
+int mkfifo(const char *, mode_t);
+int stat(const char *, struct stat *) __asm("_" "stat" "$INODE64");
+int mknod(const char *, mode_t, dev_t);
+mode_t umask(mode_t);
+
+
+int fchmodat(int, const char *, mode_t, int) __attribute__((availability(macosx,introduced=10.10)));
+int fstatat(int, const char *, struct stat *, int) __asm("_" "fstatat" "$INODE64") __attribute__((availability(macosx,introduced=10.10)));
+int mkdirat(int, const char *, mode_t) __attribute__((availability(macosx,introduced=10.10)));
+
+
+
+
+
+# 1 "/usr/include/sys/_types/_filesec_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_filesec_t.h" 3 4
+struct _filesec;
+typedef struct _filesec *filesec_t;
+# 371 "/usr/include/sys/stat.h" 2 3 4
+
+int chflags(const char *, __uint32_t);
+int chmodx_np(const char *, filesec_t);
+int fchflags(int, __uint32_t);
+int fchmodx_np(int, filesec_t);
+int fstatx_np(int, struct stat *, filesec_t) __asm("_" "fstatx_np" "$INODE64");
+int lchflags(const char *, __uint32_t) __attribute__((availability(macosx,introduced=10.5)));
+int lchmod(const char *, mode_t) __attribute__((availability(macosx,introduced=10.5)));
+int lstatx_np(const char *, struct stat *, filesec_t) __asm("_" "lstatx_np" "$INODE64");
+int mkdirx_np(const char *, filesec_t);
+int mkfifox_np(const char *, filesec_t);
+int statx_np(const char *, struct stat *, filesec_t) __asm("_" "statx_np" "$INODE64");
+int umaskx_np(filesec_t) __attribute__((availability(macosx,introduced=10.4,deprecated=10.6)));
+
+
+
+int fstatx64_np(int, struct stat64 *, filesec_t) __attribute__((availability(macosx,introduced=10.5,deprecated=10.6)));
+int lstatx64_np(const char *, struct stat64 *, filesec_t) __attribute__((availability(macosx,introduced=10.5,deprecated=10.6)));
+int statx64_np(const char *, struct stat64 *, filesec_t) __attribute__((availability(macosx,introduced=10.5,deprecated=10.6)));
+int fstat64(int, struct stat64 *) __attribute__((availability(macosx,introduced=10.5,deprecated=10.6)));
+int lstat64(const char *, struct stat64 *) __attribute__((availability(macosx,introduced=10.5,deprecated=10.6)));
+int stat64(const char *, struct stat64 *) __attribute__((availability(macosx,introduced=10.5,deprecated=10.6)));
+# 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
+# 1 "/usr/include/sys/types.h" 1 3 4
+# 84 "/usr/include/sys/types.h" 3 4
+typedef unsigned char u_char;
+typedef unsigned short u_short;
+typedef unsigned int u_int;
+
+typedef unsigned long u_long;
+
+
+typedef unsigned short ushort;
+typedef unsigned int uint;
+
+
+typedef u_int64_t u_quad_t;
+typedef int64_t quad_t;
+typedef quad_t * qaddr_t;
+
+typedef char * caddr_t;
+typedef int32_t daddr_t;
+
+
+
+typedef u_int32_t fixpt_t;
+
+
+
+
+
+# 1 "/usr/include/sys/_types/_in_addr_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_in_addr_t.h" 3 4
+typedef __uint32_t in_addr_t;
+# 110 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_types/_in_port_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_in_port_t.h" 3 4
+typedef __uint16_t in_port_t;
+# 111 "/usr/include/sys/types.h" 2 3 4
+
+
+
+
+
+
+# 1 "/usr/include/sys/_types/_key_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_key_t.h" 3 4
+typedef __int32_t key_t;
+# 118 "/usr/include/sys/types.h" 2 3 4
+
+
+
+
+
+
+typedef int32_t segsz_t;
+typedef int32_t swblk_t;
+# 161 "/usr/include/sys/types.h" 3 4
+# 1 "/usr/include/sys/_types/_clock_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_clock_t.h" 3 4
+typedef __darwin_clock_t clock_t;
+# 162 "/usr/include/sys/types.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/sys/_types/_useconds_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_useconds_t.h" 3 4
+typedef __darwin_useconds_t useconds_t;
+# 167 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_types/_suseconds_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_suseconds_t.h" 3 4
+typedef __darwin_suseconds_t suseconds_t;
+# 168 "/usr/include/sys/types.h" 2 3 4
+
+
+# 1 "/usr/include/sys/_types/_rsize_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_rsize_t.h" 3 4
+typedef __darwin_size_t rsize_t;
+# 171 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_types/_errno_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_errno_t.h" 3 4
+typedef int errno_t;
+# 172 "/usr/include/sys/types.h" 2 3 4
+
+
+
+
+
+
+
+
+# 1 "/usr/include/sys/_types/_fd_def.h" 1 3 4
+# 46 "/usr/include/sys/_types/_fd_def.h" 3 4
+typedef struct fd_set {
+ __int32_t fds_bits[((((1024) % ((sizeof(__int32_t) * 8))) == 0) ? ((1024) / ((sizeof(__int32_t) * 8))) : (((1024) / ((sizeof(__int32_t) * 8))) + 1))];
+} fd_set;
+
+
+
+static __inline int
+__darwin_fd_isset(int _n, const struct fd_set *_p)
+{
+ return (_p->fds_bits[(unsigned long)_n/(sizeof(__int32_t) * 8)] & ((__int32_t)(1<<((unsigned long)_n % (sizeof(__int32_t) * 8)))));
+}
+# 181 "/usr/include/sys/types.h" 2 3 4
+
+
+
+
+typedef __int32_t fd_mask;
+
+
+
+
+
+
+
+
+# 1 "/usr/include/sys/_types/_fd_setsize.h" 1 3 4
+# 194 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_types/_fd_set.h" 1 3 4
+# 195 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_types/_fd_clr.h" 1 3 4
+# 196 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_types/_fd_zero.h" 1 3 4
+# 197 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_types/_fd_isset.h" 1 3 4
+# 198 "/usr/include/sys/types.h" 2 3 4
+
+
+# 1 "/usr/include/sys/_types/_fd_copy.h" 1 3 4
+# 201 "/usr/include/sys/types.h" 2 3 4
+# 212 "/usr/include/sys/types.h" 3 4
+# 1 "/usr/include/sys/_pthread/_pthread_cond_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_cond_t.h" 3 4
+typedef __darwin_pthread_cond_t pthread_cond_t;
+# 213 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_pthread/_pthread_condattr_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_condattr_t.h" 3 4
+typedef __darwin_pthread_condattr_t pthread_condattr_t;
+# 214 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_pthread/_pthread_mutex_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_mutex_t.h" 3 4
+typedef __darwin_pthread_mutex_t pthread_mutex_t;
+# 215 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_pthread/_pthread_mutexattr_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_mutexattr_t.h" 3 4
+typedef __darwin_pthread_mutexattr_t pthread_mutexattr_t;
+# 216 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_pthread/_pthread_once_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_once_t.h" 3 4
+typedef __darwin_pthread_once_t pthread_once_t;
+# 217 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_pthread/_pthread_rwlock_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_rwlock_t.h" 3 4
+typedef __darwin_pthread_rwlock_t pthread_rwlock_t;
+# 218 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_pthread/_pthread_rwlockattr_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_rwlockattr_t.h" 3 4
+typedef __darwin_pthread_rwlockattr_t pthread_rwlockattr_t;
+# 219 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_pthread/_pthread_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_t.h" 3 4
+typedef __darwin_pthread_t pthread_t;
+# 220 "/usr/include/sys/types.h" 2 3 4
+
+
+
+# 1 "/usr/include/sys/_pthread/_pthread_key_t.h" 1 3 4
+# 30 "/usr/include/sys/_pthread/_pthread_key_t.h" 3 4
+typedef __darwin_pthread_key_t pthread_key_t;
+# 224 "/usr/include/sys/types.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/sys/_types/_fsblkcnt_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_fsblkcnt_t.h" 3 4
+typedef __darwin_fsblkcnt_t fsblkcnt_t;
+# 229 "/usr/include/sys/types.h" 2 3 4
+# 1 "/usr/include/sys/_types/_fsfilcnt_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_fsfilcnt_t.h" 3 4
+typedef __darwin_fsfilcnt_t fsfilcnt_t;
+# 230 "/usr/include/sys/types.h" 2 3 4
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
+
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 1
+
+
+
+# 1 "/usr/include/unistd.h" 1 3 4
+# 72 "/usr/include/unistd.h" 3 4
+# 1 "/usr/include/sys/unistd.h" 1 3 4
+# 84 "/usr/include/sys/unistd.h" 3 4
+# 1 "/usr/include/sys/_types/_posix_vdisable.h" 1 3 4
+# 85 "/usr/include/sys/unistd.h" 2 3 4
+# 122 "/usr/include/sys/unistd.h" 3 4
+# 1 "/usr/include/sys/_types/_seek_set.h" 1 3 4
+# 123 "/usr/include/sys/unistd.h" 2 3 4
+# 132 "/usr/include/sys/unistd.h" 3 4
+struct accessx_descriptor {
+ unsigned int ad_name_offset;
+ int ad_flags;
+ int ad_pad[2];
+};
+# 185 "/usr/include/sys/unistd.h" 3 4
+int getattrlistbulk(int, void *, void *, size_t, uint64_t) __attribute__((availability(macosx,introduced=10.10)));
+# 203 "/usr/include/sys/unistd.h" 3 4
+int faccessat(int, const char *, int, int) __attribute__((availability(macosx,introduced=10.10)));
+int fchownat(int, const char *, uid_t, gid_t, int) __attribute__((availability(macosx,introduced=10.10)));
+int linkat(int, const char *, int, const char *, int) __attribute__((availability(macosx,introduced=10.10)));
+ssize_t readlinkat(int, const char *, char *, size_t) __attribute__((availability(macosx,introduced=10.10)));
+int symlinkat(const char *, int, const char *) __attribute__((availability(macosx,introduced=10.10)));
+int unlinkat(int, const char *, int) __attribute__((availability(macosx,introduced=10.10)));
+int getattrlistat(int, const char *, void *, void *, size_t, unsigned long) __attribute__((availability(macosx,introduced=10.10)));
+# 73 "/usr/include/unistd.h" 2 3 4
+# 429 "/usr/include/unistd.h" 3 4
+void _exit(int) __attribute__((noreturn));
+int access(const char *, int);
+unsigned int
+  alarm(unsigned int);
+int chdir(const char *);
+int chown(const char *, uid_t, gid_t);
+
+int close(int) __asm("_" "close" );
+
+int dup(int);
+int dup2(int, int);
+int execl(const char *, const char *, ...) ;
+int execle(const char *, const char *, ...) ;
+int execlp(const char *, const char *, ...) ;
+int execv(const char *, char * const *) ;
+int execve(const char *, char * const *, char * const *) ;
+int execvp(const char *, char * const *) ;
+pid_t fork(void) ;
+long fpathconf(int, int);
+char *getcwd(char *, size_t);
+gid_t getegid(void);
+uid_t geteuid(void);
+gid_t getgid(void);
+
+
+
+int getgroups(int, gid_t []);
+
+char *getlogin(void);
+pid_t getpgrp(void);
+pid_t getpid(void);
+pid_t getppid(void);
+uid_t getuid(void);
+int isatty(int);
+int link(const char *, const char *);
+off_t lseek(int, off_t, int);
+long pathconf(const char *, int);
+
+int pause(void) __asm("_" "pause" );
+
+int pipe(int [2]);
+
+ssize_t read(int, void *, size_t) __asm("_" "read" );
+
+int rmdir(const char *);
+int setgid(gid_t);
+int setpgid(pid_t, pid_t);
+pid_t setsid(void);
+int setuid(uid_t);
+
+unsigned int
+  sleep(unsigned int) __asm("_" "sleep" );
+
+long sysconf(int);
+pid_t tcgetpgrp(int);
+int tcsetpgrp(int, pid_t);
+char *ttyname(int);
+
+
+int ttyname_r(int, char *, size_t) __asm("_" "ttyname_r" );
+
+
+
+
+int unlink(const char *);
+
+ssize_t write(int, const void *, size_t) __asm("_" "write" );
+# 506 "/usr/include/unistd.h" 3 4
+size_t confstr(int, char *, size_t) __asm("_" "confstr" );
+
+int getopt(int, char * const [], const char *) __asm("_" "getopt" );
+
+extern char *optarg;
+extern int optind, opterr, optopt;
+# 536 "/usr/include/unistd.h" 3 4
+__attribute__((deprecated))
+
+void *brk(const void *);
+int chroot(const char *) ;
+
+
+char *crypt(const char *, const char *);
+
+
+
+
+
+
+void encrypt(char *, int) __asm("_" "encrypt" );
+
+
+
+int fchdir(int);
+long gethostid(void);
+pid_t getpgid(pid_t);
+pid_t getsid(pid_t);
+
+
+
+int getdtablesize(void) ;
+int getpagesize(void) __attribute__((const)) ;
+char *getpass(const char *) ;
+
+
+
+
+char *getwd(char *) ;
+
+
+int lchown(const char *, uid_t, gid_t) __asm("_" "lchown" );
+
+int lockf(int, int, off_t) __asm("_" "lockf" );
+
+int nice(int) __asm("_" "nice" );
+
+ssize_t pread(int, void *, size_t, off_t) __asm("_" "pread" );
+
+ssize_t pwrite(int, const void *, size_t, off_t) __asm("_" "pwrite" );
+
+
+
+
+
+
+__attribute__((deprecated))
+
+void *sbrk(int);
+
+
+
+pid_t setpgrp(void) __asm("_" "setpgrp" );
+
+
+
+
+int setregid(gid_t, gid_t) __asm("_" "setregid" );
+
+int setreuid(uid_t, uid_t) __asm("_" "setreuid" );
+
+void swab(const void * restrict, void * restrict, ssize_t);
+void sync(void);
+int truncate(const char *, off_t);
+useconds_t ualarm(useconds_t, useconds_t);
+int usleep(useconds_t) __asm("_" "usleep" );
+pid_t vfork(void) ;
+
+
+int fsync(int) __asm("_" "fsync" );
+
+int ftruncate(int, off_t);
+int getlogin_r(char *, size_t);
+# 624 "/usr/include/unistd.h" 3 4
+int fchown(int, uid_t, gid_t);
+int gethostname(char *, size_t);
+ssize_t readlink(const char * restrict, char * restrict, size_t);
+int setegid(gid_t);
+int seteuid(uid_t);
+int symlink(const char *, const char *);
+# 638 "/usr/include/unistd.h" 3 4
+# 1 "/usr/include/sys/select.h" 1 3 4
+# 114 "/usr/include/sys/select.h" 3 4
+int pselect(int, fd_set * restrict, fd_set * restrict,
+  fd_set * restrict, const struct timespec * restrict,
+  const sigset_t * restrict)
+
+
+
+
+  __asm("_" "pselect" "$1050")
+
+
+
+
+  ;
+
+
+
+# 1 "/usr/include/sys/_select.h" 1 3 4
+# 39 "/usr/include/sys/_select.h" 3 4
+int select(int, fd_set * restrict, fd_set * restrict,
+  fd_set * restrict, struct timeval * restrict)
+
+
+
+
+  __asm("_" "select" "$1050")
+
+
+
+
+  ;
+# 130 "/usr/include/sys/select.h" 2 3 4
+# 639 "/usr/include/unistd.h" 2 3 4
+
+
+
+# 1 "/usr/include/sys/_types/_uuid_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_uuid_t.h" 3 4
+typedef __darwin_uuid_t uuid_t;
+# 643 "/usr/include/unistd.h" 2 3 4
+
+
+void _Exit(int) __attribute__((noreturn));
+int accessx_np(const struct accessx_descriptor *, size_t, int *, uid_t);
+int acct(const char *);
+int add_profil(char *, size_t, unsigned long, unsigned int) ;
+void endusershell(void);
+int execvP(const char *, const char *, char * const *) ;
+char *fflagstostr(unsigned long);
+int getdomainname(char *, int);
+int getgrouplist(const char *, int, int *, int *);
+
+
+
+
+
+# 1 "/usr/include/gethostuuid.h" 1 3 4
+# 39 "/usr/include/gethostuuid.h" 3 4
+int gethostuuid(uuid_t, const struct timespec *) __attribute__((availability(macosx,introduced=10.5)));
+# 659 "/usr/include/unistd.h" 2 3 4
+
+
+
+
+mode_t getmode(const void *, mode_t);
+int getpeereid(int, uid_t *, gid_t *);
+int getsgroups_np(int *, uuid_t);
+char *getusershell(void);
+int getwgroups_np(int *, uuid_t);
+int initgroups(const char *, int);
+int iruserok(unsigned long, int, const char *, const char *);
+int iruserok_sa(const void *, int, int, const char *, const char *);
+int issetugid(void);
+char *mkdtemp(char *);
+int mknod(const char *, mode_t, dev_t);
+int mkpath_np(const char *path, mode_t omode) __attribute__((availability(macosx,introduced=10.8)));
+int mkstemp(char *);
+int mkstemps(char *, int);
+char *mktemp(char *);
+int nfssvc(int, void *);
+int profil(char *, size_t, unsigned long, unsigned int);
+int pthread_setugid_np(uid_t, gid_t);
+int pthread_getugid_np( uid_t *, gid_t *);
+int rcmd(char **, int, const char *, const char *, const char *, int *);
+int rcmd_af(char **, int, const char *, const char *, const char *, int *,
+  int);
+int reboot(int);
+int revoke(const char *);
+int rresvport(int *);
+int rresvport_af(int *, int);
+int ruserok(const char *, int, const char *, const char *);
+int setdomainname(const char *, int);
+int setgroups(int, const gid_t *);
+void sethostid(long);
+int sethostname(const char *, int);
+
+void setkey(const char *) __asm("_" "setkey" );
+
+
+
+int setlogin(const char *);
+void *setmode(const char *) __asm("_" "setmode" );
+int setrgid(gid_t);
+int setruid(uid_t);
+int setsgroups_np(int, const uuid_t);
+void setusershell(void);
+int setwgroups_np(int, const uuid_t);
+int strtofflags(char **, unsigned long *, unsigned long *);
+int swapon(const char *);
+int syscall(int, ...) ;
+int ttyslot(void);
+int undelete(const char *);
+int unwhiteout(const char *);
+void *valloc(size_t);
+
+extern char *suboptarg;
+int getsubopt(char **, char * const *, char **);
+
+
+
+int fgetattrlist(int,void*,void*,size_t,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
+int fsetattrlist(int,void*,void*,size_t,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
+int getattrlist(const char*,void*,void*,size_t,unsigned int) __asm("_" "getattrlist" );
+int setattrlist(const char*,void*,void*,size_t,unsigned int) __asm("_" "setattrlist" );
+int exchangedata(const char*,const char*,unsigned int) ;
+int getdirentriesattr(int,void*,void*,size_t,unsigned int*,unsigned int*,unsigned int*,unsigned int) ;
+# 736 "/usr/include/unistd.h" 3 4
+struct fssearchblock;
+struct searchstate;
+
+int searchfs(const char *, struct fssearchblock *, unsigned long *, unsigned int, unsigned int, struct searchstate *) ;
+int fsctl(const char *,unsigned long,void*,unsigned int);
+int ffsctl(int,unsigned long,void*,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
+
+
+
+
+int fsync_volume_np(int, int) __attribute__((availability(macosx,introduced=10.8)));
+int sync_volume_np(const char *, int) __attribute__((availability(macosx,introduced=10.8)));
+
+extern int optreset;
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
+# 1 "/usr/include/signal.h" 1 3 4
+# 69 "/usr/include/signal.h" 3 4
+extern const char *const sys_signame[32];
+extern const char *const sys_siglist[32];
+
+
+
+int raise(int);
+
+
+
+
+void (*bsd_signal(int, void (*)(int)))(int);
+int kill(pid_t, int) __asm("_" "kill" );
+int killpg(pid_t, int) __asm("_" "killpg" );
+int pthread_kill(pthread_t, int);
+int pthread_sigmask(int, const sigset_t *, sigset_t *) __asm("_" "pthread_sigmask" );
+int sigaction(int, const struct sigaction * restrict,
+     struct sigaction * restrict);
+int sigaddset(sigset_t *, int);
+int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" ) ;
+int sigdelset(sigset_t *, int);
+int sigemptyset(sigset_t *);
+int sigfillset(sigset_t *);
+int sighold(int);
+int sigignore(int);
+int siginterrupt(int, int);
+int sigismember(const sigset_t *, int);
+int sigpause(int) __asm("_" "sigpause" );
+int sigpending(sigset_t *);
+int sigprocmask(int, const sigset_t * restrict, sigset_t * restrict);
+int sigrelse(int);
+void (*sigset(int, void (*)(int)))(int);
+int sigsuspend(const sigset_t *) __asm("_" "sigsuspend" );
+int sigwait(const sigset_t * restrict, int * restrict) __asm("_" "sigwait" );
+
+void psignal(unsigned int, const char *);
+int sigblock(int);
+int sigsetmask(int);
+int sigvec(int, struct sigvec *, struct sigvec *);
+
+
+
+
+
+
+inline __attribute__ ((__always_inline__)) int
+__sigbits(int __signo)
+{
+    return __signo > 32 ? 0 : (1 << (__signo - 1));
+}
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
+# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
+# 101 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h"
+# 1 "/usr/include/string.h" 1 3 4
+# 70 "/usr/include/string.h" 3 4
+void *memchr(const void *, int, size_t);
+int memcmp(const void *, const void *, size_t);
+void *memcpy(void *, const void *, size_t);
+void *memmove(void *, const void *, size_t);
+void *memset(void *, int, size_t);
+char *strcat(char *, const char *);
+char *strchr(const char *, int);
+int strcmp(const char *, const char *);
+int strcoll(const char *, const char *);
+char *strcpy(char *, const char *);
+size_t strcspn(const char *, const char *);
+char *strerror(int) __asm("_" "strerror" );
+size_t strlen(const char *);
+char *strncat(char *, const char *, size_t);
+int strncmp(const char *, const char *, size_t);
+char *strncpy(char *, const char *, size_t);
+char *strpbrk(const char *, const char *);
+char *strrchr(const char *, int);
+size_t strspn(const char *, const char *);
+char *strstr(const char *, const char *);
+char *strtok(char *, const char *);
+size_t strxfrm(char *, const char *, size_t);
+# 104 "/usr/include/string.h" 3 4
+char *strtok_r(char *, const char *, char **);
+# 116 "/usr/include/string.h" 3 4
+int strerror_r(int, char *, size_t);
+char *strdup(const char *);
+void *memccpy(void *, const void *, int, size_t);
+# 130 "/usr/include/string.h" 3 4
+char *stpcpy(char *, const char *);
+char *stpncpy(char *, const char *, size_t) __attribute__((availability(macosx,introduced=10.7)));
+char *strndup(const char *, size_t) __attribute__((availability(macosx,introduced=10.7)));
+size_t strnlen(const char *, size_t) __attribute__((availability(macosx,introduced=10.7)));
+char *strsignal(int sig);
+# 145 "/usr/include/string.h" 3 4
+errno_t memset_s(void *, rsize_t, int, rsize_t) __attribute__((availability(macosx,introduced=10.9)));
+# 155 "/usr/include/string.h" 3 4
+void *memmem(const void *, size_t, const void *, size_t) __attribute__((availability(macosx,introduced=10.7)));
+void memset_pattern4(void *, const void *, size_t) __attribute__((availability(macosx,introduced=10.5)));
+void memset_pattern8(void *, const void *, size_t) __attribute__((availability(macosx,introduced=10.5)));
+void memset_pattern16(void *, const void *, size_t) __attribute__((availability(macosx,introduced=10.5)));
+
+char *strcasestr(const char *, const char *);
+char *strnstr(const char *, const char *, size_t);
+size_t strlcat(char *, const char *, size_t);
+size_t strlcpy(char *, const char *, size_t);
+void strmode(int, char *);
+char *strsep(char **, const char *);
+
+
+void swab(const void * restrict, void * restrict, ssize_t);
+
+
+
+
+
+
+
+
+# 1 "/usr/include/strings.h" 1 3 4
+# 70 "/usr/include/strings.h" 3 4
+int bcmp(const void *, const void *, size_t) ;
+void bcopy(const void *, void *, size_t) ;
+void bzero(void *, size_t) ;
+char *index(const char *, int) ;
+char *rindex(const char *, int) ;
+
+
+int ffs(int);
+int strcasecmp(const char *, const char *);
+int strncasecmp(const char *, const char *, size_t);
+
+
+
+
+
+int ffsl(long) __attribute__((availability(macosx,introduced=10.5)));
+int ffsll(long long) __attribute__((availability(macosx,introduced=10.9)));
+int fls(int) __attribute__((availability(macosx,introduced=10.5)));
+int flsl(long) __attribute__((availability(macosx,introduced=10.5)));
+int flsll(long long) __attribute__((availability(macosx,introduced=10.9)));
+
+
+
+# 1 "/usr/include/string.h" 1 3 4
+# 93 "/usr/include/strings.h" 2 3 4
+# 177 "/usr/include/string.h" 2 3 4
+# 186 "/usr/include/string.h" 3 4
+# 1 "/usr/include/secure/_string.h" 1 3 4
+# 187 "/usr/include/string.h" 2 3 4
+# 102 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
+# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
+# 95 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+static inline _Bool ascii_iswhite(int) __attribute__((always_inline)) __attribute__((const));
+static inline _Bool ascii_isdigit(int) __attribute__((always_inline)) __attribute__((const));
+static inline _Bool ascii_isxdigit(int) __attribute__((always_inline)) __attribute__((const));
+static inline _Bool ascii_isspace(int) __attribute__((always_inline)) __attribute__((const));
+
+
+
+
+static inline _Bool ascii_iswhite(int c)
+{
+  return c == ' ' || c == '\t';
+}
+# 117 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+static inline _Bool ascii_isdigit(int c)
+{
+  return c >= '0' && c <= '9';
+}
+
+
+
+
+static inline _Bool ascii_isxdigit(int c)
+{
+  return (c >= '0' && c <= '9')
+         || (c >= 'a' && c <= 'f')
+         || (c >= 'A' && c <= 'F');
+}
+
+
+
+
+
+static inline _Bool ascii_isspace(int c)
+{
+  return (c >= 9 && c <= 13) || c == ' ';
+}
+# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc2.h" 1
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/shell.h" 1
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h" 1
+# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h"
+typedef void *vim_acl_T;
+
+
+
+typedef unsigned char char_u;
+
+
+typedef uint32_t u8char_T;
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/shell.h" 2
+
+
+typedef enum {
+  kShellOptFilter = 1,
+  kShellOptExpand = 2,
+  kShellOptDoOut = 4,
+  kShellOptSilent = 8,
+  kShellOptRead = 16,
+  kShellOptWrite = 32,
+  kShellOptHideMess = 64,
+} ShellOpts;
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc2.h" 2
+# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 1
+
+
+
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
+# 47 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 3 4
+typedef long int ptrdiff_t;
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 2
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/log.h" 1
 # 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 2
 
 
@@ -954,8 +3071,10 @@ typedef struct {
 
   union {
     struct multipos {
-      lpos_T start;
-      lpos_T end;
+      linenr_T start_lnum;
+      linenr_T end_lnum;
+      colnr_T start_col;
+      colnr_T end_col;
     } multi[NSUBEXP];
     struct linepos {
       char_u *start;
@@ -1034,7 +3153,7 @@ static int nfa_alt_listid;
 
 
 static int nfa_ll_index = 0;
-# 369 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 371 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static void
 nfa_regcomp_start (
     char_u *expr,
@@ -1250,10 +3369,10 @@ static void realloc_post_list(void)
   post_end = new_start + new_max;
   post_start = new_start;
 }
-# 595 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 597 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int nfa_recognize_char_class(char_u *start, char_u *end, int extra_newl)
 {
-# 606 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 608 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   int newl = FALSE;
   char_u *p;
   int config = 0;
@@ -1356,7 +3475,7 @@ static int nfa_recognize_char_class(char_u *start, char_u *end, int extra_newl)
   }
   return FAIL;
 }
-# 717 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 719 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static void nfa_emit_equi_class(int c)
 {
 
@@ -1549,10 +3668,10 @@ static void nfa_emit_equi_class(int c)
       do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x10b; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x10d; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0);
       return;
 
-    case 'd': CASEMBC(0x10f) CASEMBC(0x111) CASEMBC(0x1d0b)
-      CASEMBC(0x1e11)
+    case 'd': CASEMBC(0x10f) CASEMBC(0x111) CASEMBC(0x1e0b)
+      CASEMBC(0x1e0f) CASEMBC(0x1e11)
       do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 'd'; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0);; do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x10f; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x111; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x1e0b; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0);
-      do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x01e0f; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x1e11; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0);
+      do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x1e0f; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = 0x1e11; } while (0); do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_CONCAT; } while (0);
       return;
 
     case 'e': case 0350: case 0351: case 0352: case 0353:
@@ -1699,7 +3818,7 @@ static void nfa_emit_equi_class(int c)
 
 
 }
-# 1080 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 1082 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int nfa_regatom(void)
 {
   int c;
@@ -2008,7 +4127,7 @@ static int nfa_regatom(void)
             reg_magic == MAGIC_ALL);
       do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_OPT_CHARS; } while (0);
       do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = n; } while (0);
-# 1396 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 1398 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
       do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_NOPEN; } while (0);
       break;
     }
@@ -2055,7 +4174,7 @@ static int nfa_regatom(void)
 
   case Magic('['):
 collection:
-# 1452 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 1454 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
     p = regparse;
     endp = skip_anyof(p);
     if (*endp == ']') {
@@ -2192,9 +4311,7 @@ collection:
 
 
 
-
         if (*regparse == '\\'
-            && !reg_cpo_bsl
             && regparse + 1 <= endp
             && (vim_strchr(REGEXP_INRANGE, regparse[1]) != ((void*)0)
                 || (!reg_cpo_lit
@@ -3539,10 +5656,10 @@ static void clear_sub(regsub_T *sub)
 {
   if (REG_MULTI)
 
-    memset(sub->list.multi, 0xff,
-        sizeof(struct multipos) * nfa_nsubexpr);
+    __builtin___memset_chk (sub->list.multi, 0xff, sizeof(struct multipos) * nfa_nsubexpr, __builtin_object_size (sub->list.multi, 0));
+
   else
-    memset(sub->list.line, 0, sizeof(struct linepos) * nfa_nsubexpr);
+    __builtin___memset_chk (sub->list.line, 0, sizeof(struct linepos) * nfa_nsubexpr, __builtin_object_size (sub->list.line, 0));
   sub->in_use = 0;
 }
 
@@ -3555,13 +5672,13 @@ static void copy_sub(regsub_T *to, regsub_T *from)
   if (from->in_use > 0) {
 
     if (REG_MULTI)
-      memmove(&to->list.multi[0],
-          &from->list.multi[0],
-          sizeof(struct multipos) * from->in_use);
+      __builtin___memmove_chk (&to->list.multi[0], &from->list.multi[0], sizeof(struct multipos) * from->in_use, __builtin_object_size (&to->list.multi[0], 0));
+
+
     else
-      memmove(&to->list.line[0],
-          &from->list.line[0],
-          sizeof(struct linepos) * from->in_use);
+      __builtin___memmove_chk (&to->list.line[0], &from->list.line[0], sizeof(struct linepos) * from->in_use, __builtin_object_size (&to->list.line[0], 0));
+
+
   }
 }
 
@@ -3575,13 +5692,13 @@ static void copy_sub_off(regsub_T *to, regsub_T *from)
   if (from->in_use > 1) {
 
     if (REG_MULTI)
-      memmove(&to->list.multi[1],
-          &from->list.multi[1],
-          sizeof(struct multipos) * (from->in_use - 1));
+      __builtin___memmove_chk (&to->list.multi[1], &from->list.multi[1], sizeof(struct multipos) * (from->in_use - 1), __builtin_object_size (&to->list.multi[1], 0));
+
+
     else
-      memmove(&to->list.line[1],
-          &from->list.line[1],
-          sizeof(struct linepos) * (from->in_use - 1));
+      __builtin___memmove_chk (&to->list.line[1], &from->list.line[1], sizeof(struct linepos) * (from->in_use - 1), __builtin_object_size (&to->list.line[1], 0));
+
+
   }
 }
 
@@ -3592,8 +5709,10 @@ static void copy_ze_off(regsub_T *to, regsub_T *from)
 {
   if (nfa_has_zend) {
     if (REG_MULTI) {
-      if (from->list.multi[0].end.lnum >= 0)
-        to->list.multi[0].end = from->list.multi[0].end;
+      if (from->list.multi[0].end_lnum >= 0){
+        to->list.multi[0].end_lnum = from->list.multi[0].end_lnum;
+        to->list.multi[0].end_col = from->list.multi[0].end_col;
+      }
     } else {
       if (from->list.line[0].end != ((void*)0))
         to->list.line[0].end = from->list.line[0].end;
@@ -3616,27 +5735,27 @@ static int sub_equal(regsub_T *sub1, regsub_T *sub2)
   if (REG_MULTI) {
     for (i = 0; i < todo; ++i) {
       if (i < sub1->in_use)
-        s1 = sub1->list.multi[i].start.lnum;
+        s1 = sub1->list.multi[i].start_lnum;
       else
         s1 = -1;
       if (i < sub2->in_use)
-        s2 = sub2->list.multi[i].start.lnum;
+        s2 = sub2->list.multi[i].start_lnum;
       else
         s2 = -1;
       if (s1 != s2)
         return FALSE;
-      if (s1 != -1 && sub1->list.multi[i].start.col
-          != sub2->list.multi[i].start.col)
+      if (s1 != -1 && sub1->list.multi[i].start_col
+          != sub2->list.multi[i].start_col)
         return FALSE;
 
       if (nfa_has_backref) {
         if (i < sub1->in_use) {
-          s1 = sub1->list.multi[i].end.lnum;
+          s1 = sub1->list.multi[i].end_lnum;
         } else {
           s1 = -1;
         }
         if (i < sub2->in_use) {
-          s2 = sub2->list.multi[i].end.lnum;
+          s2 = sub2->list.multi[i].end_lnum;
         } else {
           s2 = -1;
         }
@@ -3644,7 +5763,7 @@ static int sub_equal(regsub_T *sub1, regsub_T *sub2)
           return FALSE;
         }
         if (s1 != -1
-            && sub1->list.multi[i].end.col != sub2->list.multi[i].end.col) {
+            && sub1->list.multi[i].end_col != sub2->list.multi[i].end_col) {
           return FALSE;
         }
       }
@@ -3682,7 +5801,7 @@ static int sub_equal(regsub_T *sub1, regsub_T *sub2)
 
   return TRUE;
 }
-# 3657 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 3659 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int
 has_state_with_pos (
     nfa_list_T *l,
@@ -4054,22 +6173,24 @@ skip_add:
 
     if (REG_MULTI) {
       if (subidx < sub->in_use) {
-        save_lpos = sub->list.multi[subidx].start;
+        save_lpos.lnum = sub->list.multi[subidx].start_lnum;
+        save_lpos.col = sub->list.multi[subidx].start_col;
         save_in_use = -1;
       } else {
         save_in_use = sub->in_use;
         for (i = sub->in_use; i < subidx; ++i) {
-          sub->list.multi[i].start.lnum = -1;
-          sub->list.multi[i].end.lnum = -1;
+          sub->list.multi[i].start_lnum = -1;
+          sub->list.multi[i].end_lnum = -1;
         }
         sub->in_use = subidx + 1;
       }
       if (off == -1) {
-        sub->list.multi[subidx].start.lnum = reglnum + 1;
-        sub->list.multi[subidx].start.col = 0;
+        sub->list.multi[subidx].start_lnum = reglnum + 1;
+        sub->list.multi[subidx].start_col = 0;
       } else {
-        sub->list.multi[subidx].start.lnum = reglnum;
-        sub->list.multi[subidx].start.col =
+
+        sub->list.multi[subidx].start_lnum = reglnum;
+        sub->list.multi[subidx].start_col =
           (colnr_T)(reginput - regline + off);
       }
     } else {
@@ -4095,8 +6216,10 @@ skip_add:
       sub = &subs->norm;
 
     if (save_in_use == -1) {
-      if (REG_MULTI)
-        sub->list.multi[subidx].start = save_lpos;
+      if (REG_MULTI){
+        sub->list.multi[subidx].start_lnum = save_lpos.lnum;
+        sub->list.multi[subidx].start_col = save_lpos.col;
+      }
       else
         sub->list.line[subidx].start = save_ptr;
     } else
@@ -4105,7 +6228,7 @@ skip_add:
 
   case NFA_MCLOSE:
     if (nfa_has_zend && (REG_MULTI
-                         ? subs->norm.list.multi[0].end.lnum >= 0
+                         ? subs->norm.list.multi[0].end_lnum >= 0
                          : subs->norm.list.line[0].end != ((void*)0))) {
 
       subs = addstate(l, state->out, subs, pim, off);
@@ -4148,13 +6271,14 @@ skip_add:
     if (sub->in_use <= subidx)
       sub->in_use = subidx + 1;
     if (REG_MULTI) {
-      save_lpos = sub->list.multi[subidx].end;
+      save_lpos.lnum = sub->list.multi[subidx].end_lnum;
+      save_lpos.col = sub->list.multi[subidx].end_col;
       if (off == -1) {
-        sub->list.multi[subidx].end.lnum = reglnum + 1;
-        sub->list.multi[subidx].end.col = 0;
+        sub->list.multi[subidx].end_lnum = reglnum + 1;
+        sub->list.multi[subidx].end_col = 0;
       } else {
-        sub->list.multi[subidx].end.lnum = reglnum;
-        sub->list.multi[subidx].end.col =
+        sub->list.multi[subidx].end_lnum = reglnum;
+        sub->list.multi[subidx].end_col =
           (colnr_T)(reginput - regline + off);
       }
 
@@ -4174,8 +6298,10 @@ skip_add:
     else
       sub = &subs->norm;
 
-    if (REG_MULTI)
-      sub->list.multi[subidx].end = save_lpos;
+    if (REG_MULTI){
+      sub->list.multi[subidx].end_lnum = save_lpos.lnum;
+      sub->list.multi[subidx].end_col = save_lpos.col;
+    }
     else
       sub->list.line[subidx].end = save_ptr;
     sub->in_use = save_in_use;
@@ -4224,26 +6350,26 @@ addstate_here (
 
       l->len = l->len * 3 / 2 + 50;
       nfa_thread_T *newl = xmalloc(l->len * sizeof(nfa_thread_T));
-      memmove(&(newl[0]),
-          &(l->t[0]),
-          sizeof(nfa_thread_T) * listidx);
-      memmove(&(newl[listidx]),
-          &(l->t[l->n - count]),
-          sizeof(nfa_thread_T) * count);
-      memmove(&(newl[listidx + count]),
-          &(l->t[listidx + 1]),
-          sizeof(nfa_thread_T) * (l->n - count - listidx - 1));
+      __builtin___memmove_chk (&(newl[0]), &(l->t[0]), sizeof(nfa_thread_T) * listidx, __builtin_object_size (&(newl[0]), 0));
+
+
+      __builtin___memmove_chk (&(newl[listidx]), &(l->t[l->n - count]), sizeof(nfa_thread_T) * count, __builtin_object_size (&(newl[listidx]), 0));
+
+
+      __builtin___memmove_chk (&(newl[listidx + count]), &(l->t[listidx + 1]), sizeof(nfa_thread_T) * (l->n - count - listidx - 1), __builtin_object_size (&(newl[listidx + count]), 0));
+
+
       xfree(l->t);
       l->t = newl;
     } else {
 
 
-      memmove(&(l->t[listidx + count]),
-          &(l->t[listidx + 1]),
-          sizeof(nfa_thread_T) * (l->n - listidx - 1));
-      memmove(&(l->t[listidx]),
-          &(l->t[l->n - 1]),
-          sizeof(nfa_thread_T) * count);
+      __builtin___memmove_chk (&(l->t[listidx + count]), &(l->t[listidx + 1]), sizeof(nfa_thread_T) * (l->n - listidx - 1), __builtin_object_size (&(l->t[listidx + count]), 0));
+
+
+      __builtin___memmove_chk (&(l->t[listidx]), &(l->t[l->n - 1]), sizeof(nfa_thread_T) * count, __builtin_object_size (&(l->t[listidx]), 0));
+
+
     }
   }
   --l->n;
@@ -4350,24 +6476,24 @@ retempty:
   }
 
   if (REG_MULTI) {
-    if (sub->list.multi[subidx].start.lnum < 0
-        || sub->list.multi[subidx].end.lnum < 0)
+    if (sub->list.multi[subidx].start_lnum < 0
+        || sub->list.multi[subidx].end_lnum < 0)
       goto retempty;
-    if (sub->list.multi[subidx].start.lnum == reglnum
-        && sub->list.multi[subidx].end.lnum == reglnum) {
-      len = sub->list.multi[subidx].end.col
-            - sub->list.multi[subidx].start.col;
-      if (cstrncmp(regline + sub->list.multi[subidx].start.col,
+    if (sub->list.multi[subidx].start_lnum == reglnum
+        && sub->list.multi[subidx].end_lnum == reglnum) {
+      len = sub->list.multi[subidx].end_col
+            - sub->list.multi[subidx].start_col;
+      if (cstrncmp(regline + sub->list.multi[subidx].start_col,
               reginput, &len) == 0) {
         *bytelen = len;
         return TRUE;
       }
     } else {
       if (match_with_backref(
-              sub->list.multi[subidx].start.lnum,
-              sub->list.multi[subidx].start.col,
-              sub->list.multi[subidx].end.lnum,
-              sub->list.multi[subidx].end.col,
+              sub->list.multi[subidx].start_lnum,
+              sub->list.multi[subidx].start_col,
+              sub->list.multi[subidx].end_lnum,
+              sub->list.multi[subidx].end_col,
               bytelen) == RA_MATCH)
         return TRUE;
     }
@@ -4532,7 +6658,7 @@ static int recursive_regmatch(nfa_state_T *state, nfa_pim_T *pim, nfa_regprog_T 
         reginput = regline;
     }
   }
-# 4514 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4523 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   if (nfa_ll_index == 1) {
 
 
@@ -4571,10 +6697,10 @@ static int recursive_regmatch(nfa_state_T *state, nfa_pim_T *pim, nfa_regprog_T 
   nfa_match = save_nfa_match;
   nfa_endp = save_nfa_endp;
   nfa_listid = save_nfa_listid;
-# 4567 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4576 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   return result;
 }
-# 4577 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4586 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int failure_chance(nfa_state_T *state, int depth)
 {
   int c = state->c;
@@ -4773,6 +6899,7 @@ static long find_match_text(colnr_T startcol, int regstart, char_u *match_text)
     if (match
 
         && !(enc_utf8
+             && STRLEN(regline) > (size_t)(col + len2)
              && utf_iscomposing(PTR2CHAR(regline + col + len2)))
         ) {
       cleanup_subexpr();
@@ -4795,7 +6922,7 @@ static long find_match_text(colnr_T startcol, int regstart, char_u *match_text)
   }
   return 0L;
 }
-# 4809 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4819 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *submatch, regsubs_T *m)
 {
   int result;
@@ -4812,7 +6939,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
   int add_count;
   int add_off = 0;
   int toplevel = start->c == NFA_MOPEN;
-# 4835 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4845 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   fast_breakcheck();
   if (got_int)
     return FALSE;
@@ -4825,7 +6952,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
   list[0].len = nstate + 1;
   list[1].t = xmalloc(size);
   list[1].len = nstate + 1;
-# 4863 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4873 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   thislist = &list[0];
   thislist->n = 0;
   thislist->has_pim = FALSE;
@@ -4841,15 +6968,15 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
 
   if (toplevel) {
     if (REG_MULTI) {
-      m->norm.list.multi[0].start.lnum = reglnum;
-      m->norm.list.multi[0].start.col = (colnr_T)(reginput - regline);
+      m->norm.list.multi[0].start_lnum = reglnum;
+      m->norm.list.multi[0].start_col = (colnr_T)(reginput - regline);
     } else
       m->norm.list.line[0].start = reginput;
     m->norm.in_use = 1;
     addstate(thislist, start->out, m, ((void*)0), 0);
   } else
     addstate(thislist, start, m, ((void*)0), 0);
-# 4896 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4906 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   for (;; ) {
     int curc;
     int clen;
@@ -4880,14 +7007,14 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
 
     thislist->id = nfa_listid;
     nextlist->id = nfa_listid + 1;
-# 4949 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4959 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
     if (thislist->n == 0)
       break;
 
 
     for (listidx = 0; listidx < thislist->n; ++listidx) {
       t = &thislist->t[listidx];
-# 4981 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4991 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
       add_state = ((void*)0);
       add_here = 0;
       add_count = 0;
@@ -4918,7 +7045,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       case NFA_END_INVISIBLE:
       case NFA_END_INVISIBLE_NEG:
       case NFA_END_PATTERN:
-# 5040 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 5050 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
         if (nfa_endp != ((void*)0) && (REG_MULTI
                                  ? (reglnum != nfa_endp->se_u.pos.lnum
                                     || (int)(reginput - regline)
@@ -5098,7 +7225,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
 
           if (REG_MULTI)
 
-            bytelen = m->norm.list.multi[0].end.col
+            bytelen = m->norm.list.multi[0].end_col
                       - (int)(reginput - regline);
           else
             bytelen = (int)(m->norm.list.line[0].end - reginput);
@@ -5595,7 +7722,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       case NFA_LNUM:
       case NFA_LNUM_GT:
       case NFA_LNUM_LT:
-        (__builtin_expect(!(t->state->val >= 0 && !((reg_firstlnum > 0 && reglnum > 9223372036854775807L - reg_firstlnum) || (reg_firstlnum <0 && reglnum < (-9223372036854775807L -1L) + reg_firstlnum)) && reglnum + reg_firstlnum >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5719, "t->state->val >= 0 && !((reg_firstlnum > 0 && reglnum > LONG_MAX - reg_firstlnum) || (reg_firstlnum <0 && reglnum < LONG_MIN + reg_firstlnum)) && reglnum + reg_firstlnum >= 0") : (void)0);
+        (__builtin_expect(!(t->state->val >= 0 && !((reg_firstlnum > 0 && reglnum > 9223372036854775807L - reg_firstlnum) || (reg_firstlnum <0 && reglnum < (-9223372036854775807L -1L) + reg_firstlnum)) && reglnum + reg_firstlnum >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5729, "t->state->val >= 0 && !((reg_firstlnum > 0 && reglnum > LONG_MAX - reg_firstlnum) || (reg_firstlnum <0 && reglnum < LONG_MIN + reg_firstlnum)) && reglnum + reg_firstlnum >= 0") : (void)0);
 
 
 
@@ -5612,7 +7739,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       case NFA_COL:
       case NFA_COL_GT:
       case NFA_COL_LT:
-        (__builtin_expect(!(t->state->val >= 0 && reginput >= regline && (uintmax_t)(reginput - regline) <= 18446744073709551615ULL - 1), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5735, "t->state->val >= 0 && reginput >= regline && (uintmax_t)(reginput - regline) <= UINTMAX_MAX - 1") : (void)0);
+        (__builtin_expect(!(t->state->val >= 0 && reginput >= regline && (uintmax_t)(reginput - regline) <= 18446744073709551615ULL - 1), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5745, "t->state->val >= 0 && reginput >= regline && (uintmax_t)(reginput - regline) <= UINTMAX_MAX - 1") : (void)0);
 
 
         result = nfa_re_num_cmp((uintmax_t)t->state->val,
@@ -5633,7 +7760,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
 
 
 
-          if (op != 1 && col > t->state->val) {
+          if (op != 1 && col > t->state->val * (has_mbyte ? MB_MAXBYTES : 1)) {
             break;
           }
 
@@ -5651,7 +7778,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
           }
           if (!result) {
             uintmax_t lts = win_linetabsize(wp, regline, col);
-            (__builtin_expect(!(t->state->val >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5772, "t->state->val >= 0") : (void)0);
+            (__builtin_expect(!(t->state->val >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5782, "t->state->val >= 0") : (void)0);
             result = nfa_re_num_cmp((uintmax_t)t->state->val, op, lts + 1);
           }
           if (result) {
@@ -5792,7 +7919,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
             }
           } else {
             result = (pim->result == 2);
-# 5922 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 5932 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
           }
 
 
@@ -5833,7 +7960,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       }
 
     }
-# 5971 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 5981 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
     if (nfa_match == FALSE
         && ((toplevel
              && reglnum == 0
@@ -5886,7 +8013,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
 
         if (add) {
           if (REG_MULTI)
-            m->norm.list.multi[0].start.col =
+            m->norm.list.multi[0].start_col =
               (colnr_T)(reginput - regline) + clen;
           else
             m->norm.list.line[0].start = reginput + clen;
@@ -5895,7 +8022,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       } else
         addstate(nextlist, start, m, ((void*)0), clen);
     }
-# 6044 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6054 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 nextchar:
 
 
@@ -5947,7 +8074,7 @@ static long nfa_regtry(nfa_regprog_T *prog, colnr_T col)
 
 
   reginput = regline + col;
-# 6113 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6123 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   clear_sub(&subs.norm);
   clear_sub(&m.norm);
   clear_sub(&subs.synt);
@@ -5963,8 +8090,11 @@ static long nfa_regtry(nfa_regprog_T *prog, colnr_T col)
   cleanup_subexpr();
   if (REG_MULTI) {
     for (i = 0; i < subs.norm.in_use; i++) {
-      reg_startpos[i] = subs.norm.list.multi[i].start;
-      reg_endpos[i] = subs.norm.list.multi[i].end;
+      reg_startpos[i].lnum = subs.norm.list.multi[i].start_lnum;
+      reg_startpos[i].col = subs.norm.list.multi[i].start_col;
+
+      reg_endpos[i].lnum = subs.norm.list.multi[i].end_lnum;
+      reg_endpos[i].col = subs.norm.list.multi[i].end_col;
     }
 
     if (reg_startpos[0].lnum < 0) {
@@ -6002,12 +8132,12 @@ static long nfa_regtry(nfa_regprog_T *prog, colnr_T col)
         struct multipos *mpos = &subs.synt.list.multi[i];
 
 
-        if (mpos->start.lnum >= 0
-            && mpos->start.lnum == mpos->end.lnum
-            && mpos->end.col >= mpos->start.col) {
+        if (mpos->start_lnum >= 0
+            && mpos->start_lnum == mpos->end_lnum
+            && mpos->end_col >= mpos->start_col) {
           re_extmatch_out->matches[i] =
-            vim_strnsave(reg_getline(mpos->start.lnum) + mpos->start.col,
-                         mpos->end.col - mpos->start.col);
+            vim_strnsave(reg_getline(mpos->start_lnum) + mpos->start_col,
+                         mpos->end_col - mpos->start_col);
         }
       } else {
         struct linepos *lpos = &subs.synt.list.line[i];
@@ -6151,7 +8281,7 @@ static regprog_T *nfa_regcomp(char_u *expr, int re_flags)
             post_end - post_start);
     goto fail;
   }
-# 6340 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6353 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   post2nfa(postfix, post_ptr, TRUE);
 
 
@@ -6216,7 +8346,7 @@ static void nfa_regfree(regprog_T *prog)
     xfree(prog);
   }
 }
-# 6413 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6426 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int
 nfa_regexec_nl (
     regmatch_T *rmp,
@@ -6236,7 +8366,7 @@ nfa_regexec_nl (
   ireg_maxcol = 0;
   return nfa_regexec_both(line, col);
 }
-# 6467 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6480 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static long nfa_regexec_multi(regmmatch_T *rmp, win_T *win, buf_T *buf,
                               linenr_T lnum, colnr_T col, proftime_T *tm)
 {

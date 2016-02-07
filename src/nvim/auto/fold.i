@@ -1,7 +1,7 @@
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 321 "<built-in>" 3
+# 325 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
@@ -13,12 +13,12 @@
 # 1 "/usr/include/sys/_types.h" 1 3 4
 # 32 "/usr/include/sys/_types.h" 3 4
 # 1 "/usr/include/sys/cdefs.h" 1 3 4
-# 506 "/usr/include/sys/cdefs.h" 3 4
+# 533 "/usr/include/sys/cdefs.h" 3 4
 # 1 "/usr/include/sys/_symbol_aliasing.h" 1 3 4
-# 507 "/usr/include/sys/cdefs.h" 2 3 4
-# 572 "/usr/include/sys/cdefs.h" 3 4
+# 534 "/usr/include/sys/cdefs.h" 2 3 4
+# 599 "/usr/include/sys/cdefs.h" 3 4
 # 1 "/usr/include/sys/_posix_availability.h" 1 3 4
-# 573 "/usr/include/sys/cdefs.h" 2 3 4
+# 600 "/usr/include/sys/cdefs.h" 2 3 4
 # 33 "/usr/include/sys/_types.h" 2 3 4
 # 1 "/usr/include/machine/_types.h" 1 3 4
 # 32 "/usr/include/machine/_types.h" 3 4
@@ -193,9 +193,9 @@ typedef __uint32_t __darwin_wctype_t;
 # 62 "/usr/include/string.h" 2 3 4
 
 # 1 "/usr/include/Availability.h" 1 3 4
-# 153 "/usr/include/Availability.h" 3 4
+# 164 "/usr/include/Availability.h" 3 4
 # 1 "/usr/include/AvailabilityInternal.h" 1 3 4
-# 154 "/usr/include/Availability.h" 2 3 4
+# 165 "/usr/include/Availability.h" 2 3 4
 # 64 "/usr/include/string.h" 2 3 4
 # 1 "/usr/include/sys/_types/_size_t.h" 1 3 4
 # 30 "/usr/include/sys/_types/_size_t.h" 3 4
@@ -336,8 +336,8 @@ int flsll(long long) __attribute__((availability(macosx,introduced=10.9)));
 typedef __darwin_wchar_t wchar_t;
 # 228 "/usr/include/inttypes.h" 2 3 4
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 1 3 4
-# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 1 3 4
+# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
 # 18 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/sys/_types/_int8_t.h" 1 3 4
@@ -419,7 +419,7 @@ typedef long int intmax_t;
 # 32 "/usr/include/_types/_uintmax_t.h" 3 4
 typedef long unsigned int uintmax_t;
 # 60 "/usr/include/stdint.h" 2 3 4
-# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 2 3 4
+# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 2 3 4
 # 230 "/usr/include/inttypes.h" 2 3 4
 
 
@@ -467,7 +467,7 @@ wcstoumax(const wchar_t * restrict __nptr,
 # 16 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h" 1
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h"
 typedef void *vim_acl_T;
@@ -478,7 +478,7 @@ typedef unsigned char char_u;
 
 
 typedef uint32_t u8char_T;
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 12 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/pos.h" 1
 
 
@@ -507,11 +507,11 @@ typedef struct {
   linenr_T lnum;
   colnr_T col;
 } lpos_T;
-# 16 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 27 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 24 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/config/auto/config.h" 1
-# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 49 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 46 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 1
 
 
@@ -1053,14 +1053,15 @@ typedef __darwin_id_t id_t;
 
 
 
+
 # 1 "/usr/include/machine/signal.h" 1 3 4
 # 32 "/usr/include/machine/signal.h" 3 4
 # 1 "/usr/include/i386/signal.h" 1 3 4
 # 39 "/usr/include/i386/signal.h" 3 4
 typedef int sig_atomic_t;
 # 33 "/usr/include/machine/signal.h" 2 3 4
-# 82 "/usr/include/sys/signal.h" 2 3 4
-# 145 "/usr/include/sys/signal.h" 3 4
+# 83 "/usr/include/sys/signal.h" 2 3 4
+# 146 "/usr/include/sys/signal.h" 3 4
 # 1 "/usr/include/machine/_mcontext.h" 1 3 4
 # 29 "/usr/include/machine/_mcontext.h" 3 4
 # 1 "/usr/include/i386/_mcontext.h" 1 3 4
@@ -1445,12 +1446,12 @@ struct __darwin_mcontext_avx64
 # 115 "/usr/include/i386/_mcontext.h" 3 4
 typedef struct __darwin_mcontext64 *mcontext_t;
 # 30 "/usr/include/machine/_mcontext.h" 2 3 4
-# 146 "/usr/include/sys/signal.h" 2 3 4
+# 147 "/usr/include/sys/signal.h" 2 3 4
 
 # 1 "/usr/include/sys/_pthread/_pthread_attr_t.h" 1 3 4
 # 30 "/usr/include/sys/_pthread/_pthread_attr_t.h" 3 4
 typedef __darwin_pthread_attr_t pthread_attr_t;
-# 148 "/usr/include/sys/signal.h" 2 3 4
+# 149 "/usr/include/sys/signal.h" 2 3 4
 
 # 1 "/usr/include/sys/_types/_sigaltstack.h" 1 3 4
 # 36 "/usr/include/sys/_types/_sigaltstack.h" 3 4
@@ -1461,7 +1462,7 @@ struct __darwin_sigaltstack
  int ss_flags;
 };
 typedef struct __darwin_sigaltstack stack_t;
-# 150 "/usr/include/sys/signal.h" 2 3 4
+# 151 "/usr/include/sys/signal.h" 2 3 4
 # 1 "/usr/include/sys/_types/_ucontext.h" 1 3 4
 # 34 "/usr/include/sys/_types/_ucontext.h" 3 4
 struct __darwin_ucontext
@@ -1479,18 +1480,18 @@ struct __darwin_ucontext
 
 
 typedef struct __darwin_ucontext ucontext_t;
-# 151 "/usr/include/sys/signal.h" 2 3 4
+# 152 "/usr/include/sys/signal.h" 2 3 4
 
 
 # 1 "/usr/include/sys/_types/_sigset_t.h" 1 3 4
 # 30 "/usr/include/sys/_types/_sigset_t.h" 3 4
 typedef __darwin_sigset_t sigset_t;
-# 154 "/usr/include/sys/signal.h" 2 3 4
+# 155 "/usr/include/sys/signal.h" 2 3 4
 
 # 1 "/usr/include/sys/_types/_uid_t.h" 1 3 4
 # 30 "/usr/include/sys/_types/_uid_t.h" 3 4
 typedef __darwin_uid_t uid_t;
-# 156 "/usr/include/sys/signal.h" 2 3 4
+# 157 "/usr/include/sys/signal.h" 2 3 4
 
 union sigval {
 
@@ -1523,7 +1524,7 @@ typedef struct __siginfo {
  long si_band;
  unsigned long __pad[7];
 } siginfo_t;
-# 268 "/usr/include/sys/signal.h" 3 4
+# 269 "/usr/include/sys/signal.h" 3 4
 union __sigaction_u {
  void (*__sa_handler)(int);
  void (*__sa_sigaction)(int, struct __siginfo *,
@@ -1546,20 +1547,20 @@ struct sigaction {
  sigset_t sa_mask;
  int sa_flags;
 };
-# 330 "/usr/include/sys/signal.h" 3 4
+# 331 "/usr/include/sys/signal.h" 3 4
 typedef void (*sig_t)(int);
-# 347 "/usr/include/sys/signal.h" 3 4
+# 348 "/usr/include/sys/signal.h" 3 4
 struct sigvec {
  void (*sv_handler)(int);
  int sv_mask;
  int sv_flags;
 };
-# 366 "/usr/include/sys/signal.h" 3 4
+# 367 "/usr/include/sys/signal.h" 3 4
 struct sigstack {
  char *ss_sp;
  int ss_onstack;
 };
-# 389 "/usr/include/sys/signal.h" 3 4
+# 390 "/usr/include/sys/signal.h" 3 4
 void (*signal(int, void (*)(int)))(int);
 # 110 "/usr/include/sys/wait.h" 2 3 4
 # 1 "/usr/include/sys/resource.h" 1 3 4
@@ -1896,7 +1897,7 @@ unsigned long
 unsigned long long
   strtoull(const char *, char **, int);
 
-int system(const char *) __asm("_" "system" ) __attribute__((availability(macosx,introduced=10.0)));
+int system(const char *) __asm("_" "system" ) __attribute__((availability(macosx,introduced=10.0))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 size_t wcstombs(char * restrict, const wchar_t * restrict, size_t);
 int wctomb(char *, wchar_t);
 
@@ -2021,7 +2022,7 @@ int cgetset(const char *);
 int cgetstr(char *, const char *, char **);
 int cgetustr(char *, const char *, char **);
 
-int daemon(int, int) __asm("_" "daemon" "$1050") __attribute__((availability(macosx,introduced=10.0,deprecated=10.5)));
+int daemon(int, int) __asm("_" "daemon" "$1050") __attribute__((availability(macosx,introduced=10.0,deprecated=10.5,message="Use posix_spawn APIs instead."))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 char *devname(dev_t, mode_t);
 char *devname_r(dev_t, mode_t, char *buf, int len);
 char *getbsize(int *, long *);
@@ -2149,7 +2150,7 @@ struct stat64 { dev_t st_dev; mode_t st_mode; nlink_t st_nlink; __darwin_ino64_t
 # 241 "/usr/include/sys/stat.h" 3 4
 # 1 "/usr/include/sys/_types/_s_ifmt.h" 1 3 4
 # 242 "/usr/include/sys/stat.h" 2 3 4
-# 351 "/usr/include/sys/stat.h" 3 4
+# 352 "/usr/include/sys/stat.h" 3 4
 int chmod(const char *, mode_t) __asm("_" "chmod" );
 int fchmod(int, mode_t) __asm("_" "fchmod" );
 int fstat(int, struct stat *) __asm("_" "fstat" "$INODE64");
@@ -2173,7 +2174,7 @@ int mkdirat(int, const char *, mode_t) __attribute__((availability(macosx,introd
 # 30 "/usr/include/sys/_types/_filesec_t.h" 3 4
 struct _filesec;
 typedef struct _filesec *filesec_t;
-# 370 "/usr/include/sys/stat.h" 2 3 4
+# 371 "/usr/include/sys/stat.h" 2 3 4
 
 int chflags(const char *, __uint32_t);
 int chmodx_np(const char *, filesec_t);
@@ -2397,7 +2398,7 @@ int symlinkat(const char *, int, const char *) __attribute__((availability(macos
 int unlinkat(int, const char *, int) __attribute__((availability(macosx,introduced=10.10)));
 int getattrlistat(int, const char *, void *, void *, size_t, unsigned long) __attribute__((availability(macosx,introduced=10.10)));
 # 73 "/usr/include/unistd.h" 2 3 4
-# 424 "/usr/include/unistd.h" 3 4
+# 429 "/usr/include/unistd.h" 3 4
 void _exit(int) __attribute__((noreturn));
 int access(const char *, int);
 unsigned int
@@ -2409,13 +2410,13 @@ int close(int) __asm("_" "close" );
 
 int dup(int);
 int dup2(int, int);
-int execl(const char *, const char *, ...);
-int execle(const char *, const char *, ...);
-int execlp(const char *, const char *, ...);
-int execv(const char *, char * const *);
-int execve(const char *, char * const *, char * const *);
-int execvp(const char *, char * const *);
-pid_t fork(void);
+int execl(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execle(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execlp(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execv(const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execve(const char *, char * const *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execvp(const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+pid_t fork(void) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 long fpathconf(int, int);
 char *getcwd(char *, size_t);
 gid_t getegid(void);
@@ -2465,15 +2466,15 @@ int ttyname_r(int, char *, size_t) __asm("_" "ttyname_r" );
 int unlink(const char *);
 
 ssize_t write(int, const void *, size_t) __asm("_" "write" );
-# 501 "/usr/include/unistd.h" 3 4
+# 506 "/usr/include/unistd.h" 3 4
 size_t confstr(int, char *, size_t) __asm("_" "confstr" );
 
 int getopt(int, char * const [], const char *) __asm("_" "getopt" );
 
 extern char *optarg;
 extern int optind, opterr, optopt;
-# 531 "/usr/include/unistd.h" 3 4
-__attribute__((deprecated))
+# 536 "/usr/include/unistd.h" 3 4
+__attribute__((deprecated)) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 
 void *brk(const void *);
 int chroot(const char *) ;
@@ -2522,7 +2523,7 @@ ssize_t pwrite(int, const void *, size_t, off_t) __asm("_" "pwrite" );
 
 
 
-__attribute__((deprecated))
+__attribute__((deprecated)) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 
 void *sbrk(int);
 
@@ -2542,21 +2543,21 @@ void sync(void);
 int truncate(const char *, off_t);
 useconds_t ualarm(useconds_t, useconds_t);
 int usleep(useconds_t) __asm("_" "usleep" );
-pid_t vfork(void);
+pid_t vfork(void) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 
 
 int fsync(int) __asm("_" "fsync" );
 
 int ftruncate(int, off_t);
 int getlogin_r(char *, size_t);
-# 619 "/usr/include/unistd.h" 3 4
+# 624 "/usr/include/unistd.h" 3 4
 int fchown(int, uid_t, gid_t);
 int gethostname(char *, size_t);
 ssize_t readlink(const char * restrict, char * restrict, size_t);
 int setegid(gid_t);
 int seteuid(uid_t);
 int symlink(const char *, const char *);
-# 633 "/usr/include/unistd.h" 3 4
+# 638 "/usr/include/unistd.h" 3 4
 # 1 "/usr/include/sys/select.h" 1 3 4
 # 114 "/usr/include/sys/select.h" 3 4
 int pselect(int, fd_set * restrict, fd_set * restrict,
@@ -2590,22 +2591,22 @@ int select(int, fd_set * restrict, fd_set * restrict,
 
   ;
 # 130 "/usr/include/sys/select.h" 2 3 4
-# 634 "/usr/include/unistd.h" 2 3 4
+# 639 "/usr/include/unistd.h" 2 3 4
 
 
 
 # 1 "/usr/include/sys/_types/_uuid_t.h" 1 3 4
 # 30 "/usr/include/sys/_types/_uuid_t.h" 3 4
 typedef __darwin_uuid_t uuid_t;
-# 638 "/usr/include/unistd.h" 2 3 4
+# 643 "/usr/include/unistd.h" 2 3 4
 
 
 void _Exit(int) __attribute__((noreturn));
 int accessx_np(const struct accessx_descriptor *, size_t, int *, uid_t);
 int acct(const char *);
-int add_profil(char *, size_t, unsigned long, unsigned int);
+int add_profil(char *, size_t, unsigned long, unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 void endusershell(void);
-int execvP(const char *, const char *, char * const *);
+int execvP(const char *, const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 char *fflagstostr(unsigned long);
 int getdomainname(char *, int);
 int getgrouplist(const char *, int, int *, int *);
@@ -2617,7 +2618,7 @@ int getgrouplist(const char *, int, int *, int *);
 # 1 "/usr/include/gethostuuid.h" 1 3 4
 # 39 "/usr/include/gethostuuid.h" 3 4
 int gethostuuid(uuid_t, const struct timespec *) __attribute__((availability(macosx,introduced=10.5)));
-# 654 "/usr/include/unistd.h" 2 3 4
+# 659 "/usr/include/unistd.h" 2 3 4
 
 
 
@@ -2667,7 +2668,7 @@ void setusershell(void);
 int setwgroups_np(int, const uuid_t);
 int strtofflags(char **, unsigned long *, unsigned long *);
 int swapon(const char *);
-int syscall(int, ...);
+int syscall(int, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 int ttyslot(void);
 int undelete(const char *);
 int unwhiteout(const char *);
@@ -2682,13 +2683,13 @@ int fgetattrlist(int,void*,void*,size_t,unsigned int) __attribute__((availabilit
 int fsetattrlist(int,void*,void*,size_t,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
 int getattrlist(const char*,void*,void*,size_t,unsigned int) __asm("_" "getattrlist" );
 int setattrlist(const char*,void*,void*,size_t,unsigned int) __asm("_" "setattrlist" );
-int exchangedata(const char*,const char*,unsigned int);
-int getdirentriesattr(int,void*,void*,size_t,unsigned int*,unsigned int*,unsigned int*,unsigned int);
-# 731 "/usr/include/unistd.h" 3 4
+int exchangedata(const char*,const char*,unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int getdirentriesattr(int,void*,void*,size_t,unsigned int*,unsigned int*,unsigned int*,unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+# 736 "/usr/include/unistd.h" 3 4
 struct fssearchblock;
 struct searchstate;
 
-int searchfs(const char *, struct fssearchblock *, unsigned long *, unsigned int, unsigned int, struct searchstate *);
+int searchfs(const char *, struct fssearchblock *, unsigned long *, unsigned int, unsigned int, struct searchstate *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 int fsctl(const char *,unsigned long,void*,unsigned int);
 int ffsctl(int,unsigned long,void*,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
 
@@ -2720,7 +2721,7 @@ int pthread_sigmask(int, const sigset_t *, sigset_t *) __asm("_" "pthread_sigmas
 int sigaction(int, const struct sigaction * restrict,
      struct sigaction * restrict);
 int sigaddset(sigset_t *, int);
-int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" );
+int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" ) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 int sigdelset(sigset_t *, int);
 int sigemptyset(sigset_t *);
 int sigfillset(sigset_t *);
@@ -2770,8 +2771,8 @@ __sigbits(int __signo)
 # 108 "/usr/include/sys/param.h" 2 3 4
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 1 3 4
-# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 1 3 4
+# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 64 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/machine/limits.h" 1 3 4
@@ -2786,119 +2787,18 @@ __sigbits(int __signo)
 # 41 "/usr/include/i386/limits.h" 2 3 4
 # 7 "/usr/include/machine/limits.h" 2 3 4
 # 65 "/usr/include/limits.h" 2 3 4
-# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 2 3 4
+# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 2 3 4
 # 111 "/usr/include/sys/param.h" 2 3 4
 # 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-# 38 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h"
-# 1 "/usr/include/time.h" 1 3 4
-# 73 "/usr/include/time.h" 3 4
-struct tm {
- int tm_sec;
- int tm_min;
- int tm_hour;
- int tm_mday;
- int tm_mon;
- int tm_year;
- int tm_wday;
- int tm_yday;
- int tm_isdst;
- long tm_gmtoff;
- char *tm_zone;
-};
-# 96 "/usr/include/time.h" 3 4
-extern char *tzname[];
-
-
-extern int getdate_err;
-
-extern long timezone __asm("_" "timezone" );
-
-extern int daylight;
-
-
-char *asctime(const struct tm *);
-clock_t clock(void) __asm("_" "clock" );
-char *ctime(const time_t *);
-double difftime(time_t, time_t);
-struct tm *getdate(const char *);
-struct tm *gmtime(const time_t *);
-struct tm *localtime(const time_t *);
-time_t mktime(struct tm *) __asm("_" "mktime" );
-size_t strftime(char * restrict, size_t, const char * restrict, const struct tm * restrict) __asm("_" "strftime" );
-char *strptime(const char * restrict, const char * restrict, struct tm * restrict) __asm("_" "strptime" );
-time_t time(time_t *);
-
-
-void tzset(void);
-
-
-
-char *asctime_r(const struct tm * restrict, char * restrict);
-char *ctime_r(const time_t *, char *);
-struct tm *gmtime_r(const time_t * restrict, struct tm * restrict);
-struct tm *localtime_r(const time_t * restrict, struct tm * restrict);
-
-
-time_t posix2time(time_t);
-
-
-
-void tzsetwall(void);
-time_t time2posix(time_t);
-time_t timelocal(struct tm * const);
-time_t timegm(struct tm * const);
-
-
-
-int nanosleep(const struct timespec *, struct timespec *) __asm("_" "nanosleep" );
-# 39 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-
-
-
-# 1 "/usr/include/sys/time.h" 1 3 4
-# 86 "/usr/include/sys/time.h" 3 4
-struct itimerval {
- struct timeval it_interval;
- struct timeval it_value;
-};
-# 124 "/usr/include/sys/time.h" 3 4
-struct timezone {
- int tz_minuteswest;
- int tz_dsttime;
-};
-# 167 "/usr/include/sys/time.h" 3 4
-struct clockinfo {
- int hz;
- int tick;
- int tickadj;
- int stathz;
- int profhz;
-};
-# 184 "/usr/include/sys/time.h" 3 4
-int adjtime(const struct timeval *, struct timeval *);
-int futimes(int, const struct timeval *);
-int lutimes(const char *, const struct timeval *) __attribute__((availability(macosx,introduced=10.5)));
-int settimeofday(const struct timeval *, const struct timezone *);
-
-
-int getitimer(int, struct itimerval *);
-int gettimeofday(struct timeval * restrict, void * restrict);
-
-
-
-int setitimer(int, const struct itimerval * restrict,
-  struct itimerval * restrict);
-int utimes(const char *, const struct timeval *);
-# 43 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-# 50 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 47 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 
 
 
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h" 1
-# 132 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h"
+# 127 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h"
 enum key_extra {
   KE_NAME = 3
 
@@ -3017,15 +2917,16 @@ enum key_extra {
   , KE_X2RELEASE
 
   , KE_DROP
-  , KE_CURSORHOLD
   , KE_NOP
   , KE_FOCUSGAINED
   , KE_FOCUSLOST
   , KE_EVENT
+  , KE_PASTE
+
 };
-# 56 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 53 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/macros.h" 1
-# 57 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 54 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 
 
 
@@ -3120,8 +3021,8 @@ extern char *libintl_bind_textdomain_codeset (const char *__domainname,
 extern void
        libintl_set_relocation_prefix (const char *orig_prefix,
           const char *curr_prefix);
-# 65 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 138 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 62 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 135 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 enum {
   EXPAND_UNSUCCESSFUL = -2,
   EXPAND_OK = -1,
@@ -3171,7 +3072,7 @@ enum {
   EXPAND_SYNTIME,
   EXPAND_USER_ADDR_TYPE,
 };
-# 246 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 243 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/usr/include/fcntl.h" 1 3 4
 # 23 "/usr/include/fcntl.h" 3 4
 # 1 "/usr/include/sys/fcntl.h" 1 3 4
@@ -3181,10 +3082,10 @@ enum {
 # 157 "/usr/include/sys/fcntl.h" 3 4
 # 1 "/usr/include/sys/_types/_o_dsync.h" 1 3 4
 # 158 "/usr/include/sys/fcntl.h" 2 3 4
-# 296 "/usr/include/sys/fcntl.h" 3 4
+# 306 "/usr/include/sys/fcntl.h" 3 4
 # 1 "/usr/include/sys/_types/_seek_set.h" 1 3 4
-# 297 "/usr/include/sys/fcntl.h" 2 3 4
-# 321 "/usr/include/sys/fcntl.h" 3 4
+# 307 "/usr/include/sys/fcntl.h" 2 3 4
+# 331 "/usr/include/sys/fcntl.h" 3 4
 struct flock {
  off_t l_start;
  off_t l_len;
@@ -3192,12 +3093,12 @@ struct flock {
  short l_type;
  short l_whence;
 };
-# 336 "/usr/include/sys/fcntl.h" 3 4
+# 346 "/usr/include/sys/fcntl.h" 3 4
 struct flocktimeout {
  struct flock fl;
  struct timespec timeout;
 };
-# 349 "/usr/include/sys/fcntl.h" 3 4
+# 359 "/usr/include/sys/fcntl.h" 3 4
 struct radvisory {
        off_t ra_offset;
        int ra_count;
@@ -3214,13 +3115,13 @@ typedef struct fcodeblobs {
  int f_arch;
  int __padding;
 } fcodeblobs_t;
-# 373 "/usr/include/sys/fcntl.h" 3 4
+# 383 "/usr/include/sys/fcntl.h" 3 4
 typedef struct fsignatures {
  off_t fs_file_start;
  void *fs_blob_start;
  size_t fs_blob_size;
 } fsignatures_t;
-# 387 "/usr/include/sys/fcntl.h" 3 4
+# 397 "/usr/include/sys/fcntl.h" 3 4
 typedef struct fstore {
  unsigned int fst_flags;
  int fst_posmode;
@@ -3236,7 +3137,7 @@ typedef struct fbootstraptransfer {
   size_t fbt_length;
   void *fbt_buffer;
 } fbootstraptransfer_t;
-# 425 "/usr/include/sys/fcntl.h" 3 4
+# 435 "/usr/include/sys/fcntl.h" 3 4
 #pragma pack(4)
 
 struct log2phys {
@@ -3250,7 +3151,7 @@ struct log2phys {
 };
 
 #pragma pack()
-# 450 "/usr/include/sys/fcntl.h" 3 4
+# 460 "/usr/include/sys/fcntl.h" 3 4
 typedef enum {
  FILESEC_OWNER = 1,
  FILESEC_GROUP = 2,
@@ -3292,11 +3193,11 @@ int filesec_query_property(filesec_t, filesec_property_t, int *);
 int filesec_set_property(filesec_t, filesec_property_t, const void *);
 int filesec_unset_property(filesec_t, filesec_property_t) __attribute__((availability(macosx,introduced=10.6)));
 # 24 "/usr/include/fcntl.h" 2 3 4
-# 247 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 350 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 244 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 342 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 1
 # 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdbool.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdbool.h" 1 3 4
 # 12 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
 # 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_eval.h" 1
@@ -3329,9 +3230,14 @@ typedef struct file_buffer buf_T;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
-# 47 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 51 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 3 4
 typedef long int ptrdiff_t;
+# 118 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/__stddef_max_align_t.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/__stddef_max_align_t.h" 3 4
+typedef long double max_align_t;
+# 119 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 2 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 2
 
 
@@ -3362,9 +3268,9 @@ static inline void *ga_append_via_ptr(garray_T *gap, size_t item_size)
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h" 1
-# 279 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 268 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern long p_aleph;
-extern int p_acd;
+extern _Bool p_acd;
 extern char_u *p_ambw;
 extern int p_ar;
 extern int p_aw;
@@ -3374,9 +3280,12 @@ extern char_u *p_bg;
 extern int p_bk;
 extern char_u *p_bkc;
 extern unsigned int bkc_flags;
-# 299 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 288 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_bdir;
 extern char_u *p_bex;
+extern char_u *p_bo;
+extern unsigned bo_flags;
+# 321 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_bsk;
 extern char_u *p_breakat;
 extern char_u *p_cmp;
@@ -3431,7 +3340,7 @@ extern unsigned dy_flags;
 
 extern int p_ed;
 extern char_u *p_ead;
-extern int p_ea;
+extern _Bool p_ea;
 extern char_u *p_ep;
 extern int p_eb;
 extern char_u *p_ef;
@@ -3448,7 +3357,7 @@ extern char_u *p_fcl;
 extern long p_fdls;
 extern char_u *p_fdo;
 extern unsigned fdo_flags;
-# 388 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 408 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_fp;
 
 extern int p_fs;
@@ -3546,7 +3455,7 @@ extern char_u *p_sel;
 extern char_u *p_slm;
 extern char_u *p_ssop;
 extern unsigned ssop_flags;
-# 509 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 529 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_sh;
 extern char_u *p_shcf;
 extern char_u *p_sp;
@@ -3610,7 +3519,7 @@ extern long p_ur;
 extern long p_uc;
 extern long p_ut;
 extern char_u *p_fcs;
-extern char_u *p_viminfo;
+extern char_u *p_shada;
 extern char_u *p_vdir;
 extern char_u *p_vop;
 extern unsigned vop_flags;
@@ -3792,7 +3701,7 @@ typedef void* libiconv_t;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 52 "/opt/local/include/iconv.h" 2
 
 
@@ -3825,14 +3734,75 @@ typedef __darwin_mbstate_t mbstate_t;
 # 1 "/usr/include/sys/_types/_wchar_t.h" 1 3 4
 # 80 "/usr/include/wchar.h" 2 3 4
 # 89 "/usr/include/wchar.h" 3 4
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdarg.h" 1 3 4
-# 30 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdarg.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 3 4
 typedef __builtin_va_list va_list;
-# 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdarg.h" 3 4
+# 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 90 "/usr/include/wchar.h" 2 3 4
 
+# 1 "/usr/include/time.h" 1 3 4
+# 73 "/usr/include/time.h" 3 4
+struct tm {
+ int tm_sec;
+ int tm_min;
+ int tm_hour;
+ int tm_mday;
+ int tm_mon;
+ int tm_year;
+ int tm_wday;
+ int tm_yday;
+ int tm_isdst;
+ long tm_gmtoff;
+ char *tm_zone;
+};
+# 96 "/usr/include/time.h" 3 4
+extern char *tzname[];
 
+
+extern int getdate_err;
+
+extern long timezone __asm("_" "timezone" );
+
+extern int daylight;
+
+
+char *asctime(const struct tm *);
+clock_t clock(void) __asm("_" "clock" );
+char *ctime(const time_t *);
+double difftime(time_t, time_t);
+struct tm *getdate(const char *);
+struct tm *gmtime(const time_t *);
+struct tm *localtime(const time_t *);
+time_t mktime(struct tm *) __asm("_" "mktime" );
+size_t strftime(char * restrict, size_t, const char * restrict, const struct tm * restrict) __asm("_" "strftime" );
+char *strptime(const char * restrict, const char * restrict, struct tm * restrict) __asm("_" "strptime" );
+time_t time(time_t *);
+
+
+void tzset(void);
+
+
+
+char *asctime_r(const struct tm * restrict, char * restrict);
+char *ctime_r(const time_t *, char *);
+struct tm *gmtime_r(const time_t * restrict, struct tm * restrict);
+struct tm *localtime_r(const time_t * restrict, struct tm * restrict);
+
+
+time_t posix2time(time_t);
+
+
+
+void tzsetwall(void);
+time_t time2posix(time_t);
+time_t timelocal(struct tm * const);
+time_t timegm(struct tm * const);
+
+
+
+int nanosleep(const struct timespec *, struct timespec *) __asm("_" "nanosleep" );
+# 92 "/usr/include/wchar.h" 2 3 4
 # 1 "/usr/include/_wctype.h" 1 3 4
 # 47 "/usr/include/_wctype.h" 3 4
 # 1 "/usr/include/_types/_wctype_t.h" 1 3 4
@@ -4131,10 +4101,174 @@ extern void libiconv_set_relocation_prefix (const char *orig_prefix,
 # 19 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h" 1
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h"
+
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/time.h" 1
+
+
+
+
+
+
+
+typedef uint64_t Timestamp;
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 1
+
+
+
+
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 2
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 1
+
+
+
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 2
+
+
+
+
+typedef size_t hash_T;
+# 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h"
+typedef struct hashitem_S {
+
+  hash_T hi_hash;
+
+
+
+
+
+
+
+  char_u *hi_key;
+} hashitem_T;
+# 57 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h"
+typedef struct hashtable_S {
+  hash_T ht_mask;
+
+  size_t ht_used;
+  size_t ht_filled;
+  int ht_locked;
+  hashitem_T *ht_array;
+
+  hashitem_T ht_smallarray[16];
+} hashtab_T;
+# 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/queue.h" 1
+# 19 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/queue.h"
+typedef void *QUEUE[2];
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 2
+
+typedef int varnumber_T;
+typedef double float_T;
+
+
+
+
+typedef struct listvar_S list_T;
+typedef struct dictvar_S dict_T;
+
+
+
+
+typedef struct {
+  char v_type;
+  char v_lock;
+  union {
+    varnumber_T v_number;
+    float_T v_float;
+    char_u *v_string;
+    list_T *v_list;
+    dict_T *v_dict;
+  } vval;
+} typval_T;
+# 55 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
+typedef struct listitem_S listitem_T;
+
+struct listitem_S {
+  listitem_T *li_next;
+  listitem_T *li_prev;
+  typval_T li_tv;
+};
+
+
+
+
+typedef struct listwatch_S listwatch_T;
+
+struct listwatch_S {
+  listitem_T *lw_item;
+  listwatch_T *lw_next;
+};
+
+
+
+
+struct listvar_S {
+  listitem_T *lv_first;
+  listitem_T *lv_last;
+  int lv_refcount;
+  int lv_len;
+  listwatch_T *lv_watch;
+  int lv_idx;
+  listitem_T *lv_idx_item;
+  int lv_copyID;
+  list_T *lv_copylist;
+  char lv_lock;
+  list_T *lv_used_next;
+  list_T *lv_used_prev;
+};
+
+
+
+
+
+
+struct dictitem_S {
+  typval_T di_tv;
+  char_u di_flags;
+  char_u di_key[1];
+};
+
+typedef struct dictitem_S dictitem_T;
+# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
+struct dictvar_S {
+  char dv_lock;
+  char dv_scope;
+  int dv_refcount;
+  int dv_copyID;
+  hashtab_T dv_hashtab;
+  dict_T *dv_copydict;
+  dict_T *dv_used_next;
+  dict_T *dv_used_prev;
+  int internal_refcount;
+
+  QUEUE watchers;
+};
+
+
+typedef struct ht_stack_S {
+  hashtab_T *ht;
+  struct ht_stack_S *prev;
+} ht_stack_T;
+
+
+typedef struct list_stack_S {
+  list_T *list;
+  struct list_stack_S *prev;
+} list_stack_T;
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h" 2
+# 35 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h"
 typedef struct filemark {
   pos_T mark;
   int fnum;
+  Timestamp timestamp;
+  dict_T *additional_data;
 } fmark_T;
 
 
@@ -4153,6 +4287,7 @@ typedef struct xfilemark {
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 1
 # 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/undo_defs.h" 2
+
 
 
 typedef struct {
@@ -4202,7 +4337,7 @@ struct u_header {
   pos_T uh_cursor;
   long uh_cursor_vcol;
   int uh_flags;
-  pos_T uh_namedm[('z' - 'a' + 1)];
+  fmark_T uh_namedm[('z' - 'a' + 1)];
   visualinfo_T uh_visual;
   time_t uh_time;
   long uh_save_nr;
@@ -4223,132 +4358,9 @@ typedef struct {
 } bufinfo_T;
 # 23 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 2
 
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 1
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 2
-
-
-
-
-typedef size_t hash_T;
-# 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h"
-typedef struct hashitem_S {
-
-  hash_T hi_hash;
-
-
-
-
-
-
-
-  char_u *hi_key;
-} hashitem_T;
-# 57 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h"
-typedef struct hashtable_S {
-  hash_T ht_mask;
-
-  size_t ht_used;
-  size_t ht_filled;
-  int ht_locked;
-  hashitem_T *ht_array;
-
-  hashitem_T ht_smallarray[16];
-} hashtab_T;
-# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 2
-
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 1
-
-
-
-
-
-typedef int varnumber_T;
-typedef double float_T;
-
-typedef struct listvar_S list_T;
-typedef struct dictvar_S dict_T;
-
-
-
-
-typedef struct {
-  char v_type;
-  char v_lock;
-  union {
-    varnumber_T v_number;
-    float_T v_float;
-    char_u *v_string;
-    list_T *v_list;
-    dict_T *v_dict;
-  } vval;
-} typval_T;
-# 48 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
-typedef struct listitem_S listitem_T;
-
-struct listitem_S {
-  listitem_T *li_next;
-  listitem_T *li_prev;
-  typval_T li_tv;
-};
-
-
-
-
-typedef struct listwatch_S listwatch_T;
-
-struct listwatch_S {
-  listitem_T *lw_item;
-  listwatch_T *lw_next;
-};
-
-
-
-
-struct listvar_S {
-  listitem_T *lv_first;
-  listitem_T *lv_last;
-  int lv_refcount;
-  int lv_len;
-  listwatch_T *lv_watch;
-  int lv_idx;
-  listitem_T *lv_idx_item;
-  int lv_copyID;
-  list_T *lv_copylist;
-  char lv_lock;
-  list_T *lv_used_next;
-  list_T *lv_used_prev;
-};
-
-
-
-
-
-
-struct dictitem_S {
-  typval_T di_tv;
-  char_u di_flags;
-  char_u di_key[1];
-};
-
-typedef struct dictitem_S dictitem_T;
-# 105 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
-struct dictvar_S {
-  char dv_lock;
-  char dv_scope;
-  int dv_refcount;
-  int dv_copyID;
-  hashtab_T dv_hashtab;
-  dict_T *dv_copydict;
-  dict_T *dv_used_next;
-  dict_T *dv_used_prev;
-  int internal_refcount;
-
-};
-# 27 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/profile.h" 1
 
@@ -4799,7 +4811,7 @@ struct signlist
 # 49 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-version.h" 1
 # 50 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 51 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
 # 61 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 1
@@ -4899,28 +4911,46 @@ struct iovec {
  size_t iov_len;
 };
 # 106 "/usr/include/sys/socket.h" 2 3 4
-# 190 "/usr/include/sys/socket.h" 3 4
+# 184 "/usr/include/sys/socket.h" 3 4
+typedef __uint32_t sae_associd_t;
+
+
+
+typedef __uint32_t sae_connid_t;
+# 197 "/usr/include/sys/socket.h" 3 4
+typedef struct sa_endpoints {
+ unsigned int sae_srcif;
+ struct sockaddr *sae_srcaddr;
+ socklen_t sae_srcaddrlen;
+ struct sockaddr *sae_dstaddr;
+ socklen_t sae_dstaddrlen;
+} sa_endpoints_t;
+
+
+
+
+
 struct linger {
  int l_onoff;
  int l_linger;
 };
-# 208 "/usr/include/sys/socket.h" 3 4
+# 227 "/usr/include/sys/socket.h" 3 4
 struct so_np_extensions {
  u_int32_t npx_flags;
  u_int32_t npx_mask;
 };
-# 283 "/usr/include/sys/socket.h" 3 4
+# 302 "/usr/include/sys/socket.h" 3 4
 struct sockaddr {
  __uint8_t sa_len;
  sa_family_t sa_family;
  char sa_data[14];
 };
-# 296 "/usr/include/sys/socket.h" 3 4
+# 315 "/usr/include/sys/socket.h" 3 4
 struct sockproto {
  __uint16_t sp_family;
  __uint16_t sp_protocol;
 };
-# 316 "/usr/include/sys/socket.h" 3 4
+# 335 "/usr/include/sys/socket.h" 3 4
 struct sockaddr_storage {
  __uint8_t ss_len;
  sa_family_t ss_family;
@@ -4928,7 +4958,7 @@ struct sockaddr_storage {
  __int64_t __ss_align;
  char __ss_pad2[(128 - sizeof(__uint8_t) - sizeof(sa_family_t) - ((sizeof(__int64_t)) - sizeof(__uint8_t) - sizeof(sa_family_t)) - (sizeof(__int64_t)))];
 };
-# 416 "/usr/include/sys/socket.h" 3 4
+# 435 "/usr/include/sys/socket.h" 3 4
 struct msghdr {
  void *msg_name;
  socklen_t msg_namelen;
@@ -4938,20 +4968,21 @@ struct msghdr {
  socklen_t msg_controllen;
  int msg_flags;
 };
-# 457 "/usr/include/sys/socket.h" 3 4
+# 476 "/usr/include/sys/socket.h" 3 4
 struct cmsghdr {
  socklen_t cmsg_len;
  int cmsg_level;
  int cmsg_type;
 
 };
-# 548 "/usr/include/sys/socket.h" 3 4
+# 567 "/usr/include/sys/socket.h" 3 4
 struct sf_hdtr {
  struct iovec *headers;
  int hdr_cnt;
  struct iovec *trailers;
  int trl_cnt;
 };
+
 
 
 
@@ -4988,6 +5019,9 @@ int sendfile(int, int, off_t, off_t *, struct sf_hdtr *, int);
 
 
 void pfctlinput(int, struct sockaddr *);
+int connectx(int , const sa_endpoints_t *, sae_associd_t, unsigned int,
+    const struct iovec *, unsigned int, size_t *, sae_connid_t *);
+int disconnectx(int , sae_associd_t, sae_connid_t);
 # 31 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 2
 # 1 "/usr/include/netinet/in.h" 1 3 4
 # 301 "/usr/include/netinet/in.h" 3 4
@@ -5204,6 +5238,50 @@ struct tcphdr {
  unsigned short th_win;
  unsigned short th_sum;
  unsigned short th_urp;
+};
+# 231 "/usr/include/netinet/tcp.h" 3 4
+struct tcp_connection_info {
+        u_int8_t tcpi_state;
+        u_int8_t tcpi_snd_wscale;
+        u_int8_t tcpi_rcv_wscale;
+        u_int8_t __pad1;
+        u_int32_t tcpi_options;
+
+
+
+
+        u_int32_t tcpi_flags;
+
+
+        u_int32_t tcpi_rto;
+        u_int32_t tcpi_maxseg;
+        u_int32_t tcpi_snd_ssthresh;
+        u_int32_t tcpi_snd_cwnd;
+        u_int32_t tcpi_snd_wnd;
+        u_int32_t tcpi_snd_sbbytes;
+        u_int32_t tcpi_rcv_wnd;
+        u_int32_t tcpi_rttcur;
+        u_int32_t tcpi_srtt;
+        u_int32_t tcpi_rttvar;
+ u_int32_t
+
+   tcpi_tfo_cookie_req:1,
+   tcpi_tfo_cookie_rcv:1,
+   tcpi_tfo_syn_loss:1,
+   tcpi_tfo_syn_data_sent:1,
+   tcpi_tfo_syn_data_acked:1,
+
+   tcpi_tfo_syn_data_rcv:1,
+   tcpi_tfo_cookie_req_rcv:1,
+   tcpi_tfo_cookie_sent:1,
+   tcpi_tfo_cookie_invalid:1,
+   __pad2:23;
+        u_int64_t tcpi_txpackets __attribute__((aligned(8)));
+        u_int64_t tcpi_txbytes __attribute__((aligned(8)));
+        u_int64_t tcpi_txretransmitbytes __attribute__((aligned(8)));
+        u_int64_t tcpi_rxpackets __attribute__((aligned(8)));
+        u_int64_t tcpi_rxbytes __attribute__((aligned(8)));
+        u_int64_t tcpi_rxoutoforderbytes __attribute__((aligned(8)));
 };
 # 33 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 2
 # 1 "/usr/include/arpa/inet.h" 1 3 4
@@ -5544,7 +5622,7 @@ pthread_override_qos_class_end_np(pthread_override_t __override);
 # 49 "/usr/include/sys/_types/_mach_port_t.h" 3 4
 typedef __darwin_mach_port_t mach_port_t;
 # 78 "/usr/include/pthread.h" 2 3 4
-# 209 "/usr/include/pthread.h" 3 4
+# 208 "/usr/include/pthread.h" 3 4
 __attribute__((availability(macosx,introduced=10.4)))
 int pthread_atfork(void (*)(void), void (*)(void), void (*)(void));
 
@@ -6043,6 +6121,8 @@ typedef uint64_t vm_object_offset_t;
 typedef uint64_t vm_object_size_t;
 
 
+
+
 typedef mach_port_t upl_t;
 typedef mach_port_t vm_named_entry_t;
 # 71 "/usr/include/mach/std_types.h" 2 3 4
@@ -6050,11 +6130,11 @@ typedef mach_port_t vm_named_entry_t;
 # 1 "/usr/include/mach/mach_types.h" 1 3 4
 # 80 "/usr/include/mach/mach_types.h" 3 4
 # 1 "/usr/include/mach/host_info.h" 1 3 4
-# 68 "/usr/include/mach/host_info.h" 3 4
+# 66 "/usr/include/mach/host_info.h" 3 4
 # 1 "/usr/include/mach/message.h" 1 3 4
-# 90 "/usr/include/mach/message.h" 3 4
+# 91 "/usr/include/mach/message.h" 3 4
 typedef natural_t mach_msg_timeout_t;
-# 220 "/usr/include/mach/message.h" 3 4
+# 221 "/usr/include/mach/message.h" 3 4
 typedef unsigned int mach_msg_bits_t;
 typedef natural_t mach_msg_size_t;
 typedef integer_t mach_msg_id_t;
@@ -6063,9 +6143,9 @@ typedef integer_t mach_msg_id_t;
 
 
 typedef unsigned int mach_msg_type_name_t;
-# 240 "/usr/include/mach/message.h" 3 4
+# 241 "/usr/include/mach/message.h" 3 4
 typedef unsigned int mach_msg_copy_options_t;
-# 262 "/usr/include/mach/message.h" 3 4
+# 263 "/usr/include/mach/message.h" 3 4
 typedef unsigned int mach_msg_descriptor_type_t;
 
 
@@ -6215,7 +6295,7 @@ typedef struct
   mach_msg_trailer_type_t msgh_trailer_type;
   mach_msg_trailer_size_t msgh_trailer_size;
 } mach_msg_trailer_t;
-# 421 "/usr/include/mach/message.h" 3 4
+# 422 "/usr/include/mach/message.h" 3 4
 typedef struct
 {
   mach_msg_trailer_type_t msgh_trailer_type;
@@ -6235,7 +6315,7 @@ typedef struct
   mach_port_seqno_t msgh_seqno;
   security_token_t msgh_sender;
 } mach_msg_security_trailer_t;
-# 450 "/usr/include/mach/message.h" 3 4
+# 451 "/usr/include/mach/message.h" 3 4
 typedef struct
 {
   unsigned int val[8];
@@ -6283,9 +6363,9 @@ typedef struct
   int msgh_ad;
   msg_labels_t msgh_labels;
 } mach_msg_mac_trailer_t;
-# 511 "/usr/include/mach/message.h" 3 4
+# 512 "/usr/include/mach/message.h" 3 4
 typedef mach_msg_mac_trailer_t mach_msg_max_trailer_t;
-# 521 "/usr/include/mach/message.h" 3 4
+# 522 "/usr/include/mach/message.h" 3 4
 typedef mach_msg_security_trailer_t mach_msg_format_0_trailer_t;
 
 
@@ -6319,14 +6399,15 @@ typedef union
 } mach_msg_empty_t;
 
 #pragma pack()
-# 584 "/usr/include/mach/message.h" 3 4
+# 585 "/usr/include/mach/message.h" 3 4
 typedef natural_t mach_msg_type_size_t;
 typedef natural_t mach_msg_type_number_t;
-# 628 "/usr/include/mach/message.h" 3 4
+# 629 "/usr/include/mach/message.h" 3 4
 typedef integer_t mach_msg_option_t;
-# 717 "/usr/include/mach/message.h" 3 4
+# 718 "/usr/include/mach/message.h" 3 4
 typedef kern_return_t mach_msg_return_t;
 # 821 "/usr/include/mach/message.h" 3 4
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_overwrite(
      mach_msg_header_t *msg,
      mach_msg_option_t option,
@@ -6337,7 +6418,8 @@ extern mach_msg_return_t mach_msg_overwrite(
      mach_port_name_t notify,
      mach_msg_header_t *rcv_msg,
      mach_msg_size_t rcv_limit);
-# 841 "/usr/include/mach/message.h" 3 4
+# 842 "/usr/include/mach/message.h" 3 4
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg(
      mach_msg_header_t *msg,
      mach_msg_option_t option,
@@ -6353,9 +6435,10 @@ extern mach_msg_return_t mach_msg(
 
 
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern kern_return_t mach_voucher_deallocate(
      mach_port_name_t voucher);
-# 69 "/usr/include/mach/host_info.h" 2 3 4
+# 67 "/usr/include/mach/host_info.h" 2 3 4
 # 1 "/usr/include/mach/vm_statistics.h" 1 3 4
 # 84 "/usr/include/mach/vm_statistics.h" 3 4
 struct vm_statistics {
@@ -6445,13 +6528,13 @@ struct vm_purgeable_info {
 };
 
 typedef struct vm_purgeable_info *vm_purgeable_info_t;
-# 70 "/usr/include/mach/host_info.h" 2 3 4
+# 68 "/usr/include/mach/host_info.h" 2 3 4
 # 1 "/usr/include/mach/machine.h" 1 3 4
 # 69 "/usr/include/mach/machine.h" 3 4
 typedef integer_t cpu_type_t;
 typedef integer_t cpu_subtype_t;
 typedef integer_t cpu_threadtype_t;
-# 71 "/usr/include/mach/host_info.h" 2 3 4
+# 69 "/usr/include/mach/host_info.h" 2 3 4
 
 # 1 "/usr/include/mach/time_value.h" 1 3 4
 # 66 "/usr/include/mach/time_value.h" 3 4
@@ -6461,7 +6544,7 @@ struct time_value {
 };
 
 typedef struct time_value time_value_t;
-# 73 "/usr/include/mach/host_info.h" 2 3 4
+# 71 "/usr/include/mach/host_info.h" 2 3 4
 
 
 
@@ -6485,7 +6568,7 @@ typedef char kernel_boot_info_t[(4096)];
 
 
 typedef integer_t host_flavor_t;
-# 105 "/usr/include/mach/host_info.h" 3 4
+# 104 "/usr/include/mach/host_info.h" 3 4
 #pragma pack(4)
 
 struct host_basic_info {
@@ -6545,7 +6628,7 @@ struct host_priority_info {
 
 typedef struct host_priority_info host_priority_info_data_t;
 typedef struct host_priority_info *host_priority_info_t;
-# 178 "/usr/include/mach/host_info.h" 3 4
+# 177 "/usr/include/mach/host_info.h" 3 4
 struct host_load_info {
  integer_t avenrun[3];
  integer_t mach_factor[3];
@@ -6558,7 +6641,7 @@ typedef struct host_load_info *host_load_info_t;
 
 typedef struct vm_purgeable_info host_purgable_info_data_t;
 typedef struct vm_purgeable_info *host_purgable_info_t;
-# 229 "/usr/include/mach/host_info.h" 3 4
+# 228 "/usr/include/mach/host_info.h" 3 4
 struct host_cpu_load_info {
  natural_t cpu_ticks[4];
 };
@@ -6669,7 +6752,7 @@ typedef struct memory_object_attr_info memory_object_attr_info_data_t;
 # 1 "/usr/include/mach/i386/exception.h" 1 3 4
 # 34 "/usr/include/mach/machine/exception.h" 2 3 4
 # 63 "/usr/include/mach/exception_types.h" 2 3 4
-# 173 "/usr/include/mach/exception_types.h" 3 4
+# 176 "/usr/include/mach/exception_types.h" 3 4
 # 1 "/usr/include/mach/thread_status.h" 1 3 4
 # 76 "/usr/include/mach/thread_status.h" 3 4
 # 1 "/usr/include/mach/machine/thread_status.h" 1 3 4
@@ -6828,7 +6911,7 @@ typedef natural_t thread_state_data_t[(224)];
 
 typedef int thread_state_flavor_t;
 typedef thread_state_flavor_t *thread_state_flavor_array_t;
-# 174 "/usr/include/mach/exception_types.h" 2 3 4
+# 177 "/usr/include/mach/exception_types.h" 2 3 4
 
 
 
@@ -7323,9 +7406,14 @@ struct task_vm_info {
  mach_vm_size_t compressed;
  mach_vm_size_t compressed_peak;
  mach_vm_size_t compressed_lifetime;
+
+
+ mach_vm_size_t phys_footprint;
 };
 typedef struct task_vm_info task_vm_info_data_t;
 typedef struct task_vm_info *task_vm_info_t;
+
+
 
 
 
@@ -7373,6 +7461,12 @@ struct task_power_info_v2 {
 typedef struct task_power_info_v2 task_power_info_v2_data_t;
 typedef struct task_power_info_v2 *task_power_info_v2_t;
 # 386 "/usr/include/mach/task_info.h" 3 4
+struct task_flags_info {
+ uint32_t flags;
+};
+typedef struct task_flags_info task_flags_info_data_t;
+typedef struct task_flags_info * task_flags_info_t;
+# 409 "/usr/include/mach/task_info.h" 3 4
 #pragma pack()
 # 92 "/usr/include/mach/mach_types.h" 2 3 4
 # 1 "/usr/include/mach/task_policy.h" 1 3 4
@@ -7451,7 +7545,7 @@ typedef natural_t thread_flavor_t;
 typedef integer_t *thread_info_t;
 
 
-typedef integer_t thread_info_data_t[(1024)];
+typedef integer_t thread_info_data_t[(32)];
 
 
 
@@ -7462,7 +7556,7 @@ struct thread_basic_info {
         time_value_t user_time;
         time_value_t system_time;
         integer_t cpu_usage;
- policy_t policy;
+        policy_t policy;
         integer_t run_state;
         integer_t flags;
         integer_t suspend_count;
@@ -7485,7 +7579,23 @@ struct thread_identifier_info {
 
 typedef struct thread_identifier_info thread_identifier_info_data_t;
 typedef struct thread_identifier_info *thread_identifier_info_t;
-# 156 "/usr/include/mach/thread_info.h" 3 4
+# 152 "/usr/include/mach/thread_info.h" 3 4
+struct thread_extended_info {
+ uint64_t pth_user_time;
+ uint64_t pth_system_time;
+ int32_t pth_cpu_usage;
+ int32_t pth_policy;
+ int32_t pth_run_state;
+ int32_t pth_flags;
+ int32_t pth_sleep_time;
+ int32_t pth_curpri;
+ int32_t pth_priority;
+ int32_t pth_maxpriority;
+ char pth_name[64];
+};
+typedef struct thread_extended_info thread_extended_info_data_t;
+typedef struct thread_extended_info * thread_extended_info_t;
+# 184 "/usr/include/mach/thread_info.h" 3 4
 struct io_stat_entry {
  uint64_t count;
  uint64_t size;
@@ -8371,7 +8481,7 @@ kern_return_t clock_set_attributes
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_timespec_t new_time;
- } __Request__clock_set_time_t;
+ } __Request__clock_set_time_t __attribute__((unused));
 
 #pragma pack()
 
@@ -8385,7 +8495,7 @@ kern_return_t clock_set_attributes
   clock_flavor_t flavor;
   mach_msg_type_number_t clock_attrCnt;
   int clock_attr[1];
- } __Request__clock_set_attributes_t;
+ } __Request__clock_set_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -8412,7 +8522,7 @@ union __RequestUnion__clock_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__clock_set_time_t;
+ } __Reply__clock_set_time_t __attribute__((unused));
 
 #pragma pack()
 
@@ -8424,7 +8534,7 @@ union __RequestUnion__clock_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__clock_set_attributes_t;
+ } __Reply__clock_set_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -8618,6 +8728,17 @@ typedef struct task_zone_info_data {
 } task_zone_info_t;
 
 typedef task_zone_info_t *task_zone_info_array_t;
+
+typedef struct mach_memory_info {
+    uint64_t flags;
+    uint64_t site;
+    uint64_t size;
+    uint64_t free;
+    uint64_t largest;
+    uint64_t _resv[3];
+} mach_memory_info_t;
+
+typedef mach_memory_info_t *mach_memory_info_array_t;
 # 68 "/usr/include/mach_debug/mach_debug_types.h" 2 3 4
 # 1 "/usr/include/mach_debug/page_info.h" 1 3 4
 # 63 "/usr/include/mach_debug/page_info.h" 3 4
@@ -8666,6 +8787,15 @@ typedef lockgroup_info_t *lockgroup_info_array_t;
 # 71 "/usr/include/mach_debug/mach_debug_types.h" 2 3 4
 
 typedef char symtab_name_t[32];
+
+struct mach_core_fileheader
+{
+     uint64_t signature;
+     uint64_t log_offset;
+     uint64_t log_length;
+     uint64_t gzip_offset;
+     uint64_t gzip_length;
+};
 # 38 "/usr/include/mach/host_priv.h" 2 3 4
 # 51 "/usr/include/mach/host_priv.h" 3 4
 extern
@@ -9015,7 +9145,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_get_boot_info_t;
+ } __Request__host_get_boot_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9027,7 +9157,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int options;
- } __Request__host_reboot_t;
+ } __Request__host_reboot_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9040,7 +9170,7 @@ kern_return_t kext_request
   NDR_record_t NDR;
   host_flavor_t flavor;
   mach_msg_type_number_t host_info_outCnt;
- } __Request__host_priv_statistics_t;
+ } __Request__host_priv_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9056,7 +9186,7 @@ kern_return_t kext_request
 
   NDR_record_t NDR;
   memory_object_cluster_size_t cluster_size;
- } __Request__host_default_memory_manager_t;
+ } __Request__host_default_memory_manager_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9074,7 +9204,7 @@ kern_return_t kext_request
   vm_address_t address;
   vm_size_t size;
   vm_prot_t desired_access;
- } __Request__vm_wire_t;
+ } __Request__vm_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9090,7 +9220,7 @@ kern_return_t kext_request
 
   NDR_record_t NDR;
   boolean_t wired;
- } __Request__thread_wire_t;
+ } __Request__thread_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9108,7 +9238,7 @@ kern_return_t kext_request
   vm_address_t address;
   vm_size_t size;
   int flags;
- } __Request__vm_allocate_cpm_t;
+ } __Request__vm_allocate_cpm_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9118,7 +9248,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_processors_t;
+ } __Request__host_processors_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9130,7 +9260,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   clock_id_t clock_id;
- } __Request__host_get_clock_control_t;
+ } __Request__host_get_clock_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9142,7 +9272,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   vm_address_t info;
- } __Request__kmod_create_t;
+ } __Request__kmod_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9154,7 +9284,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kmod_t module;
- } __Request__kmod_destroy_t;
+ } __Request__kmod_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9172,7 +9302,7 @@ kern_return_t kext_request
   kmod_t module;
   kmod_control_flavor_t flavor;
   mach_msg_type_number_t dataCnt;
- } __Request__kmod_control_t;
+ } __Request__kmod_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9185,7 +9315,7 @@ kern_return_t kext_request
   NDR_record_t NDR;
   int node;
   int which;
- } __Request__host_get_special_port_t;
+ } __Request__host_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9201,7 +9331,7 @@ kern_return_t kext_request
 
   NDR_record_t NDR;
   int which;
- } __Request__host_set_special_port_t;
+ } __Request__host_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9219,7 +9349,7 @@ kern_return_t kext_request
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__host_set_exception_ports_t;
+ } __Request__host_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9231,7 +9361,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   exception_mask_t exception_mask;
- } __Request__host_get_exception_ports_t;
+ } __Request__host_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9249,7 +9379,7 @@ kern_return_t kext_request
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__host_swap_exception_ports_t;
+ } __Request__host_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9267,7 +9397,7 @@ kern_return_t kext_request
   mach_vm_address_t address;
   mach_vm_size_t size;
   vm_prot_t desired_access;
- } __Request__mach_vm_wire_t;
+ } __Request__mach_vm_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9277,7 +9407,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_processor_sets_t;
+ } __Request__host_processor_sets_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9291,7 +9421,7 @@ kern_return_t kext_request
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t set_name;
 
- } __Request__host_processor_set_priv_t;
+ } __Request__host_processor_set_priv_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9305,7 +9435,7 @@ kern_return_t kext_request
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t control_port;
 
- } __Request__set_dp_control_port_t;
+ } __Request__set_dp_control_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9315,7 +9445,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__get_dp_control_port_t;
+ } __Request__get_dp_control_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9329,7 +9459,7 @@ kern_return_t kext_request
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t server;
 
- } __Request__host_set_UNDServer_t;
+ } __Request__host_set_UNDServer_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9339,7 +9469,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_get_UNDServer_t;
+ } __Request__host_get_UNDServer_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9356,7 +9486,7 @@ kern_return_t kext_request
   NDR_record_t NDR;
   uint32_t user_log_flags;
   mach_msg_type_number_t request_dataCnt;
- } __Request__kext_request_t;
+ } __Request__kext_request_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9409,7 +9539,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_type_number_t boot_infoOffset;
   mach_msg_type_number_t boot_infoCnt;
   char boot_info[4096];
- } __Reply__host_get_boot_info_t;
+ } __Reply__host_get_boot_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9421,7 +9551,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_reboot_t;
+ } __Reply__host_reboot_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9435,7 +9565,7 @@ union __RequestUnion__host_priv_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t host_info_outCnt;
   integer_t host_info_out[68];
- } __Reply__host_priv_statistics_t;
+ } __Reply__host_priv_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9449,7 +9579,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t default_manager;
 
- } __Reply__host_default_memory_manager_t;
+ } __Reply__host_default_memory_manager_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9461,7 +9591,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_wire_t;
+ } __Reply__vm_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9473,7 +9603,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_wire_t;
+ } __Reply__thread_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9486,7 +9616,7 @@ union __RequestUnion__host_priv_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_address_t address;
- } __Reply__vm_allocate_cpm_t;
+ } __Reply__vm_allocate_cpm_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9502,7 +9632,7 @@ union __RequestUnion__host_priv_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t out_processor_listCnt;
- } __Reply__host_processors_t;
+ } __Reply__host_processors_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9516,7 +9646,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t clock_ctrl;
 
- } __Reply__host_get_clock_control_t;
+ } __Reply__host_get_clock_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9529,7 +9659,7 @@ union __RequestUnion__host_priv_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   kmod_t module;
- } __Reply__kmod_create_t;
+ } __Reply__kmod_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9541,7 +9671,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__kmod_destroy_t;
+ } __Reply__kmod_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9557,7 +9687,7 @@ union __RequestUnion__host_priv_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t dataCnt;
- } __Reply__kmod_control_t;
+ } __Reply__kmod_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9571,7 +9701,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t port;
 
- } __Reply__host_get_special_port_t;
+ } __Reply__host_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9583,7 +9713,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_set_special_port_t;
+ } __Reply__host_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9595,7 +9725,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_set_exception_ports_t;
+ } __Reply__host_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9614,7 +9744,7 @@ union __RequestUnion__host_priv_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__host_get_exception_ports_t;
+ } __Reply__host_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9633,7 +9763,7 @@ union __RequestUnion__host_priv_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__host_swap_exception_ports_t;
+ } __Reply__host_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9645,7 +9775,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_vm_wire_t;
+ } __Reply__mach_vm_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9661,7 +9791,7 @@ union __RequestUnion__host_priv_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t processor_setsCnt;
- } __Reply__host_processor_sets_t;
+ } __Reply__host_processor_sets_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9675,7 +9805,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t set;
 
- } __Reply__host_processor_set_priv_t;
+ } __Reply__host_processor_set_priv_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9687,7 +9817,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__set_dp_control_port_t;
+ } __Reply__set_dp_control_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9701,7 +9831,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t contorl_port;
 
- } __Reply__get_dp_control_port_t;
+ } __Reply__get_dp_control_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9713,7 +9843,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_set_UNDServer_t;
+ } __Reply__host_set_UNDServer_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9727,7 +9857,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t server;
 
- } __Reply__host_get_UNDServer_t;
+ } __Reply__host_get_UNDServer_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9746,7 +9876,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_type_number_t response_dataCnt;
   mach_msg_type_number_t log_dataCnt;
   kern_return_t op_result;
- } __Reply__kext_request_t;
+ } __Reply__kext_request_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9831,7 +9961,7 @@ kern_return_t host_security_set_task_token
   audit_token_t audit_token;
   mach_msg_type_number_t ledgersCnt;
   boolean_t inherit_memory;
- } __Request__host_security_create_task_token_t;
+ } __Request__host_security_create_task_token_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9849,7 +9979,7 @@ kern_return_t host_security_set_task_token
   NDR_record_t NDR;
   security_token_t sec_token;
   audit_token_t audit_token;
- } __Request__host_security_set_task_token_t;
+ } __Request__host_security_set_task_token_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9878,7 +10008,7 @@ union __RequestUnion__host_security_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t child_task;
 
- } __Reply__host_security_create_task_token_t;
+ } __Reply__host_security_create_task_token_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9890,7 +10020,7 @@ union __RequestUnion__host_security_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_security_set_task_token_t;
+ } __Reply__host_security_set_task_token_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9981,7 +10111,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_acquire_t;
+ } __Request__lock_acquire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9993,7 +10123,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_release_t;
+ } __Request__lock_release_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10005,7 +10135,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_try_t;
+ } __Request__lock_try_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10017,7 +10147,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_make_stable_t;
+ } __Request__lock_make_stable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10029,7 +10159,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_handoff_t;
+ } __Request__lock_handoff_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10041,7 +10171,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_handoff_accept_t;
+ } __Request__lock_handoff_accept_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10072,7 +10202,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_acquire_t;
+ } __Reply__lock_acquire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10084,7 +10214,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_release_t;
+ } __Reply__lock_release_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10096,7 +10226,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_try_t;
+ } __Reply__lock_try_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10108,7 +10238,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_make_stable_t;
+ } __Reply__lock_make_stable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10120,7 +10250,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_handoff_t;
+ } __Reply__lock_handoff_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10132,7 +10262,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_handoff_accept_t;
+ } __Reply__lock_handoff_accept_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10228,7 +10358,7 @@ kern_return_t processor_get_assignment
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_start_t;
+ } __Request__processor_start_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10238,7 +10368,7 @@ kern_return_t processor_get_assignment
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_exit_t;
+ } __Request__processor_exit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10251,7 +10381,7 @@ kern_return_t processor_get_assignment
   NDR_record_t NDR;
   processor_flavor_t flavor;
   mach_msg_type_number_t processor_info_outCnt;
- } __Request__processor_info_t;
+ } __Request__processor_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10264,7 +10394,7 @@ kern_return_t processor_get_assignment
   NDR_record_t NDR;
   mach_msg_type_number_t processor_cmdCnt;
   integer_t processor_cmd[12];
- } __Request__processor_control_t;
+ } __Request__processor_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10280,7 +10410,7 @@ kern_return_t processor_get_assignment
 
   NDR_record_t NDR;
   boolean_t wait;
- } __Request__processor_assign_t;
+ } __Request__processor_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10290,7 +10420,7 @@ kern_return_t processor_get_assignment
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_get_assignment_t;
+ } __Request__processor_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10321,7 +10451,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_start_t;
+ } __Reply__processor_start_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10333,7 +10463,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_exit_t;
+ } __Reply__processor_exit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10350,7 +10480,7 @@ union __RequestUnion__processor_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t processor_info_outCnt;
   integer_t processor_info_out[12];
- } __Reply__processor_info_t;
+ } __Reply__processor_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10362,7 +10492,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_control_t;
+ } __Reply__processor_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10374,7 +10504,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_assign_t;
+ } __Reply__processor_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10388,7 +10518,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t assigned_set;
 
- } __Reply__processor_get_assignment_t;
+ } __Reply__processor_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10547,7 +10677,7 @@ kern_return_t processor_set_info
   NDR_record_t NDR;
   processor_set_flavor_t flavor;
   mach_msg_type_number_t info_outCnt;
- } __Request__processor_set_statistics_t;
+ } __Request__processor_set_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10557,7 +10687,7 @@ kern_return_t processor_set_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_destroy_t;
+ } __Request__processor_set_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10570,7 +10700,7 @@ kern_return_t processor_set_info
   NDR_record_t NDR;
   int max_priority;
   boolean_t change_threads;
- } __Request__processor_set_max_priority_t;
+ } __Request__processor_set_max_priority_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10582,7 +10712,7 @@ kern_return_t processor_set_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int policy;
- } __Request__processor_set_policy_enable_t;
+ } __Request__processor_set_policy_enable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10595,7 +10725,7 @@ kern_return_t processor_set_info
   NDR_record_t NDR;
   int policy;
   boolean_t change_threads;
- } __Request__processor_set_policy_disable_t;
+ } __Request__processor_set_policy_disable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10605,7 +10735,7 @@ kern_return_t processor_set_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_tasks_t;
+ } __Request__processor_set_tasks_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10615,7 +10745,7 @@ kern_return_t processor_set_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_threads_t;
+ } __Request__processor_set_threads_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10630,7 +10760,7 @@ kern_return_t processor_set_info
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[5];
   boolean_t change;
- } __Request__processor_set_policy_control_t;
+ } __Request__processor_set_policy_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10640,7 +10770,7 @@ kern_return_t processor_set_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_stack_usage_t;
+ } __Request__processor_set_stack_usage_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10653,7 +10783,7 @@ kern_return_t processor_set_info
   NDR_record_t NDR;
   int flavor;
   mach_msg_type_number_t info_outCnt;
- } __Request__processor_set_info_t;
+ } __Request__processor_set_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10690,7 +10820,7 @@ union __RequestUnion__processor_set_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t info_outCnt;
   integer_t info_out[5];
- } __Reply__processor_set_statistics_t;
+ } __Reply__processor_set_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10702,7 +10832,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_destroy_t;
+ } __Reply__processor_set_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10714,7 +10844,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_max_priority_t;
+ } __Reply__processor_set_max_priority_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10726,7 +10856,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_policy_enable_t;
+ } __Reply__processor_set_policy_enable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10738,7 +10868,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_policy_disable_t;
+ } __Reply__processor_set_policy_disable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10754,7 +10884,7 @@ union __RequestUnion__processor_set_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t task_listCnt;
- } __Reply__processor_set_tasks_t;
+ } __Reply__processor_set_tasks_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10770,7 +10900,7 @@ union __RequestUnion__processor_set_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t thread_listCnt;
- } __Reply__processor_set_threads_t;
+ } __Reply__processor_set_threads_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10782,7 +10912,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_policy_control_t;
+ } __Reply__processor_set_policy_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10799,7 +10929,7 @@ union __RequestUnion__processor_set_subsystem {
   vm_size_t resident;
   vm_size_t maxusage;
   vm_offset_t maxstack;
- } __Reply__processor_set_stack_usage_t;
+ } __Reply__processor_set_stack_usage_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10816,7 +10946,7 @@ union __RequestUnion__processor_set_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t info_outCnt;
   integer_t info_out[5];
- } __Reply__processor_set_info_t;
+ } __Reply__processor_set_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10908,6 +11038,7 @@ kern_return_t task_threads
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t mach_ports_register
 (
  task_t target_task,
@@ -10921,6 +11052,7 @@ kern_return_t mach_ports_register
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t mach_ports_lookup
 (
  task_t target_task,
@@ -10948,6 +11080,7 @@ kern_return_t task_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_info
 (
  task_t target_task,
@@ -10962,6 +11095,7 @@ kern_return_t task_set_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_suspend
 (
  task_t target_task
@@ -10973,6 +11107,7 @@ kern_return_t task_suspend
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_resume
 (
  task_t target_task
@@ -10984,6 +11119,7 @@ kern_return_t task_resume
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_special_port
 (
  task_t task,
@@ -10997,6 +11133,7 @@ kern_return_t task_get_special_port
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_special_port
 (
  task_t task,
@@ -11010,6 +11147,7 @@ kern_return_t task_set_special_port
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_create
 (
  task_t parent_task,
@@ -11022,6 +11160,7 @@ kern_return_t thread_create
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_create_running
 (
  task_t parent_task,
@@ -11037,6 +11176,7 @@ kern_return_t thread_create_running
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_exception_ports
 (
  task_t task,
@@ -11052,6 +11192,7 @@ kern_return_t task_set_exception_ports
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_exception_ports
 (
  task_t task,
@@ -11069,6 +11210,7 @@ kern_return_t task_get_exception_ports
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_swap_exception_ports
 (
  task_t task,
@@ -11141,6 +11283,7 @@ kern_return_t semaphore_destroy
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_policy_set
 (
  task_t task,
@@ -11155,6 +11298,7 @@ kern_return_t task_policy_set
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_policy_get
 (
  task_t task,
@@ -11252,6 +11396,7 @@ kern_return_t task_set_ras_pc
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_zone_info
 (
  task_t target_task,
@@ -11322,6 +11467,7 @@ kern_return_t task_set_policy
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_state
 (
  task_t task,
@@ -11336,6 +11482,7 @@ kern_return_t task_get_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_state
 (
  task_t task,
@@ -11350,6 +11497,7 @@ kern_return_t task_set_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_phys_footprint_limit
 (
  task_t task,
@@ -11363,6 +11511,7 @@ kern_return_t task_set_phys_footprint_limit
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_suspend2
 (
  task_t target_task,
@@ -11375,6 +11524,7 @@ kern_return_t task_suspend2
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_resume2
 (
  task_suspension_token_t suspend_token
@@ -11398,6 +11548,7 @@ kern_return_t task_purgable_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_mach_voucher
 (
  task_t task,
@@ -11411,6 +11562,7 @@ kern_return_t task_get_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_mach_voucher
 (
  task_t task,
@@ -11423,13 +11575,14 @@ kern_return_t task_set_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_swap_mach_voucher
 (
  task_t task,
  ipc_voucher_t new_voucher,
  ipc_voucher_t *old_voucher
 );
-# 632 "/usr/include/mach/task.h" 3 4
+# 655 "/usr/include/mach/task.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -11441,7 +11594,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   mach_msg_type_number_t ledgersCnt;
   boolean_t inherit_memory;
- } __Request__task_create_t;
+ } __Request__task_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11451,7 +11604,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_terminate_t;
+ } __Request__task_terminate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11461,7 +11614,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_threads_t;
+ } __Request__task_threads_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11477,7 +11630,7 @@ kern_return_t task_swap_mach_voucher
 
   NDR_record_t NDR;
   mach_msg_type_number_t init_port_setCnt;
- } __Request__mach_ports_register_t;
+ } __Request__mach_ports_register_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11487,7 +11640,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_ports_lookup_t;
+ } __Request__mach_ports_lookup_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11500,7 +11653,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   task_flavor_t flavor;
   mach_msg_type_number_t task_info_outCnt;
- } __Request__task_info_t;
+ } __Request__task_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11514,7 +11667,7 @@ kern_return_t task_swap_mach_voucher
   task_flavor_t flavor;
   mach_msg_type_number_t task_info_inCnt;
   integer_t task_info_in[52];
- } __Request__task_set_info_t;
+ } __Request__task_set_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11524,7 +11677,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_suspend_t;
+ } __Request__task_suspend_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11534,7 +11687,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_resume_t;
+ } __Request__task_resume_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11546,7 +11699,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int which_port;
- } __Request__task_get_special_port_t;
+ } __Request__task_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11562,7 +11715,7 @@ kern_return_t task_swap_mach_voucher
 
   NDR_record_t NDR;
   int which_port;
- } __Request__task_set_special_port_t;
+ } __Request__task_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11572,7 +11725,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_create_t;
+ } __Request__thread_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11586,7 +11739,7 @@ kern_return_t task_swap_mach_voucher
   thread_state_flavor_t flavor;
   mach_msg_type_number_t new_stateCnt;
   natural_t new_state[224];
- } __Request__thread_create_running_t;
+ } __Request__thread_create_running_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11604,7 +11757,7 @@ kern_return_t task_swap_mach_voucher
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__task_set_exception_ports_t;
+ } __Request__task_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11616,7 +11769,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   exception_mask_t exception_mask;
- } __Request__task_get_exception_ports_t;
+ } __Request__task_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11634,7 +11787,7 @@ kern_return_t task_swap_mach_voucher
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__task_swap_exception_ports_t;
+ } __Request__task_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11647,7 +11800,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   int n_ulocks;
   int policy;
- } __Request__lock_set_create_t;
+ } __Request__lock_set_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11661,7 +11814,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t lock_set;
 
- } __Request__lock_set_destroy_t;
+ } __Request__lock_set_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11674,7 +11827,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   int policy;
   int value;
- } __Request__semaphore_create_t;
+ } __Request__semaphore_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11688,7 +11841,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t semaphore;
 
- } __Request__semaphore_destroy_t;
+ } __Request__semaphore_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11702,7 +11855,7 @@ kern_return_t task_swap_mach_voucher
   task_policy_flavor_t flavor;
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[16];
- } __Request__task_policy_set_t;
+ } __Request__task_policy_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11716,7 +11869,7 @@ kern_return_t task_swap_mach_voucher
   task_policy_flavor_t flavor;
   mach_msg_type_number_t policy_infoCnt;
   boolean_t get_default;
- } __Request__task_policy_get_t;
+ } __Request__task_policy_get_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11730,7 +11883,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t reply;
 
- } __Request__task_sample_t;
+ } __Request__task_sample_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11746,7 +11899,7 @@ kern_return_t task_swap_mach_voucher
   integer_t base[5];
   boolean_t set_limit;
   boolean_t change;
- } __Request__task_policy_t;
+ } __Request__task_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11759,7 +11912,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   vm_address_t routine_entry_pt;
   int routine_number;
- } __Request__task_set_emulation_t;
+ } __Request__task_set_emulation_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11769,7 +11922,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_get_emulation_vector_t;
+ } __Request__task_get_emulation_vector_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11786,7 +11939,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   int vector_start;
   mach_msg_type_number_t emulation_vectorCnt;
- } __Request__task_set_emulation_vector_t;
+ } __Request__task_set_emulation_vector_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11799,7 +11952,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   vm_address_t basepc;
   vm_address_t boundspc;
- } __Request__task_set_ras_pc_t;
+ } __Request__task_set_ras_pc_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11809,7 +11962,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_zone_info_t;
+ } __Request__task_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11825,7 +11978,7 @@ kern_return_t task_swap_mach_voucher
 
   NDR_record_t NDR;
   boolean_t assign_threads;
- } __Request__task_assign_t;
+ } __Request__task_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11837,7 +11990,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   boolean_t assign_threads;
- } __Request__task_assign_default_t;
+ } __Request__task_assign_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11847,7 +12000,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_get_assignment_t;
+ } __Request__task_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11868,7 +12021,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_type_number_t limitCnt;
   integer_t limit[1];
   boolean_t change;
- } __Request__task_set_policy_t;
+ } __Request__task_set_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11881,7 +12034,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   thread_state_flavor_t flavor;
   mach_msg_type_number_t old_stateCnt;
- } __Request__task_get_state_t;
+ } __Request__task_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11895,7 +12048,7 @@ kern_return_t task_swap_mach_voucher
   thread_state_flavor_t flavor;
   mach_msg_type_number_t new_stateCnt;
   natural_t new_state[224];
- } __Request__task_set_state_t;
+ } __Request__task_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11907,7 +12060,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int new_limit;
- } __Request__task_set_phys_footprint_limit_t;
+ } __Request__task_set_phys_footprint_limit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11917,7 +12070,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_suspend2_t;
+ } __Request__task_suspend2_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11927,7 +12080,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_resume2_t;
+ } __Request__task_resume2_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11937,7 +12090,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_purgable_info_t;
+ } __Request__task_purgable_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11949,7 +12102,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_voucher_selector_t which;
- } __Request__task_get_mach_voucher_t;
+ } __Request__task_get_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11963,7 +12116,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Request__task_set_mach_voucher_t;
+ } __Request__task_set_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11978,7 +12131,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_port_descriptor_t new_voucher;
   mach_msg_port_descriptor_t old_voucher;
 
- } __Request__task_swap_mach_voucher_t;
+ } __Request__task_swap_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12047,7 +12200,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t child_task;
 
- } __Reply__task_create_t;
+ } __Reply__task_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12059,7 +12212,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_terminate_t;
+ } __Reply__task_terminate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12075,7 +12228,7 @@ union __RequestUnion__task_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t act_listCnt;
- } __Reply__task_threads_t;
+ } __Reply__task_threads_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12087,7 +12240,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_ports_register_t;
+ } __Reply__mach_ports_register_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12103,7 +12256,7 @@ union __RequestUnion__task_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t init_port_setCnt;
- } __Reply__mach_ports_lookup_t;
+ } __Reply__mach_ports_lookup_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12117,7 +12270,7 @@ union __RequestUnion__task_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t task_info_outCnt;
   integer_t task_info_out[52];
- } __Reply__task_info_t;
+ } __Reply__task_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12129,7 +12282,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_info_t;
+ } __Reply__task_set_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12141,7 +12294,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_suspend_t;
+ } __Reply__task_suspend_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12153,7 +12306,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_resume_t;
+ } __Reply__task_resume_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12167,7 +12320,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t special_port;
 
- } __Reply__task_get_special_port_t;
+ } __Reply__task_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12179,7 +12332,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_special_port_t;
+ } __Reply__task_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12193,7 +12346,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t child_act;
 
- } __Reply__thread_create_t;
+ } __Reply__thread_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12207,7 +12360,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t child_act;
 
- } __Reply__thread_create_running_t;
+ } __Reply__thread_create_running_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12219,7 +12372,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_exception_ports_t;
+ } __Reply__task_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12238,7 +12391,7 @@ union __RequestUnion__task_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__task_get_exception_ports_t;
+ } __Reply__task_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12257,7 +12410,7 @@ union __RequestUnion__task_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__task_swap_exception_ports_t;
+ } __Reply__task_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12271,7 +12424,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t new_lock_set;
 
- } __Reply__lock_set_create_t;
+ } __Reply__lock_set_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12283,7 +12436,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_set_destroy_t;
+ } __Reply__lock_set_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12297,7 +12450,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t semaphore;
 
- } __Reply__semaphore_create_t;
+ } __Reply__semaphore_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12309,7 +12462,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__semaphore_destroy_t;
+ } __Reply__semaphore_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12321,7 +12474,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_policy_set_t;
+ } __Reply__task_policy_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12336,7 +12489,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[16];
   boolean_t get_default;
- } __Reply__task_policy_get_t;
+ } __Reply__task_policy_get_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12348,7 +12501,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_sample_t;
+ } __Reply__task_sample_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12360,7 +12513,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_policy_t;
+ } __Reply__task_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12372,7 +12525,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_emulation_t;
+ } __Reply__task_set_emulation_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12389,7 +12542,7 @@ union __RequestUnion__task_subsystem {
   NDR_record_t NDR;
   int vector_start;
   mach_msg_type_number_t emulation_vectorCnt;
- } __Reply__task_get_emulation_vector_t;
+ } __Reply__task_get_emulation_vector_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12401,7 +12554,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_emulation_vector_t;
+ } __Reply__task_set_emulation_vector_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12413,7 +12566,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_ras_pc_t;
+ } __Reply__task_set_ras_pc_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12431,7 +12584,7 @@ union __RequestUnion__task_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t namesCnt;
   mach_msg_type_number_t infoCnt;
- } __Reply__task_zone_info_t;
+ } __Reply__task_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12443,7 +12596,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_assign_t;
+ } __Reply__task_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12455,7 +12608,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_assign_default_t;
+ } __Reply__task_assign_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12469,7 +12622,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t assigned_set;
 
- } __Reply__task_get_assignment_t;
+ } __Reply__task_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12481,7 +12634,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_policy_t;
+ } __Reply__task_set_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12495,7 +12648,7 @@ union __RequestUnion__task_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t old_stateCnt;
   natural_t old_state[224];
- } __Reply__task_get_state_t;
+ } __Reply__task_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12507,7 +12660,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_state_t;
+ } __Reply__task_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12520,7 +12673,7 @@ union __RequestUnion__task_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   int old_limit;
- } __Reply__task_set_phys_footprint_limit_t;
+ } __Reply__task_set_phys_footprint_limit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12534,7 +12687,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t suspend_token;
 
- } __Reply__task_suspend2_t;
+ } __Reply__task_suspend2_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12546,7 +12699,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_resume2_t;
+ } __Reply__task_resume2_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12559,7 +12712,7 @@ union __RequestUnion__task_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   task_purgable_info_t stats;
- } __Reply__task_purgable_info_t;
+ } __Reply__task_purgable_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12573,7 +12726,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Reply__task_get_mach_voucher_t;
+ } __Reply__task_get_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12585,7 +12738,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_mach_voucher_t;
+ } __Reply__task_set_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12599,7 +12752,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t old_voucher;
 
- } __Reply__task_swap_mach_voucher_t;
+ } __Reply__task_swap_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12658,6 +12811,7 @@ union __ReplyUnion__task_subsystem {
 # 49 "/usr/include/mach/thread_act.h" 3 4
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_terminate
 (
  thread_act_t target_act
@@ -12669,6 +12823,7 @@ kern_return_t thread_terminate
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t act_get_state
 (
  thread_act_t target_act,
@@ -12683,6 +12838,7 @@ kern_return_t act_get_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t act_set_state
 (
  thread_act_t target_act,
@@ -12697,6 +12853,7 @@ kern_return_t act_set_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_state
 (
  thread_act_t target_act,
@@ -12711,6 +12868,7 @@ kern_return_t thread_get_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_state
 (
  thread_act_t target_act,
@@ -12725,6 +12883,7 @@ kern_return_t thread_set_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_suspend
 (
  thread_act_t target_act
@@ -12736,6 +12895,7 @@ kern_return_t thread_suspend
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_resume
 (
  thread_act_t target_act
@@ -12747,6 +12907,7 @@ kern_return_t thread_resume
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_abort
 (
  thread_act_t target_act
@@ -12758,6 +12919,7 @@ kern_return_t thread_abort
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_abort_safely
 (
  thread_act_t target_act
@@ -12769,6 +12931,7 @@ kern_return_t thread_abort_safely
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_depress_abort
 (
  thread_act_t thread
@@ -12780,6 +12943,7 @@ kern_return_t thread_depress_abort
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_special_port
 (
  thread_act_t thr_act,
@@ -12793,6 +12957,7 @@ kern_return_t thread_get_special_port
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_special_port
 (
  thread_act_t thr_act,
@@ -12820,6 +12985,7 @@ kern_return_t thread_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_exception_ports
 (
  thread_act_t thread,
@@ -12835,6 +13001,7 @@ kern_return_t thread_set_exception_ports
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_exception_ports
 (
  thread_act_t thread,
@@ -12852,6 +13019,7 @@ kern_return_t thread_get_exception_ports
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_swap_exception_ports
 (
  thread_act_t thread,
@@ -12992,6 +13160,7 @@ kern_return_t thread_set_policy
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_mach_voucher
 (
  thread_act_t thr_act,
@@ -13005,6 +13174,7 @@ kern_return_t thread_get_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_mach_voucher
 (
  thread_act_t thr_act,
@@ -13017,18 +13187,19 @@ kern_return_t thread_set_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_swap_mach_voucher
 (
  thread_act_t thr_act,
  ipc_voucher_t new_voucher,
  ipc_voucher_t *old_voucher
 );
-# 436 "/usr/include/mach/thread_act.h" 3 4
+# 454 "/usr/include/mach/thread_act.h" 3 4
 #pragma pack(4)
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_terminate_t;
+ } __Request__thread_terminate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13041,7 +13212,7 @@ kern_return_t thread_swap_mach_voucher
   NDR_record_t NDR;
   int flavor;
   mach_msg_type_number_t old_stateCnt;
- } __Request__act_get_state_t;
+ } __Request__act_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13055,7 +13226,7 @@ kern_return_t thread_swap_mach_voucher
   int flavor;
   mach_msg_type_number_t new_stateCnt;
   natural_t new_state[224];
- } __Request__act_set_state_t;
+ } __Request__act_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13068,7 +13239,7 @@ kern_return_t thread_swap_mach_voucher
   NDR_record_t NDR;
   thread_state_flavor_t flavor;
   mach_msg_type_number_t old_stateCnt;
- } __Request__thread_get_state_t;
+ } __Request__thread_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13082,7 +13253,7 @@ kern_return_t thread_swap_mach_voucher
   thread_state_flavor_t flavor;
   mach_msg_type_number_t new_stateCnt;
   natural_t new_state[224];
- } __Request__thread_set_state_t;
+ } __Request__thread_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13092,7 +13263,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_suspend_t;
+ } __Request__thread_suspend_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13102,7 +13273,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_resume_t;
+ } __Request__thread_resume_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13112,7 +13283,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_abort_t;
+ } __Request__thread_abort_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13122,7 +13293,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_abort_safely_t;
+ } __Request__thread_abort_safely_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13132,7 +13303,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_depress_abort_t;
+ } __Request__thread_depress_abort_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13144,7 +13315,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int which_port;
- } __Request__thread_get_special_port_t;
+ } __Request__thread_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13160,7 +13331,7 @@ kern_return_t thread_swap_mach_voucher
 
   NDR_record_t NDR;
   int which_port;
- } __Request__thread_set_special_port_t;
+ } __Request__thread_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13173,7 +13344,7 @@ kern_return_t thread_swap_mach_voucher
   NDR_record_t NDR;
   thread_flavor_t flavor;
   mach_msg_type_number_t thread_info_outCnt;
- } __Request__thread_info_t;
+ } __Request__thread_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13191,7 +13362,7 @@ kern_return_t thread_swap_mach_voucher
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__thread_set_exception_ports_t;
+ } __Request__thread_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13203,7 +13374,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   exception_mask_t exception_mask;
- } __Request__thread_get_exception_ports_t;
+ } __Request__thread_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13221,7 +13392,7 @@ kern_return_t thread_swap_mach_voucher
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__thread_swap_exception_ports_t;
+ } __Request__thread_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13236,7 +13407,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_type_number_t baseCnt;
   integer_t base[5];
   boolean_t set_limit;
- } __Request__thread_policy_t;
+ } __Request__thread_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13250,7 +13421,7 @@ kern_return_t thread_swap_mach_voucher
   thread_policy_flavor_t flavor;
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[16];
- } __Request__thread_policy_set_t;
+ } __Request__thread_policy_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13264,7 +13435,7 @@ kern_return_t thread_swap_mach_voucher
   thread_policy_flavor_t flavor;
   mach_msg_type_number_t policy_infoCnt;
   boolean_t get_default;
- } __Request__thread_policy_get_t;
+ } __Request__thread_policy_get_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13278,7 +13449,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t reply;
 
- } __Request__thread_sample_t;
+ } __Request__thread_sample_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13290,7 +13461,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   boolean_t trace_status;
- } __Request__etap_trace_thread_t;
+ } __Request__etap_trace_thread_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13304,7 +13475,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t new_set;
 
- } __Request__thread_assign_t;
+ } __Request__thread_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13314,7 +13485,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_assign_default_t;
+ } __Request__thread_assign_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13324,7 +13495,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_get_assignment_t;
+ } __Request__thread_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13344,7 +13515,7 @@ kern_return_t thread_swap_mach_voucher
   integer_t base[5];
   mach_msg_type_number_t limitCnt;
   integer_t limit[1];
- } __Request__thread_set_policy_t;
+ } __Request__thread_set_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13356,7 +13527,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_voucher_selector_t which;
- } __Request__thread_get_mach_voucher_t;
+ } __Request__thread_get_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13370,7 +13541,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Request__thread_set_mach_voucher_t;
+ } __Request__thread_set_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13385,7 +13556,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_port_descriptor_t new_voucher;
   mach_msg_port_descriptor_t old_voucher;
 
- } __Request__thread_swap_mach_voucher_t;
+ } __Request__thread_swap_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13438,7 +13609,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_terminate_t;
+ } __Reply__thread_terminate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13452,7 +13623,7 @@ union __RequestUnion__thread_act_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t old_stateCnt;
   natural_t old_state[224];
- } __Reply__act_get_state_t;
+ } __Reply__act_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13464,7 +13635,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__act_set_state_t;
+ } __Reply__act_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13478,7 +13649,7 @@ union __RequestUnion__thread_act_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t old_stateCnt;
   natural_t old_state[224];
- } __Reply__thread_get_state_t;
+ } __Reply__thread_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13490,7 +13661,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_state_t;
+ } __Reply__thread_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13502,7 +13673,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_suspend_t;
+ } __Reply__thread_suspend_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13514,7 +13685,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_resume_t;
+ } __Reply__thread_resume_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13526,7 +13697,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_abort_t;
+ } __Reply__thread_abort_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13538,7 +13709,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_abort_safely_t;
+ } __Reply__thread_abort_safely_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13550,7 +13721,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_depress_abort_t;
+ } __Reply__thread_depress_abort_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13564,7 +13735,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t special_port;
 
- } __Reply__thread_get_special_port_t;
+ } __Reply__thread_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13576,7 +13747,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_special_port_t;
+ } __Reply__thread_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13589,8 +13760,8 @@ union __RequestUnion__thread_act_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_msg_type_number_t thread_info_outCnt;
-  integer_t thread_info_out[12];
- } __Reply__thread_info_t;
+  integer_t thread_info_out[32];
+ } __Reply__thread_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13602,7 +13773,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_exception_ports_t;
+ } __Reply__thread_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13621,7 +13792,7 @@ union __RequestUnion__thread_act_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__thread_get_exception_ports_t;
+ } __Reply__thread_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13640,7 +13811,7 @@ union __RequestUnion__thread_act_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__thread_swap_exception_ports_t;
+ } __Reply__thread_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13652,7 +13823,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_policy_t;
+ } __Reply__thread_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13664,7 +13835,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_policy_set_t;
+ } __Reply__thread_policy_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13679,7 +13850,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[16];
   boolean_t get_default;
- } __Reply__thread_policy_get_t;
+ } __Reply__thread_policy_get_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13691,7 +13862,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_sample_t;
+ } __Reply__thread_sample_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13703,7 +13874,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__etap_trace_thread_t;
+ } __Reply__etap_trace_thread_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13715,7 +13886,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_assign_t;
+ } __Reply__thread_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13727,7 +13898,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_assign_default_t;
+ } __Reply__thread_assign_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13741,7 +13912,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t assigned_set;
 
- } __Reply__thread_get_assignment_t;
+ } __Reply__thread_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13753,7 +13924,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_policy_t;
+ } __Reply__thread_set_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13767,7 +13938,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Reply__thread_get_mach_voucher_t;
+ } __Reply__thread_get_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13779,7 +13950,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_mach_voucher_t;
+ } __Reply__thread_set_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13793,7 +13964,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t old_voucher;
 
- } __Reply__thread_swap_mach_voucher_t;
+ } __Reply__thread_swap_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14067,6 +14238,7 @@ kern_return_t vm_remap
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_wire
 (
  vm_map_t target_task,
@@ -14245,7 +14417,7 @@ kern_return_t vm_purgable_control
  vm_purgable_t control,
  int *state
 );
-# 479 "/usr/include/mach/vm_map.h" 3 4
+# 480 "/usr/include/mach/vm_map.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -14254,7 +14426,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_region_flavor_t flavor;
   mach_msg_type_number_t infoCnt;
- } __Request__vm_region_t;
+ } __Request__vm_region_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14268,7 +14440,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   int flags;
- } __Request__vm_allocate_t;
+ } __Request__vm_allocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14281,7 +14453,7 @@ kern_return_t vm_purgable_control
   NDR_record_t NDR;
   vm_address_t address;
   vm_size_t size;
- } __Request__vm_deallocate_t;
+ } __Request__vm_deallocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14296,7 +14468,7 @@ kern_return_t vm_purgable_control
   vm_size_t size;
   boolean_t set_maximum;
   vm_prot_t new_protection;
- } __Request__vm_protect_t;
+ } __Request__vm_protect_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14310,7 +14482,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   vm_inherit_t new_inheritance;
- } __Request__vm_inherit_t;
+ } __Request__vm_inherit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14323,7 +14495,7 @@ kern_return_t vm_purgable_control
   NDR_record_t NDR;
   vm_address_t address;
   vm_size_t size;
- } __Request__vm_read_t;
+ } __Request__vm_read_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14336,7 +14508,7 @@ kern_return_t vm_purgable_control
   NDR_record_t NDR;
   vm_read_entry_t data_list;
   natural_t count;
- } __Request__vm_read_list_t;
+ } __Request__vm_read_list_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14353,7 +14525,7 @@ kern_return_t vm_purgable_control
   NDR_record_t NDR;
   vm_address_t address;
   mach_msg_type_number_t dataCnt;
- } __Request__vm_write_t;
+ } __Request__vm_write_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14367,7 +14539,7 @@ kern_return_t vm_purgable_control
   vm_address_t source_address;
   vm_size_t size;
   vm_address_t dest_address;
- } __Request__vm_copy_t;
+ } __Request__vm_copy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14381,7 +14553,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   vm_address_t data;
- } __Request__vm_read_overwrite_t;
+ } __Request__vm_read_overwrite_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14395,7 +14567,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   vm_sync_t sync_flags;
- } __Request__vm_msync_t;
+ } __Request__vm_msync_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14409,7 +14581,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   vm_behavior_t new_behavior;
- } __Request__vm_behavior_set_t;
+ } __Request__vm_behavior_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14433,7 +14605,7 @@ kern_return_t vm_purgable_control
   vm_prot_t cur_protection;
   vm_prot_t max_protection;
   vm_inherit_t inheritance;
- } __Request__vm_map_t;
+ } __Request__vm_map_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14448,7 +14620,7 @@ kern_return_t vm_purgable_control
   vm_size_t size;
   vm_machine_attribute_t attribute;
   vm_machine_attribute_val_t value;
- } __Request__vm_machine_attribute_t;
+ } __Request__vm_machine_attribute_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14470,7 +14642,7 @@ kern_return_t vm_purgable_control
   vm_address_t src_address;
   boolean_t copy;
   vm_inherit_t inheritance;
- } __Request__vm_remap_t;
+ } __Request__vm_remap_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14482,7 +14654,7 @@ kern_return_t vm_purgable_control
   mach_msg_header_t Head;
   NDR_record_t NDR;
   boolean_t must_wire;
- } __Request__task_wire_t;
+ } __Request__task_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14500,7 +14672,7 @@ kern_return_t vm_purgable_control
   vm_size_t size;
   vm_offset_t offset;
   vm_prot_t permission;
- } __Request__mach_make_memory_entry_t;
+ } __Request__mach_make_memory_entry_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14512,7 +14684,7 @@ kern_return_t vm_purgable_control
   mach_msg_header_t Head;
   NDR_record_t NDR;
   vm_offset_t offset;
- } __Request__vm_map_page_query_t;
+ } __Request__vm_map_page_query_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14524,7 +14696,7 @@ kern_return_t vm_purgable_control
   mach_msg_header_t Head;
   NDR_record_t NDR;
   vm_address_t address;
- } __Request__mach_vm_region_info_t;
+ } __Request__mach_vm_region_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14534,21 +14706,7 @@ kern_return_t vm_purgable_control
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__vm_mapped_pages_info_t;
-
-#pragma pack()
-
-
-
-#pragma pack(4)
-
- typedef struct {
-  mach_msg_header_t Head;
-  NDR_record_t NDR;
-  vm_address_t address;
-  natural_t nesting_depth;
-  mach_msg_type_number_t infoCnt;
- } __Request__vm_region_recurse_t;
+ } __Request__vm_mapped_pages_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14562,7 +14720,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   natural_t nesting_depth;
   mach_msg_type_number_t infoCnt;
- } __Request__vm_region_recurse_64_t;
+ } __Request__vm_region_recurse_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14574,7 +14732,21 @@ kern_return_t vm_purgable_control
   mach_msg_header_t Head;
   NDR_record_t NDR;
   vm_address_t address;
- } __Request__mach_vm_region_info_64_t;
+  natural_t nesting_depth;
+  mach_msg_type_number_t infoCnt;
+ } __Request__vm_region_recurse_64_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  vm_address_t address;
+ } __Request__mach_vm_region_info_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14588,7 +14760,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_region_flavor_t flavor;
   mach_msg_type_number_t infoCnt;
- } __Request__vm_region_64_t;
+ } __Request__vm_region_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14606,7 +14778,7 @@ kern_return_t vm_purgable_control
   memory_object_size_t size;
   memory_object_offset_t offset;
   vm_prot_t permission;
- } __Request__mach_make_memory_entry_64_t;
+ } __Request__mach_make_memory_entry_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14630,7 +14802,7 @@ kern_return_t vm_purgable_control
   vm_prot_t cur_protection;
   vm_prot_t max_protection;
   vm_inherit_t inheritance;
- } __Request__vm_map_64_t;
+ } __Request__vm_map_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14644,7 +14816,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_purgable_t control;
   int state;
- } __Request__vm_purgable_control_t;
+ } __Request__vm_purgable_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14703,7 +14875,7 @@ union __RequestUnion__vm_map_subsystem {
   vm_size_t size;
   mach_msg_type_number_t infoCnt;
   int info[10];
- } __Reply__vm_region_t;
+ } __Reply__vm_region_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14716,7 +14888,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_address_t address;
- } __Reply__vm_allocate_t;
+ } __Reply__vm_allocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14728,7 +14900,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_deallocate_t;
+ } __Reply__vm_deallocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14740,7 +14912,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_protect_t;
+ } __Reply__vm_protect_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14752,7 +14924,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_inherit_t;
+ } __Reply__vm_inherit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14768,7 +14940,7 @@ union __RequestUnion__vm_map_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t dataCnt;
- } __Reply__vm_read_t;
+ } __Reply__vm_read_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14781,7 +14953,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_read_entry_t data_list;
- } __Reply__vm_read_list_t;
+ } __Reply__vm_read_list_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14793,7 +14965,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_write_t;
+ } __Reply__vm_write_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14805,7 +14977,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_copy_t;
+ } __Reply__vm_copy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14818,7 +14990,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_size_t outsize;
- } __Reply__vm_read_overwrite_t;
+ } __Reply__vm_read_overwrite_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14830,7 +15002,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_msync_t;
+ } __Reply__vm_msync_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14842,7 +15014,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_behavior_set_t;
+ } __Reply__vm_behavior_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14855,7 +15027,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_address_t address;
- } __Reply__vm_map_t;
+ } __Reply__vm_map_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14868,7 +15040,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_machine_attribute_val_t value;
- } __Reply__vm_machine_attribute_t;
+ } __Reply__vm_machine_attribute_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14883,7 +15055,7 @@ union __RequestUnion__vm_map_subsystem {
   vm_address_t target_address;
   vm_prot_t cur_protection;
   vm_prot_t max_protection;
- } __Reply__vm_remap_t;
+ } __Reply__vm_remap_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14895,7 +15067,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_wire_t;
+ } __Reply__task_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14911,7 +15083,7 @@ union __RequestUnion__vm_map_subsystem {
 
   NDR_record_t NDR;
   vm_size_t size;
- } __Reply__mach_make_memory_entry_t;
+ } __Reply__mach_make_memory_entry_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14925,7 +15097,7 @@ union __RequestUnion__vm_map_subsystem {
   kern_return_t RetCode;
   integer_t disposition;
   integer_t ref_count;
- } __Reply__vm_map_page_query_t;
+ } __Reply__vm_map_page_query_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14942,7 +15114,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   vm_info_region_t region;
   mach_msg_type_number_t objectsCnt;
- } __Reply__mach_vm_region_info_t;
+ } __Reply__mach_vm_region_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14958,7 +15130,7 @@ union __RequestUnion__vm_map_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t pagesCnt;
- } __Reply__vm_mapped_pages_info_t;
+ } __Reply__vm_mapped_pages_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14975,7 +15147,7 @@ union __RequestUnion__vm_map_subsystem {
   natural_t nesting_depth;
   mach_msg_type_number_t infoCnt;
   int info[19];
- } __Reply__vm_region_recurse_t;
+ } __Reply__vm_region_recurse_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14992,7 +15164,7 @@ union __RequestUnion__vm_map_subsystem {
   natural_t nesting_depth;
   mach_msg_type_number_t infoCnt;
   int info[19];
- } __Reply__vm_region_recurse_64_t;
+ } __Reply__vm_region_recurse_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15009,7 +15181,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   vm_info_region_64_t region;
   mach_msg_type_number_t objectsCnt;
- } __Reply__mach_vm_region_info_64_t;
+ } __Reply__mach_vm_region_info_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15028,7 +15200,7 @@ union __RequestUnion__vm_map_subsystem {
   vm_size_t size;
   mach_msg_type_number_t infoCnt;
   int info[10];
- } __Reply__vm_region_64_t;
+ } __Reply__vm_region_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15044,7 +15216,7 @@ union __RequestUnion__vm_map_subsystem {
 
   NDR_record_t NDR;
   memory_object_size_t size;
- } __Reply__mach_make_memory_entry_64_t;
+ } __Reply__mach_make_memory_entry_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15057,7 +15229,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_address_t address;
- } __Reply__vm_map_64_t;
+ } __Reply__vm_map_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15070,7 +15242,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   int state;
- } __Reply__vm_purgable_control_t;
+ } __Reply__vm_purgable_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15156,6 +15328,7 @@ kern_return_t mach_port_rename
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t mach_port_allocate_name
 (
  ipc_space_t task,
@@ -15410,6 +15583,7 @@ kern_return_t mach_port_allocate_full
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_port_space
 (
  ipc_space_t task,
@@ -15605,12 +15779,12 @@ kern_return_t mach_port_space_basic_info
  ipc_space_t task,
  ipc_info_space_basic_t *basic_info
 );
-# 562 "/usr/include/mach/mach_port.h" 3 4
+# 564 "/usr/include/mach/mach_port.h" 3 4
 #pragma pack(4)
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_port_names_t;
+ } __Request__mach_port_names_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15622,7 +15796,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_type_t;
+ } __Request__mach_port_type_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15635,7 +15809,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t old_name;
   mach_port_name_t new_name;
- } __Request__mach_port_rename_t;
+ } __Request__mach_port_rename_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15648,7 +15822,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_right_t right;
   mach_port_name_t name;
- } __Request__mach_port_allocate_name_t;
+ } __Request__mach_port_allocate_name_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15660,7 +15834,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_right_t right;
- } __Request__mach_port_allocate_t;
+ } __Request__mach_port_allocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15672,7 +15846,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_destroy_t;
+ } __Request__mach_port_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15684,7 +15858,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_deallocate_t;
+ } __Request__mach_port_deallocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15697,7 +15871,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_right_t right;
- } __Request__mach_port_get_refs_t;
+ } __Request__mach_port_get_refs_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15711,7 +15885,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_port_right_t right;
   mach_port_delta_t delta;
- } __Request__mach_port_mod_refs_t;
+ } __Request__mach_port_mod_refs_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15726,7 +15900,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_trailer_type_t trailer_type;
   mach_port_seqno_t request_seqnop;
   mach_msg_type_number_t trailer_infopCnt;
- } __Request__mach_port_peek_t;
+ } __Request__mach_port_peek_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15739,7 +15913,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_mscount_t mscount;
- } __Request__mach_port_set_mscount_t;
+ } __Request__mach_port_set_mscount_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15751,7 +15925,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_get_set_status_t;
+ } __Request__mach_port_get_set_status_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15764,7 +15938,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t member;
   mach_port_name_t after;
- } __Request__mach_port_move_member_t;
+ } __Request__mach_port_move_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15782,7 +15956,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_msg_id_t msgid;
   mach_port_mscount_t sync;
- } __Request__mach_port_request_notification_t;
+ } __Request__mach_port_request_notification_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15798,7 +15972,7 @@ kern_return_t mach_port_space_basic_info
 
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_insert_right_t;
+ } __Request__mach_port_insert_right_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15811,7 +15985,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_msg_type_name_t msgt_name;
- } __Request__mach_port_extract_right_t;
+ } __Request__mach_port_extract_right_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15824,7 +15998,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_seqno_t seqno;
- } __Request__mach_port_set_seqno_t;
+ } __Request__mach_port_set_seqno_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15838,7 +16012,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_port_flavor_t flavor;
   mach_msg_type_number_t port_info_outCnt;
- } __Request__mach_port_get_attributes_t;
+ } __Request__mach_port_get_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15853,7 +16027,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_flavor_t flavor;
   mach_msg_type_number_t port_infoCnt;
   integer_t port_info[17];
- } __Request__mach_port_set_attributes_t;
+ } __Request__mach_port_set_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15866,7 +16040,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_right_t right;
   mach_port_qos_t qos;
- } __Request__mach_port_allocate_qos_t;
+ } __Request__mach_port_allocate_qos_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15884,7 +16058,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_right_t right;
   mach_port_qos_t qos;
   mach_port_name_t name;
- } __Request__mach_port_allocate_full_t;
+ } __Request__mach_port_allocate_full_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15896,7 +16070,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int table_entries;
- } __Request__task_set_port_space_t;
+ } __Request__task_set_port_space_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15908,7 +16082,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_get_srights_t;
+ } __Request__mach_port_get_srights_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15918,19 +16092,7 @@ kern_return_t mach_port_space_basic_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_port_space_info_t;
-
-#pragma pack()
-
-
-
-#pragma pack(4)
-
- typedef struct {
-  mach_msg_header_t Head;
-  NDR_record_t NDR;
-  mach_port_name_t name;
- } __Request__mach_port_dnrequest_info_t;
+ } __Request__mach_port_space_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15942,7 +16104,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_kernel_object_t;
+ } __Request__mach_port_dnrequest_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15954,8 +16116,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
-  mach_port_name_t pset;
- } __Request__mach_port_insert_member_t;
+ } __Request__mach_port_kernel_object_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15968,7 +16129,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_name_t pset;
- } __Request__mach_port_extract_member_t;
+ } __Request__mach_port_insert_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15980,7 +16141,20 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_get_context_t;
+  mach_port_name_t pset;
+ } __Request__mach_port_extract_member_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  mach_port_name_t name;
+ } __Request__mach_port_get_context_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15993,7 +16167,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_context_t context;
- } __Request__mach_port_set_context_t;
+ } __Request__mach_port_set_context_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16005,7 +16179,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_kobject_t;
+ } __Request__mach_port_kobject_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16021,7 +16195,7 @@ kern_return_t mach_port_space_basic_info
 
   NDR_record_t NDR;
   mach_port_context_t context;
- } __Request__mach_port_construct_t;
+ } __Request__mach_port_construct_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16035,7 +16209,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_port_delta_t srdelta;
   mach_port_context_t guard;
- } __Request__mach_port_destruct_t;
+ } __Request__mach_port_destruct_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16049,7 +16223,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_port_context_t guard;
   boolean_t strict;
- } __Request__mach_port_guard_t;
+ } __Request__mach_port_guard_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16062,7 +16236,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_context_t guard;
- } __Request__mach_port_unguard_t;
+ } __Request__mach_port_unguard_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16072,7 +16246,7 @@ kern_return_t mach_port_space_basic_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_port_space_basic_info_t;
+ } __Request__mach_port_space_basic_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16139,7 +16313,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t namesCnt;
   mach_msg_type_number_t typesCnt;
- } __Reply__mach_port_names_t;
+ } __Reply__mach_port_names_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16152,7 +16326,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_type_t ptype;
- } __Reply__mach_port_type_t;
+ } __Reply__mach_port_type_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16164,7 +16338,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_rename_t;
+ } __Reply__mach_port_rename_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16176,7 +16350,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_allocate_name_t;
+ } __Reply__mach_port_allocate_name_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16189,7 +16363,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_name_t name;
- } __Reply__mach_port_allocate_t;
+ } __Reply__mach_port_allocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16201,7 +16375,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_destroy_t;
+ } __Reply__mach_port_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16213,7 +16387,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_deallocate_t;
+ } __Reply__mach_port_deallocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16226,7 +16400,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_urefs_t refs;
- } __Reply__mach_port_get_refs_t;
+ } __Reply__mach_port_get_refs_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16238,7 +16412,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_mod_refs_t;
+ } __Reply__mach_port_mod_refs_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16255,7 +16429,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_id_t msg_idp;
   mach_msg_type_number_t trailer_infopCnt;
   char trailer_infop[68];
- } __Reply__mach_port_peek_t;
+ } __Reply__mach_port_peek_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16267,7 +16441,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_set_mscount_t;
+ } __Reply__mach_port_set_mscount_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16283,7 +16457,7 @@ union __RequestUnion__mach_port_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t membersCnt;
- } __Reply__mach_port_get_set_status_t;
+ } __Reply__mach_port_get_set_status_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16295,7 +16469,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_move_member_t;
+ } __Reply__mach_port_move_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16309,7 +16483,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t previous;
 
- } __Reply__mach_port_request_notification_t;
+ } __Reply__mach_port_request_notification_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16321,7 +16495,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_insert_right_t;
+ } __Reply__mach_port_insert_right_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16335,7 +16509,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t poly;
 
- } __Reply__mach_port_extract_right_t;
+ } __Reply__mach_port_extract_right_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16347,7 +16521,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_set_seqno_t;
+ } __Reply__mach_port_set_seqno_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16361,7 +16535,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t port_info_outCnt;
   integer_t port_info_out[17];
- } __Reply__mach_port_get_attributes_t;
+ } __Reply__mach_port_get_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16373,21 +16547,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_set_attributes_t;
-
-#pragma pack()
-
-
-
-#pragma pack(4)
-
- typedef struct {
-  mach_msg_header_t Head;
-  NDR_record_t NDR;
-  kern_return_t RetCode;
-  mach_port_qos_t qos;
-  mach_port_name_t name;
- } __Reply__mach_port_allocate_qos_t;
+ } __Reply__mach_port_set_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16401,7 +16561,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   mach_port_qos_t qos;
   mach_port_name_t name;
- } __Reply__mach_port_allocate_full_t;
+ } __Reply__mach_port_allocate_qos_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16413,7 +16573,21 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_port_space_t;
+  mach_port_qos_t qos;
+  mach_port_name_t name;
+ } __Reply__mach_port_allocate_full_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  kern_return_t RetCode;
+ } __Reply__task_set_port_space_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16426,7 +16600,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_rights_t srights;
- } __Reply__mach_port_get_srights_t;
+ } __Reply__mach_port_get_srights_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16445,7 +16619,7 @@ union __RequestUnion__mach_port_subsystem {
   ipc_info_space_t space_info;
   mach_msg_type_number_t table_infoCnt;
   mach_msg_type_number_t tree_infoCnt;
- } __Reply__mach_port_space_info_t;
+ } __Reply__mach_port_space_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16459,7 +16633,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   unsigned dnr_total;
   unsigned dnr_used;
- } __Reply__mach_port_dnrequest_info_t;
+ } __Reply__mach_port_dnrequest_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16473,7 +16647,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   unsigned object_type;
   unsigned object_addr;
- } __Reply__mach_port_kernel_object_t;
+ } __Reply__mach_port_kernel_object_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16485,7 +16659,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_insert_member_t;
+ } __Reply__mach_port_insert_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16497,7 +16671,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_extract_member_t;
+ } __Reply__mach_port_extract_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16510,7 +16684,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_context_t context;
- } __Reply__mach_port_get_context_t;
+ } __Reply__mach_port_get_context_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16522,7 +16696,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_set_context_t;
+ } __Reply__mach_port_set_context_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16536,7 +16710,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   natural_t object_type;
   mach_vm_address_t object_addr;
- } __Reply__mach_port_kobject_t;
+ } __Reply__mach_port_kobject_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16549,7 +16723,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_name_t name;
- } __Reply__mach_port_construct_t;
+ } __Reply__mach_port_construct_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16561,7 +16735,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_destruct_t;
+ } __Reply__mach_port_destruct_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16573,7 +16747,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_guard_t;
+ } __Reply__mach_port_guard_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16585,7 +16759,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_unguard_t;
+ } __Reply__mach_port_unguard_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16598,7 +16772,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   ipc_info_space_basic_t basic_info;
- } __Reply__mach_port_space_basic_info_t;
+ } __Reply__mach_port_space_basic_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16849,6 +17023,7 @@ extern int (*vprintf_stderr_func)(const char *format, va_list ap);
 # 52 "/usr/include/mach/mach_host.h" 3 4
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_info
 (
  host_t host,
@@ -17039,6 +17214,7 @@ kern_return_t host_statistics
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_request_notification
 (
  host_t host,
@@ -17094,6 +17270,7 @@ kern_return_t mach_zone_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_create_mach_voucher
 (
  host_t host,
@@ -17108,6 +17285,7 @@ kern_return_t host_create_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_register_mach_voucher_attr_manager
 (
  host_t host,
@@ -17123,6 +17301,7 @@ kern_return_t host_register_mach_voucher_attr_manager
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_register_well_known_mach_voucher_attr_manager
 (
  host_t host,
@@ -17131,7 +17310,50 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
  mach_voucher_attr_key_t key,
  ipc_voucher_attr_control_t *new_attr_control
 );
-# 356 "/usr/include/mach/mach_host.h" 3 4
+
+
+
+
+
+extern
+
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+kern_return_t host_set_atm_diagnostic_flag
+(
+ host_priv_t host_priv,
+ uint32_t diagnostic_flag
+);
+
+
+
+
+
+extern
+
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+kern_return_t host_get_atm_diagnostic_flag
+(
+ host_t host,
+ uint32_t *diagnostic_flag
+);
+
+
+
+
+
+extern
+
+kern_return_t mach_memory_info
+(
+ host_priv_t host,
+ mach_zone_name_array_t *names,
+ mach_msg_type_number_t *namesCnt,
+ mach_zone_info_array_t *info,
+ mach_msg_type_number_t *infoCnt,
+ mach_memory_info_array_t *memory_info,
+ mach_msg_type_number_t *memory_infoCnt
+);
+# 404 "/usr/include/mach/mach_host.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -17139,7 +17361,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   host_flavor_t flavor;
   mach_msg_type_number_t host_info_outCnt;
- } __Request__host_info_t;
+ } __Request__host_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17149,7 +17371,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_kernel_version_t;
+ } __Request__host_kernel_version_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17159,7 +17381,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request___host_page_size_t;
+ } __Request___host_page_size_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17177,7 +17399,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   boolean_t internal;
   vm_size_t size;
   vm_prot_t permission;
- } __Request__mach_memory_object_memory_entry_t;
+ } __Request__mach_memory_object_memory_entry_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17189,7 +17411,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   mach_msg_header_t Head;
   NDR_record_t NDR;
   processor_flavor_t flavor;
- } __Request__host_processor_info_t;
+ } __Request__host_processor_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17199,7 +17421,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_get_io_master_t;
+ } __Request__host_get_io_master_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17211,7 +17433,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   mach_msg_header_t Head;
   NDR_record_t NDR;
   clock_id_t clock_id;
- } __Request__host_get_clock_service_t;
+ } __Request__host_get_clock_service_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17221,7 +17443,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__kmod_get_info_t;
+ } __Request__kmod_get_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17231,7 +17453,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_zone_info_t;
+ } __Request__host_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17241,7 +17463,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_virtual_physical_table_info_t;
+ } __Request__host_virtual_physical_table_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17251,7 +17473,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_default_t;
+ } __Request__processor_set_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17261,7 +17483,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_create_t;
+ } __Request__processor_set_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17279,7 +17501,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   boolean_t internal;
   memory_object_size_t size;
   vm_prot_t permission;
- } __Request__mach_memory_object_memory_entry_64_t;
+ } __Request__mach_memory_object_memory_entry_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17292,7 +17514,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   host_flavor_t flavor;
   mach_msg_type_number_t host_info_outCnt;
- } __Request__host_statistics_t;
+ } __Request__host_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17308,7 +17530,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
   NDR_record_t NDR;
   host_flavor_t notify_type;
- } __Request__host_request_notification_t;
+ } __Request__host_request_notification_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17318,7 +17540,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_lockgroup_info_t;
+ } __Request__host_lockgroup_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17331,7 +17553,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   host_flavor_t flavor;
   mach_msg_type_number_t host_info64_outCnt;
- } __Request__host_statistics64_t;
+ } __Request__host_statistics64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17341,7 +17563,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_zone_info_t;
+ } __Request__mach_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17354,7 +17576,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   mach_msg_type_number_t recipesCnt;
   uint8_t recipes[5120];
- } __Request__host_create_mach_voucher_t;
+ } __Request__host_create_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17370,7 +17592,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
   NDR_record_t NDR;
   mach_voucher_attr_value_handle_t default_value;
- } __Request__host_register_mach_voucher_attr_manager_t;
+ } __Request__host_register_mach_voucher_attr_manager_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17387,7 +17609,39 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   mach_voucher_attr_value_handle_t default_value;
   mach_voucher_attr_key_t key;
- } __Request__host_register_well_known_mach_voucher_attr_manager_t;
+ } __Request__host_register_well_known_mach_voucher_attr_manager_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  uint32_t diagnostic_flag;
+ } __Request__host_set_atm_diagnostic_flag_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+ } __Request__host_get_atm_diagnostic_flag_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+ } __Request__mach_memory_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17419,6 +17673,9 @@ union __RequestUnion__mach_host_subsystem {
  __Request__host_create_mach_voucher_t Request_host_create_mach_voucher;
  __Request__host_register_mach_voucher_attr_manager_t Request_host_register_mach_voucher_attr_manager;
  __Request__host_register_well_known_mach_voucher_attr_manager_t Request_host_register_well_known_mach_voucher_attr_manager;
+ __Request__host_set_atm_diagnostic_flag_t Request_host_set_atm_diagnostic_flag;
+ __Request__host_get_atm_diagnostic_flag_t Request_host_get_atm_diagnostic_flag;
+ __Request__mach_memory_info_t Request_mach_memory_info;
 };
 
 
@@ -17435,7 +17692,7 @@ union __RequestUnion__mach_host_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t host_info_outCnt;
   integer_t host_info_out[68];
- } __Reply__host_info_t;
+ } __Reply__host_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17450,7 +17707,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_type_number_t kernel_versionOffset;
   mach_msg_type_number_t kernel_versionCnt;
   char kernel_version[512];
- } __Reply__host_kernel_version_t;
+ } __Reply__host_kernel_version_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17463,7 +17720,7 @@ union __RequestUnion__mach_host_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_size_t out_page_size;
- } __Reply___host_page_size_t;
+ } __Reply___host_page_size_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17477,7 +17734,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t entry_handle;
 
- } __Reply__mach_memory_object_memory_entry_t;
+ } __Reply__mach_memory_object_memory_entry_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17494,7 +17751,7 @@ union __RequestUnion__mach_host_subsystem {
   NDR_record_t NDR;
   natural_t out_processor_count;
   mach_msg_type_number_t out_processor_infoCnt;
- } __Reply__host_processor_info_t;
+ } __Reply__host_processor_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17508,7 +17765,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t io_master;
 
- } __Reply__host_get_io_master_t;
+ } __Reply__host_get_io_master_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17522,7 +17779,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t clock_serv;
 
- } __Reply__host_get_clock_service_t;
+ } __Reply__host_get_clock_service_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17538,7 +17795,7 @@ union __RequestUnion__mach_host_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t modulesCnt;
- } __Reply__kmod_get_info_t;
+ } __Reply__kmod_get_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17556,7 +17813,7 @@ union __RequestUnion__mach_host_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t namesCnt;
   mach_msg_type_number_t infoCnt;
- } __Reply__host_zone_info_t;
+ } __Reply__host_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17572,7 +17829,7 @@ union __RequestUnion__mach_host_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t infoCnt;
- } __Reply__host_virtual_physical_table_info_t;
+ } __Reply__host_virtual_physical_table_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17586,7 +17843,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t default_set;
 
- } __Reply__processor_set_default_t;
+ } __Reply__processor_set_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17601,7 +17858,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_port_descriptor_t new_set;
   mach_msg_port_descriptor_t new_name;
 
- } __Reply__processor_set_create_t;
+ } __Reply__processor_set_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17615,7 +17872,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t entry_handle;
 
- } __Reply__mach_memory_object_memory_entry_64_t;
+ } __Reply__mach_memory_object_memory_entry_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17629,7 +17886,7 @@ union __RequestUnion__mach_host_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t host_info_outCnt;
   integer_t host_info_out[68];
- } __Reply__host_statistics_t;
+ } __Reply__host_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17641,7 +17898,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_request_notification_t;
+ } __Reply__host_request_notification_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17657,7 +17914,7 @@ union __RequestUnion__mach_host_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t lockgroup_infoCnt;
- } __Reply__host_lockgroup_info_t;
+ } __Reply__host_lockgroup_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17671,7 +17928,7 @@ union __RequestUnion__mach_host_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t host_info64_outCnt;
   integer_t host_info64_out[256];
- } __Reply__host_statistics64_t;
+ } __Reply__host_statistics64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17689,7 +17946,7 @@ union __RequestUnion__mach_host_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t namesCnt;
   mach_msg_type_number_t infoCnt;
- } __Reply__mach_zone_info_t;
+ } __Reply__mach_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17703,7 +17960,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Reply__host_create_mach_voucher_t;
+ } __Reply__host_create_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17719,7 +17976,7 @@ union __RequestUnion__mach_host_subsystem {
 
   NDR_record_t NDR;
   mach_voucher_attr_key_t new_key;
- } __Reply__host_register_mach_voucher_attr_manager_t;
+ } __Reply__host_register_mach_voucher_attr_manager_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17733,7 +17990,52 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t new_attr_control;
 
- } __Reply__host_register_well_known_mach_voucher_attr_manager_t;
+ } __Reply__host_register_well_known_mach_voucher_attr_manager_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  kern_return_t RetCode;
+ } __Reply__host_set_atm_diagnostic_flag_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  kern_return_t RetCode;
+  uint32_t diagnostic_flag;
+ } __Reply__host_get_atm_diagnostic_flag_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+
+  mach_msg_body_t msgh_body;
+  mach_msg_ool_descriptor_t names;
+  mach_msg_ool_descriptor_t info;
+  mach_msg_ool_descriptor_t memory_info;
+
+  NDR_record_t NDR;
+  mach_msg_type_number_t namesCnt;
+  mach_msg_type_number_t infoCnt;
+  mach_msg_type_number_t memory_infoCnt;
+ } __Reply__mach_memory_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17765,6 +18067,9 @@ union __ReplyUnion__mach_host_subsystem {
  __Reply__host_create_mach_voucher_t Reply_host_create_mach_voucher;
  __Reply__host_register_mach_voucher_attr_manager_t Reply_host_register_mach_voucher_attr_manager;
  __Reply__host_register_well_known_mach_voucher_attr_manager_t Reply_host_register_well_known_mach_voucher_attr_manager;
+ __Reply__host_set_atm_diagnostic_flag_t Reply_host_set_atm_diagnostic_flag;
+ __Reply__host_get_atm_diagnostic_flag_t Reply_host_get_atm_diagnostic_flag;
+ __Reply__mach_memory_info_t Reply_mach_memory_info;
 };
 # 71 "/usr/include/mach/mach.h" 2 3 4
 # 1 "/usr/include/mach/thread_switch.h" 1 3 4
@@ -17890,18 +18195,24 @@ extern void slot_name(cpu_type_t,
 extern void mig_reply_setup(mach_msg_header_t *,
       mach_msg_header_t *);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern void mach_msg_destroy(mach_msg_header_t *);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_receive(mach_msg_header_t *);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_send(mach_msg_header_t *);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_server_once(boolean_t (*)
            (mach_msg_header_t *,
             mach_msg_header_t *),
            mach_msg_size_t,
            mach_port_t,
            mach_msg_options_t);
+
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_server(boolean_t (*)
       (mach_msg_header_t *,
        mach_msg_header_t *),
@@ -17909,6 +18220,7 @@ extern mach_msg_return_t mach_msg_server(boolean_t (*)
       mach_port_t,
       mach_msg_options_t);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_server_importance(boolean_t (*)
       (mach_msg_header_t *,
        mach_msg_header_t *),
@@ -17927,15 +18239,15 @@ extern kern_return_t clock_sleep(mach_port_t,
         int,
         mach_timespec_t,
         mach_timespec_t *);
-# 150 "/usr/include/mach/mach.h" 3 4
+# 157 "/usr/include/mach/mach.h" 3 4
 typedef struct voucher_mach_msg_state_s *voucher_mach_msg_state_t;
-# 178 "/usr/include/mach/mach.h" 3 4
+# 185 "/usr/include/mach/mach.h" 3 4
 extern boolean_t voucher_mach_msg_set(mach_msg_header_t *msg);
-# 197 "/usr/include/mach/mach.h" 3 4
+# 204 "/usr/include/mach/mach.h" 3 4
 extern void voucher_mach_msg_clear(mach_msg_header_t *msg);
-# 217 "/usr/include/mach/mach.h" 3 4
+# 224 "/usr/include/mach/mach.h" 3 4
 extern voucher_mach_msg_state_t voucher_mach_msg_adopt(mach_msg_header_t *msg);
-# 233 "/usr/include/mach/mach.h" 3 4
+# 240 "/usr/include/mach/mach.h" 3 4
 extern void voucher_mach_msg_revert(voucher_mach_msg_state_t state);
 # 27 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-darwin.h" 2
 
@@ -19211,7 +19523,7 @@ typedef struct {
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/terminal.h" 2
 
 
@@ -19420,16 +19732,7 @@ typedef struct {
 
   _Bool vc_fail;
 } vimconv_T;
-
-
-
-
-typedef struct {
-  char_u *vir_line;
-  FILE *vir_fd;
-  vimconv_T vir_conv;
-} vir_T;
-# 349 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 340 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct mapblock mapblock_T;
 struct mapblock {
   mapblock_T *m_next;
@@ -19452,7 +19755,7 @@ struct stl_hlrec {
   char_u *start;
   int userhl;
 };
-# 380 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 371 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct qf_info_S qf_info_T;
 
 
@@ -19493,7 +19796,7 @@ typedef struct {
   int b_syn_topgrp;
   int b_syn_conceal;
   int b_syn_folditems;
-# 435 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 426 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   synstate_T *b_sst_array;
   int b_sst_len;
   synstate_T *b_sst_first;
@@ -19512,7 +19815,7 @@ typedef struct {
   char_u *b_p_spl;
   int b_cjk;
 } synblock_T;
-# 463 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 454 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 struct file_buffer {
   uint64_t handle;
   memline_T b_ml;
@@ -19525,7 +19828,7 @@ struct file_buffer {
 
   int b_flags;
   _Bool b_closing;
-# 483 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 474 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   char_u *b_ffname;
   char_u *b_sfname;
   char_u *b_fname;
@@ -19561,21 +19864,21 @@ struct file_buffer {
   uint64_t b_orig_size;
   int b_orig_mode;
 
-  pos_T b_namedm[('z' - 'a' + 1)];
+  fmark_T b_namedm[('z' - 'a' + 1)];
 
 
   visualinfo_T b_visual;
   int b_visual_mode_eval;
 
-  pos_T b_last_cursor;
+  fmark_T b_last_cursor;
 
-  pos_T b_last_insert;
-  pos_T b_last_change;
-
-
+  fmark_T b_last_insert;
+  fmark_T b_last_change;
 
 
-  pos_T b_changelist[100];
+
+
+  fmark_T b_changelist[100];
   int b_changelistlen;
   _Bool b_new_change;
 
@@ -19803,15 +20106,17 @@ struct file_buffer {
   signlist_T *b_signlist;
 
   Terminal *terminal;
+
+  dict_T *additional_data;
 };
-# 781 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 774 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct diffblock_S diff_T;
 struct diffblock_S {
   diff_T *df_next;
   linenr_T df_lnum[4];
   linenr_T df_count[4];
 };
-# 798 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 791 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct tabpage_S tabpage_T;
 struct tabpage_S {
   uint64_t handle;
@@ -19832,7 +20137,7 @@ struct tabpage_S {
   dictitem_T tp_winvar;
   dict_T *tp_vars;
 };
-# 831 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 824 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct w_line {
   linenr_T wl_lnum;
   uint16_t wl_size;
@@ -19860,7 +20165,7 @@ struct frame_S {
   frame_T *fr_child;
   win_T *fr_win;
 };
-# 869 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 862 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct {
   regmmatch_T rm;
 
@@ -19982,7 +20287,7 @@ struct window_S {
   int w_wincol;
   int w_width;
   int w_vsep_width;
-# 1000 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 993 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_valid;
   pos_T w_valid_cursor;
 
@@ -19993,19 +20298,19 @@ struct window_S {
 
 
   int w_cline_height;
-  int w_cline_folded;
+  _Bool w_cline_folded;
 
   int w_cline_row;
 
   colnr_T w_virtcol;
-# 1026 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1019 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_wrow, w_wcol;
 
   linenr_T w_botline;
 
   int w_empty_rows;
   int w_filler_rows;
-# 1044 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1037 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_lines_valid;
   wline_T *w_lines;
 
@@ -20044,7 +20349,7 @@ struct window_S {
   int w_arg_idx_invalid;
 
   char_u *w_localdir;
-# 1090 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1083 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   winopt_T w_onebuf_opt;
   winopt_T w_allbuf_opt;
 
@@ -20338,7 +20643,93 @@ struct VimMenu {
   vimmenu_T *next;
 };
 # 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
-# 70 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h" 1
+
+
+
+
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 1
+# 30 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h"
+# 1 "/usr/include/assert.h" 1 3 4
+# 76 "/usr/include/assert.h" 3 4
+void __assert_rtn(const char *, const char *, int, const char *) __attribute__((noreturn));
+# 31 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 2
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 1
+
+
+
+
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 2
+# 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
+# 34 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 2
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h" 2
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.h" 1
+
+
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h" 1
+
+
+
+# 1 "/usr/include/assert.h" 1 3 4
+# 76 "/usr/include/assert.h" 3 4
+void __assert_rtn(const char *, const char *, int, const char *) __attribute__((noreturn));
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h" 2
+
+
+
+
+typedef void (*argv_callback)(void **argv);
+typedef struct message {
+  int priority;
+  argv_callback handler;
+  void *argv[6];
+} Event;
+typedef void(*event_scheduler)(Event event, void *data);
+# 32 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h"
+static inline Event event_create(int priority, argv_callback cb, int argc, ...)
+{
+  (__builtin_expect(!(argc <= 6), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h", 34, "argc <= EVENT_HANDLER_MAX_ARGC") : (void)0);
+  Event event;
+  do { (__builtin_expect(!(argc <= 6), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h", 36, "argc <= EVENT_HANDLER_MAX_ARGC") : (void)0); (&event)->priority = priority; (&event)->handler = cb; if (argc) { va_list args; __builtin_va_start(args, argc); for (int i = 0; i < argc; i++) { (&event)->argv[i] = __builtin_va_arg(args, void *); } __builtin_va_end(args); } } while (0);
+  return event;
+}
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.h" 2
+
+
+typedef struct queue Queue;
+typedef void (*put_callback)(Queue *queue, void *data);
+# 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h" 2
+
+typedef void * WatcherPtr;
+
+
+struct __kl1_WatcherPtr { WatcherPtr data; struct __kl1_WatcherPtr *next; }; typedef struct __kl1_WatcherPtr kl1_WatcherPtr; typedef struct { size_t cnt, n, max; kl1_WatcherPtr **buf; } kmp_WatcherPtr_t; static inline kmp_WatcherPtr_t *kmp_init_WatcherPtr(void) { return xcalloc(1, sizeof(kmp_WatcherPtr_t)); } static inline void kmp_destroy_WatcherPtr(kmp_WatcherPtr_t *mp) __attribute__((unused)); static inline void kmp_destroy_WatcherPtr(kmp_WatcherPtr_t *mp) { size_t k; for (k = 0; k < mp->n; ++k) { ; xfree(mp->buf[k]); } xfree(mp->buf); xfree(mp); } static inline kl1_WatcherPtr *kmp_alloc_WatcherPtr(kmp_WatcherPtr_t *mp) { ++mp->cnt; if (mp->n == 0) return xcalloc(1, sizeof(kl1_WatcherPtr)); return mp->buf[--mp->n]; } static inline void kmp_free_WatcherPtr(kmp_WatcherPtr_t *mp, kl1_WatcherPtr *p) { --mp->cnt; if (mp->n == mp->max) { mp->max = mp->max? mp->max<<1 : 16; mp->buf = xrealloc(mp->buf, sizeof(kl1_WatcherPtr *) * mp->max); } mp->buf[mp->n++] = p; } typedef struct { kl1_WatcherPtr *head, *tail; kmp_WatcherPtr_t *mp; size_t size; } kl_WatcherPtr_t; static inline kl_WatcherPtr_t *kl_init_WatcherPtr(void) { kl_WatcherPtr_t *kl = xcalloc(1, sizeof(kl_WatcherPtr_t)); kl->mp = kmp_init_WatcherPtr(); kl->head = kl->tail = kmp_alloc_WatcherPtr(kl->mp); kl->head->next = 0; return kl; } static inline void kl_destroy_WatcherPtr(kl_WatcherPtr_t *kl) __attribute__((unused)); static inline void kl_destroy_WatcherPtr(kl_WatcherPtr_t *kl) { kl1_WatcherPtr *p; for (p = kl->head; p != kl->tail; p = p->next) kmp_free_WatcherPtr(kl->mp, p); kmp_free_WatcherPtr(kl->mp, p); kmp_destroy_WatcherPtr(kl->mp); xfree(kl); } static inline void kl_push_WatcherPtr(kl_WatcherPtr_t *kl, WatcherPtr d) { kl1_WatcherPtr *q, *p = kmp_alloc_WatcherPtr(kl->mp); q = kl->tail; p->next = 0; kl->tail->next = p; kl->tail = p; ++kl->size; q->data = d; } static inline WatcherPtr kl_shift_at_WatcherPtr(kl_WatcherPtr_t *kl, kl1_WatcherPtr **n) { (__builtin_expect(!((*n)->next), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h", 15, "(*n)->next") : (void)0); kl1_WatcherPtr *p; --kl->size; p = *n; *n = (*n)->next; if (p == kl->head) kl->head = *n; WatcherPtr d = p->data; kmp_free_WatcherPtr(kl->mp, p); return d; }
+
+typedef struct loop {
+  uv_loop_t uv;
+  Queue *events, *fast_events, *thread_events;
+  kl_WatcherPtr_t *children;
+  uv_signal_t children_watcher;
+  uv_timer_t children_kill_timer, poll_timer;
+  size_t children_stop_requests;
+  uv_async_t async;
+  uv_mutex_t mutex;
+  int recursive;
+} Loop;
+# 32 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 75 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern long Rows
 
 
@@ -20351,12 +20742,12 @@ extern long Columns ;
 
 typedef char_u schar_T;
 typedef unsigned short sattr_T;
-# 94 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 99 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern schar_T *ScreenLines ;
 extern sattr_T *ScreenAttrs ;
 extern unsigned *LineOffset ;
 extern char_u *LineWraps ;
-# 107 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern u8char_T *ScreenLinesUC ;
 extern u8char_T *ScreenLinesC[6];
 extern int Screen_mco ;
@@ -20365,7 +20756,7 @@ extern int Screen_mco ;
 
 
 extern schar_T *ScreenLines2 ;
-# 123 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 128 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern short *TabPageIdxs ;
 
 extern int screen_Rows ;
@@ -20376,7 +20767,7 @@ extern int screen_Columns ;
 
 
 extern int mod_mask ;
-# 143 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 148 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int cmdline_row;
 
 extern int redraw_cmdline ;
@@ -20410,7 +20801,7 @@ extern int compl_interrupted ;
 
 
 extern int compl_cont_status ;
-# 191 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 196 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int cmdmsg_rl ;
 extern int msg_col;
 extern int msg_row;
@@ -20521,9 +20912,9 @@ extern int check_cstack ;
 
 
 extern int trylevel ;
-# 310 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 315 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int force_abort ;
-# 322 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 327 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern struct msglist **msg_list ;
 
 
@@ -20541,11 +20932,11 @@ extern int suppress_errthrow ;
 
 
 extern except_T *caught_stack ;
-# 349 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 354 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int may_garbage_collect ;
 extern int want_garbage_collect ;
 extern int garbage_collect_at_exit ;
-# 362 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 367 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern scid_T current_SID ;
 
 
@@ -20637,7 +21028,7 @@ typedef enum {
   , HLF_MC
   , HLF_COUNT
 } hlf_T;
-# 461 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 466 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int highlight_attr[HLF_COUNT];
 extern int highlight_user[9];
 extern int highlight_stlnc[9];
@@ -20693,11 +21084,16 @@ extern int sys_menu ;
 
 
 extern int updating_screen ;
-# 524 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+
+
+
+
+
+
 extern win_T *firstwin;
 extern win_T *lastwin;
 extern win_T *prevwin ;
-# 539 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 542 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern win_T *curwin;
 
 extern win_T *aucmd_win;
@@ -20716,7 +21112,7 @@ extern frame_T *topframe;
 extern tabpage_T *first_tabpage;
 extern tabpage_T *curtab;
 extern int redraw_tabline ;
-# 565 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 568 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern buf_T *firstbuf ;
 extern buf_T *lastbuf ;
 extern buf_T *curbuf ;
@@ -20784,6 +21180,10 @@ extern int sandbox ;
 extern int silent_mode ;
 
 
+
+
+
+extern _Bool did_source_startup_scripts ;
 
 extern pos_T VIsual;
 extern int VIsual_active ;
@@ -20876,7 +21276,7 @@ extern pos_T Insstart_orig;
 
 extern int orig_line_count ;
 extern int vr_lines_changed ;
-# 742 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 749 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int enc_dbcs ;
 
 extern int enc_unicode ;
@@ -20890,7 +21290,7 @@ extern int has_mbyte ;
 
 
 extern char mb_bytelen_tab[256];
-# 763 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 770 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int (*mb_ptr2len)(const char_u *p) ;
 
 extern int (*mb_ptr2len_len)(const char_u *p, int size) ;
@@ -20906,7 +21306,7 @@ extern int (*mb_off2cells)(unsigned off, unsigned max_off) ;
 
 extern int (*mb_ptr2char)(const char_u *p) ;
 extern int (*mb_head_off)(const char_u *base, const char_u *p) ;
-# 796 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 803 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int State ;
 
 
@@ -20929,6 +21329,8 @@ extern int allow_keys ;
 extern int no_u_sync ;
 extern int u_sync_once ;
 
+
+extern _Bool force_restart_edit ;
 
 extern int restart_edit ;
 extern int arrow_used;
@@ -20997,7 +21399,7 @@ extern int skip_redraw ;
 extern int do_redraw ;
 
 extern int need_highlight_changed ;
-extern char_u *use_viminfo ;
+extern char *used_shada_file ;
 
 
 extern FILE *scriptin[15];
@@ -21006,14 +21408,6 @@ extern FILE *scriptout ;
 
 
 extern volatile int got_int ;
-
-extern int disable_breakcheck ;
-
-
-
-
-
-
 
 extern int bangredo ;
 extern int searchcmdlen;
@@ -21154,7 +21548,7 @@ extern linenr_T printer_page_num;
 
 
 extern int typebuf_was_filled ;
-# 1058 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 1059 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int virtual_op ;
 
 
@@ -21166,8 +21560,10 @@ extern linenr_T spell_redraw_lnum ;
 
 
 extern int need_cursor_line_redraw ;
-# 1085 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 1086 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern char_u e_abort[] ;
+extern char_u e_afterinit[] ;
+
 extern char_u e_api_spawn_failed[] ;
 extern char_u e_argreq[] ;
 extern char_u e_backslash[] ;
@@ -21195,8 +21591,11 @@ extern char_u e_isadir2[] ;
 extern char_u e_invjob[] ;
 extern char_u e_jobtblfull[] ;
 extern char_u e_jobexe[] ;
+extern char_u e_jobspawn[] ;
+
 extern char_u e_jobnotpty[] ;
 extern char_u e_libcall[] ;
+extern char_u e_mkdir[] ;
 extern char_u e_markinval[] ;
 extern char_u e_marknotset[] ;
 extern char_u e_modifiable[] ;
@@ -21301,6 +21700,7 @@ extern char *ignoredp;
 
 
 extern _Bool embedded_mode ;
+extern Loop loop;
 
 
 
@@ -21309,13 +21709,13 @@ typedef enum {
   kWorking,
   kBroken
 } WorkingStatus;
-# 351 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 343 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 # 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 1
 # 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
-# 94 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+# 95 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 static inline _Bool ascii_iswhite(int) __attribute__((always_inline)) __attribute__((const));
 static inline _Bool ascii_isdigit(int) __attribute__((always_inline)) __attribute__((const));
 static inline _Bool ascii_isxdigit(int) __attribute__((always_inline)) __attribute__((const));
@@ -21328,7 +21728,7 @@ static inline _Bool ascii_iswhite(int c)
 {
   return c == ' ' || c == '\t';
 }
-# 116 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+# 117 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 static inline _Bool ascii_isdigit(int c)
 {
   return c >= '0' && c <= '9';
@@ -21401,6 +21801,1144 @@ typedef enum {
 
 
 
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 1
+# 24 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/util.h" 1
+# 25 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/object.h" 1
+# 21 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/object.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h" 1
+# 21 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h" 1
+# 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h"
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 23 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h" 2
+# 59 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h"
+typedef unsigned int _msgpack_atomic_counter_t;
+# 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h" 2
+# 34 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h"
+typedef struct msgpack_zone_finalizer {
+    void (*func)(void* data);
+    void* data;
+} msgpack_zone_finalizer;
+
+typedef struct msgpack_zone_finalizer_array {
+    msgpack_zone_finalizer* tail;
+    msgpack_zone_finalizer* end;
+    msgpack_zone_finalizer* array;
+} msgpack_zone_finalizer_array;
+
+struct msgpack_zone_chunk;
+typedef struct msgpack_zone_chunk msgpack_zone_chunk;
+
+typedef struct msgpack_zone_chunk_list {
+    size_t free;
+    char* ptr;
+    msgpack_zone_chunk* head;
+} msgpack_zone_chunk_list;
+
+typedef struct msgpack_zone {
+    msgpack_zone_chunk_list chunk_list;
+    msgpack_zone_finalizer_array finalizer_array;
+    size_t chunk_size;
+} msgpack_zone;
+
+
+
+
+
+
+_Bool msgpack_zone_init(msgpack_zone* zone, size_t chunk_size);
+
+void msgpack_zone_destroy(msgpack_zone* zone);
+
+
+msgpack_zone* msgpack_zone_new(size_t chunk_size);
+
+void msgpack_zone_free(msgpack_zone* zone);
+
+static inline void* msgpack_zone_malloc(msgpack_zone* zone, size_t size);
+static inline void* msgpack_zone_malloc_no_align(msgpack_zone* zone, size_t size);
+
+static inline _Bool msgpack_zone_push_finalizer(msgpack_zone* zone,
+        void (*func)(void* data), void* data);
+
+static inline void msgpack_zone_swap(msgpack_zone* a, msgpack_zone* b);
+
+
+_Bool msgpack_zone_is_empty(msgpack_zone* zone);
+
+
+void msgpack_zone_clear(msgpack_zone* zone);
+# 96 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h"
+void* msgpack_zone_malloc_expand(msgpack_zone* zone, size_t size);
+
+static inline void* msgpack_zone_malloc_no_align(msgpack_zone* zone, size_t size)
+{
+    char* ptr;
+    msgpack_zone_chunk_list* cl = &zone->chunk_list;
+
+    if(zone->chunk_list.free < size) {
+        return msgpack_zone_malloc_expand(zone, size);
+    }
+
+    ptr = cl->ptr;
+    cl->free -= size;
+    cl->ptr += size;
+
+    return ptr;
+}
+
+static inline void* msgpack_zone_malloc(msgpack_zone* zone, size_t size)
+{
+    char* aligned =
+        (char*)(
+            (size_t)(
+                zone->chunk_list.ptr + (sizeof(void*) - 1)
+            ) / sizeof(void*) * sizeof(void*)
+        );
+    size_t adjusted_size = size + (aligned - zone->chunk_list.ptr);
+    if(zone->chunk_list.free >= adjusted_size) {
+        zone->chunk_list.free -= adjusted_size;
+        zone->chunk_list.ptr += adjusted_size;
+        return aligned;
+    }
+    {
+        void* ptr = msgpack_zone_malloc_expand(zone, size + (sizeof(void*) - 1));
+        if (ptr) {
+            return (char*)((size_t)(ptr) / sizeof(void*) * sizeof(void*));
+        }
+    }
+    return ((void*)0);
+}
+
+
+_Bool msgpack_zone_push_finalizer_expand(msgpack_zone* zone,
+        void (*func)(void* data), void* data);
+
+static inline _Bool msgpack_zone_push_finalizer(msgpack_zone* zone,
+        void (*func)(void* data), void* data)
+{
+    msgpack_zone_finalizer_array* const fa = &zone->finalizer_array;
+    msgpack_zone_finalizer* fin = fa->tail;
+
+    if(fin == fa->end) {
+        return msgpack_zone_push_finalizer_expand(zone, func, data);
+    }
+
+    fin->func = func;
+    fin->data = data;
+
+    ++fa->tail;
+
+    return 1;
+}
+
+static inline void msgpack_zone_swap(msgpack_zone* a, msgpack_zone* b)
+{
+    msgpack_zone tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+# 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/object.h" 2
+# 35 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/object.h"
+typedef enum {
+    MSGPACK_OBJECT_NIL = 0x00,
+    MSGPACK_OBJECT_BOOLEAN = 0x01,
+    MSGPACK_OBJECT_POSITIVE_INTEGER = 0x02,
+    MSGPACK_OBJECT_NEGATIVE_INTEGER = 0x03,
+    MSGPACK_OBJECT_FLOAT = 0x04,
+
+
+
+    MSGPACK_OBJECT_STR = 0x05,
+    MSGPACK_OBJECT_ARRAY = 0x06,
+    MSGPACK_OBJECT_MAP = 0x07,
+    MSGPACK_OBJECT_BIN = 0x08,
+    MSGPACK_OBJECT_EXT = 0x09
+} msgpack_object_type;
+
+
+struct msgpack_object;
+struct msgpack_object_kv;
+
+typedef struct {
+    uint32_t size;
+    struct msgpack_object* ptr;
+} msgpack_object_array;
+
+typedef struct {
+    uint32_t size;
+    struct msgpack_object_kv* ptr;
+} msgpack_object_map;
+
+typedef struct {
+    uint32_t size;
+    const char* ptr;
+} msgpack_object_str;
+
+typedef struct {
+    uint32_t size;
+    const char* ptr;
+} msgpack_object_bin;
+
+typedef struct {
+    int8_t type;
+    uint32_t size;
+    const char* ptr;
+} msgpack_object_ext;
+
+typedef union {
+    _Bool boolean;
+    uint64_t u64;
+    int64_t i64;
+
+
+
+    double f64;
+    msgpack_object_array array;
+    msgpack_object_map map;
+    msgpack_object_str str;
+    msgpack_object_bin bin;
+    msgpack_object_ext ext;
+} msgpack_object_union;
+
+typedef struct msgpack_object {
+    msgpack_object_type type;
+    msgpack_object_union via;
+} msgpack_object;
+
+typedef struct msgpack_object_kv {
+    msgpack_object key;
+    msgpack_object val;
+} msgpack_object_kv;
+
+
+void msgpack_object_print(FILE* out, msgpack_object o);
+
+
+_Bool msgpack_object_equal(const msgpack_object x, const msgpack_object y);
+# 26 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h" 1
+# 21 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_define.h" 1
+# 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h" 2
+# 43 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h"
+typedef int (*msgpack_packer_write)(void* data, const char* buf, size_t len);
+
+typedef struct msgpack_packer {
+    void* data;
+    msgpack_packer_write callback;
+} msgpack_packer;
+
+static void msgpack_packer_init(msgpack_packer* pk, void* data, msgpack_packer_write callback);
+
+static msgpack_packer* msgpack_packer_new(void* data, msgpack_packer_write callback);
+static void msgpack_packer_free(msgpack_packer* pk);
+
+static int msgpack_pack_char(msgpack_packer* pk, char d);
+
+static int msgpack_pack_signed_char(msgpack_packer* pk, signed char d);
+static int msgpack_pack_short(msgpack_packer* pk, short d);
+static int msgpack_pack_int(msgpack_packer* pk, int d);
+static int msgpack_pack_long(msgpack_packer* pk, long d);
+static int msgpack_pack_long_long(msgpack_packer* pk, long long d);
+static int msgpack_pack_unsigned_char(msgpack_packer* pk, unsigned char d);
+static int msgpack_pack_unsigned_short(msgpack_packer* pk, unsigned short d);
+static int msgpack_pack_unsigned_int(msgpack_packer* pk, unsigned int d);
+static int msgpack_pack_unsigned_long(msgpack_packer* pk, unsigned long d);
+static int msgpack_pack_unsigned_long_long(msgpack_packer* pk, unsigned long long d);
+
+static int msgpack_pack_uint8(msgpack_packer* pk, uint8_t d);
+static int msgpack_pack_uint16(msgpack_packer* pk, uint16_t d);
+static int msgpack_pack_uint32(msgpack_packer* pk, uint32_t d);
+static int msgpack_pack_uint64(msgpack_packer* pk, uint64_t d);
+static int msgpack_pack_int8(msgpack_packer* pk, int8_t d);
+static int msgpack_pack_int16(msgpack_packer* pk, int16_t d);
+static int msgpack_pack_int32(msgpack_packer* pk, int32_t d);
+static int msgpack_pack_int64(msgpack_packer* pk, int64_t d);
+
+static int msgpack_pack_fix_uint8(msgpack_packer* pk, uint8_t d);
+static int msgpack_pack_fix_uint16(msgpack_packer* pk, uint16_t d);
+static int msgpack_pack_fix_uint32(msgpack_packer* pk, uint32_t d);
+static int msgpack_pack_fix_uint64(msgpack_packer* pk, uint64_t d);
+static int msgpack_pack_fix_int8(msgpack_packer* pk, int8_t d);
+static int msgpack_pack_fix_int16(msgpack_packer* pk, int16_t d);
+static int msgpack_pack_fix_int32(msgpack_packer* pk, int32_t d);
+static int msgpack_pack_fix_int64(msgpack_packer* pk, int64_t d);
+
+static int msgpack_pack_float(msgpack_packer* pk, float d);
+static int msgpack_pack_double(msgpack_packer* pk, double d);
+
+static int msgpack_pack_nil(msgpack_packer* pk);
+static int msgpack_pack_true(msgpack_packer* pk);
+static int msgpack_pack_false(msgpack_packer* pk);
+
+static int msgpack_pack_array(msgpack_packer* pk, size_t n);
+
+static int msgpack_pack_map(msgpack_packer* pk, size_t n);
+
+static int msgpack_pack_str(msgpack_packer* pk, size_t l);
+static int msgpack_pack_str_body(msgpack_packer* pk, const void* b, size_t l);
+
+static int msgpack_pack_bin(msgpack_packer* pk, size_t l);
+static int msgpack_pack_bin_body(msgpack_packer* pk, const void* b, size_t l);
+
+static int msgpack_pack_ext(msgpack_packer* pk, size_t l, int8_t type);
+static int msgpack_pack_ext_body(msgpack_packer* pk, const void* b, size_t l);
+
+int msgpack_pack_object(msgpack_packer* pk, msgpack_object d);
+# 126 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h" 1
+# 277 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+inline int msgpack_pack_fix_uint8(msgpack_packer* x, uint8_t d)
+{
+    unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]};
+    return (*(x)->callback)((x)->data, (const char*)buf, 2);
+}
+
+inline int msgpack_pack_fix_uint16(msgpack_packer* x, uint16_t d)
+{
+    unsigned char buf[3];
+    buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p(d) ? ((__uint16_t)((((__uint16_t)(d) & 0xff00) >> 8) | (((__uint16_t)(d) & 0x00ff) << 8))) : _OSSwapInt16(d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 3);
+}
+
+inline int msgpack_pack_fix_uint32(msgpack_packer* x, uint32_t d)
+{
+    unsigned char buf[5];
+    buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p(d) ? ((__uint32_t)((((__uint32_t)(d) & 0xff000000) >> 24) | (((__uint32_t)(d) & 0x00ff0000) >> 8) | (((__uint32_t)(d) & 0x0000ff00) << 8) | (((__uint32_t)(d) & 0x000000ff) << 24))) : _OSSwapInt32(d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 5);
+}
+
+inline int msgpack_pack_fix_uint64(msgpack_packer* x, uint64_t d)
+{
+    unsigned char buf[9];
+    buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 9);
+}
+
+inline int msgpack_pack_fix_int8(msgpack_packer* x, int8_t d)
+{
+    unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]};
+    return (*(x)->callback)((x)->data, (const char*)buf, 2);
+}
+
+inline int msgpack_pack_fix_int16(msgpack_packer* x, int16_t d)
+{
+    unsigned char buf[3];
+    buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p(d) ? ((__uint16_t)((((__uint16_t)(d) & 0xff00) >> 8) | (((__uint16_t)(d) & 0x00ff) << 8))) : _OSSwapInt16(d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 3);
+}
+
+inline int msgpack_pack_fix_int32(msgpack_packer* x, int32_t d)
+{
+    unsigned char buf[5];
+    buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p(d) ? ((__uint32_t)((((__uint32_t)(d) & 0xff000000) >> 24) | (((__uint32_t)(d) & 0x00ff0000) >> 8) | (((__uint32_t)(d) & 0x0000ff00) << 8) | (((__uint32_t)(d) & 0x000000ff) << 24))) : _OSSwapInt32(d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 5);
+}
+
+inline int msgpack_pack_fix_int64(msgpack_packer* x, int64_t d)
+{
+    unsigned char buf[9];
+    buf[0] = 0xd3; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 9);
+}
+
+
+
+
+
+inline int msgpack_pack_uint8(msgpack_packer* x, uint8_t d)
+{
+    do { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } while(0);
+}
+
+inline int msgpack_pack_uint16(msgpack_packer* x, uint16_t d)
+{
+    do { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } while(0);
+}
+
+inline int msgpack_pack_uint32(msgpack_packer* x, uint32_t d)
+{
+    do { if(d < (1<<8)) { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } } while(0);
+}
+
+inline int msgpack_pack_uint64(msgpack_packer* x, uint64_t d)
+{
+    do { if(d < (1ULL<<8)) { if(d < (1ULL<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1ULL<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else if(d < (1ULL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } while(0);
+}
+
+inline int msgpack_pack_int8(msgpack_packer* x, int8_t d)
+{
+    do { if(d < -(1<<5)) { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } } while(0);
+}
+
+inline int msgpack_pack_int16(msgpack_packer* x, int16_t d)
+{
+    do { if(d < -(1<<5)) { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } } while(0);
+}
+
+inline int msgpack_pack_int32(msgpack_packer* x, int32_t d)
+{
+    do { if(d < -(1<<5)) { if(d < -(1<<15)) { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else if(d < (1<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } } while(0);
+}
+
+inline int msgpack_pack_int64(msgpack_packer* x, int64_t d)
+{
+    do { if(d < -(1LL<<5)) { if(d < -(1LL<<15)) { if(d < -(1LL<<31)) { unsigned char buf[9]; buf[0] = 0xd3; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } else { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } else { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1LL<<16)) { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } else { if(d < (1LL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } } while(0);
+}
+
+inline int msgpack_pack_char(msgpack_packer* x, char d)
+{
+
+
+        do { if(d < -(1<<5)) { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } } while(0);
+
+
+
+
+
+
+}
+
+inline int msgpack_pack_signed_char(msgpack_packer* x, signed char d)
+{
+    do { if(d < -(1<<5)) { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } } while(0);
+}
+
+inline int msgpack_pack_unsigned_char(msgpack_packer* x, unsigned char d)
+{
+    do { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } while(0);
+}
+
+
+
+inline int msgpack_pack_short(msgpack_packer* x, short d)
+{
+# 413 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+    do { if(d < -(1<<5)) { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } } while(0);
+# 429 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_int(msgpack_packer* x, int d)
+{
+
+
+
+
+    do { if(d < -(1<<5)) { if(d < -(1<<15)) { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else if(d < (1<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } } while(0);
+# 460 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_long(msgpack_packer* x, long d)
+{
+
+
+
+
+
+
+    do { if(d < -(1LL<<5)) { if(d < -(1LL<<15)) { if(d < -(1LL<<31)) { unsigned char buf[9]; buf[0] = 0xd3; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } else { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } else { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1LL<<16)) { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } else { if(d < (1LL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } } while(0);
+# 491 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_long_long(msgpack_packer* x, long long d)
+{
+# 510 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+    do { if(d < -(1LL<<5)) { if(d < -(1LL<<15)) { if(d < -(1LL<<31)) { unsigned char buf[9]; buf[0] = 0xd3; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } else { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } else { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1LL<<16)) { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } else { if(d < (1LL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } } while(0);
+# 522 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_unsigned_short(msgpack_packer* x, unsigned short d)
+{
+# 537 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+    do { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } while(0);
+# 553 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_unsigned_int(msgpack_packer* x, unsigned int d)
+{
+
+
+
+
+    do { if(d < (1<<8)) { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } } while(0);
+# 584 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_unsigned_long(msgpack_packer* x, unsigned long d)
+{
+
+
+
+
+
+
+    do { if(d < (1ULL<<8)) { if(d < (1ULL<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1ULL<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else if(d < (1ULL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } while(0);
+# 615 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_unsigned_long_long(msgpack_packer* x, unsigned long long d)
+{
+# 634 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+    do { if(d < (1ULL<<8)) { if(d < (1ULL<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1ULL<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else if(d < (1ULL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } while(0);
+# 646 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+# 657 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+inline int msgpack_pack_float(msgpack_packer* x, float d)
+{
+    unsigned char buf[5];
+    union { float f; uint32_t i; } mem;
+    mem.f = d;
+    buf[0] = 0xca; do { uint32_t val = (__builtin_constant_p(mem.i) ? ((__uint32_t)((((__uint32_t)(mem.i) & 0xff000000) >> 24) | (((__uint32_t)(mem.i) & 0x00ff0000) >> 8) | (((__uint32_t)(mem.i) & 0x0000ff00) << 8) | (((__uint32_t)(mem.i) & 0x000000ff) << 24))) : _OSSwapInt32(mem.i)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 5);
+}
+
+inline int msgpack_pack_double(msgpack_packer* x, double d)
+{
+    unsigned char buf[9];
+    union { double f; uint64_t i; } mem;
+    mem.f = d;
+    buf[0] = 0xcb;
+
+
+
+
+    do { uint64_t val = (__builtin_constant_p(mem.i) ? ((__uint64_t)((((__uint64_t)(mem.i) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(mem.i) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(mem.i) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(mem.i) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(mem.i) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(mem.i) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(mem.i) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(mem.i) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(mem.i)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 9);
+}
+
+
+
+
+
+
+inline int msgpack_pack_nil(msgpack_packer* x)
+{
+    static const unsigned char d = 0xc0;
+    return (*(x)->callback)((x)->data, (const char*)&d, 1);
+}
+
+
+
+
+
+
+inline int msgpack_pack_true(msgpack_packer* x)
+{
+    static const unsigned char d = 0xc3;
+    return (*(x)->callback)((x)->data, (const char*)&d, 1);
+}
+
+inline int msgpack_pack_false(msgpack_packer* x)
+{
+    static const unsigned char d = 0xc2;
+    return (*(x)->callback)((x)->data, (const char*)&d, 1);
+}
+
+
+
+
+
+
+inline int msgpack_pack_array(msgpack_packer* x, size_t n)
+{
+    if(n < 16) {
+        unsigned char d = 0x90 | (uint8_t)n;
+        return (*(x)->callback)((x)->data, (const char*)&d, 1);
+    } else if(n < 65536) {
+        unsigned char buf[3];
+        buf[0] = 0xdc; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)n) ? ((__uint16_t)((((__uint16_t)((uint16_t)n) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)n) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)n))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 3);
+    } else {
+        unsigned char buf[5];
+        buf[0] = 0xdd; do { uint32_t val = (__builtin_constant_p((uint32_t)n) ? ((__uint32_t)((((__uint32_t)((uint32_t)n) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)n) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)n) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)n) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)n)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 5);
+    }
+}
+
+
+
+
+
+
+inline int msgpack_pack_map(msgpack_packer* x, size_t n)
+{
+    if(n < 16) {
+        unsigned char d = 0x80 | (uint8_t)n;
+        return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1);
+    } else if(n < 65536) {
+        unsigned char buf[3];
+        buf[0] = 0xde; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)n) ? ((__uint16_t)((((__uint16_t)((uint16_t)n) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)n) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)n))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 3);
+    } else {
+        unsigned char buf[5];
+        buf[0] = 0xdf; do { uint32_t val = (__builtin_constant_p((uint32_t)n) ? ((__uint32_t)((((__uint32_t)((uint32_t)n) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)n) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)n) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)n) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)n)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 5);
+    }
+}
+
+
+
+
+
+
+inline int msgpack_pack_str(msgpack_packer* x, size_t l)
+{
+    if(l < 32) {
+        unsigned char d = 0xa0 | (uint8_t)l;
+        return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1);
+    } else if(l < 256) {
+        unsigned char buf[2];
+        buf[0] = 0xd9; buf[1] = (uint8_t)l;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } else if(l < 65536) {
+        unsigned char buf[3];
+        buf[0] = 0xda; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)l) ? ((__uint16_t)((((__uint16_t)((uint16_t)l) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)l) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)l))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 3);
+    } else {
+        unsigned char buf[5];
+        buf[0] = 0xdb; do { uint32_t val = (__builtin_constant_p((uint32_t)l) ? ((__uint32_t)((((__uint32_t)((uint32_t)l) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)l) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)l) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)l) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)l)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 5);
+    }
+}
+
+inline int msgpack_pack_str_body(msgpack_packer* x, const void* b, size_t l)
+{
+    return (*(x)->callback)((x)->data, (const char*)(const unsigned char*)b, l);
+}
+
+
+
+
+
+inline int msgpack_pack_bin(msgpack_packer* x, size_t l)
+{
+    if(l < 256) {
+        unsigned char buf[2];
+        buf[0] = 0xc4; buf[1] = (uint8_t)l;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } else if(l < 65536) {
+        unsigned char buf[3];
+        buf[0] = 0xc5; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)l) ? ((__uint16_t)((((__uint16_t)((uint16_t)l) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)l) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)l))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 3);
+    } else {
+        unsigned char buf[5];
+        buf[0] = 0xc6; do { uint32_t val = (__builtin_constant_p((uint32_t)l) ? ((__uint32_t)((((__uint32_t)((uint32_t)l) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)l) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)l) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)l) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)l)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 5);
+    }
+}
+
+inline int msgpack_pack_bin_body(msgpack_packer* x, const void* b, size_t l)
+{
+    return (*(x)->callback)((x)->data, (const char*)(const unsigned char*)b, l);
+}
+
+
+
+
+
+inline int msgpack_pack_ext(msgpack_packer* x, size_t l, int8_t type)
+{
+    switch(l) {
+    case 1: {
+        unsigned char buf[2];
+        buf[0] = 0xd4;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    case 2: {
+        unsigned char buf[2];
+        buf[0] = 0xd5;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    case 4: {
+        unsigned char buf[2];
+        buf[0] = 0xd6;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    case 8: {
+        unsigned char buf[2];
+        buf[0] = 0xd7;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    case 16: {
+        unsigned char buf[2];
+        buf[0] = 0xd8;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    default:
+        if(l < 256) {
+            unsigned char buf[3];
+            buf[0] = 0xc7;
+            buf[1] = (unsigned char)l;
+            buf[2] = type;
+            return (*(x)->callback)((x)->data, (const char*)buf, 3);
+        } else if(l < 65536) {
+            unsigned char buf[4];
+            buf[0] = 0xc8;
+            do { uint16_t val = ((__uint16_t)(__builtin_constant_p(l) ? ((__uint16_t)((((__uint16_t)(l) & 0xff00) >> 8) | (((__uint16_t)(l) & 0x00ff) << 8))) : _OSSwapInt16(l))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+            buf[3] = type;
+            return (*(x)->callback)((x)->data, (const char*)buf, 4);
+        } else {
+            unsigned char buf[6];
+            buf[0] = 0xc9;
+            do { uint32_t val = (__builtin_constant_p(l) ? ((__uint32_t)((((__uint32_t)(l) & 0xff000000) >> 24) | (((__uint32_t)(l) & 0x00ff0000) >> 8) | (((__uint32_t)(l) & 0x0000ff00) << 8) | (((__uint32_t)(l) & 0x000000ff) << 24))) : _OSSwapInt32(l)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+            buf[5] = type;
+            return (*(x)->callback)((x)->data, (const char*)buf, 6);
+        }
+        break;
+    }
+}
+
+inline int msgpack_pack_ext_body(msgpack_packer* x, const void* b, size_t l)
+{
+    return (*(x)->callback)((x)->data, (const char*)(const unsigned char*)b, l);
+}
+# 127 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h" 2
+
+inline void msgpack_packer_init(msgpack_packer* pk, void* data, msgpack_packer_write callback)
+{
+    pk->data = data;
+    pk->callback = callback;
+}
+
+inline msgpack_packer* msgpack_packer_new(void* data, msgpack_packer_write callback)
+{
+    msgpack_packer* pk = (msgpack_packer*)calloc(1, sizeof(msgpack_packer));
+    if(!pk) { return ((void*)0); }
+    msgpack_packer_init(pk, data, callback);
+    return pk;
+}
+
+inline void msgpack_packer_free(msgpack_packer* pk)
+{
+    free(pk);
+}
+# 28 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h" 1
+# 36 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+typedef struct msgpack_unpacked {
+    msgpack_zone* zone;
+    msgpack_object data;
+} msgpack_unpacked;
+
+typedef enum {
+    MSGPACK_UNPACK_SUCCESS = 2,
+    MSGPACK_UNPACK_EXTRA_BYTES = 1,
+    MSGPACK_UNPACK_CONTINUE = 0,
+    MSGPACK_UNPACK_PARSE_ERROR = -1,
+    MSGPACK_UNPACK_NOMEM_ERROR = -2
+} msgpack_unpack_return;
+
+
+
+msgpack_unpack_return
+msgpack_unpack_next(msgpack_unpacked* result,
+        const char* data, size_t len, size_t* off);
+# 64 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+typedef struct msgpack_unpacker {
+    char* buffer;
+    size_t used;
+    size_t free;
+    size_t off;
+    size_t parsed;
+    msgpack_zone* z;
+    size_t initial_buffer_size;
+    void* ctx;
+} msgpack_unpacker;
+# 85 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+_Bool msgpack_unpacker_init(msgpack_unpacker* mpac, size_t initial_buffer_size);
+
+
+
+
+
+void msgpack_unpacker_destroy(msgpack_unpacker* mpac);
+
+
+
+
+
+
+
+msgpack_unpacker* msgpack_unpacker_new(size_t initial_buffer_size);
+
+
+
+
+
+void msgpack_unpacker_free(msgpack_unpacker* mpac);
+# 119 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+static inline _Bool msgpack_unpacker_reserve_buffer(msgpack_unpacker* mpac, size_t size);
+# 128 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+static inline char* msgpack_unpacker_buffer(msgpack_unpacker* mpac);
+# 137 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+static inline size_t msgpack_unpacker_buffer_capacity(const msgpack_unpacker* mpac);
+# 146 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+static inline void msgpack_unpacker_buffer_consumed(msgpack_unpacker* mpac, size_t size);
+# 155 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+msgpack_unpack_return msgpack_unpacker_next(msgpack_unpacker* mpac, msgpack_unpacked* pac);
+
+
+
+
+
+
+
+static inline void msgpack_unpacked_init(msgpack_unpacked* result);
+
+
+
+
+static inline void msgpack_unpacked_destroy(msgpack_unpacked* result);
+
+
+
+
+
+static inline msgpack_zone* msgpack_unpacked_release_zone(msgpack_unpacked* result);
+
+
+
+int msgpack_unpacker_execute(msgpack_unpacker* mpac);
+
+
+msgpack_object msgpack_unpacker_data(msgpack_unpacker* mpac);
+
+
+msgpack_zone* msgpack_unpacker_release_zone(msgpack_unpacker* mpac);
+
+
+void msgpack_unpacker_reset_zone(msgpack_unpacker* mpac);
+
+
+void msgpack_unpacker_reset(msgpack_unpacker* mpac);
+
+static inline size_t msgpack_unpacker_message_size(const msgpack_unpacker* mpac);
+
+
+
+
+
+
+
+msgpack_unpack_return
+msgpack_unpack(const char* data, size_t len, size_t* off,
+        msgpack_zone* result_zone, msgpack_object* result);
+
+
+
+
+static inline size_t msgpack_unpacker_parsed_size(const msgpack_unpacker* mpac);
+
+
+_Bool msgpack_unpacker_flush_zone(msgpack_unpacker* mpac);
+
+
+_Bool msgpack_unpacker_expand_buffer(msgpack_unpacker* mpac, size_t size);
+
+static inline _Bool msgpack_unpacker_reserve_buffer(msgpack_unpacker* mpac, size_t size)
+{
+    if(mpac->free >= size) { return 1; }
+    return msgpack_unpacker_expand_buffer(mpac, size);
+}
+
+static inline char* msgpack_unpacker_buffer(msgpack_unpacker* mpac)
+{
+    return mpac->buffer + mpac->used;
+}
+
+static inline size_t msgpack_unpacker_buffer_capacity(const msgpack_unpacker* mpac)
+{
+    return mpac->free;
+}
+
+static inline void msgpack_unpacker_buffer_consumed(msgpack_unpacker* mpac, size_t size)
+{
+    mpac->used += size;
+    mpac->free -= size;
+}
+
+static inline size_t msgpack_unpacker_message_size(const msgpack_unpacker* mpac)
+{
+    return mpac->parsed - mpac->off + mpac->used;
+}
+
+static inline size_t msgpack_unpacker_parsed_size(const msgpack_unpacker* mpac)
+{
+    return mpac->parsed;
+}
+
+
+static inline void msgpack_unpacked_init(msgpack_unpacked* result)
+{
+    __builtin___memset_chk (result, 0, sizeof(msgpack_unpacked), __builtin_object_size (result, 0));
+}
+
+static inline void msgpack_unpacked_destroy(msgpack_unpacked* result)
+{
+    if(result->zone != ((void*)0)) {
+        msgpack_zone_free(result->zone);
+        result->zone = ((void*)0);
+        __builtin___memset_chk (&result->data, 0, sizeof(msgpack_object), __builtin_object_size (&result->data, 0));
+    }
+}
+
+static inline msgpack_zone* msgpack_unpacked_release_zone(msgpack_unpacked* result)
+{
+    if(result->zone != ((void*)0)) {
+        msgpack_zone* z = result->zone;
+        result->zone = ((void*)0);
+        return z;
+    }
+    return ((void*)0);
+}
+# 29 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sbuffer.h" 1
+# 35 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sbuffer.h"
+typedef struct msgpack_sbuffer {
+    size_t size;
+    char* data;
+    size_t alloc;
+} msgpack_sbuffer;
+
+static inline void msgpack_sbuffer_init(msgpack_sbuffer* sbuf)
+{
+    __builtin___memset_chk (sbuf, 0, sizeof(msgpack_sbuffer), __builtin_object_size (sbuf, 0));
+}
+
+static inline void msgpack_sbuffer_destroy(msgpack_sbuffer* sbuf)
+{
+    free(sbuf->data);
+}
+
+static inline msgpack_sbuffer* msgpack_sbuffer_new(void)
+{
+    return (msgpack_sbuffer*)calloc(1, sizeof(msgpack_sbuffer));
+}
+
+static inline void msgpack_sbuffer_free(msgpack_sbuffer* sbuf)
+{
+    if(sbuf == ((void*)0)) { return; }
+    msgpack_sbuffer_destroy(sbuf);
+    free(sbuf);
+}
+
+
+
+
+
+static inline int msgpack_sbuffer_write(void* data, const char* buf, size_t len)
+{
+    msgpack_sbuffer* sbuf = (msgpack_sbuffer*)data;
+
+    if(sbuf->alloc - sbuf->size < len) {
+        void* tmp;
+        size_t nsize = (sbuf->alloc) ?
+                sbuf->alloc * 2 : 8192;
+
+        while(nsize < sbuf->size + len) {
+            size_t tmp_nsize = nsize * 2;
+            if (tmp_nsize <= nsize) {
+                nsize = sbuf->size + len;
+                break;
+            }
+            nsize = tmp_nsize;
+        }
+
+        tmp = realloc(sbuf->data, nsize);
+        if(!tmp) { return -1; }
+
+        sbuf->data = (char*)tmp;
+        sbuf->alloc = nsize;
+    }
+
+    __builtin___memcpy_chk (sbuf->data + sbuf->size, buf, len, __builtin_object_size (sbuf->data + sbuf->size, 0));
+    sbuf->size += len;
+    return 0;
+}
+
+static inline char* msgpack_sbuffer_release(msgpack_sbuffer* sbuf)
+{
+    char* tmp = sbuf->data;
+    sbuf->size = 0;
+    sbuf->data = ((void*)0);
+    sbuf->alloc = 0;
+    return tmp;
+}
+
+static inline void msgpack_sbuffer_clear(msgpack_sbuffer* sbuf)
+{
+    sbuf->size = 0;
+}
+# 30 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h" 1
+# 25 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h"
+# 1 "/usr/include/sys/uio.h" 1 3 4
+# 90 "/usr/include/sys/uio.h" 3 4
+enum uio_rw { UIO_READ, UIO_WRITE };
+
+
+
+
+
+ssize_t readv(int, const struct iovec *, int) __asm("_" "readv" );
+ssize_t writev(int, const struct iovec *, int) __asm("_" "writev" );
+# 26 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h" 2
+# 44 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h"
+struct msgpack_vrefbuffer_chunk;
+typedef struct msgpack_vrefbuffer_chunk msgpack_vrefbuffer_chunk;
+
+typedef struct msgpack_vrefbuffer_inner_buffer {
+    size_t free;
+    char* ptr;
+    msgpack_vrefbuffer_chunk* head;
+} msgpack_vrefbuffer_inner_buffer;
+
+typedef struct msgpack_vrefbuffer {
+    struct iovec* tail;
+    struct iovec* end;
+    struct iovec* array;
+
+    size_t chunk_size;
+    size_t ref_size;
+
+    msgpack_vrefbuffer_inner_buffer inner_buffer;
+} msgpack_vrefbuffer;
+# 74 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h"
+_Bool msgpack_vrefbuffer_init(msgpack_vrefbuffer* vbuf,
+        size_t ref_size, size_t chunk_size);
+
+void msgpack_vrefbuffer_destroy(msgpack_vrefbuffer* vbuf);
+
+static inline msgpack_vrefbuffer* msgpack_vrefbuffer_new(size_t ref_size, size_t chunk_size);
+static inline void msgpack_vrefbuffer_free(msgpack_vrefbuffer* vbuf);
+
+static inline int msgpack_vrefbuffer_write(void* data, const char* buf, size_t len);
+
+static inline const struct iovec* msgpack_vrefbuffer_vec(const msgpack_vrefbuffer* vref);
+static inline size_t msgpack_vrefbuffer_veclen(const msgpack_vrefbuffer* vref);
+
+
+int msgpack_vrefbuffer_append_copy(msgpack_vrefbuffer* vbuf,
+        const char* buf, size_t len);
+
+
+int msgpack_vrefbuffer_append_ref(msgpack_vrefbuffer* vbuf,
+        const char* buf, size_t len);
+
+
+int msgpack_vrefbuffer_migrate(msgpack_vrefbuffer* vbuf, msgpack_vrefbuffer* to);
+
+
+void msgpack_vrefbuffer_clear(msgpack_vrefbuffer* vref);
+
+
+
+
+static inline msgpack_vrefbuffer* msgpack_vrefbuffer_new(size_t ref_size, size_t chunk_size)
+{
+    msgpack_vrefbuffer* vbuf = (msgpack_vrefbuffer*)malloc(sizeof(msgpack_vrefbuffer));
+    if (vbuf == ((void*)0)) return ((void*)0);
+    if(!msgpack_vrefbuffer_init(vbuf, ref_size, chunk_size)) {
+        free(vbuf);
+        return ((void*)0);
+    }
+    return vbuf;
+}
+
+static inline void msgpack_vrefbuffer_free(msgpack_vrefbuffer* vbuf)
+{
+    if(vbuf == ((void*)0)) { return; }
+    msgpack_vrefbuffer_destroy(vbuf);
+    free(vbuf);
+}
+
+static inline int msgpack_vrefbuffer_write(void* data, const char* buf, size_t len)
+{
+    msgpack_vrefbuffer* vbuf = (msgpack_vrefbuffer*)data;
+
+    if(len < vbuf->ref_size) {
+        return msgpack_vrefbuffer_append_copy(vbuf, buf, len);
+    } else {
+        return msgpack_vrefbuffer_append_ref(vbuf, buf, len);
+    }
+}
+
+static inline const struct iovec* msgpack_vrefbuffer_vec(const msgpack_vrefbuffer* vref)
+{
+    return vref->array;
+}
+
+static inline size_t msgpack_vrefbuffer_veclen(const msgpack_vrefbuffer* vref)
+{
+    return (size_t)(vref->tail - vref->array);
+}
+# 31 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version.h" 1
+# 26 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version.h"
+const char* msgpack_version(void);
+
+int msgpack_version_major(void);
+
+int msgpack_version_minor(void);
+
+int msgpack_version_revision(void);
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version_master.h" 1
+# 35 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version.h" 2
+# 32 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.h" 2
+
+
+
+
+extern hashtab_T func_hashtab;
+
+
+typedef struct ufunc ufunc_T;
+
+struct ufunc {
+  int uf_varargs;
+  int uf_flags;
+  int uf_calls;
+  garray_T uf_args;
+  garray_T uf_lines;
+  int uf_profiling;
+
+  int uf_tm_count;
+  proftime_T uf_tm_total;
+  proftime_T uf_tm_self;
+  proftime_T uf_tm_children;
+
+  int *uf_tml_count;
+  proftime_T *uf_tml_total;
+  proftime_T *uf_tml_self;
+  proftime_T uf_tml_start;
+  proftime_T uf_tml_children;
+  proftime_T uf_tml_wait;
+  int uf_tml_idx;
+  int uf_tml_execed;
+  scid_T uf_script_ID;
+
+  int uf_refcount;
+  char_u uf_name[1];
+
+
+};
+
+
+extern ufunc_T dumuf;
+
+
 
 
 
@@ -21465,8 +23003,14 @@ enum {
     VV_PROGPATH,
     VV_COMMAND_OUTPUT,
     VV_COMPLETED_ITEM,
+    VV_MSGPACK_TYPES,
     VV_LEN,
 };
+
+
+
+
+int vim_to_msgpack(msgpack_packer *const, typval_T *const);
 # 24 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_docmd.h" 1
 # 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
@@ -21475,17 +23019,35 @@ enum {
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/indent.h" 1
 # 27 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark.h" 1
+# 52 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark.h"
+static inline int mark_global_index(const char name)
+  FUNC_ATTR_CONST
+{
+  return (((unsigned)(name) >= 'A' && (unsigned)(name) <= 'Z')
+          ? (name - 'A')
+          : (ascii_isdigit(name)
+             ? (('z' - 'a' + 1) + (name - '0'))
+             : -1));
+}
+
+
+static inline int mark_local_index(const char name)
+  FUNC_ATTR_CONST
+{
+  return (((unsigned)(name) >= 'a' && (unsigned)(name) <= 'z')
+          ? (name - 'a')
+          : (name == '"'
+             ? ('z' - 'a' + 1)
+             : (name == '^'
+                ? ('z' - 'a' + 1) + 1
+                : (name == '.'
+                   ? ('z' - 'a' + 1) + 2
+                   : -1))));
+}
 # 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/memline.h" 1
 # 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 1
 
-
-
-
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
-# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 2
-# 30 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/message.h" 1
 # 31 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc1.h" 1
@@ -21592,14 +23154,13 @@ int hasAnyFolding(win_T *win)
          && (!foldmethodIsManual(win) || !((&win->w_folds)->ga_len <= 0));
 }
 # 151 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
-int hasFolding(linenr_T lnum, linenr_T *firstp, linenr_T *lastp)
+_Bool hasFolding(linenr_T lnum, linenr_T *firstp, linenr_T *lastp)
 {
   return hasFoldingWin(curwin, lnum, firstp, lastp, 1, ((void*)0));
 }
 
 
-int
-hasFoldingWin (
+_Bool hasFoldingWin(
     win_T *win,
     linenr_T lnum,
     linenr_T *firstp,
@@ -21721,12 +23282,12 @@ int foldLevel(linenr_T lnum)
 
   return foldLevelWin(curwin, lnum);
 }
-# 288 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 287 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 int lineFolded(win_T *win, linenr_T lnum)
 {
   return foldedCount(win, lnum, ((void*)0)) != 0;
 }
-# 302 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 301 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 long foldedCount(win_T *win, linenr_T lnum, foldinfo_T *infop)
 {
   linenr_T last;
@@ -22087,7 +23648,7 @@ void foldCreate(linenr_T start, linenr_T end)
     changed_window_setting();
   }
 }
-# 670 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 669 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 void
 deleteFold (
     linenr_T start,
@@ -22181,7 +23742,7 @@ void clearFolding(win_T *win)
   deleteFoldRecurse(&win->w_folds);
   win->w_foldinvalid = 0;
 }
-# 771 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 770 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 void foldUpdate(win_T *wp, linenr_T top, linenr_T bot)
 {
   fold_T *fp;
@@ -22210,7 +23771,7 @@ void foldUpdate(win_T *wp, linenr_T top, linenr_T bot)
     got_int |= save_got_int;
   }
 }
-# 807 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 806 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 void foldUpdateAll(win_T *win)
 {
   win->w_foldinvalid = 1;
@@ -22345,7 +23906,7 @@ void foldInitWin(win_T *new_win)
 {
   ga_init(&new_win->w_folds, (int)sizeof(fold_T), 10);
 }
-# 949 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 948 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 int find_wl_entry(win_T *win, linenr_T lnum)
 {
   int i;
@@ -22432,7 +23993,7 @@ void cloneFoldGrowArray(garray_T *from, garray_T *to)
     ++to_p;
   }
 }
-# 1043 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 1042 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static int foldFind(garray_T *gap, linenr_T lnum, fold_T **fpp)
 {
   linenr_T low, high;
@@ -22555,7 +24116,7 @@ setManualFold (
 
   return setManualFoldWin(curwin, lnum, opening, recurse, donep);
 }
-# 1176 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 1175 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static linenr_T
 setManualFoldWin (
     win_T *wp,
@@ -22766,7 +24327,7 @@ static void foldMarkAdjustRecurse(garray_T *gap, linenr_T line1, linenr_T line2,
 
 
   for (int i = (int)(fp - (fold_T *)gap->ga_data); i < gap->ga_len; ++i, ++fp) {
-# 1398 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 1397 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
     last = fp->fd_top + fp->fd_len - 1;
 
 
@@ -23005,7 +24566,7 @@ deleteFoldMarkers (
   foldDelMarker(fp->fd_top + lnum_off + fp->fd_len - 1, foldendmarker,
                 foldendmarkerlen);
 }
-# 1644 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 1643 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static void foldDelMarker(linenr_T lnum, char_u *marker, size_t markerlen)
 {
   char_u *newline;
@@ -23214,7 +24775,7 @@ void foldtext_cleanup(char_u *str)
     }
   }
 }
-# 1861 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 1860 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static void foldUpdateIEMS(win_T *wp, linenr_T top, linenr_T bot)
 {
   linenr_T start;
@@ -23318,7 +24879,7 @@ static void foldUpdateIEMS(win_T *wp, linenr_T top, linenr_T bot)
         break;
     }
   }
-# 1972 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 1971 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
   if (foldlevelSyntax == getlevel) {
     garray_T *gap = &wp->w_folds;
     fold_T *fpn = ((void*)0);
@@ -23413,7 +24974,7 @@ static void foldUpdateIEMS(win_T *wp, linenr_T top, linenr_T bot)
 
   invalid_top = (linenr_T)0;
 }
-# 2091 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 2090 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static linenr_T foldUpdateIEMSRecurse(garray_T *gap, int level,
                                       linenr_T startlnum, fline_T *flp,
                                       LevelGetter getlevel,
@@ -23445,7 +25006,7 @@ static linenr_T foldUpdateIEMSRecurse(garray_T *gap, int level,
         || fp->fd_top >= startlnum)
       fp = ((void*)0);
   }
-# 2134 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 2133 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
   flp->lnum_save = flp->lnum;
   while (!got_int) {
 
@@ -23689,7 +25250,7 @@ static linenr_T foldUpdateIEMSRecurse(garray_T *gap, int level,
 
   if (fp == ((void*)0))
     return bot;
-# 2385 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 2384 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
   if (fp->fd_len < flp->lnum - fp->fd_top) {
     fp->fd_len = flp->lnum - fp->fd_top;
     fp->fd_small = 2;
@@ -23777,7 +25338,7 @@ static void foldInsert(garray_T *gap, int i)
   ++gap->ga_len;
   ga_init(&fp->fd_nested, (int)sizeof(fold_T), 10);
 }
-# 2481 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 2480 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static void foldSplit(garray_T *gap, int i, linenr_T top, linenr_T bot)
 {
   fold_T *fp;
@@ -23816,7 +25377,7 @@ static void foldSplit(garray_T *gap, int i, linenr_T top, linenr_T bot)
   fp->fd_len = top - fp->fd_top;
   fold_changed = 1;
 }
-# 2539 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 2538 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static void foldRemove(garray_T *gap, linenr_T top, linenr_T bot)
 {
   fold_T *fp = ((void*)0);
@@ -23862,7 +25423,7 @@ static void foldRemove(garray_T *gap, linenr_T top, linenr_T bot)
     }
   }
 }
-# 2593 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 2592 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static void foldMerge(fold_T *fp1, garray_T *gap, fold_T *fp2)
 {
   fold_T *fp3;
@@ -23919,7 +25480,7 @@ static void foldlevelIndent(fline_T *flp)
   } else
     flp->lvl = get_indent_buf(buf, lnum) / get_sw_value(curbuf);
   if (flp->lvl > flp->wp->w_onebuf_opt.wo_fdn) {
-    flp->lvl = (int) (0 > flp->wp->w_onebuf_opt.wo_fdn ? 0 : flp->wp->w_onebuf_opt.wo_fdn);
+    flp->lvl = (int) (((0)>(flp->wp->w_onebuf_opt.wo_fdn))?(0):(flp->wp->w_onebuf_opt.wo_fdn));
   }
 }
 
@@ -24039,7 +25600,7 @@ static void parseMarker(win_T *wp)
   foldstartmarkerlen = (size_t)(foldendmarker++ - wp->w_onebuf_opt.wo_fmr);
   foldendmarkerlen = strlen((char *)(foldendmarker));
 }
-# 2780 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 2779 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 static void foldlevelMarker(fline_T *flp)
 {
   char_u *startmarker;
@@ -24125,7 +25686,7 @@ static void foldlevelSyntax(fline_T *flp)
     }
   }
 }
-# 2873 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
+# 2872 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.c"
 int put_folds(FILE *fd, win_T *wp)
 {
   if (foldmethodIsManual(wp)) {

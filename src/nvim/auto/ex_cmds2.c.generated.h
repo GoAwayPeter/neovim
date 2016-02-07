@@ -5,7 +5,8 @@
 #undef DEFINE_FUNC_ATTRIBUTES
 static int dbg_parsearg(char_u *arg, garray_T *gap );
 static linenr_T debuggy_find(int file, char_u *fname, linenr_T after, garray_T *gap, int *fp );
-static void script_do_profile(scriptitem_T *si);
+static void profile_reset(void);
+static void profile_init(scriptitem_T *si);
 static void script_dump_profile(FILE *fd);
 static void add_bufnum(int *bufnrs, int *bufnump, int nr);
 static char_u *do_one_arg(char_u *str);

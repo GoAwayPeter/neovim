@@ -10,7 +10,6 @@ static int empty_curbuf(int close_others, int forceit, int action);
 static buf_T *buflist_findname_file_id(char_u *ffname, FileID *file_id, _Bool file_id_valid);
 static char_u *buflist_match(regmatch_T *rmp, buf_T *buf, _Bool ignore_case);
 static char_u *fname_match(regmatch_T *rmp, char_u *name, _Bool ignore_case);
-static void buflist_setfpos(buf_T *buf, win_T *win, linenr_T lnum, colnr_T col, int copy_options);
 static _Bool wininfo_other_tab_diff(wininfo_T *wip);
 static wininfo_T *find_wininfo(buf_T *buf, int skip_diff_buffer);
 static int otherfile_buf(buf_T *buf, char_u *ffname, FileID *file_id_p, _Bool file_id_valid);

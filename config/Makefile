@@ -101,6 +101,26 @@ list_install_components:
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /Users/George/Documents/Programs/C/neovim && /usr/local/Cellar/cmake/3.2.3/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /Users/George/Documents/Programs/C/neovim && /usr/local/Cellar/cmake/3.2.3/bin/cpack --config ./CPackSourceConfig.cmake /Users/George/Documents/Programs/C/neovim/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -153,6 +173,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... install/local"
 .PHONY : help
 

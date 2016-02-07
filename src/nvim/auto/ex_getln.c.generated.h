@@ -3,6 +3,12 @@
 #endif
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
+static uint8_t *command_line_enter(int firstc, long count, int indent);
+static int command_line_check(VimState *state);
+static int command_line_execute(VimState *state, int key);
+static int command_line_handle_key(CommandLineState *s);
+static int command_line_not_changed(CommandLineState *s);
+static int command_line_changed(CommandLineState *s);
 static int cmdline_charsize(int idx);
 static void set_cmdspos(void);
 static void set_cmdspos_cursor(void);
@@ -32,10 +38,10 @@ static int ExpandUserList(expand_T *xp, int *num_file, char_u ***file);
 static int ExpandRTDir(char_u *pat, int *num_file, char_u ***file, char *dirnames[]);
 static int hist_char2type(int c);
 static char_u *get_history_arg(expand_T *xp, int idx);
-static void clear_hist_entry(histentry_T *hisptr);
-static int in_history(int type, char_u *str, int move_to_front, int sep, int writing );
+static inline void hist_free_entry(histentry_T *hisptr) FUNC_ATTR_NONNULL_ALL;
+static inline void clear_hist_entry(histentry_T *hisptr) FUNC_ATTR_NONNULL_ALL;
+static int in_history(int type, char_u *str, int move_to_front, int sep );
 static struct cmdline_info *get_ccline_ptr(void);
 static int calc_hist_idx(int histype, int num);
-static int hist_type2char(int type, int use_question );
 static int ex_window(void);
 #include "nvim/func_attr.h"

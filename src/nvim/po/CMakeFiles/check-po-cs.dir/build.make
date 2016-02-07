@@ -48,7 +48,7 @@ include src/nvim/po/CMakeFiles/check-po-cs.dir/progress.make
 src/nvim/po/CMakeFiles/check-po-cs: src/nvim/po/cs.po
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Checking cs.po"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim/po && ../../../bin/nvim -u NONE -n -e -X -S /Users/George/Documents/Programs/C/neovim/src/nvim/po/check.vim -c "if error == 0 | q | endif" -c cq /Users/George/Documents/Programs/C/neovim/src/nvim/po/cs.po || /usr/local/Cellar/cmake/3.2.3/bin/cmake -E echo "cs.po failed the check."
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim/po && ../../../bin/nvim -u NONE -n -e -S /Users/George/Documents/Programs/C/neovim/src/nvim/po/check.vim -c "if error == 0 | q | endif" -c cq /Users/George/Documents/Programs/C/neovim/src/nvim/po/cs.po || /usr/local/Cellar/cmake/3.2.3/bin/cmake -E echo "cs.po failed the check."
 
 check-po-cs: src/nvim/po/CMakeFiles/check-po-cs
 check-po-cs: src/nvim/po/CMakeFiles/check-po-cs.dir/build.make

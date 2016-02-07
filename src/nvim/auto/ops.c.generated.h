@@ -6,6 +6,7 @@
 static void shift_block(oparg_T *oap, int amount);
 static void block_insert(oparg_T *oap, char_u *s, int b_insert, struct block_def *bdp);
 static _Bool is_append_register(int regname);
+static void set_yreg_additional_data(yankreg_T *reg, dict_T *additional_data) FUNC_ATTR_NONNULL_ARG(1);
 static int stuff_yank(int regname, char_u *p);
 static void put_reedit_in_typebuf(int silent);
 static int put_in_typebuf(char_u *s, int esc, int colon, int silent );
@@ -27,7 +28,8 @@ static yankreg_T *init_write_reg(int name, yankreg_T **old_y_previous, _Bool mus
 static void finish_write_reg(int name, yankreg_T *reg, yankreg_T *old_y_previous);
 static void str_to_reg(yankreg_T *y_ptr, int yank_type, const char_u *str, size_t len, colnr_T blocklen, _Bool str_list) FUNC_ATTR_NONNULL_ALL;
 static long line_count_info(char_u *line, long *wc, long *cc, long limit, int eol_size);
-static yankreg_T *adjust_clipboard_name(int *name, _Bool quiet);
+static yankreg_T *adjust_clipboard_name(int *name, _Bool quiet, _Bool writing);
 static _Bool get_clipboard(int name, yankreg_T **target, _Bool quiet);
 static void set_clipboard(int name, yankreg_T *reg);
+static inline _Bool reg_empty(const yankreg_T *const reg) FUNC_ATTR_PURE;
 #include "nvim/func_attr.h"

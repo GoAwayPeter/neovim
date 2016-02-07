@@ -4,7 +4,6 @@
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
 void set_init_1(void);
-void set_string_default(const char *name, const char_u *val);
 void set_number_default(char *name, long val);
 void set_init_2(void);
 void set_init_3(void);
@@ -12,8 +11,8 @@ void set_helplang_default(const char *lang);
 void set_title_defaults(void);
 int do_set(char_u *arg, int opt_flags );
 void set_options_bin(int oldval, int newval, int opt_flags );
-int get_viminfo_parameter(int type);
-char_u *find_viminfo_parameter(int type);
+int get_shada_parameter(int type);
+char_u *find_shada_parameter(int type);
 void check_options(void);
 void check_buf_options(buf_T *buf);
 void free_string_option(char_u *p);
@@ -51,9 +50,9 @@ int has_format_option(int x);
 int shortmess(int x);
 void vimrc_found(char_u *fname, char_u *envname);
 int option_was_set(char_u *name);
-int can_bs(int what );
+_Bool can_bs(int what);
 void save_file_ff(buf_T *buf);
-int file_ff_differs(buf_T *buf, int ignore_empty);
+_Bool file_ff_differs(buf_T *buf, _Bool ignore_empty);
 int check_ff_value(char_u *p);
 int get_sw_value(buf_T *buf);
 int get_sts_value(void);

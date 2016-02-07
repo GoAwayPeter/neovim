@@ -1,11 +1,3 @@
-/*
- * VIM - Vi IMproved	by Bram Moolenaar
- *
- * Do ":help uganda"  in Vim to read copying and usage conditions.
- * Do ":help credits" in Vim to see a list of people who contributed.
- * See README.md for an overview of the Vim source code.
- */
-
 /* for debugging */
 /* #define CHECK(c, s)	if (c) EMSG(s) */
 #define CHECK(c, s)
@@ -46,6 +38,7 @@
 #include <inttypes.h>
 #include <string.h>
 #include <stdbool.h>
+#include <fcntl.h>
 
 #include "nvim/ascii.h"
 #include "nvim/vim.h"
@@ -3962,8 +3955,10 @@ long ml_find_line_or_offset(buf_T *buf, linenr_T lnum, long *offp)
     if (ffdos)
       size += lnum - 1;
 
-    /* Don't count the last line break if 'bin' and 'noeol'. */
-    if (buf->b_p_bin && !buf->b_p_eol && buf->b_ml.ml_line_count == lnum) {
+    /* Don't count the last line break if 'noeol' and ('bin' or
+     * 'nofixeol'). */
+    if ((!buf->b_p_fixeol || buf->b_p_bin) && !buf->b_p_eol
+        && buf->b_ml.ml_line_count == lnum) {
       size -= ffdos + 1;
     }
   }

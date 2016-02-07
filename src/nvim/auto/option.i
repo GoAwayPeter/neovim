@@ -1,7 +1,7 @@
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 321 "<built-in>" 3
+# 325 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
@@ -9,12 +9,12 @@
 # 1 "/usr/include/assert.h" 1 3 4
 # 42 "/usr/include/assert.h" 3 4
 # 1 "/usr/include/sys/cdefs.h" 1 3 4
-# 506 "/usr/include/sys/cdefs.h" 3 4
+# 533 "/usr/include/sys/cdefs.h" 3 4
 # 1 "/usr/include/sys/_symbol_aliasing.h" 1 3 4
-# 507 "/usr/include/sys/cdefs.h" 2 3 4
-# 572 "/usr/include/sys/cdefs.h" 3 4
+# 534 "/usr/include/sys/cdefs.h" 2 3 4
+# 599 "/usr/include/sys/cdefs.h" 3 4
 # 1 "/usr/include/sys/_posix_availability.h" 1 3 4
-# 573 "/usr/include/sys/cdefs.h" 2 3 4
+# 600 "/usr/include/sys/cdefs.h" 2 3 4
 # 43 "/usr/include/assert.h" 2 3 4
 # 76 "/usr/include/assert.h" 3 4
 void __assert_rtn(const char *, const char *, int, const char *) __attribute__((noreturn));
@@ -36,9 +36,9 @@ extern int * __error(void);
 # 1 "/usr/include/inttypes.h" 1 3 4
 # 224 "/usr/include/inttypes.h" 3 4
 # 1 "/usr/include/Availability.h" 1 3 4
-# 153 "/usr/include/Availability.h" 3 4
+# 164 "/usr/include/Availability.h" 3 4
 # 1 "/usr/include/AvailabilityInternal.h" 1 3 4
-# 154 "/usr/include/Availability.h" 2 3 4
+# 165 "/usr/include/Availability.h" 2 3 4
 # 225 "/usr/include/inttypes.h" 2 3 4
 
 # 1 "/usr/include/_types.h" 1 3 4
@@ -221,8 +221,8 @@ typedef __uint32_t __darwin_wctype_t;
 typedef __darwin_wchar_t wchar_t;
 # 228 "/usr/include/inttypes.h" 2 3 4
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 1 3 4
-# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 1 3 4
+# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
 # 18 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/sys/_types/_int8_t.h" 1 3 4
@@ -304,7 +304,7 @@ typedef long int intmax_t;
 # 32 "/usr/include/_types/_uintmax_t.h" 3 4
 typedef long unsigned int uintmax_t;
 # 60 "/usr/include/stdint.h" 2 3 4
-# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 2 3 4
+# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 2 3 4
 # 230 "/usr/include/inttypes.h" 2 3 4
 
 
@@ -350,7 +350,7 @@ wcstoumax(const wchar_t * restrict __nptr,
    wchar_t ** restrict __endptr,
    int __base);
 # 35 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdbool.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdbool.h" 1 3 4
 # 36 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
 
 # 1 "/usr/include/string.h" 1 3 4
@@ -520,14 +520,15 @@ typedef __darwin_id_t id_t;
 
 
 
+
 # 1 "/usr/include/machine/signal.h" 1 3 4
 # 32 "/usr/include/machine/signal.h" 3 4
 # 1 "/usr/include/i386/signal.h" 1 3 4
 # 39 "/usr/include/i386/signal.h" 3 4
 typedef int sig_atomic_t;
 # 33 "/usr/include/machine/signal.h" 2 3 4
-# 82 "/usr/include/sys/signal.h" 2 3 4
-# 145 "/usr/include/sys/signal.h" 3 4
+# 83 "/usr/include/sys/signal.h" 2 3 4
+# 146 "/usr/include/sys/signal.h" 3 4
 # 1 "/usr/include/machine/_mcontext.h" 1 3 4
 # 29 "/usr/include/machine/_mcontext.h" 3 4
 # 1 "/usr/include/i386/_mcontext.h" 1 3 4
@@ -912,12 +913,12 @@ struct __darwin_mcontext_avx64
 # 115 "/usr/include/i386/_mcontext.h" 3 4
 typedef struct __darwin_mcontext64 *mcontext_t;
 # 30 "/usr/include/machine/_mcontext.h" 2 3 4
-# 146 "/usr/include/sys/signal.h" 2 3 4
+# 147 "/usr/include/sys/signal.h" 2 3 4
 
 # 1 "/usr/include/sys/_pthread/_pthread_attr_t.h" 1 3 4
 # 30 "/usr/include/sys/_pthread/_pthread_attr_t.h" 3 4
 typedef __darwin_pthread_attr_t pthread_attr_t;
-# 148 "/usr/include/sys/signal.h" 2 3 4
+# 149 "/usr/include/sys/signal.h" 2 3 4
 
 # 1 "/usr/include/sys/_types/_sigaltstack.h" 1 3 4
 # 36 "/usr/include/sys/_types/_sigaltstack.h" 3 4
@@ -928,7 +929,7 @@ struct __darwin_sigaltstack
  int ss_flags;
 };
 typedef struct __darwin_sigaltstack stack_t;
-# 150 "/usr/include/sys/signal.h" 2 3 4
+# 151 "/usr/include/sys/signal.h" 2 3 4
 # 1 "/usr/include/sys/_types/_ucontext.h" 1 3 4
 # 34 "/usr/include/sys/_types/_ucontext.h" 3 4
 struct __darwin_ucontext
@@ -946,18 +947,18 @@ struct __darwin_ucontext
 
 
 typedef struct __darwin_ucontext ucontext_t;
-# 151 "/usr/include/sys/signal.h" 2 3 4
+# 152 "/usr/include/sys/signal.h" 2 3 4
 
 
 # 1 "/usr/include/sys/_types/_sigset_t.h" 1 3 4
 # 30 "/usr/include/sys/_types/_sigset_t.h" 3 4
 typedef __darwin_sigset_t sigset_t;
-# 154 "/usr/include/sys/signal.h" 2 3 4
+# 155 "/usr/include/sys/signal.h" 2 3 4
 
 # 1 "/usr/include/sys/_types/_uid_t.h" 1 3 4
 # 30 "/usr/include/sys/_types/_uid_t.h" 3 4
 typedef __darwin_uid_t uid_t;
-# 156 "/usr/include/sys/signal.h" 2 3 4
+# 157 "/usr/include/sys/signal.h" 2 3 4
 
 union sigval {
 
@@ -990,7 +991,7 @@ typedef struct __siginfo {
  long si_band;
  unsigned long __pad[7];
 } siginfo_t;
-# 268 "/usr/include/sys/signal.h" 3 4
+# 269 "/usr/include/sys/signal.h" 3 4
 union __sigaction_u {
  void (*__sa_handler)(int);
  void (*__sa_sigaction)(int, struct __siginfo *,
@@ -1013,20 +1014,20 @@ struct sigaction {
  sigset_t sa_mask;
  int sa_flags;
 };
-# 330 "/usr/include/sys/signal.h" 3 4
+# 331 "/usr/include/sys/signal.h" 3 4
 typedef void (*sig_t)(int);
-# 347 "/usr/include/sys/signal.h" 3 4
+# 348 "/usr/include/sys/signal.h" 3 4
 struct sigvec {
  void (*sv_handler)(int);
  int sv_mask;
  int sv_flags;
 };
-# 366 "/usr/include/sys/signal.h" 3 4
+# 367 "/usr/include/sys/signal.h" 3 4
 struct sigstack {
  char *ss_sp;
  int ss_onstack;
 };
-# 389 "/usr/include/sys/signal.h" 3 4
+# 390 "/usr/include/sys/signal.h" 3 4
 void (*signal(int, void (*)(int)))(int);
 # 110 "/usr/include/sys/wait.h" 2 3 4
 # 1 "/usr/include/sys/resource.h" 1 3 4
@@ -1380,7 +1381,7 @@ unsigned long
 unsigned long long
   strtoull(const char *, char **, int);
 
-int system(const char *) __asm("_" "system" ) __attribute__((availability(macosx,introduced=10.0)));
+int system(const char *) __asm("_" "system" ) __attribute__((availability(macosx,introduced=10.0))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 size_t wcstombs(char * restrict, const wchar_t * restrict, size_t);
 int wctomb(char *, wchar_t);
 
@@ -1505,7 +1506,7 @@ int cgetset(const char *);
 int cgetstr(char *, const char *, char **);
 int cgetustr(char *, const char *, char **);
 
-int daemon(int, int) __asm("_" "daemon" "$1050") __attribute__((availability(macosx,introduced=10.0,deprecated=10.5)));
+int daemon(int, int) __asm("_" "daemon" "$1050") __attribute__((availability(macosx,introduced=10.0,deprecated=10.5,message="Use posix_spawn APIs instead."))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 char *devname(dev_t, mode_t);
 char *devname_r(dev_t, mode_t, char *buf, int len);
 char *getbsize(int *, long *);
@@ -1556,8 +1557,8 @@ unsigned long long
 extern char *suboptarg;
 void *valloc(size_t);
 # 40 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 1 3 4
-# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 1 3 4
+# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 64 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/machine/limits.h" 1 3 4
@@ -1574,11 +1575,11 @@ void *valloc(size_t);
 # 65 "/usr/include/limits.h" 2 3 4
 # 1 "/usr/include/sys/syslimits.h" 1 3 4
 # 66 "/usr/include/limits.h" 2 3 4
-# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 2 3 4
+# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 2 3 4
 # 41 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h" 1
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h"
 typedef void *vim_acl_T;
@@ -1589,7 +1590,7 @@ typedef unsigned char char_u;
 
 
 typedef uint32_t u8char_T;
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 12 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/pos.h" 1
 
 
@@ -1618,11 +1619,11 @@ typedef struct {
   linenr_T lnum;
   colnr_T col;
 } lpos_T;
-# 16 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 27 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 24 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/config/auto/config.h" 1
-# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 49 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 46 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 1
 
 
@@ -2199,7 +2200,7 @@ struct stat64 { dev_t st_dev; mode_t st_mode; nlink_t st_nlink; __darwin_ino64_t
 # 241 "/usr/include/sys/stat.h" 3 4
 # 1 "/usr/include/sys/_types/_s_ifmt.h" 1 3 4
 # 242 "/usr/include/sys/stat.h" 2 3 4
-# 351 "/usr/include/sys/stat.h" 3 4
+# 352 "/usr/include/sys/stat.h" 3 4
 int chmod(const char *, mode_t) __asm("_" "chmod" );
 int fchmod(int, mode_t) __asm("_" "fchmod" );
 int fstat(int, struct stat *) __asm("_" "fstat" "$INODE64");
@@ -2223,7 +2224,7 @@ int mkdirat(int, const char *, mode_t) __attribute__((availability(macosx,introd
 # 30 "/usr/include/sys/_types/_filesec_t.h" 3 4
 struct _filesec;
 typedef struct _filesec *filesec_t;
-# 370 "/usr/include/sys/stat.h" 2 3 4
+# 371 "/usr/include/sys/stat.h" 2 3 4
 
 int chflags(const char *, __uint32_t);
 int chmodx_np(const char *, filesec_t);
@@ -2447,7 +2448,7 @@ int symlinkat(const char *, int, const char *) __attribute__((availability(macos
 int unlinkat(int, const char *, int) __attribute__((availability(macosx,introduced=10.10)));
 int getattrlistat(int, const char *, void *, void *, size_t, unsigned long) __attribute__((availability(macosx,introduced=10.10)));
 # 73 "/usr/include/unistd.h" 2 3 4
-# 424 "/usr/include/unistd.h" 3 4
+# 429 "/usr/include/unistd.h" 3 4
 void _exit(int) __attribute__((noreturn));
 int access(const char *, int);
 unsigned int
@@ -2459,13 +2460,13 @@ int close(int) __asm("_" "close" );
 
 int dup(int);
 int dup2(int, int);
-int execl(const char *, const char *, ...);
-int execle(const char *, const char *, ...);
-int execlp(const char *, const char *, ...);
-int execv(const char *, char * const *);
-int execve(const char *, char * const *, char * const *);
-int execvp(const char *, char * const *);
-pid_t fork(void);
+int execl(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execle(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execlp(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execv(const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execve(const char *, char * const *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execvp(const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+pid_t fork(void) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 long fpathconf(int, int);
 char *getcwd(char *, size_t);
 gid_t getegid(void);
@@ -2515,15 +2516,15 @@ int ttyname_r(int, char *, size_t) __asm("_" "ttyname_r" );
 int unlink(const char *);
 
 ssize_t write(int, const void *, size_t) __asm("_" "write" );
-# 501 "/usr/include/unistd.h" 3 4
+# 506 "/usr/include/unistd.h" 3 4
 size_t confstr(int, char *, size_t) __asm("_" "confstr" );
 
 int getopt(int, char * const [], const char *) __asm("_" "getopt" );
 
 extern char *optarg;
 extern int optind, opterr, optopt;
-# 531 "/usr/include/unistd.h" 3 4
-__attribute__((deprecated))
+# 536 "/usr/include/unistd.h" 3 4
+__attribute__((deprecated)) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 
 void *brk(const void *);
 int chroot(const char *) ;
@@ -2572,7 +2573,7 @@ ssize_t pwrite(int, const void *, size_t, off_t) __asm("_" "pwrite" );
 
 
 
-__attribute__((deprecated))
+__attribute__((deprecated)) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 
 void *sbrk(int);
 
@@ -2592,21 +2593,21 @@ void sync(void);
 int truncate(const char *, off_t);
 useconds_t ualarm(useconds_t, useconds_t);
 int usleep(useconds_t) __asm("_" "usleep" );
-pid_t vfork(void);
+pid_t vfork(void) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 
 
 int fsync(int) __asm("_" "fsync" );
 
 int ftruncate(int, off_t);
 int getlogin_r(char *, size_t);
-# 619 "/usr/include/unistd.h" 3 4
+# 624 "/usr/include/unistd.h" 3 4
 int fchown(int, uid_t, gid_t);
 int gethostname(char *, size_t);
 ssize_t readlink(const char * restrict, char * restrict, size_t);
 int setegid(gid_t);
 int seteuid(uid_t);
 int symlink(const char *, const char *);
-# 633 "/usr/include/unistd.h" 3 4
+# 638 "/usr/include/unistd.h" 3 4
 # 1 "/usr/include/sys/select.h" 1 3 4
 # 114 "/usr/include/sys/select.h" 3 4
 int pselect(int, fd_set * restrict, fd_set * restrict,
@@ -2640,22 +2641,22 @@ int select(int, fd_set * restrict, fd_set * restrict,
 
   ;
 # 130 "/usr/include/sys/select.h" 2 3 4
-# 634 "/usr/include/unistd.h" 2 3 4
+# 639 "/usr/include/unistd.h" 2 3 4
 
 
 
 # 1 "/usr/include/sys/_types/_uuid_t.h" 1 3 4
 # 30 "/usr/include/sys/_types/_uuid_t.h" 3 4
 typedef __darwin_uuid_t uuid_t;
-# 638 "/usr/include/unistd.h" 2 3 4
+# 643 "/usr/include/unistd.h" 2 3 4
 
 
 void _Exit(int) __attribute__((noreturn));
 int accessx_np(const struct accessx_descriptor *, size_t, int *, uid_t);
 int acct(const char *);
-int add_profil(char *, size_t, unsigned long, unsigned int);
+int add_profil(char *, size_t, unsigned long, unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 void endusershell(void);
-int execvP(const char *, const char *, char * const *);
+int execvP(const char *, const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 char *fflagstostr(unsigned long);
 int getdomainname(char *, int);
 int getgrouplist(const char *, int, int *, int *);
@@ -2667,7 +2668,7 @@ int getgrouplist(const char *, int, int *, int *);
 # 1 "/usr/include/gethostuuid.h" 1 3 4
 # 39 "/usr/include/gethostuuid.h" 3 4
 int gethostuuid(uuid_t, const struct timespec *) __attribute__((availability(macosx,introduced=10.5)));
-# 654 "/usr/include/unistd.h" 2 3 4
+# 659 "/usr/include/unistd.h" 2 3 4
 
 
 
@@ -2717,7 +2718,7 @@ void setusershell(void);
 int setwgroups_np(int, const uuid_t);
 int strtofflags(char **, unsigned long *, unsigned long *);
 int swapon(const char *);
-int syscall(int, ...);
+int syscall(int, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 int ttyslot(void);
 int undelete(const char *);
 int unwhiteout(const char *);
@@ -2732,13 +2733,13 @@ int fgetattrlist(int,void*,void*,size_t,unsigned int) __attribute__((availabilit
 int fsetattrlist(int,void*,void*,size_t,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
 int getattrlist(const char*,void*,void*,size_t,unsigned int) __asm("_" "getattrlist" );
 int setattrlist(const char*,void*,void*,size_t,unsigned int) __asm("_" "setattrlist" );
-int exchangedata(const char*,const char*,unsigned int);
-int getdirentriesattr(int,void*,void*,size_t,unsigned int*,unsigned int*,unsigned int*,unsigned int);
-# 731 "/usr/include/unistd.h" 3 4
+int exchangedata(const char*,const char*,unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int getdirentriesattr(int,void*,void*,size_t,unsigned int*,unsigned int*,unsigned int*,unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+# 736 "/usr/include/unistd.h" 3 4
 struct fssearchblock;
 struct searchstate;
 
-int searchfs(const char *, struct fssearchblock *, unsigned long *, unsigned int, unsigned int, struct searchstate *);
+int searchfs(const char *, struct fssearchblock *, unsigned long *, unsigned int, unsigned int, struct searchstate *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 int fsctl(const char *,unsigned long,void*,unsigned int);
 int ffsctl(int,unsigned long,void*,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
 
@@ -2770,7 +2771,7 @@ int pthread_sigmask(int, const sigset_t *, sigset_t *) __asm("_" "pthread_sigmas
 int sigaction(int, const struct sigaction * restrict,
      struct sigaction * restrict);
 int sigaddset(sigset_t *, int);
-int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" );
+int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" ) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 int sigdelset(sigset_t *, int);
 int sigemptyset(sigset_t *);
 int sigfillset(sigset_t *);
@@ -2817,115 +2818,14 @@ __sigbits(int __signo)
 # 108 "/usr/include/sys/param.h" 2 3 4
 # 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-# 38 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h"
-# 1 "/usr/include/time.h" 1 3 4
-# 73 "/usr/include/time.h" 3 4
-struct tm {
- int tm_sec;
- int tm_min;
- int tm_hour;
- int tm_mday;
- int tm_mon;
- int tm_year;
- int tm_wday;
- int tm_yday;
- int tm_isdst;
- long tm_gmtoff;
- char *tm_zone;
-};
-# 96 "/usr/include/time.h" 3 4
-extern char *tzname[];
-
-
-extern int getdate_err;
-
-extern long timezone __asm("_" "timezone" );
-
-extern int daylight;
-
-
-char *asctime(const struct tm *);
-clock_t clock(void) __asm("_" "clock" );
-char *ctime(const time_t *);
-double difftime(time_t, time_t);
-struct tm *getdate(const char *);
-struct tm *gmtime(const time_t *);
-struct tm *localtime(const time_t *);
-time_t mktime(struct tm *) __asm("_" "mktime" );
-size_t strftime(char * restrict, size_t, const char * restrict, const struct tm * restrict) __asm("_" "strftime" );
-char *strptime(const char * restrict, const char * restrict, struct tm * restrict) __asm("_" "strptime" );
-time_t time(time_t *);
-
-
-void tzset(void);
-
-
-
-char *asctime_r(const struct tm * restrict, char * restrict);
-char *ctime_r(const time_t *, char *);
-struct tm *gmtime_r(const time_t * restrict, struct tm * restrict);
-struct tm *localtime_r(const time_t * restrict, struct tm * restrict);
-
-
-time_t posix2time(time_t);
-
-
-
-void tzsetwall(void);
-time_t time2posix(time_t);
-time_t timelocal(struct tm * const);
-time_t timegm(struct tm * const);
-
-
-
-int nanosleep(const struct timespec *, struct timespec *) __asm("_" "nanosleep" );
-# 39 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-
-
-
-# 1 "/usr/include/sys/time.h" 1 3 4
-# 86 "/usr/include/sys/time.h" 3 4
-struct itimerval {
- struct timeval it_interval;
- struct timeval it_value;
-};
-# 124 "/usr/include/sys/time.h" 3 4
-struct timezone {
- int tz_minuteswest;
- int tz_dsttime;
-};
-# 167 "/usr/include/sys/time.h" 3 4
-struct clockinfo {
- int hz;
- int tick;
- int tickadj;
- int stathz;
- int profhz;
-};
-# 184 "/usr/include/sys/time.h" 3 4
-int adjtime(const struct timeval *, struct timeval *);
-int futimes(int, const struct timeval *);
-int lutimes(const char *, const struct timeval *) __attribute__((availability(macosx,introduced=10.5)));
-int settimeofday(const struct timeval *, const struct timezone *);
-
-
-int getitimer(int, struct itimerval *);
-int gettimeofday(struct timeval * restrict, void * restrict);
-
-
-
-int setitimer(int, const struct itimerval * restrict,
-  struct itimerval * restrict);
-int utimes(const char *, const struct timeval *);
-# 43 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-# 50 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 47 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 
 
 
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h" 1
-# 132 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h"
+# 127 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h"
 enum key_extra {
   KE_NAME = 3
 
@@ -3044,15 +2944,16 @@ enum key_extra {
   , KE_X2RELEASE
 
   , KE_DROP
-  , KE_CURSORHOLD
   , KE_NOP
   , KE_FOCUSGAINED
   , KE_FOCUSLOST
   , KE_EVENT
+  , KE_PASTE
+
 };
-# 56 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 53 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/macros.h" 1
-# 57 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 54 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 
 
 
@@ -3147,8 +3048,8 @@ extern char *libintl_bind_textdomain_codeset (const char *__domainname,
 extern void
        libintl_set_relocation_prefix (const char *orig_prefix,
           const char *curr_prefix);
-# 65 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 138 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 62 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 135 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 enum {
   EXPAND_UNSUCCESSFUL = -2,
   EXPAND_OK = -1,
@@ -3198,7 +3099,7 @@ enum {
   EXPAND_SYNTIME,
   EXPAND_USER_ADDR_TYPE,
 };
-# 246 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 243 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/usr/include/fcntl.h" 1 3 4
 # 23 "/usr/include/fcntl.h" 3 4
 # 1 "/usr/include/sys/fcntl.h" 1 3 4
@@ -3208,10 +3109,10 @@ enum {
 # 157 "/usr/include/sys/fcntl.h" 3 4
 # 1 "/usr/include/sys/_types/_o_dsync.h" 1 3 4
 # 158 "/usr/include/sys/fcntl.h" 2 3 4
-# 296 "/usr/include/sys/fcntl.h" 3 4
+# 306 "/usr/include/sys/fcntl.h" 3 4
 # 1 "/usr/include/sys/_types/_seek_set.h" 1 3 4
-# 297 "/usr/include/sys/fcntl.h" 2 3 4
-# 321 "/usr/include/sys/fcntl.h" 3 4
+# 307 "/usr/include/sys/fcntl.h" 2 3 4
+# 331 "/usr/include/sys/fcntl.h" 3 4
 struct flock {
  off_t l_start;
  off_t l_len;
@@ -3219,12 +3120,12 @@ struct flock {
  short l_type;
  short l_whence;
 };
-# 336 "/usr/include/sys/fcntl.h" 3 4
+# 346 "/usr/include/sys/fcntl.h" 3 4
 struct flocktimeout {
  struct flock fl;
  struct timespec timeout;
 };
-# 349 "/usr/include/sys/fcntl.h" 3 4
+# 359 "/usr/include/sys/fcntl.h" 3 4
 struct radvisory {
        off_t ra_offset;
        int ra_count;
@@ -3241,13 +3142,13 @@ typedef struct fcodeblobs {
  int f_arch;
  int __padding;
 } fcodeblobs_t;
-# 373 "/usr/include/sys/fcntl.h" 3 4
+# 383 "/usr/include/sys/fcntl.h" 3 4
 typedef struct fsignatures {
  off_t fs_file_start;
  void *fs_blob_start;
  size_t fs_blob_size;
 } fsignatures_t;
-# 387 "/usr/include/sys/fcntl.h" 3 4
+# 397 "/usr/include/sys/fcntl.h" 3 4
 typedef struct fstore {
  unsigned int fst_flags;
  int fst_posmode;
@@ -3263,7 +3164,7 @@ typedef struct fbootstraptransfer {
   size_t fbt_length;
   void *fbt_buffer;
 } fbootstraptransfer_t;
-# 425 "/usr/include/sys/fcntl.h" 3 4
+# 435 "/usr/include/sys/fcntl.h" 3 4
 #pragma pack(4)
 
 struct log2phys {
@@ -3277,7 +3178,7 @@ struct log2phys {
 };
 
 #pragma pack()
-# 450 "/usr/include/sys/fcntl.h" 3 4
+# 460 "/usr/include/sys/fcntl.h" 3 4
 typedef enum {
  FILESEC_OWNER = 1,
  FILESEC_GROUP = 2,
@@ -3319,8 +3220,8 @@ int filesec_query_property(filesec_t, filesec_property_t, int *);
 int filesec_set_property(filesec_t, filesec_property_t, const void *);
 int filesec_unset_property(filesec_t, filesec_property_t) __attribute__((availability(macosx,introduced=10.6)));
 # 24 "/usr/include/fcntl.h" 2 3 4
-# 247 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 350 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 244 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 342 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 1
 # 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_eval.h" 1
@@ -3353,9 +3254,14 @@ typedef struct file_buffer buf_T;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
-# 47 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 51 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 3 4
 typedef long int ptrdiff_t;
+# 118 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/__stddef_max_align_t.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/__stddef_max_align_t.h" 3 4
+typedef long double max_align_t;
+# 119 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 2 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 2
 
 
@@ -3386,9 +3292,9 @@ static inline void *ga_append_via_ptr(garray_T *gap, size_t item_size)
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h" 1
-# 279 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 268 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern long p_aleph;
-extern int p_acd;
+extern _Bool p_acd;
 extern char_u *p_ambw;
 extern int p_ar;
 extern int p_aw;
@@ -3409,6 +3315,15 @@ static char *(p_bkc_values[]) =
 
 extern char_u *p_bdir;
 extern char_u *p_bex;
+extern char_u *p_bo;
+extern unsigned bo_flags;
+
+static char *(p_bo_values[]) = {"all", "backspace", "cursor", "complete",
+  "copy", "ctrlg", "error", "esc", "ex",
+  "hangul", "insertmode", "lang", "mess",
+  "showmatch", "operator", "register", "shell",
+  "spell", "wildmode", ((void*)0)};
+# 321 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_bsk;
 extern char_u *p_breakat;
 extern char_u *p_cmp;
@@ -3463,7 +3378,7 @@ static char *(p_dy_values[]) = {"lastline", "uhex", ((void*)0)};
 
 extern int p_ed;
 extern char_u *p_ead;
-extern int p_ea;
+extern _Bool p_ea;
 extern char_u *p_ep;
 extern int p_eb;
 extern char_u *p_ef;
@@ -3484,7 +3399,7 @@ extern unsigned fdo_flags;
 static char *(p_fdo_values[]) = {"all", "block", "hor", "mark", "percent",
                                  "quickfix", "search", "tag", "insert",
                                  "undo", "jump", ((void*)0)};
-# 388 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 408 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_fp;
 
 extern int p_fs;
@@ -3589,7 +3504,7 @@ static char *(p_ssop_values[]) = {"buffers", "winpos", "resize", "winsize",
                                   "globals", "slash", "unix",
                                   "sesdir", "curdir", "folds", "cursor",
                                   "tabpages", ((void*)0)};
-# 509 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 529 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_sh;
 extern char_u *p_shcf;
 extern char_u *p_sp;
@@ -3653,7 +3568,7 @@ extern long p_ur;
 extern long p_uc;
 extern long p_ut;
 extern char_u *p_fcs;
-extern char_u *p_viminfo;
+extern char_u *p_shada;
 extern char_u *p_vdir;
 extern char_u *p_vop;
 extern unsigned vop_flags;
@@ -3835,7 +3750,7 @@ typedef void* libiconv_t;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 52 "/opt/local/include/iconv.h" 2
 
 
@@ -3863,14 +3778,75 @@ typedef __darwin_mbstate_t mbstate_t;
 # 1 "/usr/include/sys/_types/_wchar_t.h" 1 3 4
 # 80 "/usr/include/wchar.h" 2 3 4
 # 89 "/usr/include/wchar.h" 3 4
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdarg.h" 1 3 4
-# 30 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdarg.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 3 4
 typedef __builtin_va_list va_list;
-# 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdarg.h" 3 4
+# 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 90 "/usr/include/wchar.h" 2 3 4
 
+# 1 "/usr/include/time.h" 1 3 4
+# 73 "/usr/include/time.h" 3 4
+struct tm {
+ int tm_sec;
+ int tm_min;
+ int tm_hour;
+ int tm_mday;
+ int tm_mon;
+ int tm_year;
+ int tm_wday;
+ int tm_yday;
+ int tm_isdst;
+ long tm_gmtoff;
+ char *tm_zone;
+};
+# 96 "/usr/include/time.h" 3 4
+extern char *tzname[];
 
+
+extern int getdate_err;
+
+extern long timezone __asm("_" "timezone" );
+
+extern int daylight;
+
+
+char *asctime(const struct tm *);
+clock_t clock(void) __asm("_" "clock" );
+char *ctime(const time_t *);
+double difftime(time_t, time_t);
+struct tm *getdate(const char *);
+struct tm *gmtime(const time_t *);
+struct tm *localtime(const time_t *);
+time_t mktime(struct tm *) __asm("_" "mktime" );
+size_t strftime(char * restrict, size_t, const char * restrict, const struct tm * restrict) __asm("_" "strftime" );
+char *strptime(const char * restrict, const char * restrict, struct tm * restrict) __asm("_" "strptime" );
+time_t time(time_t *);
+
+
+void tzset(void);
+
+
+
+char *asctime_r(const struct tm * restrict, char * restrict);
+char *ctime_r(const time_t *, char *);
+struct tm *gmtime_r(const time_t * restrict, struct tm * restrict);
+struct tm *localtime_r(const time_t * restrict, struct tm * restrict);
+
+
+time_t posix2time(time_t);
+
+
+
+void tzsetwall(void);
+time_t time2posix(time_t);
+time_t timelocal(struct tm * const);
+time_t timegm(struct tm * const);
+
+
+
+int nanosleep(const struct timespec *, struct timespec *) __asm("_" "nanosleep" );
+# 92 "/usr/include/wchar.h" 2 3 4
 # 1 "/usr/include/_wctype.h" 1 3 4
 # 47 "/usr/include/_wctype.h" 3 4
 # 1 "/usr/include/_types/_wctype_t.h" 1 3 4
@@ -4169,10 +4145,174 @@ extern void libiconv_set_relocation_prefix (const char *orig_prefix,
 # 19 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h" 1
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h"
+
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/time.h" 1
+
+
+
+
+
+
+
+typedef uint64_t Timestamp;
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 1
+
+
+
+
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 2
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 1
+
+
+
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 2
+
+
+
+
+typedef size_t hash_T;
+# 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h"
+typedef struct hashitem_S {
+
+  hash_T hi_hash;
+
+
+
+
+
+
+
+  char_u *hi_key;
+} hashitem_T;
+# 57 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h"
+typedef struct hashtable_S {
+  hash_T ht_mask;
+
+  size_t ht_used;
+  size_t ht_filled;
+  int ht_locked;
+  hashitem_T *ht_array;
+
+  hashitem_T ht_smallarray[16];
+} hashtab_T;
+# 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/queue.h" 1
+# 19 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/queue.h"
+typedef void *QUEUE[2];
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 2
+
+typedef int varnumber_T;
+typedef double float_T;
+
+
+
+
+typedef struct listvar_S list_T;
+typedef struct dictvar_S dict_T;
+
+
+
+
+typedef struct {
+  char v_type;
+  char v_lock;
+  union {
+    varnumber_T v_number;
+    float_T v_float;
+    char_u *v_string;
+    list_T *v_list;
+    dict_T *v_dict;
+  } vval;
+} typval_T;
+# 55 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
+typedef struct listitem_S listitem_T;
+
+struct listitem_S {
+  listitem_T *li_next;
+  listitem_T *li_prev;
+  typval_T li_tv;
+};
+
+
+
+
+typedef struct listwatch_S listwatch_T;
+
+struct listwatch_S {
+  listitem_T *lw_item;
+  listwatch_T *lw_next;
+};
+
+
+
+
+struct listvar_S {
+  listitem_T *lv_first;
+  listitem_T *lv_last;
+  int lv_refcount;
+  int lv_len;
+  listwatch_T *lv_watch;
+  int lv_idx;
+  listitem_T *lv_idx_item;
+  int lv_copyID;
+  list_T *lv_copylist;
+  char lv_lock;
+  list_T *lv_used_next;
+  list_T *lv_used_prev;
+};
+
+
+
+
+
+
+struct dictitem_S {
+  typval_T di_tv;
+  char_u di_flags;
+  char_u di_key[1];
+};
+
+typedef struct dictitem_S dictitem_T;
+# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
+struct dictvar_S {
+  char dv_lock;
+  char dv_scope;
+  int dv_refcount;
+  int dv_copyID;
+  hashtab_T dv_hashtab;
+  dict_T *dv_copydict;
+  dict_T *dv_used_next;
+  dict_T *dv_used_prev;
+  int internal_refcount;
+
+  QUEUE watchers;
+};
+
+
+typedef struct ht_stack_S {
+  hashtab_T *ht;
+  struct ht_stack_S *prev;
+} ht_stack_T;
+
+
+typedef struct list_stack_S {
+  list_T *list;
+  struct list_stack_S *prev;
+} list_stack_T;
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h" 2
+# 35 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark_defs.h"
 typedef struct filemark {
   pos_T mark;
   int fnum;
+  Timestamp timestamp;
+  dict_T *additional_data;
 } fmark_T;
 
 
@@ -4191,6 +4331,7 @@ typedef struct xfilemark {
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 1
 # 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/undo_defs.h" 2
+
 
 
 typedef struct {
@@ -4240,7 +4381,7 @@ struct u_header {
   pos_T uh_cursor;
   long uh_cursor_vcol;
   int uh_flags;
-  pos_T uh_namedm[('z' - 'a' + 1)];
+  fmark_T uh_namedm[('z' - 'a' + 1)];
   visualinfo_T uh_visual;
   time_t uh_time;
   long uh_save_nr;
@@ -4261,132 +4402,9 @@ typedef struct {
 } bufinfo_T;
 # 23 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 2
 
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 1
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 2
-
-
-
-
-typedef size_t hash_T;
-# 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h"
-typedef struct hashitem_S {
-
-  hash_T hi_hash;
-
-
-
-
-
-
-
-  char_u *hi_key;
-} hashitem_T;
-# 57 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h"
-typedef struct hashtable_S {
-  hash_T ht_mask;
-
-  size_t ht_used;
-  size_t ht_filled;
-  int ht_locked;
-  hashitem_T *ht_array;
-
-  hashitem_T ht_smallarray[16];
-} hashtab_T;
-# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 2
-
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 1
-
-
-
-
-
-typedef int varnumber_T;
-typedef double float_T;
-
-typedef struct listvar_S list_T;
-typedef struct dictvar_S dict_T;
-
-
-
-
-typedef struct {
-  char v_type;
-  char v_lock;
-  union {
-    varnumber_T v_number;
-    float_T v_float;
-    char_u *v_string;
-    list_T *v_list;
-    dict_T *v_dict;
-  } vval;
-} typval_T;
-# 48 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
-typedef struct listitem_S listitem_T;
-
-struct listitem_S {
-  listitem_T *li_next;
-  listitem_T *li_prev;
-  typval_T li_tv;
-};
-
-
-
-
-typedef struct listwatch_S listwatch_T;
-
-struct listwatch_S {
-  listitem_T *lw_item;
-  listwatch_T *lw_next;
-};
-
-
-
-
-struct listvar_S {
-  listitem_T *lv_first;
-  listitem_T *lv_last;
-  int lv_refcount;
-  int lv_len;
-  listwatch_T *lv_watch;
-  int lv_idx;
-  listitem_T *lv_idx_item;
-  int lv_copyID;
-  list_T *lv_copylist;
-  char lv_lock;
-  list_T *lv_used_next;
-  list_T *lv_used_prev;
-};
-
-
-
-
-
-
-struct dictitem_S {
-  typval_T di_tv;
-  char_u di_flags;
-  char_u di_key[1];
-};
-
-typedef struct dictitem_S dictitem_T;
-# 105 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
-struct dictvar_S {
-  char dv_lock;
-  char dv_scope;
-  int dv_refcount;
-  int dv_copyID;
-  hashtab_T dv_hashtab;
-  dict_T *dv_copydict;
-  dict_T *dv_used_next;
-  dict_T *dv_used_prev;
-  int internal_refcount;
-
-};
-# 27 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/profile.h" 1
 
@@ -4837,7 +4855,7 @@ struct signlist
 # 49 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-version.h" 1
 # 50 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 51 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
 # 61 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 1
@@ -4937,28 +4955,46 @@ struct iovec {
  size_t iov_len;
 };
 # 106 "/usr/include/sys/socket.h" 2 3 4
-# 190 "/usr/include/sys/socket.h" 3 4
+# 184 "/usr/include/sys/socket.h" 3 4
+typedef __uint32_t sae_associd_t;
+
+
+
+typedef __uint32_t sae_connid_t;
+# 197 "/usr/include/sys/socket.h" 3 4
+typedef struct sa_endpoints {
+ unsigned int sae_srcif;
+ struct sockaddr *sae_srcaddr;
+ socklen_t sae_srcaddrlen;
+ struct sockaddr *sae_dstaddr;
+ socklen_t sae_dstaddrlen;
+} sa_endpoints_t;
+
+
+
+
+
 struct linger {
  int l_onoff;
  int l_linger;
 };
-# 208 "/usr/include/sys/socket.h" 3 4
+# 227 "/usr/include/sys/socket.h" 3 4
 struct so_np_extensions {
  u_int32_t npx_flags;
  u_int32_t npx_mask;
 };
-# 283 "/usr/include/sys/socket.h" 3 4
+# 302 "/usr/include/sys/socket.h" 3 4
 struct sockaddr {
  __uint8_t sa_len;
  sa_family_t sa_family;
  char sa_data[14];
 };
-# 296 "/usr/include/sys/socket.h" 3 4
+# 315 "/usr/include/sys/socket.h" 3 4
 struct sockproto {
  __uint16_t sp_family;
  __uint16_t sp_protocol;
 };
-# 316 "/usr/include/sys/socket.h" 3 4
+# 335 "/usr/include/sys/socket.h" 3 4
 struct sockaddr_storage {
  __uint8_t ss_len;
  sa_family_t ss_family;
@@ -4966,7 +5002,7 @@ struct sockaddr_storage {
  __int64_t __ss_align;
  char __ss_pad2[(128 - sizeof(__uint8_t) - sizeof(sa_family_t) - ((sizeof(__int64_t)) - sizeof(__uint8_t) - sizeof(sa_family_t)) - (sizeof(__int64_t)))];
 };
-# 416 "/usr/include/sys/socket.h" 3 4
+# 435 "/usr/include/sys/socket.h" 3 4
 struct msghdr {
  void *msg_name;
  socklen_t msg_namelen;
@@ -4976,20 +5012,21 @@ struct msghdr {
  socklen_t msg_controllen;
  int msg_flags;
 };
-# 457 "/usr/include/sys/socket.h" 3 4
+# 476 "/usr/include/sys/socket.h" 3 4
 struct cmsghdr {
  socklen_t cmsg_len;
  int cmsg_level;
  int cmsg_type;
 
 };
-# 548 "/usr/include/sys/socket.h" 3 4
+# 567 "/usr/include/sys/socket.h" 3 4
 struct sf_hdtr {
  struct iovec *headers;
  int hdr_cnt;
  struct iovec *trailers;
  int trl_cnt;
 };
+
 
 
 
@@ -5026,6 +5063,9 @@ int sendfile(int, int, off_t, off_t *, struct sf_hdtr *, int);
 
 
 void pfctlinput(int, struct sockaddr *);
+int connectx(int , const sa_endpoints_t *, sae_associd_t, unsigned int,
+    const struct iovec *, unsigned int, size_t *, sae_connid_t *);
+int disconnectx(int , sae_associd_t, sae_connid_t);
 # 31 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 2
 # 1 "/usr/include/netinet/in.h" 1 3 4
 # 301 "/usr/include/netinet/in.h" 3 4
@@ -5242,6 +5282,50 @@ struct tcphdr {
  unsigned short th_win;
  unsigned short th_sum;
  unsigned short th_urp;
+};
+# 231 "/usr/include/netinet/tcp.h" 3 4
+struct tcp_connection_info {
+        u_int8_t tcpi_state;
+        u_int8_t tcpi_snd_wscale;
+        u_int8_t tcpi_rcv_wscale;
+        u_int8_t __pad1;
+        u_int32_t tcpi_options;
+
+
+
+
+        u_int32_t tcpi_flags;
+
+
+        u_int32_t tcpi_rto;
+        u_int32_t tcpi_maxseg;
+        u_int32_t tcpi_snd_ssthresh;
+        u_int32_t tcpi_snd_cwnd;
+        u_int32_t tcpi_snd_wnd;
+        u_int32_t tcpi_snd_sbbytes;
+        u_int32_t tcpi_rcv_wnd;
+        u_int32_t tcpi_rttcur;
+        u_int32_t tcpi_srtt;
+        u_int32_t tcpi_rttvar;
+ u_int32_t
+
+   tcpi_tfo_cookie_req:1,
+   tcpi_tfo_cookie_rcv:1,
+   tcpi_tfo_syn_loss:1,
+   tcpi_tfo_syn_data_sent:1,
+   tcpi_tfo_syn_data_acked:1,
+
+   tcpi_tfo_syn_data_rcv:1,
+   tcpi_tfo_cookie_req_rcv:1,
+   tcpi_tfo_cookie_sent:1,
+   tcpi_tfo_cookie_invalid:1,
+   __pad2:23;
+        u_int64_t tcpi_txpackets __attribute__((aligned(8)));
+        u_int64_t tcpi_txbytes __attribute__((aligned(8)));
+        u_int64_t tcpi_txretransmitbytes __attribute__((aligned(8)));
+        u_int64_t tcpi_rxpackets __attribute__((aligned(8)));
+        u_int64_t tcpi_rxbytes __attribute__((aligned(8)));
+        u_int64_t tcpi_rxoutoforderbytes __attribute__((aligned(8)));
 };
 # 33 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 2
 # 1 "/usr/include/arpa/inet.h" 1 3 4
@@ -5582,7 +5666,7 @@ pthread_override_qos_class_end_np(pthread_override_t __override);
 # 49 "/usr/include/sys/_types/_mach_port_t.h" 3 4
 typedef __darwin_mach_port_t mach_port_t;
 # 78 "/usr/include/pthread.h" 2 3 4
-# 209 "/usr/include/pthread.h" 3 4
+# 208 "/usr/include/pthread.h" 3 4
 __attribute__((availability(macosx,introduced=10.4)))
 int pthread_atfork(void (*)(void), void (*)(void), void (*)(void));
 
@@ -6081,6 +6165,8 @@ typedef uint64_t vm_object_offset_t;
 typedef uint64_t vm_object_size_t;
 
 
+
+
 typedef mach_port_t upl_t;
 typedef mach_port_t vm_named_entry_t;
 # 71 "/usr/include/mach/std_types.h" 2 3 4
@@ -6088,11 +6174,11 @@ typedef mach_port_t vm_named_entry_t;
 # 1 "/usr/include/mach/mach_types.h" 1 3 4
 # 80 "/usr/include/mach/mach_types.h" 3 4
 # 1 "/usr/include/mach/host_info.h" 1 3 4
-# 68 "/usr/include/mach/host_info.h" 3 4
+# 66 "/usr/include/mach/host_info.h" 3 4
 # 1 "/usr/include/mach/message.h" 1 3 4
-# 90 "/usr/include/mach/message.h" 3 4
+# 91 "/usr/include/mach/message.h" 3 4
 typedef natural_t mach_msg_timeout_t;
-# 220 "/usr/include/mach/message.h" 3 4
+# 221 "/usr/include/mach/message.h" 3 4
 typedef unsigned int mach_msg_bits_t;
 typedef natural_t mach_msg_size_t;
 typedef integer_t mach_msg_id_t;
@@ -6101,9 +6187,9 @@ typedef integer_t mach_msg_id_t;
 
 
 typedef unsigned int mach_msg_type_name_t;
-# 240 "/usr/include/mach/message.h" 3 4
+# 241 "/usr/include/mach/message.h" 3 4
 typedef unsigned int mach_msg_copy_options_t;
-# 262 "/usr/include/mach/message.h" 3 4
+# 263 "/usr/include/mach/message.h" 3 4
 typedef unsigned int mach_msg_descriptor_type_t;
 
 
@@ -6253,7 +6339,7 @@ typedef struct
   mach_msg_trailer_type_t msgh_trailer_type;
   mach_msg_trailer_size_t msgh_trailer_size;
 } mach_msg_trailer_t;
-# 421 "/usr/include/mach/message.h" 3 4
+# 422 "/usr/include/mach/message.h" 3 4
 typedef struct
 {
   mach_msg_trailer_type_t msgh_trailer_type;
@@ -6273,7 +6359,7 @@ typedef struct
   mach_port_seqno_t msgh_seqno;
   security_token_t msgh_sender;
 } mach_msg_security_trailer_t;
-# 450 "/usr/include/mach/message.h" 3 4
+# 451 "/usr/include/mach/message.h" 3 4
 typedef struct
 {
   unsigned int val[8];
@@ -6321,9 +6407,9 @@ typedef struct
   int msgh_ad;
   msg_labels_t msgh_labels;
 } mach_msg_mac_trailer_t;
-# 511 "/usr/include/mach/message.h" 3 4
+# 512 "/usr/include/mach/message.h" 3 4
 typedef mach_msg_mac_trailer_t mach_msg_max_trailer_t;
-# 521 "/usr/include/mach/message.h" 3 4
+# 522 "/usr/include/mach/message.h" 3 4
 typedef mach_msg_security_trailer_t mach_msg_format_0_trailer_t;
 
 
@@ -6357,14 +6443,15 @@ typedef union
 } mach_msg_empty_t;
 
 #pragma pack()
-# 584 "/usr/include/mach/message.h" 3 4
+# 585 "/usr/include/mach/message.h" 3 4
 typedef natural_t mach_msg_type_size_t;
 typedef natural_t mach_msg_type_number_t;
-# 628 "/usr/include/mach/message.h" 3 4
+# 629 "/usr/include/mach/message.h" 3 4
 typedef integer_t mach_msg_option_t;
-# 717 "/usr/include/mach/message.h" 3 4
+# 718 "/usr/include/mach/message.h" 3 4
 typedef kern_return_t mach_msg_return_t;
 # 821 "/usr/include/mach/message.h" 3 4
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_overwrite(
      mach_msg_header_t *msg,
      mach_msg_option_t option,
@@ -6375,7 +6462,8 @@ extern mach_msg_return_t mach_msg_overwrite(
      mach_port_name_t notify,
      mach_msg_header_t *rcv_msg,
      mach_msg_size_t rcv_limit);
-# 841 "/usr/include/mach/message.h" 3 4
+# 842 "/usr/include/mach/message.h" 3 4
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg(
      mach_msg_header_t *msg,
      mach_msg_option_t option,
@@ -6391,9 +6479,10 @@ extern mach_msg_return_t mach_msg(
 
 
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern kern_return_t mach_voucher_deallocate(
      mach_port_name_t voucher);
-# 69 "/usr/include/mach/host_info.h" 2 3 4
+# 67 "/usr/include/mach/host_info.h" 2 3 4
 # 1 "/usr/include/mach/vm_statistics.h" 1 3 4
 # 84 "/usr/include/mach/vm_statistics.h" 3 4
 struct vm_statistics {
@@ -6483,13 +6572,13 @@ struct vm_purgeable_info {
 };
 
 typedef struct vm_purgeable_info *vm_purgeable_info_t;
-# 70 "/usr/include/mach/host_info.h" 2 3 4
+# 68 "/usr/include/mach/host_info.h" 2 3 4
 # 1 "/usr/include/mach/machine.h" 1 3 4
 # 69 "/usr/include/mach/machine.h" 3 4
 typedef integer_t cpu_type_t;
 typedef integer_t cpu_subtype_t;
 typedef integer_t cpu_threadtype_t;
-# 71 "/usr/include/mach/host_info.h" 2 3 4
+# 69 "/usr/include/mach/host_info.h" 2 3 4
 
 # 1 "/usr/include/mach/time_value.h" 1 3 4
 # 66 "/usr/include/mach/time_value.h" 3 4
@@ -6499,7 +6588,7 @@ struct time_value {
 };
 
 typedef struct time_value time_value_t;
-# 73 "/usr/include/mach/host_info.h" 2 3 4
+# 71 "/usr/include/mach/host_info.h" 2 3 4
 
 
 
@@ -6523,7 +6612,7 @@ typedef char kernel_boot_info_t[(4096)];
 
 
 typedef integer_t host_flavor_t;
-# 105 "/usr/include/mach/host_info.h" 3 4
+# 104 "/usr/include/mach/host_info.h" 3 4
 #pragma pack(4)
 
 struct host_basic_info {
@@ -6583,7 +6672,7 @@ struct host_priority_info {
 
 typedef struct host_priority_info host_priority_info_data_t;
 typedef struct host_priority_info *host_priority_info_t;
-# 178 "/usr/include/mach/host_info.h" 3 4
+# 177 "/usr/include/mach/host_info.h" 3 4
 struct host_load_info {
  integer_t avenrun[3];
  integer_t mach_factor[3];
@@ -6596,7 +6685,7 @@ typedef struct host_load_info *host_load_info_t;
 
 typedef struct vm_purgeable_info host_purgable_info_data_t;
 typedef struct vm_purgeable_info *host_purgable_info_t;
-# 229 "/usr/include/mach/host_info.h" 3 4
+# 228 "/usr/include/mach/host_info.h" 3 4
 struct host_cpu_load_info {
  natural_t cpu_ticks[4];
 };
@@ -6707,7 +6796,7 @@ typedef struct memory_object_attr_info memory_object_attr_info_data_t;
 # 1 "/usr/include/mach/i386/exception.h" 1 3 4
 # 34 "/usr/include/mach/machine/exception.h" 2 3 4
 # 63 "/usr/include/mach/exception_types.h" 2 3 4
-# 173 "/usr/include/mach/exception_types.h" 3 4
+# 176 "/usr/include/mach/exception_types.h" 3 4
 # 1 "/usr/include/mach/thread_status.h" 1 3 4
 # 76 "/usr/include/mach/thread_status.h" 3 4
 # 1 "/usr/include/mach/machine/thread_status.h" 1 3 4
@@ -6866,7 +6955,7 @@ typedef natural_t thread_state_data_t[(224)];
 
 typedef int thread_state_flavor_t;
 typedef thread_state_flavor_t *thread_state_flavor_array_t;
-# 174 "/usr/include/mach/exception_types.h" 2 3 4
+# 177 "/usr/include/mach/exception_types.h" 2 3 4
 
 
 
@@ -7361,9 +7450,14 @@ struct task_vm_info {
  mach_vm_size_t compressed;
  mach_vm_size_t compressed_peak;
  mach_vm_size_t compressed_lifetime;
+
+
+ mach_vm_size_t phys_footprint;
 };
 typedef struct task_vm_info task_vm_info_data_t;
 typedef struct task_vm_info *task_vm_info_t;
+
+
 
 
 
@@ -7411,6 +7505,12 @@ struct task_power_info_v2 {
 typedef struct task_power_info_v2 task_power_info_v2_data_t;
 typedef struct task_power_info_v2 *task_power_info_v2_t;
 # 386 "/usr/include/mach/task_info.h" 3 4
+struct task_flags_info {
+ uint32_t flags;
+};
+typedef struct task_flags_info task_flags_info_data_t;
+typedef struct task_flags_info * task_flags_info_t;
+# 409 "/usr/include/mach/task_info.h" 3 4
 #pragma pack()
 # 92 "/usr/include/mach/mach_types.h" 2 3 4
 # 1 "/usr/include/mach/task_policy.h" 1 3 4
@@ -7489,7 +7589,7 @@ typedef natural_t thread_flavor_t;
 typedef integer_t *thread_info_t;
 
 
-typedef integer_t thread_info_data_t[(1024)];
+typedef integer_t thread_info_data_t[(32)];
 
 
 
@@ -7500,7 +7600,7 @@ struct thread_basic_info {
         time_value_t user_time;
         time_value_t system_time;
         integer_t cpu_usage;
- policy_t policy;
+        policy_t policy;
         integer_t run_state;
         integer_t flags;
         integer_t suspend_count;
@@ -7523,7 +7623,23 @@ struct thread_identifier_info {
 
 typedef struct thread_identifier_info thread_identifier_info_data_t;
 typedef struct thread_identifier_info *thread_identifier_info_t;
-# 156 "/usr/include/mach/thread_info.h" 3 4
+# 152 "/usr/include/mach/thread_info.h" 3 4
+struct thread_extended_info {
+ uint64_t pth_user_time;
+ uint64_t pth_system_time;
+ int32_t pth_cpu_usage;
+ int32_t pth_policy;
+ int32_t pth_run_state;
+ int32_t pth_flags;
+ int32_t pth_sleep_time;
+ int32_t pth_curpri;
+ int32_t pth_priority;
+ int32_t pth_maxpriority;
+ char pth_name[64];
+};
+typedef struct thread_extended_info thread_extended_info_data_t;
+typedef struct thread_extended_info * thread_extended_info_t;
+# 184 "/usr/include/mach/thread_info.h" 3 4
 struct io_stat_entry {
  uint64_t count;
  uint64_t size;
@@ -8409,7 +8525,7 @@ kern_return_t clock_set_attributes
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_timespec_t new_time;
- } __Request__clock_set_time_t;
+ } __Request__clock_set_time_t __attribute__((unused));
 
 #pragma pack()
 
@@ -8423,7 +8539,7 @@ kern_return_t clock_set_attributes
   clock_flavor_t flavor;
   mach_msg_type_number_t clock_attrCnt;
   int clock_attr[1];
- } __Request__clock_set_attributes_t;
+ } __Request__clock_set_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -8450,7 +8566,7 @@ union __RequestUnion__clock_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__clock_set_time_t;
+ } __Reply__clock_set_time_t __attribute__((unused));
 
 #pragma pack()
 
@@ -8462,7 +8578,7 @@ union __RequestUnion__clock_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__clock_set_attributes_t;
+ } __Reply__clock_set_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -8656,6 +8772,17 @@ typedef struct task_zone_info_data {
 } task_zone_info_t;
 
 typedef task_zone_info_t *task_zone_info_array_t;
+
+typedef struct mach_memory_info {
+    uint64_t flags;
+    uint64_t site;
+    uint64_t size;
+    uint64_t free;
+    uint64_t largest;
+    uint64_t _resv[3];
+} mach_memory_info_t;
+
+typedef mach_memory_info_t *mach_memory_info_array_t;
 # 68 "/usr/include/mach_debug/mach_debug_types.h" 2 3 4
 # 1 "/usr/include/mach_debug/page_info.h" 1 3 4
 # 63 "/usr/include/mach_debug/page_info.h" 3 4
@@ -8704,6 +8831,15 @@ typedef lockgroup_info_t *lockgroup_info_array_t;
 # 71 "/usr/include/mach_debug/mach_debug_types.h" 2 3 4
 
 typedef char symtab_name_t[32];
+
+struct mach_core_fileheader
+{
+     uint64_t signature;
+     uint64_t log_offset;
+     uint64_t log_length;
+     uint64_t gzip_offset;
+     uint64_t gzip_length;
+};
 # 38 "/usr/include/mach/host_priv.h" 2 3 4
 # 51 "/usr/include/mach/host_priv.h" 3 4
 extern
@@ -9053,7 +9189,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_get_boot_info_t;
+ } __Request__host_get_boot_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9065,7 +9201,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int options;
- } __Request__host_reboot_t;
+ } __Request__host_reboot_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9078,7 +9214,7 @@ kern_return_t kext_request
   NDR_record_t NDR;
   host_flavor_t flavor;
   mach_msg_type_number_t host_info_outCnt;
- } __Request__host_priv_statistics_t;
+ } __Request__host_priv_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9094,7 +9230,7 @@ kern_return_t kext_request
 
   NDR_record_t NDR;
   memory_object_cluster_size_t cluster_size;
- } __Request__host_default_memory_manager_t;
+ } __Request__host_default_memory_manager_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9112,7 +9248,7 @@ kern_return_t kext_request
   vm_address_t address;
   vm_size_t size;
   vm_prot_t desired_access;
- } __Request__vm_wire_t;
+ } __Request__vm_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9128,7 +9264,7 @@ kern_return_t kext_request
 
   NDR_record_t NDR;
   boolean_t wired;
- } __Request__thread_wire_t;
+ } __Request__thread_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9146,7 +9282,7 @@ kern_return_t kext_request
   vm_address_t address;
   vm_size_t size;
   int flags;
- } __Request__vm_allocate_cpm_t;
+ } __Request__vm_allocate_cpm_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9156,7 +9292,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_processors_t;
+ } __Request__host_processors_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9168,7 +9304,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   clock_id_t clock_id;
- } __Request__host_get_clock_control_t;
+ } __Request__host_get_clock_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9180,7 +9316,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   vm_address_t info;
- } __Request__kmod_create_t;
+ } __Request__kmod_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9192,7 +9328,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kmod_t module;
- } __Request__kmod_destroy_t;
+ } __Request__kmod_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9210,7 +9346,7 @@ kern_return_t kext_request
   kmod_t module;
   kmod_control_flavor_t flavor;
   mach_msg_type_number_t dataCnt;
- } __Request__kmod_control_t;
+ } __Request__kmod_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9223,7 +9359,7 @@ kern_return_t kext_request
   NDR_record_t NDR;
   int node;
   int which;
- } __Request__host_get_special_port_t;
+ } __Request__host_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9239,7 +9375,7 @@ kern_return_t kext_request
 
   NDR_record_t NDR;
   int which;
- } __Request__host_set_special_port_t;
+ } __Request__host_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9257,7 +9393,7 @@ kern_return_t kext_request
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__host_set_exception_ports_t;
+ } __Request__host_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9269,7 +9405,7 @@ kern_return_t kext_request
   mach_msg_header_t Head;
   NDR_record_t NDR;
   exception_mask_t exception_mask;
- } __Request__host_get_exception_ports_t;
+ } __Request__host_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9287,7 +9423,7 @@ kern_return_t kext_request
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__host_swap_exception_ports_t;
+ } __Request__host_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9305,7 +9441,7 @@ kern_return_t kext_request
   mach_vm_address_t address;
   mach_vm_size_t size;
   vm_prot_t desired_access;
- } __Request__mach_vm_wire_t;
+ } __Request__mach_vm_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9315,7 +9451,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_processor_sets_t;
+ } __Request__host_processor_sets_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9329,7 +9465,7 @@ kern_return_t kext_request
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t set_name;
 
- } __Request__host_processor_set_priv_t;
+ } __Request__host_processor_set_priv_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9343,7 +9479,7 @@ kern_return_t kext_request
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t control_port;
 
- } __Request__set_dp_control_port_t;
+ } __Request__set_dp_control_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9353,7 +9489,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__get_dp_control_port_t;
+ } __Request__get_dp_control_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9367,7 +9503,7 @@ kern_return_t kext_request
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t server;
 
- } __Request__host_set_UNDServer_t;
+ } __Request__host_set_UNDServer_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9377,7 +9513,7 @@ kern_return_t kext_request
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_get_UNDServer_t;
+ } __Request__host_get_UNDServer_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9394,7 +9530,7 @@ kern_return_t kext_request
   NDR_record_t NDR;
   uint32_t user_log_flags;
   mach_msg_type_number_t request_dataCnt;
- } __Request__kext_request_t;
+ } __Request__kext_request_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9447,7 +9583,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_type_number_t boot_infoOffset;
   mach_msg_type_number_t boot_infoCnt;
   char boot_info[4096];
- } __Reply__host_get_boot_info_t;
+ } __Reply__host_get_boot_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9459,7 +9595,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_reboot_t;
+ } __Reply__host_reboot_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9473,7 +9609,7 @@ union __RequestUnion__host_priv_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t host_info_outCnt;
   integer_t host_info_out[68];
- } __Reply__host_priv_statistics_t;
+ } __Reply__host_priv_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9487,7 +9623,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t default_manager;
 
- } __Reply__host_default_memory_manager_t;
+ } __Reply__host_default_memory_manager_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9499,7 +9635,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_wire_t;
+ } __Reply__vm_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9511,7 +9647,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_wire_t;
+ } __Reply__thread_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9524,7 +9660,7 @@ union __RequestUnion__host_priv_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_address_t address;
- } __Reply__vm_allocate_cpm_t;
+ } __Reply__vm_allocate_cpm_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9540,7 +9676,7 @@ union __RequestUnion__host_priv_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t out_processor_listCnt;
- } __Reply__host_processors_t;
+ } __Reply__host_processors_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9554,7 +9690,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t clock_ctrl;
 
- } __Reply__host_get_clock_control_t;
+ } __Reply__host_get_clock_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9567,7 +9703,7 @@ union __RequestUnion__host_priv_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   kmod_t module;
- } __Reply__kmod_create_t;
+ } __Reply__kmod_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9579,7 +9715,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__kmod_destroy_t;
+ } __Reply__kmod_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9595,7 +9731,7 @@ union __RequestUnion__host_priv_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t dataCnt;
- } __Reply__kmod_control_t;
+ } __Reply__kmod_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9609,7 +9745,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t port;
 
- } __Reply__host_get_special_port_t;
+ } __Reply__host_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9621,7 +9757,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_set_special_port_t;
+ } __Reply__host_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9633,7 +9769,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_set_exception_ports_t;
+ } __Reply__host_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9652,7 +9788,7 @@ union __RequestUnion__host_priv_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__host_get_exception_ports_t;
+ } __Reply__host_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9671,7 +9807,7 @@ union __RequestUnion__host_priv_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__host_swap_exception_ports_t;
+ } __Reply__host_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9683,7 +9819,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_vm_wire_t;
+ } __Reply__mach_vm_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9699,7 +9835,7 @@ union __RequestUnion__host_priv_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t processor_setsCnt;
- } __Reply__host_processor_sets_t;
+ } __Reply__host_processor_sets_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9713,7 +9849,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t set;
 
- } __Reply__host_processor_set_priv_t;
+ } __Reply__host_processor_set_priv_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9725,7 +9861,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__set_dp_control_port_t;
+ } __Reply__set_dp_control_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9739,7 +9875,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t contorl_port;
 
- } __Reply__get_dp_control_port_t;
+ } __Reply__get_dp_control_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9751,7 +9887,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_set_UNDServer_t;
+ } __Reply__host_set_UNDServer_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9765,7 +9901,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t server;
 
- } __Reply__host_get_UNDServer_t;
+ } __Reply__host_get_UNDServer_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9784,7 +9920,7 @@ union __RequestUnion__host_priv_subsystem {
   mach_msg_type_number_t response_dataCnt;
   mach_msg_type_number_t log_dataCnt;
   kern_return_t op_result;
- } __Reply__kext_request_t;
+ } __Reply__kext_request_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9869,7 +10005,7 @@ kern_return_t host_security_set_task_token
   audit_token_t audit_token;
   mach_msg_type_number_t ledgersCnt;
   boolean_t inherit_memory;
- } __Request__host_security_create_task_token_t;
+ } __Request__host_security_create_task_token_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9887,7 +10023,7 @@ kern_return_t host_security_set_task_token
   NDR_record_t NDR;
   security_token_t sec_token;
   audit_token_t audit_token;
- } __Request__host_security_set_task_token_t;
+ } __Request__host_security_set_task_token_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9916,7 +10052,7 @@ union __RequestUnion__host_security_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t child_task;
 
- } __Reply__host_security_create_task_token_t;
+ } __Reply__host_security_create_task_token_t __attribute__((unused));
 
 #pragma pack()
 
@@ -9928,7 +10064,7 @@ union __RequestUnion__host_security_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_security_set_task_token_t;
+ } __Reply__host_security_set_task_token_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10019,7 +10155,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_acquire_t;
+ } __Request__lock_acquire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10031,7 +10167,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_release_t;
+ } __Request__lock_release_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10043,7 +10179,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_try_t;
+ } __Request__lock_try_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10055,7 +10191,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_make_stable_t;
+ } __Request__lock_make_stable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10067,7 +10203,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_handoff_t;
+ } __Request__lock_handoff_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10079,7 +10215,7 @@ kern_return_t lock_handoff_accept
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int lock_id;
- } __Request__lock_handoff_accept_t;
+ } __Request__lock_handoff_accept_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10110,7 +10246,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_acquire_t;
+ } __Reply__lock_acquire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10122,7 +10258,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_release_t;
+ } __Reply__lock_release_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10134,7 +10270,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_try_t;
+ } __Reply__lock_try_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10146,7 +10282,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_make_stable_t;
+ } __Reply__lock_make_stable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10158,7 +10294,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_handoff_t;
+ } __Reply__lock_handoff_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10170,7 +10306,7 @@ union __RequestUnion__lock_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_handoff_accept_t;
+ } __Reply__lock_handoff_accept_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10266,7 +10402,7 @@ kern_return_t processor_get_assignment
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_start_t;
+ } __Request__processor_start_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10276,7 +10412,7 @@ kern_return_t processor_get_assignment
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_exit_t;
+ } __Request__processor_exit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10289,7 +10425,7 @@ kern_return_t processor_get_assignment
   NDR_record_t NDR;
   processor_flavor_t flavor;
   mach_msg_type_number_t processor_info_outCnt;
- } __Request__processor_info_t;
+ } __Request__processor_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10302,7 +10438,7 @@ kern_return_t processor_get_assignment
   NDR_record_t NDR;
   mach_msg_type_number_t processor_cmdCnt;
   integer_t processor_cmd[12];
- } __Request__processor_control_t;
+ } __Request__processor_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10318,7 +10454,7 @@ kern_return_t processor_get_assignment
 
   NDR_record_t NDR;
   boolean_t wait;
- } __Request__processor_assign_t;
+ } __Request__processor_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10328,7 +10464,7 @@ kern_return_t processor_get_assignment
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_get_assignment_t;
+ } __Request__processor_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10359,7 +10495,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_start_t;
+ } __Reply__processor_start_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10371,7 +10507,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_exit_t;
+ } __Reply__processor_exit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10388,7 +10524,7 @@ union __RequestUnion__processor_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t processor_info_outCnt;
   integer_t processor_info_out[12];
- } __Reply__processor_info_t;
+ } __Reply__processor_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10400,7 +10536,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_control_t;
+ } __Reply__processor_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10412,7 +10548,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_assign_t;
+ } __Reply__processor_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10426,7 +10562,7 @@ union __RequestUnion__processor_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t assigned_set;
 
- } __Reply__processor_get_assignment_t;
+ } __Reply__processor_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10585,7 +10721,7 @@ kern_return_t processor_set_info
   NDR_record_t NDR;
   processor_set_flavor_t flavor;
   mach_msg_type_number_t info_outCnt;
- } __Request__processor_set_statistics_t;
+ } __Request__processor_set_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10595,7 +10731,7 @@ kern_return_t processor_set_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_destroy_t;
+ } __Request__processor_set_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10608,7 +10744,7 @@ kern_return_t processor_set_info
   NDR_record_t NDR;
   int max_priority;
   boolean_t change_threads;
- } __Request__processor_set_max_priority_t;
+ } __Request__processor_set_max_priority_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10620,7 +10756,7 @@ kern_return_t processor_set_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int policy;
- } __Request__processor_set_policy_enable_t;
+ } __Request__processor_set_policy_enable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10633,7 +10769,7 @@ kern_return_t processor_set_info
   NDR_record_t NDR;
   int policy;
   boolean_t change_threads;
- } __Request__processor_set_policy_disable_t;
+ } __Request__processor_set_policy_disable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10643,7 +10779,7 @@ kern_return_t processor_set_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_tasks_t;
+ } __Request__processor_set_tasks_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10653,7 +10789,7 @@ kern_return_t processor_set_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_threads_t;
+ } __Request__processor_set_threads_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10668,7 +10804,7 @@ kern_return_t processor_set_info
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[5];
   boolean_t change;
- } __Request__processor_set_policy_control_t;
+ } __Request__processor_set_policy_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10678,7 +10814,7 @@ kern_return_t processor_set_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_stack_usage_t;
+ } __Request__processor_set_stack_usage_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10691,7 +10827,7 @@ kern_return_t processor_set_info
   NDR_record_t NDR;
   int flavor;
   mach_msg_type_number_t info_outCnt;
- } __Request__processor_set_info_t;
+ } __Request__processor_set_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10728,7 +10864,7 @@ union __RequestUnion__processor_set_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t info_outCnt;
   integer_t info_out[5];
- } __Reply__processor_set_statistics_t;
+ } __Reply__processor_set_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10740,7 +10876,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_destroy_t;
+ } __Reply__processor_set_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10752,7 +10888,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_max_priority_t;
+ } __Reply__processor_set_max_priority_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10764,7 +10900,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_policy_enable_t;
+ } __Reply__processor_set_policy_enable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10776,7 +10912,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_policy_disable_t;
+ } __Reply__processor_set_policy_disable_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10792,7 +10928,7 @@ union __RequestUnion__processor_set_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t task_listCnt;
- } __Reply__processor_set_tasks_t;
+ } __Reply__processor_set_tasks_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10808,7 +10944,7 @@ union __RequestUnion__processor_set_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t thread_listCnt;
- } __Reply__processor_set_threads_t;
+ } __Reply__processor_set_threads_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10820,7 +10956,7 @@ union __RequestUnion__processor_set_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__processor_set_policy_control_t;
+ } __Reply__processor_set_policy_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10837,7 +10973,7 @@ union __RequestUnion__processor_set_subsystem {
   vm_size_t resident;
   vm_size_t maxusage;
   vm_offset_t maxstack;
- } __Reply__processor_set_stack_usage_t;
+ } __Reply__processor_set_stack_usage_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10854,7 +10990,7 @@ union __RequestUnion__processor_set_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t info_outCnt;
   integer_t info_out[5];
- } __Reply__processor_set_info_t;
+ } __Reply__processor_set_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -10946,6 +11082,7 @@ kern_return_t task_threads
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t mach_ports_register
 (
  task_t target_task,
@@ -10959,6 +11096,7 @@ kern_return_t mach_ports_register
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t mach_ports_lookup
 (
  task_t target_task,
@@ -10986,6 +11124,7 @@ kern_return_t task_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_info
 (
  task_t target_task,
@@ -11000,6 +11139,7 @@ kern_return_t task_set_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_suspend
 (
  task_t target_task
@@ -11011,6 +11151,7 @@ kern_return_t task_suspend
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_resume
 (
  task_t target_task
@@ -11022,6 +11163,7 @@ kern_return_t task_resume
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_special_port
 (
  task_t task,
@@ -11035,6 +11177,7 @@ kern_return_t task_get_special_port
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_special_port
 (
  task_t task,
@@ -11048,6 +11191,7 @@ kern_return_t task_set_special_port
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_create
 (
  task_t parent_task,
@@ -11060,6 +11204,7 @@ kern_return_t thread_create
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_create_running
 (
  task_t parent_task,
@@ -11075,6 +11220,7 @@ kern_return_t thread_create_running
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_exception_ports
 (
  task_t task,
@@ -11090,6 +11236,7 @@ kern_return_t task_set_exception_ports
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_exception_ports
 (
  task_t task,
@@ -11107,6 +11254,7 @@ kern_return_t task_get_exception_ports
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_swap_exception_ports
 (
  task_t task,
@@ -11179,6 +11327,7 @@ kern_return_t semaphore_destroy
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_policy_set
 (
  task_t task,
@@ -11193,6 +11342,7 @@ kern_return_t task_policy_set
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_policy_get
 (
  task_t task,
@@ -11290,6 +11440,7 @@ kern_return_t task_set_ras_pc
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_zone_info
 (
  task_t target_task,
@@ -11360,6 +11511,7 @@ kern_return_t task_set_policy
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_state
 (
  task_t task,
@@ -11374,6 +11526,7 @@ kern_return_t task_get_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_state
 (
  task_t task,
@@ -11388,6 +11541,7 @@ kern_return_t task_set_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_phys_footprint_limit
 (
  task_t task,
@@ -11401,6 +11555,7 @@ kern_return_t task_set_phys_footprint_limit
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_suspend2
 (
  task_t target_task,
@@ -11413,6 +11568,7 @@ kern_return_t task_suspend2
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_resume2
 (
  task_suspension_token_t suspend_token
@@ -11436,6 +11592,7 @@ kern_return_t task_purgable_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_mach_voucher
 (
  task_t task,
@@ -11449,6 +11606,7 @@ kern_return_t task_get_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_mach_voucher
 (
  task_t task,
@@ -11461,13 +11619,14 @@ kern_return_t task_set_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_swap_mach_voucher
 (
  task_t task,
  ipc_voucher_t new_voucher,
  ipc_voucher_t *old_voucher
 );
-# 632 "/usr/include/mach/task.h" 3 4
+# 655 "/usr/include/mach/task.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -11479,7 +11638,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   mach_msg_type_number_t ledgersCnt;
   boolean_t inherit_memory;
- } __Request__task_create_t;
+ } __Request__task_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11489,7 +11648,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_terminate_t;
+ } __Request__task_terminate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11499,7 +11658,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_threads_t;
+ } __Request__task_threads_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11515,7 +11674,7 @@ kern_return_t task_swap_mach_voucher
 
   NDR_record_t NDR;
   mach_msg_type_number_t init_port_setCnt;
- } __Request__mach_ports_register_t;
+ } __Request__mach_ports_register_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11525,7 +11684,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_ports_lookup_t;
+ } __Request__mach_ports_lookup_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11538,7 +11697,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   task_flavor_t flavor;
   mach_msg_type_number_t task_info_outCnt;
- } __Request__task_info_t;
+ } __Request__task_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11552,7 +11711,7 @@ kern_return_t task_swap_mach_voucher
   task_flavor_t flavor;
   mach_msg_type_number_t task_info_inCnt;
   integer_t task_info_in[52];
- } __Request__task_set_info_t;
+ } __Request__task_set_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11562,7 +11721,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_suspend_t;
+ } __Request__task_suspend_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11572,7 +11731,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_resume_t;
+ } __Request__task_resume_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11584,7 +11743,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int which_port;
- } __Request__task_get_special_port_t;
+ } __Request__task_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11600,7 +11759,7 @@ kern_return_t task_swap_mach_voucher
 
   NDR_record_t NDR;
   int which_port;
- } __Request__task_set_special_port_t;
+ } __Request__task_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11610,7 +11769,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_create_t;
+ } __Request__thread_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11624,7 +11783,7 @@ kern_return_t task_swap_mach_voucher
   thread_state_flavor_t flavor;
   mach_msg_type_number_t new_stateCnt;
   natural_t new_state[224];
- } __Request__thread_create_running_t;
+ } __Request__thread_create_running_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11642,7 +11801,7 @@ kern_return_t task_swap_mach_voucher
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__task_set_exception_ports_t;
+ } __Request__task_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11654,7 +11813,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   exception_mask_t exception_mask;
- } __Request__task_get_exception_ports_t;
+ } __Request__task_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11672,7 +11831,7 @@ kern_return_t task_swap_mach_voucher
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__task_swap_exception_ports_t;
+ } __Request__task_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11685,7 +11844,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   int n_ulocks;
   int policy;
- } __Request__lock_set_create_t;
+ } __Request__lock_set_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11699,7 +11858,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t lock_set;
 
- } __Request__lock_set_destroy_t;
+ } __Request__lock_set_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11712,7 +11871,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   int policy;
   int value;
- } __Request__semaphore_create_t;
+ } __Request__semaphore_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11726,7 +11885,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t semaphore;
 
- } __Request__semaphore_destroy_t;
+ } __Request__semaphore_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11740,7 +11899,7 @@ kern_return_t task_swap_mach_voucher
   task_policy_flavor_t flavor;
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[16];
- } __Request__task_policy_set_t;
+ } __Request__task_policy_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11754,7 +11913,7 @@ kern_return_t task_swap_mach_voucher
   task_policy_flavor_t flavor;
   mach_msg_type_number_t policy_infoCnt;
   boolean_t get_default;
- } __Request__task_policy_get_t;
+ } __Request__task_policy_get_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11768,7 +11927,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t reply;
 
- } __Request__task_sample_t;
+ } __Request__task_sample_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11784,7 +11943,7 @@ kern_return_t task_swap_mach_voucher
   integer_t base[5];
   boolean_t set_limit;
   boolean_t change;
- } __Request__task_policy_t;
+ } __Request__task_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11797,7 +11956,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   vm_address_t routine_entry_pt;
   int routine_number;
- } __Request__task_set_emulation_t;
+ } __Request__task_set_emulation_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11807,7 +11966,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_get_emulation_vector_t;
+ } __Request__task_get_emulation_vector_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11824,7 +11983,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   int vector_start;
   mach_msg_type_number_t emulation_vectorCnt;
- } __Request__task_set_emulation_vector_t;
+ } __Request__task_set_emulation_vector_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11837,7 +11996,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   vm_address_t basepc;
   vm_address_t boundspc;
- } __Request__task_set_ras_pc_t;
+ } __Request__task_set_ras_pc_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11847,7 +12006,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_zone_info_t;
+ } __Request__task_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11863,7 +12022,7 @@ kern_return_t task_swap_mach_voucher
 
   NDR_record_t NDR;
   boolean_t assign_threads;
- } __Request__task_assign_t;
+ } __Request__task_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11875,7 +12034,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   boolean_t assign_threads;
- } __Request__task_assign_default_t;
+ } __Request__task_assign_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11885,7 +12044,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_get_assignment_t;
+ } __Request__task_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11906,7 +12065,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_type_number_t limitCnt;
   integer_t limit[1];
   boolean_t change;
- } __Request__task_set_policy_t;
+ } __Request__task_set_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11919,7 +12078,7 @@ kern_return_t task_swap_mach_voucher
   NDR_record_t NDR;
   thread_state_flavor_t flavor;
   mach_msg_type_number_t old_stateCnt;
- } __Request__task_get_state_t;
+ } __Request__task_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11933,7 +12092,7 @@ kern_return_t task_swap_mach_voucher
   thread_state_flavor_t flavor;
   mach_msg_type_number_t new_stateCnt;
   natural_t new_state[224];
- } __Request__task_set_state_t;
+ } __Request__task_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11945,7 +12104,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int new_limit;
- } __Request__task_set_phys_footprint_limit_t;
+ } __Request__task_set_phys_footprint_limit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11955,7 +12114,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_suspend2_t;
+ } __Request__task_suspend2_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11965,7 +12124,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_resume2_t;
+ } __Request__task_resume2_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11975,7 +12134,7 @@ kern_return_t task_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__task_purgable_info_t;
+ } __Request__task_purgable_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -11987,7 +12146,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_voucher_selector_t which;
- } __Request__task_get_mach_voucher_t;
+ } __Request__task_get_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12001,7 +12160,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Request__task_set_mach_voucher_t;
+ } __Request__task_set_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12016,7 +12175,7 @@ kern_return_t task_swap_mach_voucher
   mach_msg_port_descriptor_t new_voucher;
   mach_msg_port_descriptor_t old_voucher;
 
- } __Request__task_swap_mach_voucher_t;
+ } __Request__task_swap_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12085,7 +12244,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t child_task;
 
- } __Reply__task_create_t;
+ } __Reply__task_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12097,7 +12256,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_terminate_t;
+ } __Reply__task_terminate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12113,7 +12272,7 @@ union __RequestUnion__task_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t act_listCnt;
- } __Reply__task_threads_t;
+ } __Reply__task_threads_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12125,7 +12284,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_ports_register_t;
+ } __Reply__mach_ports_register_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12141,7 +12300,7 @@ union __RequestUnion__task_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t init_port_setCnt;
- } __Reply__mach_ports_lookup_t;
+ } __Reply__mach_ports_lookup_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12155,7 +12314,7 @@ union __RequestUnion__task_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t task_info_outCnt;
   integer_t task_info_out[52];
- } __Reply__task_info_t;
+ } __Reply__task_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12167,7 +12326,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_info_t;
+ } __Reply__task_set_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12179,7 +12338,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_suspend_t;
+ } __Reply__task_suspend_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12191,7 +12350,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_resume_t;
+ } __Reply__task_resume_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12205,7 +12364,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t special_port;
 
- } __Reply__task_get_special_port_t;
+ } __Reply__task_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12217,7 +12376,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_special_port_t;
+ } __Reply__task_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12231,7 +12390,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t child_act;
 
- } __Reply__thread_create_t;
+ } __Reply__thread_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12245,7 +12404,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t child_act;
 
- } __Reply__thread_create_running_t;
+ } __Reply__thread_create_running_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12257,7 +12416,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_exception_ports_t;
+ } __Reply__task_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12276,7 +12435,7 @@ union __RequestUnion__task_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__task_get_exception_ports_t;
+ } __Reply__task_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12295,7 +12454,7 @@ union __RequestUnion__task_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__task_swap_exception_ports_t;
+ } __Reply__task_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12309,7 +12468,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t new_lock_set;
 
- } __Reply__lock_set_create_t;
+ } __Reply__lock_set_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12321,7 +12480,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__lock_set_destroy_t;
+ } __Reply__lock_set_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12335,7 +12494,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t semaphore;
 
- } __Reply__semaphore_create_t;
+ } __Reply__semaphore_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12347,7 +12506,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__semaphore_destroy_t;
+ } __Reply__semaphore_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12359,7 +12518,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_policy_set_t;
+ } __Reply__task_policy_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12374,7 +12533,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[16];
   boolean_t get_default;
- } __Reply__task_policy_get_t;
+ } __Reply__task_policy_get_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12386,7 +12545,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_sample_t;
+ } __Reply__task_sample_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12398,7 +12557,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_policy_t;
+ } __Reply__task_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12410,7 +12569,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_emulation_t;
+ } __Reply__task_set_emulation_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12427,7 +12586,7 @@ union __RequestUnion__task_subsystem {
   NDR_record_t NDR;
   int vector_start;
   mach_msg_type_number_t emulation_vectorCnt;
- } __Reply__task_get_emulation_vector_t;
+ } __Reply__task_get_emulation_vector_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12439,7 +12598,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_emulation_vector_t;
+ } __Reply__task_set_emulation_vector_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12451,7 +12610,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_ras_pc_t;
+ } __Reply__task_set_ras_pc_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12469,7 +12628,7 @@ union __RequestUnion__task_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t namesCnt;
   mach_msg_type_number_t infoCnt;
- } __Reply__task_zone_info_t;
+ } __Reply__task_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12481,7 +12640,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_assign_t;
+ } __Reply__task_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12493,7 +12652,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_assign_default_t;
+ } __Reply__task_assign_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12507,7 +12666,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t assigned_set;
 
- } __Reply__task_get_assignment_t;
+ } __Reply__task_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12519,7 +12678,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_policy_t;
+ } __Reply__task_set_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12533,7 +12692,7 @@ union __RequestUnion__task_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t old_stateCnt;
   natural_t old_state[224];
- } __Reply__task_get_state_t;
+ } __Reply__task_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12545,7 +12704,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_state_t;
+ } __Reply__task_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12558,7 +12717,7 @@ union __RequestUnion__task_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   int old_limit;
- } __Reply__task_set_phys_footprint_limit_t;
+ } __Reply__task_set_phys_footprint_limit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12572,7 +12731,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t suspend_token;
 
- } __Reply__task_suspend2_t;
+ } __Reply__task_suspend2_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12584,7 +12743,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_resume2_t;
+ } __Reply__task_resume2_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12597,7 +12756,7 @@ union __RequestUnion__task_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   task_purgable_info_t stats;
- } __Reply__task_purgable_info_t;
+ } __Reply__task_purgable_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12611,7 +12770,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Reply__task_get_mach_voucher_t;
+ } __Reply__task_get_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12623,7 +12782,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_mach_voucher_t;
+ } __Reply__task_set_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12637,7 +12796,7 @@ union __RequestUnion__task_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t old_voucher;
 
- } __Reply__task_swap_mach_voucher_t;
+ } __Reply__task_swap_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -12696,6 +12855,7 @@ union __ReplyUnion__task_subsystem {
 # 49 "/usr/include/mach/thread_act.h" 3 4
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_terminate
 (
  thread_act_t target_act
@@ -12707,6 +12867,7 @@ kern_return_t thread_terminate
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t act_get_state
 (
  thread_act_t target_act,
@@ -12721,6 +12882,7 @@ kern_return_t act_get_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t act_set_state
 (
  thread_act_t target_act,
@@ -12735,6 +12897,7 @@ kern_return_t act_set_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_state
 (
  thread_act_t target_act,
@@ -12749,6 +12912,7 @@ kern_return_t thread_get_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_state
 (
  thread_act_t target_act,
@@ -12763,6 +12927,7 @@ kern_return_t thread_set_state
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_suspend
 (
  thread_act_t target_act
@@ -12774,6 +12939,7 @@ kern_return_t thread_suspend
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_resume
 (
  thread_act_t target_act
@@ -12785,6 +12951,7 @@ kern_return_t thread_resume
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_abort
 (
  thread_act_t target_act
@@ -12796,6 +12963,7 @@ kern_return_t thread_abort
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_abort_safely
 (
  thread_act_t target_act
@@ -12807,6 +12975,7 @@ kern_return_t thread_abort_safely
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_depress_abort
 (
  thread_act_t thread
@@ -12818,6 +12987,7 @@ kern_return_t thread_depress_abort
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_special_port
 (
  thread_act_t thr_act,
@@ -12831,6 +13001,7 @@ kern_return_t thread_get_special_port
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_special_port
 (
  thread_act_t thr_act,
@@ -12858,6 +13029,7 @@ kern_return_t thread_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_exception_ports
 (
  thread_act_t thread,
@@ -12873,6 +13045,7 @@ kern_return_t thread_set_exception_ports
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_exception_ports
 (
  thread_act_t thread,
@@ -12890,6 +13063,7 @@ kern_return_t thread_get_exception_ports
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_swap_exception_ports
 (
  thread_act_t thread,
@@ -13030,6 +13204,7 @@ kern_return_t thread_set_policy
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_mach_voucher
 (
  thread_act_t thr_act,
@@ -13043,6 +13218,7 @@ kern_return_t thread_get_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_mach_voucher
 (
  thread_act_t thr_act,
@@ -13055,18 +13231,19 @@ kern_return_t thread_set_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t thread_swap_mach_voucher
 (
  thread_act_t thr_act,
  ipc_voucher_t new_voucher,
  ipc_voucher_t *old_voucher
 );
-# 436 "/usr/include/mach/thread_act.h" 3 4
+# 454 "/usr/include/mach/thread_act.h" 3 4
 #pragma pack(4)
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_terminate_t;
+ } __Request__thread_terminate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13079,7 +13256,7 @@ kern_return_t thread_swap_mach_voucher
   NDR_record_t NDR;
   int flavor;
   mach_msg_type_number_t old_stateCnt;
- } __Request__act_get_state_t;
+ } __Request__act_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13093,7 +13270,7 @@ kern_return_t thread_swap_mach_voucher
   int flavor;
   mach_msg_type_number_t new_stateCnt;
   natural_t new_state[224];
- } __Request__act_set_state_t;
+ } __Request__act_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13106,7 +13283,7 @@ kern_return_t thread_swap_mach_voucher
   NDR_record_t NDR;
   thread_state_flavor_t flavor;
   mach_msg_type_number_t old_stateCnt;
- } __Request__thread_get_state_t;
+ } __Request__thread_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13120,7 +13297,7 @@ kern_return_t thread_swap_mach_voucher
   thread_state_flavor_t flavor;
   mach_msg_type_number_t new_stateCnt;
   natural_t new_state[224];
- } __Request__thread_set_state_t;
+ } __Request__thread_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13130,7 +13307,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_suspend_t;
+ } __Request__thread_suspend_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13140,7 +13317,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_resume_t;
+ } __Request__thread_resume_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13150,7 +13327,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_abort_t;
+ } __Request__thread_abort_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13160,7 +13337,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_abort_safely_t;
+ } __Request__thread_abort_safely_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13170,7 +13347,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_depress_abort_t;
+ } __Request__thread_depress_abort_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13182,7 +13359,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int which_port;
- } __Request__thread_get_special_port_t;
+ } __Request__thread_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13198,7 +13375,7 @@ kern_return_t thread_swap_mach_voucher
 
   NDR_record_t NDR;
   int which_port;
- } __Request__thread_set_special_port_t;
+ } __Request__thread_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13211,7 +13388,7 @@ kern_return_t thread_swap_mach_voucher
   NDR_record_t NDR;
   thread_flavor_t flavor;
   mach_msg_type_number_t thread_info_outCnt;
- } __Request__thread_info_t;
+ } __Request__thread_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13229,7 +13406,7 @@ kern_return_t thread_swap_mach_voucher
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__thread_set_exception_ports_t;
+ } __Request__thread_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13241,7 +13418,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   exception_mask_t exception_mask;
- } __Request__thread_get_exception_ports_t;
+ } __Request__thread_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13259,7 +13436,7 @@ kern_return_t thread_swap_mach_voucher
   exception_mask_t exception_mask;
   exception_behavior_t behavior;
   thread_state_flavor_t new_flavor;
- } __Request__thread_swap_exception_ports_t;
+ } __Request__thread_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13274,7 +13451,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_type_number_t baseCnt;
   integer_t base[5];
   boolean_t set_limit;
- } __Request__thread_policy_t;
+ } __Request__thread_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13288,7 +13465,7 @@ kern_return_t thread_swap_mach_voucher
   thread_policy_flavor_t flavor;
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[16];
- } __Request__thread_policy_set_t;
+ } __Request__thread_policy_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13302,7 +13479,7 @@ kern_return_t thread_swap_mach_voucher
   thread_policy_flavor_t flavor;
   mach_msg_type_number_t policy_infoCnt;
   boolean_t get_default;
- } __Request__thread_policy_get_t;
+ } __Request__thread_policy_get_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13316,7 +13493,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t reply;
 
- } __Request__thread_sample_t;
+ } __Request__thread_sample_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13328,7 +13505,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   boolean_t trace_status;
- } __Request__etap_trace_thread_t;
+ } __Request__etap_trace_thread_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13342,7 +13519,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t new_set;
 
- } __Request__thread_assign_t;
+ } __Request__thread_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13352,7 +13529,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_assign_default_t;
+ } __Request__thread_assign_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13362,7 +13539,7 @@ kern_return_t thread_swap_mach_voucher
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__thread_get_assignment_t;
+ } __Request__thread_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13382,7 +13559,7 @@ kern_return_t thread_swap_mach_voucher
   integer_t base[5];
   mach_msg_type_number_t limitCnt;
   integer_t limit[1];
- } __Request__thread_set_policy_t;
+ } __Request__thread_set_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13394,7 +13571,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_voucher_selector_t which;
- } __Request__thread_get_mach_voucher_t;
+ } __Request__thread_get_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13408,7 +13585,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Request__thread_set_mach_voucher_t;
+ } __Request__thread_set_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13423,7 +13600,7 @@ kern_return_t thread_swap_mach_voucher
   mach_msg_port_descriptor_t new_voucher;
   mach_msg_port_descriptor_t old_voucher;
 
- } __Request__thread_swap_mach_voucher_t;
+ } __Request__thread_swap_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13476,7 +13653,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_terminate_t;
+ } __Reply__thread_terminate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13490,7 +13667,7 @@ union __RequestUnion__thread_act_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t old_stateCnt;
   natural_t old_state[224];
- } __Reply__act_get_state_t;
+ } __Reply__act_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13502,7 +13679,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__act_set_state_t;
+ } __Reply__act_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13516,7 +13693,7 @@ union __RequestUnion__thread_act_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t old_stateCnt;
   natural_t old_state[224];
- } __Reply__thread_get_state_t;
+ } __Reply__thread_get_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13528,7 +13705,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_state_t;
+ } __Reply__thread_set_state_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13540,7 +13717,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_suspend_t;
+ } __Reply__thread_suspend_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13552,7 +13729,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_resume_t;
+ } __Reply__thread_resume_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13564,7 +13741,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_abort_t;
+ } __Reply__thread_abort_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13576,7 +13753,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_abort_safely_t;
+ } __Reply__thread_abort_safely_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13588,7 +13765,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_depress_abort_t;
+ } __Reply__thread_depress_abort_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13602,7 +13779,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t special_port;
 
- } __Reply__thread_get_special_port_t;
+ } __Reply__thread_get_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13614,7 +13791,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_special_port_t;
+ } __Reply__thread_set_special_port_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13627,8 +13804,8 @@ union __RequestUnion__thread_act_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_msg_type_number_t thread_info_outCnt;
-  integer_t thread_info_out[12];
- } __Reply__thread_info_t;
+  integer_t thread_info_out[32];
+ } __Reply__thread_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13640,7 +13817,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_exception_ports_t;
+ } __Reply__thread_set_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13659,7 +13836,7 @@ union __RequestUnion__thread_act_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__thread_get_exception_ports_t;
+ } __Reply__thread_get_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13678,7 +13855,7 @@ union __RequestUnion__thread_act_subsystem {
   exception_mask_t masks[32];
   exception_behavior_t old_behaviors[32];
   thread_state_flavor_t old_flavors[32];
- } __Reply__thread_swap_exception_ports_t;
+ } __Reply__thread_swap_exception_ports_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13690,7 +13867,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_policy_t;
+ } __Reply__thread_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13702,7 +13879,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_policy_set_t;
+ } __Reply__thread_policy_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13717,7 +13894,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_type_number_t policy_infoCnt;
   integer_t policy_info[16];
   boolean_t get_default;
- } __Reply__thread_policy_get_t;
+ } __Reply__thread_policy_get_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13729,7 +13906,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_sample_t;
+ } __Reply__thread_sample_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13741,7 +13918,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__etap_trace_thread_t;
+ } __Reply__etap_trace_thread_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13753,7 +13930,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_assign_t;
+ } __Reply__thread_assign_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13765,7 +13942,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_assign_default_t;
+ } __Reply__thread_assign_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13779,7 +13956,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t assigned_set;
 
- } __Reply__thread_get_assignment_t;
+ } __Reply__thread_get_assignment_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13791,7 +13968,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_policy_t;
+ } __Reply__thread_set_policy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13805,7 +13982,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Reply__thread_get_mach_voucher_t;
+ } __Reply__thread_get_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13817,7 +13994,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__thread_set_mach_voucher_t;
+ } __Reply__thread_set_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -13831,7 +14008,7 @@ union __RequestUnion__thread_act_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t old_voucher;
 
- } __Reply__thread_swap_mach_voucher_t;
+ } __Reply__thread_swap_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14105,6 +14282,7 @@ kern_return_t vm_remap
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_wire
 (
  vm_map_t target_task,
@@ -14283,7 +14461,7 @@ kern_return_t vm_purgable_control
  vm_purgable_t control,
  int *state
 );
-# 479 "/usr/include/mach/vm_map.h" 3 4
+# 480 "/usr/include/mach/vm_map.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -14292,7 +14470,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_region_flavor_t flavor;
   mach_msg_type_number_t infoCnt;
- } __Request__vm_region_t;
+ } __Request__vm_region_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14306,7 +14484,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   int flags;
- } __Request__vm_allocate_t;
+ } __Request__vm_allocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14319,7 +14497,7 @@ kern_return_t vm_purgable_control
   NDR_record_t NDR;
   vm_address_t address;
   vm_size_t size;
- } __Request__vm_deallocate_t;
+ } __Request__vm_deallocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14334,7 +14512,7 @@ kern_return_t vm_purgable_control
   vm_size_t size;
   boolean_t set_maximum;
   vm_prot_t new_protection;
- } __Request__vm_protect_t;
+ } __Request__vm_protect_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14348,7 +14526,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   vm_inherit_t new_inheritance;
- } __Request__vm_inherit_t;
+ } __Request__vm_inherit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14361,7 +14539,7 @@ kern_return_t vm_purgable_control
   NDR_record_t NDR;
   vm_address_t address;
   vm_size_t size;
- } __Request__vm_read_t;
+ } __Request__vm_read_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14374,7 +14552,7 @@ kern_return_t vm_purgable_control
   NDR_record_t NDR;
   vm_read_entry_t data_list;
   natural_t count;
- } __Request__vm_read_list_t;
+ } __Request__vm_read_list_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14391,7 +14569,7 @@ kern_return_t vm_purgable_control
   NDR_record_t NDR;
   vm_address_t address;
   mach_msg_type_number_t dataCnt;
- } __Request__vm_write_t;
+ } __Request__vm_write_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14405,7 +14583,7 @@ kern_return_t vm_purgable_control
   vm_address_t source_address;
   vm_size_t size;
   vm_address_t dest_address;
- } __Request__vm_copy_t;
+ } __Request__vm_copy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14419,7 +14597,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   vm_address_t data;
- } __Request__vm_read_overwrite_t;
+ } __Request__vm_read_overwrite_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14433,7 +14611,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   vm_sync_t sync_flags;
- } __Request__vm_msync_t;
+ } __Request__vm_msync_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14447,7 +14625,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_size_t size;
   vm_behavior_t new_behavior;
- } __Request__vm_behavior_set_t;
+ } __Request__vm_behavior_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14471,7 +14649,7 @@ kern_return_t vm_purgable_control
   vm_prot_t cur_protection;
   vm_prot_t max_protection;
   vm_inherit_t inheritance;
- } __Request__vm_map_t;
+ } __Request__vm_map_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14486,7 +14664,7 @@ kern_return_t vm_purgable_control
   vm_size_t size;
   vm_machine_attribute_t attribute;
   vm_machine_attribute_val_t value;
- } __Request__vm_machine_attribute_t;
+ } __Request__vm_machine_attribute_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14508,7 +14686,7 @@ kern_return_t vm_purgable_control
   vm_address_t src_address;
   boolean_t copy;
   vm_inherit_t inheritance;
- } __Request__vm_remap_t;
+ } __Request__vm_remap_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14520,7 +14698,7 @@ kern_return_t vm_purgable_control
   mach_msg_header_t Head;
   NDR_record_t NDR;
   boolean_t must_wire;
- } __Request__task_wire_t;
+ } __Request__task_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14538,7 +14716,7 @@ kern_return_t vm_purgable_control
   vm_size_t size;
   vm_offset_t offset;
   vm_prot_t permission;
- } __Request__mach_make_memory_entry_t;
+ } __Request__mach_make_memory_entry_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14550,7 +14728,7 @@ kern_return_t vm_purgable_control
   mach_msg_header_t Head;
   NDR_record_t NDR;
   vm_offset_t offset;
- } __Request__vm_map_page_query_t;
+ } __Request__vm_map_page_query_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14562,7 +14740,7 @@ kern_return_t vm_purgable_control
   mach_msg_header_t Head;
   NDR_record_t NDR;
   vm_address_t address;
- } __Request__mach_vm_region_info_t;
+ } __Request__mach_vm_region_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14572,21 +14750,7 @@ kern_return_t vm_purgable_control
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__vm_mapped_pages_info_t;
-
-#pragma pack()
-
-
-
-#pragma pack(4)
-
- typedef struct {
-  mach_msg_header_t Head;
-  NDR_record_t NDR;
-  vm_address_t address;
-  natural_t nesting_depth;
-  mach_msg_type_number_t infoCnt;
- } __Request__vm_region_recurse_t;
+ } __Request__vm_mapped_pages_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14600,7 +14764,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   natural_t nesting_depth;
   mach_msg_type_number_t infoCnt;
- } __Request__vm_region_recurse_64_t;
+ } __Request__vm_region_recurse_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14612,7 +14776,21 @@ kern_return_t vm_purgable_control
   mach_msg_header_t Head;
   NDR_record_t NDR;
   vm_address_t address;
- } __Request__mach_vm_region_info_64_t;
+  natural_t nesting_depth;
+  mach_msg_type_number_t infoCnt;
+ } __Request__vm_region_recurse_64_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  vm_address_t address;
+ } __Request__mach_vm_region_info_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14626,7 +14804,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_region_flavor_t flavor;
   mach_msg_type_number_t infoCnt;
- } __Request__vm_region_64_t;
+ } __Request__vm_region_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14644,7 +14822,7 @@ kern_return_t vm_purgable_control
   memory_object_size_t size;
   memory_object_offset_t offset;
   vm_prot_t permission;
- } __Request__mach_make_memory_entry_64_t;
+ } __Request__mach_make_memory_entry_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14668,7 +14846,7 @@ kern_return_t vm_purgable_control
   vm_prot_t cur_protection;
   vm_prot_t max_protection;
   vm_inherit_t inheritance;
- } __Request__vm_map_64_t;
+ } __Request__vm_map_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14682,7 +14860,7 @@ kern_return_t vm_purgable_control
   vm_address_t address;
   vm_purgable_t control;
   int state;
- } __Request__vm_purgable_control_t;
+ } __Request__vm_purgable_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14741,7 +14919,7 @@ union __RequestUnion__vm_map_subsystem {
   vm_size_t size;
   mach_msg_type_number_t infoCnt;
   int info[10];
- } __Reply__vm_region_t;
+ } __Reply__vm_region_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14754,7 +14932,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_address_t address;
- } __Reply__vm_allocate_t;
+ } __Reply__vm_allocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14766,7 +14944,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_deallocate_t;
+ } __Reply__vm_deallocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14778,7 +14956,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_protect_t;
+ } __Reply__vm_protect_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14790,7 +14968,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_inherit_t;
+ } __Reply__vm_inherit_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14806,7 +14984,7 @@ union __RequestUnion__vm_map_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t dataCnt;
- } __Reply__vm_read_t;
+ } __Reply__vm_read_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14819,7 +14997,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_read_entry_t data_list;
- } __Reply__vm_read_list_t;
+ } __Reply__vm_read_list_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14831,7 +15009,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_write_t;
+ } __Reply__vm_write_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14843,7 +15021,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_copy_t;
+ } __Reply__vm_copy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14856,7 +15034,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_size_t outsize;
- } __Reply__vm_read_overwrite_t;
+ } __Reply__vm_read_overwrite_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14868,7 +15046,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_msync_t;
+ } __Reply__vm_msync_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14880,7 +15058,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__vm_behavior_set_t;
+ } __Reply__vm_behavior_set_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14893,7 +15071,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_address_t address;
- } __Reply__vm_map_t;
+ } __Reply__vm_map_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14906,7 +15084,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_machine_attribute_val_t value;
- } __Reply__vm_machine_attribute_t;
+ } __Reply__vm_machine_attribute_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14921,7 +15099,7 @@ union __RequestUnion__vm_map_subsystem {
   vm_address_t target_address;
   vm_prot_t cur_protection;
   vm_prot_t max_protection;
- } __Reply__vm_remap_t;
+ } __Reply__vm_remap_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14933,7 +15111,7 @@ union __RequestUnion__vm_map_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_wire_t;
+ } __Reply__task_wire_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14949,7 +15127,7 @@ union __RequestUnion__vm_map_subsystem {
 
   NDR_record_t NDR;
   vm_size_t size;
- } __Reply__mach_make_memory_entry_t;
+ } __Reply__mach_make_memory_entry_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14963,7 +15141,7 @@ union __RequestUnion__vm_map_subsystem {
   kern_return_t RetCode;
   integer_t disposition;
   integer_t ref_count;
- } __Reply__vm_map_page_query_t;
+ } __Reply__vm_map_page_query_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14980,7 +15158,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   vm_info_region_t region;
   mach_msg_type_number_t objectsCnt;
- } __Reply__mach_vm_region_info_t;
+ } __Reply__mach_vm_region_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -14996,7 +15174,7 @@ union __RequestUnion__vm_map_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t pagesCnt;
- } __Reply__vm_mapped_pages_info_t;
+ } __Reply__vm_mapped_pages_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15013,7 +15191,7 @@ union __RequestUnion__vm_map_subsystem {
   natural_t nesting_depth;
   mach_msg_type_number_t infoCnt;
   int info[19];
- } __Reply__vm_region_recurse_t;
+ } __Reply__vm_region_recurse_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15030,7 +15208,7 @@ union __RequestUnion__vm_map_subsystem {
   natural_t nesting_depth;
   mach_msg_type_number_t infoCnt;
   int info[19];
- } __Reply__vm_region_recurse_64_t;
+ } __Reply__vm_region_recurse_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15047,7 +15225,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   vm_info_region_64_t region;
   mach_msg_type_number_t objectsCnt;
- } __Reply__mach_vm_region_info_64_t;
+ } __Reply__mach_vm_region_info_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15066,7 +15244,7 @@ union __RequestUnion__vm_map_subsystem {
   vm_size_t size;
   mach_msg_type_number_t infoCnt;
   int info[10];
- } __Reply__vm_region_64_t;
+ } __Reply__vm_region_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15082,7 +15260,7 @@ union __RequestUnion__vm_map_subsystem {
 
   NDR_record_t NDR;
   memory_object_size_t size;
- } __Reply__mach_make_memory_entry_64_t;
+ } __Reply__mach_make_memory_entry_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15095,7 +15273,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_address_t address;
- } __Reply__vm_map_64_t;
+ } __Reply__vm_map_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15108,7 +15286,7 @@ union __RequestUnion__vm_map_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   int state;
- } __Reply__vm_purgable_control_t;
+ } __Reply__vm_purgable_control_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15194,6 +15372,7 @@ kern_return_t mach_port_rename
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t mach_port_allocate_name
 (
  ipc_space_t task,
@@ -15448,6 +15627,7 @@ kern_return_t mach_port_allocate_full
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_port_space
 (
  ipc_space_t task,
@@ -15643,12 +15823,12 @@ kern_return_t mach_port_space_basic_info
  ipc_space_t task,
  ipc_info_space_basic_t *basic_info
 );
-# 562 "/usr/include/mach/mach_port.h" 3 4
+# 564 "/usr/include/mach/mach_port.h" 3 4
 #pragma pack(4)
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_port_names_t;
+ } __Request__mach_port_names_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15660,7 +15840,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_type_t;
+ } __Request__mach_port_type_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15673,7 +15853,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t old_name;
   mach_port_name_t new_name;
- } __Request__mach_port_rename_t;
+ } __Request__mach_port_rename_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15686,7 +15866,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_right_t right;
   mach_port_name_t name;
- } __Request__mach_port_allocate_name_t;
+ } __Request__mach_port_allocate_name_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15698,7 +15878,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_right_t right;
- } __Request__mach_port_allocate_t;
+ } __Request__mach_port_allocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15710,7 +15890,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_destroy_t;
+ } __Request__mach_port_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15722,7 +15902,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_deallocate_t;
+ } __Request__mach_port_deallocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15735,7 +15915,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_right_t right;
- } __Request__mach_port_get_refs_t;
+ } __Request__mach_port_get_refs_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15749,7 +15929,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_port_right_t right;
   mach_port_delta_t delta;
- } __Request__mach_port_mod_refs_t;
+ } __Request__mach_port_mod_refs_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15764,7 +15944,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_trailer_type_t trailer_type;
   mach_port_seqno_t request_seqnop;
   mach_msg_type_number_t trailer_infopCnt;
- } __Request__mach_port_peek_t;
+ } __Request__mach_port_peek_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15777,7 +15957,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_mscount_t mscount;
- } __Request__mach_port_set_mscount_t;
+ } __Request__mach_port_set_mscount_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15789,7 +15969,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_get_set_status_t;
+ } __Request__mach_port_get_set_status_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15802,7 +15982,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t member;
   mach_port_name_t after;
- } __Request__mach_port_move_member_t;
+ } __Request__mach_port_move_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15820,7 +16000,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_msg_id_t msgid;
   mach_port_mscount_t sync;
- } __Request__mach_port_request_notification_t;
+ } __Request__mach_port_request_notification_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15836,7 +16016,7 @@ kern_return_t mach_port_space_basic_info
 
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_insert_right_t;
+ } __Request__mach_port_insert_right_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15849,7 +16029,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_msg_type_name_t msgt_name;
- } __Request__mach_port_extract_right_t;
+ } __Request__mach_port_extract_right_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15862,7 +16042,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_seqno_t seqno;
- } __Request__mach_port_set_seqno_t;
+ } __Request__mach_port_set_seqno_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15876,7 +16056,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_port_flavor_t flavor;
   mach_msg_type_number_t port_info_outCnt;
- } __Request__mach_port_get_attributes_t;
+ } __Request__mach_port_get_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15891,7 +16071,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_flavor_t flavor;
   mach_msg_type_number_t port_infoCnt;
   integer_t port_info[17];
- } __Request__mach_port_set_attributes_t;
+ } __Request__mach_port_set_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15904,7 +16084,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_right_t right;
   mach_port_qos_t qos;
- } __Request__mach_port_allocate_qos_t;
+ } __Request__mach_port_allocate_qos_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15922,7 +16102,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_right_t right;
   mach_port_qos_t qos;
   mach_port_name_t name;
- } __Request__mach_port_allocate_full_t;
+ } __Request__mach_port_allocate_full_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15934,7 +16114,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   int table_entries;
- } __Request__task_set_port_space_t;
+ } __Request__task_set_port_space_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15946,7 +16126,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_get_srights_t;
+ } __Request__mach_port_get_srights_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15956,19 +16136,7 @@ kern_return_t mach_port_space_basic_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_port_space_info_t;
-
-#pragma pack()
-
-
-
-#pragma pack(4)
-
- typedef struct {
-  mach_msg_header_t Head;
-  NDR_record_t NDR;
-  mach_port_name_t name;
- } __Request__mach_port_dnrequest_info_t;
+ } __Request__mach_port_space_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15980,7 +16148,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_kernel_object_t;
+ } __Request__mach_port_dnrequest_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -15992,8 +16160,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
-  mach_port_name_t pset;
- } __Request__mach_port_insert_member_t;
+ } __Request__mach_port_kernel_object_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16006,7 +16173,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_name_t pset;
- } __Request__mach_port_extract_member_t;
+ } __Request__mach_port_insert_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16018,7 +16185,20 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_get_context_t;
+  mach_port_name_t pset;
+ } __Request__mach_port_extract_member_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  mach_port_name_t name;
+ } __Request__mach_port_get_context_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16031,7 +16211,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_context_t context;
- } __Request__mach_port_set_context_t;
+ } __Request__mach_port_set_context_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16043,7 +16223,7 @@ kern_return_t mach_port_space_basic_info
   mach_msg_header_t Head;
   NDR_record_t NDR;
   mach_port_name_t name;
- } __Request__mach_port_kobject_t;
+ } __Request__mach_port_kobject_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16059,7 +16239,7 @@ kern_return_t mach_port_space_basic_info
 
   NDR_record_t NDR;
   mach_port_context_t context;
- } __Request__mach_port_construct_t;
+ } __Request__mach_port_construct_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16073,7 +16253,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_port_delta_t srdelta;
   mach_port_context_t guard;
- } __Request__mach_port_destruct_t;
+ } __Request__mach_port_destruct_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16087,7 +16267,7 @@ kern_return_t mach_port_space_basic_info
   mach_port_name_t name;
   mach_port_context_t guard;
   boolean_t strict;
- } __Request__mach_port_guard_t;
+ } __Request__mach_port_guard_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16100,7 +16280,7 @@ kern_return_t mach_port_space_basic_info
   NDR_record_t NDR;
   mach_port_name_t name;
   mach_port_context_t guard;
- } __Request__mach_port_unguard_t;
+ } __Request__mach_port_unguard_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16110,7 +16290,7 @@ kern_return_t mach_port_space_basic_info
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_port_space_basic_info_t;
+ } __Request__mach_port_space_basic_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16177,7 +16357,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t namesCnt;
   mach_msg_type_number_t typesCnt;
- } __Reply__mach_port_names_t;
+ } __Reply__mach_port_names_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16190,7 +16370,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_type_t ptype;
- } __Reply__mach_port_type_t;
+ } __Reply__mach_port_type_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16202,7 +16382,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_rename_t;
+ } __Reply__mach_port_rename_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16214,7 +16394,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_allocate_name_t;
+ } __Reply__mach_port_allocate_name_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16227,7 +16407,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_name_t name;
- } __Reply__mach_port_allocate_t;
+ } __Reply__mach_port_allocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16239,7 +16419,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_destroy_t;
+ } __Reply__mach_port_destroy_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16251,7 +16431,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_deallocate_t;
+ } __Reply__mach_port_deallocate_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16264,7 +16444,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_urefs_t refs;
- } __Reply__mach_port_get_refs_t;
+ } __Reply__mach_port_get_refs_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16276,7 +16456,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_mod_refs_t;
+ } __Reply__mach_port_mod_refs_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16293,7 +16473,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_id_t msg_idp;
   mach_msg_type_number_t trailer_infopCnt;
   char trailer_infop[68];
- } __Reply__mach_port_peek_t;
+ } __Reply__mach_port_peek_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16305,7 +16485,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_set_mscount_t;
+ } __Reply__mach_port_set_mscount_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16321,7 +16501,7 @@ union __RequestUnion__mach_port_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t membersCnt;
- } __Reply__mach_port_get_set_status_t;
+ } __Reply__mach_port_get_set_status_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16333,7 +16513,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_move_member_t;
+ } __Reply__mach_port_move_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16347,7 +16527,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t previous;
 
- } __Reply__mach_port_request_notification_t;
+ } __Reply__mach_port_request_notification_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16359,7 +16539,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_insert_right_t;
+ } __Reply__mach_port_insert_right_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16373,7 +16553,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t poly;
 
- } __Reply__mach_port_extract_right_t;
+ } __Reply__mach_port_extract_right_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16385,7 +16565,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_set_seqno_t;
+ } __Reply__mach_port_set_seqno_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16399,7 +16579,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t port_info_outCnt;
   integer_t port_info_out[17];
- } __Reply__mach_port_get_attributes_t;
+ } __Reply__mach_port_get_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16411,21 +16591,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_set_attributes_t;
-
-#pragma pack()
-
-
-
-#pragma pack(4)
-
- typedef struct {
-  mach_msg_header_t Head;
-  NDR_record_t NDR;
-  kern_return_t RetCode;
-  mach_port_qos_t qos;
-  mach_port_name_t name;
- } __Reply__mach_port_allocate_qos_t;
+ } __Reply__mach_port_set_attributes_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16439,7 +16605,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   mach_port_qos_t qos;
   mach_port_name_t name;
- } __Reply__mach_port_allocate_full_t;
+ } __Reply__mach_port_allocate_qos_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16451,7 +16617,21 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__task_set_port_space_t;
+  mach_port_qos_t qos;
+  mach_port_name_t name;
+ } __Reply__mach_port_allocate_full_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  kern_return_t RetCode;
+ } __Reply__task_set_port_space_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16464,7 +16644,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_rights_t srights;
- } __Reply__mach_port_get_srights_t;
+ } __Reply__mach_port_get_srights_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16483,7 +16663,7 @@ union __RequestUnion__mach_port_subsystem {
   ipc_info_space_t space_info;
   mach_msg_type_number_t table_infoCnt;
   mach_msg_type_number_t tree_infoCnt;
- } __Reply__mach_port_space_info_t;
+ } __Reply__mach_port_space_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16497,7 +16677,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   unsigned dnr_total;
   unsigned dnr_used;
- } __Reply__mach_port_dnrequest_info_t;
+ } __Reply__mach_port_dnrequest_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16511,7 +16691,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   unsigned object_type;
   unsigned object_addr;
- } __Reply__mach_port_kernel_object_t;
+ } __Reply__mach_port_kernel_object_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16523,7 +16703,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_insert_member_t;
+ } __Reply__mach_port_insert_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16535,7 +16715,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_extract_member_t;
+ } __Reply__mach_port_extract_member_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16548,7 +16728,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_context_t context;
- } __Reply__mach_port_get_context_t;
+ } __Reply__mach_port_get_context_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16560,7 +16740,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_set_context_t;
+ } __Reply__mach_port_set_context_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16574,7 +16754,7 @@ union __RequestUnion__mach_port_subsystem {
   kern_return_t RetCode;
   natural_t object_type;
   mach_vm_address_t object_addr;
- } __Reply__mach_port_kobject_t;
+ } __Reply__mach_port_kobject_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16587,7 +16767,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   mach_port_name_t name;
- } __Reply__mach_port_construct_t;
+ } __Reply__mach_port_construct_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16599,7 +16779,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_destruct_t;
+ } __Reply__mach_port_destruct_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16611,7 +16791,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_guard_t;
+ } __Reply__mach_port_guard_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16623,7 +16803,7 @@ union __RequestUnion__mach_port_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__mach_port_unguard_t;
+ } __Reply__mach_port_unguard_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16636,7 +16816,7 @@ union __RequestUnion__mach_port_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   ipc_info_space_basic_t basic_info;
- } __Reply__mach_port_space_basic_info_t;
+ } __Reply__mach_port_space_basic_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -16887,6 +17067,7 @@ extern int (*vprintf_stderr_func)(const char *format, va_list ap);
 # 52 "/usr/include/mach/mach_host.h" 3 4
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_info
 (
  host_t host,
@@ -17077,6 +17258,7 @@ kern_return_t host_statistics
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_request_notification
 (
  host_t host,
@@ -17132,6 +17314,7 @@ kern_return_t mach_zone_info
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_create_mach_voucher
 (
  host_t host,
@@ -17146,6 +17329,7 @@ kern_return_t host_create_mach_voucher
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_register_mach_voucher_attr_manager
 (
  host_t host,
@@ -17161,6 +17345,7 @@ kern_return_t host_register_mach_voucher_attr_manager
 
 extern
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 kern_return_t host_register_well_known_mach_voucher_attr_manager
 (
  host_t host,
@@ -17169,7 +17354,50 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
  mach_voucher_attr_key_t key,
  ipc_voucher_attr_control_t *new_attr_control
 );
-# 356 "/usr/include/mach/mach_host.h" 3 4
+
+
+
+
+
+extern
+
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+kern_return_t host_set_atm_diagnostic_flag
+(
+ host_priv_t host_priv,
+ uint32_t diagnostic_flag
+);
+
+
+
+
+
+extern
+
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+kern_return_t host_get_atm_diagnostic_flag
+(
+ host_t host,
+ uint32_t *diagnostic_flag
+);
+
+
+
+
+
+extern
+
+kern_return_t mach_memory_info
+(
+ host_priv_t host,
+ mach_zone_name_array_t *names,
+ mach_msg_type_number_t *namesCnt,
+ mach_zone_info_array_t *info,
+ mach_msg_type_number_t *infoCnt,
+ mach_memory_info_array_t *memory_info,
+ mach_msg_type_number_t *memory_infoCnt
+);
+# 404 "/usr/include/mach/mach_host.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -17177,7 +17405,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   host_flavor_t flavor;
   mach_msg_type_number_t host_info_outCnt;
- } __Request__host_info_t;
+ } __Request__host_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17187,7 +17415,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_kernel_version_t;
+ } __Request__host_kernel_version_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17197,7 +17425,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request___host_page_size_t;
+ } __Request___host_page_size_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17215,7 +17443,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   boolean_t internal;
   vm_size_t size;
   vm_prot_t permission;
- } __Request__mach_memory_object_memory_entry_t;
+ } __Request__mach_memory_object_memory_entry_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17227,7 +17455,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   mach_msg_header_t Head;
   NDR_record_t NDR;
   processor_flavor_t flavor;
- } __Request__host_processor_info_t;
+ } __Request__host_processor_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17237,7 +17465,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_get_io_master_t;
+ } __Request__host_get_io_master_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17249,7 +17477,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   mach_msg_header_t Head;
   NDR_record_t NDR;
   clock_id_t clock_id;
- } __Request__host_get_clock_service_t;
+ } __Request__host_get_clock_service_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17259,7 +17487,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__kmod_get_info_t;
+ } __Request__kmod_get_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17269,7 +17497,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_zone_info_t;
+ } __Request__host_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17279,7 +17507,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_virtual_physical_table_info_t;
+ } __Request__host_virtual_physical_table_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17289,7 +17517,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_default_t;
+ } __Request__processor_set_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17299,7 +17527,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__processor_set_create_t;
+ } __Request__processor_set_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17317,7 +17545,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   boolean_t internal;
   memory_object_size_t size;
   vm_prot_t permission;
- } __Request__mach_memory_object_memory_entry_64_t;
+ } __Request__mach_memory_object_memory_entry_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17330,7 +17558,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   host_flavor_t flavor;
   mach_msg_type_number_t host_info_outCnt;
- } __Request__host_statistics_t;
+ } __Request__host_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17346,7 +17574,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
   NDR_record_t NDR;
   host_flavor_t notify_type;
- } __Request__host_request_notification_t;
+ } __Request__host_request_notification_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17356,7 +17584,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__host_lockgroup_info_t;
+ } __Request__host_lockgroup_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17369,7 +17597,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   host_flavor_t flavor;
   mach_msg_type_number_t host_info64_outCnt;
- } __Request__host_statistics64_t;
+ } __Request__host_statistics64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17379,7 +17607,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
  typedef struct {
   mach_msg_header_t Head;
- } __Request__mach_zone_info_t;
+ } __Request__mach_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17392,7 +17620,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   mach_msg_type_number_t recipesCnt;
   uint8_t recipes[5120];
- } __Request__host_create_mach_voucher_t;
+ } __Request__host_create_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17408,7 +17636,7 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
   NDR_record_t NDR;
   mach_voucher_attr_value_handle_t default_value;
- } __Request__host_register_mach_voucher_attr_manager_t;
+ } __Request__host_register_mach_voucher_attr_manager_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17425,7 +17653,39 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
   NDR_record_t NDR;
   mach_voucher_attr_value_handle_t default_value;
   mach_voucher_attr_key_t key;
- } __Request__host_register_well_known_mach_voucher_attr_manager_t;
+ } __Request__host_register_well_known_mach_voucher_attr_manager_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  uint32_t diagnostic_flag;
+ } __Request__host_set_atm_diagnostic_flag_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+ } __Request__host_get_atm_diagnostic_flag_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+ } __Request__mach_memory_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17457,6 +17717,9 @@ union __RequestUnion__mach_host_subsystem {
  __Request__host_create_mach_voucher_t Request_host_create_mach_voucher;
  __Request__host_register_mach_voucher_attr_manager_t Request_host_register_mach_voucher_attr_manager;
  __Request__host_register_well_known_mach_voucher_attr_manager_t Request_host_register_well_known_mach_voucher_attr_manager;
+ __Request__host_set_atm_diagnostic_flag_t Request_host_set_atm_diagnostic_flag;
+ __Request__host_get_atm_diagnostic_flag_t Request_host_get_atm_diagnostic_flag;
+ __Request__mach_memory_info_t Request_mach_memory_info;
 };
 
 
@@ -17473,7 +17736,7 @@ union __RequestUnion__mach_host_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t host_info_outCnt;
   integer_t host_info_out[68];
- } __Reply__host_info_t;
+ } __Reply__host_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17488,7 +17751,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_type_number_t kernel_versionOffset;
   mach_msg_type_number_t kernel_versionCnt;
   char kernel_version[512];
- } __Reply__host_kernel_version_t;
+ } __Reply__host_kernel_version_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17501,7 +17764,7 @@ union __RequestUnion__mach_host_subsystem {
   NDR_record_t NDR;
   kern_return_t RetCode;
   vm_size_t out_page_size;
- } __Reply___host_page_size_t;
+ } __Reply___host_page_size_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17515,7 +17778,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t entry_handle;
 
- } __Reply__mach_memory_object_memory_entry_t;
+ } __Reply__mach_memory_object_memory_entry_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17532,7 +17795,7 @@ union __RequestUnion__mach_host_subsystem {
   NDR_record_t NDR;
   natural_t out_processor_count;
   mach_msg_type_number_t out_processor_infoCnt;
- } __Reply__host_processor_info_t;
+ } __Reply__host_processor_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17546,7 +17809,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t io_master;
 
- } __Reply__host_get_io_master_t;
+ } __Reply__host_get_io_master_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17560,7 +17823,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t clock_serv;
 
- } __Reply__host_get_clock_service_t;
+ } __Reply__host_get_clock_service_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17576,7 +17839,7 @@ union __RequestUnion__mach_host_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t modulesCnt;
- } __Reply__kmod_get_info_t;
+ } __Reply__kmod_get_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17594,7 +17857,7 @@ union __RequestUnion__mach_host_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t namesCnt;
   mach_msg_type_number_t infoCnt;
- } __Reply__host_zone_info_t;
+ } __Reply__host_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17610,7 +17873,7 @@ union __RequestUnion__mach_host_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t infoCnt;
- } __Reply__host_virtual_physical_table_info_t;
+ } __Reply__host_virtual_physical_table_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17624,7 +17887,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t default_set;
 
- } __Reply__processor_set_default_t;
+ } __Reply__processor_set_default_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17639,7 +17902,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_port_descriptor_t new_set;
   mach_msg_port_descriptor_t new_name;
 
- } __Reply__processor_set_create_t;
+ } __Reply__processor_set_create_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17653,7 +17916,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t entry_handle;
 
- } __Reply__mach_memory_object_memory_entry_64_t;
+ } __Reply__mach_memory_object_memory_entry_64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17667,7 +17930,7 @@ union __RequestUnion__mach_host_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t host_info_outCnt;
   integer_t host_info_out[68];
- } __Reply__host_statistics_t;
+ } __Reply__host_statistics_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17679,7 +17942,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_header_t Head;
   NDR_record_t NDR;
   kern_return_t RetCode;
- } __Reply__host_request_notification_t;
+ } __Reply__host_request_notification_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17695,7 +17958,7 @@ union __RequestUnion__mach_host_subsystem {
 
   NDR_record_t NDR;
   mach_msg_type_number_t lockgroup_infoCnt;
- } __Reply__host_lockgroup_info_t;
+ } __Reply__host_lockgroup_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17709,7 +17972,7 @@ union __RequestUnion__mach_host_subsystem {
   kern_return_t RetCode;
   mach_msg_type_number_t host_info64_outCnt;
   integer_t host_info64_out[256];
- } __Reply__host_statistics64_t;
+ } __Reply__host_statistics64_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17727,7 +17990,7 @@ union __RequestUnion__mach_host_subsystem {
   NDR_record_t NDR;
   mach_msg_type_number_t namesCnt;
   mach_msg_type_number_t infoCnt;
- } __Reply__mach_zone_info_t;
+ } __Reply__mach_zone_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17741,7 +18004,7 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t voucher;
 
- } __Reply__host_create_mach_voucher_t;
+ } __Reply__host_create_mach_voucher_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17757,7 +18020,7 @@ union __RequestUnion__mach_host_subsystem {
 
   NDR_record_t NDR;
   mach_voucher_attr_key_t new_key;
- } __Reply__host_register_mach_voucher_attr_manager_t;
+ } __Reply__host_register_mach_voucher_attr_manager_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17771,7 +18034,52 @@ union __RequestUnion__mach_host_subsystem {
   mach_msg_body_t msgh_body;
   mach_msg_port_descriptor_t new_attr_control;
 
- } __Reply__host_register_well_known_mach_voucher_attr_manager_t;
+ } __Reply__host_register_well_known_mach_voucher_attr_manager_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  kern_return_t RetCode;
+ } __Reply__host_set_atm_diagnostic_flag_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+  NDR_record_t NDR;
+  kern_return_t RetCode;
+  uint32_t diagnostic_flag;
+ } __Reply__host_get_atm_diagnostic_flag_t __attribute__((unused));
+
+#pragma pack()
+
+
+
+#pragma pack(4)
+
+ typedef struct {
+  mach_msg_header_t Head;
+
+  mach_msg_body_t msgh_body;
+  mach_msg_ool_descriptor_t names;
+  mach_msg_ool_descriptor_t info;
+  mach_msg_ool_descriptor_t memory_info;
+
+  NDR_record_t NDR;
+  mach_msg_type_number_t namesCnt;
+  mach_msg_type_number_t infoCnt;
+  mach_msg_type_number_t memory_infoCnt;
+ } __Reply__mach_memory_info_t __attribute__((unused));
 
 #pragma pack()
 
@@ -17803,6 +18111,9 @@ union __ReplyUnion__mach_host_subsystem {
  __Reply__host_create_mach_voucher_t Reply_host_create_mach_voucher;
  __Reply__host_register_mach_voucher_attr_manager_t Reply_host_register_mach_voucher_attr_manager;
  __Reply__host_register_well_known_mach_voucher_attr_manager_t Reply_host_register_well_known_mach_voucher_attr_manager;
+ __Reply__host_set_atm_diagnostic_flag_t Reply_host_set_atm_diagnostic_flag;
+ __Reply__host_get_atm_diagnostic_flag_t Reply_host_get_atm_diagnostic_flag;
+ __Reply__mach_memory_info_t Reply_mach_memory_info;
 };
 # 71 "/usr/include/mach/mach.h" 2 3 4
 # 1 "/usr/include/mach/thread_switch.h" 1 3 4
@@ -17928,18 +18239,24 @@ extern void slot_name(cpu_type_t,
 extern void mig_reply_setup(mach_msg_header_t *,
       mach_msg_header_t *);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern void mach_msg_destroy(mach_msg_header_t *);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_receive(mach_msg_header_t *);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_send(mach_msg_header_t *);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_server_once(boolean_t (*)
            (mach_msg_header_t *,
             mach_msg_header_t *),
            mach_msg_size_t,
            mach_port_t,
            mach_msg_options_t);
+
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_server(boolean_t (*)
       (mach_msg_header_t *,
        mach_msg_header_t *),
@@ -17947,6 +18264,7 @@ extern mach_msg_return_t mach_msg_server(boolean_t (*)
       mach_port_t,
       mach_msg_options_t);
 
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 extern mach_msg_return_t mach_msg_server_importance(boolean_t (*)
       (mach_msg_header_t *,
        mach_msg_header_t *),
@@ -17965,15 +18283,15 @@ extern kern_return_t clock_sleep(mach_port_t,
         int,
         mach_timespec_t,
         mach_timespec_t *);
-# 150 "/usr/include/mach/mach.h" 3 4
+# 157 "/usr/include/mach/mach.h" 3 4
 typedef struct voucher_mach_msg_state_s *voucher_mach_msg_state_t;
-# 178 "/usr/include/mach/mach.h" 3 4
+# 185 "/usr/include/mach/mach.h" 3 4
 extern boolean_t voucher_mach_msg_set(mach_msg_header_t *msg);
-# 197 "/usr/include/mach/mach.h" 3 4
+# 204 "/usr/include/mach/mach.h" 3 4
 extern void voucher_mach_msg_clear(mach_msg_header_t *msg);
-# 217 "/usr/include/mach/mach.h" 3 4
+# 224 "/usr/include/mach/mach.h" 3 4
 extern voucher_mach_msg_state_t voucher_mach_msg_adopt(mach_msg_header_t *msg);
-# 233 "/usr/include/mach/mach.h" 3 4
+# 240 "/usr/include/mach/mach.h" 3 4
 extern void voucher_mach_msg_revert(voucher_mach_msg_state_t state);
 # 27 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-darwin.h" 2
 
@@ -19249,7 +19567,7 @@ typedef struct {
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/terminal.h" 2
 
 
@@ -19458,16 +19776,7 @@ typedef struct {
 
   _Bool vc_fail;
 } vimconv_T;
-
-
-
-
-typedef struct {
-  char_u *vir_line;
-  FILE *vir_fd;
-  vimconv_T vir_conv;
-} vir_T;
-# 349 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 340 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct mapblock mapblock_T;
 struct mapblock {
   mapblock_T *m_next;
@@ -19490,7 +19799,7 @@ struct stl_hlrec {
   char_u *start;
   int userhl;
 };
-# 380 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 371 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct qf_info_S qf_info_T;
 
 
@@ -19531,7 +19840,7 @@ typedef struct {
   int b_syn_topgrp;
   int b_syn_conceal;
   int b_syn_folditems;
-# 435 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 426 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   synstate_T *b_sst_array;
   int b_sst_len;
   synstate_T *b_sst_first;
@@ -19550,7 +19859,7 @@ typedef struct {
   char_u *b_p_spl;
   int b_cjk;
 } synblock_T;
-# 463 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 454 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 struct file_buffer {
   uint64_t handle;
   memline_T b_ml;
@@ -19563,7 +19872,7 @@ struct file_buffer {
 
   int b_flags;
   _Bool b_closing;
-# 483 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 474 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   char_u *b_ffname;
   char_u *b_sfname;
   char_u *b_fname;
@@ -19599,21 +19908,21 @@ struct file_buffer {
   uint64_t b_orig_size;
   int b_orig_mode;
 
-  pos_T b_namedm[('z' - 'a' + 1)];
+  fmark_T b_namedm[('z' - 'a' + 1)];
 
 
   visualinfo_T b_visual;
   int b_visual_mode_eval;
 
-  pos_T b_last_cursor;
+  fmark_T b_last_cursor;
 
-  pos_T b_last_insert;
-  pos_T b_last_change;
-
-
+  fmark_T b_last_insert;
+  fmark_T b_last_change;
 
 
-  pos_T b_changelist[100];
+
+
+  fmark_T b_changelist[100];
   int b_changelistlen;
   _Bool b_new_change;
 
@@ -19841,15 +20150,17 @@ struct file_buffer {
   signlist_T *b_signlist;
 
   Terminal *terminal;
+
+  dict_T *additional_data;
 };
-# 781 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 774 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct diffblock_S diff_T;
 struct diffblock_S {
   diff_T *df_next;
   linenr_T df_lnum[4];
   linenr_T df_count[4];
 };
-# 798 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 791 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct tabpage_S tabpage_T;
 struct tabpage_S {
   uint64_t handle;
@@ -19870,7 +20181,7 @@ struct tabpage_S {
   dictitem_T tp_winvar;
   dict_T *tp_vars;
 };
-# 831 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 824 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct w_line {
   linenr_T wl_lnum;
   uint16_t wl_size;
@@ -19898,7 +20209,7 @@ struct frame_S {
   frame_T *fr_child;
   win_T *fr_win;
 };
-# 869 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 862 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct {
   regmmatch_T rm;
 
@@ -20020,7 +20331,7 @@ struct window_S {
   int w_wincol;
   int w_width;
   int w_vsep_width;
-# 1000 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 993 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_valid;
   pos_T w_valid_cursor;
 
@@ -20031,19 +20342,19 @@ struct window_S {
 
 
   int w_cline_height;
-  int w_cline_folded;
+  _Bool w_cline_folded;
 
   int w_cline_row;
 
   colnr_T w_virtcol;
-# 1026 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1019 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_wrow, w_wcol;
 
   linenr_T w_botline;
 
   int w_empty_rows;
   int w_filler_rows;
-# 1044 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1037 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_lines_valid;
   wline_T *w_lines;
 
@@ -20082,7 +20393,7 @@ struct window_S {
   int w_arg_idx_invalid;
 
   char_u *w_localdir;
-# 1090 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1083 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   winopt_T w_onebuf_opt;
   winopt_T w_allbuf_opt;
 
@@ -20376,7 +20687,93 @@ struct VimMenu {
   vimmenu_T *next;
 };
 # 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
-# 70 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h" 1
+
+
+
+
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 1
+# 30 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h"
+# 1 "/usr/include/assert.h" 1 3 4
+# 76 "/usr/include/assert.h" 3 4
+void __assert_rtn(const char *, const char *, int, const char *) __attribute__((noreturn));
+# 31 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 2
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 1
+
+
+
+
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 2
+# 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
+# 34 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 2
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h" 2
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.h" 1
+
+
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h" 1
+
+
+
+# 1 "/usr/include/assert.h" 1 3 4
+# 76 "/usr/include/assert.h" 3 4
+void __assert_rtn(const char *, const char *, int, const char *) __attribute__((noreturn));
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h" 2
+
+
+
+
+typedef void (*argv_callback)(void **argv);
+typedef struct message {
+  int priority;
+  argv_callback handler;
+  void *argv[6];
+} Event;
+typedef void(*event_scheduler)(Event event, void *data);
+# 32 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h"
+static inline Event event_create(int priority, argv_callback cb, int argc, ...)
+{
+  (__builtin_expect(!(argc <= 6), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h", 34, "argc <= EVENT_HANDLER_MAX_ARGC") : (void)0);
+  Event event;
+  do { (__builtin_expect(!(argc <= 6), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/event/defs.h", 36, "argc <= EVENT_HANDLER_MAX_ARGC") : (void)0); (&event)->priority = priority; (&event)->handler = cb; if (argc) { va_list args; __builtin_va_start(args, argc); for (int i = 0; i < argc; i++) { (&event)->argv[i] = __builtin_va_arg(args, void *); } __builtin_va_end(args); } } while (0);
+  return event;
+}
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.h" 2
+
+
+typedef struct queue Queue;
+typedef void (*put_callback)(Queue *queue, void *data);
+# 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h" 2
+
+typedef void * WatcherPtr;
+
+
+struct __kl1_WatcherPtr { WatcherPtr data; struct __kl1_WatcherPtr *next; }; typedef struct __kl1_WatcherPtr kl1_WatcherPtr; typedef struct { size_t cnt, n, max; kl1_WatcherPtr **buf; } kmp_WatcherPtr_t; static inline kmp_WatcherPtr_t *kmp_init_WatcherPtr(void) { return xcalloc(1, sizeof(kmp_WatcherPtr_t)); } static inline void kmp_destroy_WatcherPtr(kmp_WatcherPtr_t *mp) __attribute__((unused)); static inline void kmp_destroy_WatcherPtr(kmp_WatcherPtr_t *mp) { size_t k; for (k = 0; k < mp->n; ++k) { ; xfree(mp->buf[k]); } xfree(mp->buf); xfree(mp); } static inline kl1_WatcherPtr *kmp_alloc_WatcherPtr(kmp_WatcherPtr_t *mp) { ++mp->cnt; if (mp->n == 0) return xcalloc(1, sizeof(kl1_WatcherPtr)); return mp->buf[--mp->n]; } static inline void kmp_free_WatcherPtr(kmp_WatcherPtr_t *mp, kl1_WatcherPtr *p) { --mp->cnt; if (mp->n == mp->max) { mp->max = mp->max? mp->max<<1 : 16; mp->buf = xrealloc(mp->buf, sizeof(kl1_WatcherPtr *) * mp->max); } mp->buf[mp->n++] = p; } typedef struct { kl1_WatcherPtr *head, *tail; kmp_WatcherPtr_t *mp; size_t size; } kl_WatcherPtr_t; static inline kl_WatcherPtr_t *kl_init_WatcherPtr(void) { kl_WatcherPtr_t *kl = xcalloc(1, sizeof(kl_WatcherPtr_t)); kl->mp = kmp_init_WatcherPtr(); kl->head = kl->tail = kmp_alloc_WatcherPtr(kl->mp); kl->head->next = 0; return kl; } static inline void kl_destroy_WatcherPtr(kl_WatcherPtr_t *kl) __attribute__((unused)); static inline void kl_destroy_WatcherPtr(kl_WatcherPtr_t *kl) { kl1_WatcherPtr *p; for (p = kl->head; p != kl->tail; p = p->next) kmp_free_WatcherPtr(kl->mp, p); kmp_free_WatcherPtr(kl->mp, p); kmp_destroy_WatcherPtr(kl->mp); xfree(kl); } static inline void kl_push_WatcherPtr(kl_WatcherPtr_t *kl, WatcherPtr d) { kl1_WatcherPtr *q, *p = kmp_alloc_WatcherPtr(kl->mp); q = kl->tail; p->next = 0; kl->tail->next = p; kl->tail = p; ++kl->size; q->data = d; } static inline WatcherPtr kl_shift_at_WatcherPtr(kl_WatcherPtr_t *kl, kl1_WatcherPtr **n) { (__builtin_expect(!((*n)->next), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h", 15, "(*n)->next") : (void)0); kl1_WatcherPtr *p; --kl->size; p = *n; *n = (*n)->next; if (p == kl->head) kl->head = *n; WatcherPtr d = p->data; kmp_free_WatcherPtr(kl->mp, p); return d; }
+
+typedef struct loop {
+  uv_loop_t uv;
+  Queue *events, *fast_events, *thread_events;
+  kl_WatcherPtr_t *children;
+  uv_signal_t children_watcher;
+  uv_timer_t children_kill_timer, poll_timer;
+  size_t children_stop_requests;
+  uv_async_t async;
+  uv_mutex_t mutex;
+  int recursive;
+} Loop;
+# 32 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 75 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern long Rows
 
 
@@ -20389,12 +20786,12 @@ extern long Columns ;
 
 typedef char_u schar_T;
 typedef unsigned short sattr_T;
-# 94 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 99 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern schar_T *ScreenLines ;
 extern sattr_T *ScreenAttrs ;
 extern unsigned *LineOffset ;
 extern char_u *LineWraps ;
-# 107 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern u8char_T *ScreenLinesUC ;
 extern u8char_T *ScreenLinesC[6];
 extern int Screen_mco ;
@@ -20403,7 +20800,7 @@ extern int Screen_mco ;
 
 
 extern schar_T *ScreenLines2 ;
-# 123 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 128 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern short *TabPageIdxs ;
 
 extern int screen_Rows ;
@@ -20414,7 +20811,7 @@ extern int screen_Columns ;
 
 
 extern int mod_mask ;
-# 143 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 148 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int cmdline_row;
 
 extern int redraw_cmdline ;
@@ -20448,7 +20845,7 @@ extern int compl_interrupted ;
 
 
 extern int compl_cont_status ;
-# 191 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 196 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int cmdmsg_rl ;
 extern int msg_col;
 extern int msg_row;
@@ -20559,9 +20956,9 @@ extern int check_cstack ;
 
 
 extern int trylevel ;
-# 310 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 315 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int force_abort ;
-# 322 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 327 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern struct msglist **msg_list ;
 
 
@@ -20579,11 +20976,11 @@ extern int suppress_errthrow ;
 
 
 extern except_T *caught_stack ;
-# 349 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 354 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int may_garbage_collect ;
 extern int want_garbage_collect ;
 extern int garbage_collect_at_exit ;
-# 362 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 367 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern scid_T current_SID ;
 
 
@@ -20675,7 +21072,7 @@ typedef enum {
   , HLF_MC
   , HLF_COUNT
 } hlf_T;
-# 461 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 466 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int highlight_attr[HLF_COUNT];
 extern int highlight_user[9];
 extern int highlight_stlnc[9];
@@ -20731,11 +21128,16 @@ extern int sys_menu ;
 
 
 extern int updating_screen ;
-# 524 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+
+
+
+
+
+
 extern win_T *firstwin;
 extern win_T *lastwin;
 extern win_T *prevwin ;
-# 539 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 542 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern win_T *curwin;
 
 extern win_T *aucmd_win;
@@ -20754,7 +21156,7 @@ extern frame_T *topframe;
 extern tabpage_T *first_tabpage;
 extern tabpage_T *curtab;
 extern int redraw_tabline ;
-# 565 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 568 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern buf_T *firstbuf ;
 extern buf_T *lastbuf ;
 extern buf_T *curbuf ;
@@ -20822,6 +21224,10 @@ extern int sandbox ;
 extern int silent_mode ;
 
 
+
+
+
+extern _Bool did_source_startup_scripts ;
 
 extern pos_T VIsual;
 extern int VIsual_active ;
@@ -20914,7 +21320,7 @@ extern pos_T Insstart_orig;
 
 extern int orig_line_count ;
 extern int vr_lines_changed ;
-# 742 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 749 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int enc_dbcs ;
 
 extern int enc_unicode ;
@@ -20928,7 +21334,7 @@ extern int has_mbyte ;
 
 
 extern char mb_bytelen_tab[256];
-# 763 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 770 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int (*mb_ptr2len)(const char_u *p) ;
 
 extern int (*mb_ptr2len_len)(const char_u *p, int size) ;
@@ -20944,7 +21350,7 @@ extern int (*mb_off2cells)(unsigned off, unsigned max_off) ;
 
 extern int (*mb_ptr2char)(const char_u *p) ;
 extern int (*mb_head_off)(const char_u *base, const char_u *p) ;
-# 796 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 803 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int State ;
 
 
@@ -20967,6 +21373,8 @@ extern int allow_keys ;
 extern int no_u_sync ;
 extern int u_sync_once ;
 
+
+extern _Bool force_restart_edit ;
 
 extern int restart_edit ;
 extern int arrow_used;
@@ -21035,7 +21443,7 @@ extern int skip_redraw ;
 extern int do_redraw ;
 
 extern int need_highlight_changed ;
-extern char_u *use_viminfo ;
+extern char *used_shada_file ;
 
 
 extern FILE *scriptin[15];
@@ -21044,14 +21452,6 @@ extern FILE *scriptout ;
 
 
 extern volatile int got_int ;
-
-extern int disable_breakcheck ;
-
-
-
-
-
-
 
 extern int bangredo ;
 extern int searchcmdlen;
@@ -21192,7 +21592,7 @@ extern linenr_T printer_page_num;
 
 
 extern int typebuf_was_filled ;
-# 1058 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 1059 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int virtual_op ;
 
 
@@ -21204,8 +21604,10 @@ extern linenr_T spell_redraw_lnum ;
 
 
 extern int need_cursor_line_redraw ;
-# 1085 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 1086 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern char_u e_abort[] ;
+extern char_u e_afterinit[] ;
+
 extern char_u e_api_spawn_failed[] ;
 extern char_u e_argreq[] ;
 extern char_u e_backslash[] ;
@@ -21233,8 +21635,11 @@ extern char_u e_isadir2[] ;
 extern char_u e_invjob[] ;
 extern char_u e_jobtblfull[] ;
 extern char_u e_jobexe[] ;
+extern char_u e_jobspawn[] ;
+
 extern char_u e_jobnotpty[] ;
 extern char_u e_libcall[] ;
+extern char_u e_mkdir[] ;
 extern char_u e_markinval[] ;
 extern char_u e_marknotset[] ;
 extern char_u e_modifiable[] ;
@@ -21339,6 +21744,7 @@ extern char *ignoredp;
 
 
 extern _Bool embedded_mode ;
+extern Loop loop;
 
 
 
@@ -21347,13 +21753,13 @@ typedef enum {
   kWorking,
   kBroken
 } WorkingStatus;
-# 351 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 343 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 # 43 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 1
 # 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
-# 94 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+# 95 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 static inline _Bool ascii_iswhite(int) __attribute__((always_inline)) __attribute__((const));
 static inline _Bool ascii_isdigit(int) __attribute__((always_inline)) __attribute__((const));
 static inline _Bool ascii_isxdigit(int) __attribute__((always_inline)) __attribute__((const));
@@ -21366,7 +21772,7 @@ static inline _Bool ascii_iswhite(int c)
 {
   return c == ' ' || c == '\t';
 }
-# 116 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+# 117 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 static inline _Bool ascii_isdigit(int c)
 {
   return c >= '0' && c <= '9';
@@ -21504,6 +21910,1144 @@ typedef enum {
 
 
 
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 1
+# 24 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/util.h" 1
+# 25 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/object.h" 1
+# 21 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/object.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h" 1
+# 21 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h" 1
+# 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h"
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 23 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h" 2
+# 59 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h"
+typedef unsigned int _msgpack_atomic_counter_t;
+# 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h" 2
+# 34 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h"
+typedef struct msgpack_zone_finalizer {
+    void (*func)(void* data);
+    void* data;
+} msgpack_zone_finalizer;
+
+typedef struct msgpack_zone_finalizer_array {
+    msgpack_zone_finalizer* tail;
+    msgpack_zone_finalizer* end;
+    msgpack_zone_finalizer* array;
+} msgpack_zone_finalizer_array;
+
+struct msgpack_zone_chunk;
+typedef struct msgpack_zone_chunk msgpack_zone_chunk;
+
+typedef struct msgpack_zone_chunk_list {
+    size_t free;
+    char* ptr;
+    msgpack_zone_chunk* head;
+} msgpack_zone_chunk_list;
+
+typedef struct msgpack_zone {
+    msgpack_zone_chunk_list chunk_list;
+    msgpack_zone_finalizer_array finalizer_array;
+    size_t chunk_size;
+} msgpack_zone;
+
+
+
+
+
+
+_Bool msgpack_zone_init(msgpack_zone* zone, size_t chunk_size);
+
+void msgpack_zone_destroy(msgpack_zone* zone);
+
+
+msgpack_zone* msgpack_zone_new(size_t chunk_size);
+
+void msgpack_zone_free(msgpack_zone* zone);
+
+static inline void* msgpack_zone_malloc(msgpack_zone* zone, size_t size);
+static inline void* msgpack_zone_malloc_no_align(msgpack_zone* zone, size_t size);
+
+static inline _Bool msgpack_zone_push_finalizer(msgpack_zone* zone,
+        void (*func)(void* data), void* data);
+
+static inline void msgpack_zone_swap(msgpack_zone* a, msgpack_zone* b);
+
+
+_Bool msgpack_zone_is_empty(msgpack_zone* zone);
+
+
+void msgpack_zone_clear(msgpack_zone* zone);
+# 96 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h"
+void* msgpack_zone_malloc_expand(msgpack_zone* zone, size_t size);
+
+static inline void* msgpack_zone_malloc_no_align(msgpack_zone* zone, size_t size)
+{
+    char* ptr;
+    msgpack_zone_chunk_list* cl = &zone->chunk_list;
+
+    if(zone->chunk_list.free < size) {
+        return msgpack_zone_malloc_expand(zone, size);
+    }
+
+    ptr = cl->ptr;
+    cl->free -= size;
+    cl->ptr += size;
+
+    return ptr;
+}
+
+static inline void* msgpack_zone_malloc(msgpack_zone* zone, size_t size)
+{
+    char* aligned =
+        (char*)(
+            (size_t)(
+                zone->chunk_list.ptr + (sizeof(void*) - 1)
+            ) / sizeof(void*) * sizeof(void*)
+        );
+    size_t adjusted_size = size + (aligned - zone->chunk_list.ptr);
+    if(zone->chunk_list.free >= adjusted_size) {
+        zone->chunk_list.free -= adjusted_size;
+        zone->chunk_list.ptr += adjusted_size;
+        return aligned;
+    }
+    {
+        void* ptr = msgpack_zone_malloc_expand(zone, size + (sizeof(void*) - 1));
+        if (ptr) {
+            return (char*)((size_t)(ptr) / sizeof(void*) * sizeof(void*));
+        }
+    }
+    return ((void*)0);
+}
+
+
+_Bool msgpack_zone_push_finalizer_expand(msgpack_zone* zone,
+        void (*func)(void* data), void* data);
+
+static inline _Bool msgpack_zone_push_finalizer(msgpack_zone* zone,
+        void (*func)(void* data), void* data)
+{
+    msgpack_zone_finalizer_array* const fa = &zone->finalizer_array;
+    msgpack_zone_finalizer* fin = fa->tail;
+
+    if(fin == fa->end) {
+        return msgpack_zone_push_finalizer_expand(zone, func, data);
+    }
+
+    fin->func = func;
+    fin->data = data;
+
+    ++fa->tail;
+
+    return 1;
+}
+
+static inline void msgpack_zone_swap(msgpack_zone* a, msgpack_zone* b)
+{
+    msgpack_zone tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+# 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/object.h" 2
+# 35 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/object.h"
+typedef enum {
+    MSGPACK_OBJECT_NIL = 0x00,
+    MSGPACK_OBJECT_BOOLEAN = 0x01,
+    MSGPACK_OBJECT_POSITIVE_INTEGER = 0x02,
+    MSGPACK_OBJECT_NEGATIVE_INTEGER = 0x03,
+    MSGPACK_OBJECT_FLOAT = 0x04,
+
+
+
+    MSGPACK_OBJECT_STR = 0x05,
+    MSGPACK_OBJECT_ARRAY = 0x06,
+    MSGPACK_OBJECT_MAP = 0x07,
+    MSGPACK_OBJECT_BIN = 0x08,
+    MSGPACK_OBJECT_EXT = 0x09
+} msgpack_object_type;
+
+
+struct msgpack_object;
+struct msgpack_object_kv;
+
+typedef struct {
+    uint32_t size;
+    struct msgpack_object* ptr;
+} msgpack_object_array;
+
+typedef struct {
+    uint32_t size;
+    struct msgpack_object_kv* ptr;
+} msgpack_object_map;
+
+typedef struct {
+    uint32_t size;
+    const char* ptr;
+} msgpack_object_str;
+
+typedef struct {
+    uint32_t size;
+    const char* ptr;
+} msgpack_object_bin;
+
+typedef struct {
+    int8_t type;
+    uint32_t size;
+    const char* ptr;
+} msgpack_object_ext;
+
+typedef union {
+    _Bool boolean;
+    uint64_t u64;
+    int64_t i64;
+
+
+
+    double f64;
+    msgpack_object_array array;
+    msgpack_object_map map;
+    msgpack_object_str str;
+    msgpack_object_bin bin;
+    msgpack_object_ext ext;
+} msgpack_object_union;
+
+typedef struct msgpack_object {
+    msgpack_object_type type;
+    msgpack_object_union via;
+} msgpack_object;
+
+typedef struct msgpack_object_kv {
+    msgpack_object key;
+    msgpack_object val;
+} msgpack_object_kv;
+
+
+void msgpack_object_print(FILE* out, msgpack_object o);
+
+
+_Bool msgpack_object_equal(const msgpack_object x, const msgpack_object y);
+# 26 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h" 1
+# 21 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_define.h" 1
+# 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h" 2
+# 43 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h"
+typedef int (*msgpack_packer_write)(void* data, const char* buf, size_t len);
+
+typedef struct msgpack_packer {
+    void* data;
+    msgpack_packer_write callback;
+} msgpack_packer;
+
+static void msgpack_packer_init(msgpack_packer* pk, void* data, msgpack_packer_write callback);
+
+static msgpack_packer* msgpack_packer_new(void* data, msgpack_packer_write callback);
+static void msgpack_packer_free(msgpack_packer* pk);
+
+static int msgpack_pack_char(msgpack_packer* pk, char d);
+
+static int msgpack_pack_signed_char(msgpack_packer* pk, signed char d);
+static int msgpack_pack_short(msgpack_packer* pk, short d);
+static int msgpack_pack_int(msgpack_packer* pk, int d);
+static int msgpack_pack_long(msgpack_packer* pk, long d);
+static int msgpack_pack_long_long(msgpack_packer* pk, long long d);
+static int msgpack_pack_unsigned_char(msgpack_packer* pk, unsigned char d);
+static int msgpack_pack_unsigned_short(msgpack_packer* pk, unsigned short d);
+static int msgpack_pack_unsigned_int(msgpack_packer* pk, unsigned int d);
+static int msgpack_pack_unsigned_long(msgpack_packer* pk, unsigned long d);
+static int msgpack_pack_unsigned_long_long(msgpack_packer* pk, unsigned long long d);
+
+static int msgpack_pack_uint8(msgpack_packer* pk, uint8_t d);
+static int msgpack_pack_uint16(msgpack_packer* pk, uint16_t d);
+static int msgpack_pack_uint32(msgpack_packer* pk, uint32_t d);
+static int msgpack_pack_uint64(msgpack_packer* pk, uint64_t d);
+static int msgpack_pack_int8(msgpack_packer* pk, int8_t d);
+static int msgpack_pack_int16(msgpack_packer* pk, int16_t d);
+static int msgpack_pack_int32(msgpack_packer* pk, int32_t d);
+static int msgpack_pack_int64(msgpack_packer* pk, int64_t d);
+
+static int msgpack_pack_fix_uint8(msgpack_packer* pk, uint8_t d);
+static int msgpack_pack_fix_uint16(msgpack_packer* pk, uint16_t d);
+static int msgpack_pack_fix_uint32(msgpack_packer* pk, uint32_t d);
+static int msgpack_pack_fix_uint64(msgpack_packer* pk, uint64_t d);
+static int msgpack_pack_fix_int8(msgpack_packer* pk, int8_t d);
+static int msgpack_pack_fix_int16(msgpack_packer* pk, int16_t d);
+static int msgpack_pack_fix_int32(msgpack_packer* pk, int32_t d);
+static int msgpack_pack_fix_int64(msgpack_packer* pk, int64_t d);
+
+static int msgpack_pack_float(msgpack_packer* pk, float d);
+static int msgpack_pack_double(msgpack_packer* pk, double d);
+
+static int msgpack_pack_nil(msgpack_packer* pk);
+static int msgpack_pack_true(msgpack_packer* pk);
+static int msgpack_pack_false(msgpack_packer* pk);
+
+static int msgpack_pack_array(msgpack_packer* pk, size_t n);
+
+static int msgpack_pack_map(msgpack_packer* pk, size_t n);
+
+static int msgpack_pack_str(msgpack_packer* pk, size_t l);
+static int msgpack_pack_str_body(msgpack_packer* pk, const void* b, size_t l);
+
+static int msgpack_pack_bin(msgpack_packer* pk, size_t l);
+static int msgpack_pack_bin_body(msgpack_packer* pk, const void* b, size_t l);
+
+static int msgpack_pack_ext(msgpack_packer* pk, size_t l, int8_t type);
+static int msgpack_pack_ext_body(msgpack_packer* pk, const void* b, size_t l);
+
+int msgpack_pack_object(msgpack_packer* pk, msgpack_object d);
+# 126 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h"
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h" 1
+# 277 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+inline int msgpack_pack_fix_uint8(msgpack_packer* x, uint8_t d)
+{
+    unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]};
+    return (*(x)->callback)((x)->data, (const char*)buf, 2);
+}
+
+inline int msgpack_pack_fix_uint16(msgpack_packer* x, uint16_t d)
+{
+    unsigned char buf[3];
+    buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p(d) ? ((__uint16_t)((((__uint16_t)(d) & 0xff00) >> 8) | (((__uint16_t)(d) & 0x00ff) << 8))) : _OSSwapInt16(d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 3);
+}
+
+inline int msgpack_pack_fix_uint32(msgpack_packer* x, uint32_t d)
+{
+    unsigned char buf[5];
+    buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p(d) ? ((__uint32_t)((((__uint32_t)(d) & 0xff000000) >> 24) | (((__uint32_t)(d) & 0x00ff0000) >> 8) | (((__uint32_t)(d) & 0x0000ff00) << 8) | (((__uint32_t)(d) & 0x000000ff) << 24))) : _OSSwapInt32(d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 5);
+}
+
+inline int msgpack_pack_fix_uint64(msgpack_packer* x, uint64_t d)
+{
+    unsigned char buf[9];
+    buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 9);
+}
+
+inline int msgpack_pack_fix_int8(msgpack_packer* x, int8_t d)
+{
+    unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]};
+    return (*(x)->callback)((x)->data, (const char*)buf, 2);
+}
+
+inline int msgpack_pack_fix_int16(msgpack_packer* x, int16_t d)
+{
+    unsigned char buf[3];
+    buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p(d) ? ((__uint16_t)((((__uint16_t)(d) & 0xff00) >> 8) | (((__uint16_t)(d) & 0x00ff) << 8))) : _OSSwapInt16(d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 3);
+}
+
+inline int msgpack_pack_fix_int32(msgpack_packer* x, int32_t d)
+{
+    unsigned char buf[5];
+    buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p(d) ? ((__uint32_t)((((__uint32_t)(d) & 0xff000000) >> 24) | (((__uint32_t)(d) & 0x00ff0000) >> 8) | (((__uint32_t)(d) & 0x0000ff00) << 8) | (((__uint32_t)(d) & 0x000000ff) << 24))) : _OSSwapInt32(d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 5);
+}
+
+inline int msgpack_pack_fix_int64(msgpack_packer* x, int64_t d)
+{
+    unsigned char buf[9];
+    buf[0] = 0xd3; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 9);
+}
+
+
+
+
+
+inline int msgpack_pack_uint8(msgpack_packer* x, uint8_t d)
+{
+    do { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } while(0);
+}
+
+inline int msgpack_pack_uint16(msgpack_packer* x, uint16_t d)
+{
+    do { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } while(0);
+}
+
+inline int msgpack_pack_uint32(msgpack_packer* x, uint32_t d)
+{
+    do { if(d < (1<<8)) { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } } while(0);
+}
+
+inline int msgpack_pack_uint64(msgpack_packer* x, uint64_t d)
+{
+    do { if(d < (1ULL<<8)) { if(d < (1ULL<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1ULL<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else if(d < (1ULL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } while(0);
+}
+
+inline int msgpack_pack_int8(msgpack_packer* x, int8_t d)
+{
+    do { if(d < -(1<<5)) { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } } while(0);
+}
+
+inline int msgpack_pack_int16(msgpack_packer* x, int16_t d)
+{
+    do { if(d < -(1<<5)) { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } } while(0);
+}
+
+inline int msgpack_pack_int32(msgpack_packer* x, int32_t d)
+{
+    do { if(d < -(1<<5)) { if(d < -(1<<15)) { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else if(d < (1<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } } while(0);
+}
+
+inline int msgpack_pack_int64(msgpack_packer* x, int64_t d)
+{
+    do { if(d < -(1LL<<5)) { if(d < -(1LL<<15)) { if(d < -(1LL<<31)) { unsigned char buf[9]; buf[0] = 0xd3; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } else { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } else { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1LL<<16)) { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } else { if(d < (1LL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } } while(0);
+}
+
+inline int msgpack_pack_char(msgpack_packer* x, char d)
+{
+
+
+        do { if(d < -(1<<5)) { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } } while(0);
+
+
+
+
+
+
+}
+
+inline int msgpack_pack_signed_char(msgpack_packer* x, signed char d)
+{
+    do { if(d < -(1<<5)) { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } } while(0);
+}
+
+inline int msgpack_pack_unsigned_char(msgpack_packer* x, unsigned char d)
+{
+    do { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } while(0);
+}
+
+
+
+inline int msgpack_pack_short(msgpack_packer* x, short d)
+{
+# 413 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+    do { if(d < -(1<<5)) { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } } while(0);
+# 429 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_int(msgpack_packer* x, int d)
+{
+
+
+
+
+    do { if(d < -(1<<5)) { if(d < -(1<<15)) { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else if(d < (1<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } } while(0);
+# 460 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_long(msgpack_packer* x, long d)
+{
+
+
+
+
+
+
+    do { if(d < -(1LL<<5)) { if(d < -(1LL<<15)) { if(d < -(1LL<<31)) { unsigned char buf[9]; buf[0] = 0xd3; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } else { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } else { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1LL<<16)) { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } else { if(d < (1LL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } } while(0);
+# 491 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_long_long(msgpack_packer* x, long long d)
+{
+# 510 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+    do { if(d < -(1LL<<5)) { if(d < -(1LL<<15)) { if(d < -(1LL<<31)) { unsigned char buf[9]; buf[0] = 0xd3; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } else { unsigned char buf[5]; buf[0] = 0xd2; do { uint32_t val = (__builtin_constant_p((int32_t)d) ? ((__uint32_t)((((__uint32_t)((int32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((int32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((int32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((int32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((int32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } else { if(d < -(1<<7)) { unsigned char buf[3]; buf[0] = 0xd1; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((int16_t)d) ? ((__uint16_t)((((__uint16_t)((int16_t)d) & 0xff00) >> 8) | (((__uint16_t)((int16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((int16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[2] = {0xd0, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } } else if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { if(d < (1LL<<16)) { if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } else { if(d < (1LL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } } while(0);
+# 522 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_unsigned_short(msgpack_packer* x, unsigned short d)
+{
+# 537 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+    do { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else if(d < (1<<8)) { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } else { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } } while(0);
+# 553 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_unsigned_int(msgpack_packer* x, unsigned int d)
+{
+
+
+
+
+    do { if(d < (1<<8)) { if(d < (1<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } } } while(0);
+# 584 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_unsigned_long(msgpack_packer* x, unsigned long d)
+{
+
+
+
+
+
+
+    do { if(d < (1ULL<<8)) { if(d < (1ULL<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1ULL<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else if(d < (1ULL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } while(0);
+# 615 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+
+inline int msgpack_pack_unsigned_long_long(msgpack_packer* x, unsigned long long d)
+{
+# 634 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+    do { if(d < (1ULL<<8)) { if(d < (1ULL<<7)) { return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1); } else { unsigned char buf[2] = {0xcc, ((uint8_t*)&d)[0]}; return (*(x)->callback)((x)->data, (const char*)buf, 2); } } else { if(d < (1ULL<<16)) { unsigned char buf[3]; buf[0] = 0xcd; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)d) ? ((__uint16_t)((((__uint16_t)((uint16_t)d) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)d) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)d))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 3); } else if(d < (1ULL<<32)) { unsigned char buf[5]; buf[0] = 0xce; do { uint32_t val = (__builtin_constant_p((uint32_t)d) ? ((__uint32_t)((((__uint32_t)((uint32_t)d) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)d) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)d) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)d) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)d)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 5); } else { unsigned char buf[9]; buf[0] = 0xcf; do { uint64_t val = (__builtin_constant_p(d) ? ((__uint64_t)((((__uint64_t)(d) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(d) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(d) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(d) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(d) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(d) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(d) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(d) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(d)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0); return (*(x)->callback)((x)->data, (const char*)buf, 9); } } } while(0);
+# 646 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+}
+# 657 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack_template.h"
+inline int msgpack_pack_float(msgpack_packer* x, float d)
+{
+    unsigned char buf[5];
+    union { float f; uint32_t i; } mem;
+    mem.f = d;
+    buf[0] = 0xca; do { uint32_t val = (__builtin_constant_p(mem.i) ? ((__uint32_t)((((__uint32_t)(mem.i) & 0xff000000) >> 24) | (((__uint32_t)(mem.i) & 0x00ff0000) >> 8) | (((__uint32_t)(mem.i) & 0x0000ff00) << 8) | (((__uint32_t)(mem.i) & 0x000000ff) << 24))) : _OSSwapInt32(mem.i)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 5);
+}
+
+inline int msgpack_pack_double(msgpack_packer* x, double d)
+{
+    unsigned char buf[9];
+    union { double f; uint64_t i; } mem;
+    mem.f = d;
+    buf[0] = 0xcb;
+
+
+
+
+    do { uint64_t val = (__builtin_constant_p(mem.i) ? ((__uint64_t)((((__uint64_t)(mem.i) & 0xff00000000000000ULL) >> 56) | (((__uint64_t)(mem.i) & 0x00ff000000000000ULL) >> 40) | (((__uint64_t)(mem.i) & 0x0000ff0000000000ULL) >> 24) | (((__uint64_t)(mem.i) & 0x000000ff00000000ULL) >> 8) | (((__uint64_t)(mem.i) & 0x00000000ff000000ULL) << 8) | (((__uint64_t)(mem.i) & 0x0000000000ff0000ULL) << 24) | (((__uint64_t)(mem.i) & 0x000000000000ff00ULL) << 40) | (((__uint64_t)(mem.i) & 0x00000000000000ffULL) << 56))) : _OSSwapInt64(mem.i)); __builtin___memcpy_chk (&buf[1], &val, 8, __builtin_object_size (&buf[1], 0)); } while(0);
+    return (*(x)->callback)((x)->data, (const char*)buf, 9);
+}
+
+
+
+
+
+
+inline int msgpack_pack_nil(msgpack_packer* x)
+{
+    static const unsigned char d = 0xc0;
+    return (*(x)->callback)((x)->data, (const char*)&d, 1);
+}
+
+
+
+
+
+
+inline int msgpack_pack_true(msgpack_packer* x)
+{
+    static const unsigned char d = 0xc3;
+    return (*(x)->callback)((x)->data, (const char*)&d, 1);
+}
+
+inline int msgpack_pack_false(msgpack_packer* x)
+{
+    static const unsigned char d = 0xc2;
+    return (*(x)->callback)((x)->data, (const char*)&d, 1);
+}
+
+
+
+
+
+
+inline int msgpack_pack_array(msgpack_packer* x, size_t n)
+{
+    if(n < 16) {
+        unsigned char d = 0x90 | (uint8_t)n;
+        return (*(x)->callback)((x)->data, (const char*)&d, 1);
+    } else if(n < 65536) {
+        unsigned char buf[3];
+        buf[0] = 0xdc; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)n) ? ((__uint16_t)((((__uint16_t)((uint16_t)n) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)n) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)n))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 3);
+    } else {
+        unsigned char buf[5];
+        buf[0] = 0xdd; do { uint32_t val = (__builtin_constant_p((uint32_t)n) ? ((__uint32_t)((((__uint32_t)((uint32_t)n) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)n) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)n) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)n) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)n)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 5);
+    }
+}
+
+
+
+
+
+
+inline int msgpack_pack_map(msgpack_packer* x, size_t n)
+{
+    if(n < 16) {
+        unsigned char d = 0x80 | (uint8_t)n;
+        return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1);
+    } else if(n < 65536) {
+        unsigned char buf[3];
+        buf[0] = 0xde; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)n) ? ((__uint16_t)((((__uint16_t)((uint16_t)n) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)n) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)n))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 3);
+    } else {
+        unsigned char buf[5];
+        buf[0] = 0xdf; do { uint32_t val = (__builtin_constant_p((uint32_t)n) ? ((__uint32_t)((((__uint32_t)((uint32_t)n) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)n) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)n) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)n) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)n)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 5);
+    }
+}
+
+
+
+
+
+
+inline int msgpack_pack_str(msgpack_packer* x, size_t l)
+{
+    if(l < 32) {
+        unsigned char d = 0xa0 | (uint8_t)l;
+        return (*(x)->callback)((x)->data, (const char*)&((uint8_t*)&d)[0], 1);
+    } else if(l < 256) {
+        unsigned char buf[2];
+        buf[0] = 0xd9; buf[1] = (uint8_t)l;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } else if(l < 65536) {
+        unsigned char buf[3];
+        buf[0] = 0xda; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)l) ? ((__uint16_t)((((__uint16_t)((uint16_t)l) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)l) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)l))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 3);
+    } else {
+        unsigned char buf[5];
+        buf[0] = 0xdb; do { uint32_t val = (__builtin_constant_p((uint32_t)l) ? ((__uint32_t)((((__uint32_t)((uint32_t)l) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)l) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)l) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)l) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)l)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 5);
+    }
+}
+
+inline int msgpack_pack_str_body(msgpack_packer* x, const void* b, size_t l)
+{
+    return (*(x)->callback)((x)->data, (const char*)(const unsigned char*)b, l);
+}
+
+
+
+
+
+inline int msgpack_pack_bin(msgpack_packer* x, size_t l)
+{
+    if(l < 256) {
+        unsigned char buf[2];
+        buf[0] = 0xc4; buf[1] = (uint8_t)l;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } else if(l < 65536) {
+        unsigned char buf[3];
+        buf[0] = 0xc5; do { uint16_t val = ((__uint16_t)(__builtin_constant_p((uint16_t)l) ? ((__uint16_t)((((__uint16_t)((uint16_t)l) & 0xff00) >> 8) | (((__uint16_t)((uint16_t)l) & 0x00ff) << 8))) : _OSSwapInt16((uint16_t)l))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 3);
+    } else {
+        unsigned char buf[5];
+        buf[0] = 0xc6; do { uint32_t val = (__builtin_constant_p((uint32_t)l) ? ((__uint32_t)((((__uint32_t)((uint32_t)l) & 0xff000000) >> 24) | (((__uint32_t)((uint32_t)l) & 0x00ff0000) >> 8) | (((__uint32_t)((uint32_t)l) & 0x0000ff00) << 8) | (((__uint32_t)((uint32_t)l) & 0x000000ff) << 24))) : _OSSwapInt32((uint32_t)l)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+        return (*(x)->callback)((x)->data, (const char*)buf, 5);
+    }
+}
+
+inline int msgpack_pack_bin_body(msgpack_packer* x, const void* b, size_t l)
+{
+    return (*(x)->callback)((x)->data, (const char*)(const unsigned char*)b, l);
+}
+
+
+
+
+
+inline int msgpack_pack_ext(msgpack_packer* x, size_t l, int8_t type)
+{
+    switch(l) {
+    case 1: {
+        unsigned char buf[2];
+        buf[0] = 0xd4;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    case 2: {
+        unsigned char buf[2];
+        buf[0] = 0xd5;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    case 4: {
+        unsigned char buf[2];
+        buf[0] = 0xd6;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    case 8: {
+        unsigned char buf[2];
+        buf[0] = 0xd7;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    case 16: {
+        unsigned char buf[2];
+        buf[0] = 0xd8;
+        buf[1] = type;
+        return (*(x)->callback)((x)->data, (const char*)buf, 2);
+    } break;
+    default:
+        if(l < 256) {
+            unsigned char buf[3];
+            buf[0] = 0xc7;
+            buf[1] = (unsigned char)l;
+            buf[2] = type;
+            return (*(x)->callback)((x)->data, (const char*)buf, 3);
+        } else if(l < 65536) {
+            unsigned char buf[4];
+            buf[0] = 0xc8;
+            do { uint16_t val = ((__uint16_t)(__builtin_constant_p(l) ? ((__uint16_t)((((__uint16_t)(l) & 0xff00) >> 8) | (((__uint16_t)(l) & 0x00ff) << 8))) : _OSSwapInt16(l))); __builtin___memcpy_chk (&buf[1], &val, 2, __builtin_object_size (&buf[1], 0)); } while(0);
+            buf[3] = type;
+            return (*(x)->callback)((x)->data, (const char*)buf, 4);
+        } else {
+            unsigned char buf[6];
+            buf[0] = 0xc9;
+            do { uint32_t val = (__builtin_constant_p(l) ? ((__uint32_t)((((__uint32_t)(l) & 0xff000000) >> 24) | (((__uint32_t)(l) & 0x00ff0000) >> 8) | (((__uint32_t)(l) & 0x0000ff00) << 8) | (((__uint32_t)(l) & 0x000000ff) << 24))) : _OSSwapInt32(l)); __builtin___memcpy_chk (&buf[1], &val, 4, __builtin_object_size (&buf[1], 0)); } while(0);
+            buf[5] = type;
+            return (*(x)->callback)((x)->data, (const char*)buf, 6);
+        }
+        break;
+    }
+}
+
+inline int msgpack_pack_ext_body(msgpack_packer* x, const void* b, size_t l)
+{
+    return (*(x)->callback)((x)->data, (const char*)(const unsigned char*)b, l);
+}
+# 127 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/pack.h" 2
+
+inline void msgpack_packer_init(msgpack_packer* pk, void* data, msgpack_packer_write callback)
+{
+    pk->data = data;
+    pk->callback = callback;
+}
+
+inline msgpack_packer* msgpack_packer_new(void* data, msgpack_packer_write callback)
+{
+    msgpack_packer* pk = (msgpack_packer*)calloc(1, sizeof(msgpack_packer));
+    if(!pk) { return ((void*)0); }
+    msgpack_packer_init(pk, data, callback);
+    return pk;
+}
+
+inline void msgpack_packer_free(msgpack_packer* pk)
+{
+    free(pk);
+}
+# 28 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h" 1
+# 36 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+typedef struct msgpack_unpacked {
+    msgpack_zone* zone;
+    msgpack_object data;
+} msgpack_unpacked;
+
+typedef enum {
+    MSGPACK_UNPACK_SUCCESS = 2,
+    MSGPACK_UNPACK_EXTRA_BYTES = 1,
+    MSGPACK_UNPACK_CONTINUE = 0,
+    MSGPACK_UNPACK_PARSE_ERROR = -1,
+    MSGPACK_UNPACK_NOMEM_ERROR = -2
+} msgpack_unpack_return;
+
+
+
+msgpack_unpack_return
+msgpack_unpack_next(msgpack_unpacked* result,
+        const char* data, size_t len, size_t* off);
+# 64 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+typedef struct msgpack_unpacker {
+    char* buffer;
+    size_t used;
+    size_t free;
+    size_t off;
+    size_t parsed;
+    msgpack_zone* z;
+    size_t initial_buffer_size;
+    void* ctx;
+} msgpack_unpacker;
+# 85 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+_Bool msgpack_unpacker_init(msgpack_unpacker* mpac, size_t initial_buffer_size);
+
+
+
+
+
+void msgpack_unpacker_destroy(msgpack_unpacker* mpac);
+
+
+
+
+
+
+
+msgpack_unpacker* msgpack_unpacker_new(size_t initial_buffer_size);
+
+
+
+
+
+void msgpack_unpacker_free(msgpack_unpacker* mpac);
+# 119 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+static inline _Bool msgpack_unpacker_reserve_buffer(msgpack_unpacker* mpac, size_t size);
+# 128 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+static inline char* msgpack_unpacker_buffer(msgpack_unpacker* mpac);
+# 137 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+static inline size_t msgpack_unpacker_buffer_capacity(const msgpack_unpacker* mpac);
+# 146 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+static inline void msgpack_unpacker_buffer_consumed(msgpack_unpacker* mpac, size_t size);
+# 155 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/unpack.h"
+msgpack_unpack_return msgpack_unpacker_next(msgpack_unpacker* mpac, msgpack_unpacked* pac);
+
+
+
+
+
+
+
+static inline void msgpack_unpacked_init(msgpack_unpacked* result);
+
+
+
+
+static inline void msgpack_unpacked_destroy(msgpack_unpacked* result);
+
+
+
+
+
+static inline msgpack_zone* msgpack_unpacked_release_zone(msgpack_unpacked* result);
+
+
+
+int msgpack_unpacker_execute(msgpack_unpacker* mpac);
+
+
+msgpack_object msgpack_unpacker_data(msgpack_unpacker* mpac);
+
+
+msgpack_zone* msgpack_unpacker_release_zone(msgpack_unpacker* mpac);
+
+
+void msgpack_unpacker_reset_zone(msgpack_unpacker* mpac);
+
+
+void msgpack_unpacker_reset(msgpack_unpacker* mpac);
+
+static inline size_t msgpack_unpacker_message_size(const msgpack_unpacker* mpac);
+
+
+
+
+
+
+
+msgpack_unpack_return
+msgpack_unpack(const char* data, size_t len, size_t* off,
+        msgpack_zone* result_zone, msgpack_object* result);
+
+
+
+
+static inline size_t msgpack_unpacker_parsed_size(const msgpack_unpacker* mpac);
+
+
+_Bool msgpack_unpacker_flush_zone(msgpack_unpacker* mpac);
+
+
+_Bool msgpack_unpacker_expand_buffer(msgpack_unpacker* mpac, size_t size);
+
+static inline _Bool msgpack_unpacker_reserve_buffer(msgpack_unpacker* mpac, size_t size)
+{
+    if(mpac->free >= size) { return 1; }
+    return msgpack_unpacker_expand_buffer(mpac, size);
+}
+
+static inline char* msgpack_unpacker_buffer(msgpack_unpacker* mpac)
+{
+    return mpac->buffer + mpac->used;
+}
+
+static inline size_t msgpack_unpacker_buffer_capacity(const msgpack_unpacker* mpac)
+{
+    return mpac->free;
+}
+
+static inline void msgpack_unpacker_buffer_consumed(msgpack_unpacker* mpac, size_t size)
+{
+    mpac->used += size;
+    mpac->free -= size;
+}
+
+static inline size_t msgpack_unpacker_message_size(const msgpack_unpacker* mpac)
+{
+    return mpac->parsed - mpac->off + mpac->used;
+}
+
+static inline size_t msgpack_unpacker_parsed_size(const msgpack_unpacker* mpac)
+{
+    return mpac->parsed;
+}
+
+
+static inline void msgpack_unpacked_init(msgpack_unpacked* result)
+{
+    __builtin___memset_chk (result, 0, sizeof(msgpack_unpacked), __builtin_object_size (result, 0));
+}
+
+static inline void msgpack_unpacked_destroy(msgpack_unpacked* result)
+{
+    if(result->zone != ((void*)0)) {
+        msgpack_zone_free(result->zone);
+        result->zone = ((void*)0);
+        __builtin___memset_chk (&result->data, 0, sizeof(msgpack_object), __builtin_object_size (&result->data, 0));
+    }
+}
+
+static inline msgpack_zone* msgpack_unpacked_release_zone(msgpack_unpacked* result)
+{
+    if(result->zone != ((void*)0)) {
+        msgpack_zone* z = result->zone;
+        result->zone = ((void*)0);
+        return z;
+    }
+    return ((void*)0);
+}
+# 29 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sbuffer.h" 1
+# 35 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sbuffer.h"
+typedef struct msgpack_sbuffer {
+    size_t size;
+    char* data;
+    size_t alloc;
+} msgpack_sbuffer;
+
+static inline void msgpack_sbuffer_init(msgpack_sbuffer* sbuf)
+{
+    __builtin___memset_chk (sbuf, 0, sizeof(msgpack_sbuffer), __builtin_object_size (sbuf, 0));
+}
+
+static inline void msgpack_sbuffer_destroy(msgpack_sbuffer* sbuf)
+{
+    free(sbuf->data);
+}
+
+static inline msgpack_sbuffer* msgpack_sbuffer_new(void)
+{
+    return (msgpack_sbuffer*)calloc(1, sizeof(msgpack_sbuffer));
+}
+
+static inline void msgpack_sbuffer_free(msgpack_sbuffer* sbuf)
+{
+    if(sbuf == ((void*)0)) { return; }
+    msgpack_sbuffer_destroy(sbuf);
+    free(sbuf);
+}
+
+
+
+
+
+static inline int msgpack_sbuffer_write(void* data, const char* buf, size_t len)
+{
+    msgpack_sbuffer* sbuf = (msgpack_sbuffer*)data;
+
+    if(sbuf->alloc - sbuf->size < len) {
+        void* tmp;
+        size_t nsize = (sbuf->alloc) ?
+                sbuf->alloc * 2 : 8192;
+
+        while(nsize < sbuf->size + len) {
+            size_t tmp_nsize = nsize * 2;
+            if (tmp_nsize <= nsize) {
+                nsize = sbuf->size + len;
+                break;
+            }
+            nsize = tmp_nsize;
+        }
+
+        tmp = realloc(sbuf->data, nsize);
+        if(!tmp) { return -1; }
+
+        sbuf->data = (char*)tmp;
+        sbuf->alloc = nsize;
+    }
+
+    __builtin___memcpy_chk (sbuf->data + sbuf->size, buf, len, __builtin_object_size (sbuf->data + sbuf->size, 0));
+    sbuf->size += len;
+    return 0;
+}
+
+static inline char* msgpack_sbuffer_release(msgpack_sbuffer* sbuf)
+{
+    char* tmp = sbuf->data;
+    sbuf->size = 0;
+    sbuf->data = ((void*)0);
+    sbuf->alloc = 0;
+    return tmp;
+}
+
+static inline void msgpack_sbuffer_clear(msgpack_sbuffer* sbuf)
+{
+    sbuf->size = 0;
+}
+# 30 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h" 1
+# 25 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h"
+# 1 "/usr/include/sys/uio.h" 1 3 4
+# 90 "/usr/include/sys/uio.h" 3 4
+enum uio_rw { UIO_READ, UIO_WRITE };
+
+
+
+
+
+ssize_t readv(int, const struct iovec *, int) __asm("_" "readv" );
+ssize_t writev(int, const struct iovec *, int) __asm("_" "writev" );
+# 26 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h" 2
+# 44 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h"
+struct msgpack_vrefbuffer_chunk;
+typedef struct msgpack_vrefbuffer_chunk msgpack_vrefbuffer_chunk;
+
+typedef struct msgpack_vrefbuffer_inner_buffer {
+    size_t free;
+    char* ptr;
+    msgpack_vrefbuffer_chunk* head;
+} msgpack_vrefbuffer_inner_buffer;
+
+typedef struct msgpack_vrefbuffer {
+    struct iovec* tail;
+    struct iovec* end;
+    struct iovec* array;
+
+    size_t chunk_size;
+    size_t ref_size;
+
+    msgpack_vrefbuffer_inner_buffer inner_buffer;
+} msgpack_vrefbuffer;
+# 74 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/vrefbuffer.h"
+_Bool msgpack_vrefbuffer_init(msgpack_vrefbuffer* vbuf,
+        size_t ref_size, size_t chunk_size);
+
+void msgpack_vrefbuffer_destroy(msgpack_vrefbuffer* vbuf);
+
+static inline msgpack_vrefbuffer* msgpack_vrefbuffer_new(size_t ref_size, size_t chunk_size);
+static inline void msgpack_vrefbuffer_free(msgpack_vrefbuffer* vbuf);
+
+static inline int msgpack_vrefbuffer_write(void* data, const char* buf, size_t len);
+
+static inline const struct iovec* msgpack_vrefbuffer_vec(const msgpack_vrefbuffer* vref);
+static inline size_t msgpack_vrefbuffer_veclen(const msgpack_vrefbuffer* vref);
+
+
+int msgpack_vrefbuffer_append_copy(msgpack_vrefbuffer* vbuf,
+        const char* buf, size_t len);
+
+
+int msgpack_vrefbuffer_append_ref(msgpack_vrefbuffer* vbuf,
+        const char* buf, size_t len);
+
+
+int msgpack_vrefbuffer_migrate(msgpack_vrefbuffer* vbuf, msgpack_vrefbuffer* to);
+
+
+void msgpack_vrefbuffer_clear(msgpack_vrefbuffer* vref);
+
+
+
+
+static inline msgpack_vrefbuffer* msgpack_vrefbuffer_new(size_t ref_size, size_t chunk_size)
+{
+    msgpack_vrefbuffer* vbuf = (msgpack_vrefbuffer*)malloc(sizeof(msgpack_vrefbuffer));
+    if (vbuf == ((void*)0)) return ((void*)0);
+    if(!msgpack_vrefbuffer_init(vbuf, ref_size, chunk_size)) {
+        free(vbuf);
+        return ((void*)0);
+    }
+    return vbuf;
+}
+
+static inline void msgpack_vrefbuffer_free(msgpack_vrefbuffer* vbuf)
+{
+    if(vbuf == ((void*)0)) { return; }
+    msgpack_vrefbuffer_destroy(vbuf);
+    free(vbuf);
+}
+
+static inline int msgpack_vrefbuffer_write(void* data, const char* buf, size_t len)
+{
+    msgpack_vrefbuffer* vbuf = (msgpack_vrefbuffer*)data;
+
+    if(len < vbuf->ref_size) {
+        return msgpack_vrefbuffer_append_copy(vbuf, buf, len);
+    } else {
+        return msgpack_vrefbuffer_append_ref(vbuf, buf, len);
+    }
+}
+
+static inline const struct iovec* msgpack_vrefbuffer_vec(const msgpack_vrefbuffer* vref)
+{
+    return vref->array;
+}
+
+static inline size_t msgpack_vrefbuffer_veclen(const msgpack_vrefbuffer* vref)
+{
+    return (size_t)(vref->tail - vref->array);
+}
+# 31 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version.h" 1
+# 26 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version.h"
+const char* msgpack_version(void);
+
+int msgpack_version_major(void);
+
+int msgpack_version_minor(void);
+
+int msgpack_version_revision(void);
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version_master.h" 1
+# 35 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version.h" 2
+# 32 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.h" 2
+
+
+
+
+extern hashtab_T func_hashtab;
+
+
+typedef struct ufunc ufunc_T;
+
+struct ufunc {
+  int uf_varargs;
+  int uf_flags;
+  int uf_calls;
+  garray_T uf_args;
+  garray_T uf_lines;
+  int uf_profiling;
+
+  int uf_tm_count;
+  proftime_T uf_tm_total;
+  proftime_T uf_tm_self;
+  proftime_T uf_tm_children;
+
+  int *uf_tml_count;
+  proftime_T *uf_tml_total;
+  proftime_T *uf_tml_self;
+  proftime_T uf_tml_start;
+  proftime_T uf_tml_children;
+  proftime_T uf_tml_wait;
+  int uf_tml_idx;
+  int uf_tml_execed;
+  scid_T uf_script_ID;
+
+  int uf_refcount;
+  char_u uf_name[1];
+
+
+};
+
+
+extern ufunc_T dumuf;
+
+
 
 
 
@@ -21568,8 +23112,14 @@ enum {
     VV_PROGPATH,
     VV_COMMAND_OUTPUT,
     VV_COMPLETED_ITEM,
+    VV_MSGPACK_TYPES,
     VV_LEN,
 };
+
+
+
+
+int vim_to_msgpack(msgpack_packer *const, typval_T *const);
 # 51 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.h" 1
 
@@ -21587,10 +23137,36 @@ typedef void (*DoInRuntimepathCB)(char_u *, void *);
 
 
 
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.h" 1
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h" 2
-# 36 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h"
+# 23 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.h"
+typedef struct {
+  char *sub;
+  Timestamp timestamp;
+  list_T *additional_elements;
+} SubReplacementString;
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h" 2
+# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h"
+typedef enum {
+  HIST_CMD,
+  HIST_SEARCH,
+  HIST_EXPR,
+  HIST_INPUT,
+  HIST_DEBUG,
+} HistoryType;
+
+
+
+
 typedef char_u *(*CompleteListItemGetter)(expand_T *, int);
+
+
+typedef struct hist_entry {
+  int hisnum;
+  char_u *hisstr;
+  Timestamp timestamp;
+  list_T *additional_elements;
+} histentry_T;
 # 54 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/fileio.h" 1
 
@@ -21598,103 +23174,29 @@ typedef char_u *(*CompleteListItemGetter)(expand_T *, int);
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os.h" 1
+
+
+
+
+
+
+
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/stdpaths_defs.h" 1
+
+
+
+
+typedef enum {
+  kXDGConfigHome,
+  kXDGDataHome,
+  kXDGCacheHome,
+  kXDGRuntimeDir,
+  kXDGConfigDirs,
+  kXDGDataDirs,
+} XDGVarType;
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os.h" 2
 # 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/fileio.h" 2
-# 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/fileio.h"
-typedef enum auto_event {
-  EVENT_BUFADD = 0,
-  EVENT_BUFNEW,
-  EVENT_BUFDELETE,
-  EVENT_BUFWIPEOUT,
-  EVENT_BUFENTER,
-  EVENT_BUFFILEPOST,
-  EVENT_BUFFILEPRE,
-  EVENT_BUFLEAVE,
-  EVENT_BUFNEWFILE,
-  EVENT_BUFREADPOST,
-  EVENT_BUFREADPRE,
-  EVENT_BUFREADCMD,
-  EVENT_BUFUNLOAD,
-  EVENT_BUFHIDDEN,
-  EVENT_BUFWINENTER,
-  EVENT_BUFWINLEAVE,
-  EVENT_BUFWRITEPOST,
-  EVENT_BUFWRITEPRE,
-  EVENT_BUFWRITECMD,
-  EVENT_CMDWINENTER,
-  EVENT_CMDWINLEAVE,
-  EVENT_COLORSCHEME,
-  EVENT_COMPLETEDONE,
-  EVENT_FILEAPPENDPOST,
-  EVENT_FILEAPPENDPRE,
-  EVENT_FILEAPPENDCMD,
-  EVENT_FILECHANGEDSHELL,
-  EVENT_FILECHANGEDSHELLPOST,
-  EVENT_FILECHANGEDRO,
-  EVENT_FILEREADPOST,
-  EVENT_FILEREADPRE,
-  EVENT_FILEREADCMD,
-  EVENT_FILETYPE,
-  EVENT_FILEWRITEPOST,
-  EVENT_FILEWRITEPRE,
-  EVENT_FILEWRITECMD,
-  EVENT_FILTERREADPOST,
-  EVENT_FILTERREADPRE,
-  EVENT_FILTERWRITEPOST,
-  EVENT_FILTERWRITEPRE,
-  EVENT_FOCUSGAINED,
-  EVENT_FOCUSLOST,
-  EVENT_GUIENTER,
-  EVENT_GUIFAILED,
-  EVENT_INSERTCHANGE,
-  EVENT_INSERTENTER,
-  EVENT_INSERTLEAVE,
-  EVENT_MENUPOPUP,
-  EVENT_QUICKFIXCMDPOST,
-  EVENT_QUICKFIXCMDPRE,
-  EVENT_QUITPRE,
-  EVENT_SESSIONLOADPOST,
-  EVENT_STDINREADPOST,
-  EVENT_STDINREADPRE,
-  EVENT_SYNTAX,
-  EVENT_TERMCHANGED,
-  EVENT_TERMRESPONSE,
-  EVENT_USER,
-  EVENT_VIMENTER,
-  EVENT_VIMLEAVE,
-  EVENT_VIMLEAVEPRE,
-  EVENT_VIMRESIZED,
-  EVENT_WINENTER,
-  EVENT_WINLEAVE,
-  EVENT_ENCODINGCHANGED,
-  EVENT_INSERTCHARPRE,
-  EVENT_CURSORHOLD,
-  EVENT_CURSORHOLDI,
-  EVENT_FUNCUNDEFINED,
-  EVENT_REMOTEREPLY,
-  EVENT_SWAPEXISTS,
-  EVENT_SOURCEPRE,
-  EVENT_SOURCECMD,
-  EVENT_SPELLFILEMISSING,
-  EVENT_CURSORMOVED,
-  EVENT_CURSORMOVEDI,
-  EVENT_TABCLOSED,
-  EVENT_TABLEAVE,
-  EVENT_TABENTER,
-  EVENT_TABNEW,
-  EVENT_TABNEWENTERED,
-  EVENT_SHELLCMDPOST,
-  EVENT_SHELLFILTERPOST,
-  EVENT_TERMOPEN,
-  EVENT_TEXTCHANGED,
-  EVENT_TEXTCHANGEDI,
-  EVENT_CMDUNDEFINED,
-  NUM_EVENTS
-} event_T;
-
-
-
-
-
+# 19 "/Users/George/Documents/Programs/C/neovim/src/nvim/fileio.h"
 typedef struct {
   buf_T *save_curbuf;
   int use_aucmd_win;
@@ -21772,14 +23274,7 @@ typedef struct {
 # 61 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/memline.h" 1
 # 62 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 1
 
-
-
-
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
-# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 2
-# 63 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/message.h" 1
 # 64 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc1.h" 1
@@ -21843,7 +23338,7 @@ extern color_name_table_T color_name_table[];
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/ui.h" 2
 
 
@@ -21863,12 +23358,12 @@ struct ui_t {
   void (*clear)(UI *ui);
   void (*eol_clear)(UI *ui);
   void (*cursor_goto)(UI *ui, int row, int col);
+  void (*update_menu)(UI *ui);
   void (*busy_start)(UI *ui);
   void (*busy_stop)(UI *ui);
   void (*mouse_on)(UI *ui);
   void (*mouse_off)(UI *ui);
-  void (*insert_mode)(UI *ui);
-  void (*normal_mode)(UI *ui);
+  void (*mode_change)(UI *ui, int mode);
   void (*set_scroll_region)(UI *ui, int top, int bot, int left, int right);
   void (*scroll)(UI *ui, int count);
   void (*highlight_set)(UI *ui, HlAttrs attrs);
@@ -21881,7 +23376,6 @@ struct ui_t {
   void (*suspend)(UI *ui);
   void (*set_title)(UI *ui, char *title);
   void (*set_icon)(UI *ui, char *icon);
-  void (*set_encoding)(UI *ui, char *enc);
   void (*stop)(UI *ui);
 };
 # 79 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
@@ -21891,12 +23385,12 @@ struct ui_t {
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/input.h" 1
 # 83 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c" 2
-# 217 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 102 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 typedef enum {
   PV_NONE = 0,
   PV_MAXVAL = 0xffff
 } idopt_T;
-# 232 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 117 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 static int p_ai;
 static int p_bin;
 static int p_bomb;
@@ -21978,1307 +23472,7 @@ typedef struct vimoption {
   scid_T scriptID;
 
 } vimoption_T;
-# 383 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
-static vimoption_T
-  options[] =
-{
-  {"aleph", "al", 0x02U|0x400U|0x2000000U,
-   (char_u *)&p_aleph, PV_NONE,
-   {
-     (char_u *)224L,
-     (char_u *)0L
-   } , 0},
-  {"antialias", "anti", 0x01U|0x400U|0x800U|0x7000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)0, (char_u *)0}
-   , 0},
-  {"arabic", "arab", 0x01U|0x400U|0x800U|0x2000000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_ARAB)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"arabicshape", "arshape", 0x01U|0x400U|0x800U|0x7000U,
-   (char_u *)&p_arshape, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"allowrevins", "ari", 0x01U|0x400U|0x800U,
-   (char_u *)&p_ari, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"altkeymap", "akm", 0x01U|0x400U,
-   (char_u *)&p_altkeymap, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"ambiwidth", "ambw", 0x04U|0x400U|0x7000U,
-   (char_u *)&p_ambw, PV_NONE,
-   {(char_u *)"single", (char_u *)0L}
-   , 0},
-  {"autochdir", "acd", 0x01U|0x400U,
-   (char_u *)&p_acd, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"autoindent", "ai", 0x01U,
-   (char_u *)&p_ai, (idopt_T)(0x4000 + (int)(BV_AI)),
-   {(char_u *)0, (char_u *)1} , 0},
-  {"autoread", "ar", 0x01U|0x800U,
-   (char_u *)&p_ar, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_AR)))),
-   {(char_u *)0, (char_u *)1} , 0},
-  {"autowrite", "aw", 0x01U|0x400U,
-   (char_u *)&p_aw, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"autowriteall","awa", 0x01U|0x400U,
-   (char_u *)&p_awa, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"background", "bg", 0x04U|0x400U|0x7000U,
-   (char_u *)&p_bg, PV_NONE,
-   {
-     (char_u *)"light",
-     (char_u *)0L
-   } , 0},
-  {"backspace", "bs", 0x04U|0x800U|0x8000U|0x10000U,
-   (char_u *)&p_bs, PV_NONE,
-   {(char_u *)"", (char_u *)"indent,eol,start"} , 0},
-  {"backup", "bk", 0x01U|0x400U|0x800U,
-   (char_u *)&p_bk, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"backupcopy", "bkc", 0x04U|0x800U|0x8000U|0x10000U,
-   (char_u *)&p_bkc, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_BKC)))),
-
-   {(char_u *)"yes", (char_u *)"auto"}
-
-
-
-   , 0},
-  {"backupdir", "bdir", 0x04U|0x10U|0x400U|0x8000U|0x10000U|0x40000U,
-   (char_u *)&p_bdir, PV_NONE,
-   {(char_u *)".,~/tmp,~/", (char_u *)0L} , 0},
-  {"backupext", "bex", 0x04U|0x400U|0x200000U,
-   (char_u *)&p_bex, PV_NONE,
-   {
-     (char_u *)"~",
-     (char_u *)0L
-   } , 0},
-  {"backupskip", "bsk", 0x04U|0x400U|0x8000U,
-   (char_u *)&p_bsk, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"binary", "bin", 0x01U|0x400U|0x1000U,
-   (char_u *)&p_bin, (idopt_T)(0x4000 + (int)(BV_BIN)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"bomb", ((void*)0), 0x01U|0x200U|0x400U|0x1000U,
-   (char_u *)&p_bomb, (idopt_T)(0x4000 + (int)(BV_BOMB)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"breakat", "brk", 0x04U|0x400U|0x6000U|0x20000U,
-   (char_u *)&p_breakat, PV_NONE,
-   {(char_u *)" \t!@*-+;:,./?", (char_u *)0L}
-   , 0},
-  {"breakindent", "bri", 0x01U|0x400U|0x800U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_BRI)),
-   {(char_u *)0, (char_u *)0L}
-   , 0},
-  {"breakindentopt", "briopt", 0x04U|0x08U|0x400U|0x4000U|0x8000U|0x10000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_BRIOPT)),
-   {(char_u *)"", (char_u *)((void*)0)}
-   , 0},
-  {"browsedir", "bsdir",0x04U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)0L, (char_u *)0L}
-   , 0},
-  {"bufhidden", "bh", 0x04U|0x08U|0x400U|0x100000U,
-   (char_u *)&p_bh, (idopt_T)(0x4000 + (int)(BV_BH)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"buflisted", "bl", 0x01U|0x400U|0x100000U,
-   (char_u *)&p_bl, (idopt_T)(0x4000 + (int)(BV_BL)),
-   {(char_u *)1L, (char_u *)0L}
-   , 0},
-  {"buftype", "bt", 0x04U|0x08U|0x400U|0x100000U,
-   (char_u *)&p_bt, (idopt_T)(0x4000 + (int)(BV_BT)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"casemap", "cmp", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_cmp, PV_NONE,
-   {(char_u *)"internal,keepascii", (char_u *)0L}
-   , 0},
-  {"cdpath", "cd", 0x04U|0x10U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_cdpath, PV_NONE,
-   {(char_u *)",,", (char_u *)0L}
-   , 0},
-  {"cedit", ((void*)0), 0x04U,
-   (char_u *)&p_cedit, PV_NONE,
-   {(char_u *)"", (char_u *)"\006"}
-   , 0},
-  {"charconvert", "ccv", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_ccv, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"cindent", "cin", 0x01U|0x400U|0x800U,
-   (char_u *)&p_cin, (idopt_T)(0x4000 + (int)(BV_CIN)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"cinkeys", "cink", 0x04U|0x08U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_cink, (idopt_T)(0x4000 + (int)(BV_CINK)),
-   {(char_u *)"0{,0},0),:,0#,!^F,o,O,e", (char_u *)0L}
-   , 0},
-  {"cinoptions", "cino", 0x04U|0x08U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_cino, (idopt_T)(0x4000 + (int)(BV_CINO)),
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"cinwords", "cinw", 0x04U|0x08U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_cinw, (idopt_T)(0x4000 + (int)(BV_CINW)),
-   {(char_u *)"if,else,while,do,for,switch",
-    (char_u *)0L}
-   , 0},
-  {"clipboard", "cb", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_cb, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"cmdheight", "ch", 0x02U|0x400U|0x6000U,
-   (char_u *)&p_ch, PV_NONE,
-   {(char_u *)1L, (char_u *)0L} , 0},
-  {"cmdwinheight", "cwh", 0x02U|0x400U,
-   (char_u *)&p_cwh, PV_NONE,
-   {(char_u *)7L, (char_u *)0L} , 0},
-  {"colorcolumn", "cc", 0x04U|0x400U|0x8000U|0x10000U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_CC)),
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"columns", "co", 0x02U|0x40U|0x200U|0x400U|0x7000U,
-   (char_u *)&Columns, PV_NONE,
-   {(char_u *)80L, (char_u *)0L} , 0},
-  {"comments", "com", 0x04U|0x08U|0x400U|0x8000U|0x10000U|
-   0x2000000U,
-   (char_u *)&p_com, (idopt_T)(0x4000 + (int)(BV_COM)),
-   {(char_u *)"s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-",
-    (char_u *)0L}
-   , 0},
-  {"commentstring", "cms", 0x04U|0x08U|0x400U|0x2000000U,
-   (char_u *)&p_cms, (idopt_T)(0x4000 + (int)(BV_CMS)),
-   {(char_u *)"/*%s*/", (char_u *)0L}
-   , 0},
-
-
-  {"compatible", "cp", 0x01U|0x6000U,
-   (char_u *)&p_force_off, PV_NONE,
-   {(char_u *)1, (char_u *)0} , 0},
-  {"complete", "cpt", 0x04U|0x08U|0x8000U|0x10000U,
-   (char_u *)&p_cpt, (idopt_T)(0x4000 + (int)(BV_CPT)),
-   {(char_u *)".,w,b,u,t,i", (char_u *)".,w,b,u,t"}
-   , 0},
-  {"concealcursor","cocu", 0x04U|0x08U|0x2000U|0x400U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_COCU)),
-   {(char_u *)"", (char_u *)((void*)0)}
-   , 0},
-  {"conceallevel","cole", 0x02U|0x2000U|0x400U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_COLE)),
-   {(char_u *)0L, (char_u *)0L}
-   , 0},
-  {"completefunc", "cfu", 0x04U|0x08U|0x400U|0x40000U,
-   (char_u *)&p_cfu, (idopt_T)(0x4000 + (int)(BV_CFU)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"completeopt", "cot", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_cot, PV_NONE,
-   {(char_u *)"menu,preview", (char_u *)0L}
-   , 0},
-  {"confirm", "cf", 0x01U|0x400U,
-   (char_u *)&p_confirm, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"copyindent", "ci", 0x01U|0x400U|0x800U,
-   (char_u *)&p_ci, (idopt_T)(0x4000 + (int)(BV_CI)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"cpoptions", "cpo", 0x04U|0x800U|0x6000U|0x20000U,
-   (char_u *)&p_cpo, PV_NONE,
-   {(char_u *)"aAbBcCdDeEfFiIJkKlLmMnoOpPqrRsStuvWxXyZ$!%+<>;", (char_u *)"aABceFs"}
-   , 0},
-  {"cscopepathcomp", "cspc", 0x02U|0x400U|0x800U,
-   (char_u *)&p_cspc, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"cscopeprg", "csprg", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_csprg, PV_NONE,
-   {(char_u *)"cscope", (char_u *)0L}
-   , 0},
-  {"cscopequickfix", "csqf", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_csqf, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"cscoperelative", "csre", 0x01U|0x400U|0x800U,
-   (char_u *)&p_csre, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"cscopetag", "cst", 0x01U|0x400U|0x800U,
-   (char_u *)&p_cst, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"cscopetagorder", "csto", 0x02U|0x400U|0x800U,
-   (char_u *)&p_csto, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"cscopeverbose", "csverb", 0x01U|0x400U|0x800U,
-   (char_u *)&p_csverbose, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"cursorbind", "crb", 0x01U|0x400U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_CRBIND)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"cursorcolumn", "cuc", 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_CUC)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"cursorline", "cul", 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_CUL)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"debug", ((void*)0), 0x04U|0x400U,
-   (char_u *)&p_debug, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"define", "def", 0x04U|0x08U|0x400U|0x2000000U,
-   (char_u *)&p_def, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_DEF)))),
-   {(char_u *)"^\\s*#\\s*define", (char_u *)0L}
-   , 0},
-  {"delcombine", "deco", 0x01U|0x400U|0x800U,
-   (char_u *)&p_deco, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"dictionary", "dict", 0x04U|0x10U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_dict, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_DICT)))),
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"diff", ((void*)0), 0x01U|0x400U|0x2000U|0x100000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_DIFF)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"diffexpr", "dex", 0x04U|0x400U|0x40000U|0x2000000U,
-   (char_u *)&p_dex, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"diffopt", "dip", 0x04U|0x08U|0x400U|0x2000U|0x8000U|0x10000U,
-   (char_u *)&p_dip, PV_NONE,
-   {(char_u *)"filler", (char_u *)((void*)0)}
-   , 0},
-  {"digraph", "dg", 0x01U|0x400U|0x800U,
-   (char_u *)&p_dg, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"directory", "dir", 0x04U|0x10U|0x400U|0x8000U|0x10000U|0x40000U,
-   (char_u *)&p_dir, PV_NONE,
-   {(char_u *)".,~/tmp,/var/tmp,/tmp", (char_u *)0L} , 0},
-  {"display", "dy", 0x04U|0x800U|0x8000U|0x6000U|0x10000U,
-   (char_u *)&p_dy, PV_NONE,
-   {(char_u *)"", (char_u *)"lastline"} , 0},
-  {"eadirection", "ead", 0x04U|0x400U,
-   (char_u *)&p_ead, PV_NONE,
-   {(char_u *)"both", (char_u *)0L}
-   , 0},
-  {"edcompatible","ed", 0x01U|0x400U,
-   (char_u *)&p_force_off, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"encoding", "enc", 0x04U|0x400U|0x7000U|0x1000000U,
-   (char_u *)&p_enc, PV_NONE,
-   {(char_u *)"utf-8", (char_u *)0L}
-   , 0},
-  {"endofline", "eol", 0x01U|0x200U|0x400U|0x1000U,
-   (char_u *)&p_eol, (idopt_T)(0x4000 + (int)(BV_EOL)),
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"equalalways", "ea", 0x01U|0x400U|0x6000U,
-   (char_u *)&p_ea, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"equalprg", "ep", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_ep, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_EP)))),
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"errorbells", "eb", 0x01U|0x400U,
-   (char_u *)&p_eb, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"errorfile", "ef", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_ef, PV_NONE,
-   {(char_u *)"errors.err", (char_u *)0L}
-   , 0},
-  {"errorformat", "efm", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_efm, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_EFM)))),
-   {(char_u *)"%*[^\"]\"%f\"%*\\D%l: %m,\"%f\"%*\\D%l: %m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c:,%-GIn file included from %f:%l:%c\\,,%-GIn file included from %f:%l:%c,%-GIn file included from %f:%l,%-G%*[ ]from %f:%l:%c,%-G%*[ ]from %f:%l:,%-G%*[ ]from %f:%l\\,,%-G%*[ ]from %f:%l,%f:%l:%c:%m,%f(%l):%m,%f:%l:%m,\"%f\"\\, line %l%*\\D%c%*[^ ] %m,%D%*\\a[%*\\d]: Entering directory %*[`']%f',%X%*\\a[%*\\d]: Leaving directory %*[`']%f',%D%*\\a: Entering directory %*[`']%f',%X%*\\a: Leaving directory %*[`']%f',%DMaking %*\\a in %f,%f|%l| %m", (char_u *)0L}
-   , 0},
-  {"esckeys", "ek", 0x01U|0x800U,
-   (char_u *)&p_ek, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"eventignore", "ei", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_ei, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"expandtab", "et", 0x01U|0x400U|0x800U,
-   (char_u *)&p_et, (idopt_T)(0x4000 + (int)(BV_ET)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"exrc", "ex", 0x01U|0x400U|0x40000U,
-   (char_u *)&p_exrc, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"fileencoding","fenc", 0x04U|0x08U|0x400U|0x1000U|0x4000U|0x200U,
-   (char_u *)&p_fenc, (idopt_T)(0x4000 + (int)(BV_FENC)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"fileencodings","fencs", 0x04U|0x400U|0x8000U,
-   (char_u *)&p_fencs, PV_NONE,
-   {(char_u *)"ucs-bom", (char_u *)0L}
-   , 0},
-  {"fileformat", "ff", 0x04U|0x08U|0x400U|0x1000U|0x200U|
-   0x2000000U,
-   (char_u *)&p_ff, (idopt_T)(0x4000 + (int)(BV_FF)),
-   {(char_u *)"unix", (char_u *)0L} , 0},
-  {"fileformats", "ffs", 0x04U|0x800U|0x8000U|0x10000U,
-   (char_u *)&p_ffs, PV_NONE,
-   {(char_u *)"", (char_u *)"unix,dos"}
-   , 0},
-  {"fileignorecase", "fic", 0x01U|0x400U,
-   (char_u *)&p_fic, PV_NONE,
-   {
-
-
-
-     (char_u *)0,
-
-     (char_u *)0L
-   } , 0},
-  {"filetype", "ft", 0x04U|0x08U|0x400U|0x100000U|0x200000U,
-   (char_u *)&p_ft, (idopt_T)(0x4000 + (int)(BV_FT)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"fillchars", "fcs", 0x04U|0x400U|0x6000U|0x8000U|0x10000U,
-   (char_u *)&p_fcs, PV_NONE,
-   {(char_u *)"vert:|,fold:-", (char_u *)0L}
-   , 0},
-  {"fkmap", "fk", 0x01U|0x400U,
-   (char_u *)&p_fkmap, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"foldclose", "fcl", 0x04U|0x400U|0x8000U|0x10000U|0x2000U,
-   (char_u *)&p_fcl, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"foldcolumn", "fdc", 0x02U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FDC)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"foldenable", "fen", 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FEN)),
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"foldexpr", "fde", 0x04U|0x08U|0x800U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FDE)),
-   {(char_u *)"0", (char_u *)((void*)0)}
-   , 0},
-  {"foldignore", "fdi", 0x04U|0x08U|0x800U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FDI)),
-   {(char_u *)"#", (char_u *)((void*)0)} , 0},
-  {"foldlevel", "fdl", 0x02U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FDL)),
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"foldlevelstart","fdls", 0x02U|0x400U|0x2000000U,
-   (char_u *)&p_fdls, PV_NONE,
-   {(char_u *)-1L, (char_u *)0L} , 0},
-  {"foldmarker", "fmr", 0x04U|0x08U|0x800U|0x400U|
-   0x2000U|0x8000U|0x10000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FMR)),
-   {(char_u *)"{{{,}}}", (char_u *)((void*)0)}
-   , 0},
-  {"foldmethod", "fdm", 0x04U|0x08U|0x800U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FDM)),
-   {(char_u *)"manual", (char_u *)((void*)0)} , 0},
-  {"foldminlines","fml", 0x02U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FML)),
-   {(char_u *)1L, (char_u *)0L} , 0},
-  {"foldnestmax", "fdn", 0x02U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FDN)),
-   {(char_u *)20L, (char_u *)0L} , 0},
-  {"foldopen", "fdo", 0x04U|0x400U|0x8000U|0x10000U|0x2000000U,
-   (char_u *)&p_fdo, PV_NONE,
-   {(char_u *)"block,hor,mark,percent,quickfix,search,tag,undo",
-    (char_u *)0L} , 0},
-  {"foldtext", "fdt", 0x04U|0x08U|0x800U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_FDT)),
-   {(char_u *)"foldtext()", (char_u *)((void*)0)}
-   , 0},
-  {"formatexpr", "fex", 0x04U|0x08U|0x400U|0x800U,
-   (char_u *)&p_fex, (idopt_T)(0x4000 + (int)(BV_FEX)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"formatoptions","fo", 0x04U|0x08U|0x800U|0x20000U,
-   (char_u *)&p_fo, (idopt_T)(0x4000 + (int)(BV_FO)),
-   {(char_u *)"vt", (char_u *)"tcqj"}
-   , 0},
-  {"formatlistpat","flp", 0x04U|0x08U|0x400U,
-   (char_u *)&p_flp, (idopt_T)(0x4000 + (int)(BV_FLP)),
-   {(char_u *)"^\\s*\\d\\+[\\]:.)}\\t ]\\s*",
-    (char_u *)0L} , 0},
-  {"formatprg", "fp", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_fp, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"fsync", "fs", 0x01U|0x40000U|0x400U,
-
-   (char_u *)&p_fs, PV_NONE,
-   {(char_u *)1, (char_u *)0L}
-
-
-
-
-   , 0},
-  {"gdefault", "gd", 0x01U|0x400U|0x800U,
-   (char_u *)&p_gd, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"grepformat", "gfm", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_gefm, PV_NONE,
-   {(char_u *)"%f:%l:%m,%f:%l%m,%f  %l%m", (char_u *)0L}
-   , 0},
-  {"grepprg", "gp", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_gp, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_GP)))),
-   {
-
-
-
-     (char_u *)"grep -n $* /dev/null",
-
-
-
-     (char_u *)0L
-   }
-   , 0},
-  {"guicursor", "gcr", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_guicursor, PV_NONE,
-   {
-     (char_u *)"n-v-c:block,o:hor50,i-ci:hor15,r-cr:hor30,sm:block",
-     (char_u *)0L
-   }
-   , 0},
-  {"guifont", "gfn", 0x04U|0x400U|0x7000U|0x8000U|0x10000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"guifontset", "gfs", 0x04U|0x400U|0x7000U|0x8000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"guifontwide", "gfw", 0x04U|0x400U|0x7000U|0x8000U|0x10000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"guiheadroom", "ghr", 0x02U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)50L, (char_u *)0L} , 0},
-  {"guioptions", "go", 0x04U|0x400U|0x6000U|0x20000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"guitablabel", "gtl", 0x04U|0x400U|0x2000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"guitabtooltip", "gtt", 0x04U|0x400U|0x2000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"helpfile", "hf", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_hf, PV_NONE,
-   {(char_u *)"$VIMRUNTIME/doc/help.txt", (char_u *)0L}
-   , 0},
-  {"helpheight", "hh", 0x02U|0x400U,
-   (char_u *)&p_hh, PV_NONE,
-   {(char_u *)20L, (char_u *)0L} , 0},
-  {"helplang", "hlg", 0x04U|0x400U|0x8000U,
-   (char_u *)&p_hlg, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"hidden", "hid", 0x01U|0x400U,
-   (char_u *)&p_hid, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"highlight", "hl", 0x04U|0x400U|0x7000U|0x8000U|0x10000U,
-   (char_u *)&p_hl, PV_NONE,
-   {(char_u *)"8:SpecialKey,~:EndOfBuffer,z:TermCursor,Z:TermCursorNC,@:NonText," "d:Directory,e:ErrorMsg,i:IncSearch,l:Search,m:MoreMsg,M:ModeMsg,n:LineNr," "N:CursorLineNr,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title," "v:Visual,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn," "A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal," "B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel," "x:PmenuSbar,X:PmenuThumb,*:TabLine,#:TabLineSel,_:TabLineFill," "!:CursorColumn,.:CursorLine,o:ColorColumn", (char_u *)0L}
-   , 0},
-  {"history", "hi", 0x02U|0x800U,
-   (char_u *)&p_hi, PV_NONE,
-   {(char_u *)0L, (char_u *)50L} , 0},
-  {"hkmap", "hk", 0x01U|0x400U|0x800U,
-   (char_u *)&p_hkmap, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"hkmapp", "hkp", 0x01U|0x400U|0x800U,
-   (char_u *)&p_hkmapp, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"hlsearch", "hls", 0x01U|0x800U|0x6000U,
-   (char_u *)&p_hls, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"icon", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_icon, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"iconstring", ((void*)0), 0x04U|0x400U,
-   (char_u *)&p_iconstring, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"ignorecase", "ic", 0x01U|0x400U,
-   (char_u *)&p_ic, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"imactivatefunc","imaf",0x04U|0x400U|0x40000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"imactivatekey","imak",0x04U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"imcmdline", "imc", 0x01U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"imdisable", "imd", 0x01U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)0, (char_u *)0L}
-   , 0},
-  {"iminsert", "imi", 0x02U|0x400U,
-   (char_u *)&p_iminsert, (idopt_T)(0x4000 + (int)(BV_IMI)),
-
-
-
-   {(char_u *)0, (char_u *)0L}
-
-   , 0},
-  {"imsearch", "ims", 0x02U|0x400U,
-   (char_u *)&p_imsearch, (idopt_T)(0x4000 + (int)(BV_IMS)),
-
-
-
-   {(char_u *)0, (char_u *)0L}
-
-   , 0},
-  {"imstatusfunc","imsf",0x04U|0x400U|0x40000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"include", "inc", 0x04U|0x08U|0x400U,
-   (char_u *)&p_inc, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_INC)))),
-   {(char_u *)"^\\s*#\\s*include", (char_u *)0L}
-   , 0},
-  {"includeexpr", "inex", 0x04U|0x08U|0x400U,
-   (char_u *)&p_inex, (idopt_T)(0x4000 + (int)(BV_INEX)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"incsearch", "is", 0x01U|0x800U,
-   (char_u *)&p_is, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"indentexpr", "inde", 0x04U|0x08U|0x400U|0x800U,
-   (char_u *)&p_inde, (idopt_T)(0x4000 + (int)(BV_INDE)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"indentkeys", "indk", 0x04U|0x08U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_indk, (idopt_T)(0x4000 + (int)(BV_INDK)),
-   {(char_u *)"0{,0},:,0#,!^F,o,O,e", (char_u *)0L}
-   , 0},
-  {"infercase", "inf", 0x01U|0x400U,
-   (char_u *)&p_inf, (idopt_T)(0x4000 + (int)(BV_INF)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"insertmode", "im", 0x01U|0x400U|0x800U,
-   (char_u *)&p_im, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"isfname", "isf", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_isf, PV_NONE,
-   {
-
-
-
-
-
-     (char_u *)"@,48-57,/,.,-,_,+,,,#,$,%,~,=",
-
-     (char_u *)0L
-   } , 0},
-  {"isident", "isi", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_isi, PV_NONE,
-   {
-     (char_u *)"@,48-57,_,192-255",
-     (char_u *)0L
-   } , 0},
-  {"iskeyword", "isk", 0x04U|0x08U|0x800U|0x8000U|0x10000U,
-   (char_u *)&p_isk, (idopt_T)(0x4000 + (int)(BV_ISK)),
-   {
-     (char_u *)"@,48-57,_",
-     (char_u *)"@,48-57,_,192-255"
-   } , 0},
-  {"isprint", "isp", 0x04U|0x400U|0x6000U|0x8000U|0x10000U,
-   (char_u *)&p_isp, PV_NONE,
-   {
-
-
-
-     (char_u *)"@,161-255",
-
-     (char_u *)0L
-   } , 0},
-  {"joinspaces", "js", 0x01U|0x400U|0x800U,
-   (char_u *)&p_js, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"keymap", "kmp", 0x04U|0x08U|0x400U|0x4000U|0x1000U|0x200000U|
-   0x800000U,
-   (char_u *)&p_keymap, (idopt_T)(0x4000 + (int)(BV_KMAP)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"keymodel", "km", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_km, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"keywordprg", "kp", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_kp, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_KP)))),
-   {
-
-     (char_u *)"man -s",
-
-
-
-     (char_u *)0L
-   } , 0},
-  {"langmap", "lmap", 0x04U|0x400U|0x8000U|0x10000U|0x40000U,
-   (char_u *)&p_langmap, PV_NONE,
-   {(char_u *)"",
-    (char_u *)0L} , 0},
-  {"langmenu", "lm", 0x04U|0x400U|0x200000U,
-   (char_u *)&p_lm, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"langnoremap", "lnr", 0x01U,
-   (char_u *)&p_lnr, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"laststatus", "ls", 0x02U|0x400U|0x6000U,
-   (char_u *)&p_ls, PV_NONE,
-   {(char_u *)1L, (char_u *)0L} , 0},
-  {"lazyredraw", "lz", 0x01U|0x400U,
-   (char_u *)&p_lz, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"linebreak", "lbr", 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_LBR)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"lines", ((void*)0), 0x02U|0x40U|0x200U|0x400U|0x7000U,
-   (char_u *)&Rows, PV_NONE,
-   {
-     (char_u *)24L,
-     (char_u *)0L
-   } , 0},
-  {"linespace", "lsp", 0x02U|0x400U|0x7000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)0L, (char_u *)0L}
-   , 0},
-  {"lisp", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_lisp, (idopt_T)(0x4000 + (int)(BV_LISP)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"lispwords", "lw", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_lispwords, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_LW)))),
-   {(char_u *)"defun,define,defmacro,set!,lambda,if,case,let,flet,let*,letrec,do,do*,define-syntax,let-syntax,letrec-syntax,destructuring-bind,defpackage,defparameter,defstruct,deftype,defvar,do-all-symbols,do-external-symbols,do-symbols,dolist,dotimes,ecase,etypecase,eval-when,labels,macrolet,multiple-value-bind,multiple-value-call,multiple-value-prog1,multiple-value-setq,prog1,progv,typecase,unless,unwind-protect,when,with-input-from-string,with-open-file,with-open-stream,with-output-to-string,with-package-iterator,define-condition,handler-bind,handler-case,restart-bind,restart-case,with-simple-restart,store-value,use-value,muffle-warning,abort,continue,with-slots,with-slots*,with-accessors,with-accessors*,defclass,defmethod,print-unreadable-object", (char_u *)0L}
-   , 0},
-  {"list", ((void*)0), 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_LIST)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"listchars", "lcs", 0x04U|0x400U|0x6000U|0x8000U|0x10000U,
-   (char_u *)&p_lcs, PV_NONE,
-   {(char_u *)"eol:$", (char_u *)0L} , 0},
-  {"loadplugins", "lpl", 0x01U|0x400U,
-   (char_u *)&p_lpl, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"magic", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_magic, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"makeef", "mef", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_mef, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"makeprg", "mp", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_mp, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_MP)))),
-   {(char_u *)"make", (char_u *)0L}
-   , 0},
-  {"matchpairs", "mps", 0x04U|0x08U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_mps, (idopt_T)(0x4000 + (int)(BV_MPS)),
-   {(char_u *)"(:),{:},[:]", (char_u *)0L}
-   , 0},
-  {"matchtime", "mat", 0x02U|0x400U,
-   (char_u *)&p_mat, PV_NONE,
-   {(char_u *)5L, (char_u *)0L} , 0},
-  {"maxcombine", "mco", 0x02U|0x400U|0x2000000U,
-   (char_u *)&p_mco, PV_NONE,
-   {(char_u *)2, (char_u *)0L} , 0},
-  {"maxfuncdepth", "mfd", 0x02U|0x400U,
-   (char_u *)&p_mfd, PV_NONE,
-   {(char_u *)100L, (char_u *)0L} , 0},
-  {"maxmapdepth", "mmd", 0x02U|0x400U,
-   (char_u *)&p_mmd, PV_NONE,
-   {(char_u *)1000L, (char_u *)0L} , 0},
-  {"maxmem", "mm", 0x02U|0x400U,
-   (char_u *)&p_mm, PV_NONE,
-   {(char_u *)(5*1024), (char_u *)0L}
-   , 0},
-  {"maxmempattern","mmp", 0x02U|0x400U,
-   (char_u *)&p_mmp, PV_NONE,
-   {(char_u *)1000L, (char_u *)0L} , 0},
-  {"maxmemtot", "mmt", 0x02U|0x400U,
-   (char_u *)&p_mmt, PV_NONE,
-   {(char_u *)(10*1024), (char_u *)0L}
-   , 0},
-  {"menuitems", "mis", 0x02U|0x400U,
-   (char_u *)&p_mis, PV_NONE,
-   {(char_u *)25L, (char_u *)0L} , 0},
-  {"mkspellmem", "msm", 0x04U|0x400U|0x10U|0x40000U,
-   (char_u *)&p_msm, PV_NONE,
-   {(char_u *)"460000,2000,500", (char_u *)0L}
-   , 0},
-  {"modeline", "ml", 0x01U|0x800U,
-   (char_u *)&p_ml, (idopt_T)(0x4000 + (int)(BV_ML)),
-   {(char_u *)0, (char_u *)1} , 0},
-  {"modelines", "mls", 0x02U|0x400U,
-   (char_u *)&p_mls, PV_NONE,
-   {(char_u *)5L, (char_u *)0L} , 0},
-  {"modifiable", "ma", 0x01U|0x400U|0x100000U,
-   (char_u *)&p_ma, (idopt_T)(0x4000 + (int)(BV_MA)),
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"modified", "mod", 0x01U|0x200U|0x400U|0x1000U,
-   (char_u *)&p_mod, (idopt_T)(0x4000 + (int)(BV_MOD)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"more", ((void*)0), 0x01U|0x800U,
-   (char_u *)&p_more, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"mouse", ((void*)0), 0x04U|0x20000U,
-   (char_u *)&p_mouse, PV_NONE,
-   {
-     (char_u *)"",
-     (char_u *)"a"
-   } , 0},
-  {"mousefocus", "mousef", 0x01U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"mousehide", "mh", 0x01U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"mousemodel", "mousem", 0x04U|0x400U,
-   (char_u *)&p_mousem, PV_NONE,
-   {
-     (char_u *)"extend",
-     (char_u *)0L
-   } , 0},
-  {"mouseshape", "mouses", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)((void*)0), (char_u *)0L}
-   , 0},
-  {"mousetime", "mouset", 0x02U|0x400U,
-   (char_u *)&p_mouset, PV_NONE,
-   {(char_u *)500L, (char_u *)0L} , 0},
-  {"nrformats", "nf", 0x04U|0x08U|0x800U|0x8000U|0x10000U,
-   (char_u *)&p_nf, (idopt_T)(0x4000 + (int)(BV_NF)),
-   {(char_u *)"octal,hex", (char_u *)"hex"}
-   , 0},
-  {"number", "nu", 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_NU)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"numberwidth", "nuw", 0x02U|0x2000U|0x800U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_NUW)),
-   {(char_u *)8L, (char_u *)4L} , 0},
-  {"omnifunc", "ofu", 0x04U|0x08U|0x400U|0x40000U,
-   (char_u *)&p_ofu, (idopt_T)(0x4000 + (int)(BV_OFU)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"opendevice", "odev", 0x01U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)0, (char_u *)0}
-   , 0},
-  {"operatorfunc", "opfunc", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_opfunc, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"paragraphs", "para", 0x04U|0x400U,
-   (char_u *)&p_para, PV_NONE,
-   {(char_u *)"IPLPPPQPP TPHPLIPpLpItpplpipbp",
-    (char_u *)0L} , 0},
-  {"paste", ((void*)0), 0x01U|0x400U|0x800000U,
-   (char_u *)&p_paste, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"pastetoggle", "pt", 0x04U|0x400U,
-   (char_u *)&p_pt, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"patchexpr", "pex", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_pex, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"patchmode", "pm", 0x04U|0x400U|0x200000U,
-   (char_u *)&p_pm, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"path", "pa", 0x04U|0x10U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_path, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_PATH)))),
-   {
-     (char_u *)".,/usr/include,,",
-     (char_u *)0L
-   } , 0},
-  {"preserveindent", "pi", 0x01U|0x400U|0x800U,
-   (char_u *)&p_pi, (idopt_T)(0x4000 + (int)(BV_PI)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"previewheight", "pvh", 0x02U|0x400U,
-   (char_u *)&p_pvh, PV_NONE,
-   {(char_u *)12L, (char_u *)0L} , 0},
-  {"previewwindow", "pvw", 0x01U|0x400U|0x1000U|0x100000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_PVW)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"printdevice", "pdev", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_pdev, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"printencoding", "penc", 0x04U|0x400U,
-   (char_u *)&p_penc, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"printexpr", "pexpr", 0x04U|0x400U,
-   (char_u *)&p_pexpr, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"printfont", "pfn", 0x04U|0x400U,
-   (char_u *)&p_pfn, PV_NONE,
-   {
-     (char_u *)"courier",
-     (char_u *)0L
-   }
-   , 0},
-  {"printheader", "pheader", 0x04U|0x400U|0x80000U,
-   (char_u *)&p_header, PV_NONE,
-   {(char_u *)"%<%f%h%m%=Page %N", (char_u *)0L}
-   , 0},
-  {"printmbcharset", "pmbcs", 0x04U|0x400U,
-   (char_u *)&p_pmcs, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"printmbfont", "pmbfn", 0x04U|0x400U,
-   (char_u *)&p_pmfn, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"printoptions", "popt", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_popt, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"prompt", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_prompt, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"pumheight", "ph", 0x02U|0x400U,
-   (char_u *)&p_ph, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"quoteescape", "qe", 0x04U|0x08U|0x400U,
-   (char_u *)&p_qe, (idopt_T)(0x4000 + (int)(BV_QE)),
-   {(char_u *)"\\", (char_u *)0L}
-   , 0},
-  {"readonly", "ro", 0x01U|0x400U|0x1000U|0x100000U,
-   (char_u *)&p_ro, (idopt_T)(0x4000 + (int)(BV_RO)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"redrawtime", "rdt", 0x02U|0x400U,
-   (char_u *)&p_rdt, PV_NONE,
-   {(char_u *)2000L, (char_u *)0L} , 0},
-  {"regexpengine", "re", 0x02U|0x400U,
-   (char_u *)&p_re, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"relativenumber", "rnu", 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_RNU)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"remap", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_remap, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"report", ((void*)0), 0x02U|0x400U,
-   (char_u *)&p_report, PV_NONE,
-   {(char_u *)2L, (char_u *)0L} , 0},
-  {"restorescreen", "rs", 0x01U|0x400U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"revins", "ri", 0x01U|0x400U|0x800U,
-   (char_u *)&p_ri, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"rightleft", "rl", 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_RL)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"rightleftcmd", "rlc", 0x04U|0x08U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_RLC)),
-   {(char_u *)"search", (char_u *)((void*)0)}
-   , 0},
-  {"ruler", "ru", 0x01U|0x400U|0x800U|0x1000U,
-   (char_u *)&p_ru, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"rulerformat", "ruf", 0x04U|0x400U|0x08U|0x1000U,
-   (char_u *)&p_ruf, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"runtimepath", "rtp", 0x04U|0x400U|0x10U|0x8000U|0x10000U|0x40000U,
-   (char_u *)&p_rtp, PV_NONE,
-   {(char_u *)"~/.nvim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.nvim/after", (char_u *)0L}
-   , 0},
-  {"scroll", "scr", 0x02U|0x200U|0x400U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_SCROLL)),
-   {(char_u *)12L, (char_u *)0L} , 0},
-  {"scrollbind", "scb", 0x01U|0x400U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_SCBIND)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"scrolljump", "sj", 0x02U|0x400U|0x800U,
-   (char_u *)&p_sj, PV_NONE,
-   {(char_u *)1L, (char_u *)0L} , 0},
-  {"scrolloff", "so", 0x02U|0x400U|0x800U|0x6000U,
-   (char_u *)&p_so, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"scrollopt", "sbo", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_sbo, PV_NONE,
-   {(char_u *)"ver,jump", (char_u *)0L}
-   , 0},
-  {"sections", "sect", 0x04U|0x400U,
-   (char_u *)&p_sections, PV_NONE,
-   {(char_u *)"SHNHH HUnhsh", (char_u *)0L}
-   , 0},
-  {"secure", ((void*)0), 0x01U|0x400U|0x40000U,
-   (char_u *)&p_secure, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"selection", "sel", 0x04U|0x400U,
-   (char_u *)&p_sel, PV_NONE,
-   {(char_u *)"inclusive", (char_u *)0L}
-   , 0},
-  {"selectmode", "slm", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_slm, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"sessionoptions", "ssop", 0x04U|0x800U|0x8000U|0x10000U,
-   (char_u *)&p_ssop, PV_NONE,
-   {(char_u *)"blank,buffers,curdir,folds,help,options,tabpages,winsize",
-    (char_u *)"blank,buffers,curdir,folds,help,tabpages,winsize"}
-   , 0},
-  {"shell", "sh", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_sh, PV_NONE,
-   {
-     (char_u *)"sh",
-     (char_u *)0L
-   } , 0},
-  {"shellcmdflag","shcf", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_shcf, PV_NONE,
-   {
-     (char_u *)"-c",
-     (char_u *)0L
-   } , 0},
-  {"shellpipe", "sp", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_sp, PV_NONE,
-   {
-
-     (char_u *)"| tee",
-
-
-
-     (char_u *)0L
-   }
-   , 0},
-  {"shellquote", "shq", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_shq, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"shellredir", "srr", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_srr, PV_NONE,
-   {(char_u *)">", (char_u *)0L} , 0},
-  {"shellslash", "ssl", 0x01U|0x400U,
-
-
-
-   (char_u *)((void*)0), PV_NONE,
-
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"shelltemp", "stmp", 0x01U,
-   (char_u *)&p_stmp, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"shellxquote", "sxq", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_sxq, PV_NONE,
-   {
-     (char_u *)"",
-     (char_u *)0L
-   } , 0},
-  {"shellxescape", "sxe", 0x04U|0x400U|0x40000U,
-   (char_u *)&p_sxe, PV_NONE,
-   {
-     (char_u *)"",
-     (char_u *)0L
-   } , 0},
-  {"shiftround", "sr", 0x01U|0x400U|0x800U,
-   (char_u *)&p_sr, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"shiftwidth", "sw", 0x02U|0x400U,
-   (char_u *)&p_sw, (idopt_T)(0x4000 + (int)(BV_SW)),
-   {(char_u *)8L, (char_u *)0L} , 0},
-  {"shortmess", "shm", 0x04U|0x800U|0x20000U,
-   (char_u *)&p_shm, PV_NONE,
-   {(char_u *)"", (char_u *)"filnxtToO"}
-   , 0},
-  {"showbreak", "sbr", 0x04U|0x400U|0x6000U,
-   (char_u *)&p_sbr, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"showcmd", "sc", 0x01U|0x800U,
-   (char_u *)&p_sc, PV_NONE,
-   {(char_u *)0,
-
-    (char_u *)0
-
-
-
-   } , 0},
-  {"showfulltag", "sft", 0x01U|0x400U,
-   (char_u *)&p_sft, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"showmatch", "sm", 0x01U|0x400U,
-   (char_u *)&p_sm, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"showmode", "smd", 0x01U|0x800U,
-   (char_u *)&p_smd, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"showtabline", "stal", 0x02U|0x400U|0x6000U,
-   (char_u *)&p_stal, PV_NONE,
-   {(char_u *)1L, (char_u *)0L} , 0},
-  {"sidescroll", "ss", 0x02U|0x400U,
-   (char_u *)&p_ss, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"sidescrolloff", "siso", 0x02U|0x400U|0x800U|0x4000U,
-   (char_u *)&p_siso, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"smartcase", "scs", 0x01U|0x400U|0x800U,
-   (char_u *)&p_scs, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"smartindent", "si", 0x01U|0x400U|0x800U,
-   (char_u *)&p_si, (idopt_T)(0x4000 + (int)(BV_SI)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"smarttab", "sta", 0x01U|0x800U,
-   (char_u *)&p_sta, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"softtabstop", "sts", 0x02U|0x400U|0x800U,
-   (char_u *)&p_sts, (idopt_T)(0x4000 + (int)(BV_STS)),
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"spell", ((void*)0), 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_SPELL)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"spellcapcheck", "spc", 0x04U|0x08U|0x400U|0x4000U,
-   (char_u *)&p_spc, (idopt_T)(0x4000 + (int)(BV_SPC)),
-   {(char_u *)"[.?!]\\_[\\])'\"	 ]\\+", (char_u *)0L}
-   , 0},
-  {"spellfile", "spf", 0x04U|0x10U|0x08U|0x400U|0x40000U|0x8000U,
-   (char_u *)&p_spf, (idopt_T)(0x4000 + (int)(BV_SPF)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"spelllang", "spl", 0x04U|0x08U|0x400U|0x8000U|0x4000U|0x10U,
-   (char_u *)&p_spl, (idopt_T)(0x4000 + (int)(BV_SPL)),
-   {(char_u *)"en", (char_u *)0L}
-   , 0},
-  {"spellsuggest", "sps", 0x04U|0x400U|0x10U|0x40000U|0x8000U,
-   (char_u *)&p_sps, PV_NONE,
-   {(char_u *)"best", (char_u *)0L}
-   , 0},
-  {"splitbelow", "sb", 0x01U|0x400U,
-   (char_u *)&p_sb, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"splitright", "spr", 0x01U|0x400U,
-   (char_u *)&p_spr, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"startofline", "sol", 0x01U|0x400U|0x800U,
-   (char_u *)&p_sol, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"statusline","stl", 0x04U|0x400U|0x08U|0x1000U,
-   (char_u *)&p_stl, (idopt_T)(0x1000 + (int)((idopt_T)(0x2000 + (int)(WV_STL)))),
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"suffixes", "su", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_su, PV_NONE,
-   {(char_u *)".bak,~,.o,.h,.info,.swp,.obj",
-    (char_u *)0L} , 0},
-  {"suffixesadd", "sua", 0x04U|0x400U|0x08U|0x8000U|0x10000U,
-   (char_u *)&p_sua, (idopt_T)(0x4000 + (int)(BV_SUA)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"swapfile", "swf", 0x01U|0x400U|0x1000U,
-   (char_u *)&p_swf, (idopt_T)(0x4000 + (int)(BV_SWF)),
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"swapsync", "sws", 0x04U|0x400U,
-   (char_u *)&p_sws, PV_NONE,
-   {(char_u *)"fsync", (char_u *)0L} , 0},
-  {"switchbuf", "swb", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_swb, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"synmaxcol", "smc", 0x02U|0x400U|0x4000U,
-   (char_u *)&p_smc, (idopt_T)(0x4000 + (int)(BV_SMC)),
-   {(char_u *)3000L, (char_u *)0L}
-   , 0},
-  {"syntax", "syn", 0x04U|0x08U|0x400U|0x100000U|0x200000U,
-   (char_u *)&p_syn, (idopt_T)(0x4000 + (int)(BV_SYN)),
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"tabline", "tal", 0x04U|0x400U|0x6000U,
-   (char_u *)&p_tal, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"tabpagemax", "tpm", 0x02U|0x800U,
-   (char_u *)&p_tpm, PV_NONE,
-   {(char_u *)10L, (char_u *)50L} , 0},
-  {"tabstop", "ts", 0x02U|0x400U|0x4000U,
-   (char_u *)&p_ts, (idopt_T)(0x4000 + (int)(BV_TS)),
-   {(char_u *)8L, (char_u *)0L} , 0},
-  {"tagbsearch", "tbs", 0x01U|0x400U,
-   (char_u *)&p_tbs, PV_NONE,
-   {(char_u *)1, (char_u *)0L}
-   , 0},
-  {"taglength", "tl", 0x02U|0x400U,
-   (char_u *)&p_tl, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"tagrelative", "tr", 0x01U|0x800U,
-   (char_u *)&p_tr, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"tags", "tag", 0x04U|0x10U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_tags, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_TAGS)))),
-   {
-     (char_u *)"./tags;,tags",
-     (char_u *)0L
-   } , 0},
-  {"tagstack", "tgst", 0x01U|0x400U,
-   (char_u *)&p_tgst, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"termbidi", "tbidi", 0x01U|0x400U,
-   (char_u *)&p_tbidi, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"termencoding", "tenc", 0x04U|0x400U|0x7000U,
-   (char_u *)((void*)0), PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"terse", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_terse, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"textwidth", "tw", 0x02U|0x400U|0x800U|0x4000U,
-   (char_u *)&p_tw, (idopt_T)(0x4000 + (int)(BV_TW)),
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"thesaurus", "tsr", 0x04U|0x10U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_tsr, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_TSR)))),
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"tildeop", "top", 0x01U|0x400U|0x800U,
-   (char_u *)&p_to, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"timeout", "to", 0x01U|0x400U,
-   (char_u *)&p_timeout, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"timeoutlen", "tm", 0x02U|0x400U,
-   (char_u *)&p_tm, PV_NONE,
-   {(char_u *)1000L, (char_u *)0L} , 0},
-  {"title", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_title, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"titlelen", ((void*)0), 0x02U|0x400U,
-   (char_u *)&p_titlelen, PV_NONE,
-   {(char_u *)85L, (char_u *)0L} , 0},
-  {"titleold", ((void*)0), 0x04U|0x400U|0x80000U|0x40000U|0x200U,
-   (char_u *)&p_titleold, PV_NONE,
-   {(char_u *)"Thanks for flying Vim",
-    (char_u *)0L}
-   , 0},
-  {"titlestring", ((void*)0), 0x04U|0x400U,
-   (char_u *)&p_titlestring, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"ttimeout", ((void*)0), 0x01U|0x400U|0x800U,
-   (char_u *)&p_ttimeout, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"ttimeoutlen", "ttm", 0x02U|0x400U,
-   (char_u *)&p_ttm, PV_NONE,
-   {(char_u *)-1L, (char_u *)0L} , 0},
-  {"ttyfast", "tf", 0x01U|0x200U|0x400U,
-   (char_u *)&p_force_on, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"undodir", "udir", 0x04U|0x10U|0x8000U|0x10000U|0x40000U|0x400U,
-   (char_u *)&p_udir, PV_NONE,
-   {(char_u *)".", (char_u *)0L}
-   , 0},
-  {"undofile", "udf", 0x01U|0x400U|0x800U,
-   (char_u *)&p_udf, (idopt_T)(0x4000 + (int)(BV_UDF)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"undolevels", "ul", 0x02U|0x400U,
-   (char_u *)&p_ul, (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_UL)))),
-   {
-
-     (char_u *)1000L,
-
-
-
-     (char_u *)0L
-   } , 0},
-  {"undoreload", "ur", 0x02U|0x400U,
-   (char_u *)&p_ur, PV_NONE,
-   { (char_u *)10000L, (char_u *)0L} , 0},
-  {"updatecount", "uc", 0x02U|0x400U,
-   (char_u *)&p_uc, PV_NONE,
-   {(char_u *)200L, (char_u *)0L} , 0},
-  {"updatetime", "ut", 0x02U|0x400U,
-   (char_u *)&p_ut, PV_NONE,
-   {(char_u *)4000L, (char_u *)0L} , 0},
-  {"verbose", "vbs", 0x02U|0x400U,
-   (char_u *)&p_verbose, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"verbosefile", "vfile", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_vfile, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"viewdir", "vdir", 0x04U|0x10U|0x400U|0x40000U,
-   (char_u *)&p_vdir, PV_NONE,
-   {(char_u *)"~/.nvim/view", (char_u *)0L}
-   , 0},
-  {"viewoptions", "vop", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_vop, PV_NONE,
-   {(char_u *)"folds,options,cursor", (char_u *)0L}
-   , 0},
-  {"viminfo", "vi", 0x04U|0x8000U|0x10000U|0x40000U,
-   (char_u *)&p_viminfo, PV_NONE,
-   {(char_u *)"", (char_u *)"!,'100,<50,s10,h"}
-   , 0},
-  {"virtualedit", "ve", 0x04U|0x8000U|0x10000U|0x400U|0x800U|0x2000000U,
-   (char_u *)&p_ve, PV_NONE,
-   {(char_u *)"", (char_u *)""}
-   , 0},
-  {"visualbell", "vb", 0x01U|0x400U,
-   (char_u *)&p_vb, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"warn", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_warn, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"whichwrap", "ww", 0x04U|0x800U|0x8000U|0x20000U,
-   (char_u *)&p_ww, PV_NONE,
-   {(char_u *)"", (char_u *)"b,s"} , 0},
-  {"wildchar", "wc", 0x02U|0x800U,
-   (char_u *)&p_wc, PV_NONE,
-   {(char_u *)(long)5, (char_u *)(long)'\011'}
-   , 0},
-  {"wildcharm", "wcm", 0x02U|0x400U,
-   (char_u *)&p_wcm, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"wildignore", "wig", 0x04U|0x400U|0x8000U|0x10000U,
-   (char_u *)&p_wig, PV_NONE,
-   {(char_u *)"", (char_u *)0L} , 0},
-  {"wildignorecase", "wic", 0x01U|0x400U,
-   (char_u *)&p_wic, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"wildmenu", "wmnu", 0x01U|0x800U,
-   (char_u *)&p_wmnu, PV_NONE,
-   {(char_u *)0, (char_u *)1} , 0},
-  {"wildmode", "wim", 0x04U|0x800U|0x8000U|0x10000U,
-   (char_u *)&p_wim, PV_NONE,
-   {(char_u *)"", (char_u *)"list:longest,full"} , 0},
-  {"wildoptions", "wop", 0x04U|0x400U,
-   (char_u *)&p_wop, PV_NONE,
-   {(char_u *)"", (char_u *)0L}
-   , 0},
-  {"winaltkeys", "wak", 0x04U|0x400U,
-   (char_u *)&p_wak, PV_NONE,
-   {(char_u *)"menu", (char_u *)0L}
-   , 0},
-  {"window", "wi", 0x02U|0x400U,
-   (char_u *)&p_window, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"winheight", "wh", 0x02U|0x400U,
-   (char_u *)&p_wh, PV_NONE,
-   {(char_u *)1L, (char_u *)0L} , 0},
-  {"winfixheight", "wfh", 0x01U|0x400U|0x1000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_WFH)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"winfixwidth", "wfw", 0x01U|0x400U|0x1000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_WFW)),
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"winminheight", "wmh", 0x02U|0x400U,
-   (char_u *)&p_wmh, PV_NONE,
-   {(char_u *)1L, (char_u *)0L} , 0},
-  {"winminwidth", "wmw", 0x02U|0x400U,
-   (char_u *)&p_wmw, PV_NONE,
-   {(char_u *)1L, (char_u *)0L} , 0},
-  {"winwidth", "wiw", 0x02U|0x400U,
-   (char_u *)&p_wiw, PV_NONE,
-   {(char_u *)20L, (char_u *)0L} , 0},
-  {"wrap", ((void*)0), 0x01U|0x400U|0x2000U,
-   ((char_u *)-1), (idopt_T)(0x2000 + (int)(WV_WRAP)),
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"wrapmargin", "wm", 0x02U|0x400U,
-   (char_u *)&p_wm, (idopt_T)(0x4000 + (int)(BV_WM)),
-   {(char_u *)0L, (char_u *)0L} , 0},
-  {"wrapscan", "ws", 0x01U|0x400U,
-   (char_u *)&p_ws, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"write", ((void*)0), 0x01U|0x400U,
-   (char_u *)&p_write, PV_NONE,
-   {(char_u *)1, (char_u *)0L} , 0},
-  {"writeany", "wa", 0x01U|0x400U,
-   (char_u *)&p_wa, PV_NONE,
-   {(char_u *)0, (char_u *)0L} , 0},
-  {"writebackup", "wb", 0x01U|0x400U|0x800U,
-   (char_u *)&p_wb, PV_NONE,
-   {
-     (char_u *)1,
-     (char_u *)0L
-   } , 0},
-  {"writedelay", "wd", 0x02U|0x400U,
-   (char_u *)&p_wd, PV_NONE,
-   {(char_u *)0L, (char_u *)0L} , 0},
-
-
-  {
-    ((void*)0), ((void*)0), 0, ((void*)0), PV_NONE, {((void*)0), ((void*)0)} , 0
-  }
-};
-
-
-
+# 275 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 static char *(p_ambw_values[]) = {"single", "double", ((void*)0)};
 static char *(p_bg_values[]) = {"light", "dark", ((void*)0)};
 static char *(p_nf_values[]) = {"octal", "hex", "alpha", ((void*)0)};
@@ -23303,10 +23497,195 @@ static char *(p_fdm_values[]) = {"manual", "expr", "marker", "indent", "syntax",
 static char *(p_fcl_values[]) = {"all", ((void*)0)};
 static char *(p_cot_values[]) = {"menu", "menuone", "longest", "preview",
                                  "noinsert", "noselect", ((void*)0)};
-# 1717 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+
+
+
+
+
+
+static char *strcpy_comma_escaped(char *dest, const char *src, const size_t len)
+  FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT
+{
+  size_t shift = 0;
+  for (size_t i = 0; i < len; i++) {
+    if (src[i] == ',') {
+      dest[i + shift++] = '\\';
+    }
+    dest[i + shift] = src[i];
+  }
+  return &dest[len + shift];
+}
+# 331 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+static inline size_t compute_double_colon_len(const char *const val,
+                                              const size_t common_suf_len,
+                                              const size_t single_suf_len)
+  FUNC_ATTR_WARN_UNUSED_RESULT FUNC_ATTR_PURE
+{
+  if (val == ((void*)0) || *val == '\000') {
+    return 0;
+  }
+  size_t ret = 0;
+  const void *iter = ((void*)0);
+  do {
+    size_t dir_len;
+    const char *dir;
+    iter = vim_colon_env_iter(val, iter, &dir, &dir_len);
+    if (dir != ((void*)0) && dir_len > 0) {
+      ret += ((dir_len + memcnt(dir, ',', dir_len) + common_suf_len
+               + !after_pathsep(dir, dir + dir_len)) * 2
+              + single_suf_len);
+    }
+  } while (iter != ((void*)0));
+  return ret;
+}
+# 375 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+static inline char *add_colon_dirs(char *dest, const char *const val,
+                                   const char *const suf1, const size_t len1,
+                                   const char *const suf2, const size_t len2,
+                                   const _Bool forward)
+  FUNC_ATTR_WARN_UNUSED_RESULT FUNC_ATTR_NONNULL_RET FUNC_ATTR_NONNULL_ARG(1)
+{
+  if (val == ((void*)0) || *val == '\000') {
+    return dest;
+  }
+  const void *iter = ((void*)0);
+  do {
+    size_t dir_len;
+    const char *dir;
+    iter = (forward ? vim_colon_env_iter : vim_colon_env_iter_rev)(
+        val, iter, &dir, &dir_len);
+    if (dir != ((void*)0) && dir_len > 0) {
+      dest = strcpy_comma_escaped(dest, dir, dir_len);
+      if (!after_pathsep(dest - 1, dest)) {
+        *dest++ = '/';
+      }
+      __builtin___memmove_chk (dest, "nvim", (sizeof("nvim") - 1), __builtin_object_size (dest, 0));
+      dest += (sizeof("nvim") - 1);
+      if (suf1 != ((void*)0)) {
+        *dest++ = '/';
+        __builtin___memmove_chk (dest, suf1, len1, __builtin_object_size (dest, 0));
+        dest += len1;
+        if (suf2 != ((void*)0)) {
+          *dest++ = '/';
+          __builtin___memmove_chk (dest, suf2, len2, __builtin_object_size (dest, 0));
+          dest += len2;
+        }
+      }
+      *dest++ = ',';
+    }
+  } while (iter != ((void*)0));
+  return dest;
+}
+# 432 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+static inline char *add_dir(char *dest, const char *const dir,
+                            const size_t dir_len, const _Bool append_nvim,
+                            const char *const suf1, const size_t len1,
+                            const char *const suf2, const size_t len2)
+  FUNC_ATTR_NONNULL_RET FUNC_ATTR_NONNULL_ARG(1) FUNC_ATTR_WARN_UNUSED_RESULT
+{
+  if (dir == ((void*)0) || dir_len == 0) {
+    return dest;
+  }
+  dest = strcpy_comma_escaped(dest, dir, dir_len);
+  if (append_nvim) {
+    if (!after_pathsep(dest - 1, dest)) {
+      *dest++ = '/';
+    }
+    __builtin___memmove_chk (dest, "nvim", (sizeof("nvim") - 1), __builtin_object_size (dest, 0));
+    dest += (sizeof("nvim") - 1);
+    if (suf1 != ((void*)0)) {
+      *dest++ = '/';
+      __builtin___memmove_chk (dest, suf1, len1, __builtin_object_size (dest, 0));
+      dest += len1;
+      if (suf2 != ((void*)0)) {
+        *dest++ = '/';
+        __builtin___memmove_chk (dest, suf2, len2, __builtin_object_size (dest, 0));
+        dest += len2;
+      }
+    }
+  }
+  *dest++ = ',';
+  return dest;
+}
+
+
+static void set_runtimepath_default(void)
+{
+  size_t rtp_size = 0;
+  char *const data_home = stdpaths_get_xdg_var(kXDGDataHome);
+  char *const config_home = stdpaths_get_xdg_var(kXDGConfigHome);
+  char *const vimruntime = vim_getenv("VIMRUNTIME");
+  char *const data_dirs = stdpaths_get_xdg_var(kXDGDataDirs);
+  char *const config_dirs = stdpaths_get_xdg_var(kXDGConfigDirs);
+
+
+  size_t data_len = 0;
+  size_t config_len = 0;
+  size_t vimruntime_len = 0;
+  if (data_home != ((void*)0)) {
+    data_len = strlen(data_home);
+    if (data_len != 0) {
+      rtp_size += ((data_len + memcnt(data_home, ',', data_len)
+                    + (sizeof("nvim") - 1) + 1 + (sizeof("site") - 1) + 1
+                    + !after_pathsep(data_home, data_home + data_len)) * 2
+                   + (sizeof("after") - 1) + 1);
+    }
+  }
+  if (config_home != ((void*)0)) {
+    config_len = strlen(config_home);
+    if (config_len != 0) {
+      rtp_size += ((config_len + memcnt(config_home, ',', config_len)
+                    + (sizeof("nvim") - 1) + 1
+                    + !after_pathsep(config_home, config_home + config_len)) * 2
+                   + (sizeof("after") - 1) + 1);
+    }
+  }
+  if (vimruntime != ((void*)0)) {
+    vimruntime_len = strlen(vimruntime);
+    if (vimruntime_len != 0) {
+      rtp_size += vimruntime_len + memcnt(vimruntime, ',', vimruntime_len) + 1;
+    }
+  }
+  rtp_size += compute_double_colon_len(data_dirs, (sizeof("nvim") - 1) + 1 + (sizeof("site") - 1) + 1,
+                                       (sizeof("after") - 1) + 1);
+  rtp_size += compute_double_colon_len(config_dirs, (sizeof("nvim") - 1) + 1,
+                                       (sizeof("after") - 1) + 1);
+  if (rtp_size == 0) {
+    return;
+  }
+  char *const rtp = xmalloc(rtp_size);
+  char *rtp_cur = rtp;
+  rtp_cur = add_dir(rtp_cur, config_home, config_len, 1, ((void*)0), 0, ((void*)0), 0);
+  rtp_cur = add_colon_dirs(rtp_cur, config_dirs, ((void*)0), 0, ((void*)0), 0, 1);
+  rtp_cur = add_dir(rtp_cur, data_home, data_len, 1, "site", (sizeof("site") - 1),
+                    ((void*)0), 0);
+  rtp_cur = add_colon_dirs(rtp_cur, data_dirs, "site", (sizeof("site") - 1), ((void*)0), 0,
+                           1);
+  rtp_cur = add_dir(rtp_cur, vimruntime, vimruntime_len, 0, ((void*)0), 0,
+                    ((void*)0), 0);
+  rtp_cur = add_colon_dirs(rtp_cur, data_dirs, "site", (sizeof("site") - 1),
+                           "after", (sizeof("after") - 1), 0);
+  rtp_cur = add_dir(rtp_cur, data_home, data_len, 1, "site", (sizeof("site") - 1),
+                    "after", (sizeof("after") - 1));
+  rtp_cur = add_colon_dirs(rtp_cur, config_dirs, "after", (sizeof("after") - 1), ((void*)0), 0,
+                           0);
+  rtp_cur = add_dir(rtp_cur, config_home, config_len, 1,
+                    "after", (sizeof("after") - 1), ((void*)0), 0);
+
+  rtp_cur[-1] = '\000';
+  (__builtin_expect(!((size_t) (rtp_cur - rtp) == rtp_size), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 528, "(size_t) (rtp_cur - rtp) == rtp_size") : (void)0);
+
+
+  set_string_default("runtimepath", rtp, 1);
+  xfree(data_dirs);
+  xfree(config_dirs);
+  xfree(data_home);
+  xfree(config_home);
+  xfree(vimruntime);
+}
+# 546 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 void set_init_1(void)
 {
-  char_u *p;
   int opt_idx;
 
   langmap_init();
@@ -23315,17 +23694,15 @@ void set_init_1(void)
   p_cp = 0;
 
 
-  if (os_env_exists("VIM_POSIX")) {
-    set_string_default("cpo", (char_u *)"aAbBcCdDeEfFiIJkKlLmMnoOpPqrRsStuvWxXyZ$!%+<>#{|&/\\.;");
-    set_string_default("shm", (char_u *)"A");
+
+
+
+  {
+    const char *shell = os_getenv("SHELL");
+    if (shell != ((void*)0)) {
+      set_string_default("sh", (char *) shell, 0);
+    }
   }
-
-
-
-
-
-  if ((p = (char_u *)os_getenv("SHELL")) != ((void*)0))
-    set_string_default("sh", p);
 
 
 
@@ -23343,17 +23720,18 @@ void set_init_1(void)
     ga_init(&ga, 1, 100);
     for (size_t n = 0; n < ((sizeof(names)/sizeof((names)[0])) / ((size_t)(!(sizeof(names) % sizeof((names)[0]))))); ++n) {
       _Bool mustfree = 1;
+      char *p;
 
       if (*names[n] == '\000') {
-        p = (char_u *)"/tmp";
+        p = "/tmp";
         mustfree = 0;
       }
       else
 
-      p = (char_u *)vim_getenv(names[n]);
+      p = vim_getenv(names[n]);
       if (p != ((void*)0) && *p != '\000') {
 
-        len = (int)strlen((char *)(p)) + 3;
+        len = (int)strlen(p) + 3;
         ga_grow(&ga, len);
         if (!((&ga)->ga_len <= 0))
           __builtin___strcat_chk ((char *)(ga.ga_data), (char *)(","), __builtin_object_size ((char *)(ga.ga_data), 2 > 1 ? 1 : 0));
@@ -23367,8 +23745,7 @@ void set_init_1(void)
       }
     }
     if (ga.ga_data != ((void*)0)) {
-      set_string_default("bsk", ga.ga_data);
-      xfree(ga.ga_data);
+      set_string_default("bsk", ga.ga_data, 1);
     }
   }
 
@@ -23426,12 +23803,41 @@ void set_init_1(void)
       xfree(cdpath);
     }
   }
-# 1848 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
-  set_string_default(
-      "pexpr",
-      (char_u *)
-      "system('lpr' . (&printdevice == '' ? '' : ' -P' . &printdevice) . ' ' . v:fname_in) . delete(v:fname_in) + v:shell_error"
-      );
+
+
+
+
+
+
+
+  set_string_default("printexpr",
+
+                     "system(['lpr'] "
+                            "+ (empty(&printdevice)?[]:['-P', &printdevice]) "
+                            "+ [v:fname_in])"
+                     ". delete(v:fname_in)"
+                     "+ v:shell_error",
+
+
+
+
+
+
+
+                     0);
+
+  char *backupdir = stdpaths_user_data_subpath("backup", 0);
+  const size_t backupdir_len = strlen(backupdir);
+  backupdir = xrealloc(backupdir, backupdir_len + 3);
+  __builtin___memmove_chk (backupdir + 2, backupdir, backupdir_len + 1, __builtin_object_size (backupdir + 2, 0));
+  __builtin___memmove_chk (backupdir, ".,", 2, __builtin_object_size (backupdir, 0));
+  set_string_default("viewdir", stdpaths_user_data_subpath("view", 0), 1);
+  set_string_default("backupdir", backupdir, 1);
+  set_string_default("directory", stdpaths_user_data_subpath("swap", 2), 1);
+  set_string_default("undodir", stdpaths_user_data_subpath("undo", 0), 1);
+
+
+  set_runtimepath_default();
 
 
 
@@ -23451,6 +23857,9 @@ void set_init_1(void)
   set_options_default(1);
 
 
+  last_status(0);
+
+
   didset_options();
 
 
@@ -23460,16 +23869,18 @@ void set_init_1(void)
 
 
   fill_breakat_flags();
-# 1891 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 741 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
   for (opt_idx = 0; options[opt_idx].fullname; opt_idx++) {
+    char *p;
     if ((options[opt_idx].flags & 0x80000U)
-        && options[opt_idx].var != ((void*)0))
-      p = (char_u *)libintl_gettext((char *)(*(char **)options[opt_idx].var));
-    else
-      p = option_expand(opt_idx, ((void*)0));
+        && options[opt_idx].var != ((void*)0)) {
+      p = libintl_gettext((char *)(*(char **)options[opt_idx].var));
+    } else {
+      p = (char *) option_expand(opt_idx, ((void*)0));
+    }
     if (p != ((void*)0)) {
-      p = vim_strsave(p);
-      *(char_u **)options[opt_idx].var = p;
+      p = xstrdup(p);
+      *(char **)options[opt_idx].var = p;
 
 
 
@@ -23477,7 +23888,7 @@ void set_init_1(void)
 
       if (options[opt_idx].flags & 0x80U)
         xfree(options[opt_idx].def_val[0]);
-      options[opt_idx].def_val[0] = p;
+      options[opt_idx].def_val[0] = (char_u *) p;
       options[opt_idx].flags |= 0x80U;
     }
   }
@@ -23503,14 +23914,17 @@ void set_init_1(void)
   (void)set_chars_option(&p_fcs);
 
 
-  p = enc_locale();
+  (void)set_chars_option(&p_lcs);
+
+
+  char_u *p = enc_locale();
   if (p != ((void*)0)) {
     char_u *save_enc;
 
 
 
     save_enc = p_enc;
-    p_enc = p;
+    p_enc = (char_u *) p;
     if (strcmp((char *)(p_enc), (char *)("gb18030")) == 0) {
 
 
@@ -23524,7 +23938,7 @@ void set_init_1(void)
         options[opt_idx].def_val[0] = p_enc;
         options[opt_idx].flags |= 0x80U;
       }
-# 1975 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 830 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
     } else {
       xfree(p_enc);
 
@@ -23534,6 +23948,12 @@ void set_init_1(void)
   } else {
 
     mb_init();
+  }
+
+
+  opt_idx = findoption((char_u *)"encoding");
+  if (opt_idx >= 0) {
+    options[opt_idx].flags |= 0x40U;
   }
 
 
@@ -23572,7 +23992,7 @@ set_option_default (
         options[opt_idx].flags &= ~0x08U;
       }
     } else if (flags & 0x02U) {
-      if (options[opt_idx].indir == (idopt_T)(0x2000 + (int)(WV_SCROLL)))
+      if (options[opt_idx].indir == PV_SCROLL)
         win_comp_scroll(curwin);
       else {
         *(long *)varp = (long)options[opt_idx].def_val[dvi];
@@ -23585,7 +24005,7 @@ set_option_default (
       *(int *)varp = (int)(intptr_t)options[opt_idx].def_val[dvi];
 
 
-      if (options[opt_idx].indir == (idopt_T)(0x4000 + (int)(BV_ML)) && getuid() == 0)
+      if (options[opt_idx].indir == PV_ML && getuid() == 0)
         *(int *)varp = 0;
 
 
@@ -23629,7 +24049,9 @@ set_options_default (
 
 
 
-void set_string_default(const char *name, const char_u *val)
+
+static void set_string_default(const char *name, char *val, _Bool allocated)
+  FUNC_ATTR_NONNULL_ALL
 {
   int opt_idx = findoption((char_u *)name);
   if (opt_idx >= 0) {
@@ -23637,7 +24059,10 @@ void set_string_default(const char *name, const char_u *val)
       xfree(options[opt_idx].def_val[0]);
     }
 
-    options[opt_idx].def_val[0] = (char_u *) xstrdup((char *) val);
+    options[opt_idx].def_val[0] = (char_u *) (
+        allocated
+        ? (char_u *) val
+        : (char_u *) xstrdup(val));
     options[opt_idx].flags |= 0x80U;
   }
 }
@@ -23654,7 +24079,7 @@ void set_number_default(char *name, long val)
   if (opt_idx >= 0)
     options[opt_idx].def_val[0] = (char_u *)val;
 }
-# 2134 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 1000 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 void set_init_2(void)
 {
   int idx;
@@ -23777,7 +24202,7 @@ void set_helplang_default(const char *lang)
     options[idx].flags |= 0x08U;
   }
 }
-# 2265 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 1131 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 void set_title_defaults(void)
 {
   int idx1;
@@ -23798,7 +24223,7 @@ void set_title_defaults(void)
     p_icon = 0;
   }
 }
-# 2301 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 1167 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 int
 do_set (
     char_u *arg,
@@ -23971,8 +24396,8 @@ do_set (
 
         if (curwin->w_onebuf_opt.wo_diff
             && opt_idx >= 0
-            && (options[opt_idx].indir == (idopt_T)(0x2000 + (int)(WV_FDM))
-                || options[opt_idx].indir == (idopt_T)(0x2000 + (int)(WV_WRAP))))
+            && (options[opt_idx].indir == PV_FDM
+                || options[opt_idx].indir == PV_WRAP))
           goto skip;
       }
 
@@ -24089,7 +24514,7 @@ do_set (
           }
 
           if (flags & 0x02U) {
-# 2600 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 1466 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
             ++arg;
             if (nextchar == '&')
               value = (long)options[opt_idx].def_val[
@@ -24115,17 +24540,10 @@ do_set (
                 errmsg = e_invarg;
                 goto skip;
               }
-            }
+            } else if (*arg == '-' || ascii_isdigit(*arg)) {
 
-            else if (*arg == '-' || ascii_isdigit(*arg)) {
-              i = 0;
-              if (*arg == '-')
-                i = 1;
-              value = strtol((char *)arg, ((void*)0), 0);
-              if (arg[i] == '0' && (((arg[i + 1]) < 'A' || (arg[i + 1]) > 'Z') ? (arg[i + 1]) : (arg[i + 1]) + ('a' - 'A')) == 'x')
-                i += 2;
-              while (ascii_isdigit(arg[i]))
-                ++i;
+
+              vim_str2nr(arg, ((void*)0), &i, 1, 1, &value, ((void*)0));
               if (arg[i] != '\000' && !ascii_iswhite(arg[i])) {
                 errmsg = e_invarg;
                 goto skip;
@@ -24277,7 +24695,7 @@ do_set (
                 newlen += (unsigned)strlen((char *)(origval)) + 1;
               newval = xmalloc(newlen);
               s = newval;
-# 2796 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 1655 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
               while (*arg && !ascii_iswhite(*arg)) {
                 if (*arg == '\\' && arg[1] != '\000'
 
@@ -24449,7 +24867,7 @@ skip:
       if (i + (arg - startarg) < (1024+1)) {
 
         __builtin___strcat_chk ((char *)(IObuff), (char *)(": "), __builtin_object_size ((char *)(IObuff), 2 > 1 ? 1 : 0));
-        (__builtin_expect(!(arg >= startarg), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 2967, "arg >= startarg") : (void)0);
+        (__builtin_expect(!(arg >= startarg), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 1826, "arg >= startarg") : (void)0);
         __builtin___memmove_chk (IObuff + i, startarg, (size_t)(arg - startarg), __builtin_object_size (IObuff + i, 0));
         IObuff[i + (arg - startarg)] = '\000';
       }
@@ -24629,12 +25047,12 @@ set_options_bin (
     }
   }
 }
-# 3155 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
-int get_viminfo_parameter(int type)
+# 2014 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+int get_shada_parameter(int type)
 {
   char_u *p;
 
-  p = find_viminfo_parameter(type);
+  p = find_shada_parameter(type);
   if (p != ((void*)0) && ascii_isdigit(*p))
     return atoi((char *)p);
   return -1;
@@ -24645,11 +25063,11 @@ int get_viminfo_parameter(int type)
 
 
 
-char_u *find_viminfo_parameter(int type)
+char_u *find_shada_parameter(int type)
 {
   char_u *p;
 
-  for (p = p_viminfo; *p; ++p) {
+  for (p = p_shada; *p; ++p) {
     if (*p == type)
       return p + 1;
     if (*p == 'n')
@@ -24708,6 +25126,7 @@ static void didset_options(void)
 
   (void)opt_strings_flags(p_cmp, p_cmp_values, &cmp_flags, 1);
   (void)opt_strings_flags(p_bkc, p_bkc_values, &bkc_flags, 1);
+  (void)opt_strings_flags(p_bo, p_bo_values, &bo_flags, 1);
   (void)opt_strings_flags(p_ssop, p_ssop_values, &ssop_flags, 1);
   (void)opt_strings_flags(p_vop, p_ssop_values, &vop_flags, 1);
   (void)opt_strings_flags(p_fdo, p_fdo_values, &fdo_flags, 1);
@@ -24782,7 +25201,7 @@ void check_buf_options(buf_T *buf)
   check_string_option(&buf->b_p_lw);
   check_string_option(&buf->b_p_bkc);
 }
-# 3315 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 2175 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 void free_string_option(char_u *p)
 {
   if (p != empty_option)
@@ -24827,12 +25246,12 @@ static uint32_t *insecure_flag(int opt_idx, int opt_flags)
 {
   if (opt_flags & 4)
     switch ((int)options[opt_idx].indir) {
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x2000 + (int)(WV_STL)))): return &curwin->w_p_stl_flags;
-    case (idopt_T)(0x2000 + (int)(WV_FDE)): return &curwin->w_p_fde_flags;
-    case (idopt_T)(0x2000 + (int)(WV_FDT)): return &curwin->w_p_fdt_flags;
-    case (idopt_T)(0x4000 + (int)(BV_INDE)): return &curbuf->b_p_inde_flags;
-    case (idopt_T)(0x4000 + (int)(BV_FEX)): return &curbuf->b_p_fex_flags;
-    case (idopt_T)(0x4000 + (int)(BV_INEX)): return &curbuf->b_p_inex_flags;
+    case PV_STL: return &curwin->w_p_stl_flags;
+    case PV_FDE: return &curwin->w_p_fde_flags;
+    case PV_FDT: return &curwin->w_p_fdt_flags;
+    case PV_INDE: return &curbuf->b_p_inde_flags;
+    case PV_FEX: return &curbuf->b_p_fex_flags;
+    case PV_INEX: return &curbuf->b_p_inex_flags;
     }
 
 
@@ -24847,7 +25266,9 @@ static void redraw_titles(void) {
   need_maketitle = 1;
   redraw_tabline = 1;
 }
-# 3387 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+
+static int shada_idx = -1;
+# 2249 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 void
 set_string_option_direct (
     char_u *name,
@@ -24873,6 +25294,8 @@ set_string_option_direct (
 
   if (options[idx].var == ((void*)0))
     return;
+
+  (__builtin_expect(!((void *) options[idx].var != (void *) &p_shada), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 2275, "(void *) options[idx].var != (void *) &p_shada") : (void)0);
 
   s = vim_strsave(val);
   {
@@ -25083,9 +25506,7 @@ did_set_string_option (
   else if (gvarp == &p_nf) {
     if (check_opt_strings(*varp, p_nf_values, 1) != 1)
       errmsg = e_invarg;
-  }
-
-  else if (varp == &p_ssop) {
+  } else if (varp == &p_ssop) {
     if (opt_strings_flags(p_ssop, p_ssop_values, &ssop_flags, 1) != 1)
       errmsg = e_invarg;
     if ((ssop_flags & 0x1000) && (ssop_flags & 0x800)) {
@@ -25093,9 +25514,7 @@ did_set_string_option (
       (void)opt_strings_flags(oldval, p_ssop_values, &ssop_flags, 1);
       errmsg = e_invarg;
     }
-  }
-
-  else if (varp == &p_vop) {
+  } else if (varp == &p_vop) {
     if (opt_strings_flags(p_vop, p_ssop_values, &vop_flags, 1) != 1)
       errmsg = e_invarg;
   }
@@ -25154,10 +25573,11 @@ did_set_string_option (
   else if (varp == &p_ei) {
     if (check_ei() == 0)
       errmsg = e_invarg;
-  }
 
-  else if (varp == &p_enc || gvarp == &p_fenc) {
-    if (gvarp == &p_fenc) {
+  } else if (varp == &p_enc || gvarp == &p_fenc) {
+    if (varp == &p_enc && did_source_startup_scripts) {
+       errmsg = e_afterinit;
+    } else if (gvarp == &p_fenc) {
       if (!(!curbuf->terminal && curbuf->b_p_ma) && opt_flags != 2)
         errmsg = e_modifiable;
       else if (vim_strchr(*varp, ',') != ((void*)0))
@@ -25188,10 +25608,6 @@ did_set_string_option (
 
       if (varp == &p_enc && *curbuf->b_p_keymap != '\000')
         (void)keymap_init();
-
-      if (varp == &p_enc) {
-        ui_update_encoding();
-      }
     }
   } else if (varp == &p_penc) {
 
@@ -25321,10 +25737,16 @@ did_set_string_option (
     verbose_stop();
     if (*p_vfile != '\000' && verbose_open() == 0)
       errmsg = e_invarg;
-  }
 
-  else if (varp == &p_viminfo) {
-    for (s = p_viminfo; *s; ) {
+  } else if (varp == &p_shada) {
+
+
+    opt_idx = ((options[opt_idx].fullname[0] == 'v')
+               ? (shada_idx == -1
+                  ? ((shada_idx = findoption((char_u *) "shada")))
+                  : shada_idx)
+               : opt_idx);
+    for (s = p_shada; *s; ) {
 
       if (vim_strchr((char_u *)"!\"%'/:<@cfhnrs", *s) == ((void*)0)) {
         errmsg = illegal_char(errbuf, *s);
@@ -25366,7 +25788,7 @@ did_set_string_option (
         break;
       }
     }
-    if (*p_viminfo && errmsg == ((void*)0) && get_viminfo_parameter('\'') < 0)
+    if (*p_shada && errmsg == ((void*)0) && get_shada_parameter('\'') < 0)
       errmsg = (char_u *)"E528: Must specify a ' value";
   }
 
@@ -25432,9 +25854,7 @@ did_set_string_option (
   else if (varp == &p_mousem) {
     if (check_opt_strings(p_mousem, p_mousem_values, 0) != 1)
       errmsg = e_invarg;
-  }
-
-  else if (varp == &p_swb) {
+  } else if (varp == &p_swb) {
     if (opt_strings_flags(p_swb, p_swb_values, &swb_flags, 1) != 1)
       errmsg = e_invarg;
   }
@@ -25442,9 +25862,7 @@ did_set_string_option (
   else if (varp == &p_debug) {
     if (check_opt_strings(p_debug, p_debug_values, 1) != 1)
       errmsg = e_invarg;
-  }
-
-  else if (varp == &p_dy) {
+  } else if (varp == &p_dy) {
     if (opt_strings_flags(p_dy, p_dy_values, &dy_flags, 1) != 1)
       errmsg = e_invarg;
     else
@@ -25455,10 +25873,10 @@ did_set_string_option (
   else if (varp == &p_ead) {
     if (check_opt_strings(p_ead, p_ead_values, 0) != 1)
       errmsg = e_invarg;
-  }
-  else if (varp == &p_cb) {
-    if (opt_strings_flags(p_cb, p_cb_values, &cb_flags, 1) != 1)
+  } else if (varp == &p_cb) {
+    if (opt_strings_flags(p_cb, p_cb_values, &cb_flags, 1) != 1) {
       errmsg = e_invarg;
+    }
   } else if (varp == &(curwin->w_s->b_p_spl)
              || varp == &(curwin->w_s->b_p_spf)) {
 
@@ -25593,9 +26011,11 @@ did_set_string_option (
         errmsg = e_invarg;
     } else if (check_opt_strings(p_bs, p_bs_values, 1) != 1)
       errmsg = e_invarg;
-  }
-
-  else if (varp == &p_cmp) {
+  } else if (varp == &p_bo) {
+    if (opt_strings_flags(p_bo, p_bo_values, &bo_flags, 1) != 1) {
+      errmsg = e_invarg;
+    }
+  } else if (varp == &p_cmp) {
     if (opt_strings_flags(p_cmp, p_cmp_values, &cmp_flags, 1) != 1)
       errmsg = e_invarg;
   }
@@ -25634,9 +26054,8 @@ did_set_string_option (
   else if (gvarp == &p_cms) {
     if (**varp != '\000' && strstr((char *)*varp, "%s") == ((void*)0))
       errmsg = (char_u *)"E537: 'commentstring' must be empty or contain %s";
-  }
 
-  else if (varp == &p_fdo) {
+  } else if (varp == &p_fdo) {
     if (opt_strings_flags(p_fdo, p_fdo_values, &fdo_flags, 1) != 1)
       errmsg = e_invarg;
   }
@@ -25649,9 +26068,7 @@ did_set_string_option (
   else if (gvarp == &curwin->w_allbuf_opt.wo_fdi) {
     if (foldmethodIsIndent(curwin))
       foldUpdateAll(curwin);
-  }
-
-  else if (varp == &p_ve) {
+  } else if (varp == &p_ve) {
     if (opt_strings_flags(p_ve, p_ve_values, &ve_flags, 1) != 1)
       errmsg = e_invarg;
     else if (strcmp((char *)(p_ve), (char *)(oldval)) != 0) {
@@ -25690,7 +26107,7 @@ did_set_string_option (
     if (varp == &p_shm)
       p = (char_u *)"rmfixlnwaWtToOsAIc";
     else if (varp == &(p_cpo))
-      p = (char_u *)"aAbBcCdDeEfFiIJkKlLmMnoOpPqrRsStuvWxXyZ$!%+<>#{|&/\\.;";
+      p = (char_u *)"aAbBcCdDeEfFiIJkKlLmMnoOpPqrRsStuvWxXyZ$!%+<>;";
     else if (varp == &(curbuf->b_p_fo))
       p = (char_u *)"tcroq2vlb1mMBn,awj";
     else if (varp == &curwin->w_onebuf_opt.wo_cocu)
@@ -25833,7 +26250,7 @@ char_u *check_colorcolumn(win_T *wp)
       col = col * getdigits_int(&s);
       if (wp->w_buffer->b_p_tw == 0)
         goto skip;
-      (__builtin_expect(!((col >= 0 && wp->w_buffer->b_p_tw <= 2147483647 - col && wp->w_buffer->b_p_tw + col >= (-2147483647 -1)) || (col < 0 && wp->w_buffer->b_p_tw >= (-2147483647 -1) - col && wp->w_buffer->b_p_tw + col <= 2147483647)), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 4377, "(col >= 0 && wp->w_buffer->b_p_tw <= INT_MAX - col && wp->w_buffer->b_p_tw + col >= INT_MIN) || (col < 0 && wp->w_buffer->b_p_tw >= INT_MIN - col && wp->w_buffer->b_p_tw + col <= INT_MAX)") : (void)0);
+      (__builtin_expect(!((col >= 0 && wp->w_buffer->b_p_tw <= 2147483647 - col && wp->w_buffer->b_p_tw + col >= (-2147483647 -1)) || (col < 0 && wp->w_buffer->b_p_tw >= (-2147483647 -1) - col && wp->w_buffer->b_p_tw + col <= 2147483647)), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 3235, "(col >= 0 && wp->w_buffer->b_p_tw <= INT_MAX - col && wp->w_buffer->b_p_tw + col >= INT_MIN) || (col < 0 && wp->w_buffer->b_p_tw >= INT_MIN - col && wp->w_buffer->b_p_tw + col <= INT_MAX)") : (void)0);
 
 
 
@@ -26266,14 +26683,14 @@ set_bool_option (
     redraw_titles();
     modified_was_set = value;
   }
-# 4826 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 3684 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
   else if ((int *)varp == &curwin->w_onebuf_opt.wo_wrap) {
     if (curwin->w_onebuf_opt.wo_wrap)
       curwin->w_leftcol = 0;
-  } else if ((int *)varp == &p_ea) {
+  } else if ((_Bool *)varp == &p_ea) {
     if (p_ea && !old_value)
       win_equal(curwin, 0, 0);
-  } else if ((int *)varp == &p_acd) {
+  } else if ((_Bool *)varp == &p_acd) {
 
     do_autochdir();
   }
@@ -26305,7 +26722,7 @@ set_bool_option (
       (void)init_chartab();
     }
   }
-# 4873 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 3731 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
   if ((p_hkmap || p_fkmap) && p_altkeymap) {
     p_altkeymap = p_fkmap;
     curwin->w_onebuf_opt.wo_arab = 0;
@@ -26509,9 +26926,8 @@ set_num_option (
       p_wmw = p_wiw;
     }
     win_setminheight();
-  }
+  } else if (pp == &p_ls) {
 
-  else if (pp == &p_ls) {
     last_status(0);
   }
 
@@ -26693,7 +27109,7 @@ set_num_option (
 
       check_shellsize();
       if (cmdline_row > Rows - p_ch && Rows > p_ch) {
-        (__builtin_expect(!(p_ch >= 0 && Rows - p_ch <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 5260, "p_ch >= 0 && Rows - p_ch <= INT_MAX") : (void)0);
+        (__builtin_expect(!(p_ch >= 0 && Rows - p_ch <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 4117, "p_ch >= 0 && Rows - p_ch <= INT_MAX") : (void)0);
         cmdline_row = (int)(Rows - p_ch);
       }
     }
@@ -26921,7 +27337,7 @@ _Bool set_tty_option(char *name, char *value)
   return is_tty_option(name) || !strcmp(name, "term")
     || !strcmp(name, "ttytype");
 }
-# 5499 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 4356 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 int
 get_option_value (
     char_u *name,
@@ -26966,7 +27382,7 @@ get_option_value (
   }
   return 1;
 }
-# 5560 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 4417 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 int get_option_value_strict(char *name,
                             int64_t *numval,
                             char **stringval,
@@ -27037,7 +27453,7 @@ int get_option_value_strict(char *name,
     if (opt_type == 2) {
 
 
-      if (p->indir == (idopt_T)(0x4000 + (int)(BV_MOD))) {
+      if (p->indir == PV_MOD) {
         *numval = bufIsChanged((buf_T *) from);
         varp = ((void*)0);
       } else {
@@ -27253,7 +27669,7 @@ showoptions (
 
 
     if (run == 1) {
-      (__builtin_expect(!(Columns <= 9223372036854775807L - 3 && Columns + 3 >= (-9223372036854775807L -1L) + 3 && (Columns + 3 - 3) / 20 >= (-2147483647 -1) && (Columns + 3 - 3) / 20 <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 5849, "Columns <= LONG_MAX - GAP && Columns + GAP >= LONG_MIN + 3 && (Columns + GAP - 3) / INC >= INT_MIN && (Columns + GAP - 3) / INC <= INT_MAX") : (void)0);
+      (__builtin_expect(!(Columns <= 9223372036854775807L - 3 && Columns + 3 >= (-9223372036854775807L -1L) + 3 && (Columns + 3 - 3) / 20 >= (-2147483647 -1) && (Columns + 3 - 3) / 20 <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 4706, "Columns <= LONG_MAX - GAP && Columns + GAP >= LONG_MIN + 3 && (Columns + GAP - 3) / INC >= INT_MIN && (Columns + GAP - 3) / INC <= INT_MAX") : (void)0);
 
 
 
@@ -27335,7 +27751,7 @@ showoneopt (
   silent_mode = save_silent;
   info_message = 0;
 }
-# 5951 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 4808 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 int makeset(FILE *fd, int opt_flags, int local_only)
 {
   vimoption_T *p;
@@ -27345,7 +27761,7 @@ int makeset(FILE *fd, int opt_flags, int local_only)
   char *cmd;
   int round;
   int pri;
-# 5970 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 4827 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
   for (pri = 1; pri >= 0; --pri) {
     for (p = &options[0]; p->fullname; p++)
       if (!(p->flags & 0x200U)
@@ -27406,9 +27822,9 @@ int makeset(FILE *fd, int opt_flags, int local_only)
 
 
             if (
-              p->indir == (idopt_T)(0x4000 + (int)(BV_SYN))
+              p->indir == PV_SYN
               ||
-              p->indir == (idopt_T)(0x4000 + (int)(BV_FT))
+              p->indir == PV_FT
               ) {
               if (fprintf(fd, "if &%s != '%s'", p->fullname,
                       *(char_u **)(varp)) < 0
@@ -27511,7 +27927,7 @@ static int put_setbool(FILE *fd, char *cmd, char *name, int value)
     return 0;
   return 1;
 }
-# 6145 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 5002 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 void comp_col(void)
 {
   int last_has_status = (p_ls == 2 || (p_ls == 1 && firstwin != lastwin));
@@ -27529,11 +27945,11 @@ void comp_col(void)
     if (!p_ru || last_has_status)
       ++sc_col;
   }
-  (__builtin_expect(!(sc_col >= 0 && (-2147483647 -1) + sc_col <= Columns && Columns - sc_col <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 6164, "sc_col >= 0 && INT_MIN + sc_col <= Columns && Columns - sc_col <= INT_MAX") : (void)0);
+  (__builtin_expect(!(sc_col >= 0 && (-2147483647 -1) + sc_col <= Columns && Columns - sc_col <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 5021, "sc_col >= 0 && INT_MIN + sc_col <= Columns && Columns - sc_col <= INT_MAX") : (void)0);
 
 
   sc_col = (int)(Columns - sc_col);
-  (__builtin_expect(!(ru_col >= 0 && (-2147483647 -1) + ru_col <= Columns && Columns - ru_col <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 6168, "ru_col >= 0 && INT_MIN + ru_col <= Columns && Columns - ru_col <= INT_MAX") : (void)0);
+  (__builtin_expect(!(ru_col >= 0 && (-2147483647 -1) + ru_col <= Columns && Columns - ru_col <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 5025, "ru_col >= 0 && INT_MIN + ru_col <= Columns && Columns - ru_col <= INT_MAX") : (void)0);
 
 
   ru_col = (int)(Columns - ru_col);
@@ -27559,53 +27975,53 @@ void unset_global_local_option(char *name, void *from)
   switch ((int)p->indir)
   {
 
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_EP)))):
+    case PV_EP:
       clear_string_option(&buf->b_p_ep);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_KP)))):
+    case PV_KP:
       clear_string_option(&buf->b_p_kp);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_PATH)))):
+    case PV_PATH:
       clear_string_option(&buf->b_p_path);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_AR)))):
+    case PV_AR:
       buf->b_p_ar = -1;
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_BKC)))):
+    case PV_BKC:
       clear_string_option(&buf->b_p_bkc);
       buf->b_bkc_flags = 0;
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_TAGS)))):
+    case PV_TAGS:
       clear_string_option(&buf->b_p_tags);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_DEF)))):
+    case PV_DEF:
       clear_string_option(&buf->b_p_def);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_INC)))):
+    case PV_INC:
       clear_string_option(&buf->b_p_inc);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_DICT)))):
+    case PV_DICT:
       clear_string_option(&buf->b_p_dict);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_TSR)))):
+    case PV_TSR:
       clear_string_option(&buf->b_p_tsr);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_EFM)))):
+    case PV_EFM:
       clear_string_option(&buf->b_p_efm);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_GP)))):
+    case PV_GP:
       clear_string_option(&buf->b_p_gp);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_MP)))):
+    case PV_MP:
       clear_string_option(&buf->b_p_mp);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x2000 + (int)(WV_STL)))):
+    case PV_STL:
       clear_string_option(&((win_T *)from)->w_onebuf_opt.wo_stl);
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_UL)))):
+    case PV_UL:
       buf->b_p_ul = -123456;
       break;
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_LW)))):
+    case PV_LW:
       clear_string_option(&buf->b_p_lw);
       break;
   }
@@ -27623,22 +28039,22 @@ static char_u *get_varp_scope(vimoption_T *p, int opt_flags)
   }
   if ((opt_flags & 4) && ((int)p->indir & 0x1000)) {
     switch ((int)p->indir) {
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_EFM)))): return (char_u *)&(curbuf->b_p_efm);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_GP)))): return (char_u *)&(curbuf->b_p_gp);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_MP)))): return (char_u *)&(curbuf->b_p_mp);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_EP)))): return (char_u *)&(curbuf->b_p_ep);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_KP)))): return (char_u *)&(curbuf->b_p_kp);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_PATH)))): return (char_u *)&(curbuf->b_p_path);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_AR)))): return (char_u *)&(curbuf->b_p_ar);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_TAGS)))): return (char_u *)&(curbuf->b_p_tags);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_DEF)))): return (char_u *)&(curbuf->b_p_def);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_INC)))): return (char_u *)&(curbuf->b_p_inc);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_DICT)))): return (char_u *)&(curbuf->b_p_dict);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_TSR)))): return (char_u *)&(curbuf->b_p_tsr);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x2000 + (int)(WV_STL)))): return (char_u *)&(curwin->w_onebuf_opt.wo_stl);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_UL)))): return (char_u *)&(curbuf->b_p_ul);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_LW)))): return (char_u *)&(curbuf->b_p_lw);
-    case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_BKC)))): return (char_u *)&(curbuf->b_p_bkc);
+    case PV_EFM: return (char_u *)&(curbuf->b_p_efm);
+    case PV_GP: return (char_u *)&(curbuf->b_p_gp);
+    case PV_MP: return (char_u *)&(curbuf->b_p_mp);
+    case PV_EP: return (char_u *)&(curbuf->b_p_ep);
+    case PV_KP: return (char_u *)&(curbuf->b_p_kp);
+    case PV_PATH: return (char_u *)&(curbuf->b_p_path);
+    case PV_AR: return (char_u *)&(curbuf->b_p_ar);
+    case PV_TAGS: return (char_u *)&(curbuf->b_p_tags);
+    case PV_DEF: return (char_u *)&(curbuf->b_p_def);
+    case PV_INC: return (char_u *)&(curbuf->b_p_inc);
+    case PV_DICT: return (char_u *)&(curbuf->b_p_dict);
+    case PV_TSR: return (char_u *)&(curbuf->b_p_tsr);
+    case PV_STL: return (char_u *)&(curwin->w_onebuf_opt.wo_stl);
+    case PV_UL: return (char_u *)&(curbuf->b_p_ul);
+    case PV_LW: return (char_u *)&(curbuf->b_p_lw);
+    case PV_BKC: return (char_u *)&(curbuf->b_p_bkc);
     }
     return ((void*)0);
   }
@@ -27658,129 +28074,129 @@ static char_u *get_varp(vimoption_T *p)
   case PV_NONE: return p->var;
 
 
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_EP)))): return *curbuf->b_p_ep != '\000'
+  case PV_EP: return *curbuf->b_p_ep != '\000'
            ? (char_u *)&curbuf->b_p_ep : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_KP)))): return *curbuf->b_p_kp != '\000'
+  case PV_KP: return *curbuf->b_p_kp != '\000'
            ? (char_u *)&curbuf->b_p_kp : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_PATH)))): return *curbuf->b_p_path != '\000'
+  case PV_PATH: return *curbuf->b_p_path != '\000'
            ? (char_u *)&(curbuf->b_p_path) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_AR)))): return curbuf->b_p_ar >= 0
+  case PV_AR: return curbuf->b_p_ar >= 0
            ? (char_u *)&(curbuf->b_p_ar) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_TAGS)))): return *curbuf->b_p_tags != '\000'
+  case PV_TAGS: return *curbuf->b_p_tags != '\000'
            ? (char_u *)&(curbuf->b_p_tags) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_BKC)))): return *curbuf->b_p_bkc != '\000'
+  case PV_BKC: return *curbuf->b_p_bkc != '\000'
            ? (char_u *)&(curbuf->b_p_bkc) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_DEF)))): return *curbuf->b_p_def != '\000'
+  case PV_DEF: return *curbuf->b_p_def != '\000'
            ? (char_u *)&(curbuf->b_p_def) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_INC)))): return *curbuf->b_p_inc != '\000'
+  case PV_INC: return *curbuf->b_p_inc != '\000'
            ? (char_u *)&(curbuf->b_p_inc) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_DICT)))): return *curbuf->b_p_dict != '\000'
+  case PV_DICT: return *curbuf->b_p_dict != '\000'
            ? (char_u *)&(curbuf->b_p_dict) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_TSR)))): return *curbuf->b_p_tsr != '\000'
+  case PV_TSR: return *curbuf->b_p_tsr != '\000'
            ? (char_u *)&(curbuf->b_p_tsr) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_EFM)))): return *curbuf->b_p_efm != '\000'
+  case PV_EFM: return *curbuf->b_p_efm != '\000'
            ? (char_u *)&(curbuf->b_p_efm) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_GP)))): return *curbuf->b_p_gp != '\000'
+  case PV_GP: return *curbuf->b_p_gp != '\000'
            ? (char_u *)&(curbuf->b_p_gp) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_MP)))): return *curbuf->b_p_mp != '\000'
+  case PV_MP: return *curbuf->b_p_mp != '\000'
            ? (char_u *)&(curbuf->b_p_mp) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x2000 + (int)(WV_STL)))): return *curwin->w_onebuf_opt.wo_stl != '\000'
+  case PV_STL: return *curwin->w_onebuf_opt.wo_stl != '\000'
            ? (char_u *)&(curwin->w_onebuf_opt.wo_stl) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_UL)))): return curbuf->b_p_ul != -123456
+  case PV_UL: return curbuf->b_p_ul != -123456
            ? (char_u *)&(curbuf->b_p_ul) : p->var;
-  case (idopt_T)(0x1000 + (int)((idopt_T)(0x4000 + (int)(BV_LW)))): return *curbuf->b_p_lw != '\000'
+  case PV_LW: return *curbuf->b_p_lw != '\000'
            ? (char_u *)&(curbuf->b_p_lw) : p->var;
 
-  case (idopt_T)(0x2000 + (int)(WV_ARAB)): return (char_u *)&(curwin->w_onebuf_opt.wo_arab);
-  case (idopt_T)(0x2000 + (int)(WV_LIST)): return (char_u *)&(curwin->w_onebuf_opt.wo_list);
-  case (idopt_T)(0x2000 + (int)(WV_SPELL)): return (char_u *)&(curwin->w_onebuf_opt.wo_spell);
-  case (idopt_T)(0x2000 + (int)(WV_CUC)): return (char_u *)&(curwin->w_onebuf_opt.wo_cuc);
-  case (idopt_T)(0x2000 + (int)(WV_CUL)): return (char_u *)&(curwin->w_onebuf_opt.wo_cul);
-  case (idopt_T)(0x2000 + (int)(WV_CC)): return (char_u *)&(curwin->w_onebuf_opt.wo_cc);
-  case (idopt_T)(0x2000 + (int)(WV_DIFF)): return (char_u *)&(curwin->w_onebuf_opt.wo_diff);
-  case (idopt_T)(0x2000 + (int)(WV_FDC)): return (char_u *)&(curwin->w_onebuf_opt.wo_fdc);
-  case (idopt_T)(0x2000 + (int)(WV_FEN)): return (char_u *)&(curwin->w_onebuf_opt.wo_fen);
-  case (idopt_T)(0x2000 + (int)(WV_FDI)): return (char_u *)&(curwin->w_onebuf_opt.wo_fdi);
-  case (idopt_T)(0x2000 + (int)(WV_FDL)): return (char_u *)&(curwin->w_onebuf_opt.wo_fdl);
-  case (idopt_T)(0x2000 + (int)(WV_FDM)): return (char_u *)&(curwin->w_onebuf_opt.wo_fdm);
-  case (idopt_T)(0x2000 + (int)(WV_FML)): return (char_u *)&(curwin->w_onebuf_opt.wo_fml);
-  case (idopt_T)(0x2000 + (int)(WV_FDN)): return (char_u *)&(curwin->w_onebuf_opt.wo_fdn);
-  case (idopt_T)(0x2000 + (int)(WV_FDE)): return (char_u *)&(curwin->w_onebuf_opt.wo_fde);
-  case (idopt_T)(0x2000 + (int)(WV_FDT)): return (char_u *)&(curwin->w_onebuf_opt.wo_fdt);
-  case (idopt_T)(0x2000 + (int)(WV_FMR)): return (char_u *)&(curwin->w_onebuf_opt.wo_fmr);
-  case (idopt_T)(0x2000 + (int)(WV_NU)): return (char_u *)&(curwin->w_onebuf_opt.wo_nu);
-  case (idopt_T)(0x2000 + (int)(WV_RNU)): return (char_u *)&(curwin->w_onebuf_opt.wo_rnu);
-  case (idopt_T)(0x2000 + (int)(WV_NUW)): return (char_u *)&(curwin->w_onebuf_opt.wo_nuw);
-  case (idopt_T)(0x2000 + (int)(WV_WFH)): return (char_u *)&(curwin->w_onebuf_opt.wo_wfh);
-  case (idopt_T)(0x2000 + (int)(WV_WFW)): return (char_u *)&(curwin->w_onebuf_opt.wo_wfw);
-  case (idopt_T)(0x2000 + (int)(WV_PVW)): return (char_u *)&(curwin->w_onebuf_opt.wo_pvw);
-  case (idopt_T)(0x2000 + (int)(WV_RL)): return (char_u *)&(curwin->w_onebuf_opt.wo_rl);
-  case (idopt_T)(0x2000 + (int)(WV_RLC)): return (char_u *)&(curwin->w_onebuf_opt.wo_rlc);
-  case (idopt_T)(0x2000 + (int)(WV_SCROLL)): return (char_u *)&(curwin->w_onebuf_opt.wo_scr);
-  case (idopt_T)(0x2000 + (int)(WV_WRAP)): return (char_u *)&(curwin->w_onebuf_opt.wo_wrap);
-  case (idopt_T)(0x2000 + (int)(WV_LBR)): return (char_u *)&(curwin->w_onebuf_opt.wo_lbr);
-  case (idopt_T)(0x2000 + (int)(WV_BRI)): return (char_u *)&(curwin->w_onebuf_opt.wo_bri);
-  case (idopt_T)(0x2000 + (int)(WV_BRIOPT)): return (char_u *)&(curwin->w_onebuf_opt.wo_briopt);
-  case (idopt_T)(0x2000 + (int)(WV_SCBIND)): return (char_u *)&(curwin->w_onebuf_opt.wo_scb);
-  case (idopt_T)(0x2000 + (int)(WV_CRBIND)): return (char_u *)&(curwin->w_onebuf_opt.wo_crb);
-  case (idopt_T)(0x2000 + (int)(WV_COCU)): return (char_u *)&(curwin->w_onebuf_opt.wo_cocu);
-  case (idopt_T)(0x2000 + (int)(WV_COLE)): return (char_u *)&(curwin->w_onebuf_opt.wo_cole);
+  case PV_ARAB: return (char_u *)&(curwin->w_onebuf_opt.wo_arab);
+  case PV_LIST: return (char_u *)&(curwin->w_onebuf_opt.wo_list);
+  case PV_SPELL: return (char_u *)&(curwin->w_onebuf_opt.wo_spell);
+  case PV_CUC: return (char_u *)&(curwin->w_onebuf_opt.wo_cuc);
+  case PV_CUL: return (char_u *)&(curwin->w_onebuf_opt.wo_cul);
+  case PV_CC: return (char_u *)&(curwin->w_onebuf_opt.wo_cc);
+  case PV_DIFF: return (char_u *)&(curwin->w_onebuf_opt.wo_diff);
+  case PV_FDC: return (char_u *)&(curwin->w_onebuf_opt.wo_fdc);
+  case PV_FEN: return (char_u *)&(curwin->w_onebuf_opt.wo_fen);
+  case PV_FDI: return (char_u *)&(curwin->w_onebuf_opt.wo_fdi);
+  case PV_FDL: return (char_u *)&(curwin->w_onebuf_opt.wo_fdl);
+  case PV_FDM: return (char_u *)&(curwin->w_onebuf_opt.wo_fdm);
+  case PV_FML: return (char_u *)&(curwin->w_onebuf_opt.wo_fml);
+  case PV_FDN: return (char_u *)&(curwin->w_onebuf_opt.wo_fdn);
+  case PV_FDE: return (char_u *)&(curwin->w_onebuf_opt.wo_fde);
+  case PV_FDT: return (char_u *)&(curwin->w_onebuf_opt.wo_fdt);
+  case PV_FMR: return (char_u *)&(curwin->w_onebuf_opt.wo_fmr);
+  case PV_NU: return (char_u *)&(curwin->w_onebuf_opt.wo_nu);
+  case PV_RNU: return (char_u *)&(curwin->w_onebuf_opt.wo_rnu);
+  case PV_NUW: return (char_u *)&(curwin->w_onebuf_opt.wo_nuw);
+  case PV_WFH: return (char_u *)&(curwin->w_onebuf_opt.wo_wfh);
+  case PV_WFW: return (char_u *)&(curwin->w_onebuf_opt.wo_wfw);
+  case PV_PVW: return (char_u *)&(curwin->w_onebuf_opt.wo_pvw);
+  case PV_RL: return (char_u *)&(curwin->w_onebuf_opt.wo_rl);
+  case PV_RLC: return (char_u *)&(curwin->w_onebuf_opt.wo_rlc);
+  case PV_SCROLL: return (char_u *)&(curwin->w_onebuf_opt.wo_scr);
+  case PV_WRAP: return (char_u *)&(curwin->w_onebuf_opt.wo_wrap);
+  case PV_LBR: return (char_u *)&(curwin->w_onebuf_opt.wo_lbr);
+  case PV_BRI: return (char_u *)&(curwin->w_onebuf_opt.wo_bri);
+  case PV_BRIOPT: return (char_u *)&(curwin->w_onebuf_opt.wo_briopt);
+  case PV_SCBIND: return (char_u *)&(curwin->w_onebuf_opt.wo_scb);
+  case PV_CRBIND: return (char_u *)&(curwin->w_onebuf_opt.wo_crb);
+  case PV_COCU: return (char_u *)&(curwin->w_onebuf_opt.wo_cocu);
+  case PV_COLE: return (char_u *)&(curwin->w_onebuf_opt.wo_cole);
 
-  case (idopt_T)(0x4000 + (int)(BV_AI)): return (char_u *)&(curbuf->b_p_ai);
-  case (idopt_T)(0x4000 + (int)(BV_BIN)): return (char_u *)&(curbuf->b_p_bin);
-  case (idopt_T)(0x4000 + (int)(BV_BOMB)): return (char_u *)&(curbuf->b_p_bomb);
-  case (idopt_T)(0x4000 + (int)(BV_BH)): return (char_u *)&(curbuf->b_p_bh);
-  case (idopt_T)(0x4000 + (int)(BV_BT)): return (char_u *)&(curbuf->b_p_bt);
-  case (idopt_T)(0x4000 + (int)(BV_BL)): return (char_u *)&(curbuf->b_p_bl);
-  case (idopt_T)(0x4000 + (int)(BV_CI)): return (char_u *)&(curbuf->b_p_ci);
-  case (idopt_T)(0x4000 + (int)(BV_CIN)): return (char_u *)&(curbuf->b_p_cin);
-  case (idopt_T)(0x4000 + (int)(BV_CINK)): return (char_u *)&(curbuf->b_p_cink);
-  case (idopt_T)(0x4000 + (int)(BV_CINO)): return (char_u *)&(curbuf->b_p_cino);
-  case (idopt_T)(0x4000 + (int)(BV_CINW)): return (char_u *)&(curbuf->b_p_cinw);
-  case (idopt_T)(0x4000 + (int)(BV_COM)): return (char_u *)&(curbuf->b_p_com);
-  case (idopt_T)(0x4000 + (int)(BV_CMS)): return (char_u *)&(curbuf->b_p_cms);
-  case (idopt_T)(0x4000 + (int)(BV_CPT)): return (char_u *)&(curbuf->b_p_cpt);
-  case (idopt_T)(0x4000 + (int)(BV_CFU)): return (char_u *)&(curbuf->b_p_cfu);
-  case (idopt_T)(0x4000 + (int)(BV_OFU)): return (char_u *)&(curbuf->b_p_ofu);
-  case (idopt_T)(0x4000 + (int)(BV_EOL)): return (char_u *)&(curbuf->b_p_eol);
-  case (idopt_T)(0x4000 + (int)(BV_ET)): return (char_u *)&(curbuf->b_p_et);
-  case (idopt_T)(0x4000 + (int)(BV_FENC)): return (char_u *)&(curbuf->b_p_fenc);
-  case (idopt_T)(0x4000 + (int)(BV_FF)): return (char_u *)&(curbuf->b_p_ff);
-  case (idopt_T)(0x4000 + (int)(BV_FT)): return (char_u *)&(curbuf->b_p_ft);
-  case (idopt_T)(0x4000 + (int)(BV_FO)): return (char_u *)&(curbuf->b_p_fo);
-  case (idopt_T)(0x4000 + (int)(BV_FLP)): return (char_u *)&(curbuf->b_p_flp);
-  case (idopt_T)(0x4000 + (int)(BV_IMI)): return (char_u *)&(curbuf->b_p_iminsert);
-  case (idopt_T)(0x4000 + (int)(BV_IMS)): return (char_u *)&(curbuf->b_p_imsearch);
-  case (idopt_T)(0x4000 + (int)(BV_INF)): return (char_u *)&(curbuf->b_p_inf);
-  case (idopt_T)(0x4000 + (int)(BV_ISK)): return (char_u *)&(curbuf->b_p_isk);
-  case (idopt_T)(0x4000 + (int)(BV_INEX)): return (char_u *)&(curbuf->b_p_inex);
-  case (idopt_T)(0x4000 + (int)(BV_INDE)): return (char_u *)&(curbuf->b_p_inde);
-  case (idopt_T)(0x4000 + (int)(BV_INDK)): return (char_u *)&(curbuf->b_p_indk);
-  case (idopt_T)(0x4000 + (int)(BV_FEX)): return (char_u *)&(curbuf->b_p_fex);
-  case (idopt_T)(0x4000 + (int)(BV_LISP)): return (char_u *)&(curbuf->b_p_lisp);
-  case (idopt_T)(0x4000 + (int)(BV_ML)): return (char_u *)&(curbuf->b_p_ml);
-  case (idopt_T)(0x4000 + (int)(BV_MPS)): return (char_u *)&(curbuf->b_p_mps);
-  case (idopt_T)(0x4000 + (int)(BV_MA)): return (char_u *)&(curbuf->b_p_ma);
-  case (idopt_T)(0x4000 + (int)(BV_MOD)): return (char_u *)&(curbuf->b_changed);
-  case (idopt_T)(0x4000 + (int)(BV_NF)): return (char_u *)&(curbuf->b_p_nf);
-  case (idopt_T)(0x4000 + (int)(BV_PI)): return (char_u *)&(curbuf->b_p_pi);
-  case (idopt_T)(0x4000 + (int)(BV_QE)): return (char_u *)&(curbuf->b_p_qe);
-  case (idopt_T)(0x4000 + (int)(BV_RO)): return (char_u *)&(curbuf->b_p_ro);
-  case (idopt_T)(0x4000 + (int)(BV_SI)): return (char_u *)&(curbuf->b_p_si);
-  case (idopt_T)(0x4000 + (int)(BV_STS)): return (char_u *)&(curbuf->b_p_sts);
-  case (idopt_T)(0x4000 + (int)(BV_SUA)): return (char_u *)&(curbuf->b_p_sua);
-  case (idopt_T)(0x4000 + (int)(BV_SWF)): return (char_u *)&(curbuf->b_p_swf);
-  case (idopt_T)(0x4000 + (int)(BV_SMC)): return (char_u *)&(curbuf->b_p_smc);
-  case (idopt_T)(0x4000 + (int)(BV_SYN)): return (char_u *)&(curbuf->b_p_syn);
-  case (idopt_T)(0x4000 + (int)(BV_SPC)): return (char_u *)&(curwin->w_s->b_p_spc);
-  case (idopt_T)(0x4000 + (int)(BV_SPF)): return (char_u *)&(curwin->w_s->b_p_spf);
-  case (idopt_T)(0x4000 + (int)(BV_SPL)): return (char_u *)&(curwin->w_s->b_p_spl);
-  case (idopt_T)(0x4000 + (int)(BV_SW)): return (char_u *)&(curbuf->b_p_sw);
-  case (idopt_T)(0x4000 + (int)(BV_TS)): return (char_u *)&(curbuf->b_p_ts);
-  case (idopt_T)(0x4000 + (int)(BV_TW)): return (char_u *)&(curbuf->b_p_tw);
-  case (idopt_T)(0x4000 + (int)(BV_UDF)): return (char_u *)&(curbuf->b_p_udf);
-  case (idopt_T)(0x4000 + (int)(BV_WM)): return (char_u *)&(curbuf->b_p_wm);
-  case (idopt_T)(0x4000 + (int)(BV_KMAP)): return (char_u *)&(curbuf->b_p_keymap);
+  case PV_AI: return (char_u *)&(curbuf->b_p_ai);
+  case PV_BIN: return (char_u *)&(curbuf->b_p_bin);
+  case PV_BOMB: return (char_u *)&(curbuf->b_p_bomb);
+  case PV_BH: return (char_u *)&(curbuf->b_p_bh);
+  case PV_BT: return (char_u *)&(curbuf->b_p_bt);
+  case PV_BL: return (char_u *)&(curbuf->b_p_bl);
+  case PV_CI: return (char_u *)&(curbuf->b_p_ci);
+  case PV_CIN: return (char_u *)&(curbuf->b_p_cin);
+  case PV_CINK: return (char_u *)&(curbuf->b_p_cink);
+  case PV_CINO: return (char_u *)&(curbuf->b_p_cino);
+  case PV_CINW: return (char_u *)&(curbuf->b_p_cinw);
+  case PV_COM: return (char_u *)&(curbuf->b_p_com);
+  case PV_CMS: return (char_u *)&(curbuf->b_p_cms);
+  case PV_CPT: return (char_u *)&(curbuf->b_p_cpt);
+  case PV_CFU: return (char_u *)&(curbuf->b_p_cfu);
+  case PV_OFU: return (char_u *)&(curbuf->b_p_ofu);
+  case PV_EOL: return (char_u *)&(curbuf->b_p_eol);
+  case PV_ET: return (char_u *)&(curbuf->b_p_et);
+  case PV_FENC: return (char_u *)&(curbuf->b_p_fenc);
+  case PV_FF: return (char_u *)&(curbuf->b_p_ff);
+  case PV_FT: return (char_u *)&(curbuf->b_p_ft);
+  case PV_FO: return (char_u *)&(curbuf->b_p_fo);
+  case PV_FLP: return (char_u *)&(curbuf->b_p_flp);
+  case PV_IMI: return (char_u *)&(curbuf->b_p_iminsert);
+  case PV_IMS: return (char_u *)&(curbuf->b_p_imsearch);
+  case PV_INF: return (char_u *)&(curbuf->b_p_inf);
+  case PV_ISK: return (char_u *)&(curbuf->b_p_isk);
+  case PV_INEX: return (char_u *)&(curbuf->b_p_inex);
+  case PV_INDE: return (char_u *)&(curbuf->b_p_inde);
+  case PV_INDK: return (char_u *)&(curbuf->b_p_indk);
+  case PV_FEX: return (char_u *)&(curbuf->b_p_fex);
+  case PV_LISP: return (char_u *)&(curbuf->b_p_lisp);
+  case PV_ML: return (char_u *)&(curbuf->b_p_ml);
+  case PV_MPS: return (char_u *)&(curbuf->b_p_mps);
+  case PV_MA: return (char_u *)&(curbuf->b_p_ma);
+  case PV_MOD: return (char_u *)&(curbuf->b_changed);
+  case PV_NF: return (char_u *)&(curbuf->b_p_nf);
+  case PV_PI: return (char_u *)&(curbuf->b_p_pi);
+  case PV_QE: return (char_u *)&(curbuf->b_p_qe);
+  case PV_RO: return (char_u *)&(curbuf->b_p_ro);
+  case PV_SI: return (char_u *)&(curbuf->b_p_si);
+  case PV_STS: return (char_u *)&(curbuf->b_p_sts);
+  case PV_SUA: return (char_u *)&(curbuf->b_p_sua);
+  case PV_SWF: return (char_u *)&(curbuf->b_p_swf);
+  case PV_SMC: return (char_u *)&(curbuf->b_p_smc);
+  case PV_SYN: return (char_u *)&(curbuf->b_p_syn);
+  case PV_SPC: return (char_u *)&(curwin->w_s->b_p_spc);
+  case PV_SPF: return (char_u *)&(curwin->w_s->b_p_spf);
+  case PV_SPL: return (char_u *)&(curwin->w_s->b_p_spl);
+  case PV_SW: return (char_u *)&(curbuf->b_p_sw);
+  case PV_TS: return (char_u *)&(curbuf->b_p_ts);
+  case PV_TW: return (char_u *)&(curbuf->b_p_tw);
+  case PV_UDF: return (char_u *)&(curbuf->b_p_udf);
+  case PV_WM: return (char_u *)&(curbuf->b_p_wm);
+  case PV_KMAP: return (char_u *)&(curbuf->b_p_keymap);
   default: emsg((char_u *)(libintl_gettext((char *)("E356: get_varp ERROR"))));
   }
 
@@ -27905,7 +28321,7 @@ void clear_winopt(winopt_T *wop)
   clear_string_option(&wop->wo_cocu);
   clear_string_option(&wop->wo_briopt);
 }
-# 6548 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 5405 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 void buf_copy_options(buf_T *buf, int flags)
 {
   int should_copy = 1;
@@ -27924,7 +28340,7 @@ void buf_copy_options(buf_T *buf, int flags)
 
 
   if (p_cpo != ((void*)0)) {
-# 6578 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 5435 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
     if ((vim_strchr(p_cpo, 'S') == ((void*)0) || !(flags & 1))
         && (buf->b_p_initialized
             || (!(flags & 1)
@@ -28356,7 +28772,7 @@ void ExpandOldSetting(int *num_file, char_u ***file)
 
 
   char_u *buf = vim_strsave_escaped(var, escape_chars);
-# 7022 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 5879 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
   *file[0] = buf;
   *num_file = 1;
 }
@@ -28412,7 +28828,7 @@ static int wc_use_keyname(char_u *varp, long *wcp)
   }
   return 0;
 }
-# 7093 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+# 5950 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
 typedef struct {
   int from;
   int to;
@@ -28428,7 +28844,7 @@ static void langmap_set_entry(int from, int to)
 {
   langmap_entry_T *entries = (langmap_entry_T *)(langmap_mapga.ga_data);
   unsigned int a = 0;
-  (__builtin_expect(!(langmap_mapga.ga_len >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 7108, "langmap_mapga.ga_len >= 0") : (void)0);
+  (__builtin_expect(!(langmap_mapga.ga_len >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 5965, "langmap_mapga.ga_len >= 0") : (void)0);
   unsigned int b = (unsigned int)langmap_mapga.ga_len;
 
 
@@ -28542,7 +28958,7 @@ static void langmap_set(void)
       if (from >= 256)
         langmap_set_entry(from, to);
       else {
-        (__builtin_expect(!(to <= (127*2 +1)), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 7222, "to <= UCHAR_MAX") : (void)0);
+        (__builtin_expect(!(to <= (127*2 +1)), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 6079, "to <= UCHAR_MAX") : (void)0);
         langmap_mapchar[from & 255] = (char_u)to;
       }
 
@@ -28743,8 +29159,7 @@ static void fill_breakat_flags(void)
 
 
 
-static int
-check_opt_strings (
+static int check_opt_strings(
     char_u *val,
     char **values,
     int list
@@ -28752,13 +29167,12 @@ check_opt_strings (
 {
   return opt_strings_flags(val, values, ((void*)0), list);
 }
-# 7440 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
-static int
-opt_strings_flags (
+# 6296 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+static int opt_strings_flags(
     char_u *val,
     char **values,
     unsigned *flagp,
-    int list
+    _Bool list
 )
 {
   unsigned int new_flags = 0;
@@ -28772,7 +29186,7 @@ opt_strings_flags (
       if (strncmp((char *)(values[i]), (char *)(val), (size_t)(len)) == 0
           && ((list && val[len] == ',') || val[len] == '\000')) {
         val += len + (val[len] == ',');
-        (__builtin_expect(!(i < sizeof(1U) * 8), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 7459, "i < sizeof(1U) * 8") : (void)0);
+        (__builtin_expect(!(i < sizeof(1U) * 8), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 6314, "i < sizeof(1U) * 8") : (void)0);
         new_flags |= (1U << i);
         break;
       }
@@ -28835,10 +29249,9 @@ static int check_opt_wim(void)
 
 
 
-int
-can_bs (
-    int what
-)
+
+
+_Bool can_bs(int what)
 {
   switch (*p_bs) {
   case '2': return 1;
@@ -28865,8 +29278,8 @@ void save_file_ff(buf_T *buf)
     buf->b_start_fenc = vim_strsave(buf->b_p_fenc);
   }
 }
-# 7561 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
-int file_ff_differs(buf_T *buf, int ignore_empty)
+# 6415 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c"
+_Bool file_ff_differs(buf_T *buf, _Bool ignore_empty)
 {
 
   if (buf->b_flags & 0x04)
@@ -28902,7 +29315,7 @@ int check_ff_value(char_u *p)
 int get_sw_value(buf_T *buf)
 {
   long result = buf->b_p_sw ? buf->b_p_sw : buf->b_p_ts;
-  (__builtin_expect(!(result >= 0 && result <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 7597, "result >= 0 && result <= INT_MAX") : (void)0);
+  (__builtin_expect(!(result >= 0 && result <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 6451, "result >= 0 && result <= INT_MAX") : (void)0);
   return (int)result;
 }
 
@@ -28913,7 +29326,7 @@ int get_sw_value(buf_T *buf)
 int get_sts_value(void)
 {
   long result = curbuf->b_p_sts < 0 ? get_sw_value(curbuf) : curbuf->b_p_sts;
-  (__builtin_expect(!(result >= 0 && result <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 7608, "result >= 0 && result <= INT_MAX") : (void)0);
+  (__builtin_expect(!(result >= 0 && result <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/option.c", 6462, "result >= 0 && result <= INT_MAX") : (void)0);
   return (int)result;
 }
 

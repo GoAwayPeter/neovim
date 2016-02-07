@@ -45,29 +45,29 @@ CMAKE_BINARY_DIR = /Users/George/Documents/Programs/C/neovim
 # Include the progress variables for this target.
 include test/includes/CMakeFiles/unittest-headers.dir/progress.make
 
-test/includes/CMakeFiles/unittest-headers: test/includes/post/sys/errno.h
-test/includes/CMakeFiles/unittest-headers: test/includes/post/sys/fcntl.h
+test/includes/CMakeFiles/unittest-headers: test/includes/post/fcntl.h
 test/includes/CMakeFiles/unittest-headers: test/includes/post/sys/stat.h
+test/includes/CMakeFiles/unittest-headers: test/includes/post/uv-errno.h
 
-test/includes/post/sys/errno.h:
+test/includes/post/fcntl.h:
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating post/sys/errno.h"
-	cd /Users/George/Documents/Programs/C/neovim/test/includes && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -std=c99 -E -P /Users/George/Documents/Programs/C/neovim/test/includes/pre/sys/errno.h -o /Users/George/Documents/Programs/C/neovim/test/includes/post/sys/errno.h
-
-test/includes/post/sys/fcntl.h:
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating post/sys/fcntl.h"
-	cd /Users/George/Documents/Programs/C/neovim/test/includes && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -std=c99 -E -P /Users/George/Documents/Programs/C/neovim/test/includes/pre/sys/fcntl.h -o /Users/George/Documents/Programs/C/neovim/test/includes/post/sys/fcntl.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating post/fcntl.h"
+	cd /Users/George/Documents/Programs/C/neovim/test/includes && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -std=c99 -E -P /Users/George/Documents/Programs/C/neovim/test/includes/pre/fcntl.h -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -o /Users/George/Documents/Programs/C/neovim/test/includes/post/fcntl.h
 
 test/includes/post/sys/stat.h:
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating post/sys/stat.h"
-	cd /Users/George/Documents/Programs/C/neovim/test/includes && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -std=c99 -E -P /Users/George/Documents/Programs/C/neovim/test/includes/pre/sys/stat.h -o /Users/George/Documents/Programs/C/neovim/test/includes/post/sys/stat.h
+	cd /Users/George/Documents/Programs/C/neovim/test/includes && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -std=c99 -E -P /Users/George/Documents/Programs/C/neovim/test/includes/pre/sys/stat.h -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -o /Users/George/Documents/Programs/C/neovim/test/includes/post/sys/stat.h
+
+test/includes/post/uv-errno.h:
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating post/uv-errno.h"
+	cd /Users/George/Documents/Programs/C/neovim/test/includes && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -std=c99 -E -P /Users/George/Documents/Programs/C/neovim/test/includes/pre/uv-errno.h -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -o /Users/George/Documents/Programs/C/neovim/test/includes/post/uv-errno.h
 
 unittest-headers: test/includes/CMakeFiles/unittest-headers
-unittest-headers: test/includes/post/sys/errno.h
-unittest-headers: test/includes/post/sys/fcntl.h
+unittest-headers: test/includes/post/fcntl.h
 unittest-headers: test/includes/post/sys/stat.h
+unittest-headers: test/includes/post/uv-errno.h
 unittest-headers: test/includes/CMakeFiles/unittest-headers.dir/build.make
 .PHONY : unittest-headers
 

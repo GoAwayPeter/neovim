@@ -5,7 +5,7 @@
 #undef DEFINE_FUNC_ATTRIBUTES
 ArrayOf(Window) tabpage_get_windows(Tabpage tabpage, Error *err);
 Object tabpage_get_var(Tabpage tabpage, String name, Error *err);
-Object tabpage_set_var(Tabpage tabpage, String name, Object value, Error *err) FUNC_ATTR_DEFERRED;
+Object tabpage_set_var(Tabpage tabpage, String name, Object value, Error *err);
 Window tabpage_get_window(Tabpage tabpage, Error *err);
 Boolean tabpage_is_valid(Tabpage tabpage);
 #include "nvim/func_attr.h"

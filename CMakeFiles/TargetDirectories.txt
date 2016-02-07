@@ -1,3 +1,4 @@
+/Users/George/Documents/Programs/C/neovim/runtime/CMakeFiles/runtime.dir
 /Users/George/Documents/Programs/C/neovim/src/nvim/po/CMakeFiles/check-po-pt_BR.dir
 /Users/George/Documents/Programs/C/neovim/src/nvim/po/CMakeFiles/check-po-es.dir
 /Users/George/Documents/Programs/C/neovim/src/nvim/po/CMakeFiles/check-po-zh_CN.UTF-8.dir

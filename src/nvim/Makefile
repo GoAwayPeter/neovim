@@ -101,6 +101,26 @@ list_install_components:
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /Users/George/Documents/Programs/C/neovim && /usr/local/Cellar/cmake/3.2.3/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /Users/George/Documents/Programs/C/neovim && /usr/local/Cellar/cmake/3.2.3/bin/cpack --config ./CPackSourceConfig.cmake /Users/George/Documents/Programs/C/neovim/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -213,6 +233,30 @@ __/__/config/auto/pathdef.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/__/__/config/auto/pathdef.c.s
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/__/__/config/auto/pathdef.c.s
 .PHONY : __/__/config/auto/pathdef.c.s
+
+__/__/test/unit/fixtures/queue.o: __/__/test/unit/fixtures/queue.c.o
+.PHONY : __/__/test/unit/fixtures/queue.o
+
+# target to build an object file
+__/__/test/unit/fixtures/queue.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/__/__/test/unit/fixtures/queue.c.o
+.PHONY : __/__/test/unit/fixtures/queue.c.o
+
+__/__/test/unit/fixtures/queue.i: __/__/test/unit/fixtures/queue.c.i
+.PHONY : __/__/test/unit/fixtures/queue.i
+
+# target to preprocess a source file
+__/__/test/unit/fixtures/queue.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/__/__/test/unit/fixtures/queue.c.i
+.PHONY : __/__/test/unit/fixtures/queue.c.i
+
+__/__/test/unit/fixtures/queue.s: __/__/test/unit/fixtures/queue.c.s
+.PHONY : __/__/test/unit/fixtures/queue.s
+
+# target to generate assembly for a file
+__/__/test/unit/fixtures/queue.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/__/__/test/unit/fixtures/queue.c.s
+.PHONY : __/__/test/unit/fixtures/queue.c.s
 
 __/__/test/unit/fixtures/rbuffer.o: __/__/test/unit/fixtures/rbuffer.c.o
 .PHONY : __/__/test/unit/fixtures/rbuffer.o
@@ -717,6 +761,336 @@ eval.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/eval.c.s
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/eval.c.s
 .PHONY : eval.c.s
+
+event/libuv_process.o: event/libuv_process.c.o
+.PHONY : event/libuv_process.o
+
+# target to build an object file
+event/libuv_process.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/libuv_process.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/libuv_process.c.o
+.PHONY : event/libuv_process.c.o
+
+event/libuv_process.i: event/libuv_process.c.i
+.PHONY : event/libuv_process.i
+
+# target to preprocess a source file
+event/libuv_process.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/libuv_process.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/libuv_process.c.i
+.PHONY : event/libuv_process.c.i
+
+event/libuv_process.s: event/libuv_process.c.s
+.PHONY : event/libuv_process.s
+
+# target to generate assembly for a file
+event/libuv_process.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/libuv_process.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/libuv_process.c.s
+.PHONY : event/libuv_process.c.s
+
+event/loop.o: event/loop.c.o
+.PHONY : event/loop.o
+
+# target to build an object file
+event/loop.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/loop.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/loop.c.o
+.PHONY : event/loop.c.o
+
+event/loop.i: event/loop.c.i
+.PHONY : event/loop.i
+
+# target to preprocess a source file
+event/loop.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/loop.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/loop.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/loop.c.i
+.PHONY : event/loop.c.i
+
+event/loop.s: event/loop.c.s
+.PHONY : event/loop.s
+
+# target to generate assembly for a file
+event/loop.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/loop.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/loop.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/loop.c.s
+.PHONY : event/loop.c.s
+
+event/process.o: event/process.c.o
+.PHONY : event/process.o
+
+# target to build an object file
+event/process.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/process.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/process.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/process.c.o
+.PHONY : event/process.c.o
+
+event/process.i: event/process.c.i
+.PHONY : event/process.i
+
+# target to preprocess a source file
+event/process.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/process.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/process.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/process.c.i
+.PHONY : event/process.c.i
+
+event/process.s: event/process.c.s
+.PHONY : event/process.s
+
+# target to generate assembly for a file
+event/process.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/process.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/process.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/process.c.s
+.PHONY : event/process.c.s
+
+event/pty_process.o: event/pty_process.c.o
+.PHONY : event/pty_process.o
+
+# target to build an object file
+event/pty_process.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/pty_process.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/pty_process.c.o
+.PHONY : event/pty_process.c.o
+
+event/pty_process.i: event/pty_process.c.i
+.PHONY : event/pty_process.i
+
+# target to preprocess a source file
+event/pty_process.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/pty_process.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/pty_process.c.i
+.PHONY : event/pty_process.c.i
+
+event/pty_process.s: event/pty_process.c.s
+.PHONY : event/pty_process.s
+
+# target to generate assembly for a file
+event/pty_process.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/pty_process.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/pty_process.c.s
+.PHONY : event/pty_process.c.s
+
+event/queue.o: event/queue.c.o
+.PHONY : event/queue.o
+
+# target to build an object file
+event/queue.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/queue.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/queue.c.o
+.PHONY : event/queue.c.o
+
+event/queue.i: event/queue.c.i
+.PHONY : event/queue.i
+
+# target to preprocess a source file
+event/queue.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/queue.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/queue.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/queue.c.i
+.PHONY : event/queue.c.i
+
+event/queue.s: event/queue.c.s
+.PHONY : event/queue.s
+
+# target to generate assembly for a file
+event/queue.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/queue.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/queue.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/queue.c.s
+.PHONY : event/queue.c.s
+
+event/rstream.o: event/rstream.c.o
+.PHONY : event/rstream.o
+
+# target to build an object file
+event/rstream.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/rstream.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/rstream.c.o
+.PHONY : event/rstream.c.o
+
+event/rstream.i: event/rstream.c.i
+.PHONY : event/rstream.i
+
+# target to preprocess a source file
+event/rstream.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/rstream.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/rstream.c.i
+.PHONY : event/rstream.c.i
+
+event/rstream.s: event/rstream.c.s
+.PHONY : event/rstream.s
+
+# target to generate assembly for a file
+event/rstream.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/rstream.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/rstream.c.s
+.PHONY : event/rstream.c.s
+
+event/signal.o: event/signal.c.o
+.PHONY : event/signal.o
+
+# target to build an object file
+event/signal.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/signal.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/signal.c.o
+.PHONY : event/signal.c.o
+
+event/signal.i: event/signal.c.i
+.PHONY : event/signal.i
+
+# target to preprocess a source file
+event/signal.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/signal.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/signal.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/signal.c.i
+.PHONY : event/signal.c.i
+
+event/signal.s: event/signal.c.s
+.PHONY : event/signal.s
+
+# target to generate assembly for a file
+event/signal.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/signal.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/signal.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/signal.c.s
+.PHONY : event/signal.c.s
+
+event/socket.o: event/socket.c.o
+.PHONY : event/socket.o
+
+# target to build an object file
+event/socket.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/socket.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/socket.c.o
+.PHONY : event/socket.c.o
+
+event/socket.i: event/socket.c.i
+.PHONY : event/socket.i
+
+# target to preprocess a source file
+event/socket.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/socket.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/socket.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/socket.c.i
+.PHONY : event/socket.c.i
+
+event/socket.s: event/socket.c.s
+.PHONY : event/socket.s
+
+# target to generate assembly for a file
+event/socket.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/socket.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/socket.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/socket.c.s
+.PHONY : event/socket.c.s
+
+event/stream.o: event/stream.c.o
+.PHONY : event/stream.o
+
+# target to build an object file
+event/stream.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/stream.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/stream.c.o
+.PHONY : event/stream.c.o
+
+event/stream.i: event/stream.c.i
+.PHONY : event/stream.i
+
+# target to preprocess a source file
+event/stream.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/stream.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/stream.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/stream.c.i
+.PHONY : event/stream.c.i
+
+event/stream.s: event/stream.c.s
+.PHONY : event/stream.s
+
+# target to generate assembly for a file
+event/stream.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/stream.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/stream.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/stream.c.s
+.PHONY : event/stream.c.s
+
+event/time.o: event/time.c.o
+.PHONY : event/time.o
+
+# target to build an object file
+event/time.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/time.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/time.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/time.c.o
+.PHONY : event/time.c.o
+
+event/time.i: event/time.c.i
+.PHONY : event/time.i
+
+# target to preprocess a source file
+event/time.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/time.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/time.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/time.c.i
+.PHONY : event/time.c.i
+
+event/time.s: event/time.c.s
+.PHONY : event/time.s
+
+# target to generate assembly for a file
+event/time.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/time.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/time.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/time.c.s
+.PHONY : event/time.c.s
+
+event/wstream.o: event/wstream.c.o
+.PHONY : event/wstream.o
+
+# target to build an object file
+event/wstream.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/wstream.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/wstream.c.o
+.PHONY : event/wstream.c.o
+
+event/wstream.i: event/wstream.c.i
+.PHONY : event/wstream.i
+
+# target to preprocess a source file
+event/wstream.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/wstream.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/wstream.c.i
+.PHONY : event/wstream.c.i
+
+event/wstream.s: event/wstream.c.s
+.PHONY : event/wstream.s
+
+# target to generate assembly for a file
+event/wstream.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/event/wstream.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/event/wstream.c.s
+.PHONY : event/wstream.c.s
 
 ex_cmds.o: ex_cmds.c.o
 .PHONY : ex_cmds.o
@@ -1918,36 +2292,6 @@ os/env.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/env.c.s
 .PHONY : os/env.c.s
 
-os/event.o: os/event.c.o
-.PHONY : os/event.o
-
-# target to build an object file
-os/event.c.o:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/event.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/event.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/event.c.o
-.PHONY : os/event.c.o
-
-os/event.i: os/event.c.i
-.PHONY : os/event.i
-
-# target to preprocess a source file
-os/event.c.i:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/event.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/event.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/event.c.i
-.PHONY : os/event.c.i
-
-os/event.s: os/event.c.s
-.PHONY : os/event.s
-
-# target to generate assembly for a file
-os/event.c.s:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/event.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/event.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/event.c.s
-.PHONY : os/event.c.s
-
 os/fs.o: os/fs.c.o
 .PHONY : os/fs.o
 
@@ -2008,36 +2352,6 @@ os/input.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/input.c.s
 .PHONY : os/input.c.s
 
-os/job.o: os/job.c.o
-.PHONY : os/job.o
-
-# target to build an object file
-os/job.c.o:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/job.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/job.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/job.c.o
-.PHONY : os/job.c.o
-
-os/job.i: os/job.c.i
-.PHONY : os/job.i
-
-# target to preprocess a source file
-os/job.c.i:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/job.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/job.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/job.c.i
-.PHONY : os/job.c.i
-
-os/job.s: os/job.c.s
-.PHONY : os/job.s
-
-# target to generate assembly for a file
-os/job.c.s:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/job.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/job.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/job.c.s
-.PHONY : os/job.c.s
-
 os/mem.o: os/mem.c.o
 .PHONY : os/mem.o
 
@@ -2067,96 +2381,6 @@ os/mem.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/mem.c.s
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/mem.c.s
 .PHONY : os/mem.c.s
-
-os/pipe_process.o: os/pipe_process.c.o
-.PHONY : os/pipe_process.o
-
-# target to build an object file
-os/pipe_process.c.o:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/pipe_process.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/pipe_process.c.o
-.PHONY : os/pipe_process.c.o
-
-os/pipe_process.i: os/pipe_process.c.i
-.PHONY : os/pipe_process.i
-
-# target to preprocess a source file
-os/pipe_process.c.i:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/pipe_process.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/pipe_process.c.i
-.PHONY : os/pipe_process.c.i
-
-os/pipe_process.s: os/pipe_process.c.s
-.PHONY : os/pipe_process.s
-
-# target to generate assembly for a file
-os/pipe_process.c.s:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/pipe_process.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/pipe_process.c.s
-.PHONY : os/pipe_process.c.s
-
-os/pty_process.o: os/pty_process.c.o
-.PHONY : os/pty_process.o
-
-# target to build an object file
-os/pty_process.c.o:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/pty_process.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/pty_process.c.o
-.PHONY : os/pty_process.c.o
-
-os/pty_process.i: os/pty_process.c.i
-.PHONY : os/pty_process.i
-
-# target to preprocess a source file
-os/pty_process.c.i:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/pty_process.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/pty_process.c.i
-.PHONY : os/pty_process.c.i
-
-os/pty_process.s: os/pty_process.c.s
-.PHONY : os/pty_process.s
-
-# target to generate assembly for a file
-os/pty_process.c.s:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/pty_process.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/pty_process.c.s
-.PHONY : os/pty_process.c.s
-
-os/rstream.o: os/rstream.c.o
-.PHONY : os/rstream.o
-
-# target to build an object file
-os/rstream.c.o:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/rstream.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/rstream.c.o
-.PHONY : os/rstream.c.o
-
-os/rstream.i: os/rstream.c.i
-.PHONY : os/rstream.i
-
-# target to preprocess a source file
-os/rstream.c.i:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/rstream.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/rstream.c.i
-.PHONY : os/rstream.c.i
-
-os/rstream.s: os/rstream.c.s
-.PHONY : os/rstream.s
-
-# target to generate assembly for a file
-os/rstream.c.s:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/rstream.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/rstream.c.s
-.PHONY : os/rstream.c.s
 
 os/shell.o: os/shell.c.o
 .PHONY : os/shell.o
@@ -2218,35 +2442,35 @@ os/signal.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/signal.c.s
 .PHONY : os/signal.c.s
 
-os/stream.o: os/stream.c.o
-.PHONY : os/stream.o
+os/stdpaths.o: os/stdpaths.c.o
+.PHONY : os/stdpaths.o
 
 # target to build an object file
-os/stream.c.o:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/stream.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/stream.c.o
-.PHONY : os/stream.c.o
+os/stdpaths.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/stdpaths.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/stdpaths.c.o
+.PHONY : os/stdpaths.c.o
 
-os/stream.i: os/stream.c.i
-.PHONY : os/stream.i
+os/stdpaths.i: os/stdpaths.c.i
+.PHONY : os/stdpaths.i
 
 # target to preprocess a source file
-os/stream.c.i:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/stream.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/stream.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/stream.c.i
-.PHONY : os/stream.c.i
+os/stdpaths.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/stdpaths.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/stdpaths.c.i
+.PHONY : os/stdpaths.c.i
 
-os/stream.s: os/stream.c.s
-.PHONY : os/stream.s
+os/stdpaths.s: os/stdpaths.c.s
+.PHONY : os/stdpaths.s
 
 # target to generate assembly for a file
-os/stream.c.s:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/stream.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/stream.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/stream.c.s
-.PHONY : os/stream.c.s
+os/stdpaths.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/stdpaths.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/stdpaths.c.s
+.PHONY : os/stdpaths.c.s
 
 os/time.o: os/time.c.o
 .PHONY : os/time.o
@@ -2307,66 +2531,6 @@ os/users.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/users.c.s
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/users.c.s
 .PHONY : os/users.c.s
-
-os/uv_helpers.o: os/uv_helpers.c.o
-.PHONY : os/uv_helpers.o
-
-# target to build an object file
-os/uv_helpers.c.o:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/uv_helpers.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/uv_helpers.c.o
-.PHONY : os/uv_helpers.c.o
-
-os/uv_helpers.i: os/uv_helpers.c.i
-.PHONY : os/uv_helpers.i
-
-# target to preprocess a source file
-os/uv_helpers.c.i:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/uv_helpers.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/uv_helpers.c.i
-.PHONY : os/uv_helpers.c.i
-
-os/uv_helpers.s: os/uv_helpers.c.s
-.PHONY : os/uv_helpers.s
-
-# target to generate assembly for a file
-os/uv_helpers.c.s:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/uv_helpers.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/uv_helpers.c.s
-.PHONY : os/uv_helpers.c.s
-
-os/wstream.o: os/wstream.c.o
-.PHONY : os/wstream.o
-
-# target to build an object file
-os/wstream.c.o:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/wstream.c.o
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/wstream.c.o
-.PHONY : os/wstream.c.o
-
-os/wstream.i: os/wstream.c.i
-.PHONY : os/wstream.i
-
-# target to preprocess a source file
-os/wstream.c.i:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/wstream.c.i
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/wstream.c.i
-.PHONY : os/wstream.c.i
-
-os/wstream.s: os/wstream.c.s
-.PHONY : os/wstream.s
-
-# target to generate assembly for a file
-os/wstream.c.s:
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/os/wstream.c.s
-	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/os/wstream.c.s
-.PHONY : os/wstream.c.s
 
 os_unix.o: os_unix.c.o
 .PHONY : os_unix.o
@@ -2668,6 +2832,36 @@ sha256.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/sha256.c.s
 .PHONY : sha256.c.s
 
+shada.o: shada.c.o
+.PHONY : shada.o
+
+# target to build an object file
+shada.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/shada.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/shada.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/shada.c.o
+.PHONY : shada.c.o
+
+shada.i: shada.c.i
+.PHONY : shada.i
+
+# target to preprocess a source file
+shada.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/shada.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/shada.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/shada.c.i
+.PHONY : shada.c.i
+
+shada.s: shada.c.s
+.PHONY : shada.s
+
+# target to generate assembly for a file
+shada.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/shada.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/shada.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/shada.c.s
+.PHONY : shada.c.s
+
 spell.o: spell.c.o
 .PHONY : spell.o
 
@@ -2697,6 +2891,36 @@ spell.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/spell.c.s
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/spell.c.s
 .PHONY : spell.c.s
+
+state.o: state.c.o
+.PHONY : state.o
+
+# target to build an object file
+state.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/state.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/state.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/state.c.o
+.PHONY : state.c.o
+
+state.i: state.c.i
+.PHONY : state.i
+
+# target to preprocess a source file
+state.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/state.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/state.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/state.c.i
+.PHONY : state.c.i
+
+state.s: state.c.s
+.PHONY : state.s
+
+# target to generate assembly for a file
+state.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/state.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/state.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/state.c.s
+.PHONY : state.c.s
 
 strings.o: strings.c.o
 .PHONY : strings.o
@@ -2848,6 +3072,36 @@ terminal.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/terminal.c.s
 .PHONY : terminal.c.s
 
+tui/input.o: tui/input.c.o
+.PHONY : tui/input.o
+
+# target to build an object file
+tui/input.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/tui/input.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/tui/input.c.o
+.PHONY : tui/input.c.o
+
+tui/input.i: tui/input.c.i
+.PHONY : tui/input.i
+
+# target to preprocess a source file
+tui/input.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/tui/input.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/tui/input.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/tui/input.c.i
+.PHONY : tui/input.c.i
+
+tui/input.s: tui/input.c.s
+.PHONY : tui/input.s
+
+# target to generate assembly for a file
+tui/input.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/tui/input.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/tui/input.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/tui/input.c.s
+.PHONY : tui/input.c.s
+
 tui/tui.o: tui/tui.c.o
 .PHONY : tui/tui.o
 
@@ -2878,6 +3132,36 @@ tui/tui.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/tui/tui.c.s
 .PHONY : tui/tui.c.s
 
+ugrid.o: ugrid.c.o
+.PHONY : ugrid.o
+
+# target to build an object file
+ugrid.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/ugrid.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/ugrid.c.o
+.PHONY : ugrid.c.o
+
+ugrid.i: ugrid.c.i
+.PHONY : ugrid.i
+
+# target to preprocess a source file
+ugrid.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/ugrid.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/ugrid.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/ugrid.c.i
+.PHONY : ugrid.c.i
+
+ugrid.s: ugrid.c.s
+.PHONY : ugrid.s
+
+# target to generate assembly for a file
+ugrid.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/ugrid.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/ugrid.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/ugrid.c.s
+.PHONY : ugrid.c.s
+
 ui.o: ui.c.o
 .PHONY : ui.o
 
@@ -2907,6 +3191,36 @@ ui.c.s:
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/ui.c.s
 	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/ui.c.s
 .PHONY : ui.c.s
+
+ui_bridge.o: ui_bridge.c.o
+.PHONY : ui_bridge.o
+
+# target to build an object file
+ui_bridge.c.o:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/ui_bridge.c.o
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/ui_bridge.c.o
+.PHONY : ui_bridge.c.o
+
+ui_bridge.i: ui_bridge.c.i
+.PHONY : ui_bridge.i
+
+# target to preprocess a source file
+ui_bridge.c.i:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/ui_bridge.c.i
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/ui_bridge.c.i
+.PHONY : ui_bridge.c.i
+
+ui_bridge.s: ui_bridge.c.s
+.PHONY : ui_bridge.s
+
+# target to generate assembly for a file
+ui_bridge.c.s:
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim.dir/build.make src/nvim/CMakeFiles/nvim.dir/ui_bridge.c.s
+	cd /Users/George/Documents/Programs/C/neovim && $(MAKE) -f src/nvim/CMakeFiles/nvim-test.dir/build.make src/nvim/CMakeFiles/nvim-test.dir/ui_bridge.c.s
+.PHONY : ui_bridge.c.s
 
 undo.o: undo.c.o
 .PHONY : undo.o
@@ -3009,13 +3323,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... package"
 	@echo "... nvim-test"
 	@echo "... nvim"
 	@echo "... libnvim"
+	@echo "... package_source"
 	@echo "... install/local"
 	@echo "... __/__/config/auto/pathdef.o"
 	@echo "... __/__/config/auto/pathdef.i"
 	@echo "... __/__/config/auto/pathdef.s"
+	@echo "... __/__/test/unit/fixtures/queue.o"
+	@echo "... __/__/test/unit/fixtures/queue.i"
+	@echo "... __/__/test/unit/fixtures/queue.s"
 	@echo "... __/__/test/unit/fixtures/rbuffer.o"
 	@echo "... __/__/test/unit/fixtures/rbuffer.i"
 	@echo "... __/__/test/unit/fixtures/rbuffer.s"
@@ -3067,6 +3386,39 @@ help:
 	@echo "... eval.o"
 	@echo "... eval.i"
 	@echo "... eval.s"
+	@echo "... event/libuv_process.o"
+	@echo "... event/libuv_process.i"
+	@echo "... event/libuv_process.s"
+	@echo "... event/loop.o"
+	@echo "... event/loop.i"
+	@echo "... event/loop.s"
+	@echo "... event/process.o"
+	@echo "... event/process.i"
+	@echo "... event/process.s"
+	@echo "... event/pty_process.o"
+	@echo "... event/pty_process.i"
+	@echo "... event/pty_process.s"
+	@echo "... event/queue.o"
+	@echo "... event/queue.i"
+	@echo "... event/queue.s"
+	@echo "... event/rstream.o"
+	@echo "... event/rstream.i"
+	@echo "... event/rstream.s"
+	@echo "... event/signal.o"
+	@echo "... event/signal.i"
+	@echo "... event/signal.s"
+	@echo "... event/socket.o"
+	@echo "... event/socket.i"
+	@echo "... event/socket.s"
+	@echo "... event/stream.o"
+	@echo "... event/stream.i"
+	@echo "... event/stream.s"
+	@echo "... event/time.o"
+	@echo "... event/time.i"
+	@echo "... event/time.s"
+	@echo "... event/wstream.o"
+	@echo "... event/wstream.i"
+	@echo "... event/wstream.s"
 	@echo "... ex_cmds.o"
 	@echo "... ex_cmds.i"
 	@echo "... ex_cmds.s"
@@ -3187,51 +3539,30 @@ help:
 	@echo "... os/env.o"
 	@echo "... os/env.i"
 	@echo "... os/env.s"
-	@echo "... os/event.o"
-	@echo "... os/event.i"
-	@echo "... os/event.s"
 	@echo "... os/fs.o"
 	@echo "... os/fs.i"
 	@echo "... os/fs.s"
 	@echo "... os/input.o"
 	@echo "... os/input.i"
 	@echo "... os/input.s"
-	@echo "... os/job.o"
-	@echo "... os/job.i"
-	@echo "... os/job.s"
 	@echo "... os/mem.o"
 	@echo "... os/mem.i"
 	@echo "... os/mem.s"
-	@echo "... os/pipe_process.o"
-	@echo "... os/pipe_process.i"
-	@echo "... os/pipe_process.s"
-	@echo "... os/pty_process.o"
-	@echo "... os/pty_process.i"
-	@echo "... os/pty_process.s"
-	@echo "... os/rstream.o"
-	@echo "... os/rstream.i"
-	@echo "... os/rstream.s"
 	@echo "... os/shell.o"
 	@echo "... os/shell.i"
 	@echo "... os/shell.s"
 	@echo "... os/signal.o"
 	@echo "... os/signal.i"
 	@echo "... os/signal.s"
-	@echo "... os/stream.o"
-	@echo "... os/stream.i"
-	@echo "... os/stream.s"
+	@echo "... os/stdpaths.o"
+	@echo "... os/stdpaths.i"
+	@echo "... os/stdpaths.s"
 	@echo "... os/time.o"
 	@echo "... os/time.i"
 	@echo "... os/time.s"
 	@echo "... os/users.o"
 	@echo "... os/users.i"
 	@echo "... os/users.s"
-	@echo "... os/uv_helpers.o"
-	@echo "... os/uv_helpers.i"
-	@echo "... os/uv_helpers.s"
-	@echo "... os/wstream.o"
-	@echo "... os/wstream.i"
-	@echo "... os/wstream.s"
 	@echo "... os_unix.o"
 	@echo "... os_unix.i"
 	@echo "... os_unix.s"
@@ -3262,9 +3593,15 @@ help:
 	@echo "... sha256.o"
 	@echo "... sha256.i"
 	@echo "... sha256.s"
+	@echo "... shada.o"
+	@echo "... shada.i"
+	@echo "... shada.s"
 	@echo "... spell.o"
 	@echo "... spell.i"
 	@echo "... spell.s"
+	@echo "... state.o"
+	@echo "... state.i"
+	@echo "... state.s"
 	@echo "... strings.o"
 	@echo "... strings.i"
 	@echo "... strings.s"
@@ -3280,12 +3617,21 @@ help:
 	@echo "... terminal.o"
 	@echo "... terminal.i"
 	@echo "... terminal.s"
+	@echo "... tui/input.o"
+	@echo "... tui/input.i"
+	@echo "... tui/input.s"
 	@echo "... tui/tui.o"
 	@echo "... tui/tui.i"
 	@echo "... tui/tui.s"
+	@echo "... ugrid.o"
+	@echo "... ugrid.i"
+	@echo "... ugrid.s"
 	@echo "... ui.o"
 	@echo "... ui.i"
 	@echo "... ui.s"
+	@echo "... ui_bridge.o"
+	@echo "... ui_bridge.i"
+	@echo "... ui_bridge.s"
 	@echo "... undo.o"
 	@echo "... undo.i"
 	@echo "... undo.s"

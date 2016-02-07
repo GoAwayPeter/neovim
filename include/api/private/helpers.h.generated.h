@@ -21,4 +21,5 @@ void api_free_object(Object value);
 void api_free_array(Array value);
 void api_free_dictionary(Dictionary value);
 Dictionary api_metadata(void);
+Object copy_object(Object obj);
 #include "nvim/func_attr.h"

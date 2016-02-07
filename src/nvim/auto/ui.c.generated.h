@@ -11,6 +11,5 @@ static void ui_carriage_return(void);
 static void ui_cursor_left(void);
 static void ui_cursor_right(void);
 static void flush_cursor_update(void);
-static void ui_change_mode(void);
-static void refresh(Event event);
+static void ui_mode_change(void);
 #include "nvim/func_attr.h"

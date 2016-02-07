@@ -48,7 +48,7 @@ include src/nvim/po/CMakeFiles/check-po-fi.dir/progress.make
 src/nvim/po/CMakeFiles/check-po-fi: src/nvim/po/fi.po
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Checking fi.po"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim/po && ../../../bin/nvim -u NONE -n -e -X -S /Users/George/Documents/Programs/C/neovim/src/nvim/po/check.vim -c "if error == 0 | q | endif" -c cq /Users/George/Documents/Programs/C/neovim/src/nvim/po/fi.po || /usr/local/Cellar/cmake/3.2.3/bin/cmake -E echo "fi.po failed the check."
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim/po && ../../../bin/nvim -u NONE -n -e -S /Users/George/Documents/Programs/C/neovim/src/nvim/po/check.vim -c "if error == 0 | q | endif" -c cq /Users/George/Documents/Programs/C/neovim/src/nvim/po/fi.po || /usr/local/Cellar/cmake/3.2.3/bin/cmake -E echo "fi.po failed the check."
 
 check-po-fi: src/nvim/po/CMakeFiles/check-po-fi
 check-po-fi: src/nvim/po/CMakeFiles/check-po-fi.dir/build.make

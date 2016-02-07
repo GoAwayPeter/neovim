@@ -10,7 +10,10 @@ void input_stop(void);
 int os_inchar(uint8_t *buf, int maxlen, int ms, int tb_change_cnt);
 _Bool os_char_avail(void);
 void os_breakcheck(void);
+void input_enable_events(void);
+void input_disable_events(void);
 _Bool os_isatty(int fd);
 size_t input_enqueue(String keys);
 void input_done(void);
+_Bool input_available(void);
 #include "nvim/func_attr.h"

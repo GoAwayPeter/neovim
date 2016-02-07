@@ -3,6 +3,7 @@
 #endif
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
+static inline void free_spat(struct spat *const spat);
 static void set_vv_searchforward(void);
 static int first_submatch(regmmatch_T *rp);
 static int check_prevcol(char_u *linep, int col, int ch, int *prevcol);
@@ -18,5 +19,4 @@ static int find_next_quote(char_u *line, int col, int quotechar, char_u *escape 
 static int find_prev_quote(char_u *line, int col_start, int quotechar, char_u *escape );
 static int is_one_char(char_u *pattern, _Bool move);
 static void show_pat_in_path(char_u *line, int type, int did_show, int action, FILE *fp, linenr_T *lnum, long count);
-static void wvsp_one(FILE *fp, int idx, char *s, int sc );
 #include "nvim/func_attr.h"

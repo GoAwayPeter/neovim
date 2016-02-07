@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/unittest-headers"
-  "post/sys/errno.h"
-  "post/sys/fcntl.h"
+  "post/fcntl.h"
   "post/sys/stat.h"
+  "post/uv-errno.h"
 )
 
 # Per-language clean rules from dependency scanning.

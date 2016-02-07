@@ -33,6 +33,7 @@ int typebuf_changed(int tb_change_cnt );
 int typebuf_typed(void);
 int typebuf_maplen(void);
 void del_typebuf(int len, int offset);
+void may_sync_undo(void);
 void alloc_typebuf(void);
 void free_typebuf(void);
 void save_typebuf(void);

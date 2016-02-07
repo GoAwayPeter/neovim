@@ -43,7 +43,7 @@ int get_number(int colon, int *mouse_used );
 int prompt_for_number(int *mouse_used);
 void msgmore(long n);
 void beep_flush(void);
-void vim_beep(void);
+void vim_beep(unsigned val);
 char_u *get_users(expand_T *xp, int idx);
 int match_user(char_u *name);
 void preserve_exit(void);

@@ -8,7 +8,7 @@ void terminal_teardown(void);
 Terminal *terminal_open(TerminalOptions opts);
 void terminal_close(Terminal *term, char *msg);
 void terminal_resize(Terminal *term, uint16_t width, uint16_t height);
-void terminal_enter(_Bool process_deferred);
+void terminal_enter(void);
 void terminal_destroy(Terminal *term);
 void terminal_send(Terminal *term, char *data, size_t size);
 void terminal_send_key(Terminal *term, int c);

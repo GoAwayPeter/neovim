@@ -1,17 +1,8 @@
 /*
- * VIM - Vi IMproved	by Bram Moolenaar
- *
- * Do ":help uganda"  in Vim to read copying and usage conditions.
- * Do ":help credits" in Vim to see a list of people who contributed.
- * See README.md for an overview of the Vim source code.
- */
-
-/*
  * misc1.c: functions that didn't seem to fit elsewhere
  */
 
 #include <assert.h>
-#include <errno.h>
 #include <inttypes.h>
 #include <stdbool.h>
 #include <string.h>
@@ -2361,7 +2352,7 @@ int get_keystroke(void)
   int save_mapped_ctrl_c = mapped_ctrl_c;
   int waited = 0;
 
-  mapped_ctrl_c = FALSE;        /* mappings are not used here */
+  mapped_ctrl_c = 0;        // mappings are not used here
   for (;; ) {
     // flush output before waiting
     ui_flush();
@@ -2737,13 +2728,6 @@ void fast_breakcheck(void)
     os_breakcheck();
   }
 }
-
-#ifndef SEEK_SET
-# define SEEK_SET 0
-#endif
-#ifndef SEEK_END
-# define SEEK_END 2
-#endif
 
 /*
  * Get the stdout of an external command.

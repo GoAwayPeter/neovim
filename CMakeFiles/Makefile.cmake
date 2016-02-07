@@ -23,7 +23,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "cmake/FindLuaJit.cmake"
   "cmake/FindMsgpack.cmake"
   "cmake/FindUnibilium.cmake"
-  "cmake/GenerateHelptags.cmake.in"
   "cmake/GetCompileFlags.cmake"
   "cmake/GetGitRevisionDescription.cmake"
   "cmake/GetGitRevisionDescription.cmake.in"
@@ -34,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "config/config.h.in"
   "config/pathdef.c.in"
   "config/versiondef.h.in"
+  "runtime/CMakeLists.txt"
   "src/nvim/CMakeLists.txt"
   "src/nvim/po/CMakeLists.txt"
   "test/config/paths.lua.in"
@@ -41,12 +41,18 @@ set(CMAKE_MAKEFILE_DEPENDS
   "test/includes/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCXXInformation.cmake"
+  "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeParseArguments.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CPack.cmake"
+  "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CPackComponent.cmake"
+  "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckCCompilerFlag.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckCSourceCompiles.cmake"
+  "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckCSourceRuns.cmake"
+  "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckIncludeFile.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckIncludeFileCXX.cmake"
@@ -74,6 +80,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/Platform/Darwin.cmake"
   "/usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/usr/local/Cellar/cmake/3.2.3/share/cmake/Templates/CPackConfig.cmake.in"
   )
 
 # The corresponding makefile is:
@@ -90,14 +97,16 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/git-data/HEAD"
   "CMakeFiles/git-data/grabRef.cmake"
   "CMakeFiles/git-data/head-ref"
-  "cmake/GenerateHelptags.cmake"
   "test/config/paths.lua"
+  "CPackConfig.cmake"
+  "CPackSourceConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/nvim/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/nvim/po/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/includes/CMakeFiles/CMakeDirectoryInformation.cmake"
   "config/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/functional/fixtures/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "runtime/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -192,4 +201,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "test/includes/CMakeFiles/unittest-headers.dir/DependInfo.cmake"
   "test/functional/fixtures/CMakeFiles/shell-test.dir/DependInfo.cmake"
   "test/functional/fixtures/CMakeFiles/tty-test.dir/DependInfo.cmake"
+  "runtime/CMakeFiles/runtime.dir/DependInfo.cmake"
   )

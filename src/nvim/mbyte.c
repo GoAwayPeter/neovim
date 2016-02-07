@@ -1,13 +1,6 @@
 /*
- * VIM - Vi IMproved	by Bram Moolenaar
- * Multibyte extensions partly by Sung-Hoon Baek
- *
- * Do ":help uganda"  in Vim to read copying and usage conditions.
- * Do ":help credits" in Vim to see a list of people who contributed.
- * See README.md for an overview of the Vim source code.
- */
-/*
  * mbyte.c: Code specifically for handling multi-byte characters.
+ * Multibyte extensions partly by Sung-Hoon Baek
  *
  * The encoding used in the core is set with 'encoding'.  When 'encoding' is
  * changed, the following four variables are set (for speed).
@@ -71,7 +64,6 @@
  * some commands, like ":menutrans"
  */
 
-#include <errno.h>
 #include <inttypes.h>
 #include <stdbool.h>
 #include <string.h>
@@ -575,11 +567,6 @@ char_u * mb_init(void)
 
   /* When enc_utf8 is set or reset, (de)allocate ScreenLinesUC[] */
   screenalloc(false);
-
-  /* When using Unicode, set default for 'fileencodings'. */
-  if (enc_utf8 && !option_was_set((char_u *)"fencs"))
-    set_string_option_direct((char_u *)"fencs", -1,
-        (char_u *)"ucs-bom,utf-8,default,latin1", OPT_FREE, 0);
 
 #ifdef HAVE_WORKING_LIBINTL
   /* GNU gettext 0.10.37 supports this feature: set the codeset used for
@@ -2425,11 +2412,8 @@ char_u *enc_canonize(char_u *enc) FUNC_ATTR_NONNULL_RET
   int i;
 
   if (STRCMP(enc, "default") == 0) {
-    /* Use the default encoding as it's found by set_init_1(). */
-    char_u *r = get_encoding_default();
-    if (r == NULL)
-      r = (char_u *)"latin1";
-    return vim_strsave(r);
+    // Use the default encoding as found by set_init_1().
+    return vim_strsave(fenc_default);
   }
 
   /* copy "enc" to allocated memory, with room for two '-' */

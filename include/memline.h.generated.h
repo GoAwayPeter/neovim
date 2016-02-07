@@ -27,7 +27,7 @@ int ml_delete(linenr_T lnum, int message);
 void ml_setmarked(linenr_T lnum);
 linenr_T ml_firstmarked(void);
 void ml_clearmarked(void);
-int resolve_symlink(char_u *fname, char_u *buf);
+int resolve_symlink(const char_u *fname, char_u *buf);
 char_u *makeswapname(char_u *fname, char_u *ffname, buf_T *buf, char_u *dir_name);
 char_u *get_file_in_dir(char_u *fname, char_u *dname );
 void ml_setflags(buf_T *buf);

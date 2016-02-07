@@ -53,7 +53,7 @@ src/nvim/auto/arabic.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/arabic.c.generated.h: src/nvim/arabic.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/arabic.c.generated.h, ../../include/arabic.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/arabic.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/arabic.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/arabic.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/arabic.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/arabic.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/arabic.c.generated.h /Users/George/Documents/Programs/C/neovim/include/arabic.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/arabic.i
 
 include/arabic.h.generated.h: src/nvim/auto/arabic.c.generated.h
@@ -63,7 +63,7 @@ src/nvim/auto/buffer.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/buffer.c.generated.h: src/nvim/buffer.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/buffer.c.generated.h, ../../include/buffer.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/buffer.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/buffer.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/buffer.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/buffer.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/buffer.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/buffer.c.generated.h /Users/George/Documents/Programs/C/neovim/include/buffer.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/buffer.i
 
 include/buffer.h.generated.h: src/nvim/auto/buffer.c.generated.h
@@ -73,7 +73,7 @@ src/nvim/auto/charset.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/charset.c.generated.h: src/nvim/charset.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/charset.c.generated.h, ../../include/charset.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/charset.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/charset.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/charset.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/charset.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/charset.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/charset.c.generated.h /Users/George/Documents/Programs/C/neovim/include/charset.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/charset.i
 
 include/charset.h.generated.h: src/nvim/auto/charset.c.generated.h
@@ -83,7 +83,7 @@ src/nvim/auto/cursor.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/cursor.c.generated.h: src/nvim/cursor.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/cursor.c.generated.h, ../../include/cursor.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/cursor.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/cursor.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/cursor.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/cursor.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/cursor.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/cursor.c.generated.h /Users/George/Documents/Programs/C/neovim/include/cursor.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/cursor.i
 
 include/cursor.h.generated.h: src/nvim/auto/cursor.c.generated.h
@@ -93,7 +93,7 @@ src/nvim/auto/cursor_shape.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/cursor_shape.c.generated.h: src/nvim/cursor_shape.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/cursor_shape.c.generated.h, ../../include/cursor_shape.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/cursor_shape.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/cursor_shape.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/cursor_shape.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/cursor_shape.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/cursor_shape.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/cursor_shape.c.generated.h /Users/George/Documents/Programs/C/neovim/include/cursor_shape.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/cursor_shape.i
 
 include/cursor_shape.h.generated.h: src/nvim/auto/cursor_shape.c.generated.h
@@ -103,7 +103,7 @@ src/nvim/auto/diff.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/diff.c.generated.h: src/nvim/diff.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/diff.c.generated.h, ../../include/diff.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/diff.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/diff.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/diff.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/diff.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/diff.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/diff.c.generated.h /Users/George/Documents/Programs/C/neovim/include/diff.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/diff.i
 
 include/diff.h.generated.h: src/nvim/auto/diff.c.generated.h
@@ -113,7 +113,7 @@ src/nvim/auto/digraph.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/digraph.c.generated.h: src/nvim/digraph.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/digraph.c.generated.h, ../../include/digraph.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/digraph.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/digraph.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/digraph.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/digraph.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/digraph.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/digraph.c.generated.h /Users/George/Documents/Programs/C/neovim/include/digraph.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/digraph.i
 
 include/digraph.h.generated.h: src/nvim/auto/digraph.c.generated.h
@@ -123,7 +123,7 @@ src/nvim/auto/edit.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/edit.c.generated.h: src/nvim/edit.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/edit.c.generated.h, ../../include/edit.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/edit.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/edit.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/edit.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/edit.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/edit.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/edit.c.generated.h /Users/George/Documents/Programs/C/neovim/include/edit.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/edit.i
 
 include/edit.h.generated.h: src/nvim/auto/edit.c.generated.h
@@ -133,7 +133,7 @@ src/nvim/auto/eval.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/eval.c.generated.h: src/nvim/eval.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/eval.c.generated.h, ../../include/eval.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/eval.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/eval.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/eval.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/eval.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/eval.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/eval.c.generated.h /Users/George/Documents/Programs/C/neovim/include/eval.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/eval.i
 
 include/eval.h.generated.h: src/nvim/auto/eval.c.generated.h
@@ -143,7 +143,7 @@ src/nvim/auto/ex_cmds.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/ex_cmds.c.generated.h: src/nvim/ex_cmds.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ex_cmds.c.generated.h, ../../include/ex_cmds.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_cmds.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_cmds.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_cmds.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ex_cmds.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_cmds.i
 
 include/ex_cmds.h.generated.h: src/nvim/auto/ex_cmds.c.generated.h
@@ -153,7 +153,7 @@ src/nvim/auto/ex_cmds2.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/ex_cmds2.c.generated.h: src/nvim/ex_cmds2.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ex_cmds2.c.generated.h, ../../include/ex_cmds2.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_cmds2.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_cmds2.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_cmds2.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ex_cmds2.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_cmds2.i
 
 include/ex_cmds2.h.generated.h: src/nvim/auto/ex_cmds2.c.generated.h
@@ -163,7 +163,7 @@ src/nvim/auto/ex_docmd.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/ex_docmd.c.generated.h: src/nvim/ex_docmd.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ex_docmd.c.generated.h, ../../include/ex_docmd.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_docmd.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_docmd.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_docmd.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_docmd.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ex_docmd.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_docmd.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ex_docmd.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_docmd.i
 
 include/ex_docmd.h.generated.h: src/nvim/auto/ex_docmd.c.generated.h
@@ -173,7 +173,7 @@ src/nvim/auto/ex_eval.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/ex_eval.c.generated.h: src/nvim/ex_eval.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ex_eval.c.generated.h, ../../include/ex_eval.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_eval.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_eval.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_eval.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_eval.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ex_eval.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_eval.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ex_eval.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_eval.i
 
 include/ex_eval.h.generated.h: src/nvim/auto/ex_eval.c.generated.h
@@ -183,7 +183,7 @@ src/nvim/auto/ex_getln.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/ex_getln.c.generated.h: src/nvim/ex_getln.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ex_getln.c.generated.h, ../../include/ex_getln.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_getln.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_getln.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_getln.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ex_getln.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ex_getln.i
 
 include/ex_getln.h.generated.h: src/nvim/auto/ex_getln.c.generated.h
@@ -193,7 +193,7 @@ src/nvim/auto/farsi.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/farsi.c.generated.h: src/nvim/farsi.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/farsi.c.generated.h, ../../include/farsi.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/farsi.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/farsi.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/farsi.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/farsi.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/farsi.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/farsi.c.generated.h /Users/George/Documents/Programs/C/neovim/include/farsi.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/farsi.i
 
 include/farsi.h.generated.h: src/nvim/auto/farsi.c.generated.h
@@ -203,7 +203,7 @@ src/nvim/auto/file_search.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/file_search.c.generated.h: src/nvim/file_search.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/file_search.c.generated.h, ../../include/file_search.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/file_search.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/file_search.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/file_search.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/file_search.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/file_search.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/file_search.c.generated.h /Users/George/Documents/Programs/C/neovim/include/file_search.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/file_search.i
 
 include/file_search.h.generated.h: src/nvim/auto/file_search.c.generated.h
@@ -213,7 +213,7 @@ src/nvim/auto/fileio.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/fileio.c.generated.h: src/nvim/fileio.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/fileio.c.generated.h, ../../include/fileio.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/fileio.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/fileio.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/fileio.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/fileio.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/fileio.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/fileio.c.generated.h /Users/George/Documents/Programs/C/neovim/include/fileio.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/fileio.i
 
 include/fileio.h.generated.h: src/nvim/auto/fileio.c.generated.h
@@ -223,7 +223,7 @@ src/nvim/auto/fold.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/fold.c.generated.h: src/nvim/fold.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/fold.c.generated.h, ../../include/fold.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/fold.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/fold.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/fold.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/fold.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/fold.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/fold.c.generated.h /Users/George/Documents/Programs/C/neovim/include/fold.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/fold.i
 
 include/fold.h.generated.h: src/nvim/auto/fold.c.generated.h
@@ -233,7 +233,7 @@ src/nvim/auto/garray.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/garray.c.generated.h: src/nvim/garray.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/garray.c.generated.h, ../../include/garray.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/garray.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/garray.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/garray.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/garray.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/garray.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/garray.c.generated.h /Users/George/Documents/Programs/C/neovim/include/garray.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/garray.i
 
 include/garray.h.generated.h: src/nvim/auto/garray.c.generated.h
@@ -243,7 +243,7 @@ src/nvim/auto/getchar.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/getchar.c.generated.h: src/nvim/getchar.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/getchar.c.generated.h, ../../include/getchar.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/getchar.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/getchar.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/getchar.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/getchar.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/getchar.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/getchar.c.generated.h /Users/George/Documents/Programs/C/neovim/include/getchar.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/getchar.i
 
 include/getchar.h.generated.h: src/nvim/auto/getchar.c.generated.h
@@ -253,7 +253,7 @@ src/nvim/auto/hardcopy.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/hardcopy.c.generated.h: src/nvim/hardcopy.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/hardcopy.c.generated.h, ../../include/hardcopy.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/hardcopy.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/hardcopy.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/hardcopy.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/hardcopy.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/hardcopy.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/hardcopy.c.generated.h /Users/George/Documents/Programs/C/neovim/include/hardcopy.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/hardcopy.i
 
 include/hardcopy.h.generated.h: src/nvim/auto/hardcopy.c.generated.h
@@ -263,7 +263,7 @@ src/nvim/auto/hashtab.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/hashtab.c.generated.h: src/nvim/hashtab.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/hashtab.c.generated.h, ../../include/hashtab.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/hashtab.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/hashtab.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/hashtab.c.generated.h /Users/George/Documents/Programs/C/neovim/include/hashtab.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/hashtab.i
 
 include/hashtab.h.generated.h: src/nvim/auto/hashtab.c.generated.h
@@ -273,7 +273,7 @@ src/nvim/auto/if_cscope.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/if_cscope.c.generated.h: src/nvim/if_cscope.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/if_cscope.c.generated.h, ../../include/if_cscope.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/if_cscope.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/if_cscope.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/if_cscope.c.generated.h /Users/George/Documents/Programs/C/neovim/include/if_cscope.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/if_cscope.i
 
 include/if_cscope.h.generated.h: src/nvim/auto/if_cscope.c.generated.h
@@ -283,7 +283,7 @@ src/nvim/auto/indent.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/indent.c.generated.h: src/nvim/indent.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/indent.c.generated.h, ../../include/indent.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/indent.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/indent.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/indent.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/indent.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/indent.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/indent.c.generated.h /Users/George/Documents/Programs/C/neovim/include/indent.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/indent.i
 
 include/indent.h.generated.h: src/nvim/auto/indent.c.generated.h
@@ -293,7 +293,7 @@ src/nvim/auto/indent_c.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/indent_c.c.generated.h: src/nvim/indent_c.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/indent_c.c.generated.h, ../../include/indent_c.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/indent_c.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/indent_c.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/indent_c.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/indent_c.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/indent_c.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/indent_c.c.generated.h /Users/George/Documents/Programs/C/neovim/include/indent_c.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/indent_c.i
 
 include/indent_c.h.generated.h: src/nvim/auto/indent_c.c.generated.h
@@ -303,7 +303,7 @@ src/nvim/auto/keymap.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/keymap.c.generated.h: src/nvim/keymap.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/keymap.c.generated.h, ../../include/keymap.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/keymap.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/keymap.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/keymap.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/keymap.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/keymap.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/keymap.c.generated.h /Users/George/Documents/Programs/C/neovim/include/keymap.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/keymap.i
 
 include/keymap.h.generated.h: src/nvim/auto/keymap.c.generated.h
@@ -313,7 +313,7 @@ src/nvim/auto/log.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/log.c.generated.h: src/nvim/log.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/log.c.generated.h, ../../include/log.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/log.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/log.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/log.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/log.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/log.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/log.c.generated.h /Users/George/Documents/Programs/C/neovim/include/log.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/log.i
 
 include/log.h.generated.h: src/nvim/auto/log.c.generated.h
@@ -323,7 +323,7 @@ src/nvim/auto/main.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/main.c.generated.h: src/nvim/main.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/main.c.generated.h, ../../include/main.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/main.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/main.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/main.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/main.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/main.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/main.c.generated.h /Users/George/Documents/Programs/C/neovim/include/main.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/main.i
 
 include/main.h.generated.h: src/nvim/auto/main.c.generated.h
@@ -333,7 +333,7 @@ src/nvim/auto/map.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/map.c.generated.h: src/nvim/map.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/map.c.generated.h, ../../include/map.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/map.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/map.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/map.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/map.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/map.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/map.c.generated.h /Users/George/Documents/Programs/C/neovim/include/map.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/map.i
 
 include/map.h.generated.h: src/nvim/auto/map.c.generated.h
@@ -343,7 +343,7 @@ src/nvim/auto/mark.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/mark.c.generated.h: src/nvim/mark.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/mark.c.generated.h, ../../include/mark.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/mark.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mark.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/mark.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mark.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/mark.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mark.c.generated.h /Users/George/Documents/Programs/C/neovim/include/mark.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mark.i
 
 include/mark.h.generated.h: src/nvim/auto/mark.c.generated.h
@@ -353,7 +353,7 @@ src/nvim/auto/mbyte.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/mbyte.c.generated.h: src/nvim/mbyte.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/mbyte.c.generated.h, ../../include/mbyte.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/mbyte.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mbyte.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/mbyte.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mbyte.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/mbyte.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mbyte.c.generated.h /Users/George/Documents/Programs/C/neovim/include/mbyte.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mbyte.i
 
 include/mbyte.h.generated.h: src/nvim/auto/mbyte.c.generated.h
@@ -363,7 +363,7 @@ src/nvim/auto/memfile.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/memfile.c.generated.h: src/nvim/memfile.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/memfile.c.generated.h, ../../include/memfile.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/memfile.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memfile.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/memfile.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memfile.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/memfile.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memfile.c.generated.h /Users/George/Documents/Programs/C/neovim/include/memfile.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memfile.i
 
 include/memfile.h.generated.h: src/nvim/auto/memfile.c.generated.h
@@ -373,7 +373,7 @@ src/nvim/auto/memline.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/memline.c.generated.h: src/nvim/memline.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/memline.c.generated.h, ../../include/memline.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/memline.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memline.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/memline.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memline.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/memline.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memline.c.generated.h /Users/George/Documents/Programs/C/neovim/include/memline.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memline.i
 
 include/memline.h.generated.h: src/nvim/auto/memline.c.generated.h
@@ -383,7 +383,7 @@ src/nvim/auto/memory.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/memory.c.generated.h: src/nvim/memory.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/memory.c.generated.h, ../../include/memory.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/memory.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memory.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/memory.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memory.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/memory.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memory.c.generated.h /Users/George/Documents/Programs/C/neovim/include/memory.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/memory.i
 
 include/memory.h.generated.h: src/nvim/auto/memory.c.generated.h
@@ -393,7 +393,7 @@ src/nvim/auto/menu.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/menu.c.generated.h: src/nvim/menu.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/menu.c.generated.h, ../../include/menu.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/menu.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/menu.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/menu.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/menu.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/menu.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/menu.c.generated.h /Users/George/Documents/Programs/C/neovim/include/menu.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/menu.i
 
 include/menu.h.generated.h: src/nvim/auto/menu.c.generated.h
@@ -403,7 +403,7 @@ src/nvim/auto/message.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/message.c.generated.h: src/nvim/message.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/message.c.generated.h, ../../include/message.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/message.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/message.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/message.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/message.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/message.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/message.c.generated.h /Users/George/Documents/Programs/C/neovim/include/message.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/message.i
 
 include/message.h.generated.h: src/nvim/auto/message.c.generated.h
@@ -413,7 +413,7 @@ src/nvim/auto/misc1.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/misc1.c.generated.h: src/nvim/misc1.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/misc1.c.generated.h, ../../include/misc1.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/misc1.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/misc1.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/misc1.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/misc1.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/misc1.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/misc1.c.generated.h /Users/George/Documents/Programs/C/neovim/include/misc1.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/misc1.i
 
 include/misc1.h.generated.h: src/nvim/auto/misc1.c.generated.h
@@ -423,7 +423,7 @@ src/nvim/auto/misc2.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/misc2.c.generated.h: src/nvim/misc2.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/misc2.c.generated.h, ../../include/misc2.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/misc2.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/misc2.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/misc2.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/misc2.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/misc2.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/misc2.c.generated.h /Users/George/Documents/Programs/C/neovim/include/misc2.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/misc2.i
 
 include/misc2.h.generated.h: src/nvim/auto/misc2.c.generated.h
@@ -433,7 +433,7 @@ src/nvim/auto/mouse.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/mouse.c.generated.h: src/nvim/mouse.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/mouse.c.generated.h, ../../include/mouse.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/mouse.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mouse.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/mouse.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mouse.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/mouse.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mouse.c.generated.h /Users/George/Documents/Programs/C/neovim/include/mouse.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/mouse.i
 
 include/mouse.h.generated.h: src/nvim/auto/mouse.c.generated.h
@@ -443,7 +443,7 @@ src/nvim/auto/move.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/move.c.generated.h: src/nvim/move.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/move.c.generated.h, ../../include/move.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/move.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/move.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/move.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/move.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/move.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/move.c.generated.h /Users/George/Documents/Programs/C/neovim/include/move.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/move.i
 
 include/move.h.generated.h: src/nvim/auto/move.c.generated.h
@@ -453,7 +453,7 @@ src/nvim/auto/normal.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/normal.c.generated.h: src/nvim/normal.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/normal.c.generated.h, ../../include/normal.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/normal.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/normal.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/normal.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/normal.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/normal.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/normal.c.generated.h /Users/George/Documents/Programs/C/neovim/include/normal.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/normal.i
 
 include/normal.h.generated.h: src/nvim/auto/normal.c.generated.h
@@ -463,7 +463,7 @@ src/nvim/auto/ops.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/ops.c.generated.h: src/nvim/ops.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ops.c.generated.h, ../../include/ops.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ops.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ops.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ops.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ops.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ops.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ops.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ops.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ops.i
 
 include/ops.h.generated.h: src/nvim/auto/ops.c.generated.h
@@ -473,7 +473,7 @@ src/nvim/auto/option.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/option.c.generated.h: src/nvim/option.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/option.c.generated.h, ../../include/option.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/option.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/option.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/option.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/option.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/option.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/option.c.generated.h /Users/George/Documents/Programs/C/neovim/include/option.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/option.i
 
 include/option.h.generated.h: src/nvim/auto/option.c.generated.h
@@ -483,7 +483,7 @@ src/nvim/auto/os_unix.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os_unix.c.generated.h: src/nvim/os_unix.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os_unix.c.generated.h, ../../include/os_unix.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os_unix.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os_unix.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os_unix.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os_unix.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os_unix.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os_unix.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os_unix.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os_unix.i
 
 include/os_unix.h.generated.h: src/nvim/auto/os_unix.c.generated.h
@@ -493,7 +493,7 @@ src/nvim/auto/path.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/path.c.generated.h: src/nvim/path.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/path.c.generated.h, ../../include/path.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/path.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/path.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/path.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/path.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/path.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/path.c.generated.h /Users/George/Documents/Programs/C/neovim/include/path.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/path.i
 
 include/path.h.generated.h: src/nvim/auto/path.c.generated.h
@@ -503,7 +503,7 @@ src/nvim/auto/popupmnu.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/popupmnu.c.generated.h: src/nvim/popupmnu.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/popupmnu.c.generated.h, ../../include/popupmnu.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/popupmnu.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/popupmnu.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/popupmnu.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/popupmnu.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/popupmnu.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/popupmnu.c.generated.h /Users/George/Documents/Programs/C/neovim/include/popupmnu.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/popupmnu.i
 
 include/popupmnu.h.generated.h: src/nvim/auto/popupmnu.c.generated.h
@@ -513,7 +513,7 @@ src/nvim/auto/profile.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/profile.c.generated.h: src/nvim/profile.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/profile.c.generated.h, ../../include/profile.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/profile.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/profile.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/profile.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/profile.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/profile.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/profile.c.generated.h /Users/George/Documents/Programs/C/neovim/include/profile.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/profile.i
 
 include/profile.h.generated.h: src/nvim/auto/profile.c.generated.h
@@ -523,7 +523,7 @@ src/nvim/auto/quickfix.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/quickfix.c.generated.h: src/nvim/quickfix.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/quickfix.c.generated.h, ../../include/quickfix.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/quickfix.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/quickfix.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/quickfix.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/quickfix.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/quickfix.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/quickfix.c.generated.h /Users/George/Documents/Programs/C/neovim/include/quickfix.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/quickfix.i
 
 include/quickfix.h.generated.h: src/nvim/auto/quickfix.c.generated.h
@@ -533,7 +533,7 @@ src/nvim/auto/rbuffer.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/rbuffer.c.generated.h: src/nvim/rbuffer.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/rbuffer.c.generated.h, ../../include/rbuffer.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/rbuffer.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/rbuffer.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/rbuffer.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/rbuffer.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/rbuffer.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/rbuffer.c.generated.h /Users/George/Documents/Programs/C/neovim/include/rbuffer.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/rbuffer.i
 
 include/rbuffer.h.generated.h: src/nvim/auto/rbuffer.c.generated.h
@@ -543,7 +543,7 @@ src/nvim/auto/regexp.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/regexp.c.generated.h: src/nvim/regexp.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/regexp.c.generated.h, ../../include/regexp.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/regexp.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/regexp.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/regexp.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/regexp.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/regexp.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/regexp.c.generated.h /Users/George/Documents/Programs/C/neovim/include/regexp.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/regexp.i
 
 include/regexp.h.generated.h: src/nvim/auto/regexp.c.generated.h
@@ -553,7 +553,7 @@ src/nvim/auto/screen.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/screen.c.generated.h: src/nvim/screen.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/screen.c.generated.h, ../../include/screen.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/screen.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/screen.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/screen.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/screen.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/screen.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/screen.c.generated.h /Users/George/Documents/Programs/C/neovim/include/screen.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/screen.i
 
 include/screen.h.generated.h: src/nvim/auto/screen.c.generated.h
@@ -563,7 +563,7 @@ src/nvim/auto/search.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/search.c.generated.h: src/nvim/search.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/search.c.generated.h, ../../include/search.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/search.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/search.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/search.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/search.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/search.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/search.c.generated.h /Users/George/Documents/Programs/C/neovim/include/search.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/search.i
 
 include/search.h.generated.h: src/nvim/auto/search.c.generated.h
@@ -573,27 +573,47 @@ src/nvim/auto/sha256.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/sha256.c.generated.h: src/nvim/sha256.c
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/sha256.c.generated.h, ../../include/sha256.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/sha256.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/sha256.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/sha256.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/sha256.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/sha256.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/sha256.c.generated.h /Users/George/Documents/Programs/C/neovim/include/sha256.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/sha256.i
 
 include/sha256.h.generated.h: src/nvim/auto/sha256.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/sha256.h.generated.h
 
+src/nvim/auto/shada.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/shada.c.generated.h: src/nvim/shada.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_54)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/shada.c.generated.h, ../../include/shada.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/shada.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/shada.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/shada.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/shada.c.generated.h /Users/George/Documents/Programs/C/neovim/include/shada.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/shada.i
+
+include/shada.h.generated.h: src/nvim/auto/shada.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/shada.h.generated.h
+
 src/nvim/auto/spell.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/spell.c.generated.h: src/nvim/spell.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/spell.c.generated.h, ../../include/spell.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/spell.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/spell.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/spell.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/spell.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/spell.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/spell.c.generated.h /Users/George/Documents/Programs/C/neovim/include/spell.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/spell.i
 
 include/spell.h.generated.h: src/nvim/auto/spell.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/spell.h.generated.h
 
+src/nvim/auto/state.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/state.c.generated.h: src/nvim/state.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_56)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/state.c.generated.h, ../../include/state.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/state.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/state.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/state.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/state.c.generated.h /Users/George/Documents/Programs/C/neovim/include/state.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/state.i
+
+include/state.h.generated.h: src/nvim/auto/state.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/state.h.generated.h
+
 src/nvim/auto/strings.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/strings.c.generated.h: src/nvim/strings.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/strings.c.generated.h, ../../include/strings.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/strings.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/strings.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/strings.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/strings.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/strings.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/strings.c.generated.h /Users/George/Documents/Programs/C/neovim/include/strings.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/strings.i
 
 include/strings.h.generated.h: src/nvim/auto/strings.c.generated.h
@@ -601,9 +621,9 @@ include/strings.h.generated.h: src/nvim/auto/strings.c.generated.h
 
 src/nvim/auto/syntax.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/syntax.c.generated.h: src/nvim/syntax.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/syntax.c.generated.h, ../../include/syntax.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/syntax.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/syntax.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/syntax.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/syntax.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/syntax.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/syntax.c.generated.h /Users/George/Documents/Programs/C/neovim/include/syntax.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/syntax.i
 
 include/syntax.h.generated.h: src/nvim/auto/syntax.c.generated.h
@@ -611,9 +631,9 @@ include/syntax.h.generated.h: src/nvim/auto/syntax.c.generated.h
 
 src/nvim/auto/tag.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/tag.c.generated.h: src/nvim/tag.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/tag.c.generated.h, ../../include/tag.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/tag.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tag.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/tag.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tag.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/tag.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tag.c.generated.h /Users/George/Documents/Programs/C/neovim/include/tag.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tag.i
 
 include/tag.h.generated.h: src/nvim/auto/tag.c.generated.h
@@ -621,9 +641,9 @@ include/tag.h.generated.h: src/nvim/auto/tag.c.generated.h
 
 src/nvim/auto/tempfile.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/tempfile.c.generated.h: src/nvim/tempfile.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/tempfile.c.generated.h, ../../include/tempfile.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/tempfile.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tempfile.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/tempfile.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tempfile.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/tempfile.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tempfile.c.generated.h /Users/George/Documents/Programs/C/neovim/include/tempfile.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tempfile.i
 
 include/tempfile.h.generated.h: src/nvim/auto/tempfile.c.generated.h
@@ -631,29 +651,49 @@ include/tempfile.h.generated.h: src/nvim/auto/tempfile.c.generated.h
 
 src/nvim/auto/terminal.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/terminal.c.generated.h: src/nvim/terminal.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/terminal.c.generated.h, ../../include/terminal.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/terminal.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/terminal.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/terminal.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/terminal.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/terminal.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/terminal.c.generated.h /Users/George/Documents/Programs/C/neovim/include/terminal.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/terminal.i
 
 include/terminal.h.generated.h: src/nvim/auto/terminal.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/terminal.h.generated.h
 
+src/nvim/auto/ugrid.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/ugrid.c.generated.h: src/nvim/ugrid.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_62)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ugrid.c.generated.h, ../../include/ugrid.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ugrid.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ugrid.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ugrid.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ugrid.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ugrid.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ugrid.i
+
+include/ugrid.h.generated.h: src/nvim/auto/ugrid.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/ugrid.h.generated.h
+
 src/nvim/auto/ui.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/ui.c.generated.h: src/nvim/ui.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_60)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ui.c.generated.h, ../../include/ui.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ui.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ui.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ui.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ui.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ui.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ui.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ui.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ui.i
 
 include/ui.h.generated.h: src/nvim/auto/ui.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/ui.h.generated.h
 
+src/nvim/auto/ui_bridge.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/ui_bridge.c.generated.h: src/nvim/ui_bridge.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_64)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/ui_bridge.c.generated.h, ../../include/ui_bridge.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/ui_bridge.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ui_bridge.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/ui_bridge.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ui_bridge.c.generated.h /Users/George/Documents/Programs/C/neovim/include/ui_bridge.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/ui_bridge.i
+
+include/ui_bridge.h.generated.h: src/nvim/auto/ui_bridge.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/ui_bridge.h.generated.h
+
 src/nvim/auto/undo.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/undo.c.generated.h: src/nvim/undo.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/undo.c.generated.h, ../../include/undo.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/undo.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/undo.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/undo.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/undo.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/undo.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/undo.c.generated.h /Users/George/Documents/Programs/C/neovim/include/undo.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/undo.i
 
 include/undo.h.generated.h: src/nvim/auto/undo.c.generated.h
@@ -661,9 +701,9 @@ include/undo.h.generated.h: src/nvim/auto/undo.c.generated.h
 
 src/nvim/auto/version.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/version.c.generated.h: src/nvim/version.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/version.c.generated.h, ../../include/version.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/version.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/version.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/version.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/version.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/version.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/version.c.generated.h /Users/George/Documents/Programs/C/neovim/include/version.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/version.i
 
 include/version.h.generated.h: src/nvim/auto/version.c.generated.h
@@ -671,9 +711,9 @@ include/version.h.generated.h: src/nvim/auto/version.c.generated.h
 
 src/nvim/auto/window.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/window.c.generated.h: src/nvim/window.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_63)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/window.c.generated.h, ../../include/window.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/window.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/window.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/window.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/window.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/window.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/window.c.generated.h /Users/George/Documents/Programs/C/neovim/include/window.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/window.i
 
 include/window.h.generated.h: src/nvim/auto/window.c.generated.h
@@ -681,9 +721,9 @@ include/window.h.generated.h: src/nvim/auto/window.c.generated.h
 
 src/nvim/auto/os/dl.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/dl.c.generated.h: src/nvim/os/dl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/dl.c.generated.h, ../../include/os/dl.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/dl.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/dl.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/dl.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/dl.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/dl.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/dl.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/dl.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/dl.i
 
 include/os/dl.h.generated.h: src/nvim/auto/os/dl.c.generated.h
@@ -691,29 +731,19 @@ include/os/dl.h.generated.h: src/nvim/auto/os/dl.c.generated.h
 
 src/nvim/auto/os/env.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/env.c.generated.h: src/nvim/os/env.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/env.c.generated.h, ../../include/os/env.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/env.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/env.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/env.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/env.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/env.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/env.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/env.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/env.i
 
 include/os/env.h.generated.h: src/nvim/auto/os/env.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/os/env.h.generated.h
 
-src/nvim/auto/os/event.c.generated.h: scripts/gendeclarations.lua
-src/nvim/auto/os/event.c.generated.h: src/nvim/os/event.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_66)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/event.c.generated.h, ../../include/os/event.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/event.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/event.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/event.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/event.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/event.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/event.i
-
-include/os/event.h.generated.h: src/nvim/auto/os/event.c.generated.h
-	@$(CMAKE_COMMAND) -E touch_nocreate include/os/event.h.generated.h
-
 src/nvim/auto/os/fs.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/fs.c.generated.h: src/nvim/os/fs.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_67)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/fs.c.generated.h, ../../include/os/fs.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/fs.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/fs.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/fs.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/fs.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/fs.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/fs.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/fs.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/fs.i
 
 include/os/fs.h.generated.h: src/nvim/auto/os/fs.c.generated.h
@@ -721,69 +751,29 @@ include/os/fs.h.generated.h: src/nvim/auto/os/fs.c.generated.h
 
 src/nvim/auto/os/input.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/input.c.generated.h: src/nvim/os/input.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/input.c.generated.h, ../../include/os/input.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/input.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/input.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/input.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/input.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/input.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/input.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/input.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/input.i
 
 include/os/input.h.generated.h: src/nvim/auto/os/input.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/os/input.h.generated.h
 
-src/nvim/auto/os/job.c.generated.h: scripts/gendeclarations.lua
-src/nvim/auto/os/job.c.generated.h: src/nvim/os/job.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_69)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/job.c.generated.h, ../../include/os/job.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/job.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/job.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/job.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/job.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/job.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/job.i
-
-include/os/job.h.generated.h: src/nvim/auto/os/job.c.generated.h
-	@$(CMAKE_COMMAND) -E touch_nocreate include/os/job.h.generated.h
-
 src/nvim/auto/os/mem.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/mem.c.generated.h: src/nvim/os/mem.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_70)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/mem.c.generated.h, ../../include/os/mem.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/mem.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/mem.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/mem.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/mem.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/mem.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/mem.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/mem.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/mem.i
 
 include/os/mem.h.generated.h: src/nvim/auto/os/mem.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/os/mem.h.generated.h
 
-src/nvim/auto/os/pipe_process.c.generated.h: scripts/gendeclarations.lua
-src/nvim/auto/os/pipe_process.c.generated.h: src/nvim/os/pipe_process.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_71)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/pipe_process.c.generated.h, ../../include/os/pipe_process.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/pipe_process.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/pipe_process.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/pipe_process.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/pipe_process.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/pipe_process.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/pipe_process.i
-
-include/os/pipe_process.h.generated.h: src/nvim/auto/os/pipe_process.c.generated.h
-	@$(CMAKE_COMMAND) -E touch_nocreate include/os/pipe_process.h.generated.h
-
-src/nvim/auto/os/pty_process.c.generated.h: scripts/gendeclarations.lua
-src/nvim/auto/os/pty_process.c.generated.h: src/nvim/os/pty_process.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_72)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/pty_process.c.generated.h, ../../include/os/pty_process.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/pty_process.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/pty_process.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/pty_process.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/pty_process.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/pty_process.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/pty_process.i
-
-include/os/pty_process.h.generated.h: src/nvim/auto/os/pty_process.c.generated.h
-	@$(CMAKE_COMMAND) -E touch_nocreate include/os/pty_process.h.generated.h
-
-src/nvim/auto/os/rstream.c.generated.h: scripts/gendeclarations.lua
-src/nvim/auto/os/rstream.c.generated.h: src/nvim/os/rstream.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_73)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/rstream.c.generated.h, ../../include/os/rstream.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/rstream.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/rstream.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/rstream.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/rstream.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/rstream.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/rstream.i
-
-include/os/rstream.h.generated.h: src/nvim/auto/os/rstream.c.generated.h
-	@$(CMAKE_COMMAND) -E touch_nocreate include/os/rstream.h.generated.h
-
 src/nvim/auto/os/shell.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/shell.c.generated.h: src/nvim/os/shell.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_74)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/shell.c.generated.h, ../../include/os/shell.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/shell.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/shell.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/shell.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/shell.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/shell.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/shell.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/shell.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/shell.i
 
 include/os/shell.h.generated.h: src/nvim/auto/os/shell.c.generated.h
@@ -791,29 +781,29 @@ include/os/shell.h.generated.h: src/nvim/auto/os/shell.c.generated.h
 
 src/nvim/auto/os/signal.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/signal.c.generated.h: src/nvim/os/signal.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_75)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/signal.c.generated.h, ../../include/os/signal.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/signal.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/signal.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/signal.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/signal.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/signal.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/signal.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/signal.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/signal.i
 
 include/os/signal.h.generated.h: src/nvim/auto/os/signal.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/os/signal.h.generated.h
 
-src/nvim/auto/os/stream.c.generated.h: scripts/gendeclarations.lua
-src/nvim/auto/os/stream.c.generated.h: src/nvim/os/stream.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_76)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/stream.c.generated.h, ../../include/os/stream.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/stream.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/stream.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/stream.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/stream.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/stream.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/stream.i
+src/nvim/auto/os/stdpaths.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/os/stdpaths.c.generated.h: src/nvim/os/stdpaths.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_75)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/stdpaths.c.generated.h, ../../include/os/stdpaths.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/stdpaths.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/stdpaths.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/stdpaths.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/stdpaths.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/stdpaths.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/stdpaths.i
 
-include/os/stream.h.generated.h: src/nvim/auto/os/stream.c.generated.h
-	@$(CMAKE_COMMAND) -E touch_nocreate include/os/stream.h.generated.h
+include/os/stdpaths.h.generated.h: src/nvim/auto/os/stdpaths.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/os/stdpaths.h.generated.h
 
 src/nvim/auto/os/time.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/time.c.generated.h: src/nvim/os/time.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_77)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/time.c.generated.h, ../../include/os/time.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/time.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/time.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/time.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/time.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/time.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/time.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/time.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/time.i
 
 include/os/time.h.generated.h: src/nvim/auto/os/time.c.generated.h
@@ -821,39 +811,19 @@ include/os/time.h.generated.h: src/nvim/auto/os/time.c.generated.h
 
 src/nvim/auto/os/users.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/os/users.c.generated.h: src/nvim/os/users.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_78)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/users.c.generated.h, ../../include/os/users.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/users.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/users.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/users.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/users.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/users.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/users.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/users.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/users.i
 
 include/os/users.h.generated.h: src/nvim/auto/os/users.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/os/users.h.generated.h
 
-src/nvim/auto/os/uv_helpers.c.generated.h: scripts/gendeclarations.lua
-src/nvim/auto/os/uv_helpers.c.generated.h: src/nvim/os/uv_helpers.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_79)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/uv_helpers.c.generated.h, ../../include/os/uv_helpers.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/uv_helpers.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/uv_helpers.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/uv_helpers.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/uv_helpers.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/uv_helpers.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/uv_helpers.i
-
-include/os/uv_helpers.h.generated.h: src/nvim/auto/os/uv_helpers.c.generated.h
-	@$(CMAKE_COMMAND) -E touch_nocreate include/os/uv_helpers.h.generated.h
-
-src/nvim/auto/os/wstream.c.generated.h: scripts/gendeclarations.lua
-src/nvim/auto/os/wstream.c.generated.h: src/nvim/os/wstream.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_80)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/os/wstream.c.generated.h, ../../include/os/wstream.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/os/wstream.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/wstream.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/os/wstream.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/wstream.c.generated.h /Users/George/Documents/Programs/C/neovim/include/os/wstream.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/os/wstream.i
-
-include/os/wstream.h.generated.h: src/nvim/auto/os/wstream.c.generated.h
-	@$(CMAKE_COMMAND) -E touch_nocreate include/os/wstream.h.generated.h
-
 src/nvim/auto/api/buffer.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/api/buffer.c.generated.h: src/nvim/api/buffer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_81)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/api/buffer.c.generated.h, ../../include/api/buffer.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/buffer.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/buffer.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/buffer.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/buffer.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/api/buffer.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/buffer.c.generated.h /Users/George/Documents/Programs/C/neovim/include/api/buffer.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/buffer.i
 
 include/api/buffer.h.generated.h: src/nvim/auto/api/buffer.c.generated.h
@@ -861,9 +831,9 @@ include/api/buffer.h.generated.h: src/nvim/auto/api/buffer.c.generated.h
 
 src/nvim/auto/api/tabpage.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/api/tabpage.c.generated.h: src/nvim/api/tabpage.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_82)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/api/tabpage.c.generated.h, ../../include/api/tabpage.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/tabpage.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/tabpage.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/tabpage.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/tabpage.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/api/tabpage.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/tabpage.c.generated.h /Users/George/Documents/Programs/C/neovim/include/api/tabpage.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/tabpage.i
 
 include/api/tabpage.h.generated.h: src/nvim/auto/api/tabpage.c.generated.h
@@ -871,9 +841,9 @@ include/api/tabpage.h.generated.h: src/nvim/auto/api/tabpage.c.generated.h
 
 src/nvim/auto/api/vim.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/api/vim.c.generated.h: src/nvim/api/vim.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_83)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/api/vim.c.generated.h, ../../include/api/vim.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/vim.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/vim.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/vim.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/vim.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/api/vim.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/vim.c.generated.h /Users/George/Documents/Programs/C/neovim/include/api/vim.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/vim.i
 
 include/api/vim.h.generated.h: src/nvim/auto/api/vim.c.generated.h
@@ -881,9 +851,9 @@ include/api/vim.h.generated.h: src/nvim/auto/api/vim.c.generated.h
 
 src/nvim/auto/api/window.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/api/window.c.generated.h: src/nvim/api/window.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_84)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/api/window.c.generated.h, ../../include/api/window.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/window.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/window.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/window.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/window.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/api/window.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/window.c.generated.h /Users/George/Documents/Programs/C/neovim/include/api/window.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/window.i
 
 include/api/window.h.generated.h: src/nvim/auto/api/window.c.generated.h
@@ -891,9 +861,9 @@ include/api/window.h.generated.h: src/nvim/auto/api/window.c.generated.h
 
 src/nvim/auto/api/private/handle.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/api/private/handle.c.generated.h: src/nvim/api/private/handle.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_85)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/api/private/handle.c.generated.h, ../../include/api/private/handle.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/private/handle.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/private/handle.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/private/handle.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/private/handle.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/api/private/handle.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/private/handle.c.generated.h /Users/George/Documents/Programs/C/neovim/include/api/private/handle.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/private/handle.i
 
 include/api/private/handle.h.generated.h: src/nvim/auto/api/private/handle.c.generated.h
@@ -901,9 +871,9 @@ include/api/private/handle.h.generated.h: src/nvim/auto/api/private/handle.c.gen
 
 src/nvim/auto/api/private/helpers.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/api/private/helpers.c.generated.h: src/nvim/api/private/helpers.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_86)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/api/private/helpers.c.generated.h, ../../include/api/private/helpers.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/private/helpers.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/private/helpers.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/api/private/helpers.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/private/helpers.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/api/private/helpers.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/private/helpers.c.generated.h /Users/George/Documents/Programs/C/neovim/include/api/private/helpers.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/api/private/helpers.i
 
 include/api/private/helpers.h.generated.h: src/nvim/auto/api/private/helpers.c.generated.h
@@ -911,9 +881,9 @@ include/api/private/helpers.h.generated.h: src/nvim/auto/api/private/helpers.c.g
 
 src/nvim/auto/msgpack_rpc/channel.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/msgpack_rpc/channel.c.generated.h: src/nvim/msgpack_rpc/channel.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_87)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/msgpack_rpc/channel.c.generated.h, ../../include/msgpack_rpc/channel.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/channel.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/channel.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/channel.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/channel.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/channel.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/channel.c.generated.h /Users/George/Documents/Programs/C/neovim/include/msgpack_rpc/channel.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/channel.i
 
 include/msgpack_rpc/channel.h.generated.h: src/nvim/auto/msgpack_rpc/channel.c.generated.h
@@ -921,9 +891,9 @@ include/msgpack_rpc/channel.h.generated.h: src/nvim/auto/msgpack_rpc/channel.c.g
 
 src/nvim/auto/msgpack_rpc/helpers.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/msgpack_rpc/helpers.c.generated.h: src/nvim/msgpack_rpc/helpers.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_88)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/msgpack_rpc/helpers.c.generated.h, ../../include/msgpack_rpc/helpers.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/helpers.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/helpers.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/helpers.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/helpers.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/helpers.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/helpers.c.generated.h /Users/George/Documents/Programs/C/neovim/include/msgpack_rpc/helpers.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/helpers.i
 
 include/msgpack_rpc/helpers.h.generated.h: src/nvim/auto/msgpack_rpc/helpers.c.generated.h
@@ -931,9 +901,9 @@ include/msgpack_rpc/helpers.h.generated.h: src/nvim/auto/msgpack_rpc/helpers.c.g
 
 src/nvim/auto/msgpack_rpc/remote_ui.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/msgpack_rpc/remote_ui.c.generated.h: src/nvim/msgpack_rpc/remote_ui.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_89)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/msgpack_rpc/remote_ui.c.generated.h, ../../include/msgpack_rpc/remote_ui.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/remote_ui.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/remote_ui.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/remote_ui.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/remote_ui.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/remote_ui.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/remote_ui.c.generated.h /Users/George/Documents/Programs/C/neovim/include/msgpack_rpc/remote_ui.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/remote_ui.i
 
 include/msgpack_rpc/remote_ui.h.generated.h: src/nvim/auto/msgpack_rpc/remote_ui.c.generated.h
@@ -941,29 +911,149 @@ include/msgpack_rpc/remote_ui.h.generated.h: src/nvim/auto/msgpack_rpc/remote_ui
 
 src/nvim/auto/msgpack_rpc/server.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/msgpack_rpc/server.c.generated.h: src/nvim/msgpack_rpc/server.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_90)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/msgpack_rpc/server.c.generated.h, ../../include/msgpack_rpc/server.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/server.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/server.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/server.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/server.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/server.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/server.c.generated.h /Users/George/Documents/Programs/C/neovim/include/msgpack_rpc/server.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_rpc/server.i
 
 include/msgpack_rpc/server.h.generated.h: src/nvim/auto/msgpack_rpc/server.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/msgpack_rpc/server.h.generated.h
 
+src/nvim/auto/tui/input.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/tui/input.c.generated.h: src/nvim/tui/input.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_88)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/tui/input.c.generated.h, ../../include/tui/input.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/tui/input.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tui/input.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/tui/input.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tui/input.c.generated.h /Users/George/Documents/Programs/C/neovim/include/tui/input.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tui/input.i
+
+include/tui/input.h.generated.h: src/nvim/auto/tui/input.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/tui/input.h.generated.h
+
 src/nvim/auto/tui/tui.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/tui/tui.c.generated.h: src/nvim/tui/tui.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_91)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_89)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/tui/tui.c.generated.h, ../../include/tui/tui.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/tui/tui.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tui/tui.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/tui/tui.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tui/tui.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/tui/tui.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tui/tui.c.generated.h /Users/George/Documents/Programs/C/neovim/include/tui/tui.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/tui/tui.i
 
 include/tui/tui.h.generated.h: src/nvim/auto/tui/tui.c.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate include/tui/tui.h.generated.h
 
+src/nvim/auto/event/libuv_process.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/libuv_process.c.generated.h: src/nvim/event/libuv_process.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_90)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/libuv_process.c.generated.h, ../../include/event/libuv_process.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/libuv_process.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/libuv_process.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/libuv_process.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/libuv_process.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/libuv_process.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/libuv_process.i
+
+include/event/libuv_process.h.generated.h: src/nvim/auto/event/libuv_process.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/libuv_process.h.generated.h
+
+src/nvim/auto/event/loop.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/loop.c.generated.h: src/nvim/event/loop.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_91)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/loop.c.generated.h, ../../include/event/loop.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/loop.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/loop.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/loop.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/loop.i
+
+include/event/loop.h.generated.h: src/nvim/auto/event/loop.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/loop.h.generated.h
+
+src/nvim/auto/event/process.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/process.c.generated.h: src/nvim/event/process.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_92)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/process.c.generated.h, ../../include/event/process.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/process.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/process.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/process.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/process.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/process.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/process.i
+
+include/event/process.h.generated.h: src/nvim/auto/event/process.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/process.h.generated.h
+
+src/nvim/auto/event/pty_process.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/pty_process.c.generated.h: src/nvim/event/pty_process.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_93)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/pty_process.c.generated.h, ../../include/event/pty_process.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/pty_process.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/pty_process.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/pty_process.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/pty_process.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/pty_process.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/pty_process.i
+
+include/event/pty_process.h.generated.h: src/nvim/auto/event/pty_process.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/pty_process.h.generated.h
+
+src/nvim/auto/event/queue.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/queue.c.generated.h: src/nvim/event/queue.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_94)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/queue.c.generated.h, ../../include/event/queue.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/queue.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/queue.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/queue.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/queue.i
+
+include/event/queue.h.generated.h: src/nvim/auto/event/queue.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/queue.h.generated.h
+
+src/nvim/auto/event/rstream.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/rstream.c.generated.h: src/nvim/event/rstream.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_95)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/rstream.c.generated.h, ../../include/event/rstream.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/rstream.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/rstream.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/rstream.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/rstream.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/rstream.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/rstream.i
+
+include/event/rstream.h.generated.h: src/nvim/auto/event/rstream.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/rstream.h.generated.h
+
+src/nvim/auto/event/signal.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/signal.c.generated.h: src/nvim/event/signal.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_96)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/signal.c.generated.h, ../../include/event/signal.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/signal.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/signal.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/signal.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/signal.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/signal.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/signal.i
+
+include/event/signal.h.generated.h: src/nvim/auto/event/signal.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/signal.h.generated.h
+
+src/nvim/auto/event/socket.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/socket.c.generated.h: src/nvim/event/socket.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_97)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/socket.c.generated.h, ../../include/event/socket.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/socket.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/socket.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/socket.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/socket.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/socket.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/socket.i
+
+include/event/socket.h.generated.h: src/nvim/auto/event/socket.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/socket.h.generated.h
+
+src/nvim/auto/event/stream.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/stream.c.generated.h: src/nvim/event/stream.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_98)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/stream.c.generated.h, ../../include/event/stream.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/stream.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/stream.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/stream.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/stream.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/stream.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/stream.i
+
+include/event/stream.h.generated.h: src/nvim/auto/event/stream.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/stream.h.generated.h
+
+src/nvim/auto/event/time.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/time.c.generated.h: src/nvim/event/time.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_99)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/time.c.generated.h, ../../include/event/time.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/time.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/time.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/time.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/time.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/time.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/time.i
+
+include/event/time.h.generated.h: src/nvim/auto/event/time.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/time.h.generated.h
+
+src/nvim/auto/event/wstream.c.generated.h: scripts/gendeclarations.lua
+src/nvim/auto/event/wstream.c.generated.h: src/nvim/event/wstream.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_100)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/event/wstream.c.generated.h, ../../include/event/wstream.h.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/event/wstream.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/wstream.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/event/wstream.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/wstream.c.generated.h /Users/George/Documents/Programs/C/neovim/include/event/wstream.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/event/wstream.i
+
+include/event/wstream.h.generated.h: src/nvim/auto/event/wstream.c.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate include/event/wstream.h.generated.h
+
 src/nvim/auto/regexp_nfa.c.generated.h: scripts/gendeclarations.lua
 src/nvim/auto/regexp_nfa.c.generated.h: src/nvim/regexp_nfa.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_92)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_101)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/regexp_nfa.c.generated.h, ../../include/regexp_nfa.h.generated.h"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/regexp_nfa.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -E -Wconversion
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc /Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c -E -o /Users/George/Documents/Programs/C/neovim/src/nvim/auto/regexp_nfa.i -DHAVE_CONFIG_H -DDO_NOT_DEFINE_EMPTY_ATTRIBUTES -I/Users/George/Documents/Programs/C/neovim/config -I/Users/George/Documents/Programs/C/neovim/src -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include/luajit-2.0 -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Users/George/Documents/Programs/C/neovim/.deps/usr/include -I/Library/Frameworks/R.framework/Headers -I/opt/local/include -I/Users/George/Documents/Programs/C/neovim/src/nvim/auto -I/Users/George/Documents/Programs/C/neovim/include -g -Wconversion -Wconversion
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gendeclarations.lua /Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/regexp_nfa.c.generated.h /Users/George/Documents/Programs/C/neovim/include/regexp_nfa.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/regexp_nfa.i
 
 include/regexp_nfa.h.generated.h: src/nvim/auto/regexp_nfa.c.generated.h
@@ -983,22 +1073,45 @@ src/nvim/auto/msgpack_dispatch.c: src/nvim/msgpack_rpc/helpers.h
 src/nvim/auto/msgpack_dispatch.c: src/nvim/msgpack_rpc/remote_ui.h
 src/nvim/auto/msgpack_dispatch.c: src/nvim/msgpack_rpc/server.h
 src/nvim/auto/msgpack_dispatch.c: scripts/msgpack-gen.lua
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_93)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_102)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/msgpack_dispatch.c"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/msgpack-gen.lua /Users/George/Documents/Programs/C/neovim/src/nvim/api/buffer.h /Users/George/Documents/Programs/C/neovim/src/nvim/api/tabpage.h /Users/George/Documents/Programs/C/neovim/src/nvim/api/vim.h /Users/George/Documents/Programs/C/neovim/src/nvim/api/window.h /Users/George/Documents/Programs/C/neovim/include/api/buffer.h.generated.h /Users/George/Documents/Programs/C/neovim/include/api/tabpage.h.generated.h /Users/George/Documents/Programs/C/neovim/include/api/vim.h.generated.h /Users/George/Documents/Programs/C/neovim/include/api/window.h.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_dispatch.c
 
 include/ex_cmds_enum.generated.h: scripts/genex_cmds.lua
 include/ex_cmds_enum.generated.h: src/nvim/ex_cmds.lua
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_94)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_103)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../../include/ex_cmds_enum.generated.h, auto/ex_cmds_defs.generated.h"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/genex_cmds.lua /Users/George/Documents/Programs/C/neovim/src/nvim /Users/George/Documents/Programs/C/neovim/include /Users/George/Documents/Programs/C/neovim/src/nvim/auto
 
 src/nvim/auto/ex_cmds_defs.generated.h: include/ex_cmds_enum.generated.h
 	@$(CMAKE_COMMAND) -E touch_nocreate src/nvim/auto/ex_cmds_defs.generated.h
 
+include/auevents_enum.generated.h: scripts/gen_events.lua
+include/auevents_enum.generated.h: src/nvim/auevents.lua
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_104)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../../include/auevents_enum.generated.h, auto/auevents_name_map.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/gen_events.lua /Users/George/Documents/Programs/C/neovim/src/nvim /Users/George/Documents/Programs/C/neovim/include/auevents_enum.generated.h /Users/George/Documents/Programs/C/neovim/src/nvim/auto/auevents_name_map.generated.h
+
+src/nvim/auto/auevents_name_map.generated.h: include/auevents_enum.generated.h
+	@$(CMAKE_COMMAND) -E touch_nocreate src/nvim/auto/auevents_name_map.generated.h
+
+src/nvim/auto/options.generated.h: scripts/genoptions.lua
+src/nvim/auto/options.generated.h: src/nvim/options.lua
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_105)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/options.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/genoptions.lua /Users/George/Documents/Programs/C/neovim/src/nvim /Users/George/Documents/Programs/C/neovim/src/nvim/auto/options.generated.h
+
+src/nvim/auto/unicode_tables.generated.h: scripts/genunicodetables.lua
+src/nvim/auto/unicode_tables.generated.h: unicode/UnicodeData.txt
+src/nvim/auto/unicode_tables.generated.h: unicode/CaseFolding.txt
+src/nvim/auto/unicode_tables.generated.h: unicode/EastAsianWidth.txt
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_106)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating auto/unicode_tables.generated.h"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && ../../.deps/usr/bin/luajit /Users/George/Documents/Programs/C/neovim/scripts/genunicodetables.lua /Users/George/Documents/Programs/C/neovim/unicode/UnicodeData.txt /Users/George/Documents/Programs/C/neovim/unicode/CaseFolding.txt /Users/George/Documents/Programs/C/neovim/unicode/EastAsianWidth.txt /Users/George/Documents/Programs/C/neovim/src/nvim/auto/unicode_tables.generated.h
+
 src/nvim/CMakeFiles/libnvim.dir/__/__/config/auto/pathdef.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/__/__/config/auto/pathdef.c.o: config/auto/pathdef.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_95)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_107)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/__/__/config/auto/pathdef.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/__/__/config/auto/pathdef.c.o   -c /Users/George/Documents/Programs/C/neovim/config/auto/pathdef.c
 
@@ -1021,7 +1134,7 @@ src/nvim/CMakeFiles/libnvim.dir/__/__/config/auto/pathdef.c.o.provides.build: sr
 
 src/nvim/CMakeFiles/libnvim.dir/auto/msgpack_dispatch.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/auto/msgpack_dispatch.c.o: src/nvim/auto/msgpack_dispatch.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_96)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_108)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/auto/msgpack_dispatch.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/auto/msgpack_dispatch.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/auto/msgpack_dispatch.c
 
@@ -1044,7 +1157,7 @@ src/nvim/CMakeFiles/libnvim.dir/auto/msgpack_dispatch.c.o.provides.build: src/nv
 
 src/nvim/CMakeFiles/libnvim.dir/arabic.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/arabic.c.o: src/nvim/arabic.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_97)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_109)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/arabic.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/arabic.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/arabic.c
 
@@ -1067,7 +1180,7 @@ src/nvim/CMakeFiles/libnvim.dir/arabic.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/buffer.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/buffer.c.o: src/nvim/buffer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_98)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_110)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/buffer.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/buffer.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/buffer.c
 
@@ -1090,7 +1203,7 @@ src/nvim/CMakeFiles/libnvim.dir/buffer.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/charset.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/charset.c.o: src/nvim/charset.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_99)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_111)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/charset.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/charset.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/charset.c
 
@@ -1113,7 +1226,7 @@ src/nvim/CMakeFiles/libnvim.dir/charset.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/cursor.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/cursor.c.o: src/nvim/cursor.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_100)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_112)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/cursor.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/cursor.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/cursor.c
 
@@ -1136,7 +1249,7 @@ src/nvim/CMakeFiles/libnvim.dir/cursor.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/cursor_shape.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/cursor_shape.c.o: src/nvim/cursor_shape.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_101)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_113)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/cursor_shape.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/cursor_shape.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/cursor_shape.c
 
@@ -1159,7 +1272,7 @@ src/nvim/CMakeFiles/libnvim.dir/cursor_shape.c.o.provides.build: src/nvim/CMakeF
 
 src/nvim/CMakeFiles/libnvim.dir/diff.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/diff.c.o: src/nvim/diff.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_102)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_114)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/diff.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/diff.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/diff.c
 
@@ -1182,7 +1295,7 @@ src/nvim/CMakeFiles/libnvim.dir/diff.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/digraph.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/digraph.c.o: src/nvim/digraph.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_103)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_115)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/digraph.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/digraph.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/digraph.c
 
@@ -1205,7 +1318,7 @@ src/nvim/CMakeFiles/libnvim.dir/digraph.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/edit.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/edit.c.o: src/nvim/edit.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_104)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_116)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/edit.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/edit.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/edit.c
 
@@ -1228,7 +1341,7 @@ src/nvim/CMakeFiles/libnvim.dir/edit.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/eval.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/eval.c.o: src/nvim/eval.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_105)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_117)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/eval.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/eval.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/eval.c
 
@@ -1251,7 +1364,7 @@ src/nvim/CMakeFiles/libnvim.dir/eval.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/ex_cmds.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/ex_cmds.c.o: src/nvim/ex_cmds.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_106)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_118)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ex_cmds.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/ex_cmds.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.c
 
@@ -1274,7 +1387,7 @@ src/nvim/CMakeFiles/libnvim.dir/ex_cmds.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/ex_cmds2.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/ex_cmds2.c.o: src/nvim/ex_cmds2.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_107)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_119)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ex_cmds2.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/ex_cmds2.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.c
 
@@ -1297,7 +1410,7 @@ src/nvim/CMakeFiles/libnvim.dir/ex_cmds2.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/ex_docmd.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/ex_docmd.c.o: src/nvim/ex_docmd.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_108)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_120)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ex_docmd.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/ex_docmd.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ex_docmd.c
 
@@ -1320,7 +1433,7 @@ src/nvim/CMakeFiles/libnvim.dir/ex_docmd.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/ex_eval.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/ex_eval.c.o: src/nvim/ex_eval.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_109)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_121)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ex_eval.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/ex_eval.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ex_eval.c
 
@@ -1343,7 +1456,7 @@ src/nvim/CMakeFiles/libnvim.dir/ex_eval.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/ex_getln.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/ex_getln.c.o: src/nvim/ex_getln.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_110)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_122)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ex_getln.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/ex_getln.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.c
 
@@ -1366,7 +1479,7 @@ src/nvim/CMakeFiles/libnvim.dir/ex_getln.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/farsi.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/farsi.c.o: src/nvim/farsi.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_111)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_123)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/farsi.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/farsi.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/farsi.c
 
@@ -1389,7 +1502,7 @@ src/nvim/CMakeFiles/libnvim.dir/farsi.c.o.provides.build: src/nvim/CMakeFiles/li
 
 src/nvim/CMakeFiles/libnvim.dir/file_search.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/file_search.c.o: src/nvim/file_search.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_112)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_124)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/file_search.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/file_search.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/file_search.c
 
@@ -1412,7 +1525,7 @@ src/nvim/CMakeFiles/libnvim.dir/file_search.c.o.provides.build: src/nvim/CMakeFi
 
 src/nvim/CMakeFiles/libnvim.dir/fileio.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/fileio.c.o: src/nvim/fileio.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_113)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_125)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/fileio.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/fileio.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/fileio.c
 
@@ -1435,7 +1548,7 @@ src/nvim/CMakeFiles/libnvim.dir/fileio.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/fold.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/fold.c.o: src/nvim/fold.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_114)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_126)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/fold.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/fold.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/fold.c
 
@@ -1458,7 +1571,7 @@ src/nvim/CMakeFiles/libnvim.dir/fold.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/garray.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/garray.c.o: src/nvim/garray.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_115)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_127)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/garray.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/garray.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/garray.c
 
@@ -1481,7 +1594,7 @@ src/nvim/CMakeFiles/libnvim.dir/garray.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/getchar.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/getchar.c.o: src/nvim/getchar.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_116)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_128)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/getchar.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/getchar.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/getchar.c
 
@@ -1504,7 +1617,7 @@ src/nvim/CMakeFiles/libnvim.dir/getchar.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/hardcopy.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/hardcopy.c.o: src/nvim/hardcopy.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_117)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_129)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/hardcopy.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/hardcopy.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/hardcopy.c
 
@@ -1527,7 +1640,7 @@ src/nvim/CMakeFiles/libnvim.dir/hardcopy.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/hashtab.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/hashtab.c.o: src/nvim/hashtab.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_118)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_130)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/hashtab.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/hashtab.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.c
 
@@ -1550,17 +1663,17 @@ src/nvim/CMakeFiles/libnvim.dir/hashtab.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/if_cscope.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/if_cscope.c.o: src/nvim/if_cscope.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_119)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_131)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/if_cscope.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/if_cscope.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/if_cscope.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c
 
 src/nvim/CMakeFiles/libnvim.dir/if_cscope.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/if_cscope.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -E /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c > CMakeFiles/libnvim.dir/if_cscope.c.i
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c > CMakeFiles/libnvim.dir/if_cscope.c.i
 
 src/nvim/CMakeFiles/libnvim.dir/if_cscope.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/if_cscope.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -S /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c -o CMakeFiles/libnvim.dir/if_cscope.c.s
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.c -o CMakeFiles/libnvim.dir/if_cscope.c.s
 
 src/nvim/CMakeFiles/libnvim.dir/if_cscope.c.o.requires:
 .PHONY : src/nvim/CMakeFiles/libnvim.dir/if_cscope.c.o.requires
@@ -1573,7 +1686,7 @@ src/nvim/CMakeFiles/libnvim.dir/if_cscope.c.o.provides.build: src/nvim/CMakeFile
 
 src/nvim/CMakeFiles/libnvim.dir/indent.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/indent.c.o: src/nvim/indent.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_120)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_132)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/indent.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/indent.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/indent.c
 
@@ -1596,7 +1709,7 @@ src/nvim/CMakeFiles/libnvim.dir/indent.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/indent_c.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/indent_c.c.o: src/nvim/indent_c.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_121)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_133)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/indent_c.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/indent_c.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/indent_c.c
 
@@ -1619,7 +1732,7 @@ src/nvim/CMakeFiles/libnvim.dir/indent_c.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/keymap.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/keymap.c.o: src/nvim/keymap.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_122)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_134)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/keymap.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/keymap.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/keymap.c
 
@@ -1642,7 +1755,7 @@ src/nvim/CMakeFiles/libnvim.dir/keymap.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/log.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/log.c.o: src/nvim/log.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_123)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_135)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/log.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/log.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/log.c
 
@@ -1665,7 +1778,7 @@ src/nvim/CMakeFiles/libnvim.dir/log.c.o.provides.build: src/nvim/CMakeFiles/libn
 
 src/nvim/CMakeFiles/libnvim.dir/main.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/main.c.o: src/nvim/main.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_124)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_136)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/main.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/main.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/main.c
 
@@ -1688,7 +1801,7 @@ src/nvim/CMakeFiles/libnvim.dir/main.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/map.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/map.c.o: src/nvim/map.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_125)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_137)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/map.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/map.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/map.c
 
@@ -1711,7 +1824,7 @@ src/nvim/CMakeFiles/libnvim.dir/map.c.o.provides.build: src/nvim/CMakeFiles/libn
 
 src/nvim/CMakeFiles/libnvim.dir/mark.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/mark.c.o: src/nvim/mark.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_126)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_138)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/mark.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/mark.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/mark.c
 
@@ -1734,7 +1847,7 @@ src/nvim/CMakeFiles/libnvim.dir/mark.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/mbyte.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/mbyte.c.o: src/nvim/mbyte.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_127)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_139)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/mbyte.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/mbyte.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/mbyte.c
 
@@ -1757,7 +1870,7 @@ src/nvim/CMakeFiles/libnvim.dir/mbyte.c.o.provides.build: src/nvim/CMakeFiles/li
 
 src/nvim/CMakeFiles/libnvim.dir/memfile.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/memfile.c.o: src/nvim/memfile.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_128)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_140)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/memfile.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/memfile.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/memfile.c
 
@@ -1780,7 +1893,7 @@ src/nvim/CMakeFiles/libnvim.dir/memfile.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/memline.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/memline.c.o: src/nvim/memline.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_129)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_141)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/memline.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/memline.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/memline.c
 
@@ -1803,7 +1916,7 @@ src/nvim/CMakeFiles/libnvim.dir/memline.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/memory.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/memory.c.o: src/nvim/memory.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_130)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_142)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/memory.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/memory.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/memory.c
 
@@ -1826,7 +1939,7 @@ src/nvim/CMakeFiles/libnvim.dir/memory.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/menu.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/menu.c.o: src/nvim/menu.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_131)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_143)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/menu.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/menu.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/menu.c
 
@@ -1849,7 +1962,7 @@ src/nvim/CMakeFiles/libnvim.dir/menu.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/message.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/message.c.o: src/nvim/message.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_132)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_144)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/message.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/message.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/message.c
 
@@ -1872,7 +1985,7 @@ src/nvim/CMakeFiles/libnvim.dir/message.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/misc1.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/misc1.c.o: src/nvim/misc1.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_133)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_145)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/misc1.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/misc1.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/misc1.c
 
@@ -1895,7 +2008,7 @@ src/nvim/CMakeFiles/libnvim.dir/misc1.c.o.provides.build: src/nvim/CMakeFiles/li
 
 src/nvim/CMakeFiles/libnvim.dir/misc2.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/misc2.c.o: src/nvim/misc2.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_134)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_146)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/misc2.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/misc2.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/misc2.c
 
@@ -1918,7 +2031,7 @@ src/nvim/CMakeFiles/libnvim.dir/misc2.c.o.provides.build: src/nvim/CMakeFiles/li
 
 src/nvim/CMakeFiles/libnvim.dir/mouse.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/mouse.c.o: src/nvim/mouse.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_135)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_147)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/mouse.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/mouse.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/mouse.c
 
@@ -1941,7 +2054,7 @@ src/nvim/CMakeFiles/libnvim.dir/mouse.c.o.provides.build: src/nvim/CMakeFiles/li
 
 src/nvim/CMakeFiles/libnvim.dir/move.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/move.c.o: src/nvim/move.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_136)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_148)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/move.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/move.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/move.c
 
@@ -1964,7 +2077,7 @@ src/nvim/CMakeFiles/libnvim.dir/move.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/normal.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/normal.c.o: src/nvim/normal.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_137)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_149)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/normal.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/normal.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/normal.c
 
@@ -1987,7 +2100,7 @@ src/nvim/CMakeFiles/libnvim.dir/normal.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/ops.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/ops.c.o: src/nvim/ops.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_138)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_150)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ops.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/ops.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ops.c
 
@@ -2010,7 +2123,7 @@ src/nvim/CMakeFiles/libnvim.dir/ops.c.o.provides.build: src/nvim/CMakeFiles/libn
 
 src/nvim/CMakeFiles/libnvim.dir/option.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/option.c.o: src/nvim/option.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_139)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_151)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/option.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/option.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/option.c
 
@@ -2033,7 +2146,7 @@ src/nvim/CMakeFiles/libnvim.dir/option.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/os_unix.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os_unix.c.o: src/nvim/os_unix.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_140)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_152)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os_unix.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os_unix.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os_unix.c
 
@@ -2056,7 +2169,7 @@ src/nvim/CMakeFiles/libnvim.dir/os_unix.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/path.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/path.c.o: src/nvim/path.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_141)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_153)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/path.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/path.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/path.c
 
@@ -2079,7 +2192,7 @@ src/nvim/CMakeFiles/libnvim.dir/path.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/popupmnu.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/popupmnu.c.o: src/nvim/popupmnu.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_142)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_154)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/popupmnu.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/popupmnu.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/popupmnu.c
 
@@ -2102,7 +2215,7 @@ src/nvim/CMakeFiles/libnvim.dir/popupmnu.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/profile.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/profile.c.o: src/nvim/profile.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_143)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_155)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/profile.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/profile.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/profile.c
 
@@ -2125,7 +2238,7 @@ src/nvim/CMakeFiles/libnvim.dir/profile.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/quickfix.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/quickfix.c.o: src/nvim/quickfix.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_144)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_156)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/quickfix.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/quickfix.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/quickfix.c
 
@@ -2148,7 +2261,7 @@ src/nvim/CMakeFiles/libnvim.dir/quickfix.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/rbuffer.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/rbuffer.c.o: src/nvim/rbuffer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_145)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_157)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/rbuffer.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/rbuffer.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/rbuffer.c
 
@@ -2171,7 +2284,7 @@ src/nvim/CMakeFiles/libnvim.dir/rbuffer.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/regexp.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/regexp.c.o: src/nvim/regexp.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_146)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_158)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/regexp.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/regexp.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/regexp.c
 
@@ -2194,7 +2307,7 @@ src/nvim/CMakeFiles/libnvim.dir/regexp.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/screen.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/screen.c.o: src/nvim/screen.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_147)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_159)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/screen.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/screen.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/screen.c
 
@@ -2217,7 +2330,7 @@ src/nvim/CMakeFiles/libnvim.dir/screen.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/search.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/search.c.o: src/nvim/search.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_148)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_160)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/search.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/search.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/search.c
 
@@ -2240,7 +2353,7 @@ src/nvim/CMakeFiles/libnvim.dir/search.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/sha256.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/sha256.c.o: src/nvim/sha256.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_149)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_161)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/sha256.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/sha256.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/sha256.c
 
@@ -2261,9 +2374,32 @@ src/nvim/CMakeFiles/libnvim.dir/sha256.c.o.provides: src/nvim/CMakeFiles/libnvim
 
 src/nvim/CMakeFiles/libnvim.dir/sha256.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/sha256.c.o
 
+src/nvim/CMakeFiles/libnvim.dir/shada.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/shada.c.o: src/nvim/shada.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_162)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/shada.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/shada.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/shada.c
+
+src/nvim/CMakeFiles/libnvim.dir/shada.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/shada.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/shada.c > CMakeFiles/libnvim.dir/shada.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/shada.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/shada.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/shada.c -o CMakeFiles/libnvim.dir/shada.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/shada.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/shada.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/shada.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/shada.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/shada.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/shada.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/shada.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/shada.c.o
+
 src/nvim/CMakeFiles/libnvim.dir/spell.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/spell.c.o: src/nvim/spell.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_150)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_163)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/spell.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/spell.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/spell.c
 
@@ -2284,9 +2420,32 @@ src/nvim/CMakeFiles/libnvim.dir/spell.c.o.provides: src/nvim/CMakeFiles/libnvim.
 
 src/nvim/CMakeFiles/libnvim.dir/spell.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/spell.c.o
 
+src/nvim/CMakeFiles/libnvim.dir/state.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/state.c.o: src/nvim/state.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_164)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/state.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/state.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/state.c
+
+src/nvim/CMakeFiles/libnvim.dir/state.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/state.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/state.c > CMakeFiles/libnvim.dir/state.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/state.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/state.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/state.c -o CMakeFiles/libnvim.dir/state.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/state.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/state.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/state.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/state.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/state.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/state.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/state.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/state.c.o
+
 src/nvim/CMakeFiles/libnvim.dir/strings.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/strings.c.o: src/nvim/strings.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_151)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_165)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/strings.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/strings.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/strings.c
 
@@ -2309,7 +2468,7 @@ src/nvim/CMakeFiles/libnvim.dir/strings.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/syntax.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/syntax.c.o: src/nvim/syntax.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_152)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_166)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/syntax.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/syntax.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/syntax.c
 
@@ -2332,7 +2491,7 @@ src/nvim/CMakeFiles/libnvim.dir/syntax.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/tag.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/tag.c.o: src/nvim/tag.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_153)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_167)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/tag.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/tag.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/tag.c
 
@@ -2355,7 +2514,7 @@ src/nvim/CMakeFiles/libnvim.dir/tag.c.o.provides.build: src/nvim/CMakeFiles/libn
 
 src/nvim/CMakeFiles/libnvim.dir/tempfile.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/tempfile.c.o: src/nvim/tempfile.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_154)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_168)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/tempfile.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/tempfile.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/tempfile.c
 
@@ -2378,7 +2537,7 @@ src/nvim/CMakeFiles/libnvim.dir/tempfile.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/terminal.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/terminal.c.o: src/nvim/terminal.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_155)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_169)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/terminal.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/terminal.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/terminal.c
 
@@ -2399,9 +2558,32 @@ src/nvim/CMakeFiles/libnvim.dir/terminal.c.o.provides: src/nvim/CMakeFiles/libnv
 
 src/nvim/CMakeFiles/libnvim.dir/terminal.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/terminal.c.o
 
+src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o: src/nvim/ugrid.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_170)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/ugrid.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ugrid.c
+
+src/nvim/CMakeFiles/libnvim.dir/ugrid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/ugrid.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/ugrid.c > CMakeFiles/libnvim.dir/ugrid.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/ugrid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/ugrid.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/ugrid.c -o CMakeFiles/libnvim.dir/ugrid.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o
+
 src/nvim/CMakeFiles/libnvim.dir/ui.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/ui.c.o: src/nvim/ui.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_156)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_171)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ui.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/ui.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ui.c
 
@@ -2422,9 +2604,32 @@ src/nvim/CMakeFiles/libnvim.dir/ui.c.o.provides: src/nvim/CMakeFiles/libnvim.dir
 
 src/nvim/CMakeFiles/libnvim.dir/ui.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/ui.c.o
 
+src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o: src/nvim/ui_bridge.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_172)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/ui_bridge.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/ui_bridge.c
+
+src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/ui_bridge.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/ui_bridge.c > CMakeFiles/libnvim.dir/ui_bridge.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/ui_bridge.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/ui_bridge.c -o CMakeFiles/libnvim.dir/ui_bridge.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o
+
 src/nvim/CMakeFiles/libnvim.dir/undo.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/undo.c.o: src/nvim/undo.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_157)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_173)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/undo.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/undo.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/undo.c
 
@@ -2447,7 +2652,7 @@ src/nvim/CMakeFiles/libnvim.dir/undo.c.o.provides.build: src/nvim/CMakeFiles/lib
 
 src/nvim/CMakeFiles/libnvim.dir/version.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/version.c.o: src/nvim/version.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_158)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_174)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/version.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/version.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/version.c
 
@@ -2470,7 +2675,7 @@ src/nvim/CMakeFiles/libnvim.dir/version.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/window.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/window.c.o: src/nvim/window.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_159)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_175)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/window.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS)  -Wno-conversion -o CMakeFiles/libnvim.dir/window.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/window.c
 
@@ -2493,7 +2698,7 @@ src/nvim/CMakeFiles/libnvim.dir/window.c.o.provides.build: src/nvim/CMakeFiles/l
 
 src/nvim/CMakeFiles/libnvim.dir/os/dl.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/dl.c.o: src/nvim/os/dl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_160)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_176)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/dl.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/dl.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/dl.c
 
@@ -2516,7 +2721,7 @@ src/nvim/CMakeFiles/libnvim.dir/os/dl.c.o.provides.build: src/nvim/CMakeFiles/li
 
 src/nvim/CMakeFiles/libnvim.dir/os/env.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/env.c.o: src/nvim/os/env.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_161)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_177)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/env.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/env.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/env.c
 
@@ -2537,32 +2742,9 @@ src/nvim/CMakeFiles/libnvim.dir/os/env.c.o.provides: src/nvim/CMakeFiles/libnvim
 
 src/nvim/CMakeFiles/libnvim.dir/os/env.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/env.c.o
 
-src/nvim/CMakeFiles/libnvim.dir/os/event.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
-src/nvim/CMakeFiles/libnvim.dir/os/event.c.o: src/nvim/os/event.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_162)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/event.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/event.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/event.c
-
-src/nvim/CMakeFiles/libnvim.dir/os/event.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/event.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/event.c > CMakeFiles/libnvim.dir/os/event.c.i
-
-src/nvim/CMakeFiles/libnvim.dir/os/event.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/event.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/event.c -o CMakeFiles/libnvim.dir/os/event.c.s
-
-src/nvim/CMakeFiles/libnvim.dir/os/event.c.o.requires:
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/event.c.o.requires
-
-src/nvim/CMakeFiles/libnvim.dir/os/event.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/event.c.o.requires
-	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/event.c.o.provides.build
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/event.c.o.provides
-
-src/nvim/CMakeFiles/libnvim.dir/os/event.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/event.c.o
-
 src/nvim/CMakeFiles/libnvim.dir/os/fs.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/fs.c.o: src/nvim/os/fs.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_163)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_178)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/fs.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/fs.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/fs.c
 
@@ -2585,7 +2767,7 @@ src/nvim/CMakeFiles/libnvim.dir/os/fs.c.o.provides.build: src/nvim/CMakeFiles/li
 
 src/nvim/CMakeFiles/libnvim.dir/os/input.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/input.c.o: src/nvim/os/input.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_164)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_179)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/input.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/input.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/input.c
 
@@ -2606,32 +2788,9 @@ src/nvim/CMakeFiles/libnvim.dir/os/input.c.o.provides: src/nvim/CMakeFiles/libnv
 
 src/nvim/CMakeFiles/libnvim.dir/os/input.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/input.c.o
 
-src/nvim/CMakeFiles/libnvim.dir/os/job.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
-src/nvim/CMakeFiles/libnvim.dir/os/job.c.o: src/nvim/os/job.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_165)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/job.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/job.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/job.c
-
-src/nvim/CMakeFiles/libnvim.dir/os/job.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/job.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/job.c > CMakeFiles/libnvim.dir/os/job.c.i
-
-src/nvim/CMakeFiles/libnvim.dir/os/job.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/job.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/job.c -o CMakeFiles/libnvim.dir/os/job.c.s
-
-src/nvim/CMakeFiles/libnvim.dir/os/job.c.o.requires:
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/job.c.o.requires
-
-src/nvim/CMakeFiles/libnvim.dir/os/job.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/job.c.o.requires
-	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/job.c.o.provides.build
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/job.c.o.provides
-
-src/nvim/CMakeFiles/libnvim.dir/os/job.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/job.c.o
-
 src/nvim/CMakeFiles/libnvim.dir/os/mem.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/mem.c.o: src/nvim/os/mem.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_166)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_180)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/mem.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/mem.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/mem.c
 
@@ -2652,78 +2811,9 @@ src/nvim/CMakeFiles/libnvim.dir/os/mem.c.o.provides: src/nvim/CMakeFiles/libnvim
 
 src/nvim/CMakeFiles/libnvim.dir/os/mem.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/mem.c.o
 
-src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
-src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o: src/nvim/os/pipe_process.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_167)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/pipe_process.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/pipe_process.c
-
-src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/pipe_process.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/pipe_process.c > CMakeFiles/libnvim.dir/os/pipe_process.c.i
-
-src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/pipe_process.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/pipe_process.c -o CMakeFiles/libnvim.dir/os/pipe_process.c.s
-
-src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o.requires:
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o.requires
-
-src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o.requires
-	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o.provides.build
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o.provides
-
-src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o
-
-src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
-src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o: src/nvim/os/pty_process.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_168)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/pty_process.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/pty_process.c
-
-src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/pty_process.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/pty_process.c > CMakeFiles/libnvim.dir/os/pty_process.c.i
-
-src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/pty_process.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/pty_process.c -o CMakeFiles/libnvim.dir/os/pty_process.c.s
-
-src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o.requires:
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o.requires
-
-src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o.requires
-	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o.provides.build
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o.provides
-
-src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o
-
-src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
-src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o: src/nvim/os/rstream.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_169)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/rstream.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/rstream.c
-
-src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/rstream.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/rstream.c > CMakeFiles/libnvim.dir/os/rstream.c.i
-
-src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/rstream.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/rstream.c -o CMakeFiles/libnvim.dir/os/rstream.c.s
-
-src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o.requires:
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o.requires
-
-src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o.requires
-	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o.provides.build
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o.provides
-
-src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o
-
 src/nvim/CMakeFiles/libnvim.dir/os/shell.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/shell.c.o: src/nvim/os/shell.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_170)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_181)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/shell.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/shell.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/shell.c
 
@@ -2746,7 +2836,7 @@ src/nvim/CMakeFiles/libnvim.dir/os/shell.c.o.provides.build: src/nvim/CMakeFiles
 
 src/nvim/CMakeFiles/libnvim.dir/os/signal.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/signal.c.o: src/nvim/os/signal.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_171)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_182)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/signal.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/signal.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/signal.c
 
@@ -2767,32 +2857,32 @@ src/nvim/CMakeFiles/libnvim.dir/os/signal.c.o.provides: src/nvim/CMakeFiles/libn
 
 src/nvim/CMakeFiles/libnvim.dir/os/signal.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/signal.c.o
 
-src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
-src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o: src/nvim/os/stream.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_172)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/stream.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/stream.c
+src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o: src/nvim/os/stdpaths.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_183)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/stdpaths.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/stdpaths.c
 
-src/nvim/CMakeFiles/libnvim.dir/os/stream.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/stream.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/stream.c > CMakeFiles/libnvim.dir/os/stream.c.i
+src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/stdpaths.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/stdpaths.c > CMakeFiles/libnvim.dir/os/stdpaths.c.i
 
-src/nvim/CMakeFiles/libnvim.dir/os/stream.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/stream.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/stream.c -o CMakeFiles/libnvim.dir/os/stream.c.s
+src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/stdpaths.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/stdpaths.c -o CMakeFiles/libnvim.dir/os/stdpaths.c.s
 
-src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o.requires:
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o.requires
 
-src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o.requires
-	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o.provides.build
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o.provides
+src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o.provides
 
-src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o
+src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o
 
 src/nvim/CMakeFiles/libnvim.dir/os/time.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/time.c.o: src/nvim/os/time.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_173)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_184)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/time.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/time.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/time.c
 
@@ -2815,7 +2905,7 @@ src/nvim/CMakeFiles/libnvim.dir/os/time.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/os/users.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/os/users.c.o: src/nvim/os/users.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_174)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_185)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/users.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/users.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/users.c
 
@@ -2836,55 +2926,9 @@ src/nvim/CMakeFiles/libnvim.dir/os/users.c.o.provides: src/nvim/CMakeFiles/libnv
 
 src/nvim/CMakeFiles/libnvim.dir/os/users.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/users.c.o
 
-src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
-src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o: src/nvim/os/uv_helpers.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_175)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/uv_helpers.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/uv_helpers.c
-
-src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/uv_helpers.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/uv_helpers.c > CMakeFiles/libnvim.dir/os/uv_helpers.c.i
-
-src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/uv_helpers.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/uv_helpers.c -o CMakeFiles/libnvim.dir/os/uv_helpers.c.s
-
-src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o.requires:
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o.requires
-
-src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o.requires
-	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o.provides.build
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o.provides
-
-src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o
-
-src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
-src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o: src/nvim/os/wstream.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_176)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/os/wstream.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/os/wstream.c
-
-src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/os/wstream.c.i"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/os/wstream.c > CMakeFiles/libnvim.dir/os/wstream.c.i
-
-src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/os/wstream.c.s"
-	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/os/wstream.c -o CMakeFiles/libnvim.dir/os/wstream.c.s
-
-src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o.requires:
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o.requires
-
-src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o.requires
-	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o.provides.build
-.PHONY : src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o.provides
-
-src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o
-
 src/nvim/CMakeFiles/libnvim.dir/api/buffer.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/api/buffer.c.o: src/nvim/api/buffer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_177)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_186)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/api/buffer.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/api/buffer.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/api/buffer.c
 
@@ -2907,7 +2951,7 @@ src/nvim/CMakeFiles/libnvim.dir/api/buffer.c.o.provides.build: src/nvim/CMakeFil
 
 src/nvim/CMakeFiles/libnvim.dir/api/tabpage.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/api/tabpage.c.o: src/nvim/api/tabpage.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_178)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_187)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/api/tabpage.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/api/tabpage.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/api/tabpage.c
 
@@ -2930,7 +2974,7 @@ src/nvim/CMakeFiles/libnvim.dir/api/tabpage.c.o.provides.build: src/nvim/CMakeFi
 
 src/nvim/CMakeFiles/libnvim.dir/api/vim.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/api/vim.c.o: src/nvim/api/vim.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_179)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_188)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/api/vim.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/api/vim.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/api/vim.c
 
@@ -2953,7 +2997,7 @@ src/nvim/CMakeFiles/libnvim.dir/api/vim.c.o.provides.build: src/nvim/CMakeFiles/
 
 src/nvim/CMakeFiles/libnvim.dir/api/window.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/api/window.c.o: src/nvim/api/window.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_180)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_189)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/api/window.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/api/window.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/api/window.c
 
@@ -2976,7 +3020,7 @@ src/nvim/CMakeFiles/libnvim.dir/api/window.c.o.provides.build: src/nvim/CMakeFil
 
 src/nvim/CMakeFiles/libnvim.dir/api/private/handle.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/api/private/handle.c.o: src/nvim/api/private/handle.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_181)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_190)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/api/private/handle.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/api/private/handle.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/api/private/handle.c
 
@@ -2999,7 +3043,7 @@ src/nvim/CMakeFiles/libnvim.dir/api/private/handle.c.o.provides.build: src/nvim/
 
 src/nvim/CMakeFiles/libnvim.dir/api/private/helpers.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/api/private/helpers.c.o: src/nvim/api/private/helpers.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_182)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_191)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/api/private/helpers.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/api/private/helpers.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/api/private/helpers.c
 
@@ -3022,7 +3066,7 @@ src/nvim/CMakeFiles/libnvim.dir/api/private/helpers.c.o.provides.build: src/nvim
 
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/channel.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/channel.c.o: src/nvim/msgpack_rpc/channel.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_183)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_192)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/channel.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/msgpack_rpc/channel.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/channel.c
 
@@ -3045,7 +3089,7 @@ src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/channel.c.o.provides.build: src/nvim
 
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/helpers.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/helpers.c.o: src/nvim/msgpack_rpc/helpers.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_184)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_193)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/helpers.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/msgpack_rpc/helpers.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/helpers.c
 
@@ -3068,7 +3112,7 @@ src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/helpers.c.o.provides.build: src/nvim
 
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/remote_ui.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/remote_ui.c.o: src/nvim/msgpack_rpc/remote_ui.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_185)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_194)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/remote_ui.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/msgpack_rpc/remote_ui.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/remote_ui.c
 
@@ -3091,7 +3135,7 @@ src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/remote_ui.c.o.provides.build: src/nv
 
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o: src/nvim/msgpack_rpc/server.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_186)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_195)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/server.c
 
@@ -3112,9 +3156,32 @@ src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o.provides: src/nvim/CMakeF
 
 src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o
 
+src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o: src/nvim/tui/input.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_196)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/tui/input.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/tui/input.c
+
+src/nvim/CMakeFiles/libnvim.dir/tui/input.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/tui/input.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/tui/input.c > CMakeFiles/libnvim.dir/tui/input.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/tui/input.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/tui/input.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/tui/input.c -o CMakeFiles/libnvim.dir/tui/input.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o
+
 src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
 src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o: src/nvim/tui/tui.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_187)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_197)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o"
 	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/tui/tui.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/tui/tui.c
 
@@ -3134,6 +3201,259 @@ src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o.provides: src/nvim/CMakeFiles/libnvi
 .PHONY : src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o.provides
 
 src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o: src/nvim/event/libuv_process.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_198)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/libuv_process.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/libuv_process.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/libuv_process.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/libuv_process.c > CMakeFiles/libnvim.dir/event/libuv_process.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/libuv_process.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/libuv_process.c -o CMakeFiles/libnvim.dir/event/libuv_process.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o: src/nvim/event/loop.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_199)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/loop.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/loop.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/loop.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.c > CMakeFiles/libnvim.dir/event/loop.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/loop.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/loop.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.c -o CMakeFiles/libnvim.dir/event/loop.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/process.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/process.c.o: src/nvim/event/process.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_200)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/process.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/process.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/process.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/process.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/process.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/process.c > CMakeFiles/libnvim.dir/event/process.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/process.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/process.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/process.c -o CMakeFiles/libnvim.dir/event/process.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/process.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/process.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/process.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/process.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/process.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/process.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/process.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/process.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o: src/nvim/event/pty_process.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_201)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/pty_process.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/pty_process.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/pty_process.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/pty_process.c > CMakeFiles/libnvim.dir/event/pty_process.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/pty_process.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/pty_process.c -o CMakeFiles/libnvim.dir/event/pty_process.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o: src/nvim/event/queue.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_202)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/queue.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/queue.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.c > CMakeFiles/libnvim.dir/event/queue.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/queue.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/queue.c -o CMakeFiles/libnvim.dir/event/queue.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o: src/nvim/event/rstream.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_203)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/rstream.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/rstream.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/rstream.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/rstream.c > CMakeFiles/libnvim.dir/event/rstream.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/rstream.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/rstream.c -o CMakeFiles/libnvim.dir/event/rstream.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o: src/nvim/event/signal.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_204)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/signal.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/signal.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/signal.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/signal.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/signal.c > CMakeFiles/libnvim.dir/event/signal.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/signal.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/signal.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/signal.c -o CMakeFiles/libnvim.dir/event/signal.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o: src/nvim/event/socket.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_205)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/socket.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/socket.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/socket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/socket.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/socket.c > CMakeFiles/libnvim.dir/event/socket.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/socket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/socket.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/socket.c -o CMakeFiles/libnvim.dir/event/socket.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o: src/nvim/event/stream.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_206)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/stream.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/stream.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/stream.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/stream.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/stream.c > CMakeFiles/libnvim.dir/event/stream.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/stream.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/stream.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/stream.c -o CMakeFiles/libnvim.dir/event/stream.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/time.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/time.c.o: src/nvim/event/time.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_207)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/time.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/time.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/time.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/time.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/time.c > CMakeFiles/libnvim.dir/event/time.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/time.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/time.c -o CMakeFiles/libnvim.dir/event/time.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/time.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/time.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/time.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/time.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/time.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/time.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/time.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/time.c.o
+
+src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o: src/nvim/CMakeFiles/libnvim.dir/flags.make
+src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o: src/nvim/event/wstream.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles $(CMAKE_PROGRESS_208)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/libnvim.dir/event/wstream.c.o   -c /Users/George/Documents/Programs/C/neovim/src/nvim/event/wstream.c
+
+src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libnvim.dir/event/wstream.c.i"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/George/Documents/Programs/C/neovim/src/nvim/event/wstream.c > CMakeFiles/libnvim.dir/event/wstream.c.i
+
+src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libnvim.dir/event/wstream.c.s"
+	cd /Users/George/Documents/Programs/C/neovim/src/nvim && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/George/Documents/Programs/C/neovim/src/nvim/event/wstream.c -o CMakeFiles/libnvim.dir/event/wstream.c.s
+
+src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o.requires:
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o.requires
+
+src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o.provides: src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o.requires
+	$(MAKE) -f src/nvim/CMakeFiles/libnvim.dir/build.make src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o.provides.build
+.PHONY : src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o.provides
+
+src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o.provides.build: src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o
 
 # Object files for target libnvim
 libnvim_OBJECTS = \
@@ -3192,33 +3512,30 @@ libnvim_OBJECTS = \
 "CMakeFiles/libnvim.dir/screen.c.o" \
 "CMakeFiles/libnvim.dir/search.c.o" \
 "CMakeFiles/libnvim.dir/sha256.c.o" \
+"CMakeFiles/libnvim.dir/shada.c.o" \
 "CMakeFiles/libnvim.dir/spell.c.o" \
+"CMakeFiles/libnvim.dir/state.c.o" \
 "CMakeFiles/libnvim.dir/strings.c.o" \
 "CMakeFiles/libnvim.dir/syntax.c.o" \
 "CMakeFiles/libnvim.dir/tag.c.o" \
 "CMakeFiles/libnvim.dir/tempfile.c.o" \
 "CMakeFiles/libnvim.dir/terminal.c.o" \
+"CMakeFiles/libnvim.dir/ugrid.c.o" \
 "CMakeFiles/libnvim.dir/ui.c.o" \
+"CMakeFiles/libnvim.dir/ui_bridge.c.o" \
 "CMakeFiles/libnvim.dir/undo.c.o" \
 "CMakeFiles/libnvim.dir/version.c.o" \
 "CMakeFiles/libnvim.dir/window.c.o" \
 "CMakeFiles/libnvim.dir/os/dl.c.o" \
 "CMakeFiles/libnvim.dir/os/env.c.o" \
-"CMakeFiles/libnvim.dir/os/event.c.o" \
 "CMakeFiles/libnvim.dir/os/fs.c.o" \
 "CMakeFiles/libnvim.dir/os/input.c.o" \
-"CMakeFiles/libnvim.dir/os/job.c.o" \
 "CMakeFiles/libnvim.dir/os/mem.c.o" \
-"CMakeFiles/libnvim.dir/os/pipe_process.c.o" \
-"CMakeFiles/libnvim.dir/os/pty_process.c.o" \
-"CMakeFiles/libnvim.dir/os/rstream.c.o" \
 "CMakeFiles/libnvim.dir/os/shell.c.o" \
 "CMakeFiles/libnvim.dir/os/signal.c.o" \
-"CMakeFiles/libnvim.dir/os/stream.c.o" \
+"CMakeFiles/libnvim.dir/os/stdpaths.c.o" \
 "CMakeFiles/libnvim.dir/os/time.c.o" \
 "CMakeFiles/libnvim.dir/os/users.c.o" \
-"CMakeFiles/libnvim.dir/os/uv_helpers.c.o" \
-"CMakeFiles/libnvim.dir/os/wstream.c.o" \
 "CMakeFiles/libnvim.dir/api/buffer.c.o" \
 "CMakeFiles/libnvim.dir/api/tabpage.c.o" \
 "CMakeFiles/libnvim.dir/api/vim.c.o" \
@@ -3229,7 +3546,19 @@ libnvim_OBJECTS = \
 "CMakeFiles/libnvim.dir/msgpack_rpc/helpers.c.o" \
 "CMakeFiles/libnvim.dir/msgpack_rpc/remote_ui.c.o" \
 "CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o" \
-"CMakeFiles/libnvim.dir/tui/tui.c.o"
+"CMakeFiles/libnvim.dir/tui/input.c.o" \
+"CMakeFiles/libnvim.dir/tui/tui.c.o" \
+"CMakeFiles/libnvim.dir/event/libuv_process.c.o" \
+"CMakeFiles/libnvim.dir/event/loop.c.o" \
+"CMakeFiles/libnvim.dir/event/process.c.o" \
+"CMakeFiles/libnvim.dir/event/pty_process.c.o" \
+"CMakeFiles/libnvim.dir/event/queue.c.o" \
+"CMakeFiles/libnvim.dir/event/rstream.c.o" \
+"CMakeFiles/libnvim.dir/event/signal.c.o" \
+"CMakeFiles/libnvim.dir/event/socket.c.o" \
+"CMakeFiles/libnvim.dir/event/stream.c.o" \
+"CMakeFiles/libnvim.dir/event/time.c.o" \
+"CMakeFiles/libnvim.dir/event/wstream.c.o"
 
 # External object files for target libnvim
 libnvim_EXTERNAL_OBJECTS =
@@ -3289,33 +3618,30 @@ lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/regexp.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/screen.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/search.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/sha256.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/shada.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/spell.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/state.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/strings.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/syntax.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/tag.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/tempfile.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/terminal.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/ui.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/undo.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/version.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/window.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/dl.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/env.c.o
-lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/event.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/fs.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/input.c.o
-lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/job.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/mem.c.o
-lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o
-lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o
-lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/shell.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/signal.c.o
-lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/time.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/users.c.o
-lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o
-lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/api/buffer.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/api/tabpage.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/api/vim.c.o
@@ -3326,7 +3652,19 @@ lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/channel.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/helpers.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/remote_ui.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/process.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/time.c.o
+lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/build.make
 lib/libnvim.a: src/nvim/CMakeFiles/libnvim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library ../../lib/libnvim.a"
@@ -3392,33 +3730,30 @@ src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/regexp
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/screen.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/search.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/sha256.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/shada.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/spell.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/state.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/strings.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/syntax.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/tag.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/tempfile.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/terminal.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/ugrid.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/ui.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/ui_bridge.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/undo.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/version.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/window.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/dl.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/env.c.o.requires
-src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/event.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/fs.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/input.c.o.requires
-src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/job.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/mem.c.o.requires
-src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/pipe_process.c.o.requires
-src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/pty_process.c.o.requires
-src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/rstream.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/shell.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/signal.c.o.requires
-src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/stream.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/stdpaths.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/time.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/users.c.o.requires
-src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/uv_helpers.c.o.requires
-src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/os/wstream.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/api/buffer.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/api/tabpage.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/api/vim.c.o.requires
@@ -3429,7 +3764,19 @@ src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/msgpac
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/helpers.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/remote_ui.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/msgpack_rpc/server.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/tui/input.c.o.requires
 src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/tui/tui.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/libuv_process.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/loop.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/process.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/pty_process.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/queue.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/rstream.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/signal.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/socket.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/stream.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/time.c.o.requires
+src/nvim/CMakeFiles/libnvim.dir/requires: src/nvim/CMakeFiles/libnvim.dir/event/wstream.c.o.requires
 .PHONY : src/nvim/CMakeFiles/libnvim.dir/requires
 
 src/nvim/CMakeFiles/libnvim.dir/clean:
@@ -3542,8 +3889,12 @@ src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/search.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/search.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/sha256.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/sha256.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/shada.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/shada.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/spell.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/spell.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/state.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/state.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/strings.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/strings.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/syntax.c.generated.h
@@ -3554,8 +3905,12 @@ src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/tempfile.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/tempfile.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/terminal.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/terminal.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/ugrid.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/ugrid.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/ui.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/ui.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/ui_bridge.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/ui_bridge.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/undo.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/undo.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/version.c.generated.h
@@ -3566,36 +3921,22 @@ src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/dl.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/dl.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/env.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/env.h.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/event.c.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: include/os/event.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/fs.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/fs.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/input.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/input.h.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/job.c.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: include/os/job.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/mem.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/mem.h.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/pipe_process.c.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: include/os/pipe_process.h.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/pty_process.c.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: include/os/pty_process.h.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/rstream.c.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: include/os/rstream.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/shell.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/shell.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/signal.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/signal.h.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/stream.c.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: include/os/stream.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/stdpaths.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/os/stdpaths.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/time.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/time.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/users.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/os/users.h.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/uv_helpers.c.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: include/os/uv_helpers.h.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/os/wstream.c.generated.h
-src/nvim/CMakeFiles/libnvim.dir/depend: include/os/wstream.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/api/buffer.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/api/buffer.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/api/tabpage.c.generated.h
@@ -3616,13 +3957,41 @@ src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/msgpack_rpc/remote_ui.c.ge
 src/nvim/CMakeFiles/libnvim.dir/depend: include/msgpack_rpc/remote_ui.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/msgpack_rpc/server.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/msgpack_rpc/server.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/tui/input.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/tui/input.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/tui/tui.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/tui/tui.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/libuv_process.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/libuv_process.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/loop.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/loop.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/process.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/process.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/pty_process.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/pty_process.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/queue.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/queue.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/rstream.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/rstream.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/signal.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/signal.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/socket.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/socket.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/stream.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/stream.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/time.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/time.h.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/event/wstream.c.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/event/wstream.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/regexp_nfa.c.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: include/regexp_nfa.h.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/msgpack_dispatch.c
 src/nvim/CMakeFiles/libnvim.dir/depend: include/ex_cmds_enum.generated.h
 src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/ex_cmds_defs.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: include/auevents_enum.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/auevents_name_map.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/options.generated.h
+src/nvim/CMakeFiles/libnvim.dir/depend: src/nvim/auto/unicode_tables.generated.h
 	cd /Users/George/Documents/Programs/C/neovim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/George/Documents/Programs/C/neovim /Users/George/Documents/Programs/C/neovim/src/nvim /Users/George/Documents/Programs/C/neovim /Users/George/Documents/Programs/C/neovim/src/nvim /Users/George/Documents/Programs/C/neovim/src/nvim/CMakeFiles/libnvim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/nvim/CMakeFiles/libnvim.dir/depend
 

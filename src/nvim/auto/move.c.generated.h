@@ -6,7 +6,7 @@
 static void comp_botline(win_T *wp);
 static void redraw_for_cursorline(win_T *wp);
 static int scrolljump_value(void);
-static int check_top_offset(void);
+static _Bool check_top_offset(void);
 static void curs_rows(win_T *wp);
 static void validate_cheight(void);
 static void max_topfill(void);

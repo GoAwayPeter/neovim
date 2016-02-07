@@ -3,8 +3,14 @@
 #endif
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
+static char *strcpy_comma_escaped(char *dest, const char *src, const size_t len) FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT;
+static inline size_t compute_double_colon_len(const char *const val, const size_t common_suf_len, const size_t single_suf_len) FUNC_ATTR_WARN_UNUSED_RESULT FUNC_ATTR_PURE;
+static inline char *add_colon_dirs(char *dest, const char *const val, const char *const suf1, const size_t len1, const char *const suf2, const size_t len2, const _Bool forward) FUNC_ATTR_WARN_UNUSED_RESULT FUNC_ATTR_NONNULL_RET FUNC_ATTR_NONNULL_ARG(1);
+static inline char *add_dir(char *dest, const char *const dir, const size_t dir_len, const _Bool append_nvim, const char *const suf1, const size_t len1, const char *const suf2, const size_t len2) FUNC_ATTR_NONNULL_RET FUNC_ATTR_NONNULL_ARG(1) FUNC_ATTR_WARN_UNUSED_RESULT;
+static void set_runtimepath_default(void);
 static void set_option_default(int opt_idx, int opt_flags, int compatible );
 static void set_options_default(int opt_flags );
+static void set_string_default(const char *name, char *val, _Bool allocated) FUNC_ATTR_NONNULL_ALL;
 static void did_set_option(int opt_idx, int opt_flags, int new_value );
 static char_u *illegal_char(char_u *errbuf, int c);
 static int string_to_key(char_u *arg);
@@ -44,7 +50,7 @@ static void langmap_set(void);
 static void paste_option_changed(void);
 static void fill_breakat_flags(void);
 static int check_opt_strings(char_u *val, char **values, int list );
-static int opt_strings_flags(char_u *val, char **values, unsigned *flagp, int list );
+static int opt_strings_flags(char_u *val, char **values, unsigned *flagp, _Bool list );
 static int check_opt_wim(void);
 static _Bool briopt_check(win_T *wp);
 #include "nvim/func_attr.h"

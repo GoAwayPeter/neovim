@@ -5,6 +5,5 @@
 #undef DEFINE_FUNC_ATTRIBUTES
 static char *signal_name(int signum);
 static void deadly_signal(int signum);
-static void signal_cb(uv_signal_t *handle, int signum);
-static void on_signal_event(Event event);
+static void on_signal(SignalWatcher *handle, int signum, void *data);
 #include "nvim/func_attr.h"

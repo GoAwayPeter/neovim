@@ -22,7 +22,7 @@ static int ml_add_stack(buf_T *buf);
 static void ml_lineadd(buf_T *buf, int count);
 static void attention_message(buf_T *buf, char_u *fname );
 static int do_swapexists(buf_T *buf, char_u *fname);
-static char_u *findswapname(buf_T *buf, char_u **dirp, char_u *old_fname );
+static char *findswapname(buf_T *buf, char **dirp, char *old_fname, _Bool *found_existing_dir) FUNC_ATTR_WARN_UNUSED_RESULT FUNC_ATTR_NONNULL_ARG(1, 2, 4);
 static int b0_magic_wrong(ZERO_BL *b0p);
 static int fnamecmp_ino(char_u *fname_c, char_u *fname_s, long ino_block0 );
 static void long_to_char(long n, char_u *s);

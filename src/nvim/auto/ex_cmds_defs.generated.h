@@ -1,4 +1,4 @@
-static CommandDefinition cmdnames[523] = {
+static CommandDefinition cmdnames[522] = {
   [CMD_append] = {
     .cmd_name = (char_u *) "append",
     .cmd_func = &ex_append,
@@ -230,7 +230,7 @@ static CommandDefinition cmdnames[523] = {
   [CMD_buffers] = {
     .cmd_name = (char_u *) "buffers",
     .cmd_func = &buflist_list,
-    .cmd_argt = 1048834L,
+    .cmd_argt = 1048838L,
     .cmd_addr_type = 0
   },
   [CMD_bufdo] = {
@@ -848,7 +848,7 @@ static CommandDefinition cmdnames[523] = {
   [CMD_files] = {
     .cmd_name = (char_u *) "files",
     .cmd_func = &buflist_list,
-    .cmd_argt = 1048834L,
+    .cmd_argt = 1048838L,
     .cmd_addr_type = 0
   },
   [CMD_filetype] = {
@@ -949,13 +949,13 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_gui] = {
     .cmd_name = (char_u *) "gui",
-    .cmd_func = &ex_gui,
+    .cmd_func = &ex_nogui,
     .cmd_argt = 1343758L,
     .cmd_addr_type = 0
   },
   [CMD_gvim] = {
     .cmd_name = (char_u *) "gvim",
-    .cmd_func = &ex_gui,
+    .cmd_func = &ex_nogui,
     .cmd_argt = 1343758L,
     .cmd_addr_type = 0
   },
@@ -973,7 +973,7 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_helpfind] = {
     .cmd_name = (char_u *) "helpfind",
-    .cmd_func = &ex_helpfind,
+    .cmd_func = &ex_ni,
     .cmd_argt = 2052L,
     .cmd_addr_type = 0
   },
@@ -1484,7 +1484,7 @@ static CommandDefinition cmdnames[523] = {
   [CMD_ls] = {
     .cmd_name = (char_u *) "ls",
     .cmd_func = &buflist_list,
-    .cmd_argt = 1048834L,
+    .cmd_argt = 1048838L,
     .cmd_addr_type = 0
   },
   [CMD_move] = {
@@ -1603,19 +1603,19 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_nbkey] = {
     .cmd_name = (char_u *) "nbkey",
-    .cmd_func = &ex_nbkey,
+    .cmd_func = &ex_ni,
     .cmd_argt = 16516L,
     .cmd_addr_type = 0
   },
   [CMD_nbclose] = {
     .cmd_name = (char_u *) "nbclose",
-    .cmd_func = &ex_nbclose,
+    .cmd_func = &ex_ni,
     .cmd_argt = 1048832L,
     .cmd_addr_type = 0
   },
   [CMD_nbstart] = {
     .cmd_name = (char_u *) "nbstart",
-    .cmd_func = &ex_nbstart,
+    .cmd_func = &ex_ni,
     .cmd_argt = 1048852L,
     .cmd_addr_type = 0
   },
@@ -1713,12 +1713,6 @@ static CommandDefinition cmdnames[523] = {
     .cmd_name = (char_u *) "nunmenu",
     .cmd_func = &ex_menu,
     .cmd_argt = 1059076L,
-    .cmd_addr_type = 0
-  },
-  [CMD_open] = {
-    .cmd_name = (char_u *) "open",
-    .cmd_func = &ex_open,
-    .cmd_argt = 7L,
     .cmd_addr_type = 0
   },
   [CMD_oldfiles] = {
@@ -1825,7 +1819,7 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_popup] = {
     .cmd_name = (char_u *) "popup",
-    .cmd_func = &ex_popup,
+    .cmd_func = &ex_ni,
     .cmd_argt = 1051014L,
     .cmd_addr_type = 0
   },
@@ -1849,13 +1843,13 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_promptfind] = {
     .cmd_name = (char_u *) "promptfind",
-    .cmd_func = &gui_mch_find_dialog,
+    .cmd_func = &ex_ni,
     .cmd_argt = 1050628L,
     .cmd_addr_type = 0
   },
   [CMD_promptrepl] = {
     .cmd_name = (char_u *) "promptrepl",
-    .cmd_func = &gui_mch_replace_dialog,
+    .cmd_func = &ex_ni,
     .cmd_argt = 1050628L,
     .cmd_addr_type = 0
   },
@@ -2081,6 +2075,12 @@ static CommandDefinition cmdnames[523] = {
     .cmd_argt = 2180L,
     .cmd_addr_type = 0
   },
+  [CMD_rshada] = {
+    .cmd_name = (char_u *) "rshada",
+    .cmd_func = &ex_shada,
+    .cmd_argt = 1048862L,
+    .cmd_addr_type = 0
+  },
   [CMD_runtime] = {
     .cmd_name = (char_u *) "runtime",
     .cmd_func = &ex_runtime,
@@ -2113,7 +2113,7 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_rviminfo] = {
     .cmd_name = (char_u *) "rviminfo",
-    .cmd_func = &ex_viminfo,
+    .cmd_func = &ex_shada,
     .cmd_argt = 1048862L,
     .cmd_addr_type = 0
   },
@@ -2263,7 +2263,7 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_simalt] = {
     .cmd_name = (char_u *) "simalt",
-    .cmd_func = &ex_simalt,
+    .cmd_func = &ex_ni,
     .cmd_argt = 1048980L,
     .cmd_addr_type = 0
   },
@@ -2639,12 +2639,6 @@ static CommandDefinition cmdnames[523] = {
     .cmd_argt = 1048733L,
     .cmd_addr_type = 0
   },
-  [CMD_tearoff] = {
-    .cmd_name = (char_u *) "tearoff",
-    .cmd_func = &ex_tearoff,
-    .cmd_argt = 1051012L,
-    .cmd_addr_type = 0
-  },
   [CMD_terminal] = {
     .cmd_name = (char_u *) "terminal",
     .cmd_func = &ex_terminal,
@@ -2995,8 +2989,14 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_wsverb] = {
     .cmd_name = (char_u *) "wsverb",
-    .cmd_func = &ex_wsverb,
+    .cmd_func = &ex_ni,
     .cmd_argt = 16516L,
+    .cmd_addr_type = 0
+  },
+  [CMD_wshada] = {
+    .cmd_name = (char_u *) "wshada",
+    .cmd_func = &ex_shada,
+    .cmd_argt = 1048862L,
     .cmd_addr_type = 0
   },
   [CMD_wundo] = {
@@ -3007,7 +3007,7 @@ static CommandDefinition cmdnames[523] = {
   },
   [CMD_wviminfo] = {
     .cmd_name = (char_u *) "wviminfo",
-    .cmd_func = &ex_viminfo,
+    .cmd_func = &ex_shada,
     .cmd_argt = 1048862L,
     .cmd_addr_type = 0
   },
@@ -3125,12 +3125,6 @@ static CommandDefinition cmdnames[523] = {
     .cmd_argt = 312583L,
     .cmd_addr_type = 0
   },
-  [CMD_Print] = {
-    .cmd_name = (char_u *) "Print",
-    .cmd_func = &ex_print,
-    .cmd_argt = 5244225L,
-    .cmd_addr_type = 0
-  },
   [CMD_tilde] = {
     .cmd_name = (char_u *) "~",
     .cmd_func = &do_sub,
@@ -3153,7 +3147,7 @@ static const cmdidx_T cmdidxs[27] = {
   CMD_list,
   CMD_move,
   CMD_next,
-  CMD_open,
+  CMD_oldfiles,
   CMD_print,
   CMD_quit,
   CMD_read,

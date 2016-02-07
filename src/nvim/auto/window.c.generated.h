@@ -9,7 +9,7 @@ static void win_init_some(win_T *newp, win_T *oldp);
 static void win_exchange(long Prenum);
 static void win_rotate(int upwards, int count);
 static void win_totop(int size, int flags);
-static void win_equal_rec(win_T *next_curwin, int current, frame_T *topfr, int dir, int col, int row, int width, int height );
+static void win_equal_rec(win_T *next_curwin, _Bool current, frame_T *topfr, int dir, int col, int row, int width, int height );
 static int last_window(void);
 static int close_last_window_tabpage(win_T *win, int free_buf, tabpage_T *prev_curtab);
 static win_T *win_free_mem(win_T *win, int *dirp, tabpage_T *tp );
