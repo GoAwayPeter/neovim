@@ -3,6 +3,7 @@
  */
 
 #include <assert.h>
+#include <float.h>
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
@@ -50,7 +51,6 @@
 #include "nvim/strings.h"
 #include "nvim/syntax.h"
 #include "nvim/tag.h"
-#include "nvim/tempfile.h"
 #include "nvim/ui.h"
 #include "nvim/undo.h"
 #include "nvim/window.h"
@@ -274,17 +274,26 @@ static int linelen(int *has_tab)
 static char_u   *sortbuf1;
 static char_u   *sortbuf2;
 
-static int sort_ic;                     /* ignore case */
-static int sort_nr;                     /* sort on number */
-static int sort_rx;                     /* sort on regex instead of skipping it */
+static int sort_ic;       ///< ignore case
+static int sort_nr;       ///< sort on number
+static int sort_rx;       ///< sort on regex instead of skipping it
+static int sort_flt;      ///< sort on floating number
 
-static int sort_abort;                  /* flag to indicate if sorting has been interrupted */
+static int sort_abort;    ///< flag to indicate if sorting has been interrupted
 
-/* Struct to store info to be sorted. */
+/// Struct to store info to be sorted.
 typedef struct {
-  linenr_T lnum;                        /* line number */
-  long start_col_nr;                    /* starting column number or number */
-  long end_col_nr;                      /* ending column number */
+  linenr_T lnum;          ///< line number
+  long start_col_nr;      ///< starting column number or number
+  long end_col_nr;        ///< ending column number
+  union {
+    struct {
+      long start_col_nr;  ///< starting column number
+      long end_col_nr;    ///< ending column number
+    } line;
+    long value;           ///< value if sorting by integer
+    float_T value_flt;    ///< value if sorting by float
+  } st_u;
 } sorti_T;
 
 
@@ -303,21 +312,26 @@ static int sort_compare(const void *s1, const void *s2)
   if (got_int)
     sort_abort = TRUE;
 
-  /* When sorting numbers "start_col_nr" is the number, not the column
-   * number. */
-  if (sort_nr)
-    result = l1.start_col_nr == l2.start_col_nr ? 0
-             : l1.start_col_nr > l2.start_col_nr ? 1 : -1;
-  else {
-    /* We need to copy one line into "sortbuf1", because there is no
-     * guarantee that the first pointer becomes invalid when obtaining the
-     * second one. */
-    STRNCPY(sortbuf1, ml_get(l1.lnum) + l1.start_col_nr,
-        l1.end_col_nr - l1.start_col_nr + 1);
-    sortbuf1[l1.end_col_nr - l1.start_col_nr] = 0;
-    STRNCPY(sortbuf2, ml_get(l2.lnum) + l2.start_col_nr,
-        l2.end_col_nr - l2.start_col_nr + 1);
-    sortbuf2[l2.end_col_nr - l2.start_col_nr] = 0;
+  // When sorting numbers "start_col_nr" is the number, not the column
+  // number.
+  if (sort_nr) {
+    result = l1.st_u.value == l2.st_u.value
+             ? 0 : l1.st_u.value > l2.st_u.value
+             ? 1 : -1;
+  } else if (sort_flt) {
+    result = l1.st_u.value_flt == l2.st_u.value_flt
+             ? 0 : l1.st_u.value_flt > l2.st_u.value_flt
+             ? 1 : -1;
+  } else {
+    // We need to copy one line into "sortbuf1", because there is no
+    // guarantee that the first pointer becomes invalid when obtaining the
+    // second one.
+    STRNCPY(sortbuf1, ml_get(l1.lnum) + l1.st_u.line.start_col_nr,
+            l1.st_u.line.end_col_nr - l1.st_u.line.start_col_nr + 1);
+    sortbuf1[l1.st_u.line.end_col_nr - l1.st_u.line.start_col_nr] = 0;
+    STRNCPY(sortbuf2, ml_get(l2.lnum) + l2.st_u.line.start_col_nr,
+            l2.st_u.line.end_col_nr - l2.st_u.line.start_col_nr + 1);
+    sortbuf2[l2.st_u.line.end_col_nr - l2.st_u.line.start_col_nr] = 0;
 
     result = sort_ic ? STRICMP(sortbuf1, sortbuf2)
              : STRCMP(sortbuf1, sortbuf2);
@@ -361,7 +375,7 @@ void ex_sort(exarg_T *eap)
   regmatch.regprog = NULL;
   sorti_T *nrs = xmalloc(count * sizeof(sorti_T));
 
-  sort_abort = sort_ic = sort_rx = sort_nr = 0;
+  sort_abort = sort_ic = sort_rx = sort_nr = sort_flt = 0;
   size_t format_found = 0;
 
   for (p = eap->arg; *p != NUL; ++p) {
@@ -371,7 +385,10 @@ void ex_sort(exarg_T *eap)
     } else if (*p == 'r') {
       sort_rx = true;
     } else if (*p == 'n') {
-      sort_nr = 2;
+      sort_nr = 1;
+      format_found++;
+    } else if (*p == 'f') {
+      sort_flt = 1;
       format_found++;
     } else if (*p == 'b') {
       sort_what = STR2NR_BIN + STR2NR_FORCE;
@@ -424,7 +441,8 @@ void ex_sort(exarg_T *eap)
     goto sortend;
   }
 
-  // From here on "sort_nr" is used as a flag for any number sorting.
+  // From here on "sort_nr" is used as a flag for any integer number
+  // sorting.
   sort_nr += sort_what;
 
   // Make an array with all line numbers.  This avoids having to copy all
@@ -453,7 +471,7 @@ void ex_sort(exarg_T *eap)
       end_col = 0;
     }
 
-    if (sort_nr) {
+    if (sort_nr || sort_flt) {
       // Make sure vim_str2nr doesn't read any digits past the end
       // of the match, by temporarily terminating the string there
       s2 = s + end_col;
@@ -461,29 +479,42 @@ void ex_sort(exarg_T *eap)
       *s2 = NUL;
       // Sorting on number: Store the number itself.
       p = s + start_col;
-      if (sort_what & STR2NR_HEX) {
-        s = skiptohex(p);
-      } else if (sort_what & STR2NR_BIN) {
-        s = (char_u*) skiptobin((char*) p);
+      if (sort_nr) {
+        if (sort_what & STR2NR_HEX) {
+          s = skiptohex(p);
+        } else if (sort_what & STR2NR_BIN) {
+          s = (char_u *)skiptobin((char *)p);
+        } else {
+          s = skiptodigit(p);
+        }
+        if (s > p && s[-1] == '-') {
+          s--;  // include preceding negative sign
+        }
+        if (*s == NUL) {
+          // empty line should sort before any number
+          nrs[lnum - eap->line1].st_u.value = -MAXLNUM;
+        } else {
+          vim_str2nr(s, NULL, NULL, sort_what,
+                     &nrs[lnum - eap->line1].st_u.value, NULL, 0);
+        }
       } else {
-        s = skiptodigit(p);
-      }
-      if (s > p && s[-1] == '-') {
-        // include preceding negative sign
-        s--;
-      }
-      if (*s == NUL) {
-        // empty line should sort before any number
-        nrs[lnum - eap->line1].start_col_nr = -MAXLNUM;
-      } else {
-        vim_str2nr(s, NULL, NULL, sort_what,
-                   &nrs[lnum - eap->line1].start_col_nr, NULL, 0);
+        s = skipwhite(p);
+        if (*s == '+') {
+          s = skipwhite(s + 1);
+        }
+
+        if (*s == NUL) {
+          // empty line should sort before any number
+          nrs[lnum - eap->line1].st_u.value_flt = -DBL_MAX;
+        } else {
+          nrs[lnum - eap->line1].st_u.value_flt = strtod((char *)s, NULL);
+        }
       }
       *s2 = c;
     } else {
       // Store the column to sort at.
-      nrs[lnum - eap->line1].start_col_nr = start_col;
-      nrs[lnum - eap->line1].end_col_nr = end_col;
+      nrs[lnum - eap->line1].st_u.line.start_col_nr = start_col;
+      nrs[lnum - eap->line1].st_u.line.end_col_nr = end_col;
     }
 
     nrs[lnum - eap->line1].lnum = lnum;
@@ -619,13 +650,13 @@ void ex_retab(exarg_T *eap)
             num_tabs += num_spaces / new_ts;
             num_spaces -= (num_spaces / new_ts) * new_ts;
           }
-          if (curbuf->b_p_et || got_tab ||
-              (num_spaces + num_tabs < len)) {
-            if (did_undo == FALSE) {
-              did_undo = TRUE;
+          if (curbuf->b_p_et || got_tab
+              || (num_spaces + num_tabs < len)) {
+            if (did_undo == false) {
+              did_undo = true;
               if (u_save((linenr_T)(lnum - 1),
-                      (linenr_T)(lnum + 1)) == FAIL) {
-                new_line = NULL;                        /* flag out-of-memory */
+                         (linenr_T)(lnum + 1)) == FAIL) {
+                new_line = NULL;  // flag out-of-memory
                 break;
               }
             }
@@ -1326,15 +1357,17 @@ char_u *make_filter_cmd(char_u *cmd, char_u *itmp, char_u *otmp)
 #endif
 
   size_t len = STRLEN(cmd) + 1;  // At least enough space for cmd + NULL.
-  
+
   len += is_fish_shell ?  sizeof("begin; ""; end") - 1
                        :  sizeof("("")") - 1;
 
-  if (itmp != NULL)
+  if (itmp != NULL) {
     len += STRLEN(itmp) + sizeof(" { "" < "" } ") - 1;
-  if (otmp != NULL)
+  }
+  if (otmp != NULL) {
     len += STRLEN(otmp) + STRLEN(p_srr) + 2;  // two extra spaces ("  "),
-  char_u *buf = xmalloc(len);
+  }
+  char *const buf = xmalloc(len);
 
 #if defined(UNIX)
   // Put delimiters around the command (for concatenated commands) when
@@ -1342,19 +1375,19 @@ char_u *make_filter_cmd(char_u *cmd, char_u *itmp, char_u *otmp)
   if (itmp != NULL || otmp != NULL) {
     char *fmt = is_fish_shell ? "begin; %s; end"
                               :       "(%s)";
-    vim_snprintf((char *)buf, len, fmt, (char *)cmd);
+    vim_snprintf(buf, len, fmt, (char *)cmd);
   } else {
-    STRCPY(buf, cmd);
+    strncpy(buf, (char *) cmd, len);
   }
 
   if (itmp != NULL) {
-    STRCAT(buf, " < ");
-    STRCAT(buf, itmp);
+    strncat(buf, " < ", len);
+    strncat(buf, (char *) itmp, len);
   }
 #else
   // For shells that don't understand braces around commands, at least allow
   // the use of commands in a pipe.
-  STRCPY(buf, cmd);
+  strncpy(buf, cmd, len);
   if (itmp != NULL) {
     char_u  *p;
 
@@ -1362,55 +1395,56 @@ char_u *make_filter_cmd(char_u *cmd, char_u *itmp, char_u *otmp)
     // Don't do this when 'shellquote' is not empty, otherwise the
     // redirection would be inside the quotes.
     if (*p_shq == NUL) {
-      p = vim_strchr(buf, '|');
-      if (p != NULL)
-        *p = NUL;
-    }
-    STRCAT(buf, " < ");
-    STRCAT(buf, itmp);
-    if (*p_shq == NUL) {
-      p = vim_strchr(cmd, '|');
+      p = strchr(buf, '|');
       if (p != NULL) {
-        STRCAT(buf, " ");  // Insert a space before the '|' for DOS
-        STRCAT(buf, p);
+        *p = NUL;
+      }
+    }
+    strncat(buf, " < ", len);
+    strncat(buf, (char *) itmp, len);
+    if (*p_shq == NUL) {
+      p = strchr(cmd, '|');
+      if (p != NULL) {
+        strncat(buf, " ", len);  // Insert a space before the '|' for DOS
+        strncat(buf, p, len);
       }
     }
   }
 #endif
-  if (otmp != NULL)
-    append_redir(buf, (int)len, p_srr, otmp);
-
-  return buf;
+  if (otmp != NULL) {
+    append_redir(buf, len, (char *) p_srr, (char *) otmp);
+  }
+  return (char_u *) buf;
 }
 
-/*
- * Append output redirection for file "fname" to the end of string buffer
- * "buf[buflen]"
- * Works with the 'shellredir' and 'shellpipe' options.
- * The caller should make sure that there is enough room:
- *	STRLEN(opt) + STRLEN(fname) + 3
- */
-void append_redir(char_u *buf, int buflen, char_u *opt, char_u *fname)
+/// Append output redirection for the given file to the end of the buffer
+///
+/// @param[out]  buf  Buffer to append to.
+/// @param[in]  buflen  Buffer length.
+/// @param[in]  opt  Separator or format string to append: will append
+///                  `printf(' ' . opt, fname)` if `%s` is found in `opt` or
+///                  a space, opt, a space and then fname if `%s` is not found
+///                  there.
+/// @param[in]  fname  File name to append.
+void append_redir(char *const buf, const size_t buflen,
+                  const char *const opt, const char *const fname)
 {
-  char_u      *p;
-  char_u      *end;
-
-  end = buf + STRLEN(buf);
-  /* find "%s" */
-  for (p = opt; (p = vim_strchr(p, '%')) != NULL; ++p) {
-    if (p[1] == 's')     /* found %s */
+  char *const end = buf + strlen(buf);
+  // find "%s"
+  const char *p = opt;
+  for (; (p = strchr(p, '%')) != NULL; p++) {
+    if (p[1] == 's') {  // found %s
       break;
-    if (p[1] == '%')     /* skip %% */
-      ++p;
+    } else if (p[1] == '%') {  // skip %%
+      p++;
+    }
   }
   if (p != NULL) {
-    *end = ' ';     /* not really needed? Not with sh, ksh or bash */
-    vim_snprintf((char *)end + 1, (size_t)(buflen - (end + 1 - buf)),
-        (char *)opt, (char *)fname);
-  } else
-    vim_snprintf((char *)end, (size_t)(buflen - (end - buf)),
-        " %s %s",
-        (char *)opt, (char *)fname);
+    *end = ' ';  // not really needed? Not with sh, ksh or bash
+    vim_snprintf(end + 1, (size_t) (buflen - (end + 1 - buf)), opt, fname);
+  } else {
+    vim_snprintf(end, (size_t) (buflen - (end - buf)), " %s %s", opt, fname);
+  }
 }
 
 void print_line_no_prefix(linenr_T lnum, int use_number, int list)
@@ -1506,8 +1540,11 @@ void ex_file(exarg_T *eap)
     if (rename_buffer(eap->arg) == FAIL)
       return;
   }
-  /* print full file name if :cd used */
-  fileinfo(FALSE, FALSE, eap->forceit);
+
+  if (!shortmess(SHM_FILEINFO)) {
+    // print full file name if :cd used
+    fileinfo(false, false, eap->forceit);
+  }
 }
 
 /*
@@ -1586,15 +1623,14 @@ int do_write(exarg_T *eap)
     }
   }
 
-  /*
-   * Writing to the current file is not allowed in readonly mode
-   * and a file name is required.
-   * "nofile" and "nowrite" buffers cannot be written implicitly either.
-   */
-  if (!other && (
-        bt_dontwrite_msg(curbuf) ||
-        check_fname() == FAIL || check_readonly(&eap->forceit, curbuf)))
+  // Writing to the current file is not allowed in readonly mode
+  // and a file name is required.
+  // "nofile" and "nowrite" buffers cannot be written implicitly either.
+  if (!other && (bt_dontwrite_msg(curbuf)
+                 || check_fname() == FAIL
+                 || check_readonly(&eap->forceit, curbuf))) {
     goto theend;
+  }
 
   if (!other) {
     ffname = curbuf->b_ffname;
@@ -2090,15 +2126,13 @@ do_ecmd (
 
   if ((command != NULL || newlnum > (linenr_T)0)
       && *get_vim_var_str(VV_SWAPCOMMAND) == NUL) {
-    char_u  *p;
-
-    /* Set v:swapcommand for the SwapExists autocommands. */
-    size_t len = (command != NULL) ? STRLEN(command) + 3 : 30;
-    p = xmalloc(len);
+    // Set v:swapcommand for the SwapExists autocommands.
+    const size_t len = (command != NULL) ? STRLEN(command) + 3 : 30;
+    char *const p = xmalloc(len);
     if (command != NULL) {
-      vim_snprintf((char *)p, len, ":%s\r", command);
+      vim_snprintf(p, len, ":%s\r", command);
     } else {
-      vim_snprintf((char *)p, len, "%" PRId64 "G", (int64_t)newlnum);
+      vim_snprintf(p, len, "%" PRId64 "G", (int64_t)newlnum);
     }
     set_vim_var_string(VV_SWAPCOMMAND, p, -1);
     did_set_swapcommand = TRUE;
@@ -2223,16 +2257,15 @@ do_ecmd (
           delbuf_msg(new_name);                 /* frees new_name */
           goto theend;
         }
-        if (buf == curbuf)                      /* already in new buffer */
-          auto_buf = TRUE;
-        else {
-          /*
-           * <VN> We could instead free the synblock
-           * and re-attach to buffer, perhaps.
-           */
-          if (curwin->w_buffer != NULL &&
-              curwin->w_s == &(curwin->w_buffer->b_s))
+        if (buf == curbuf) {  // already in new buffer
+          auto_buf = true;
+        } else {
+          // <VN> We could instead free the synblock
+          // and re-attach to buffer, perhaps.
+          if (curwin->w_buffer != NULL
+              && curwin->w_s == &(curwin->w_buffer->b_s)) {
             curwin->w_s = &(buf->b_s);
+          }
 
           curwin->w_buffer = buf;
           curbuf = buf;
@@ -2259,11 +2292,11 @@ do_ecmd (
 
     curwin->w_pcmark.lnum = 1;
     curwin->w_pcmark.col = 0;
-  } else { /* !other_file */
-    if (
-      (flags & ECMD_ADDBUF) ||
-      check_fname() == FAIL)
+  } else {  // !other_file
+    if ((flags & ECMD_ADDBUF)
+        || check_fname() == FAIL) {
       goto theend;
+    }
     oldbuf = (flags & ECMD_OLDBUF);
   }
 
@@ -2483,7 +2516,9 @@ do_ecmd (
     msg_scroll = msg_scroll_save;
     msg_scrolled_ign = TRUE;
 
-    fileinfo(FALSE, TRUE, FALSE);
+    if (!shortmess(SHM_FILEINFO)) {
+      fileinfo(false, true, false);
+    }
 
     msg_scrolled_ign = FALSE;
   }
@@ -3017,7 +3052,7 @@ void do_sub(exarg_T *eap)
     // The number of lines joined is the number of lines in the range
     linenr_T joined_lines_count = eap->line2 - eap->line1 + 1
       // plus one extra line if not at the end of file.
-      + eap->line2 < curbuf->b_ml.ml_line_count ? 1 : 0;
+      + (eap->line2 < curbuf->b_ml.ml_line_count ? 1 : 0);
     if (joined_lines_count > 1) {
       do_join(joined_lines_count, FALSE, TRUE, FALSE, true);
       sub_nsubs = joined_lines_count - 1;
@@ -3781,16 +3816,17 @@ skip:
       EMSG2(_(e_patnotf2), get_search_pat());
   }
 
-  if (do_ask && hasAnyFolding(curwin))
-    /* Cursor position may require updating */
+  if (do_ask && hasAnyFolding(curwin)) {
+    // Cursor position may require updating
     changed_window_setting();
-
-    vim_regfree(regmatch.regprog);
-
-    // Restore the flag values, they can be used for ":&&".
-    do_all = save_do_all;
-    do_ask = save_do_ask;
   }
+
+  vim_regfree(regmatch.regprog);
+
+  // Restore the flag values, they can be used for ":&&".
+  do_all = save_do_all;
+  do_ask = save_do_ask;
+}
 
 /*
  * Give message for number of substitutions.
@@ -4378,17 +4414,20 @@ int find_help_tags(char_u *arg, int *num_matches, char_u ***matches, int keep_la
           || (arg[0] == '\\' && arg[1] == '{'))
         *d++ = '\\';
 
-      for (s = arg; *s; ++s) {
-        /*
-         * Replace "|" with "bar" and '"' with "quote" to match the name of
-         * the tags for these commands.
-         * Replace "*" with ".*" and "?" with "." to match command line
-         * completion.
-         * Insert a backslash before '~', '$' and '.' to avoid their
-         * special meaning.
-         */
-        if (d - IObuff > IOSIZE - 10)           /* getting too long!? */
+      // If tag starts with "('", skip the "(". Fixes CTRL-] on ('option'.
+      if (*arg == '(' && arg[1] == '\'') {
+          arg++;
+      }
+      for (s = arg; *s; s++) {
+        // Replace "|" with "bar" and '"' with "quote" to match the name of
+        // the tags for these commands.
+        // Replace "*" with ".*" and "?" with "." to match command line
+        // completion.
+        // Insert a backslash before '~', '$' and '.' to avoid their
+        // special meaning.
+        if (d - IObuff > IOSIZE - 10) {           // getting too long!?
           break;
+        }
         switch (*s) {
         case '|':   STRCPY(d, "bar");
           d += 3;
@@ -4448,6 +4487,12 @@ int find_help_tags(char_u *arg, int *num_matches, char_u ***matches, int keep_la
         }
 
         *d++ = *s;
+
+        // If tag contains "({" or "([", tag terminates at the "(".
+        // This is for help on functions, e.g.: abs({expr}).
+        if (*s == '(' && (s[1] == '{' || s[1] =='[')) {
+          break;
+        }
 
         /*
          * If tag starts with ', toss everything after a second '. Fixes
@@ -4779,6 +4824,7 @@ void ex_helptags(exarg_T *eap)
       WILD_LIST_NOTFOUND|WILD_SILENT, WILD_EXPAND_FREE);
   if (dirname == NULL || !os_isdir(dirname)) {
     EMSG2(_("E150: Not a directory: %s"), eap->arg);
+    xfree(dirname);
     return;
   }
 
@@ -4876,16 +4922,13 @@ helptags_one (
   int fi;
   char_u      *s;
   char_u      *fname;
-  int dirlen;
   int utf8 = MAYBE;
   int this_utf8;
   int firstline;
   int mix = FALSE;              /* detected mixed encodings */
 
-  /*
-   * Find all *.txt files.
-   */
-  dirlen = (int)STRLEN(dir);
+  // Find all *.txt files.
+  size_t dirlen = STRLEN(dir);
   STRCPY(NameBuff, dir);
   STRCAT(NameBuff, "/**/*");
   STRCAT(NameBuff, ext);
@@ -4907,7 +4950,7 @@ helptags_one (
    */
   STRCPY(NameBuff, dir);
   add_pathsep((char *)NameBuff);
-  STRCAT(NameBuff, tagfname);
+  STRNCAT(NameBuff, tagfname, sizeof(NameBuff) - dirlen - 2);
   fd_tags = mch_fopen((char *)NameBuff, "w");
   if (fd_tags == NULL) {
     EMSG2(_("E152: Cannot open %s for writing"), NameBuff);
@@ -5013,7 +5056,9 @@ helptags_one (
     /*
      * Sort the tags.
      */
-    sort_strings((char_u **)ga.ga_data, ga.ga_len);
+    if (ga.ga_data != NULL) {
+      sort_strings((char_u **)ga.ga_data, ga.ga_len);
+    }
 
     /*
      * Check for duplicates.
@@ -5781,13 +5826,14 @@ void set_context_in_sign_cmd(expand_T *xp, char_u *arg)
     switch (cmd_idx)
     {
       case SIGNCMD_DEFINE:
-        if (STRNCMP(last, "texthl", p - last) == 0 ||
-            STRNCMP(last, "linehl", p - last) == 0)
+        if (STRNCMP(last, "texthl", p - last) == 0
+            || STRNCMP(last, "linehl", p - last) == 0) {
           xp->xp_context = EXPAND_HIGHLIGHT;
-        else if (STRNCMP(last, "icon", p - last) == 0)
+        } else if (STRNCMP(last, "icon", p - last) == 0) {
           xp->xp_context = EXPAND_FILES;
-        else
+        } else {
           xp->xp_context = EXPAND_NOTHING;
+        }
         break;
       case SIGNCMD_PLACE:
         if (STRNCMP(last, "name", p - last) == 0)

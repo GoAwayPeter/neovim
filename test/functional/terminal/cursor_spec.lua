@@ -1,4 +1,4 @@
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
 local Screen = require('test.functional.ui.screen')
 local thelpers = require('test.functional.terminal.helpers')
 local feed, clear, nvim = helpers.feed, helpers.clear, helpers.nvim
@@ -59,7 +59,7 @@ describe('terminal cursor', function()
       ]])
     end)
 
-    it('is positioned correctly when focused', function()
+    pending('is positioned correctly when focused', function()
       feed('i')
       screen:expect([[
           1 tty ready                                     |

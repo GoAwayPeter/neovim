@@ -1,7 +1,7 @@
 -- Tests for some server->client RPC scenarios. Note that unlike with
 -- `rpcnotify`, to evaluate `rpcrequest` calls we need the client event loop to
 -- be running.
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
 local clear, nvim, eval = helpers.clear, helpers.nvim, helpers.eval
 local eq, neq, run, stop = helpers.eq, helpers.neq, helpers.run, helpers.stop
 local nvim_prog = helpers.nvim_prog
@@ -165,8 +165,8 @@ describe('server -> client', function()
 
       eq('SOME TEXT', eval("rpcrequest(vim, 'buffer_get_line', "..buf..", 0)"))
 
-      -- Call get_line_slice(buf, range [0,0], includes start, includes end)
-      eq({'SOME TEXT'}, eval("rpcrequest(vim, 'buffer_get_line_slice', "..buf..", 0, 0, 1, 1)"))
+      -- Call get_lines(buf, range [0,0], strict_indexing)
+      eq({'SOME TEXT'}, eval("rpcrequest(vim, 'buffer_get_lines', "..buf..", 0, 1, 1)"))
     end)
 
     it('returns an error if the request failed', function()

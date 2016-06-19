@@ -7,6 +7,7 @@ static inline void free_spat(struct spat *const spat);
 static void set_vv_searchforward(void);
 static int first_submatch(regmmatch_T *rp);
 static int check_prevcol(char_u *linep, int col, int ch, int *prevcol);
+static int find_rawstring_end(char_u *linep, pos_T *startpos, pos_T *endpos);
 static int check_linecomment(char_u *line);
 static int inmacro(char_u *opt, char_u *s);
 static int cls(void);

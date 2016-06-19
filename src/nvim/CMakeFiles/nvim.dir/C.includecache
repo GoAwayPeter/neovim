@@ -225,8 +225,6 @@ varargs.h
 -
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/api/buffer.c
-errno.h
--
 stdbool.h
 -
 stdint.h
@@ -475,8 +473,6 @@ nvim/api/window.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/buffer.c
 stdbool.h
 -
-errno.h
--
 string.h
 -
 inttypes.h
@@ -485,6 +481,8 @@ nvim/api/private/handle.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/api/private/handle.h
 nvim/ascii.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/ascii.h
+nvim/assert.h
+/Users/George/Documents/Programs/C/neovim/src/nvim/nvim/assert.h
 nvim/vim.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/vim.h
 nvim/buffer.h
@@ -679,8 +677,6 @@ nvim/syntax.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/syntax.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/diff.c
-errno.h
--
 inttypes.h
 -
 stdbool.h
@@ -795,8 +791,6 @@ digraph.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/edit.c
 assert.h
 -
-errno.h
--
 string.h
 -
 inttypes.h
@@ -904,8 +898,6 @@ edit.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/eval.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -1321,8 +1313,6 @@ event/wstream.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.c
 assert.h
 -
-errno.h
--
 stdbool.h
 -
 string.h
@@ -1437,13 +1427,13 @@ ex_cmds.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.c
 assert.h
 -
-errno.h
--
 inttypes.h
 -
 stdbool.h
 -
 string.h
+-
+fcntl.h
 -
 nvim/vim.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/vim.h
@@ -1532,8 +1522,6 @@ string.h
 stdbool.h
 -
 stdint.h
--
-errno.h
 -
 inttypes.h
 -
@@ -1701,8 +1689,6 @@ ex_eval.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.c
 assert.h
 -
-errno.h
--
 stdbool.h
 -
 string.h
@@ -1855,8 +1841,6 @@ farsi.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/file_search.c
 assert.h
 -
-errno.h
--
 string.h
 -
 stdbool.h
@@ -1914,6 +1898,8 @@ stdbool.h
 string.h
 -
 inttypes.h
+-
+fcntl.h
 -
 nvim/vim.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/vim.h
@@ -2171,8 +2157,6 @@ getchar.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/hardcopy.c
 assert.h
 -
-errno.h
--
 string.h
 -
 inttypes.h
@@ -2266,6 +2250,8 @@ assert.h
 errno.h
 -
 inttypes.h
+-
+fcntl.h
 -
 nvim/vim.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/vim.h
@@ -2423,6 +2409,8 @@ nvim/strings.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/strings.h
 nvim/mouse.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/mouse.h
+keymap.c.generated.h
+/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/log.c
 assert.h
@@ -2445,15 +2433,11 @@ nvim/os/os.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/os/os.h
 nvim/os/time.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/os/time.h
-unistd.h
--
 log.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/log.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/main.c
 assert.h
--
-errno.h
 -
 stdint.h
 -
@@ -2603,8 +2587,6 @@ nvim/lib/khash.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/mark.c
 assert.h
 -
-errno.h
--
 inttypes.h
 -
 string.h
@@ -2665,8 +2647,6 @@ mark.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/mark.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/mbyte.c
-errno.h
--
 inttypes.h
 -
 stdbool.h
@@ -2727,8 +2707,6 @@ langinfo.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/memfile.c
 assert.h
 -
-errno.h
--
 inttypes.h
 -
 limits.h
@@ -2736,6 +2714,8 @@ limits.h
 string.h
 -
 stdbool.h
+-
+fcntl.h
 -
 nvim/vim.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/vim.h
@@ -2774,6 +2754,8 @@ inttypes.h
 string.h
 -
 stdbool.h
+-
+fcntl.h
 -
 nvim/ascii.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/ascii.h
@@ -2842,8 +2824,6 @@ memline.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/memory.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -2971,8 +2951,6 @@ menu.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/message.c
 assert.h
 -
-errno.h
--
 inttypes.h
 -
 stdbool.h
@@ -3040,8 +3018,6 @@ message.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/misc1.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -3144,8 +3120,6 @@ misc1.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/misc2.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -3459,8 +3433,6 @@ msgpack_rpc/server.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/normal.c
 assert.h
 -
-errno.h
--
 inttypes.h
 -
 string.h
@@ -3650,8 +3622,6 @@ ops.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/option.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -3867,6 +3837,8 @@ nvim/main.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/os/nvim/main.h
 nvim/misc1.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/os/nvim/misc1.h
+nvim/misc2.h
+/Users/George/Documents/Programs/C/neovim/src/nvim/os/nvim/misc2.h
 os/input.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/os/os/input.c.generated.h
 
@@ -4089,8 +4061,6 @@ nvim/os/signal.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/os/signal.h
 nvim/msgpack_rpc/helpers.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/msgpack_rpc/helpers.h
-stropts.h
--
 selinux/selinux.h
 -
 os_unix.c.generated.h
@@ -4102,8 +4072,6 @@ sys/access.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/path.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -4232,8 +4200,6 @@ profile.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/quickfix.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -4377,8 +4343,6 @@ nvim/regexp_nfa.c
 /Users/George/Documents/Programs/C/neovim/src/nvim/screen.c
 assert.h
 -
-errno.h
--
 inttypes.h
 -
 stdbool.h
@@ -4481,8 +4445,6 @@ screen.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/search.c
 assert.h
 -
-errno.h
--
 inttypes.h
 -
 stdbool.h
@@ -4577,8 +4539,6 @@ sha256.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/sha256.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/shada.c
-endian.h
--
 stdlib.h
 -
 stddef.h
@@ -4593,7 +4553,7 @@ inttypes.h
 -
 errno.h
 -
-unistd.h
+fcntl.h
 -
 assert.h
 -
@@ -4655,17 +4615,19 @@ nvim/fileio.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/fileio.h
 nvim/strings.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/strings.h
+nvim/quickfix.h
+/Users/George/Documents/Programs/C/neovim/src/nvim/nvim/quickfix.h
 nvim/lib/khash.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/lib/khash.h
 nvim/lib/kvec.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/lib/kvec.h
+endian.h
+-
 shada.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/shada.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/spell.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -4779,8 +4741,6 @@ state.c.generated.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/state.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/strings.c
-errno.h
--
 inttypes.h
 -
 stdbool.h
@@ -4875,8 +4835,6 @@ assert.h
 -
 ctype.h
 -
-errno.h
--
 inttypes.h
 -
 stdbool.h
@@ -4952,8 +4910,6 @@ syntax.c.generated.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/tag.c
 assert.h
--
-errno.h
 -
 inttypes.h
 -
@@ -5327,11 +5283,11 @@ inttypes.h
 -
 limits.h
 -
-errno.h
--
 stdbool.h
 -
 string.h
+-
+fcntl.h
 -
 nvim/vim.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/vim.h
@@ -5433,8 +5389,6 @@ nvim/macros.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/macros.h
 libintl.h
 -
-fcntl.h
--
 nvim/globals.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/globals.h
 nvim/buffer_defs.h
@@ -5443,8 +5397,6 @@ nvim/ex_cmds_defs.h
 /Users/George/Documents/Programs/C/neovim/src/nvim/nvim/ex_cmds_defs.h
 
 /Users/George/Documents/Programs/C/neovim/src/nvim/window.c
-errno.h
--
 assert.h
 -
 inttypes.h
@@ -6462,6 +6414,12 @@ src/nvim/auto/nvim/func_attr.h
 nvim/func_attr.h
 src/nvim/auto/nvim/func_attr.h
 
+src/nvim/auto/keymap.c.generated.h
+nvim/func_attr.h
+src/nvim/auto/nvim/func_attr.h
+nvim/func_attr.h
+src/nvim/auto/nvim/func_attr.h
+
 src/nvim/auto/log.c.generated.h
 nvim/func_attr.h
 src/nvim/auto/nvim/func_attr.h
@@ -6785,6 +6743,8 @@ nvim/pos.h
 src/nvim/nvim/pos.h
 nvim/ex_cmds_defs.h
 src/nvim/nvim/ex_cmds_defs.h
+nvim/screen.h
+src/nvim/nvim/screen.h
 buffer.h.generated.h
 src/nvim/buffer.h.generated.h
 
@@ -7105,6 +7065,8 @@ src/nvim/getchar.h.generated.h
 src/nvim/globals.h
 stdbool.h
 -
+inttypes.h
+-
 nvim/ex_eval.h
 src/nvim/nvim/ex_eval.h
 nvim/iconv.h
@@ -7149,6 +7111,8 @@ src/nvim/if_cscope.h.generated.h
 src/nvim/if_cscope_defs.h
 sys/types.h
 -
+nvim/os/os_defs.h
+src/nvim/nvim/os/os_defs.h
 nvim/os/fs_defs.h
 src/nvim/nvim/os/fs_defs.h
 
@@ -7509,13 +7473,19 @@ src/nvim/os/os/time.h.generated.h
 src/nvim/os/unix_defs.h
 unistd.h
 -
-signal.h
--
-sys/param.h
+limits.h
 -
 
 src/nvim/os/win_defs.h
 windows.h
+-
+sys/stat.h
+-
+io.h
+-
+stdio.h
+-
+uv.h
 -
 
 src/nvim/os_unix.h
@@ -7750,8 +7720,6 @@ src/nvim/nvim/keymap.h
 nvim/macros.h
 src/nvim/nvim/macros.h
 libintl.h
--
-fcntl.h
 -
 nvim/globals.h
 src/nvim/nvim/globals.h

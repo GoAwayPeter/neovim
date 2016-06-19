@@ -1,7 +1,7 @@
 " These commands create the option window.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last Change:	2014 Nov 19
+" Last Change:	2015 Jul 22
 
 " If there already is an option window, jump to that one.
 if bufwinnr("option-window") > 0
@@ -289,6 +289,10 @@ call append("$", " \tset tl=" . &tl)
 call append("$", "tags\tlist of file names to search for tags")
 call append("$", "\t(global or local to buffer)")
 call <SID>OptionG("tag", &tag)
+call append("$", "tagcase\thow to handle case when searching in tags files:")
+call append("$", "\t\"followic\" to follow 'ignorecase', \"ignore\" or \"match\"")
+call append("$", "\t(global or local to buffer)")
+call <SID>OptionG("tc", &tc)
 call append("$", "tagrelative\tfile names in a tags file are relative to the tags file")
 call <SID>BinOptionG("tr", &tr)
 call append("$", "tagstack\ta :tag command will use the tagstack")
@@ -406,6 +410,10 @@ call append("$", "highlight\twhich highlighting to use for various occasions")
 call <SID>OptionG("hl", &hl)
 call append("$", "hlsearch\thighlight all matches for the last used search pattern")
 call <SID>BinOptionG("hls", &hls)
+if has("termguicolors")
+  call append("$", "termguicolors\tuse GUI colors for the terminal")
+  call <SID>BinOptionG("tgc", &tgc)
+endif
 if has("syntax")
   call append("$", "cursorcolumn\thighlight the screen column of the cursor")
   call append("$", "\t(local to window)")
@@ -673,6 +681,8 @@ call append("$", "errorbells\tring the bell for error messages")
 call <SID>BinOptionG("eb", &eb)
 call append("$", "visualbell\tuse a visual bell instead of beeping")
 call <SID>BinOptionG("vb", &vb)
+call append("$", "belloff\tdo not ring the bell for these reasons")
+call <SID>OptionG("belloff", &belloff)
 if has("multi_lang")
   call append("$", "helplang\tlist of preferred languages for finding help")
   call <SID>OptionG("hlg", &hlg)
@@ -756,7 +766,7 @@ call append("$", "infercase\tadjust case of a keyword completion match")
 call append("$", "\t(local to buffer)")
 call <SID>BinOptionL("inf")
 if has("digraphs")
-  call append("$", "digraph\tenable entering digraps with c1 <BS> c2")
+  call append("$", "digraph\tenable entering digraphs with c1 <BS> c2")
   call <SID>BinOptionG("dg", &dg)
 endif
 call append("$", "tildeop\tthe \"~\" command behaves like an operator")
@@ -922,7 +932,7 @@ call <SID>BinOptionL("bin")
 call append("$", "endofline\tlast line in the file has an end-of-line")
 call append("$", "\t(local to buffer)")
 call <SID>BinOptionL("eol")
-call append("$", "fixeol\tfixes missing end-of-line at end of text file")
+call append("$", "fixendofline\tfixes missing end-of-line at end of text file")
 call append("$", "\t(local to buffer)")
 call <SID>BinOptionL("fixeol")
 if has("multi_byte")
@@ -1132,7 +1142,7 @@ if has("arabic")
   call <SID>BinOptionG("tbidi", &tbidi)
 endif
 if has("keymap")
-  call append("$", "keymap\tname of a keyboard mappping")
+  call append("$", "keymap\tname of a keyboard mapping")
   call <SID>OptionL("kmp")
 endif
 if has("langmap")

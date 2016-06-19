@@ -61,14 +61,8 @@ static int confirm_msg_used = FALSE;            /* displaying confirm_msg */
 static char_u   *confirm_msg = NULL;            /* ":confirm" message */
 static char_u   *confirm_msg_tail;              /* tail of confirm_msg */
 
-struct msg_hist {
-  struct msg_hist     *next;
-  char_u              *msg;
-  int attr;
-};
-
-static struct msg_hist *first_msg_hist = NULL;
-static struct msg_hist *last_msg_hist = NULL;
+MessageHistoryEntry *first_msg_hist = NULL;
+MessageHistoryEntry *last_msg_hist = NULL;
 static int msg_hist_len = 0;
 
 static FILE *verbose_fd = NULL;
@@ -149,10 +143,11 @@ msg_attr_keep (
 {
   static int entered = 0;
   int retval;
-  char_u      *buf = NULL;
+  char_u *buf = NULL;
 
-  if (attr == 0)
-    set_vim_var_string(VV_STATUSMSG, s, -1);
+  if (attr == 0) {
+    set_vim_var_string(VV_STATUSMSG, (char *) s, -1);
+  }
 
   /*
    * It is possible that displaying a messages causes a problem (e.g.,
@@ -472,22 +467,23 @@ int emsg(char_u *s)
 {
   int attr;
   char_u      *p;
-  int ignore = FALSE;
+  int ignore = false;
   int severe;
 
-  /* Skip this if not giving error messages at the moment. */
-  if (emsg_not_now())
-    return TRUE;
+  // Skip this if not giving error messages at the moment.
+  if (emsg_not_now()) {
+    return true;
+  }
 
-  called_emsg = TRUE;
-  ex_exitval = 1;
+  called_emsg = true;
+  if (emsg_silent == 0) {
+    ex_exitval = 1;
+  }
 
-  /*
-   * If "emsg_severe" is TRUE: When an error exception is to be thrown,
-   * prefer this message over previous messages for the same command.
-   */
+  // If "emsg_severe" is TRUE: When an error exception is to be thrown,
+  // prefer this message over previous messages for the same command.
   severe = emsg_severe;
-  emsg_severe = FALSE;
+  emsg_severe = false;
 
   if (!emsg_off || vim_strchr(p_debug, 't') != NULL) {
     /*
@@ -497,14 +493,15 @@ int emsg(char_u *s)
      * when the message should be ignored completely (used for the
      * interrupt message).
      */
-    if (cause_errthrow(s, severe, &ignore) == TRUE) {
-      if (!ignore)
-        did_emsg = TRUE;
-      return TRUE;
+    if (cause_errthrow(s, severe, &ignore) == true) {
+      if (!ignore) {
+        did_emsg = true;
+      }
+      return true;
     }
 
-    /* set "v:errmsg", also when using ":silent! cmd" */
-    set_vim_var_string(VV_ERRMSG, s, -1);
+    // set "v:errmsg", also when using ":silent! cmd"
+    set_vim_var_string(VV_ERRMSG, (char *) s, -1);
 
     /*
      * When using ":silent! cmd" ignore error messages.
@@ -515,41 +512,43 @@ int emsg(char_u *s)
       p = get_emsg_source();
       if (p != NULL) {
         STRCAT(p, "\n");
-        redir_write(p, -1);
+        redir_write(p, STRLEN(p));
         xfree(p);
       }
       p = get_emsg_lnum();
       if (p != NULL) {
         STRCAT(p, "\n");
-        redir_write(p, -1);
+        redir_write(p, STRLEN(p));
         xfree(p);
       }
-      redir_write(s, -1);
-      return TRUE;
+      redir_write(s, STRLEN(s));
+      return true;
     }
 
-    /* Reset msg_silent, an error causes messages to be switched back on. */
+    // Reset msg_silent, an error causes messages to be switched back on.
     msg_silent = 0;
     cmd_silent = FALSE;
 
-    if (global_busy)                    /* break :global command */
-      ++global_busy;
+    if (global_busy) {        // break :global command
+      global_busy++;
+    }
 
-    if (p_eb)
-      beep_flush();                     /* also includes flush_buffers() */
-    else
-      flush_buffers(FALSE);             /* flush internal buffers */
-    did_emsg = TRUE;                    /* flag for DoOneCmd() */
+    if (p_eb) {
+      beep_flush();           // also includes flush_buffers()
+    } else {
+      flush_buffers(false);   // flush internal buffers
+    }
+    did_emsg = true;          // flag for DoOneCmd()
   }
 
-  emsg_on_display = TRUE;       /* remember there is an error message */
-  ++msg_scroll;                 /* don't overwrite a previous message */
-  attr = hl_attr(HLF_E);        /* set highlight mode for error messages */
-  if (msg_scrolled != 0)
-    need_wait_return = TRUE;        /* needed in case emsg() is called after
-                                     * wait_return has reset need_wait_return
-                                     * and a redraw is expected because
-                                     * msg_scrolled is non-zero */
+  emsg_on_display = true;     // remember there is an error message
+  msg_scroll++;               // don't overwrite a previous message
+  attr = hl_attr(HLF_E);      // set highlight mode for error messages
+  if (msg_scrolled != 0) {
+    need_wait_return = true;  // needed in case emsg() is called after
+  }                           // wait_return has reset need_wait_return
+                              // and a redraw is expected because
+                              // msg_scrolled is non-zero
 
   /*
    * Display name and line number for the source of the error.
@@ -563,49 +562,23 @@ int emsg(char_u *s)
   return msg_attr(s, attr);
 }
 
-/*
- * Print an error message with one "%s" and one string argument.
- */
-int emsg2(char_u *s, char_u *a1)
-{
-  return emsg3(s, a1, NULL);
-}
-
 void emsg_invreg(int name)
 {
   EMSG2(_("E354: Invalid register name: '%s'"), transchar(name));
 }
 
-/// Print an error message with one or two "%s" and one or two string arguments.
-int emsg3(char_u *s, char_u *a1, char_u *a2)
+/// Print an error message with unknown number of arguments
+bool emsgf(const char *const fmt, ...)
 {
   if (emsg_not_now()) {
-    return TRUE;                // no error messages at the moment
+    return true;
   }
 
-  vim_snprintf((char *)IObuff, IOSIZE, (char *)s, a1, a2);
-  return emsg(IObuff);
-}
+  va_list ap;
+  va_start(ap, fmt);
+  vim_vsnprintf((char *) IObuff, IOSIZE, fmt, ap, NULL);
+  va_end(ap);
 
-/// Print an error message with one "%" PRId64 and one (int64_t) argument.
-int emsgn(char_u *s, int64_t n)
-{
-  if (emsg_not_now()) {
-    return TRUE;                // no error messages at the moment
-  }
-
-  vim_snprintf((char *)IObuff, IOSIZE, (char *)s, n);
-  return emsg(IObuff);
-}
-
-/// Print an error message with one "%" PRIu64 and one (uint64_t) argument.
-int emsgu(char_u *s, uint64_t n)
-{
-  if (emsg_not_now()) {
-    return TRUE;                // no error messages at the moment
-  }
-
-  vim_snprintf((char *)IObuff, IOSIZE, (char *)s, n);
   return emsg(IObuff);
 }
 
@@ -815,11 +788,13 @@ void wait_return(int redraw)
 
     State = HITRETURN;
     setmouse();
-    /* Avoid the sequence that the user types ":" at the hit-return prompt
-     * to start an Ex command, but the file-changed dialog gets in the
-     * way. */
-    if (need_check_timestamps)
-      check_timestamps(FALSE);
+    cmdline_row = msg_row;
+    // Avoid the sequence that the user types ":" at the hit-return prompt
+    // to start an Ex command, but the file-changed dialog gets in the
+    // way.
+    if (need_check_timestamps) {
+      check_timestamps(false);
+    }
 
     hit_return_msg();
 
@@ -1538,51 +1513,44 @@ void msg_puts_attr(char_u *s, int attr)
   msg_puts_attr_len(s, -1, attr);
 }
 
-/*
- * Like msg_puts_attr(), but with a maximum length "maxlen" (in bytes).
- * When "maxlen" is -1 there is no maximum length.
- * When "maxlen" is >= 0 the message is not put in the history.
- */
+/// Like msg_puts_attr(), but with a maximum length "maxlen" (in bytes).
+/// When "maxlen" is -1 there is no maximum length.
+/// When "maxlen" is >= 0 the message is not put in the history.
 static void msg_puts_attr_len(char_u *str, int maxlen, int attr)
 {
-  /*
-   * If redirection is on, also write to the redirection file.
-   */
+  // If redirection is on, also write to the redirection file.
   redir_write(str, maxlen);
 
-  /*
-   * Don't print anything when using ":silent cmd".
-   */
-  if (msg_silent != 0)
+  // Don't print anything when using ":silent cmd".
+  if (msg_silent != 0) {
     return;
+  }
 
-  /* if MSG_HIST flag set, add message to history */
+  // if MSG_HIST flag set, add message to history
   if ((attr & MSG_HIST) && maxlen < 0) {
     add_msg_hist(str, -1, attr);
     attr &= ~MSG_HIST;
   }
 
-  /*
-   * When writing something to the screen after it has scrolled, requires a
-   * wait-return prompt later.  Needed when scrolling, resetting
-   * need_wait_return after some prompt, and then outputting something
-   * without scrolling
-   */
-  if (msg_scrolled != 0 && !msg_scrolled_ign)
-    need_wait_return = TRUE;
-  msg_didany = TRUE;            /* remember that something was outputted */
+  // When writing something to the screen after it has scrolled, requires a
+  // wait-return prompt later.  Needed when scrolling, resetting
+  // need_wait_return after some prompt, and then outputting something
+  // without scrolling
+  if (msg_scrolled != 0 && !msg_scrolled_ign) {
+    need_wait_return = true;
+  }
+  msg_didany = true;  // remember that something was outputted
 
-  /*
-   * If there is no valid screen, use fprintf so we can see error messages.
-   * If termcap is not active, we may be writing in an alternate console
-   * window, cursor positioning may not work correctly (window size may be
-   * different, e.g. for Win32 console) or we just don't know where the
-   * cursor is.
-   */
-  if (msg_use_printf())
-    msg_puts_printf(str, maxlen);
-  else
-    msg_puts_display(str, maxlen, attr, FALSE);
+  // If there is no valid screen, use fprintf so we can see error messages.
+  // If termcap is not active, we may be writing in an alternate console
+  // window, cursor positioning may not work correctly (window size may be
+  // different, e.g. for Win32 console) or we just don't know where the
+  // cursor is.
+  if (msg_use_printf()) {
+    msg_puts_printf((char *)str, maxlen);
+  } else {
+    msg_puts_display(str, maxlen, attr, false);
+  }
 }
 
 /*
@@ -1601,39 +1569,31 @@ static void msg_puts_display(char_u *str, int maxlen, int attr, int recurse)
   int wrap;
   int did_last_char;
 
-  did_wait_return = FALSE;
+  did_wait_return = false;
   while ((maxlen < 0 || (int)(s - str) < maxlen) && *s != NUL) {
-    /*
-     * We are at the end of the screen line when:
-     * - When outputting a newline.
-     * - When outputting a character in the last column.
-     */
-    if (!recurse && msg_row >= Rows - 1 && (*s == '\n' || (
-                                              cmdmsg_rl
-                                              ? (
-                                                msg_col <= 1
-                                                || (*s == TAB && msg_col <= 7)
-                                                || (has_mbyte &&
-                                                    (*mb_ptr2cells)(s) > 1 &&
-                                                    msg_col <= 2)
-                                                )
-                                              :
-                                              (msg_col + t_col >= Columns - 1
-                                               || (*s == TAB && msg_col +
-                                                   t_col >= ((Columns - 1) & ~7))
-                                               || (has_mbyte &&
-                                                   (*mb_ptr2cells)(s) > 1
-                                                   && msg_col + t_col >=
-                                                   Columns - 2)
-                                              )))) {
-      /*
-       * The screen is scrolled up when at the last row (some terminals
-       * scroll automatically, some don't.  To avoid problems we scroll
-       * ourselves).
-       */
-      if (t_col > 0)
-        /* output postponed text */
+    // We are at the end of the screen line when:
+    // - When outputting a newline.
+    // - When outputting a character in the last column.
+    if (!recurse && msg_row >= Rows - 1
+        && (*s == '\n' || (cmdmsg_rl
+                           ? (msg_col <= 1
+                              || (*s == TAB && msg_col <= 7)
+                              || (has_mbyte
+                                  && (*mb_ptr2cells)(s) > 1
+                                  && msg_col <= 2))
+                           : (msg_col + t_col >= Columns - 1
+                              || (*s == TAB
+                                  && msg_col + t_col >= ((Columns - 1) & ~7))
+                              || (has_mbyte
+                                  && (*mb_ptr2cells)(s) > 1
+                                  && msg_col + t_col >= Columns - 2))))) {
+      // The screen is scrolled up when at the last row (some terminals
+      // scroll automatically, some don't.  To avoid problems we scroll
+      // ourselves).
+      if (t_col > 0) {
+        // output postponed text
         t_puts(&t_col, t_s, s, attr);
+      }
 
       /* When no more prompt and no more room, truncate here */
       if (msg_no_more && lines_left == 0)
@@ -1740,18 +1700,15 @@ static void msg_puts_display(char_u *str, int maxlen, int attr, int recurse)
         cw = 1;
         l = 1;
       }
-      /* When drawing from right to left or when a double-wide character
-       * doesn't fit, draw a single character here.  Otherwise collect
-       * characters and draw them all at once later. */
-      if (
-        cmdmsg_rl
-        ||
-        (cw > 1 && msg_col + t_col >= Columns - 1)
-        ) {
-        if (l > 1)
+      // When drawing from right to left or when a double-wide character
+      // doesn't fit, draw a single character here.  Otherwise collect
+      // characters and draw them all at once later.
+      if (cmdmsg_rl || (cw > 1 && msg_col + t_col >= Columns - 1)) {
+        if (l > 1) {
           s = screen_puts_mbyte(s, l, attr) - 1;
-        else
+        } else {
           msg_screen_putchar(*s, attr);
+        }
       } else {
         /* postpone this character until later */
         if (t_col == 0)
@@ -1787,25 +1744,24 @@ static void msg_scroll_up(void)
 static void inc_msg_scrolled(void)
 {
   if (*get_vim_var_str(VV_SCROLLSTART) == NUL) {
-    char_u      *p = sourcing_name;
-    char_u      *tofree = NULL;
-    int len;
+    char *p = (char *) sourcing_name;
+    char *tofree = NULL;
 
-    /* v:scrollstart is empty, set it to the script/function name and line
-     * number */
-    if (p == NULL)
-      p = (char_u *)_("Unknown");
-    else {
-      len = (int)STRLEN(p) + 40;
+    // v:scrollstart is empty, set it to the script/function name and line
+    // number
+    if (p == NULL) {
+      p = _("Unknown");
+    } else {
+      size_t len = strlen(p) + 40;
       tofree = xmalloc(len);
-      vim_snprintf((char *)tofree, len, _("%s line %" PRId64),
-          p, (int64_t)sourcing_lnum);
+      vim_snprintf(tofree, len, _("%s line %" PRId64),
+                   p, (int64_t) sourcing_lnum);
       p = tofree;
     }
     set_vim_var_string(VV_SCROLLSTART, p, -1);
     xfree(tofree);
   }
-  ++msg_scrolled;
+  msg_scrolled++;
 }
 
 static msgchunk_T *last_msgchunk = NULL; /* last displayed text */
@@ -1968,46 +1924,46 @@ int msg_use_printf(void)
   return !embedded_mode && !ui_active();
 }
 
-/*
- * Print a message when there is no valid screen.
- */
-static void msg_puts_printf(char_u *str, int maxlen)
+/// Print a message when there is no valid screen.
+static void msg_puts_printf(char *str, int maxlen)
 {
-  char_u      *s = str;
-  char_u buf[4];
-  char_u      *p;
+  char *s = str;
+  char buf[4];
+  char *p;
 
   while (*s != NUL && (maxlen < 0 || (int)(s - str) < maxlen)) {
     if (!(silent_mode && p_verbose == 0)) {
-      /* NL --> CR NL translation (for Unix, not for "--version") */
-      /* NL --> CR translation (for Mac) */
+      // NL --> CR NL translation (for Unix, not for "--version")
       p = &buf[0];
-      if (*s == '\n' && !info_message)
+      if (*s == '\n' && !info_message) {
         *p++ = '\r';
+      }
       *p++ = *s;
       *p = '\0';
-      if (info_message)         /* informative message, not an error */
-        mch_msg((char *)buf);
-      else
-        mch_errmsg((char *)buf);
+      if (info_message) {
+        mch_msg(buf);
+      } else {
+        mch_errmsg(buf);
+      }
     }
 
-    /* primitive way to compute the current column */
+    // primitive way to compute the current column
     if (cmdmsg_rl) {
-      if (*s == '\r' || *s == '\n')
+      if (*s == '\r' || *s == '\n') {
         msg_col = Columns - 1;
-      else
-        --msg_col;
+      } else {
+        msg_col--;
+      }
     } else {
-      if (*s == '\r' || *s == '\n')
+      if (*s == '\r' || *s == '\n') {
         msg_col = 0;
-      else
-        ++msg_col;
+      } else {
+        msg_col++;
+      }
     }
-    ++s;
+    s++;
   }
-  msg_didout = TRUE;        /* assume that line is not empty */
-
+  msg_didout = true;  // assume that line is not empty
 }
 
 /*
@@ -2019,6 +1975,7 @@ static void msg_puts_printf(char_u *str, int maxlen)
  */
 static int do_more_prompt(int typed_char)
 {
+  static bool entered = false;
   int used_typed_char = typed_char;
   int oldState = State;
   int c;
@@ -2027,6 +1984,13 @@ static int do_more_prompt(int typed_char)
   msgchunk_T  *mp_last = NULL;
   msgchunk_T  *mp;
   int i;
+
+  // We get called recursively when a timer callback outputs a message. In
+  // that case don't show another prompt. Also when at the hit-Enter prompt.
+  if (entered || State == HITRETURN) {
+      return false;
+  }
+  entered = true;
 
   if (typed_char == 'G') {
     /* "g<": Find first line on the last page. */
@@ -2202,9 +2166,11 @@ static int do_more_prompt(int typed_char)
   if (quit_more) {
     msg_row = Rows - 1;
     msg_col = 0;
-  } else if (cmdmsg_rl)
+  } else if (cmdmsg_rl) {
     msg_col = Columns - 1;
+  }
 
+  entered = false;
   return retval;
 }
 
@@ -2438,22 +2404,27 @@ static void redir_write(char_u *str, int maxlen)
     /* If the string doesn't start with CR or NL, go to msg_col */
     if (*s != '\n' && *s != '\r') {
       while (cur_col < msg_col) {
-        if (redir_reg)
-          write_reg_contents(redir_reg, (char_u *)" ", -1, TRUE);
-        else if (redir_vname)
+        if (redir_reg) {
+          write_reg_contents(redir_reg, (char_u *)" ", 1, true);
+        } else if (redir_vname) {
           var_redir_str((char_u *)" ", -1);
-        else if (redir_fd != NULL)
+        } else if (redir_fd != NULL) {
           fputs(" ", redir_fd);
-        if (verbose_fd != NULL)
+        }
+        if (verbose_fd != NULL) {
           fputs(" ", verbose_fd);
-        ++cur_col;
+        }
+        cur_col++;
       }
     }
 
-    if (redir_reg)
-      write_reg_contents(redir_reg, s, maxlen, TRUE);
-    if (redir_vname)
+    if (redir_reg) {
+      size_t len = maxlen == -1 ? STRLEN(s) : (size_t)maxlen;
+      write_reg_contents(redir_reg, s, len, true);
+    }
+    if (redir_vname) {
       var_redir_str(s, maxlen);
+    }
 
     /* Write and adjust the current column. */
     while (*s != NUL && (maxlen < 0 || (int)(s - str) < maxlen)) {
@@ -2572,7 +2543,7 @@ void give_warning(char_u *message, bool hl) FUNC_ATTR_NONNULL_ARG(1)
   /* Don't want a hit-enter prompt here. */
   ++no_wait_return;
 
-  set_vim_var_string(VV_WARNINGMSG, message, -1);
+  set_vim_var_string(VV_WARNINGMSG, (char *) message, -1);
   xfree(keep_msg);
   keep_msg = NULL;
   if (hl)
@@ -3086,7 +3057,7 @@ int vim_snprintf_add(char *str, size_t str_m, char *fmt, ...)
   return str_l;
 }
 
-int vim_snprintf(char *str, size_t str_m, char *fmt, ...)
+int vim_snprintf(char *str, size_t str_m, const char *fmt, ...)
 {
   va_list ap;
   int str_l;
@@ -3097,11 +3068,12 @@ int vim_snprintf(char *str, size_t str_m, char *fmt, ...)
   return str_l;
 }
 
-int vim_vsnprintf(char *str, size_t str_m, char *fmt, va_list ap, typval_T *tvs)
+int vim_vsnprintf(char *str, size_t str_m, const char *fmt, va_list ap,
+                  typval_T *tvs)
 {
   size_t str_l = 0;
   bool str_avail = str_l < str_m;
-  char *p = fmt;
+  const char *p = fmt;
   int arg_idx = 1;
 
   if (!p) {
@@ -3135,7 +3107,7 @@ int vim_vsnprintf(char *str, size_t str_m, char *fmt, va_list ap, typval_T *tvs)
       char tmp[TMP_LEN];
 
       // string address in case of string argument
-      char *str_arg;
+      const char *str_arg;
 
       // natural field width of arg without padding and sign
       size_t str_arg_l;
@@ -3413,8 +3385,8 @@ int vim_vsnprintf(char *str, size_t str_m, char *fmt, va_list ap, typval_T *tvs)
           // leave negative numbers for sprintf to handle, to
           // avoid handling tricky cases like (short int)-32768
         } else if (alternate_form) {
-          if (arg_sign != 0 && (fmt_spec == 'x' || fmt_spec == 'X' ||
-                                fmt_spec == 'b' || fmt_spec == 'B')) {
+          if (arg_sign != 0 && (fmt_spec == 'x' || fmt_spec == 'X'
+                                || fmt_spec == 'b' || fmt_spec == 'B')) {
             tmp[str_arg_l++] = '0';
             tmp[str_arg_l++] = fmt_spec;
           }

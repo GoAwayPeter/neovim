@@ -2,6 +2,7 @@
 #include <stdbool.h>
 
 #include <assert.h>
+#include <fcntl.h>
 
 #include "nvim/os/os.h"
 #include "nvim/os/os_defs.h"
@@ -59,6 +60,23 @@ int os_dirname(char_u *buf, size_t len)
   return OK;
 }
 
+/// Check if the given path is a directory and not a symlink to a directory.
+/// @return `true` if `name` is a directory and NOT a symlink to a directory.
+///         `false` if `name` is not a directory or if an error occurred.
+bool os_isrealdir(const char_u *name)
+  FUNC_ATTR_NONNULL_ALL
+{
+  uv_fs_t request;
+  if (uv_fs_lstat(&fs_loop, &request, (char *)name, NULL) != kLibuvSuccess) {
+    return false;
+  }
+  if (S_ISLNK(request.statbuf.st_mode)) {
+    return false;
+  } else {
+    return S_ISDIR(request.statbuf.st_mode);
+  }
+}
+
 /// Check if the given path is a directory or not.
 ///
 /// @return `true` if `fname` is a directory.
@@ -77,10 +95,76 @@ bool os_isdir(const char_u *name)
   return true;
 }
 
+/// Check what `name` is:
+/// @return NODE_NORMAL: file or directory (or doesn't exist)
+///         NODE_WRITABLE: writable device, socket, fifo, etc.
+///         NODE_OTHER: non-writable things
+int os_nodetype(const char *name)
+{
+#ifdef WIN32
+  // Edge case from Vim os_win32.c:
+  // We can't open a file with a name "\\.\con" or "\\.\prn", trying to read
+  // from it later will cause Vim to hang. Thus return NODE_WRITABLE here.
+  if (STRNCMP(name, "\\\\.\\", 4) == 0) {
+    return NODE_WRITABLE;
+  }
+#endif
+
+  uv_stat_t statbuf;
+  if (0 != os_stat(name, &statbuf)) {
+    return NODE_NORMAL;  // File doesn't exist.
+  }
+
+#ifndef WIN32
+  // libuv does not handle BLK and DIR in uv_handle_type.
+  //    Related: https://github.com/joyent/libuv/pull/1421
+  if (S_ISREG(statbuf.st_mode) || S_ISDIR(statbuf.st_mode)) {
+    return NODE_NORMAL;
+  }
+  if (S_ISBLK(statbuf.st_mode)) {  // block device isn't writable
+    return NODE_OTHER;
+  }
+#endif
+
+  // Vim os_win32.c:mch_nodetype does this (since patch 7.4.015):
+  //    if (enc_codepage >= 0 && (int)GetACP() != enc_codepage) {
+  //      wn = enc_to_utf16(name, NULL);
+  //      hFile = CreatFile(wn, ...)
+  // to get a HANDLE. But libuv just calls win32's _get_osfhandle() on the fd we
+  // give it. uv_fs_open calls fs__capture_path which does a similar dance and
+  // saves us the hassle.
+
+  int nodetype = NODE_WRITABLE;
+  int fd = os_open(name, O_RDONLY, 0);
+  switch(uv_guess_handle(fd)) {
+    case UV_TTY:         // FILE_TYPE_CHAR
+      nodetype = NODE_WRITABLE;
+      break;
+    case UV_FILE:        // FILE_TYPE_DISK
+      nodetype = NODE_NORMAL;
+      break;
+    case UV_NAMED_PIPE:  // not handled explicitly in Vim os_win32.c
+    case UV_UDP:         // unix only
+    case UV_TCP:         // unix only
+    case UV_UNKNOWN_HANDLE:
+    default:
+#ifdef WIN32
+      nodetype = NODE_NORMAL;
+#else
+      nodetype = NODE_WRITABLE;  // Everything else is writable?
+#endif
+      break;
+  }
+
+  close(fd);
+  return nodetype;
+}
+
 /// Checks if the given path represents an executable file.
 ///
-/// @param[in]  name     The name of the executable.
+/// @param[in]  name     Name of the executable.
 /// @param[out] abspath  Path of the executable, if found and not `NULL`.
+/// @param[in] use_path  If 'false', only check if "name" is executable
 ///
 /// @return `true` if `name` is executable and
 ///   - can be found in $PATH,
@@ -88,14 +172,18 @@ bool os_isdir(const char_u *name)
 ///   - is absolute.
 ///
 /// @return `false` otherwise.
-bool os_can_exe(const char_u *name, char_u **abspath)
+bool os_can_exe(const char_u *name, char_u **abspath, bool use_path)
   FUNC_ATTR_NONNULL_ARG(1)
 {
-  // If it's an absolute or relative path don't need to use $PATH.
-  if (path_is_absolute_path(name) ||
-     (name[0] == '.' && (name[1] == '/' ||
-                        (name[1] == '.' && name[2] == '/')))) {
-    if (is_executable(name)) {
+  // when use_path is false or if it's an absolute or relative path don't
+  // need to use $PATH.
+  if (!use_path || path_is_absolute_path(name)
+      || (name[0] == '.'
+          && (name[1] == '/'
+              || (name[1] == '.' && name[2] == '/')))) {
+    // There must be a path separator, files in the current directory
+    // can't be executed
+    if (gettail_dir(name) != name && is_executable(name)) {
       if (abspath != NULL) {
         *abspath = save_absolute_path(name);
       }
@@ -166,7 +254,7 @@ static bool is_executable_in_path(const char_u *name, char_u **abspath)
     // Glue together the given directory from $PATH with name and save into
     // buf.
     STRLCPY(buf, path, e - path + 1);
-    append_path((char *) buf, (const char *) name, (int)buf_len);
+    append_path((char *) buf, (const char *) name, buf_len);
 
     if (is_executable(buf)) {
       // Check if the caller asked for a copy of the path.
@@ -310,7 +398,6 @@ int os_setperm(const char_u *name, int perm)
 /// @note If the `owner` or `group` is specified as `-1`, then that ID is not
 /// changed.
 int os_fchown(int file_descriptor, uv_uid_t owner, uv_gid_t group)
-  FUNC_ATTR_NONNULL_ALL
 {
   uv_fs_t request;
   int result = uv_fs_fchown(&fs_loop, &request, file_descriptor,

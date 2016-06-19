@@ -57,23 +57,23 @@ typedef struct scriptitem_S {
   char_u      *sn_name;
   bool file_id_valid;
   FileID file_id;
-  int sn_prof_on;               /* TRUE when script is/was profiled */
-  int sn_pr_force;              /* forceit: profile functions in this script */
-  proftime_T sn_pr_child;       /* time set when going into first child */
-  int sn_pr_nest;               /* nesting for sn_pr_child */
-  /* profiling the script as a whole */
-  int sn_pr_count;              /* nr of times sourced */
-  proftime_T sn_pr_total;       /* time spent in script + children */
-  proftime_T sn_pr_self;        /* time spent in script itself */
-  proftime_T sn_pr_start;       /* time at script start */
-  proftime_T sn_pr_children;    /* time in children after script start */
-  /* profiling the script per line */
-  garray_T sn_prl_ga;           /* things stored for every line */
-  proftime_T sn_prl_start;      /* start time for current line */
-  proftime_T sn_prl_children;    /* time spent in children for this line */
-  proftime_T sn_prl_wait;       /* wait start time for current line */
-  int sn_prl_idx;               /* index of line being timed; -1 if none */
-  int sn_prl_execed;            /* line being timed was executed */
+  bool sn_prof_on;              ///< true when script is/was profiled
+  int sn_pr_force;              ///< forceit: profile functions in this script
+  proftime_T sn_pr_child;       ///< time set when going into first child
+  int sn_pr_nest;               ///< nesting for sn_pr_child
+  // profiling the script as a whole
+  int sn_pr_count;              ///< nr of times sourced
+  proftime_T sn_pr_total;       ///< time spent in script + children
+  proftime_T sn_pr_self;        ///< time spent in script itself
+  proftime_T sn_pr_start;       ///< time at script start
+  proftime_T sn_pr_children;    ///< time in children after script start
+  // profiling the script per line
+  garray_T sn_prl_ga;           ///< things stored for every line
+  proftime_T sn_prl_start;      ///< start time for current line
+  proftime_T sn_prl_children;   ///< time spent in children for this line
+  proftime_T sn_prl_wait;       ///< wait start time for current line
+  linenr_T sn_prl_idx;          ///< index of line being timed; -1 if none
+  int sn_prl_execed;            ///< line being timed was executed
 } scriptitem_T;
 
 static garray_T script_items = {0, 0, sizeof(scriptitem_T), 4, NULL};
@@ -81,9 +81,9 @@ static garray_T script_items = {0, 0, sizeof(scriptitem_T), 4, NULL};
 
 /* Struct used in sn_prl_ga for every line of a script. */
 typedef struct sn_prl_S {
-  int snp_count;                /* nr of times line was executed */
-  proftime_T sn_prl_total;      /* time spent in a line + children */
-  proftime_T sn_prl_self;       /* time spent in a line itself */
+  int snp_count;                ///< nr of times line was executed
+  proftime_T sn_prl_total;      ///< time spent in a line + children
+  proftime_T sn_prl_self;       ///< time spent in a line itself
 } sn_prl_T;
 
 /*
@@ -93,18 +93,18 @@ typedef struct sn_prl_S {
  * sourcing can be done recursively.
  */
 struct source_cookie {
-  FILE        *fp;              /* opened file for sourcing */
-  char_u      *nextline;        /* if not NULL: line that was read ahead */
-  int finished;                 /* ":finish" used */
+  FILE *fp;                     ///< opened file for sourcing
+  char_u *nextline;             ///< if not NULL: line that was read ahead
+  int finished;                 ///< ":finish" used
 #if defined(USE_CRNL)
-  int fileformat;               /* EOL_UNKNOWN, EOL_UNIX or EOL_DOS */
-  int error;                    /* TRUE if LF found after CR-LF */
+  int fileformat;               ///< EOL_UNKNOWN, EOL_UNIX or EOL_DOS
+  int error;                    ///< TRUE if LF found after CR-LF
 #endif
-  linenr_T breakpoint;          /* next line with breakpoint or zero */
-  char_u      *fname;           /* name of sourced file */
-  int dbg_tick;                 /* debug_tick when breakpoint was set */
-  int level;                    /* top nesting level of sourced file */
-  vimconv_T conv;               /* type of conversion */
+  linenr_T breakpoint;          ///< next line with breakpoint or zero
+  char_u *fname;                ///< name of sourced file
+  int dbg_tick;                 ///< debug_tick when breakpoint was set
+  int level;                    ///< top nesting level of sourced file
+  vimconv_T conv;               ///< type of conversion
 };
 
 #  define PRL_ITEM(si, idx)     (((sn_prl_T *)(si)->sn_prl_ga.ga_data)[(idx)])
@@ -144,6 +144,10 @@ void do_debug(char_u *cmd)
 #define CMD_FINISH      4
 #define CMD_QUIT        5
 #define CMD_INTERRUPT   6
+#define CMD_BACKTRACE   7
+#define CMD_FRAME       8
+#define CMD_UP          9
+#define CMD_DOWN        10
 
 
   ++RedrawingDisabled;          /* don't redisplay the window */
@@ -185,6 +189,7 @@ void do_debug(char_u *cmd)
       ignore_script = TRUE;
     }
 
+    xfree(cmdline);
     cmdline = getcmdline_prompt('>', NULL, 0, EXPAND_NOTHING, NULL);
 
     if (typeahead_saved) {
@@ -194,6 +199,7 @@ void do_debug(char_u *cmd)
     ex_normal_busy = save_ex_normal_busy;
 
     cmdline_row = msg_row;
+    msg_starthere();
     if (cmdline != NULL) {
       /* If this is a debug command, set "last_cmd".
        * If not, reset "last_cmd".
@@ -210,14 +216,41 @@ void do_debug(char_u *cmd)
         case 's': last_cmd = CMD_STEP;
           tail = "tep";
           break;
-        case 'f': last_cmd = CMD_FINISH;
-          tail = "inish";
+        case 'f':
+          last_cmd = 0;
+          if (p[1] == 'r') {
+            last_cmd = CMD_FRAME;
+            tail = "rame";
+          } else {
+            last_cmd = CMD_FINISH;
+            tail = "inish";
+          }
           break;
         case 'q': last_cmd = CMD_QUIT;
           tail = "uit";
           break;
         case 'i': last_cmd = CMD_INTERRUPT;
           tail = "nterrupt";
+          break;
+        case 'b':
+          last_cmd = CMD_BACKTRACE;
+          if (p[1] == 't') {
+            tail = "t";
+          } else {
+            tail = "acktrace";
+          }
+          break;
+        case 'w':
+          last_cmd = CMD_BACKTRACE;
+          tail = "here";
+          break;
+        case 'u':
+          last_cmd = CMD_UP;
+          tail = "p";
+          break;
+        case 'd':
+          last_cmd = CMD_DOWN;
+          tail = "own";
           break;
         default: last_cmd = 0;
         }
@@ -228,8 +261,9 @@ void do_debug(char_u *cmd)
             ++p;
             ++tail;
           }
-          if (ASCII_ISALPHA(*p))
+          if (ASCII_ISALPHA(*p) && last_cmd != CMD_FRAME) {
             last_cmd = 0;
+          }
         }
       }
 
@@ -259,7 +293,28 @@ void do_debug(char_u *cmd)
           /* Do not repeat ">interrupt" cmd, continue stepping. */
           last_cmd = CMD_STEP;
           break;
+        case CMD_BACKTRACE:
+          do_showbacktrace(cmd);
+          continue;
+        case CMD_FRAME:
+          if (*p == NUL) {
+            do_showbacktrace(cmd);
+          } else {
+            p = skipwhite(p);
+            do_setdebugtracelevel(p);
+          }
+          continue;
+        case CMD_UP:
+          debug_backtrace_level++;
+          do_checkbacktracelevel();
+          continue;
+        case CMD_DOWN:
+          debug_backtrace_level--;
+          do_checkbacktracelevel();
+          continue;
         }
+        // Going out reset backtrace_level
+        debug_backtrace_level = 0;
         break;
       }
 
@@ -269,10 +324,8 @@ void do_debug(char_u *cmd)
       (void)do_cmdline(cmdline, getexline, NULL,
           DOCMD_VERBOSE|DOCMD_EXCRESET);
       debug_break_level = n;
-
-      xfree(cmdline);
     }
-    lines_left = Rows - 1;
+    lines_left = (int)(Rows - 1);
   }
   xfree(cmdline);
 
@@ -281,7 +334,7 @@ void do_debug(char_u *cmd)
   redraw_all_later(NOT_VALID);
   need_wait_return = FALSE;
   msg_scroll = save_msg_scroll;
-  lines_left = Rows - 1;
+  lines_left = (int)(Rows - 1);
   State = save_State;
   did_emsg = save_did_emsg;
   cmd_silent = save_cmd_silent;
@@ -292,6 +345,78 @@ void do_debug(char_u *cmd)
   /* Only print the message again when typing a command before coming back
    * here. */
   debug_did_msg = TRUE;
+}
+
+static int get_maxbacktrace_level(void)
+{
+  int maxbacktrace = 0;
+
+  if (sourcing_name != NULL) {
+    char *p = (char *)sourcing_name;
+    char *q;
+    while ((q = strstr(p, "..")) != NULL) {
+      p = q + 2;
+      maxbacktrace++;
+    }
+  }
+  return maxbacktrace;
+}
+
+static void do_setdebugtracelevel(char_u *arg)
+{
+  int level = atoi((char *)arg);
+  if (*arg == '+' || level < 0) {
+    debug_backtrace_level += level;
+  } else {
+    debug_backtrace_level = level;
+  }
+
+  do_checkbacktracelevel();
+}
+
+static void do_checkbacktracelevel(void)
+{
+  if (debug_backtrace_level < 0) {
+    debug_backtrace_level = 0;
+    MSG(_("frame is zero"));
+  } else {
+    int max = get_maxbacktrace_level();
+    if (debug_backtrace_level > max) {
+      debug_backtrace_level = max;
+      smsg(_("frame at highest level: %d"), max);
+    }
+  }
+}
+
+static void do_showbacktrace(char_u *cmd)
+{
+  if (sourcing_name != NULL) {
+    int i = 0;
+    int max = get_maxbacktrace_level();
+    char *cur = (char *)sourcing_name;
+    while (!got_int) {
+      char *next = strstr(cur, "..");
+      if (next != NULL) {
+        *next = NUL;
+      }
+      if (i == max - debug_backtrace_level) {
+        smsg("->%d %s", max - i, cur);
+      } else {
+        smsg("  %d %s", max - i, cur);
+      }
+      i++;
+      if (next == NULL) {
+        break;
+      }
+      *next = '.';
+      cur = next + 2;
+    }
+  }
+  if (sourcing_lnum != 0) {
+    smsg(_("line %" PRId64 ": %s"), (int64_t)sourcing_lnum, cmd);
+  } else {
+    smsg(_("cmd: %s"), cmd);
+  }
 }
 
 /*
@@ -392,12 +517,12 @@ int dbg_check_skipped(exarg_T *eap)
  * This is a grow-array of structs.
  */
 struct debuggy {
-  int dbg_nr;                   /* breakpoint number */
-  int dbg_type;                 /* DBG_FUNC or DBG_FILE */
-  char_u      *dbg_name;        /* function or file name */
-  regprog_T   *dbg_prog;        /* regexp program */
-  linenr_T dbg_lnum;            /* line number in function or file */
-  int dbg_forceit;              /* ! used */
+  int dbg_nr;                   ///< breakpoint number
+  int dbg_type;                 ///< DBG_FUNC or DBG_FILE
+  char_u *dbg_name;             ///< function or file name
+  regprog_T *dbg_prog;          ///< regexp program
+  linenr_T dbg_lnum;            ///< line number in function or file
+  int dbg_forceit;              ///< ! used
 };
 
 static garray_T dbg_breakp = {0, 0, sizeof(struct debuggy), 4, NULL};
@@ -432,14 +557,12 @@ dbg_parsearg (
 
   bp = &DEBUGGY(gap, gap->ga_len);
 
-  /* Find "func" or "file". */
-  if (STRNCMP(p, "func", 4) == 0)
+  // Find "func" or "file".
+  if (STRNCMP(p, "func", 4) == 0) {
     bp->dbg_type = DBG_FUNC;
-  else if (STRNCMP(p, "file", 4) == 0)
+  } else if (STRNCMP(p, "file", 4) == 0) {
     bp->dbg_type = DBG_FILE;
-  else if (
-    gap != &prof_ga &&
-    STRNCMP(p, "here", 4) == 0) {
+  } else if (gap != &prof_ga && STRNCMP(p, "here", 4) == 0) {
     if (curbuf->b_ffname == NULL) {
       EMSG(_(e_noname));
       return FAIL;
@@ -452,16 +575,15 @@ dbg_parsearg (
   }
   p = skipwhite(p + 4);
 
-  /* Find optional line number. */
-  if (here)
+  // Find optional line number.
+  if (here) {
     bp->dbg_lnum = curwin->w_cursor.lnum;
-  else if (
-    gap != &prof_ga &&
-    ascii_isdigit(*p)) {
+  } else if (gap != &prof_ga && ascii_isdigit(*p)) {
     bp->dbg_lnum = getdigits_long(&p);
     p = skipwhite(p);
-  } else
+  } else {
     bp->dbg_lnum = 0;
+  }
 
   /* Find the function or file name.  Don't accept a function name with (). */
   if ((!here && *p == NUL)
@@ -563,13 +685,14 @@ void ex_breakdel(exarg_T *eap)
   }
 
   if (ascii_isdigit(*eap->arg)) {
-    /* ":breakdel {nr}" */
-    nr = atol((char *)eap->arg);
-    for (int i = 0; i < gap->ga_len; ++i)
+    // ":breakdel {nr}"
+    nr = atoi((char *)eap->arg);
+    for (int i = 0; i < gap->ga_len; ++i) {
       if (DEBUGGY(gap, i).dbg_nr == nr) {
         todel = i;
         break;
       }
+    }
   } else if (*eap->arg == '*') {
     todel = 0;
     del_all = TRUE;
@@ -602,11 +725,13 @@ void ex_breakdel(exarg_T *eap)
       --gap->ga_len;
       if (todel < gap->ga_len)
         memmove(&DEBUGGY(gap, todel), &DEBUGGY(gap, todel + 1),
-            (gap->ga_len - todel) * sizeof(struct debuggy));
-      if (eap->cmdidx == CMD_breakdel)
+                (size_t)(gap->ga_len - todel) * sizeof(struct debuggy));
+      if (eap->cmdidx == CMD_breakdel) {
         ++debug_tick;
-      if (!del_all)
+      }
+      if (!del_all) {
         break;
+      }
     }
 
     /* If all breakpoints were removed clear the array. */
@@ -697,14 +822,13 @@ debuggy_find (
     /* Skip entries that are not useful or are for a line that is beyond
      * an already found breakpoint. */
     bp = &DEBUGGY(gap, i);
-    if (((bp->dbg_type == DBG_FILE) == file && (
-           gap == &prof_ga ||
-           (bp->dbg_lnum > after && (lnum == 0 || bp->dbg_lnum < lnum))))) {
-      /*
-       * Save the value of got_int and reset it.  We don't want a
-       * previous interruption cancel matching, only hitting CTRL-C
-       * while matching should abort it.
-       */
+    if (((bp->dbg_type == DBG_FILE) == file
+         && (gap == &prof_ga
+             || (bp->dbg_lnum > after
+                 && (lnum == 0 || bp->dbg_lnum < lnum))))) {
+      // Save the value of got_int and reset it.  We don't want a
+      // previous interruption cancel matching, only hitting CTRL-C
+      // while matching should abort it.
       prev_got_int = got_int;
       got_int = FALSE;
       if (vim_regexec_prog(&bp->dbg_prog, false, name, (colnr_T)0)) {
@@ -810,8 +934,8 @@ void ex_pydo3(exarg_T *eap)
 
 /* Command line expansion for :profile. */
 static enum {
-  PEXP_SUBCMD,          /* expand :profile sub-commands */
-  PEXP_FUNC             /* expand :profile func {funcname} */
+  PEXP_SUBCMD,          ///< expand :profile sub-commands
+  PEXP_FUNC             ///< expand :profile func {funcname}
 } pexpand_what;
 
 static char *pexpand_cmds[] = {
@@ -892,7 +1016,7 @@ static void profile_reset(void)
   for (int id = 1; id <= script_items.ga_len; id++) {
     scriptitem_T *si = &SCRIPT_ITEM(id);
     if (si->sn_prof_on) {
-      si->sn_prof_on      = 0;
+      si->sn_prof_on      = false;
       si->sn_pr_force     = 0;
       si->sn_pr_child     = profile_zero();
       si->sn_pr_nest      = 0;
@@ -949,7 +1073,7 @@ static void profile_init(scriptitem_T *si)
 
   ga_init(&si->sn_prl_ga, sizeof(sn_prl_T), 100);
   si->sn_prl_idx = -1;
-  si->sn_prof_on = TRUE;
+  si->sn_prof_on = true;
   si->sn_pr_nest = 0;
 }
 
@@ -1242,28 +1366,31 @@ static void add_bufnum(int *bufnrs, int *bufnump, int nr)
   *bufnump = *bufnump + 1;
 }
 
-/*
- * Return TRUE if any buffer was changed and cannot be abandoned.
- * That changed buffer becomes the current buffer.
- */
-int 
-check_changed_any (
-    int hidden                     /* Only check hidden buffers */
-)
+/// Check if any buffer was changed and cannot be abandoned.
+/// That changed buffer becomes the current buffer.
+/// When "unload" is true the current buffer is unloaded instead of making it
+/// hidden.  This is used for ":q!".
+///
+/// @param[in] hidden specifies whether to check only hidden buffers.
+/// @param[in] unload specifies whether to unload, instead of hide, the buffer.
+///
+/// @returns          true if any buffer is changed and cannot be abandoned
+int check_changed_any(bool hidden, bool unload)
 {
-  int ret = FALSE;
+  bool ret = false;
   int save;
   int i;
   int bufnum = 0;
-  int bufcount = 0;
+  size_t bufcount = 0;
   int         *bufnrs;
 
   FOR_ALL_BUFFERS(buf) {
     ++bufcount;
   }
 
-  if (bufcount == 0)
-    return FALSE;
+  if (bufcount == 0) {
+    return false;
+  }
 
   bufnrs = xmalloc(sizeof(*bufnrs) * bufcount);
 
@@ -1347,9 +1474,10 @@ check_changed_any (
   }
 buf_found:
 
-  /* Open the changed buffer in the current window. */
-  if (buf != curbuf)
-    set_curbuf(buf, DOBUF_GOTO);
+  // Open the changed buffer in the current window.
+  if (buf != curbuf) {
+    set_curbuf(buf, unload ? DOBUF_UNLOAD : DOBUF_GOTO);
+  }
 
 theend:
   xfree(bufnrs);
@@ -1488,9 +1616,15 @@ do_arglist (
   char_u      *p;
   int match;
 
-  /*
-   * Collect all file name arguments in "new_ga".
-   */
+  // Set default argument for ":argadd" command.
+  if (what == AL_ADD && *str == NUL) {
+    if (curbuf->b_ffname == NULL) {
+      return FAIL;
+    }
+    str = curbuf->b_fname;
+  }
+
+  // Collect all file name arguments in "new_ga".
   get_arglist(&new_ga, str);
 
   if (what == AL_DEL) {
@@ -1520,7 +1654,7 @@ do_arglist (
           didone = TRUE;
           xfree(ARGLIST[match].ae_fname);
           memmove(ARGLIST + match, ARGLIST + match + 1,
-              (ARGCOUNT - match - 1) * sizeof(aentry_T));
+                  (size_t)(ARGCOUNT - match - 1) * sizeof(aentry_T));
           --ALIST(curwin)->al_ga.ga_len;
           if (curwin->w_arg_idx > match)
             --curwin->w_arg_idx;
@@ -1537,9 +1671,7 @@ do_arglist (
     int i = expand_wildcards(new_ga.ga_len, (char_u **)new_ga.ga_data,
         &exp_count, &exp_files, EW_DIR|EW_FILE|EW_ADDSLASH|EW_NOTFOUND);
     ga_clear(&new_ga);
-    if (i == FAIL)
-      return FAIL;
-    if (exp_count == 0) {
+    if (i == FAIL || exp_count == 0) {
       EMSG(_(e_nomatch));
       return FAIL;
     }
@@ -1702,10 +1834,11 @@ void ex_argument(exarg_T *eap)
 {
   int i;
 
-  if (eap->addr_count > 0)
-    i = eap->line2 - 1;
-  else
+  if (eap->addr_count > 0) {
+    i = (int)eap->line2 - 1;
+  } else {
     i = curwin->w_arg_idx;
+  }
   do_argfile(eap, i);
 }
 
@@ -1844,33 +1977,40 @@ void ex_argadd(exarg_T *eap)
 void ex_argdelete(exarg_T *eap)
 {
   if (eap->addr_count > 0) {
-    /* ":1,4argdel": Delete all arguments in the range. */
-    if (eap->line2 > ARGCOUNT)
+    // ":1,4argdel": Delete all arguments in the range.
+    if (eap->line2 > ARGCOUNT) {
       eap->line2 = ARGCOUNT;
-    int n = eap->line2 - eap->line1 + 1;
-    if (*eap->arg != NUL || n <= 0)
-      EMSG(_(e_invarg));
-    else {
-      for (int i = eap->line1; i <= eap->line2; ++i)
-        xfree(ARGLIST[i - 1].ae_fname);
-      memmove(ARGLIST + eap->line1 - 1, ARGLIST + eap->line2,
-          (size_t)((ARGCOUNT - eap->line2) * sizeof(aentry_T)));
-      ALIST(curwin)->al_ga.ga_len -= n;
-      if (curwin->w_arg_idx >= eap->line2)
-        curwin->w_arg_idx -= n;
-      else if (curwin->w_arg_idx > eap->line1)
-        curwin->w_arg_idx = eap->line1;
     }
-  } else if (*eap->arg == NUL)
+    linenr_T n = eap->line2 - eap->line1 + 1;
+    if (*eap->arg != NUL || n <= 0) {
+      EMSG(_(e_invarg));
+    } else {
+      for (linenr_T i = eap->line1; i <= eap->line2; ++i) {
+        xfree(ARGLIST[i - 1].ae_fname);
+      }
+      memmove(ARGLIST + eap->line1 - 1, ARGLIST + eap->line2,
+              (size_t)(ARGCOUNT - eap->line2) * sizeof(aentry_T));
+      ALIST(curwin)->al_ga.ga_len -= (int)n;
+      if (curwin->w_arg_idx >= eap->line2) {
+        curwin->w_arg_idx -= (int)n;
+      } else if (curwin->w_arg_idx > eap->line1) {
+        curwin->w_arg_idx = (int)eap->line1;
+      }
+      if (ARGCOUNT == 0) {
+          curwin->w_arg_idx = 0;
+      } else if (curwin->w_arg_idx >= ARGCOUNT) {
+          curwin->w_arg_idx = ARGCOUNT - 1;
+      }
+    }
+  } else if (*eap->arg == NUL) {
     EMSG(_(e_argreq));
-  else
+  } else {
     do_arglist(eap->arg, AL_DEL, 0);
+  }
   maketitle();
 }
 
-/*
- * ":argdo", ":windo", ":bufdo", ":tabdo", ":cdo", ":ldo", ":cfdo" and ":lfdo"
- */
+/// ":argdo", ":windo", ":bufdo", ":tabdo", ":cdo", ":ldo", ":cfdo" and ":lfdo"
 void ex_listdo(exarg_T *eap)
 {
   int i;
@@ -1909,7 +2049,7 @@ void ex_listdo(exarg_T *eap)
         }
         break;
       case CMD_argdo:
-        i = eap->line1 - 1;
+        i = (int)eap->line1 - 1;
         break;
       default:
         break;
@@ -1918,9 +2058,9 @@ void ex_listdo(exarg_T *eap)
     buf_T *buf = curbuf;
     size_t qf_size = 0;
 
-    /* set pcmark now */
+    // set pcmark now
     if (eap->cmdidx == CMD_bufdo) {
-      /* Advance to the first listed buffer after "eap->line1". */
+      // Advance to the first listed buffer after "eap->line1".
       for (buf = firstbuf;
            buf != NULL && (buf->b_fnum < eap->line1 || !buf->b_p_bl);
            buf = buf->b_next) {
@@ -1932,8 +2072,8 @@ void ex_listdo(exarg_T *eap)
       if (buf != NULL) {
         goto_buffer(eap, DOBUF_FIRST, FORWARD, buf->b_fnum);
       }
-    } else if (eap->cmdidx == CMD_cdo || eap->cmdidx == CMD_ldo ||
-               eap->cmdidx == CMD_cfdo || eap->cmdidx == CMD_lfdo) {
+    } else if (eap->cmdidx == CMD_cdo || eap->cmdidx == CMD_ldo
+               || eap->cmdidx == CMD_cfdo || eap->cmdidx == CMD_lfdo) {
       qf_size = qf_get_size(eap);
       assert(eap->line1 >= 0);
       if (qf_size == 0 || (size_t)eap->line1 > qf_size) {
@@ -1942,10 +2082,11 @@ void ex_listdo(exarg_T *eap)
         ex_cc(eap);
 
         buf = curbuf;
-        i = eap->line1 - 1;
+        i = (int)eap->line1 - 1;
         if (eap->addr_count <= 0) {
           // Default to all quickfix/location list entries.
-          eap->line2 = qf_size;
+          assert(qf_size < MAXLNUM);
+          eap->line2 = (linenr_T)qf_size;
         }
       }
     } else {
@@ -2034,8 +2175,8 @@ void ex_listdo(exarg_T *eap)
         }
       }
 
-      if (eap->cmdidx == CMD_cdo || eap->cmdidx == CMD_ldo ||
-          eap->cmdidx == CMD_cfdo || eap->cmdidx == CMD_lfdo) {
+      if (eap->cmdidx == CMD_cdo || eap->cmdidx == CMD_ldo
+          || eap->cmdidx == CMD_cfdo || eap->cmdidx == CMD_lfdo) {
         assert(i >= 0);
         if ((size_t)i >= qf_size || i >= eap->line2) {
           break;
@@ -2090,6 +2231,7 @@ alist_add_list (
     int after                  /* where to add: 0 = before first one */
 )
 {
+  int old_argcount = ARGCOUNT;
   ga_grow(&ALIST(curwin)->al_ga, count);
   {
     if (after < 0)
@@ -2098,14 +2240,15 @@ alist_add_list (
       after = ARGCOUNT;
     if (after < ARGCOUNT)
       memmove(&(ARGLIST[after + count]), &(ARGLIST[after]),
-          (ARGCOUNT - after) * sizeof(aentry_T));
+              (size_t)(ARGCOUNT - after) * sizeof(aentry_T));
     for (int i = 0; i < count; ++i) {
       ARGLIST[after + i].ae_fname = files[i];
       ARGLIST[after + i].ae_fnum = buflist_add(files[i], BLN_LISTED);
     }
     ALIST(curwin)->al_ga.ga_len += count;
-    if (curwin->w_arg_idx >= after)
-      ++curwin->w_arg_idx;
+    if (old_argcount > 0 && curwin->w_arg_idx >= after) {
+      curwin->w_arg_idx += count;
+    }
     return after;
   }
 }
@@ -2350,31 +2493,31 @@ int source_level(void *cookie)
   return ((struct source_cookie *)cookie)->level;
 }
 
-
-#if (defined(WIN32) && defined(FEAT_CSCOPE)) || defined(HAVE_FD_CLOEXEC)
-# define USE_FOPEN_NOINH
-/*
- * Special function to open a file without handle inheritance.
- * When possible the handle is closed on exec().
- */
+/// Special function to open a file without handle inheritance.
+/// If possible the handle is closed on exec().
 static FILE *fopen_noinh_readbin(char *filename)
 {
+#ifdef WIN32
+  int fd_tmp = os_open(filename, O_RDONLY | O_BINARY | O_NOINHERIT, 0);
+#else
   int fd_tmp = os_open(filename, O_RDONLY, 0);
+#endif
 
-  if (fd_tmp < 0)
+  if (fd_tmp < 0) {
     return NULL;
+  }
 
-# ifdef HAVE_FD_CLOEXEC
+#ifdef HAVE_FD_CLOEXEC
   {
     int fdflags = fcntl(fd_tmp, F_GETFD);
-    if (fdflags >= 0 && (fdflags & FD_CLOEXEC) == 0)
-      fcntl(fd_tmp, F_SETFD, fdflags | FD_CLOEXEC);
+    if (fdflags >= 0 && (fdflags & FD_CLOEXEC) == 0) {
+      (void)fcntl(fd_tmp, F_SETFD, fdflags | FD_CLOEXEC);
+    }
   }
-# endif
+#endif
 
   return fdopen(fd_tmp, READBIN);
 }
-#endif
 
 
 /*
@@ -2428,11 +2571,7 @@ do_source (
   /* Apply SourcePre autocommands, they may get the file. */
   apply_autocmds(EVENT_SOURCEPRE, fname_exp, fname_exp, FALSE, curbuf);
 
-#ifdef USE_FOPEN_NOINH
   cookie.fp = fopen_noinh_readbin((char *)fname_exp);
-#else
-  cookie.fp = mch_fopen((char *)fname_exp, READBIN);
-#endif
   if (cookie.fp == NULL && check_other) {
     /*
      * Try again, replacing file name ".vimrc" by "_vimrc" or vice versa,
@@ -2441,15 +2580,8 @@ do_source (
     p = path_tail(fname_exp);
     if ((*p == '.' || *p == '_')
         && (STRICMP(p + 1, "nvimrc") == 0 || STRICMP(p + 1, "exrc") == 0)) {
-      if (*p == '_')
-        *p = '.';
-      else
-        *p = '_';
-#ifdef USE_FOPEN_NOINH
+      *p = (*p == '_') ? '.' : '_';
       cookie.fp = fopen_noinh_readbin((char *)fname_exp);
-#else
-      cookie.fp = mch_fopen((char *)fname_exp, READBIN);
-#endif
     }
   }
 
@@ -2571,7 +2703,7 @@ do_source (
     while (script_items.ga_len < current_SID) {
       ++script_items.ga_len;
       SCRIPT_ITEM(script_items.ga_len).sn_name = NULL;
-      SCRIPT_ITEM(script_items.ga_len).sn_prof_on = FALSE;
+      SCRIPT_ITEM(script_items.ga_len).sn_prof_on = false;
     }
     si = &SCRIPT_ITEM(current_SID);
     si->sn_name = fname_exp;
@@ -3162,27 +3294,30 @@ static char_u *get_mess_env(void)
  */
 void set_lang_var(void)
 {
-  char_u      *loc;
+  const char *loc;
 
 # ifdef HAVE_GET_LOCALE_VAL
-  loc = (char_u *)get_locale_val(LC_CTYPE);
+  loc = get_locale_val(LC_CTYPE);
 # else
-  /* setlocale() not supported: use the default value */
-  loc = (char_u *)"C";
+  // setlocale() not supported: use the default value
+  loc = "C";
 # endif
   set_vim_var_string(VV_CTYPE, loc, -1);
 
   /* When LC_MESSAGES isn't defined use the value from $LC_MESSAGES, fall
    * back to LC_CTYPE if it's empty. */
 # ifdef HAVE_WORKING_LIBINTL
-  loc = get_mess_env();
+  loc = (char *) get_mess_env();
+# elif defined(LC_MESSAGES)
+  loc = get_locale_val(LC_MESSAGES);
 # else
-  loc = (char_u *)get_locale_val(LC_MESSAGES);
+  // In Windows LC_MESSAGES is not defined fallback to LC_CTYPE
+  loc = get_locale_val(LC_CTYPE);
 # endif
   set_vim_var_string(VV_LANG, loc, -1);
 
 # ifdef HAVE_GET_LOCALE_VAL
-  loc = (char_u *)get_locale_val(LC_TIME);
+  loc = get_locale_val(LC_TIME);
 # endif
   set_vim_var_string(VV_LC_TIME, loc, -1);
 }
@@ -3386,8 +3521,8 @@ static void script_host_execute(char *name, exarg_T *eap)
     // script
     list_append_string(args, script ? script : eap->arg, -1);
     // current range
-    list_append_number(args, eap->line1);
-    list_append_number(args, eap->line2);
+    list_append_number(args, (int)eap->line1);
+    list_append_number(args, (int)eap->line2);
     (void)eval_call_provider(name, "execute", args);
   }
 
@@ -3403,16 +3538,16 @@ static void script_host_execute_file(char *name, exarg_T *eap)
   // filename
   list_append_string(args, buffer, -1);
   // current range
-  list_append_number(args, eap->line1);
-  list_append_number(args, eap->line2);
+  list_append_number(args, (int)eap->line1);
+  list_append_number(args, (int)eap->line2);
   (void)eval_call_provider(name, "execute_file", args);
 }
 
 static void script_host_do_range(char *name, exarg_T *eap)
 {
   list_T *args = list_alloc();
-  list_append_number(args, eap->line1);
-  list_append_number(args, eap->line2);
+  list_append_number(args, (int)eap->line1);
+  list_append_number(args, (int)eap->line2);
   list_append_string(args, eap->arg, -1);
   (void)eval_call_provider(name, "do_range", args);
 }

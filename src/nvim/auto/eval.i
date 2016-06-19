@@ -5,7 +5,10 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+
+
+
+
 # 1 "/usr/include/assert.h" 1 3 4
 # 42 "/usr/include/assert.h" 3 4
 # 1 "/usr/include/sys/cdefs.h" 1 3 4
@@ -18,27 +21,13 @@
 # 43 "/usr/include/assert.h" 2 3 4
 # 76 "/usr/include/assert.h" 3 4
 void __assert_rtn(const char *, const char *, int, const char *) __attribute__((noreturn));
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
-# 1 "/usr/include/errno.h" 1 3 4
-# 23 "/usr/include/errno.h" 3 4
-# 1 "/usr/include/sys/errno.h" 1 3 4
-# 76 "/usr/include/sys/errno.h" 3 4
-# 1 "/usr/include/sys/_types/_errno_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_errno_t.h" 3 4
-typedef int errno_t;
-# 77 "/usr/include/sys/errno.h" 2 3 4
-
-
-
-extern int * __error(void);
-# 24 "/usr/include/errno.h" 2 3 4
-# 16 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/usr/include/inttypes.h" 1 3 4
 # 224 "/usr/include/inttypes.h" 3 4
 # 1 "/usr/include/Availability.h" 1 3 4
-# 164 "/usr/include/Availability.h" 3 4
+# 168 "/usr/include/Availability.h" 3 4
 # 1 "/usr/include/AvailabilityInternal.h" 1 3 4
-# 165 "/usr/include/Availability.h" 2 3 4
+# 169 "/usr/include/Availability.h" 2 3 4
 # 225 "/usr/include/inttypes.h" 2 3 4
 
 # 1 "/usr/include/_types.h" 1 3 4
@@ -221,8 +210,8 @@ typedef __uint32_t __darwin_wctype_t;
 typedef __darwin_wchar_t wchar_t;
 # 228 "/usr/include/inttypes.h" 2 3 4
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 1 3 4
-# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 1 3 4
+# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
 # 18 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/sys/_types/_int8_t.h" 1 3 4
@@ -304,7 +293,7 @@ typedef long int intmax_t;
 # 32 "/usr/include/_types/_uintmax_t.h" 3 4
 typedef long unsigned int uintmax_t;
 # 60 "/usr/include/stdint.h" 2 3 4
-# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 2 3 4
+# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 2 3 4
 # 230 "/usr/include/inttypes.h" 2 3 4
 
 
@@ -349,13 +338,13 @@ extern uintmax_t
 wcstoumax(const wchar_t * restrict __nptr,
    wchar_t ** restrict __endptr,
    int __base);
-# 17 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 1 3 4
-# 30 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 3 4
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdarg.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdarg.h" 3 4
 typedef __builtin_va_list va_list;
-# 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 3 4
+# 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
-# 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 64 "/usr/include/string.h" 3 4
 # 1 "/usr/include/sys/_types/_size_t.h" 1 3 4
@@ -413,7 +402,10 @@ char *strsignal(int sig);
 # 30 "/usr/include/sys/_types/_rsize_t.h" 3 4
 typedef __darwin_size_t rsize_t;
 # 142 "/usr/include/string.h" 2 3 4
-
+# 1 "/usr/include/sys/_types/_errno_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_errno_t.h" 3 4
+typedef int errno_t;
+# 143 "/usr/include/string.h" 2 3 4
 
 
 errno_t memset_s(void *, rsize_t, int, rsize_t) __attribute__((availability(macosx,introduced=10.9)));
@@ -486,7 +478,7 @@ int flsll(long long) __attribute__((availability(macosx,introduced=10.9)));
 # 1 "/usr/include/secure/_common.h" 1 3 4
 # 34 "/usr/include/secure/_string.h" 2 3 4
 # 187 "/usr/include/string.h" 2 3 4
-# 19 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 65 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/sys/wait.h" 1 3 4
@@ -1558,9 +1550,9 @@ unsigned long long
 
 extern char *suboptarg;
 void *valloc(size_t);
-# 20 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdbool.h" 1 3 4
-# 21 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdbool.h" 1 3 4
+# 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/usr/include/math.h" 1 3 4
 # 44 "/usr/include/math.h" 3 4
     typedef float float_t;
@@ -1982,9 +1974,9 @@ struct exception {
 };
 
 extern int matherr(struct exception *) __attribute__((availability(macosx,introduced=10.0,deprecated=10.9)));
-# 22 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 1 3 4
-# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 3 4
+# 12 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 1 3 4
+# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 64 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/machine/limits.h" 1 3 4
@@ -2001,8 +1993,8 @@ extern int matherr(struct exception *) __attribute__((availability(macosx,introd
 # 65 "/usr/include/limits.h" 2 3 4
 # 1 "/usr/include/sys/syslimits.h" 1 3 4
 # 66 "/usr/include/limits.h" 2 3 4
-# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 2 3 4
-# 23 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 2 3 4
+# 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 1
 # 24 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/util.h" 1
@@ -2013,14 +2005,14 @@ extern int matherr(struct exception *) __attribute__((availability(macosx,introd
 # 21 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h" 1
 # 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h"
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 51 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
+# 51 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 3 4
 typedef long int ptrdiff_t;
-# 118 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 3 4
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/__stddef_max_align_t.h" 1 3 4
-# 32 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/__stddef_max_align_t.h" 3 4
+# 118 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/__stddef_max_align_t.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/__stddef_max_align_t.h" 3 4
 typedef long double max_align_t;
-# 119 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 2 3 4
+# 119 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 2 3 4
 # 23 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h" 2
 # 59 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h"
 typedef unsigned int _msgpack_atomic_counter_t;
@@ -3870,14 +3862,21 @@ int msgpack_version_revision(void);
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version_master.h" 1
 # 35 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/version.h" 2
 # 32 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 2
-# 24 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/assert.h" 1
-# 26 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 16 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 1
-# 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+
+
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h"
+
+
+
+
+
+
 typedef void *vim_acl_T;
 
 
@@ -3886,7 +3885,7 @@ typedef unsigned char char_u;
 
 
 typedef uint32_t u8char_T;
-# 12 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/pos.h" 1
 
 
@@ -3915,11 +3914,11 @@ typedef struct {
   linenr_T lnum;
   colnr_T col;
 } lpos_T;
-# 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 24 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 17 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/config/auto/config.h" 1
-# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 46 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 36 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 1
 
 
@@ -4279,6 +4278,8 @@ int stat64(const char *, struct stat64 *) __attribute__((availability(macosx,int
 
 
 
+
+
 # 1 "/usr/include/unistd.h" 1 3 4
 # 72 "/usr/include/unistd.h" 3 4
 # 1 "/usr/include/sys/unistd.h" 1 3 4
@@ -4607,79 +4608,12 @@ int fsync_volume_np(int, int) __attribute__((availability(macosx,introduced=10.8
 int sync_volume_np(const char *, int) __attribute__((availability(macosx,introduced=10.8)));
 
 extern int optreset;
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
-# 1 "/usr/include/signal.h" 1 3 4
-# 69 "/usr/include/signal.h" 3 4
-extern const char *const sys_signame[32];
-extern const char *const sys_siglist[32];
-
-
-
-int raise(int);
-
-
-
-
-void (*bsd_signal(int, void (*)(int)))(int);
-int kill(pid_t, int) __asm("_" "kill" );
-int killpg(pid_t, int) __asm("_" "killpg" );
-int pthread_kill(pthread_t, int);
-int pthread_sigmask(int, const sigset_t *, sigset_t *) __asm("_" "pthread_sigmask" );
-int sigaction(int, const struct sigaction * restrict,
-     struct sigaction * restrict);
-int sigaddset(sigset_t *, int);
-int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" ) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
-int sigdelset(sigset_t *, int);
-int sigemptyset(sigset_t *);
-int sigfillset(sigset_t *);
-int sighold(int);
-int sigignore(int);
-int siginterrupt(int, int);
-int sigismember(const sigset_t *, int);
-int sigpause(int) __asm("_" "sigpause" );
-int sigpending(sigset_t *);
-int sigprocmask(int, const sigset_t * restrict, sigset_t * restrict);
-int sigrelse(int);
-void (*sigset(int, void (*)(int)))(int);
-int sigsuspend(const sigset_t *) __asm("_" "sigsuspend" );
-int sigwait(const sigset_t * restrict, int * restrict) __asm("_" "sigwait" );
-
-void psignal(unsigned int, const char *);
-int sigblock(int);
-int sigsetmask(int);
-int sigvec(int, struct sigvec *, struct sigvec *);
-
-
-
-
-
-
-inline __attribute__ ((__always_inline__)) int
-__sigbits(int __signo)
-{
-    return __signo > 32 ? 0 : (1 << (__signo - 1));
-}
-# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
-
-
-
-# 1 "/usr/include/sys/param.h" 1 3 4
-# 107 "/usr/include/sys/param.h" 3 4
-# 1 "/usr/include/machine/param.h" 1 3 4
-# 35 "/usr/include/machine/param.h" 3 4
-# 1 "/usr/include/i386/param.h" 1 3 4
-# 36 "/usr/include/machine/param.h" 2 3 4
-# 108 "/usr/include/sys/param.h" 2 3 4
-# 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-# 47 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-
-
-
-
-
+# 37 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 52 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h" 1
-# 127 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h"
+# 120 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h"
 enum key_extra {
   KE_NAME = 3
 
@@ -4953,138 +4887,22 @@ enum {
   EXPAND_SYNTIME,
   EXPAND_USER_ADDR_TYPE,
 };
-# 243 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
-# 1 "/usr/include/fcntl.h" 1 3 4
-# 23 "/usr/include/fcntl.h" 3 4
-# 1 "/usr/include/sys/fcntl.h" 1 3 4
-# 116 "/usr/include/sys/fcntl.h" 3 4
-# 1 "/usr/include/sys/_types/_o_sync.h" 1 3 4
-# 117 "/usr/include/sys/fcntl.h" 2 3 4
-# 157 "/usr/include/sys/fcntl.h" 3 4
-# 1 "/usr/include/sys/_types/_o_dsync.h" 1 3 4
-# 158 "/usr/include/sys/fcntl.h" 2 3 4
-# 306 "/usr/include/sys/fcntl.h" 3 4
-# 1 "/usr/include/sys/_types/_seek_set.h" 1 3 4
-# 307 "/usr/include/sys/fcntl.h" 2 3 4
-# 331 "/usr/include/sys/fcntl.h" 3 4
-struct flock {
- off_t l_start;
- off_t l_len;
- pid_t l_pid;
- short l_type;
- short l_whence;
-};
-# 346 "/usr/include/sys/fcntl.h" 3 4
-struct flocktimeout {
- struct flock fl;
- struct timespec timeout;
-};
-# 359 "/usr/include/sys/fcntl.h" 3 4
-struct radvisory {
-       off_t ra_offset;
-       int ra_count;
-};
-
-
-
-typedef struct fcodeblobs {
- void *f_cd_hash;
- size_t f_hash_size;
- void *f_cd_buffer;
- size_t f_cd_size;
- unsigned int *f_out_size;
- int f_arch;
- int __padding;
-} fcodeblobs_t;
-# 383 "/usr/include/sys/fcntl.h" 3 4
-typedef struct fsignatures {
- off_t fs_file_start;
- void *fs_blob_start;
- size_t fs_blob_size;
-} fsignatures_t;
-# 397 "/usr/include/sys/fcntl.h" 3 4
-typedef struct fstore {
- unsigned int fst_flags;
- int fst_posmode;
- off_t fst_offset;
- off_t fst_length;
- off_t fst_bytesalloc;
-} fstore_t;
-
-
-
-typedef struct fbootstraptransfer {
-  off_t fbt_offset;
-  size_t fbt_length;
-  void *fbt_buffer;
-} fbootstraptransfer_t;
-# 435 "/usr/include/sys/fcntl.h" 3 4
-#pragma pack(4)
-
-struct log2phys {
- unsigned int l2p_flags;
- off_t l2p_contigbytes;
-
-
- off_t l2p_devoffset;
-
-
-};
-
-#pragma pack()
-# 460 "/usr/include/sys/fcntl.h" 3 4
-typedef enum {
- FILESEC_OWNER = 1,
- FILESEC_GROUP = 2,
- FILESEC_UUID = 3,
- FILESEC_MODE = 4,
- FILESEC_ACL = 5,
- FILESEC_GRPUUID = 6,
-
-
- FILESEC_ACL_RAW = 100,
- FILESEC_ACL_ALLOCSIZE = 101
-} filesec_property_t;
-
-
-
-
-
-
-int open(const char *, int, ...) __asm("_" "open" );
-
-int openat(int, const char *, int, ...) __asm("_" "openat" ) __attribute__((availability(macosx,introduced=10.10)));
-
-int creat(const char *, mode_t) __asm("_" "creat" );
-int fcntl(int, int, ...) __asm("_" "fcntl" );
-
-
-int openx_np(const char *, int, filesec_t);
-
-
-
-
-int open_dprotected_np ( const char *, int, int, int, ...);
-int flock(int, int);
-filesec_t filesec_init(void);
-filesec_t filesec_dup(filesec_t);
-void filesec_free(filesec_t);
-int filesec_get_property(filesec_t, filesec_property_t, void *);
-int filesec_query_property(filesec_t, filesec_property_t, int *);
-int filesec_set_property(filesec_t, filesec_property_t, const void *);
-int filesec_unset_property(filesec_t, filesec_property_t) __attribute__((availability(macosx,introduced=10.6)));
-# 24 "/usr/include/fcntl.h" 2 3 4
-# 244 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 342 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 333 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 1
-# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_eval.h" 1
 
 
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
+
+
+
+
+
+
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/normal.h" 1
 
 
@@ -5108,7 +4926,7 @@ typedef struct file_buffer buf_T;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 2
 
 
@@ -5139,7 +4957,47 @@ static inline void *ga_append_via_ptr(garray_T *gap, size_t item_size)
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h" 1
-# 268 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 213 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+enum {
+  STL_FILEPATH = 'f',
+  STL_FULLPATH = 'F',
+  STL_FILENAME = 't',
+  STL_COLUMN = 'c',
+  STL_VIRTCOL = 'v',
+  STL_VIRTCOL_ALT = 'V',
+  STL_LINE = 'l',
+  STL_NUMLINES = 'L',
+  STL_BUFNO = 'n',
+  STL_KEYMAP = 'k',
+  STL_OFFSET = 'o',
+  STL_OFFSET_X = 'O',
+  STL_BYTEVAL = 'b',
+  STL_BYTEVAL_X = 'B',
+  STL_ROFLAG = 'r',
+  STL_ROFLAG_ALT = 'R',
+  STL_HELPFLAG = 'h',
+  STL_HELPFLAG_ALT = 'H',
+  STL_FILETYPE = 'y',
+  STL_FILETYPE_ALT = 'Y',
+  STL_PREVIEWFLAG = 'w',
+  STL_PREVIEWFLAG_ALT = 'W',
+  STL_MODIFIED = 'm',
+  STL_MODIFIED_ALT = 'M',
+  STL_QUICKFIX = 'q',
+  STL_PERCENTAGE = 'p',
+  STL_ALTPERCENT = 'P',
+  STL_ARGLISTSTAT = 'a',
+  STL_PAGENUM = 'N',
+  STL_VIM_EXPR = '{',
+  STL_MIDDLEMARK = '=',
+  STL_TRUNCMARK = '<',
+  STL_USER_HL = '*',
+  STL_HIGHLIGHT = '#',
+  STL_TABPAGENR = 'T',
+  STL_TABCLOSENR = 'X',
+  STL_CLICK_FUNC = '@',
+};
+# 282 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern long p_aleph;
 extern _Bool p_acd;
 extern char_u *p_ambw;
@@ -5151,12 +5009,12 @@ extern char_u *p_bg;
 extern int p_bk;
 extern char_u *p_bkc;
 extern unsigned int bkc_flags;
-# 288 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 302 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_bdir;
 extern char_u *p_bex;
 extern char_u *p_bo;
 extern unsigned bo_flags;
-# 321 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 335 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_bsk;
 extern char_u *p_breakat;
 extern char_u *p_cmp;
@@ -5228,11 +5086,9 @@ extern char_u *p_fcl;
 extern long p_fdls;
 extern char_u *p_fdo;
 extern unsigned fdo_flags;
-# 408 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 422 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_fp;
-
 extern int p_fs;
-
 extern int p_gd;
 extern char_u *p_pdev;
 extern char_u *p_penc;
@@ -5326,7 +5182,7 @@ extern char_u *p_sel;
 extern char_u *p_slm;
 extern char_u *p_ssop;
 extern unsigned ssop_flags;
-# 529 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 541 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_sh;
 extern char_u *p_shcf;
 extern char_u *p_sp;
@@ -5357,7 +5213,6 @@ extern char_u *p_sps;
 extern int p_spr;
 extern int p_sol;
 extern char_u *p_su;
-extern char_u *p_sws;
 extern char_u *p_swb;
 extern unsigned swb_flags;
 
@@ -5466,6 +5321,7 @@ enum {
   , BV_DEF
   , BV_INC
   , BV_EOL
+  , BV_FIXEOL
   , BV_EP
   , BV_ET
   , BV_FENC
@@ -5572,11 +5428,16 @@ typedef void* libiconv_t;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 52 "/opt/local/include/iconv.h" 2
 
 
 # 1 "/usr/include/errno.h" 1 3 4
+# 23 "/usr/include/errno.h" 3 4
+# 1 "/usr/include/sys/errno.h" 1 3 4
+# 80 "/usr/include/sys/errno.h" 3 4
+extern int * __error(void);
+# 24 "/usr/include/errno.h" 2 3 4
 # 55 "/opt/local/include/iconv.h" 2
 # 73 "/opt/local/include/iconv.h"
 extern libiconv_t libiconv_open (const char* tocode, const char* fromcode);
@@ -5979,14 +5840,14 @@ typedef uint64_t Timestamp;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 1
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 2
 
 
@@ -6095,7 +5956,7 @@ struct dictitem_S {
 };
 
 typedef struct dictitem_S dictitem_T;
-# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
+# 113 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
 struct dictvar_S {
   char dv_lock;
   char dv_scope;
@@ -6105,8 +5966,6 @@ struct dictvar_S {
   dict_T *dv_copydict;
   dict_T *dv_used_next;
   dict_T *dv_used_prev;
-  int internal_refcount;
-
   QUEUE watchers;
 };
 
@@ -6670,12 +6529,131 @@ struct signlist
 # 49 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-version.h" 1
 # 50 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 51 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
 # 61 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 1
 # 27 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h"
 # 1 "/usr/include/fcntl.h" 1 3 4
+# 23 "/usr/include/fcntl.h" 3 4
+# 1 "/usr/include/sys/fcntl.h" 1 3 4
+# 116 "/usr/include/sys/fcntl.h" 3 4
+# 1 "/usr/include/sys/_types/_o_sync.h" 1 3 4
+# 117 "/usr/include/sys/fcntl.h" 2 3 4
+# 157 "/usr/include/sys/fcntl.h" 3 4
+# 1 "/usr/include/sys/_types/_o_dsync.h" 1 3 4
+# 158 "/usr/include/sys/fcntl.h" 2 3 4
+# 306 "/usr/include/sys/fcntl.h" 3 4
+# 1 "/usr/include/sys/_types/_seek_set.h" 1 3 4
+# 307 "/usr/include/sys/fcntl.h" 2 3 4
+# 331 "/usr/include/sys/fcntl.h" 3 4
+struct flock {
+ off_t l_start;
+ off_t l_len;
+ pid_t l_pid;
+ short l_type;
+ short l_whence;
+};
+# 346 "/usr/include/sys/fcntl.h" 3 4
+struct flocktimeout {
+ struct flock fl;
+ struct timespec timeout;
+};
+# 359 "/usr/include/sys/fcntl.h" 3 4
+struct radvisory {
+       off_t ra_offset;
+       int ra_count;
+};
+
+
+
+typedef struct fcodeblobs {
+ void *f_cd_hash;
+ size_t f_hash_size;
+ void *f_cd_buffer;
+ size_t f_cd_size;
+ unsigned int *f_out_size;
+ int f_arch;
+ int __padding;
+} fcodeblobs_t;
+# 383 "/usr/include/sys/fcntl.h" 3 4
+typedef struct fsignatures {
+ off_t fs_file_start;
+ void *fs_blob_start;
+ size_t fs_blob_size;
+} fsignatures_t;
+# 397 "/usr/include/sys/fcntl.h" 3 4
+typedef struct fstore {
+ unsigned int fst_flags;
+ int fst_posmode;
+ off_t fst_offset;
+ off_t fst_length;
+ off_t fst_bytesalloc;
+} fstore_t;
+
+
+
+typedef struct fbootstraptransfer {
+  off_t fbt_offset;
+  size_t fbt_length;
+  void *fbt_buffer;
+} fbootstraptransfer_t;
+# 435 "/usr/include/sys/fcntl.h" 3 4
+#pragma pack(4)
+
+struct log2phys {
+ unsigned int l2p_flags;
+ off_t l2p_contigbytes;
+
+
+ off_t l2p_devoffset;
+
+
+};
+
+#pragma pack()
+# 460 "/usr/include/sys/fcntl.h" 3 4
+typedef enum {
+ FILESEC_OWNER = 1,
+ FILESEC_GROUP = 2,
+ FILESEC_UUID = 3,
+ FILESEC_MODE = 4,
+ FILESEC_ACL = 5,
+ FILESEC_GRPUUID = 6,
+
+
+ FILESEC_ACL_RAW = 100,
+ FILESEC_ACL_ALLOCSIZE = 101
+} filesec_property_t;
+
+
+
+
+
+
+int open(const char *, int, ...) __asm("_" "open" );
+
+int openat(int, const char *, int, ...) __asm("_" "openat" ) __attribute__((availability(macosx,introduced=10.10)));
+
+int creat(const char *, mode_t) __asm("_" "creat" );
+int fcntl(int, int, ...) __asm("_" "fcntl" );
+
+
+int openx_np(const char *, int, filesec_t);
+
+
+
+
+int open_dprotected_np ( const char *, int, int, int, ...);
+int flock(int, int);
+filesec_t filesec_init(void);
+filesec_t filesec_dup(filesec_t);
+void filesec_free(filesec_t);
+int filesec_get_property(filesec_t, filesec_property_t, void *);
+int filesec_query_property(filesec_t, filesec_property_t, int *);
+int filesec_set_property(filesec_t, filesec_property_t, const void *);
+int filesec_unset_property(filesec_t, filesec_property_t) __attribute__((availability(macosx,introduced=10.6)));
+# 24 "/usr/include/fcntl.h" 2 3 4
 # 28 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 2
 # 1 "/usr/include/dirent.h" 1 3 4
 # 65 "/usr/include/dirent.h" 3 4
@@ -7450,7 +7428,58 @@ void pthread_yield_np(void);
 
 
 
+# 1 "/usr/include/signal.h" 1 3 4
+# 69 "/usr/include/signal.h" 3 4
+extern const char *const sys_signame[32];
+extern const char *const sys_siglist[32];
 
+
+
+int raise(int);
+
+
+
+
+void (*bsd_signal(int, void (*)(int)))(int);
+int kill(pid_t, int) __asm("_" "kill" );
+int killpg(pid_t, int) __asm("_" "killpg" );
+int pthread_kill(pthread_t, int);
+int pthread_sigmask(int, const sigset_t *, sigset_t *) __asm("_" "pthread_sigmask" );
+int sigaction(int, const struct sigaction * restrict,
+     struct sigaction * restrict);
+int sigaddset(sigset_t *, int);
+int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" ) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int sigdelset(sigset_t *, int);
+int sigemptyset(sigset_t *);
+int sigfillset(sigset_t *);
+int sighold(int);
+int sigignore(int);
+int siginterrupt(int, int);
+int sigismember(const sigset_t *, int);
+int sigpause(int) __asm("_" "sigpause" );
+int sigpending(sigset_t *);
+int sigprocmask(int, const sigset_t * restrict, sigset_t * restrict);
+int sigrelse(int);
+void (*sigset(int, void (*)(int)))(int);
+int sigsuspend(const sigset_t *) __asm("_" "sigsuspend" );
+int sigwait(const sigset_t * restrict, int * restrict) __asm("_" "sigwait" );
+
+void psignal(unsigned int, const char *);
+int sigblock(int);
+int sigsetmask(int);
+int sigvec(int, struct sigvec *, struct sigvec *);
+
+
+
+
+
+
+inline __attribute__ ((__always_inline__)) int
+__sigbits(int __signo)
+{
+    return __signo > 32 ? 0 : (1 << (__signo - 1));
+}
+# 45 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-threadpool.h" 1
 # 30 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-threadpool.h"
@@ -9111,7 +9140,7 @@ struct thread_extended_info {
 };
 typedef struct thread_extended_info thread_extended_info_data_t;
 typedef struct thread_extended_info * thread_extended_info_t;
-# 184 "/usr/include/mach/thread_info.h" 3 4
+# 187 "/usr/include/mach/thread_info.h" 3 4
 struct io_stat_entry {
  uint64_t count;
  uint64_t size;
@@ -12554,7 +12583,8 @@ kern_return_t task_threads
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t mach_ports_register
 (
  task_t target_task,
@@ -12568,7 +12598,8 @@ kern_return_t mach_ports_register
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t mach_ports_lookup
 (
  task_t target_task,
@@ -12596,7 +12627,8 @@ kern_return_t task_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_info
 (
  task_t target_task,
@@ -12611,7 +12643,8 @@ kern_return_t task_set_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_suspend
 (
  task_t target_task
@@ -12623,7 +12656,8 @@ kern_return_t task_suspend
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_resume
 (
  task_t target_task
@@ -12635,7 +12669,8 @@ kern_return_t task_resume
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_special_port
 (
  task_t task,
@@ -12649,7 +12684,8 @@ kern_return_t task_get_special_port
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_special_port
 (
  task_t task,
@@ -12663,7 +12699,8 @@ kern_return_t task_set_special_port
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_create
 (
  task_t parent_task,
@@ -12676,7 +12713,8 @@ kern_return_t thread_create
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_create_running
 (
  task_t parent_task,
@@ -12692,7 +12730,8 @@ kern_return_t thread_create_running
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_exception_ports
 (
  task_t task,
@@ -12708,7 +12747,8 @@ kern_return_t task_set_exception_ports
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_exception_ports
 (
  task_t task,
@@ -12726,7 +12766,8 @@ kern_return_t task_get_exception_ports
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_swap_exception_ports
 (
  task_t task,
@@ -12799,7 +12840,8 @@ kern_return_t semaphore_destroy
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_policy_set
 (
  task_t task,
@@ -12814,7 +12856,8 @@ kern_return_t task_policy_set
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_policy_get
 (
  task_t task,
@@ -12912,7 +12955,8 @@ kern_return_t task_set_ras_pc
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_zone_info
 (
  task_t target_task,
@@ -12983,7 +13027,8 @@ kern_return_t task_set_policy
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_state
 (
  task_t task,
@@ -12998,7 +13043,8 @@ kern_return_t task_get_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_state
 (
  task_t task,
@@ -13013,7 +13059,8 @@ kern_return_t task_set_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_phys_footprint_limit
 (
  task_t task,
@@ -13027,7 +13074,8 @@ kern_return_t task_set_phys_footprint_limit
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_suspend2
 (
  task_t target_task,
@@ -13040,7 +13088,8 @@ kern_return_t task_suspend2
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_resume2
 (
  task_suspension_token_t suspend_token
@@ -13064,7 +13113,8 @@ kern_return_t task_purgable_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_mach_voucher
 (
  task_t task,
@@ -13078,7 +13128,8 @@ kern_return_t task_get_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_mach_voucher
 (
  task_t task,
@@ -13091,14 +13142,15 @@ kern_return_t task_set_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_swap_mach_voucher
 (
  task_t task,
  ipc_voucher_t new_voucher,
  ipc_voucher_t *old_voucher
 );
-# 655 "/usr/include/mach/task.h" 3 4
+# 678 "/usr/include/mach/task.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -14327,7 +14379,8 @@ union __ReplyUnion__task_subsystem {
 # 49 "/usr/include/mach/thread_act.h" 3 4
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_terminate
 (
  thread_act_t target_act
@@ -14339,7 +14392,8 @@ kern_return_t thread_terminate
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t act_get_state
 (
  thread_act_t target_act,
@@ -14354,7 +14408,8 @@ kern_return_t act_get_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t act_set_state
 (
  thread_act_t target_act,
@@ -14369,7 +14424,7 @@ kern_return_t act_set_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_get_state
 (
  thread_act_t target_act,
@@ -14384,7 +14439,7 @@ kern_return_t thread_get_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_set_state
 (
  thread_act_t target_act,
@@ -14399,7 +14454,7 @@ kern_return_t thread_set_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_suspend
 (
  thread_act_t target_act
@@ -14411,7 +14466,7 @@ kern_return_t thread_suspend
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_resume
 (
  thread_act_t target_act
@@ -14423,7 +14478,7 @@ kern_return_t thread_resume
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_abort
 (
  thread_act_t target_act
@@ -14435,7 +14490,7 @@ kern_return_t thread_abort
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_abort_safely
 (
  thread_act_t target_act
@@ -14447,7 +14502,8 @@ kern_return_t thread_abort_safely
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_depress_abort
 (
  thread_act_t thread
@@ -14459,7 +14515,8 @@ kern_return_t thread_depress_abort
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_special_port
 (
  thread_act_t thr_act,
@@ -14473,7 +14530,8 @@ kern_return_t thread_get_special_port
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_special_port
 (
  thread_act_t thr_act,
@@ -14501,7 +14559,8 @@ kern_return_t thread_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_exception_ports
 (
  thread_act_t thread,
@@ -14517,7 +14576,8 @@ kern_return_t thread_set_exception_ports
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_exception_ports
 (
  thread_act_t thread,
@@ -14535,7 +14595,8 @@ kern_return_t thread_get_exception_ports
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_swap_exception_ports
 (
  thread_act_t thread,
@@ -14676,7 +14737,8 @@ kern_return_t thread_set_policy
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_mach_voucher
 (
  thread_act_t thr_act,
@@ -14690,7 +14752,8 @@ kern_return_t thread_get_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_mach_voucher
 (
  thread_act_t thr_act,
@@ -14703,14 +14766,15 @@ kern_return_t thread_set_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_swap_mach_voucher
 (
  thread_act_t thr_act,
  ipc_voucher_t new_voucher,
  ipc_voucher_t *old_voucher
 );
-# 454 "/usr/include/mach/thread_act.h" 3 4
+# 466 "/usr/include/mach/thread_act.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -15754,7 +15818,8 @@ kern_return_t vm_remap
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_wire
 (
  vm_map_t target_task,
@@ -15933,7 +15998,7 @@ kern_return_t vm_purgable_control
  vm_purgable_t control,
  int *state
 );
-# 480 "/usr/include/mach/vm_map.h" 3 4
+# 481 "/usr/include/mach/vm_map.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -16844,7 +16909,8 @@ kern_return_t mach_port_rename
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t mach_port_allocate_name
 (
  ipc_space_t task,
@@ -17099,7 +17165,8 @@ kern_return_t mach_port_allocate_full
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_port_space
 (
  ipc_space_t task,
@@ -17295,7 +17362,7 @@ kern_return_t mach_port_space_basic_info
  ipc_space_t task,
  ipc_info_space_basic_t *basic_info
 );
-# 564 "/usr/include/mach/mach_port.h" 3 4
+# 566 "/usr/include/mach/mach_port.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -18539,7 +18606,8 @@ extern int (*vprintf_stderr_func)(const char *format, va_list ap);
 # 52 "/usr/include/mach/mach_host.h" 3 4
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_info
 (
  host_t host,
@@ -18730,7 +18798,8 @@ kern_return_t host_statistics
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_request_notification
 (
  host_t host,
@@ -18786,7 +18855,8 @@ kern_return_t mach_zone_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_create_mach_voucher
 (
  host_t host,
@@ -18801,7 +18871,8 @@ kern_return_t host_create_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_register_mach_voucher_attr_manager
 (
  host_t host,
@@ -18817,7 +18888,8 @@ kern_return_t host_register_mach_voucher_attr_manager
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_register_well_known_mach_voucher_attr_manager
 (
  host_t host,
@@ -18833,7 +18905,8 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_set_atm_diagnostic_flag
 (
  host_priv_t host_priv,
@@ -18846,7 +18919,8 @@ kern_return_t host_set_atm_diagnostic_flag
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_get_atm_diagnostic_flag
 (
  host_t host,
@@ -18869,7 +18943,7 @@ kern_return_t mach_memory_info
  mach_memory_info_array_t *memory_info,
  mach_msg_type_number_t *memory_infoCnt
 );
-# 404 "/usr/include/mach/mach_host.h" 3 4
+# 411 "/usr/include/mach/mach_host.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -21039,7 +21113,7 @@ typedef struct {
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/terminal.h" 2
 
 
@@ -21486,6 +21560,7 @@ struct file_buffer {
   char_u *b_p_cfu;
   char_u *b_p_ofu;
   int b_p_eol;
+  int b_p_fixeol;
   int b_p_et;
   int b_p_et_nobin;
   char_u *b_p_fenc;
@@ -21624,15 +21699,17 @@ struct file_buffer {
   Terminal *terminal;
 
   dict_T *additional_data;
+
+  int b_mapped_ctrl_c;
 };
-# 774 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 777 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct diffblock_S diff_T;
 struct diffblock_S {
   diff_T *df_next;
   linenr_T df_lnum[4];
   linenr_T df_count[4];
 };
-# 791 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 794 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct tabpage_S tabpage_T;
 struct tabpage_S {
   uint64_t handle;
@@ -21653,7 +21730,7 @@ struct tabpage_S {
   dictitem_T tp_winvar;
   dict_T *tp_vars;
 };
-# 824 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 827 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct w_line {
   linenr_T wl_lnum;
   uint16_t wl_size;
@@ -21681,7 +21758,7 @@ struct frame_S {
   frame_T *fr_child;
   win_T *fr_win;
 };
-# 862 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 865 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct {
   regmmatch_T rm;
 
@@ -21803,7 +21880,7 @@ struct window_S {
   int w_wincol;
   int w_width;
   int w_vsep_width;
-# 993 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 996 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_valid;
   pos_T w_valid_cursor;
 
@@ -21819,14 +21896,14 @@ struct window_S {
   int w_cline_row;
 
   colnr_T w_virtcol;
-# 1019 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1022 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_wrow, w_wcol;
 
   linenr_T w_botline;
 
   int w_empty_rows;
   int w_filler_rows;
-# 1037 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1040 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_lines_valid;
   wline_T *w_lines;
 
@@ -21865,7 +21942,7 @@ struct window_S {
   int w_arg_idx_invalid;
 
   char_u *w_localdir;
-# 1083 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1086 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   winopt_T w_onebuf_opt;
   winopt_T w_allbuf_opt;
 
@@ -21960,7 +22037,6 @@ typedef struct oparg_S {
   _Bool empty;
 
   _Bool is_VIsual;
-  _Bool block_mode;
   colnr_T start_vcol;
   colnr_T end_vcol;
   long prev_opcount;
@@ -21985,8 +22061,8 @@ typedef struct cmdarg_S {
   int retval;
   char_u *searchbuf;
 } cmdarg_T;
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h" 2
-# 82 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h" 2
+# 77 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
 typedef struct exarg exarg_T;
 
 
@@ -22038,7 +22114,7 @@ struct exarg {
   void *cookie;
   struct condstack *cstack;
 };
-# 145 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
+# 140 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
 typedef struct expand {
   int xp_context;
   char_u *xp_pattern;
@@ -22056,7 +22132,7 @@ typedef struct expand {
   char_u *xp_line;
   int xp_col;
 } expand_T;
-# 173 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
+# 168 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
 typedef struct {
   int hide;
   int split;
@@ -22131,10 +22207,10 @@ struct cleanup_stuff {
   int pending;
   except_T *exception;
 };
-# 26 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 19 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/mbyte.h" 1
-# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 21 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/menu.h" 1
 # 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/menu.h"
 typedef struct VimMenu vimmenu_T;
@@ -22158,7 +22234,7 @@ struct VimMenu {
   vimmenu_T *parent;
   vimmenu_T *next;
 };
-# 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 22 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h" 1
@@ -22181,7 +22257,7 @@ void __assert_rtn(const char *, const char *, int, const char *) __attribute__((
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 2
 # 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
@@ -22244,13 +22320,10 @@ typedef struct loop {
   uv_mutex_t mutex;
   int recursive;
 } Loop;
-# 32 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
-# 75 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
-extern long Rows
+# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 119 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+extern long Rows ;
 
-
-
-;
 extern long Columns ;
 
 
@@ -22258,12 +22331,12 @@ extern long Columns ;
 
 typedef char_u schar_T;
 typedef unsigned short sattr_T;
-# 99 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 140 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern schar_T *ScreenLines ;
 extern sattr_T *ScreenAttrs ;
 extern unsigned *LineOffset ;
 extern char_u *LineWraps ;
-# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 153 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern u8char_T *ScreenLinesUC ;
 extern u8char_T *ScreenLinesC[6];
 extern int Screen_mco ;
@@ -22272,8 +22345,6 @@ extern int Screen_mco ;
 
 
 extern schar_T *ScreenLines2 ;
-# 128 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
-extern short *TabPageIdxs ;
 
 extern int screen_Rows ;
 extern int screen_Columns ;
@@ -22283,7 +22354,7 @@ extern int screen_Columns ;
 
 
 extern int mod_mask ;
-# 148 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 180 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int cmdline_row;
 
 extern int redraw_cmdline ;
@@ -22317,7 +22388,7 @@ extern int compl_interrupted ;
 
 
 extern int compl_cont_status ;
-# 196 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 228 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int cmdmsg_rl ;
 extern int msg_col;
 extern int msg_row;
@@ -22428,9 +22499,9 @@ extern int check_cstack ;
 
 
 extern int trylevel ;
-# 315 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 347 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int force_abort ;
-# 327 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 359 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern struct msglist **msg_list ;
 
 
@@ -22448,11 +22519,11 @@ extern int suppress_errthrow ;
 
 
 extern except_T *caught_stack ;
-# 354 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 386 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int may_garbage_collect ;
 extern int want_garbage_collect ;
 extern int garbage_collect_at_exit ;
-# 367 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 399 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern scid_T current_SID ;
 
 
@@ -22544,7 +22615,7 @@ typedef enum {
   , HLF_MC
   , HLF_COUNT
 } hlf_T;
-# 466 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 498 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int highlight_attr[HLF_COUNT];
 extern int highlight_user[9];
 extern int highlight_stlnc[9];
@@ -22609,7 +22680,7 @@ extern int updating_screen ;
 extern win_T *firstwin;
 extern win_T *lastwin;
 extern win_T *prevwin ;
-# 542 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 574 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern win_T *curwin;
 
 extern win_T *aucmd_win;
@@ -22628,7 +22699,7 @@ extern frame_T *topframe;
 extern tabpage_T *first_tabpage;
 extern tabpage_T *curtab;
 extern int redraw_tabline ;
-# 568 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 600 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern buf_T *firstbuf ;
 extern buf_T *lastbuf ;
 extern buf_T *curbuf ;
@@ -22770,11 +22841,8 @@ extern int can_si ;
 
 extern int can_si_back ;
 
-extern pos_T saved_cursor
 
-
-
-;
+extern pos_T saved_cursor ;
 
 
 
@@ -22792,7 +22860,7 @@ extern pos_T Insstart_orig;
 
 extern int orig_line_count ;
 extern int vr_lines_changed ;
-# 749 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 778 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int enc_dbcs ;
 
 extern int enc_unicode ;
@@ -22801,12 +22869,14 @@ extern int enc_latin1like ;
 extern int has_mbyte ;
 
 
+extern char_u *fenc_default ;
+
 
 
 
 
 extern char mb_bytelen_tab[256];
-# 770 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 801 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int (*mb_ptr2len)(const char_u *p) ;
 
 extern int (*mb_ptr2len_len)(const char_u *p, int size) ;
@@ -22822,7 +22892,7 @@ extern int (*mb_off2cells)(unsigned off, unsigned max_off) ;
 
 extern int (*mb_ptr2char)(const char_u *p) ;
 extern int (*mb_head_off)(const char_u *base, const char_u *p) ;
-# 803 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 834 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int State ;
 
 
@@ -22893,16 +22963,13 @@ extern int RedrawingDisabled ;
 extern int readonlymode ;
 extern int recoverymode ;
 
-extern typebuf_T typebuf
 
+extern typebuf_T typebuf ;
 
-
-;
 extern int ex_normal_busy ;
 extern int ex_normal_lock ;
 extern int ignore_script ;
 extern int stop_insert_mode;
-
 extern int KeyTyped;
 extern int KeyStuffed;
 extern int maptick ;
@@ -22953,11 +23020,9 @@ extern int autocmd_fname_full;
 extern int autocmd_bufnr ;
 extern char_u *autocmd_match ;
 extern int did_cursorhold ;
-extern pos_T last_cursormoved
 
+extern pos_T last_cursormoved ;
 
-
-;
 extern int last_changedtick ;
 extern buf_T *last_changedtick_buf ;
 
@@ -23064,7 +23129,7 @@ extern linenr_T printer_page_num;
 
 
 extern int typebuf_was_filled ;
-# 1059 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 1081 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int virtual_op ;
 
 
@@ -23076,7 +23141,7 @@ extern linenr_T spell_redraw_lnum ;
 
 
 extern int need_cursor_line_redraw ;
-# 1086 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 1104 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern char_u e_abort[] ;
 extern char_u e_afterinit[] ;
 
@@ -23189,6 +23254,7 @@ extern char_u e_intern2[] ;
 extern char_u e_maxmempat[] ;
 
 extern char_u e_emptybuf[] ;
+extern char_u e_nobufnr[] ;
 
 extern char_u e_invalpat[] ;
 
@@ -23225,17 +23291,36 @@ typedef enum {
   kWorking,
   kBroken
 } WorkingStatus;
-# 343 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 27 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 334 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 17 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 1
-# 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+
+
+
+
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
-# 95 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
-static inline _Bool ascii_iswhite(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isdigit(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isxdigit(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isspace(int) __attribute__((always_inline)) __attribute__((const));
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
+# 88 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+static inline _Bool ascii_iswhite(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isxdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isbdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isspace(int)
+  __attribute__((const))
+  __attribute__((always_inline));
 
 
 
@@ -23244,7 +23329,7 @@ static inline _Bool ascii_iswhite(int c)
 {
   return c == ' ' || c == '\t';
 }
-# 117 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+# 125 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 static inline _Bool ascii_isdigit(int c)
 {
   return c >= '0' && c <= '9';
@@ -23263,12 +23348,20 @@ static inline _Bool ascii_isxdigit(int c)
 
 
 
+static inline _Bool ascii_isbdigit(int c)
+{
+  return (c == '0' || c == '1');
+}
+
+
+
+
 
 static inline _Bool ascii_isspace(int c)
 {
   return (c >= 9 && c <= 13) || c == ' ';
 }
-# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 
 
@@ -23384,6 +23477,10 @@ enum {
     VV_PROGPATH,
     VV_COMMAND_OUTPUT,
     VV_COMPLETED_ITEM,
+    VV_OPTION_NEW,
+    VV_OPTION_OLD,
+    VV_OPTION_TYPE,
+    VV_ERRORS,
     VV_MSGPACK_TYPES,
     VV_LEN,
 };
@@ -23391,8 +23488,9 @@ enum {
 
 
 
-int vim_to_msgpack(msgpack_packer *const, typval_T *const);
-# 32 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+int vim_to_msgpack(msgpack_packer *const, typval_T *const,
+                   const char *const objname);
+# 22 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h" 1
 
 
@@ -23401,6 +23499,31 @@ int vim_to_msgpack(msgpack_packer *const, typval_T *const);
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h" 2
 
 
+# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.h" 1
+# 20 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.h"
+typedef struct {
+  enum {
+    kStlClickDisabled = 0,
+    kStlClickTabSwitch,
+    kStlClickTabClose,
+    kStlClickFuncRun,
+  } type;
+  int tabnr;
+  char *func;
+} StlClickDefinition;
+
+
+typedef struct {
+  StlClickDefinition def;
+  const char *start;
+} StlClickRecord;
+
+
+extern StlClickDefinition *tab_page_click_defs;
+
+
+extern long tab_page_click_defs_size;
+# 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h" 2
 
 
 enum getf_values {
@@ -23439,7 +23562,7 @@ enum bfa_values {
   BFA_WIPE = 2,
   BFA_KEEP_UNDO = 4,
 };
-# 54 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h"
+# 55 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h"
 static inline void switch_to_win_for_buf(buf_T *buf,
                                          win_T **save_curwinp,
                                          tabpage_T **save_curtabp,
@@ -23463,9 +23586,9 @@ static inline void restore_win_for_buf(win_T *save_curwin,
     restore_buffer(save_curbuf);
   }
 }
-# 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 23 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/charset.h" 1
-# 34 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 24 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/cursor.h" 1
 
 
@@ -23495,13 +23618,13 @@ typedef enum {
 } ShellOpts;
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc2.h" 2
 # 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/cursor.h" 2
-# 35 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/diff.h" 1
-# 36 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 26 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/edit.h" 1
 # 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/edit.h"
 typedef int (*IndentGetter)(void);
-# 37 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 27 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.h" 1
 # 23 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.h"
 typedef struct {
@@ -23509,7 +23632,7 @@ typedef struct {
   Timestamp timestamp;
   list_T *additional_elements;
 } SubReplacementString;
-# 38 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.h" 1
 
 
@@ -23520,11 +23643,11 @@ typedef struct {
 # 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.h" 2
 
 typedef void (*DoInRuntimepathCB)(char_u *, void *);
-# 39 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h" 1
-# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h"
+# 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h"
 typedef enum {
   HIST_CMD,
   HIST_SEARCH,
@@ -23545,7 +23668,7 @@ typedef struct hist_entry {
   Timestamp timestamp;
   list_T *additional_elements;
 } histentry_T;
-# 42 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 32 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/fileio.h" 1
 
 
@@ -23583,9 +23706,9 @@ typedef struct {
   buf_T *new_curbuf;
   char_u *globaldir;
 } aco_save_T;
-# 43 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
-# 44 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 34 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.h" 1
 # 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.h"
 typedef struct foldinfo {
@@ -23595,17 +23718,17 @@ typedef struct foldinfo {
   int fi_low_level;
 
 } foldinfo_T;
-# 45 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 35 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/getchar.h" 1
-# 46 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 36 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/if_cscope.h" 1
-# 49 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 39 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/indent_c.h" 1
-# 50 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 40 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/indent.h" 1
-# 51 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 41 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark.h" 1
 # 52 "/Users/George/Documents/Programs/C/neovim/src/nvim/mark.h"
 static inline int mark_global_index(const char name)
@@ -23632,15 +23755,15 @@ static inline int mark_local_index(const char name)
                    ? ('z' - 'a' + 1) + 2
                    : -1))));
 }
-# 52 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 42 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/memline.h" 1
-# 54 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 44 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/message.h" 1
-# 56 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 46 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc1.h" 1
-# 57 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 47 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/map.h" 1
@@ -23743,17 +23866,17 @@ typedef struct { khint_t n_buckets, size, n_occupied, upper_bound; khint32_t *fl
 typedef struct { khint_t n_buckets, size, n_occupied, upper_bound; khint32_t *flags; ptr_t *keys; ptr_t *vals; } kh_ptr_t_ptr_t_map_t; extern kh_ptr_t_ptr_t_map_t *kh_init_ptr_t_ptr_t_map(void); extern void kh_dealloc_ptr_t_ptr_t_map(kh_ptr_t_ptr_t_map_t *h); extern void kh_destroy_ptr_t_ptr_t_map(kh_ptr_t_ptr_t_map_t *h); extern void kh_clear_ptr_t_ptr_t_map(kh_ptr_t_ptr_t_map_t *h); extern khint_t kh_get_ptr_t_ptr_t_map(const kh_ptr_t_ptr_t_map_t *h, ptr_t key); extern void kh_resize_ptr_t_ptr_t_map(kh_ptr_t_ptr_t_map_t *h, khint_t new_n_buckets); extern khint_t kh_put_ptr_t_ptr_t_map(kh_ptr_t_ptr_t_map_t *h, ptr_t key, int *ret); extern void kh_del_ptr_t_ptr_t_map(kh_ptr_t_ptr_t_map_t *h, khint_t x); typedef struct { kh_ptr_t_ptr_t_map_t *table; } Map_ptr_t_ptr_t; Map_ptr_t_ptr_t *map_ptr_t_ptr_t_new(void); void map_ptr_t_ptr_t_free(Map_ptr_t_ptr_t *map); ptr_t map_ptr_t_ptr_t_get(Map_ptr_t_ptr_t *map, ptr_t key); _Bool map_ptr_t_ptr_t_has(Map_ptr_t_ptr_t *map, ptr_t key); ptr_t map_ptr_t_ptr_t_put(Map_ptr_t_ptr_t *map, ptr_t key, ptr_t value); ptr_t map_ptr_t_ptr_t_del(Map_ptr_t_ptr_t *map, ptr_t key); void map_ptr_t_ptr_t_clear(Map_ptr_t_ptr_t *map);
 typedef struct { khint_t n_buckets, size, n_occupied, upper_bound; khint32_t *flags; uint64_t *keys; ptr_t *vals; } kh_uint64_t_ptr_t_map_t; extern kh_uint64_t_ptr_t_map_t *kh_init_uint64_t_ptr_t_map(void); extern void kh_dealloc_uint64_t_ptr_t_map(kh_uint64_t_ptr_t_map_t *h); extern void kh_destroy_uint64_t_ptr_t_map(kh_uint64_t_ptr_t_map_t *h); extern void kh_clear_uint64_t_ptr_t_map(kh_uint64_t_ptr_t_map_t *h); extern khint_t kh_get_uint64_t_ptr_t_map(const kh_uint64_t_ptr_t_map_t *h, uint64_t key); extern void kh_resize_uint64_t_ptr_t_map(kh_uint64_t_ptr_t_map_t *h, khint_t new_n_buckets); extern khint_t kh_put_uint64_t_ptr_t_map(kh_uint64_t_ptr_t_map_t *h, uint64_t key, int *ret); extern void kh_del_uint64_t_ptr_t_map(kh_uint64_t_ptr_t_map_t *h, khint_t x); typedef struct { kh_uint64_t_ptr_t_map_t *table; } Map_uint64_t_ptr_t; Map_uint64_t_ptr_t *map_uint64_t_ptr_t_new(void); void map_uint64_t_ptr_t_free(Map_uint64_t_ptr_t *map); ptr_t map_uint64_t_ptr_t_get(Map_uint64_t_ptr_t *map, uint64_t key); _Bool map_uint64_t_ptr_t_has(Map_uint64_t_ptr_t *map, uint64_t key); ptr_t map_uint64_t_ptr_t_put(Map_uint64_t_ptr_t *map, uint64_t key, ptr_t value); ptr_t map_uint64_t_ptr_t_del(Map_uint64_t_ptr_t *map, uint64_t key); void map_uint64_t_ptr_t_clear(Map_uint64_t_ptr_t *map);
 typedef struct { khint_t n_buckets, size, n_occupied, upper_bound; khint32_t *flags; String *keys; MsgpackRpcRequestHandler *vals; } kh_String_MsgpackRpcRequestHandler_map_t; extern kh_String_MsgpackRpcRequestHandler_map_t *kh_init_String_MsgpackRpcRequestHandler_map(void); extern void kh_dealloc_String_MsgpackRpcRequestHandler_map(kh_String_MsgpackRpcRequestHandler_map_t *h); extern void kh_destroy_String_MsgpackRpcRequestHandler_map(kh_String_MsgpackRpcRequestHandler_map_t *h); extern void kh_clear_String_MsgpackRpcRequestHandler_map(kh_String_MsgpackRpcRequestHandler_map_t *h); extern khint_t kh_get_String_MsgpackRpcRequestHandler_map(const kh_String_MsgpackRpcRequestHandler_map_t *h, String key); extern void kh_resize_String_MsgpackRpcRequestHandler_map(kh_String_MsgpackRpcRequestHandler_map_t *h, khint_t new_n_buckets); extern khint_t kh_put_String_MsgpackRpcRequestHandler_map(kh_String_MsgpackRpcRequestHandler_map_t *h, String key, int *ret); extern void kh_del_String_MsgpackRpcRequestHandler_map(kh_String_MsgpackRpcRequestHandler_map_t *h, khint_t x); typedef struct { kh_String_MsgpackRpcRequestHandler_map_t *table; } Map_String_MsgpackRpcRequestHandler; Map_String_MsgpackRpcRequestHandler *map_String_MsgpackRpcRequestHandler_new(void); void map_String_MsgpackRpcRequestHandler_free(Map_String_MsgpackRpcRequestHandler *map); MsgpackRpcRequestHandler map_String_MsgpackRpcRequestHandler_get(Map_String_MsgpackRpcRequestHandler *map, String key); _Bool map_String_MsgpackRpcRequestHandler_has(Map_String_MsgpackRpcRequestHandler *map, String key); MsgpackRpcRequestHandler map_String_MsgpackRpcRequestHandler_put(Map_String_MsgpackRpcRequestHandler *map, String key, MsgpackRpcRequestHandler value); MsgpackRpcRequestHandler map_String_MsgpackRpcRequestHandler_del(Map_String_MsgpackRpcRequestHandler *map, String key); void map_String_MsgpackRpcRequestHandler_clear(Map_String_MsgpackRpcRequestHandler *map);
-# 60 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 50 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/file_search.h" 1
-# 61 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 51 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/move.h" 1
-# 63 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 53 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ops.h" 1
 # 12 "/Users/George/Documents/Programs/C/neovim/src/nvim/ops.h"
 typedef int (*Indenter)(void);
-# 71 "/Users/George/Documents/Programs/C/neovim/src/nvim/ops.h"
+# 73 "/Users/George/Documents/Programs/C/neovim/src/nvim/ops.h"
 enum GRegFlags {
   kGRegNoExpr = 1,
   kGRegExprSrc = 2,
@@ -23794,18 +23917,18 @@ static inline int op_reg_index(const int regname)
     return -1;
   }
 }
-# 65 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 55 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.h" 1
-# 66 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 56 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os_unix.h" 1
-# 67 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 57 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/path.h" 1
 
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/path.h" 2
-# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/path.h"
+# 26 "/Users/George/Documents/Programs/C/neovim/src/nvim/path.h"
 typedef enum file_comparison {
   kEqualFiles = 1,
   kDifferentFiles = 2,
@@ -23813,7 +23936,7 @@ typedef enum file_comparison {
   kOneFileMissing = 6,
   kEqualFileNames = 7
 } FileComparison;
-# 68 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 58 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/popupmnu.h" 1
 
 
@@ -23825,14 +23948,13 @@ typedef struct {
   char_u *pum_extra;
   char_u *pum_info;
 } pumitem_T;
-# 69 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 59 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/quickfix.h" 1
-# 71 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 61 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp.h" 1
-# 72 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
-# 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.h" 1
-# 73 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 62 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/search.h" 1
 # 49 "/Users/George/Documents/Programs/C/neovim/src/nvim/search.h"
 typedef struct soffset {
@@ -23851,7 +23973,7 @@ typedef struct spat {
   SearchOffset off;
   dict_T *additional_data;
 } SearchPattern;
-# 74 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 64 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/sha256.h" 1
 # 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/sha256.h"
 typedef struct {
@@ -23859,11 +23981,11 @@ typedef struct {
   uint32_t state[8];
   char_u buffer[64];
 } context_sha256_T;
-# 75 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 65 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/spell.h" 1
-# 76 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 66 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/strings.h" 1
-# 77 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 67 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/syntax.h" 1
 # 40 "/Users/George/Documents/Programs/C/neovim/src/nvim/syntax.h"
 typedef struct {
@@ -23871,7 +23993,7 @@ typedef struct {
   RgbValue color;
 } color_name_table_T;
 extern color_name_table_T color_name_table[];
-# 78 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 68 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/tag.h" 1
 # 38 "/Users/George/Documents/Programs/C/neovim/src/nvim/tag.h"
 typedef struct {
@@ -23881,14 +24003,14 @@ typedef struct {
   int tn_hf_idx;
   void *tn_search_ctx;
 } tagname_T;
-# 79 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 69 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/tempfile.h" 1
-# 80 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 70 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ui.h" 1
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/ui.h" 2
 
 
@@ -23928,12 +24050,12 @@ struct ui_t {
   void (*set_icon)(UI *ui, char *icon);
   void (*stop)(UI *ui);
 };
-# 81 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 71 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/mouse.h" 1
-# 82 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 72 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/undo.h" 1
-# 84 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 74 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/version.h" 1
 
 
@@ -23941,7 +24063,7 @@ struct ui_t {
 
 extern char* Version;
 extern char* longVersion;
-# 85 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 75 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/libuv_process.h" 1
@@ -23960,7 +24082,7 @@ extern char* longVersion;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/rstream.h" 2
 
 
@@ -23971,7 +24093,7 @@ extern char* longVersion;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/stream.h" 2
 
 
@@ -23979,7 +24101,7 @@ extern char* longVersion;
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/rbuffer.h" 1
 # 17 "/Users/George/Documents/Programs/C/neovim/src/nvim/rbuffer.h"
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/rbuffer.h" 2
 # 65 "/Users/George/Documents/Programs/C/neovim/src/nvim/rbuffer.h"
 typedef struct rbuffer RBuffer;
@@ -24068,7 +24190,7 @@ struct process {
   Stream *in, *out, *err;
   process_exit_cb cb;
   internal_process_cb internal_exit_cb, internal_close_cb;
-  _Bool closed, term_sent;
+  _Bool closed, term_sent, detach;
   Queue *events;
 };
 
@@ -24091,7 +24213,8 @@ static inline Process process_init(Loop *loop, ProcessType type, void *data)
     .closed = 0,
     .term_sent = 0,
     .internal_close_cb = ((void*)0),
-    .internal_exit_cb = ((void*)0)
+    .internal_exit_cb = ((void*)0),
+    .detach = 0
   };
 }
 # 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/libuv_process.h" 2
@@ -24109,7 +24232,7 @@ static inline LibuvProcess libuv_process_init(Loop *loop, void *data)
   rv.process = process_init(loop, kProcessTypeUv, data);
   return rv;
 }
-# 88 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 78 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/pty_process.h" 1
 
 
@@ -24160,7 +24283,7 @@ static inline PtyProcess pty_process_init(Loop *loop, void *data)
   rv.tty_fd = -1;
   return rv;
 }
-# 89 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 79 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 
 
 
@@ -24198,9 +24321,9 @@ struct socket_watcher {
   Queue *events;
 };
 # 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/channel.h" 2
-# 93 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 83 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/server.h" 1
-# 94 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 84 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/helpers.h" 1
 
 
@@ -24210,7 +24333,7 @@ struct socket_watcher {
 
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack.h" 1
 # 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/msgpack_rpc/helpers.h" 2
-# 95 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 85 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/api/private/helpers.h" 1
 
 
@@ -24222,14 +24345,14 @@ struct socket_watcher {
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/kvec.h" 1
 # 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/api/private/helpers.h" 2
-# 96 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 86 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/api/vim.h" 1
-# 97 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 87 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/dl.h" 1
-# 98 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 88 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/input.h" 1
-# 99 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
-# 138 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 89 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c" 2
+# 128 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 typedef struct lval_S {
   char_u *ll_name;
   char_u *ll_exp_name;
@@ -24314,13 +24437,13 @@ static garray_T ga_scripts = {0, 0, sizeof(scriptvar_T *), 4, ((void*)0)};
 
 
 static int echo_attr = 0;
-# 238 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 228 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static garray_T ga_loaded = {0, 0, sizeof(char_u *), 4, ((void*)0)};
 
 
 static dict_T *first_dict = ((void*)0);
 static list_T *first_list = ((void*)0);
-# 251 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 241 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 typedef struct funccall_S funccall_T;
 
 struct funccall_S {
@@ -24373,7 +24496,7 @@ typedef enum {
   VAR_FLAVOUR_SESSION,
   VAR_FLAVOUR_SHADA
 } var_flavour_T;
-# 315 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 305 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static struct vimvar {
   char *vv_name;
   dictitem_T vv_di;
@@ -24385,69 +24508,73 @@ static struct vimvar {
 
 
 
-  {"count", {{1, 0, {0}}, 0, {0}}, {0}, 1 +2},
-  {"count1", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"prevcount", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"errmsg", {{2, 0, {0}}, 0, {0}}, {0}, 1},
-  {"warningmsg", {{2, 0, {0}}, 0, {0}}, {0}, 0},
-  {"statusmsg", {{2, 0, {0}}, 0, {0}}, {0}, 0},
-  {"shell_error", {{1, 0, {0}}, 0, {0}}, {0}, 1 +2},
-  {"this_session", {{2, 0, {0}}, 0, {0}}, {0}, 1},
-  {"version", {{1, 0, {0}}, 0, {0}}, {0}, 1 +2},
-  {"lnum", {{1, 0, {0}}, 0, {0}}, {0}, 4},
-  {"termresponse", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"fname", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"lang", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"lc_time", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"ctype", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"charconvert_from", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"charconvert_to", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"fname_in", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"fname_out", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"fname_new", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"fname_diff", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"cmdarg", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"foldstart", {{1, 0, {0}}, 0, {0}}, {0}, 4},
-  {"foldend", {{1, 0, {0}}, 0, {0}}, {0}, 4},
-  {"folddashes", {{2, 0, {0}}, 0, {0}}, {0}, 4},
-  {"foldlevel", {{1, 0, {0}}, 0, {0}}, {0}, 4},
-  {"progname", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"servername", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"dying", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"exception", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"throwpoint", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"register", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"cmdbang", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"insertmode", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"val", {{0, 0, {0}}, 0, {0}}, {0}, 2},
-  {"key", {{0, 0, {0}}, 0, {0}}, {0}, 2},
-  {"profiling", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"fcs_reason", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"fcs_choice", {{2, 0, {0}}, 0, {0}}, {0}, 0},
-  {"beval_bufnr", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"beval_winnr", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"beval_lnum", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"beval_col", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"beval_text", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"scrollstart", {{2, 0, {0}}, 0, {0}}, {0}, 0},
-  {"swapname", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"swapchoice", {{2, 0, {0}}, 0, {0}}, {0}, 0},
-  {"swapcommand", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"char", {{2, 0, {0}}, 0, {0}}, {0}, 0},
-  {"mouse_win", {{1, 0, {0}}, 0, {0}}, {0}, 0},
-  {"mouse_lnum", {{1, 0, {0}}, 0, {0}}, {0}, 0},
-  {"mouse_col", {{1, 0, {0}}, 0, {0}}, {0}, 0},
-  {"operator", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"searchforward", {{1, 0, {0}}, 0, {0}}, {0}, 0},
-  {"hlsearch", {{1, 0, {0}}, 0, {0}}, {0}, 0},
-  {"oldfiles", {{4, 0, {0}}, 0, {0}}, {0}, 0},
-  {"windowid", {{1, 0, {0}}, 0, {0}}, {0}, 2},
-  {"progpath", {{2, 0, {0}}, 0, {0}}, {0}, 2},
-  {"command_output", {{2, 0, {0}}, 0, {0}}, {0}, 0},
-  {"completed_item", {{5, 0, {0}}, 0, {0}}, {0}, 2},
-  {"msgpack_types", {{5, 0, {0}}, 0, {0}}, {0}, 2},
+  { "count", {{1, 0, {0}}, 0, {0}}, {0}, 1 +2 },
+  { "count1", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "prevcount", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "errmsg", {{2, 0, {0}}, 0, {0}}, {0}, 1 },
+  { "warningmsg", {{2, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "statusmsg", {{2, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "shell_error", {{1, 0, {0}}, 0, {0}}, {0}, 1 +2 },
+  { "this_session", {{2, 0, {0}}, 0, {0}}, {0}, 1 },
+  { "version", {{1, 0, {0}}, 0, {0}}, {0}, 1 +2 },
+  { "lnum", {{1, 0, {0}}, 0, {0}}, {0}, 4 },
+  { "termresponse", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "fname", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "lang", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "lc_time", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "ctype", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "charconvert_from", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "charconvert_to", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "fname_in", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "fname_out", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "fname_new", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "fname_diff", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "cmdarg", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "foldstart", {{1, 0, {0}}, 0, {0}}, {0}, 4 },
+  { "foldend", {{1, 0, {0}}, 0, {0}}, {0}, 4 },
+  { "folddashes", {{2, 0, {0}}, 0, {0}}, {0}, 4 },
+  { "foldlevel", {{1, 0, {0}}, 0, {0}}, {0}, 4 },
+  { "progname", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "servername", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "dying", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "exception", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "throwpoint", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "register", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "cmdbang", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "insertmode", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "val", {{0, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "key", {{0, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "profiling", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "fcs_reason", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "fcs_choice", {{2, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "beval_bufnr", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "beval_winnr", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "beval_lnum", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "beval_col", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "beval_text", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "scrollstart", {{2, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "swapname", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "swapchoice", {{2, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "swapcommand", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "char", {{2, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "mouse_win", {{1, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "mouse_lnum", {{1, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "mouse_col", {{1, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "operator", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "searchforward", {{1, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "hlsearch", {{1, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "oldfiles", {{4, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "windowid", {{1, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "progpath", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "command_output", {{2, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "completed_item", {{5, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "option_new", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "option_old", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "option_type", {{2, 0, {0}}, 0, {0}}, {0}, 2 },
+  { "errors", {{4, 0, {0}}, 0, {0}}, {0}, 0 },
+  { "msgpack_types", {{5, 0, {0}}, 0, {0}}, {0}, 2 },
 };
-# 398 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 392 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static dictitem_T vimvars_var;
 
 
@@ -24505,7 +24632,7 @@ typedef struct {
   list_T *received;
   int status;
 } JobEvent;
-# 463 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 457 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static uint64_t current_job_id = 1;
 static Map_uint64_t_ptr_t *jobs = ((void*)0);
 
@@ -24590,18 +24717,19 @@ void eval_init(void)
     msgpack_type_lists[i] = type_list;
     if (dict_add(msgpack_types_dict, di) == 0) {
 
-      (__builtin_expect(!(0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 547, "false") : (void)0);
+      (__builtin_expect(!(0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 541, "false") : (void)0);
     }
   }
   msgpack_types_dict->dv_lock = 2;
 
   set_vim_var_dict(VV_MSGPACK_TYPES, msgpack_types_dict);
   set_vim_var_dict(VV_COMPLETED_ITEM, dict_alloc());
+  set_vim_var_list(VV_ERRORS, list_alloc());
   set_vim_var_nr(VV_SEARCHFORWARD, 1L);
   set_vim_var_nr(VV_HLSEARCH, 1L);
   set_reg_var(0);
 }
-# 609 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 604 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 char_u *func_name(void *cookie)
 {
   return ((funccall_T *)cookie)->func->uf_name;
@@ -24731,7 +24859,7 @@ var_redir_start (
 
   return 1;
 }
-# 748 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 743 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 void var_redir_str(char_u *value, int value_len)
 {
   int len;
@@ -24932,7 +25060,7 @@ char_u *eval_to_string(char_u *arg, char_u **nextcmd, int convert)
   typval_T tv;
   char_u *retval;
   garray_T ga;
-  char_u numbuf[30];
+  char_u numbuf[65];
 
   if (eval0(arg, &tv, nextcmd, 1) == 0)
     retval = ((void*)0);
@@ -24947,7 +25075,7 @@ char_u *eval_to_string(char_u *arg, char_u **nextcmd, int convert)
       ga_append(&ga, '\000');
       retval = (char_u *)ga.ga_data;
     } else if (convert && tv.v_type == 6) {
-      vim_snprintf((char *)numbuf, 30, "%g", tv.vval.v_float);
+      vim_snprintf((char *)numbuf, 65, "%g", tv.vval.v_float);
       retval = vim_strsave(numbuf);
     } else
       retval = vim_strsave(get_tv_string(&tv));
@@ -25103,9 +25231,14 @@ typval_T *eval_expr(char_u *arg, char_u **nextcmd)
 
   return tv;
 }
-# 1127 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
-int
-call_vim_function (
+
+
+
+
+
+
+
+int call_vim_function(
     char_u *func,
     int argc,
     char_u **argv,
@@ -25130,11 +25263,12 @@ call_vim_function (
       continue;
     }
 
-    if (str_arg_only)
+    if (str_arg_only) {
       len = 0;
-    else
+    } else {
 
-      vim_str2nr(argv[i], ((void*)0), &len, 1, 1, &n, ((void*)0));
+      vim_str2nr(argv[i], ((void*)0), &len, (1 + 2 + 4), &n, ((void*)0), 0);
+    }
     if (len != 0 && len == (int)strlen((char *)(argv[i]))) {
       argvars[i].v_type = 1;
       argvars[i].vval.v_number = n;
@@ -25151,16 +25285,17 @@ call_vim_function (
 
   rettv->v_type = 0;
   ret = call_func(func, (int)strlen((char *)(func)), rettv, argc, argvars,
-      curwin->w_cursor.lnum, curwin->w_cursor.lnum,
-      &doesrange, 1, ((void*)0));
+                  curwin->w_cursor.lnum, curwin->w_cursor.lnum,
+                  &doesrange, 1, ((void*)0));
   if (safe) {
     --sandbox;
     restore_funccal(save_funccalp);
   }
   xfree(argvars);
 
-  if (ret == 0)
+  if (ret == 0) {
     clear_tv(rettv);
+  }
 
   return ret;
 }
@@ -25342,7 +25477,7 @@ int eval_foldexpr(char_u *arg, int *cp)
 
   return retval;
 }
-# 1375 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 1370 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 void ex_let(exarg_T *eap)
 {
   char_u *arg = eap->arg;
@@ -25406,7 +25541,7 @@ void ex_let(exarg_T *eap)
     }
   }
 }
-# 1447 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 1442 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int
 ex_let_vars (
     char_u *arg_start,
@@ -25487,7 +25622,7 @@ ex_let_vars (
 
   return 1;
 }
-# 1535 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 1530 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char_u *skip_var_list(char_u *arg, int *var_count, int *semicolon)
 {
   char_u *p, *s;
@@ -25570,7 +25705,7 @@ static void list_glob_vars(int *first)
 
 static void list_buf_vars(int *first)
 {
-  char_u numbuf[30];
+  char_u numbuf[65];
 
   list_hashtable_vars(&curbuf->b_vars->dv_hashtab, (char_u *)"b:",
       1, first);
@@ -25890,7 +26025,7 @@ static int check_changedtick(char_u *arg)
   }
   return 0;
 }
-# 1956 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 1951 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char_u *
 get_lval (
     char_u *name,
@@ -26265,7 +26400,7 @@ static void set_var_lval(lval_T *lp, char_u *endp, typval_T *rettv, int copy, ch
       if (lp->ll_li->li_next == ((void*)0)) {
 
         list_append_number(lp->ll_list, 0);
-        (__builtin_expect(!(lp->ll_li->li_next), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 2330, "lp->ll_li->li_next") : (void)0);
+        (__builtin_expect(!(lp->ll_li->li_next), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 2325, "lp->ll_li->li_next") : (void)0);
       }
       lp->ll_li = lp->ll_li->li_next;
       ++lp->ll_n1;
@@ -26343,7 +26478,7 @@ notify:
 static int tv_op(typval_T *tv1, typval_T *tv2, char_u *op)
 {
   long n;
-  char_u numbuf[30];
+  char_u numbuf[65];
   char_u *s;
 
 
@@ -26833,9 +26968,12 @@ static int do_unlet_var(lval_T *lp, char_u *name_end, int forceit)
     else if (do_unlet(lp->ll_name, forceit) == 0)
       ret = 0;
     *name_end = cc;
-  } else if (tv_check_lock(lp->ll_tv->v_lock, lp->ll_name))
+  } else if ((lp->ll_list != ((void*)0)
+              && tv_check_lock(lp->ll_list->lv_lock, lp->ll_name))
+             || (lp->ll_dict != ((void*)0)
+                 && tv_check_lock(lp->ll_dict->dv_lock, lp->ll_name))) {
     return 0;
-  else if (lp->ll_range) {
+  } else if (lp->ll_range) {
     listitem_T *li;
     listitem_T *ll_li = lp->ll_li;
     int ll_n1 = lp->ll_n1;
@@ -26896,17 +27034,30 @@ int do_unlet(char_u *name, int forceit)
   hashtab_T *ht;
   hashitem_T *hi;
   char_u *varname;
+  dict_T *d;
   dictitem_T *di;
   dict_T *dict;
   ht = find_var_ht_dict(name, &varname, &dict);
 
   if (ht != ((void*)0) && *varname != '\000') {
+    if (ht == &globvardict.dv_hashtab) {
+      d = &globvardict;
+    } else if (current_funccal != ((void*)0)
+               && ht == &current_funccal->l_vars.dv_hashtab) {
+      d = &current_funccal->l_vars;
+    } else {
+      di = find_var_in_ht(ht, *name, (char_u *)"", 0);
+      d = di->di_tv.vval.v_dict;
+    }
+
     hi = hash_find(ht, varname);
     if (!((hi)->hi_key == ((void*)0) || (hi)->hi_key == &hash_removed)) {
       di = ((dictitem_T *)((hi)->hi_key - __builtin_offsetof(dictitem_T, di_key)));
       if (var_check_fixed(di->di_flags, name)
-          || var_check_ro(di->di_flags, name))
+          || var_check_ro(di->di_flags, name)
+          || tv_check_lock(d->dv_lock, name)) {
         return 0;
+      }
       typval_T oldtv;
       _Bool watched = is_watched(dict);
 
@@ -27076,7 +27227,7 @@ void del_menutrans_vars(void)
   }
   hash_unlock(&globvardict.dv_hashtab);
 }
-# 3149 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 3160 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char_u *varnamebuf = ((void*)0);
 static size_t varnamebuflen = 0;
 
@@ -27196,7 +27347,7 @@ typedef enum {
   , TYPE_MATCH
   , TYPE_NOMATCH
 } exptype_T;
-# 3282 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 3293 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int eval0(char_u *arg, typval_T *rettv, char_u **nextcmd, int evaluate)
 {
   int ret;
@@ -27221,7 +27372,7 @@ static int eval0(char_u *arg, typval_T *rettv, char_u **nextcmd, int evaluate)
 
   return ret;
 }
-# 3318 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 3329 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int eval1(char_u **arg, typval_T *rettv, int evaluate)
 {
   int result;
@@ -27277,7 +27428,7 @@ static int eval1(char_u **arg, typval_T *rettv, int evaluate)
 
   return 1;
 }
-# 3383 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 3394 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int eval2(char_u **arg, typval_T *rettv, int evaluate)
 {
   typval_T var2;
@@ -27331,7 +27482,7 @@ static int eval2(char_u **arg, typval_T *rettv, int evaluate)
 
   return 1;
 }
-# 3446 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 3457 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int eval3(char_u **arg, typval_T *rettv, int evaluate)
 {
   typval_T var2;
@@ -27385,7 +27536,7 @@ static int eval3(char_u **arg, typval_T *rettv, int evaluate)
 
   return 1;
 }
-# 3518 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 3529 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int eval4(char_u **arg, typval_T *rettv, int evaluate)
 {
   typval_T var2;
@@ -27396,7 +27547,7 @@ static int eval4(char_u **arg, typval_T *rettv, int evaluate)
   int len = 2;
   long n1, n2;
   char_u *s1, *s2;
-  char_u buf1[30], buf2[30];
+  char_u buf1[65], buf2[65];
   regmatch_T regmatch;
   int ic;
   char_u *save_cpo;
@@ -27634,7 +27785,7 @@ static int eval4(char_u **arg, typval_T *rettv, int evaluate)
 
   return 1;
 }
-# 3778 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 3789 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int eval5(char_u **arg, typval_T *rettv, int evaluate)
 {
   typval_T var2;
@@ -27643,7 +27794,7 @@ static int eval5(char_u **arg, typval_T *rettv, int evaluate)
   long n1, n2;
   float_T f1 = 0, f2 = 0;
   char_u *s1, *s2;
-  char_u buf1[30], buf2[30];
+  char_u buf1[65], buf2[65];
   char_u *p;
 
 
@@ -27767,7 +27918,7 @@ static int eval5(char_u **arg, typval_T *rettv, int evaluate)
   }
   return 1;
 }
-# 3922 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 3933 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int
 eval6 (
     char_u **arg,
@@ -27878,9 +28029,8 @@ eval6 (
 
   return 1;
 }
-# 4059 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
-static int
-eval7 (
+# 4068 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+static int eval7(
     char_u **arg,
     typval_T *rettv,
     int evaluate,
@@ -27896,21 +28046,16 @@ eval7 (
 
 
 
-
-
   rettv->v_type = 0;
 
 
-
-
   start_leader = *arg;
-  while (**arg == '!' || **arg == '-' || **arg == '+')
+  while (**arg == '!' || **arg == '-' || **arg == '+') {
     *arg = skipwhite(*arg + 1);
+  }
   end_leader = *arg;
 
   switch (**arg) {
-
-
 
   case '0':
   case '1':
@@ -27936,15 +28081,18 @@ eval7 (
       p = skipdigits(p + 2);
       if (*p == 'e' || *p == 'E') {
         ++p;
-        if (*p == '-' || *p == '+')
+        if (*p == '-' || *p == '+') {
           ++p;
-        if (!ascii_isdigit(*p))
+        }
+        if (!ascii_isdigit(*p)) {
           get_float = 0;
-        else
+        } else {
           p = skipdigits(p + 1);
+        }
       }
-      if ((((unsigned)(*p) >= 'A' && (unsigned)(*p) <= 'Z') || ((unsigned)(*p) >= 'a' && (unsigned)(*p) <= 'z')) || *p == '.')
+      if ((((unsigned)(*p) >= 'A' && (unsigned)(*p) <= 'Z') || ((unsigned)(*p) >= 'a' && (unsigned)(*p) <= 'z')) || *p == '.') {
         get_float = 0;
+      }
     }
     if (get_float) {
       float_T f;
@@ -27955,7 +28103,7 @@ eval7 (
         rettv->vval.v_float = f;
       }
     } else {
-      vim_str2nr(*arg, ((void*)0), &len, 1, 1, &n, ((void*)0));
+      vim_str2nr(*arg, ((void*)0), &len, (1 + 2 + 4), &n, ((void*)0), 0);
       *arg += len;
       if (evaluate) {
         rettv->v_type = 1;
@@ -27966,42 +28114,28 @@ eval7 (
   }
 
 
-
-
   case '"': ret = get_string_tv(arg, rettv, evaluate);
     break;
-
-
 
 
   case '\'': ret = get_lit_string_tv(arg, rettv, evaluate);
     break;
 
 
-
-
   case '[': ret = get_list_tv(arg, rettv, evaluate);
     break;
-
-
 
 
   case '{': ret = get_dict_tv(arg, rettv, evaluate);
     break;
 
 
-
-
   case '&': ret = get_option_tv(arg, rettv, evaluate);
     break;
 
 
-
-
   case '$': ret = get_env_tv(arg, rettv, evaluate);
     break;
-
-
 
 
   case '@': ++*arg;
@@ -28009,18 +28143,17 @@ eval7 (
       rettv->v_type = 2;
       rettv->vval.v_string = get_reg_contents(**arg, kGRegExprSrc);
     }
-    if (**arg != '\000')
+    if (**arg != '\000') {
       ++*arg;
+    }
     break;
-
-
 
 
   case '(': *arg = skipwhite(*arg + 1);
     ret = eval1(arg, rettv, evaluate);
-    if (**arg == ')')
+    if (**arg == ')') {
       ++*arg;
-    else if (ret == 1) {
+    } else if (ret == 1) {
       emsg((char_u *)(libintl_gettext((char *)("E110: Missing ')'"))));
       clear_tv(rettv);
       ret = 0;
@@ -28034,16 +28167,15 @@ eval7 (
   if (ret == 2) {
 
 
-
-
     s = *arg;
     len = get_name_len(arg, &alias, evaluate, 1);
-    if (alias != ((void*)0))
+    if (alias != ((void*)0)) {
       s = alias;
+    }
 
-    if (len <= 0)
+    if (len <= 0) {
       ret = 0;
-    else {
+    } else {
       if (**arg == '(') {
 
 
@@ -28066,14 +28198,16 @@ eval7 (
 
 
         if (aborting()) {
-          if (ret == 1)
+          if (ret == 1) {
             clear_tv(rettv);
+          }
           ret = 0;
         }
-      } else if (evaluate)
+      } else if (evaluate) {
         ret = get_var_tv(s, len, rettv, 1, 0);
-      else
+      } else {
         ret = 1;
+      }
     }
     xfree(alias);
   }
@@ -28082,10 +28216,9 @@ eval7 (
 
 
 
-  if (ret == 1)
+  if (ret == 1) {
     ret = handle_subscript(arg, rettv, evaluate, 1);
-
-
+  }
 
 
   if (ret == 1 && evaluate && end_leader > start_leader) {
@@ -28093,10 +28226,11 @@ eval7 (
     int val = 0;
     float_T f = 0.0;
 
-    if (rettv->v_type == 6)
+    if (rettv->v_type == 6) {
       f = rettv->vval.v_float;
-    else
+    } else {
       val = get_tv_number_chk(rettv, &error);
+    }
     if (error) {
       clear_tv(rettv);
       ret = 0;
@@ -28104,15 +28238,17 @@ eval7 (
       while (end_leader > start_leader) {
         --end_leader;
         if (*end_leader == '!') {
-          if (rettv->v_type == 6)
+          if (rettv->v_type == 6) {
             f = !f;
-          else
+          } else {
             val = !val;
+          }
         } else if (*end_leader == '-') {
-          if (rettv->v_type == 6)
+          if (rettv->v_type == 6) {
             f = -f;
-          else
+          } else {
             val = -val;
+          }
         }
       }
       if (rettv->v_type == 6) {
@@ -28483,10 +28619,13 @@ static int get_string_tv(char_u **arg, typval_T *rettv, int evaluate)
           int n, nr;
           int c = toupper(*p);
 
-          if (c == 'X')
+          if (c == 'X') {
             n = 2;
-          else
+          } else if (*p == 'u') {
             n = 4;
+          } else {
+            n = 8;
+          }
           nr = 0;
           while (--n >= 0 && ascii_isxdigit(p[1])) {
             ++p;
@@ -28840,7 +28979,7 @@ tv_equal (
     int recursive
 )
 {
-  char_u buf1[30], buf2[30];
+  char_u buf1[65], buf2[65];
   char_u *s1, *s2;
   static int recursive_cnt = 0;
   int r;
@@ -29072,7 +29211,7 @@ void list_append_dict(list_T *list, dict_T *dict)
   list_append(list, li);
   ++dict->dv_refcount;
 }
-# 5260 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 5257 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 void list_append_string(list_T *l, const char_u *str, int len)
   FUNC_ATTR_NONNULL_ARG(1)
 {
@@ -29185,7 +29324,7 @@ static int list_concat(list_T *l1, list_T *l2, typval_T *tv)
   list_extend(l, l2, ((void*)0));
   return 1;
 }
-# 5382 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 5379 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static list_T *list_copy(const vimconv_T *const conv,
                          list_T *const orig,
                          const _Bool deep,
@@ -29256,7 +29395,7 @@ typedef struct join_S {
   char_u *s;
   char_u *tofree;
 } join_T;
-# 5461 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 5458 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int list_join_inner(garray_T *const gap, list_T *const l,
                            const char *const sep, garray_T *const join_gap)
   FUNC_ATTR_NONNULL_ALL
@@ -29305,7 +29444,7 @@ static int list_join_inner(garray_T *const gap, list_T *const l,
 
   return 1;
 }
-# 5517 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 5514 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int list_join(garray_T *const gap, list_T *const l,
                      const char *const sep)
   FUNC_ATTR_NONNULL_ALL
@@ -29325,7 +29464,7 @@ static int list_join(garray_T *const gap, list_T *const l,
 
   return retval;
 }
-# 5560 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 5557 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 _Bool garbage_collect(void)
 {
   _Bool abort = 0;
@@ -29428,6 +29567,14 @@ _Bool garbage_collect(void)
   }
 
 
+  {
+    TerminalJobData *data;
+    { khint_t __i; for (__i = (khint_t)(0); __i != ((jobs->table)->n_buckets); ++__i) { if (!(!(((jobs->table)->flags[(__i)>>4]>>(((__i)&0xfU)<<1))&3))) continue; (data) = ((jobs->table)->vals[__i]); { abort = abort || set_ref_dict(data->self, copyID); }; } }
+
+
+  }
+
+
   abort = abort || set_ref_in_ht(&vimvardict.dv_hashtab, copyID, ((void*)0));
 
 
@@ -29504,8 +29651,7 @@ static int free_unref_items(int copyID)
 
 
   for (dict_T *dd = first_dict; dd != ((void*)0); ) {
-    if ((dd->dv_copyID & (~0x1)) != (copyID & (~0x1))
-        && !dd->internal_refcount) {
+    if ((dd->dv_copyID & (~0x1)) != (copyID & (~0x1))) {
 
 
 
@@ -29538,7 +29684,7 @@ static int free_unref_items(int copyID)
 
   return did_free;
 }
-# 5780 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 5784 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 _Bool set_ref_in_ht(hashtab_T *ht, int copyID, list_stack_T **list_stack)
   FUNC_ATTR_WARN_UNUSED_RESULT
 {
@@ -29574,7 +29720,7 @@ _Bool set_ref_in_ht(hashtab_T *ht, int copyID, list_stack_T **list_stack)
 
   return abort;
 }
-# 5823 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 5827 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 _Bool set_ref_in_list(list_T *l, int copyID, ht_stack_T **ht_stack)
   FUNC_ATTR_WARN_UNUSED_RESULT
 {
@@ -29606,7 +29752,7 @@ _Bool set_ref_in_list(list_T *l, int copyID, ht_stack_T **ht_stack)
 
   return abort;
 }
-# 5863 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 5867 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 _Bool set_ref_in_item(typval_T *tv, int copyID, ht_stack_T **ht_stack,
                      list_stack_T **list_stack)
   FUNC_ATTR_WARN_UNUSED_RESULT
@@ -29724,7 +29870,6 @@ dict_T *dict_alloc(void) FUNC_ATTR_NONNULL_RET
   d->dv_scope = 0;
   d->dv_refcount = 0;
   d->dv_copyID = 0;
-  d->internal_refcount = 0;
   do { (*(QUEUE **) &((*(&d->watchers))[0])) = (&d->watchers); (*(QUEUE **) &((*(&d->watchers))[1])) = (&d->watchers); } while (0);
 
   return d;
@@ -29777,7 +29922,7 @@ dict_free (
 
 
   hash_lock(&d->dv_hashtab);
-  (__builtin_expect(!(d->dv_hashtab.ht_locked > 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 6033, "d->dv_hashtab.ht_locked > 0") : (void)0);
+  (__builtin_expect(!(d->dv_hashtab.ht_locked > 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 6036, "d->dv_hashtab.ht_locked > 0") : (void)0);
   todo = (int)d->dv_hashtab.ht_used;
   for (hi = d->dv_hashtab.ht_array; todo > 0; ++hi) {
     if (!((hi)->hi_key == ((void*)0) || (hi)->hi_key == &hash_removed)) {
@@ -29815,7 +29960,7 @@ dictitem_T *dictitem_alloc(char_u *key) FUNC_ATTR_NONNULL_RET
 
   __builtin___strcpy_chk ((char *)(di->di_key), (char *)(key), __builtin_object_size ((char *)(di->di_key), 2 > 1 ? 1 : 0));
 
-  di->di_flags = 0;
+  di->di_flags = 16;
   return di;
 }
 
@@ -29827,7 +29972,7 @@ static dictitem_T *dictitem_copy(dictitem_T *org) FUNC_ATTR_NONNULL_RET
   dictitem_T *di = xmalloc(sizeof(dictitem_T) + strlen((char *)(org->di_key)));
 
   __builtin___strcpy_chk ((char *)(di->di_key), (char *)(org->di_key), __builtin_object_size ((char *)(di->di_key), 2 > 1 ? 1 : 0));
-  di->di_flags = 0;
+  di->di_flags = 16;
   copy_tv(&org->di_tv, &di->di_tv);
 
   return di;
@@ -29855,9 +30000,11 @@ static void dictitem_remove(dict_T *dict, dictitem_T *item)
 void dictitem_free(dictitem_T *item)
 {
   clear_tv(&item->di_tv);
-  xfree(item);
+  if (item->di_flags & 16) {
+    xfree(item);
+  }
 }
-# 6124 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 6129 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static dict_T *dict_copy(const vimconv_T *const conv,
                          dict_T *const orig,
                          const _Bool deep,
@@ -30104,8 +30251,8 @@ static int get_dict_tv(char_u **arg, typval_T *rettv, int evaluate)
   char_u *key = ((void*)0);
   dictitem_T *item;
   char_u *start = skipwhite(*arg + 1);
-  char_u buf[30];
-# 6379 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+  char_u buf[65];
+# 6384 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
   if (*start != '}') {
     if (eval1(&start, &tv, 0) == 0)
       return 0;
@@ -30188,17 +30335,17 @@ failret:
 
   return 1;
 }
-# 6913 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
-static int string_convert_one_value(garray_T *const gap, MPConvStack *const mpstack, typval_T *const tv, const int copyID) FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT { switch (tv->v_type) { case 2: { do { const char *const buf_ = (const char *) tv->vval.v_string; if (tv->vval.v_string == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); break; } case 1: { do { char numbuf[30]; vim_snprintf(numbuf, 30 - 1, "%" "ll" "d", (int64_t) (tv->vval.v_number)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case 6: { do { char numbuf[30]; vim_snprintf(numbuf, 30 - 1, "%g", (tv->vval.v_float)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case 3: { do { ga_concat(gap, (char_u *) "function("); do { const char *const buf_ = (const char *) tv->vval.v_string; if (tv->vval.v_string == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); ga_append(gap, ')'); } while (0); break; } case 4: { if (tv->vval.v_list == ((void*)0) || tv->vval.v_list->lv_len == 0) { ga_concat(gap, (char_u *) "[]"); break; } do { if ((tv->vval.v_list)->lv_copyID == copyID) { do { if (!did_echo_string_emsg) { did_echo_string_emsg = 1; emsg((char_u *)(libintl_gettext((char *)("E724: unable to correctly dump variable " "with self-referencing container")))); } char ebuf[30 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvList) { if (kMPConvList == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) ((tv->vval.v_list))) { break; } } else if (kMPConvList == kMPConvList) { if ((void *) mpval.data.l.list == (void *) ((tv->vval.v_list))) { break; } } } } vim_snprintf(ebuf, 30 + 6, "{E724@%zu}", backref); ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (tv->vval.v_list)->lv_copyID = copyID; } while (0); ga_append(gap, '['); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = tv->vval.v_list, .li = tv->vval.v_list->lv_first, }, }, })); } while (0); break; } case 5: { if (tv->vval.v_dict == ((void*)0) || tv->vval.v_dict->dv_hashtab.ht_used == 0) { ga_concat(gap, (char_u *) "{}"); break; } const dictitem_T *type_di; const dictitem_T *val_di; if (0 && tv->vval.v_dict->dv_hashtab.ht_used == 2 && (type_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_TYPE", -1)) != ((void*)0) && type_di->di_tv.v_type == 4 && (val_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_VAL", -1)) != ((void*)0)) { size_t i; for (i = 0; i < ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0]))))); i++) { if (type_di->di_tv.vval.v_list == msgpack_type_lists[i]) { break; } } if (i == ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0])))))) { goto string_convert_one_value_regular_dict; } switch ((MessagePackType) i) { case kMPNil: { ; break; } case kMPBoolean: { if (val_di->di_tv.v_type != 1) { goto string_convert_one_value_regular_dict; } ; break; } case kMPInteger: { const list_T *val_list; varnumber_T sign; varnumber_T highest_bits; varnumber_T high_bits; varnumber_T low_bits; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 4 || val_list->lv_first->li_tv.v_type != 1 || (sign = val_list->lv_first->li_tv.vval.v_number) == 0 || val_list->lv_first->li_next->li_tv.v_type != 1 || (highest_bits = val_list->lv_first->li_next->li_tv.vval.v_number) < 0 || val_list->lv_last->li_prev->li_tv.v_type != 1 || (high_bits = val_list->lv_last->li_prev->li_tv.vval.v_number) < 0 || val_list->lv_last->li_tv.v_type != 1 || (low_bits = val_list->lv_last->li_tv.vval.v_number) < 0) { goto string_convert_one_value_regular_dict; } uint64_t number = ((uint64_t) (((uint64_t) highest_bits) << 62) | (uint64_t) (((uint64_t) high_bits) << 31) | (uint64_t) low_bits); if (sign > 0) { ; } else { do { char numbuf[30]; vim_snprintf(numbuf, 30 - 1, "%" "ll" "d", (int64_t) (-number)); ga_concat(gap, (char_u *) numbuf); } while (0); } break; } case kMPFloat: { if (val_di->di_tv.v_type != 6) { goto string_convert_one_value_regular_dict; } do { char numbuf[30]; vim_snprintf(numbuf, 30 - 1, "%g", (val_di->di_tv.vval.v_float)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case kMPString: case kMPBinary: { const _Bool is_string = ((MessagePackType) i == kMPString); if (val_di->di_tv.v_type != 4) { goto string_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_di->di_tv.vval.v_list, &len, &buf)) { goto string_convert_one_value_regular_dict; } if (is_string) { do { const char *const buf_ = (const char *) buf; if (buf == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (len); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); } else { do { const char *const buf_ = (const char *) buf; if (buf == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (len); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); } xfree(buf); break; } case kMPArray: { if (val_di->di_tv.v_type != 4) { goto string_convert_one_value_regular_dict; } do { if ((val_di->di_tv.vval.v_list)->lv_copyID == copyID) { do { if (!did_echo_string_emsg) { did_echo_string_emsg = 1; emsg((char_u *)(libintl_gettext((char *)("E724: unable to correctly dump variable " "with self-referencing container")))); } char ebuf[30 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvList) { if (kMPConvList == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) ((val_di->di_tv.vval.v_list))) { break; } } else if (kMPConvList == kMPConvList) { if ((void *) mpval.data.l.list == (void *) ((val_di->di_tv.vval.v_list))) { break; } } } } vim_snprintf(ebuf, 30 + 6, "{E724@%zu}", backref); ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (val_di->di_tv.vval.v_list)->lv_copyID = copyID; } while (0); ga_append(gap, '['); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = val_di->di_tv.vval.v_list, .li = val_di->di_tv.vval.v_list->lv_first, }, }, })); } while (0); break; } case kMPMap: { if (val_di->di_tv.v_type != 4) { goto string_convert_one_value_regular_dict; } if (val_di->di_tv.vval.v_list == ((void*)0)) { ga_concat(gap, (char_u *) "{}"); break; } list_T *const val_list = val_di->di_tv.vval.v_list; for (const listitem_T *li = val_list->lv_first; li != ((void*)0); li = li->li_next) { if (li->li_tv.v_type != 4 || li->li_tv.vval.v_list->lv_len != 2) { goto string_convert_one_value_regular_dict; } } do { if ((val_list)->lv_copyID == copyID) { do { if (!did_echo_string_emsg) { did_echo_string_emsg = 1; emsg((char_u *)(libintl_gettext((char *)("E724: unable to correctly dump variable " "with self-referencing container")))); } char ebuf[30 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvPairs) { if (kMPConvPairs == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) ((val_list))) { break; } } else if (kMPConvPairs == kMPConvList) { if ((void *) mpval.data.l.list == (void *) ((val_list))) { break; } } } } vim_snprintf(ebuf, 30 + 6, "{E724@%zu}", backref); ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (val_list)->lv_copyID = copyID; } while (0); ; do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvPairs, .data = { .l = { .list = val_list, .li = val_list->lv_first, }, }, })); } while (0); break; } case kMPExt: { const list_T *val_list; varnumber_T type; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 2 || (val_list->lv_first->li_tv.v_type != 1) || (type = val_list->lv_first->li_tv.vval.v_number) > 127 || type < -128 || (val_list->lv_last->li_tv.v_type != 4)) { goto string_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_list->lv_last->li_tv.vval.v_list, &len, &buf)) { goto string_convert_one_value_regular_dict; } ; xfree(buf); break; } } break; } string_convert_one_value_regular_dict: do { if ((tv->vval.v_dict)->dv_copyID == copyID) { do { if (!did_echo_string_emsg) { did_echo_string_emsg = 1; emsg((char_u *)(libintl_gettext((char *)("E724: unable to correctly dump variable " "with self-referencing container")))); } char ebuf[30 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvDict) { if (kMPConvDict == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) ((tv->vval.v_dict))) { break; } } else if (kMPConvDict == kMPConvList) { if ((void *) mpval.data.l.list == (void *) ((tv->vval.v_dict))) { break; } } } } vim_snprintf(ebuf, 30 + 6, "{E724@%zu}", backref); ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (tv->vval.v_dict)->dv_copyID = copyID; } while (0); ga_append(gap, '{'); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvDict, .data = { .d = { .dict = tv->vval.v_dict, .hi = tv->vval.v_dict->dv_hashtab.ht_array, .todo = tv->vval.v_dict->dv_hashtab.ht_used, }, }, })); } while (0); break; } default: { emsg2((char_u *)(libintl_gettext((char *)(e_intern2))), (char_u *)("string" "_convert_one_value()")); return 0; } } return 1; } static int vim_to_string(garray_T *const gap, typval_T *const tv) FUNC_ATTR_WARN_UNUSED_RESULT { current_copyID += 2; const int copyID = current_copyID; MPConvStack mpstack; ((mpstack).size = (mpstack).capacity = 0, (mpstack).items = 0); if ( string_convert_one_value(gap, &mpstack, tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } while (((mpstack).size)) { MPConvStackVal *cur_mpsv = &((mpstack).items[(((mpstack).size) - 1)]); typval_T *cur_tv = ((void*)0); switch (cur_mpsv->type) { case kMPConvDict: { if (!cur_mpsv->data.d.todo) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.d.dict->dv_copyID = copyID - 1; ga_append(gap, '}'); continue; } else if (cur_mpsv->data.d.todo != cur_mpsv->data.d.dict->dv_hashtab.ht_used) { ga_concat(gap, (char_u *) ", "); } while (((cur_mpsv->data.d.hi)->hi_key == ((void*)0) || (cur_mpsv->data.d.hi)->hi_key == &hash_removed)) { cur_mpsv->data.d.hi++; } dictitem_T *const di = ((dictitem_T *)((cur_mpsv->data.d.hi)->hi_key - __builtin_offsetof(dictitem_T, di_key))); cur_mpsv->data.d.todo--; cur_mpsv->data.d.hi++; do { const char *const buf_ = (const char *) &di->di_key[0]; if (&di->di_key[0] == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(&di->di_key[0]))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); ga_concat(gap, (char_u *) ": "); cur_tv = &di->di_tv; break; } case kMPConvList: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; ga_append(gap, ']'); continue; } else if (cur_mpsv->data.l.li != cur_mpsv->data.l.list->lv_first) { ga_concat(gap, (char_u *) ", "); } cur_tv = &cur_mpsv->data.l.li->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } case kMPConvPairs: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; continue; } const list_T *const kv_pair = cur_mpsv->data.l.li->li_tv.vval.v_list; if ( string_convert_one_value(gap, &mpstack, &kv_pair->lv_first->li_tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } cur_tv = &kv_pair->lv_last->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } } if ( string_convert_one_value(gap, &mpstack, cur_tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } } xfree((mpstack).items); return 1; vim_to_msgpack_error_ret: xfree((mpstack).items); return 0; }
-# 6943 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
-static int echo_convert_one_value(garray_T *const gap, MPConvStack *const mpstack, typval_T *const tv, const int copyID) FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT { switch (tv->v_type) { case 2: { do { const char *const buf_ = (const char *) tv->vval.v_string; if (tv->vval.v_string == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); break; } case 1: { do { char numbuf[30]; vim_snprintf(numbuf, 30 - 1, "%" "ll" "d", (int64_t) (tv->vval.v_number)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case 6: { do { char numbuf[30]; vim_snprintf(numbuf, 30 - 1, "%g", (tv->vval.v_float)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case 3: { do { ga_concat(gap, (char_u *) "function("); do { const char *const buf_ = (const char *) tv->vval.v_string; if (tv->vval.v_string == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); ga_append(gap, ')'); } while (0); break; } case 4: { if (tv->vval.v_list == ((void*)0) || tv->vval.v_list->lv_len == 0) { ga_concat(gap, (char_u *) "[]"); break; } do { if ((tv->vval.v_list)->lv_copyID == copyID) { do { char ebuf[30 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvList) { if (kMPConvList == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) (tv->vval.v_list)) { break; } } else if (kMPConvList == kMPConvList) { if ((void *) mpval.data.l.list == (void *) (tv->vval.v_list)) { break; } } } } if (kMPConvList == kMPConvDict) { vim_snprintf(ebuf, 30 + 6, "{...@%zu}", backref); } else { vim_snprintf(ebuf, 30 + 6, "[...@%zu]", backref); } ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (tv->vval.v_list)->lv_copyID = copyID; } while (0); ga_append(gap, '['); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = tv->vval.v_list, .li = tv->vval.v_list->lv_first, }, }, })); } while (0); break; } case 5: { if (tv->vval.v_dict == ((void*)0) || tv->vval.v_dict->dv_hashtab.ht_used == 0) { ga_concat(gap, (char_u *) "{}"); break; } const dictitem_T *type_di; const dictitem_T *val_di; if (0 && tv->vval.v_dict->dv_hashtab.ht_used == 2 && (type_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_TYPE", -1)) != ((void*)0) && type_di->di_tv.v_type == 4 && (val_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_VAL", -1)) != ((void*)0)) { size_t i; for (i = 0; i < ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0]))))); i++) { if (type_di->di_tv.vval.v_list == msgpack_type_lists[i]) { break; } } if (i == ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0])))))) { goto echo_convert_one_value_regular_dict; } switch ((MessagePackType) i) { case kMPNil: { ; break; } case kMPBoolean: { if (val_di->di_tv.v_type != 1) { goto echo_convert_one_value_regular_dict; } ; break; } case kMPInteger: { const list_T *val_list; varnumber_T sign; varnumber_T highest_bits; varnumber_T high_bits; varnumber_T low_bits; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 4 || val_list->lv_first->li_tv.v_type != 1 || (sign = val_list->lv_first->li_tv.vval.v_number) == 0 || val_list->lv_first->li_next->li_tv.v_type != 1 || (highest_bits = val_list->lv_first->li_next->li_tv.vval.v_number) < 0 || val_list->lv_last->li_prev->li_tv.v_type != 1 || (high_bits = val_list->lv_last->li_prev->li_tv.vval.v_number) < 0 || val_list->lv_last->li_tv.v_type != 1 || (low_bits = val_list->lv_last->li_tv.vval.v_number) < 0) { goto echo_convert_one_value_regular_dict; } uint64_t number = ((uint64_t) (((uint64_t) highest_bits) << 62) | (uint64_t) (((uint64_t) high_bits) << 31) | (uint64_t) low_bits); if (sign > 0) { ; } else { do { char numbuf[30]; vim_snprintf(numbuf, 30 - 1, "%" "ll" "d", (int64_t) (-number)); ga_concat(gap, (char_u *) numbuf); } while (0); } break; } case kMPFloat: { if (val_di->di_tv.v_type != 6) { goto echo_convert_one_value_regular_dict; } do { char numbuf[30]; vim_snprintf(numbuf, 30 - 1, "%g", (val_di->di_tv.vval.v_float)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case kMPString: case kMPBinary: { const _Bool is_string = ((MessagePackType) i == kMPString); if (val_di->di_tv.v_type != 4) { goto echo_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_di->di_tv.vval.v_list, &len, &buf)) { goto echo_convert_one_value_regular_dict; } if (is_string) { do { const char *const buf_ = (const char *) buf; if (buf == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (len); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); } else { do { const char *const buf_ = (const char *) buf; if (buf == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (len); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); } xfree(buf); break; } case kMPArray: { if (val_di->di_tv.v_type != 4) { goto echo_convert_one_value_regular_dict; } do { if ((val_di->di_tv.vval.v_list)->lv_copyID == copyID) { do { char ebuf[30 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvList) { if (kMPConvList == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) (val_di->di_tv.vval.v_list)) { break; } } else if (kMPConvList == kMPConvList) { if ((void *) mpval.data.l.list == (void *) (val_di->di_tv.vval.v_list)) { break; } } } } if (kMPConvList == kMPConvDict) { vim_snprintf(ebuf, 30 + 6, "{...@%zu}", backref); } else { vim_snprintf(ebuf, 30 + 6, "[...@%zu]", backref); } ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (val_di->di_tv.vval.v_list)->lv_copyID = copyID; } while (0); ga_append(gap, '['); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = val_di->di_tv.vval.v_list, .li = val_di->di_tv.vval.v_list->lv_first, }, }, })); } while (0); break; } case kMPMap: { if (val_di->di_tv.v_type != 4) { goto echo_convert_one_value_regular_dict; } if (val_di->di_tv.vval.v_list == ((void*)0)) { ga_concat(gap, (char_u *) "{}"); break; } list_T *const val_list = val_di->di_tv.vval.v_list; for (const listitem_T *li = val_list->lv_first; li != ((void*)0); li = li->li_next) { if (li->li_tv.v_type != 4 || li->li_tv.vval.v_list->lv_len != 2) { goto echo_convert_one_value_regular_dict; } } do { if ((val_list)->lv_copyID == copyID) { do { char ebuf[30 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvPairs) { if (kMPConvPairs == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) (val_list)) { break; } } else if (kMPConvPairs == kMPConvList) { if ((void *) mpval.data.l.list == (void *) (val_list)) { break; } } } } if (kMPConvPairs == kMPConvDict) { vim_snprintf(ebuf, 30 + 6, "{...@%zu}", backref); } else { vim_snprintf(ebuf, 30 + 6, "[...@%zu]", backref); } ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (val_list)->lv_copyID = copyID; } while (0); ; do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvPairs, .data = { .l = { .list = val_list, .li = val_list->lv_first, }, }, })); } while (0); break; } case kMPExt: { const list_T *val_list; varnumber_T type; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 2 || (val_list->lv_first->li_tv.v_type != 1) || (type = val_list->lv_first->li_tv.vval.v_number) > 127 || type < -128 || (val_list->lv_last->li_tv.v_type != 4)) { goto echo_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_list->lv_last->li_tv.vval.v_list, &len, &buf)) { goto echo_convert_one_value_regular_dict; } ; xfree(buf); break; } } break; } echo_convert_one_value_regular_dict: do { if ((tv->vval.v_dict)->dv_copyID == copyID) { do { char ebuf[30 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvDict) { if (kMPConvDict == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) (tv->vval.v_dict)) { break; } } else if (kMPConvDict == kMPConvList) { if ((void *) mpval.data.l.list == (void *) (tv->vval.v_dict)) { break; } } } } if (kMPConvDict == kMPConvDict) { vim_snprintf(ebuf, 30 + 6, "{...@%zu}", backref); } else { vim_snprintf(ebuf, 30 + 6, "[...@%zu]", backref); } ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (tv->vval.v_dict)->dv_copyID = copyID; } while (0); ga_append(gap, '{'); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvDict, .data = { .d = { .dict = tv->vval.v_dict, .hi = tv->vval.v_dict->dv_hashtab.ht_array, .todo = tv->vval.v_dict->dv_hashtab.ht_used, }, }, })); } while (0); break; } default: { emsg2((char_u *)(libintl_gettext((char *)(e_intern2))), (char_u *)("echo" "_convert_one_value()")); return 0; } } return 1; } static int vim_to_echo(garray_T *const gap, typval_T *const tv) FUNC_ATTR_WARN_UNUSED_RESULT { current_copyID += 2; const int copyID = current_copyID; MPConvStack mpstack; ((mpstack).size = (mpstack).capacity = 0, (mpstack).items = 0); if ( echo_convert_one_value(gap, &mpstack, tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } while (((mpstack).size)) { MPConvStackVal *cur_mpsv = &((mpstack).items[(((mpstack).size) - 1)]); typval_T *cur_tv = ((void*)0); switch (cur_mpsv->type) { case kMPConvDict: { if (!cur_mpsv->data.d.todo) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.d.dict->dv_copyID = copyID - 1; ga_append(gap, '}'); continue; } else if (cur_mpsv->data.d.todo != cur_mpsv->data.d.dict->dv_hashtab.ht_used) { ga_concat(gap, (char_u *) ", "); } while (((cur_mpsv->data.d.hi)->hi_key == ((void*)0) || (cur_mpsv->data.d.hi)->hi_key == &hash_removed)) { cur_mpsv->data.d.hi++; } dictitem_T *const di = ((dictitem_T *)((cur_mpsv->data.d.hi)->hi_key - __builtin_offsetof(dictitem_T, di_key))); cur_mpsv->data.d.todo--; cur_mpsv->data.d.hi++; do { const char *const buf_ = (const char *) &di->di_key[0]; if (&di->di_key[0] == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(&di->di_key[0]))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); ga_concat(gap, (char_u *) ": "); cur_tv = &di->di_tv; break; } case kMPConvList: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; ga_append(gap, ']'); continue; } else if (cur_mpsv->data.l.li != cur_mpsv->data.l.list->lv_first) { ga_concat(gap, (char_u *) ", "); } cur_tv = &cur_mpsv->data.l.li->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } case kMPConvPairs: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; continue; } const list_T *const kv_pair = cur_mpsv->data.l.li->li_tv.vval.v_list; if ( echo_convert_one_value(gap, &mpstack, &kv_pair->lv_first->li_tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } cur_tv = &kv_pair->lv_last->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } } if ( echo_convert_one_value(gap, &mpstack, cur_tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } } xfree((mpstack).items); return 1; vim_to_msgpack_error_ret: xfree((mpstack).items); return 0; }
-# 6974 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 6921 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+static int string_convert_one_value(garray_T *const gap, MPConvStack *const mpstack, typval_T *const tv, const int copyID, const char *const objname) FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT { switch (tv->v_type) { case 2: { do { const char *const buf_ = (const char *) tv->vval.v_string; if (tv->vval.v_string == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); break; } case 1: { do { char numbuf[65]; vim_snprintf(numbuf, 65 - 1, "%" "ll" "d", (int64_t) (tv->vval.v_number)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case 6: { do { char numbuf[65]; vim_snprintf(numbuf, 65 - 1, "%g", (tv->vval.v_float)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case 3: { do { ga_concat(gap, (char_u *) "function("); do { const char *const buf_ = (const char *) tv->vval.v_string; if (tv->vval.v_string == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); ga_append(gap, ')'); } while (0); break; } case 4: { if (tv->vval.v_list == ((void*)0) || tv->vval.v_list->lv_len == 0) { ga_concat(gap, (char_u *) "[]"); break; } do { if ((tv->vval.v_list)->lv_copyID == copyID) { do { if (!did_echo_string_emsg) { did_echo_string_emsg = 1; emsg((char_u *)(libintl_gettext((char *)("E724: unable to correctly dump variable " "with self-referencing container")))); } char ebuf[65 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvList) { if (kMPConvList == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) ((tv->vval.v_list))) { break; } } else if (kMPConvList == kMPConvList) { if ((void *) mpval.data.l.list == (void *) ((tv->vval.v_list))) { break; } } } } vim_snprintf(ebuf, 65 + 6, "{E724@%zu}", backref); ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (tv->vval.v_list)->lv_copyID = copyID; } while (0); ga_append(gap, '['); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = tv->vval.v_list, .li = tv->vval.v_list->lv_first, }, }, })); } while (0); break; } case 5: { if (tv->vval.v_dict == ((void*)0) || tv->vval.v_dict->dv_hashtab.ht_used == 0) { ga_concat(gap, (char_u *) "{}"); break; } const dictitem_T *type_di; const dictitem_T *val_di; if (0 && tv->vval.v_dict->dv_hashtab.ht_used == 2 && (type_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_TYPE", -1)) != ((void*)0) && type_di->di_tv.v_type == 4 && (val_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_VAL", -1)) != ((void*)0)) { size_t i; for (i = 0; i < ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0]))))); i++) { if (type_di->di_tv.vval.v_list == msgpack_type_lists[i]) { break; } } if (i == ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0])))))) { goto string_convert_one_value_regular_dict; } switch ((MessagePackType) i) { case kMPNil: { ; break; } case kMPBoolean: { if (val_di->di_tv.v_type != 1) { goto string_convert_one_value_regular_dict; } ; break; } case kMPInteger: { const list_T *val_list; varnumber_T sign; varnumber_T highest_bits; varnumber_T high_bits; varnumber_T low_bits; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 4 || val_list->lv_first->li_tv.v_type != 1 || (sign = val_list->lv_first->li_tv.vval.v_number) == 0 || val_list->lv_first->li_next->li_tv.v_type != 1 || (highest_bits = val_list->lv_first->li_next->li_tv.vval.v_number) < 0 || val_list->lv_last->li_prev->li_tv.v_type != 1 || (high_bits = val_list->lv_last->li_prev->li_tv.vval.v_number) < 0 || val_list->lv_last->li_tv.v_type != 1 || (low_bits = val_list->lv_last->li_tv.vval.v_number) < 0) { goto string_convert_one_value_regular_dict; } uint64_t number = ((uint64_t) (((uint64_t) highest_bits) << 62) | (uint64_t) (((uint64_t) high_bits) << 31) | (uint64_t) low_bits); if (sign > 0) { ; } else { do { char numbuf[65]; vim_snprintf(numbuf, 65 - 1, "%" "ll" "d", (int64_t) (-number)); ga_concat(gap, (char_u *) numbuf); } while (0); } break; } case kMPFloat: { if (val_di->di_tv.v_type != 6) { goto string_convert_one_value_regular_dict; } do { char numbuf[65]; vim_snprintf(numbuf, 65 - 1, "%g", (val_di->di_tv.vval.v_float)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case kMPString: case kMPBinary: { const _Bool is_string = ((MessagePackType) i == kMPString); if (val_di->di_tv.v_type != 4) { goto string_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_di->di_tv.vval.v_list, &len, &buf)) { goto string_convert_one_value_regular_dict; } if (is_string) { do { const char *const buf_ = (const char *) buf; if (buf == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (len); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); } else { do { const char *const buf_ = (const char *) buf; if (buf == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (len); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); } xfree(buf); break; } case kMPArray: { if (val_di->di_tv.v_type != 4) { goto string_convert_one_value_regular_dict; } do { if ((val_di->di_tv.vval.v_list)->lv_copyID == copyID) { do { if (!did_echo_string_emsg) { did_echo_string_emsg = 1; emsg((char_u *)(libintl_gettext((char *)("E724: unable to correctly dump variable " "with self-referencing container")))); } char ebuf[65 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvList) { if (kMPConvList == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) ((val_di->di_tv.vval.v_list))) { break; } } else if (kMPConvList == kMPConvList) { if ((void *) mpval.data.l.list == (void *) ((val_di->di_tv.vval.v_list))) { break; } } } } vim_snprintf(ebuf, 65 + 6, "{E724@%zu}", backref); ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (val_di->di_tv.vval.v_list)->lv_copyID = copyID; } while (0); ga_append(gap, '['); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = val_di->di_tv.vval.v_list, .li = val_di->di_tv.vval.v_list->lv_first, }, }, })); } while (0); break; } case kMPMap: { if (val_di->di_tv.v_type != 4) { goto string_convert_one_value_regular_dict; } if (val_di->di_tv.vval.v_list == ((void*)0)) { ga_concat(gap, (char_u *) "{}"); break; } list_T *const val_list = val_di->di_tv.vval.v_list; for (const listitem_T *li = val_list->lv_first; li != ((void*)0); li = li->li_next) { if (li->li_tv.v_type != 4 || li->li_tv.vval.v_list->lv_len != 2) { goto string_convert_one_value_regular_dict; } } do { if ((val_list)->lv_copyID == copyID) { do { if (!did_echo_string_emsg) { did_echo_string_emsg = 1; emsg((char_u *)(libintl_gettext((char *)("E724: unable to correctly dump variable " "with self-referencing container")))); } char ebuf[65 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvPairs) { if (kMPConvPairs == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) ((val_list))) { break; } } else if (kMPConvPairs == kMPConvList) { if ((void *) mpval.data.l.list == (void *) ((val_list))) { break; } } } } vim_snprintf(ebuf, 65 + 6, "{E724@%zu}", backref); ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (val_list)->lv_copyID = copyID; } while (0); ; do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvPairs, .data = { .l = { .list = val_list, .li = val_list->lv_first, }, }, })); } while (0); break; } case kMPExt: { const list_T *val_list; varnumber_T type; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 2 || (val_list->lv_first->li_tv.v_type != 1) || (type = val_list->lv_first->li_tv.vval.v_number) > 127 || type < -128 || (val_list->lv_last->li_tv.v_type != 4)) { goto string_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_list->lv_last->li_tv.vval.v_list, &len, &buf)) { goto string_convert_one_value_regular_dict; } ; xfree(buf); break; } } break; } string_convert_one_value_regular_dict: do { if ((tv->vval.v_dict)->dv_copyID == copyID) { do { if (!did_echo_string_emsg) { did_echo_string_emsg = 1; emsg((char_u *)(libintl_gettext((char *)("E724: unable to correctly dump variable " "with self-referencing container")))); } char ebuf[65 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvDict) { if (kMPConvDict == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) ((tv->vval.v_dict))) { break; } } else if (kMPConvDict == kMPConvList) { if ((void *) mpval.data.l.list == (void *) ((tv->vval.v_dict))) { break; } } } } vim_snprintf(ebuf, 65 + 6, "{E724@%zu}", backref); ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (tv->vval.v_dict)->dv_copyID = copyID; } while (0); ga_append(gap, '{'); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvDict, .data = { .d = { .dict = tv->vval.v_dict, .hi = tv->vval.v_dict->dv_hashtab.ht_array, .todo = tv->vval.v_dict->dv_hashtab.ht_used, }, }, })); } while (0); break; } default: { emsg2((char_u *)(libintl_gettext((char *)(e_intern2))), (char_u *)("string" "_convert_one_value()")); return 0; } } return 1; } static int vim_to_string(garray_T *const gap, typval_T *const tv, const char *const objname) FUNC_ATTR_WARN_UNUSED_RESULT { current_copyID += 2; const int copyID = current_copyID; MPConvStack mpstack; ((mpstack).size = (mpstack).capacity = 0, (mpstack).items = 0); if ( string_convert_one_value(gap, &mpstack, tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } while (((mpstack).size)) { MPConvStackVal *cur_mpsv = &((mpstack).items[(((mpstack).size) - 1)]); typval_T *cur_tv = ((void*)0); switch (cur_mpsv->type) { case kMPConvDict: { if (!cur_mpsv->data.d.todo) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.d.dict->dv_copyID = copyID - 1; ga_append(gap, '}'); continue; } else if (cur_mpsv->data.d.todo != cur_mpsv->data.d.dict->dv_hashtab.ht_used) { ga_concat(gap, (char_u *) ", "); } while (((cur_mpsv->data.d.hi)->hi_key == ((void*)0) || (cur_mpsv->data.d.hi)->hi_key == &hash_removed)) { cur_mpsv->data.d.hi++; } dictitem_T *const di = ((dictitem_T *)((cur_mpsv->data.d.hi)->hi_key - __builtin_offsetof(dictitem_T, di_key))); cur_mpsv->data.d.todo--; cur_mpsv->data.d.hi++; do { const char *const buf_ = (const char *) &di->di_key[0]; if (&di->di_key[0] == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(&di->di_key[0]))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); ga_concat(gap, (char_u *) ": "); cur_tv = &di->di_tv; break; } case kMPConvList: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; ga_append(gap, ']'); continue; } else if (cur_mpsv->data.l.li != cur_mpsv->data.l.list->lv_first) { ga_concat(gap, (char_u *) ", "); } cur_tv = &cur_mpsv->data.l.li->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } case kMPConvPairs: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; continue; } const list_T *const kv_pair = cur_mpsv->data.l.li->li_tv.vval.v_list; if ( string_convert_one_value(gap, &mpstack, &kv_pair->lv_first->li_tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } cur_tv = &kv_pair->lv_last->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } } if ( string_convert_one_value(gap, &mpstack, cur_tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } } xfree((mpstack).items); return 1; vim_to_msgpack_error_ret: xfree((mpstack).items); return 0; }
+# 6951 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+static int echo_convert_one_value(garray_T *const gap, MPConvStack *const mpstack, typval_T *const tv, const int copyID, const char *const objname) FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT { switch (tv->v_type) { case 2: { do { const char *const buf_ = (const char *) tv->vval.v_string; if (tv->vval.v_string == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); break; } case 1: { do { char numbuf[65]; vim_snprintf(numbuf, 65 - 1, "%" "ll" "d", (int64_t) (tv->vval.v_number)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case 6: { do { char numbuf[65]; vim_snprintf(numbuf, 65 - 1, "%g", (tv->vval.v_float)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case 3: { do { ga_concat(gap, (char_u *) "function("); do { const char *const buf_ = (const char *) tv->vval.v_string; if (tv->vval.v_string == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); ga_append(gap, ')'); } while (0); break; } case 4: { if (tv->vval.v_list == ((void*)0) || tv->vval.v_list->lv_len == 0) { ga_concat(gap, (char_u *) "[]"); break; } do { if ((tv->vval.v_list)->lv_copyID == copyID) { do { char ebuf[65 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvList) { if (kMPConvList == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) (tv->vval.v_list)) { break; } } else if (kMPConvList == kMPConvList) { if ((void *) mpval.data.l.list == (void *) (tv->vval.v_list)) { break; } } } } if (kMPConvList == kMPConvDict) { vim_snprintf(ebuf, 65 + 6, "{...@%zu}", backref); } else { vim_snprintf(ebuf, 65 + 6, "[...@%zu]", backref); } ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (tv->vval.v_list)->lv_copyID = copyID; } while (0); ga_append(gap, '['); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = tv->vval.v_list, .li = tv->vval.v_list->lv_first, }, }, })); } while (0); break; } case 5: { if (tv->vval.v_dict == ((void*)0) || tv->vval.v_dict->dv_hashtab.ht_used == 0) { ga_concat(gap, (char_u *) "{}"); break; } const dictitem_T *type_di; const dictitem_T *val_di; if (0 && tv->vval.v_dict->dv_hashtab.ht_used == 2 && (type_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_TYPE", -1)) != ((void*)0) && type_di->di_tv.v_type == 4 && (val_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_VAL", -1)) != ((void*)0)) { size_t i; for (i = 0; i < ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0]))))); i++) { if (type_di->di_tv.vval.v_list == msgpack_type_lists[i]) { break; } } if (i == ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0])))))) { goto echo_convert_one_value_regular_dict; } switch ((MessagePackType) i) { case kMPNil: { ; break; } case kMPBoolean: { if (val_di->di_tv.v_type != 1) { goto echo_convert_one_value_regular_dict; } ; break; } case kMPInteger: { const list_T *val_list; varnumber_T sign; varnumber_T highest_bits; varnumber_T high_bits; varnumber_T low_bits; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 4 || val_list->lv_first->li_tv.v_type != 1 || (sign = val_list->lv_first->li_tv.vval.v_number) == 0 || val_list->lv_first->li_next->li_tv.v_type != 1 || (highest_bits = val_list->lv_first->li_next->li_tv.vval.v_number) < 0 || val_list->lv_last->li_prev->li_tv.v_type != 1 || (high_bits = val_list->lv_last->li_prev->li_tv.vval.v_number) < 0 || val_list->lv_last->li_tv.v_type != 1 || (low_bits = val_list->lv_last->li_tv.vval.v_number) < 0) { goto echo_convert_one_value_regular_dict; } uint64_t number = ((uint64_t) (((uint64_t) highest_bits) << 62) | (uint64_t) (((uint64_t) high_bits) << 31) | (uint64_t) low_bits); if (sign > 0) { ; } else { do { char numbuf[65]; vim_snprintf(numbuf, 65 - 1, "%" "ll" "d", (int64_t) (-number)); ga_concat(gap, (char_u *) numbuf); } while (0); } break; } case kMPFloat: { if (val_di->di_tv.v_type != 6) { goto echo_convert_one_value_regular_dict; } do { char numbuf[65]; vim_snprintf(numbuf, 65 - 1, "%g", (val_di->di_tv.vval.v_float)); ga_concat(gap, (char_u *) numbuf); } while (0); break; } case kMPString: case kMPBinary: { const _Bool is_string = ((MessagePackType) i == kMPString); if (val_di->di_tv.v_type != 4) { goto echo_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_di->di_tv.vval.v_list, &len, &buf)) { goto echo_convert_one_value_regular_dict; } if (is_string) { do { const char *const buf_ = (const char *) buf; if (buf == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (len); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); } else { do { const char *const buf_ = (const char *) buf; if (buf == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (len); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); } xfree(buf); break; } case kMPArray: { if (val_di->di_tv.v_type != 4) { goto echo_convert_one_value_regular_dict; } do { if ((val_di->di_tv.vval.v_list)->lv_copyID == copyID) { do { char ebuf[65 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvList) { if (kMPConvList == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) (val_di->di_tv.vval.v_list)) { break; } } else if (kMPConvList == kMPConvList) { if ((void *) mpval.data.l.list == (void *) (val_di->di_tv.vval.v_list)) { break; } } } } if (kMPConvList == kMPConvDict) { vim_snprintf(ebuf, 65 + 6, "{...@%zu}", backref); } else { vim_snprintf(ebuf, 65 + 6, "[...@%zu]", backref); } ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (val_di->di_tv.vval.v_list)->lv_copyID = copyID; } while (0); ga_append(gap, '['); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = val_di->di_tv.vval.v_list, .li = val_di->di_tv.vval.v_list->lv_first, }, }, })); } while (0); break; } case kMPMap: { if (val_di->di_tv.v_type != 4) { goto echo_convert_one_value_regular_dict; } if (val_di->di_tv.vval.v_list == ((void*)0)) { ga_concat(gap, (char_u *) "{}"); break; } list_T *const val_list = val_di->di_tv.vval.v_list; for (const listitem_T *li = val_list->lv_first; li != ((void*)0); li = li->li_next) { if (li->li_tv.v_type != 4 || li->li_tv.vval.v_list->lv_len != 2) { goto echo_convert_one_value_regular_dict; } } do { if ((val_list)->lv_copyID == copyID) { do { char ebuf[65 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvPairs) { if (kMPConvPairs == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) (val_list)) { break; } } else if (kMPConvPairs == kMPConvList) { if ((void *) mpval.data.l.list == (void *) (val_list)) { break; } } } } if (kMPConvPairs == kMPConvDict) { vim_snprintf(ebuf, 65 + 6, "{...@%zu}", backref); } else { vim_snprintf(ebuf, 65 + 6, "[...@%zu]", backref); } ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (val_list)->lv_copyID = copyID; } while (0); ; do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvPairs, .data = { .l = { .list = val_list, .li = val_list->lv_first, }, }, })); } while (0); break; } case kMPExt: { const list_T *val_list; varnumber_T type; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 2 || (val_list->lv_first->li_tv.v_type != 1) || (type = val_list->lv_first->li_tv.vval.v_number) > 127 || type < -128 || (val_list->lv_last->li_tv.v_type != 4)) { goto echo_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_list->lv_last->li_tv.vval.v_list, &len, &buf)) { goto echo_convert_one_value_regular_dict; } ; xfree(buf); break; } } break; } echo_convert_one_value_regular_dict: do { if ((tv->vval.v_dict)->dv_copyID == copyID) { do { char ebuf[65 + 7]; size_t backref = 0; for (; backref < ((*mpstack).size); backref++) { const MPConvStackVal mpval = (((*mpstack).capacity <= (size_t)(backref)? ((*mpstack).capacity = (*mpstack).size = (backref) + 1, (--((*mpstack).capacity), ((*mpstack).capacity)|=((*mpstack).capacity)>>1, ((*mpstack).capacity)|=((*mpstack).capacity)>>2, ((*mpstack).capacity)|=((*mpstack).capacity)>>4, ((*mpstack).capacity)|=((*mpstack).capacity)>>8, ((*mpstack).capacity)|=((*mpstack).capacity)>>16, ++((*mpstack).capacity)), (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity), 0) : (*mpstack).size <= (size_t)(backref)? (*mpstack).size = (backref) + 1 : 0), (*mpstack).items[(backref)]); if (mpval.type == kMPConvDict) { if (kMPConvDict == kMPConvDict) { if ((void *) mpval.data.d.dict == (void *) (tv->vval.v_dict)) { break; } } else if (kMPConvDict == kMPConvList) { if ((void *) mpval.data.l.list == (void *) (tv->vval.v_dict)) { break; } } } } if (kMPConvDict == kMPConvDict) { vim_snprintf(ebuf, 65 + 6, "{...@%zu}", backref); } else { vim_snprintf(ebuf, 65 + 6, "[...@%zu]", backref); } ga_concat(gap, (char_u *) &ebuf[0]); return 1; } while (0); } (tv->vval.v_dict)->dv_copyID = copyID; } while (0); ga_append(gap, '{'); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvDict, .data = { .d = { .dict = tv->vval.v_dict, .hi = tv->vval.v_dict->dv_hashtab.ht_array, .todo = tv->vval.v_dict->dv_hashtab.ht_used, }, }, })); } while (0); break; } default: { emsg2((char_u *)(libintl_gettext((char *)(e_intern2))), (char_u *)("echo" "_convert_one_value()")); return 0; } } return 1; } static int vim_to_echo(garray_T *const gap, typval_T *const tv, const char *const objname) FUNC_ATTR_WARN_UNUSED_RESULT { current_copyID += 2; const int copyID = current_copyID; MPConvStack mpstack; ((mpstack).size = (mpstack).capacity = 0, (mpstack).items = 0); if ( echo_convert_one_value(gap, &mpstack, tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } while (((mpstack).size)) { MPConvStackVal *cur_mpsv = &((mpstack).items[(((mpstack).size) - 1)]); typval_T *cur_tv = ((void*)0); switch (cur_mpsv->type) { case kMPConvDict: { if (!cur_mpsv->data.d.todo) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.d.dict->dv_copyID = copyID - 1; ga_append(gap, '}'); continue; } else if (cur_mpsv->data.d.todo != cur_mpsv->data.d.dict->dv_hashtab.ht_used) { ga_concat(gap, (char_u *) ", "); } while (((cur_mpsv->data.d.hi)->hi_key == ((void*)0) || (cur_mpsv->data.d.hi)->hi_key == &hash_removed)) { cur_mpsv->data.d.hi++; } dictitem_T *const di = ((dictitem_T *)((cur_mpsv->data.d.hi)->hi_key - __builtin_offsetof(dictitem_T, di_key))); cur_mpsv->data.d.todo--; cur_mpsv->data.d.hi++; do { const char *const buf_ = (const char *) &di->di_key[0]; if (&di->di_key[0] == ((void*)0)) { ga_concat(gap, (char_u *) "''"); } else { const size_t len_ = (strlen((char *)(&di->di_key[0]))); size_t num_quotes = 0; for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; } } ga_grow(gap, 2 + len_ + num_quotes); ga_append(gap, '\''); for (size_t i = 0; i < len_; i++) { if (buf_[i] == '\'') { num_quotes++; ga_append(gap, '\''); } ga_append(gap, buf_[i]); } ga_append(gap, '\''); } } while (0); ga_concat(gap, (char_u *) ": "); cur_tv = &di->di_tv; break; } case kMPConvList: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; ga_append(gap, ']'); continue; } else if (cur_mpsv->data.l.li != cur_mpsv->data.l.list->lv_first) { ga_concat(gap, (char_u *) ", "); } cur_tv = &cur_mpsv->data.l.li->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } case kMPConvPairs: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; continue; } const list_T *const kv_pair = cur_mpsv->data.l.li->li_tv.vval.v_list; if ( echo_convert_one_value(gap, &mpstack, &kv_pair->lv_first->li_tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } cur_tv = &kv_pair->lv_last->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } } if ( echo_convert_one_value(gap, &mpstack, cur_tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } } xfree((mpstack).items); return 1; vim_to_msgpack_error_ret: xfree((mpstack).items); return 0; }
+# 6982 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char *tv2string(typval_T *tv, size_t *len)
   FUNC_ATTR_NONNULL_ARG(1) FUNC_ATTR_MALLOC
 {
   garray_T ga;
   ga_init(&ga, (int)sizeof(char), 80);
-  vim_to_string(&ga, tv);
+  vim_to_string(&ga, tv, "tv2string() argument");
   did_echo_string_emsg = 0;
   if (len != ((void*)0)) {
     *len = (size_t) ga.ga_len;
@@ -30206,7 +30353,7 @@ static char *tv2string(typval_T *tv, size_t *len)
   ga_append(&ga, '\0');
   return (char *) ga.ga_data;
 }
-# 6995 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 7003 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char *echo_string(typval_T *tv, size_t *len)
   FUNC_ATTR_NONNULL_ARG(1) FUNC_ATTR_MALLOC
 {
@@ -30217,7 +30364,7 @@ static char *echo_string(typval_T *tv, size_t *len)
       ga_concat(&ga, tv->vval.v_string);
     }
   } else {
-    vim_to_echo(&ga, tv);
+    vim_to_echo(&ga, tv, ":echo argument");
     did_echo_string_emsg = 0;
   }
   if (len != ((void*)0)) {
@@ -30246,7 +30393,7 @@ string2float (
   *value = f;
   return (int)((char_u *)s - text);
 }
-# 7042 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 7050 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int get_env_tv(char_u **arg, typval_T *rettv, int evaluate)
 {
   char_u *name;
@@ -30296,295 +30443,299 @@ static struct fst {
 
 } functions[] =
 {
-  {"abs", 1, 1, f_abs},
-  {"acos", 1, 1, f_acos},
-  {"add", 2, 2, f_add},
-  {"and", 2, 2, f_and},
-  {"append", 2, 2, f_append},
-  {"argc", 0, 0, f_argc},
-  {"argidx", 0, 0, f_argidx},
-  {"arglistid", 0, 2, f_arglistid},
-  {"argv", 0, 1, f_argv},
-  {"asin", 1, 1, f_asin},
-  {"atan", 1, 1, f_atan},
-  {"atan2", 2, 2, f_atan2},
-  {"browse", 4, 4, f_browse},
-  {"browsedir", 2, 2, f_browsedir},
-  {"bufexists", 1, 1, f_bufexists},
-  {"buffer_exists", 1, 1, f_bufexists},
-  {"buffer_name", 1, 1, f_bufname},
-  {"buffer_number", 1, 1, f_bufnr},
-  {"buflisted", 1, 1, f_buflisted},
-  {"bufloaded", 1, 1, f_bufloaded},
-  {"bufname", 1, 1, f_bufname},
-  {"bufnr", 1, 2, f_bufnr},
-  {"bufwinnr", 1, 1, f_bufwinnr},
-  {"byte2line", 1, 1, f_byte2line},
-  {"byteidx", 2, 2, f_byteidx},
-  {"byteidxcomp", 2, 2, f_byteidxcomp},
-  {"call", 2, 3, f_call},
-  {"ceil", 1, 1, f_ceil},
-  {"changenr", 0, 0, f_changenr},
-  {"char2nr", 1, 2, f_char2nr},
-  {"cindent", 1, 1, f_cindent},
-  {"clearmatches", 0, 0, f_clearmatches},
-  {"col", 1, 1, f_col},
-  {"complete", 2, 2, f_complete},
-  {"complete_add", 1, 1, f_complete_add},
-  {"complete_check", 0, 0, f_complete_check},
-  {"confirm", 1, 4, f_confirm},
-  {"copy", 1, 1, f_copy},
-  {"cos", 1, 1, f_cos},
-  {"cosh", 1, 1, f_cosh},
-  {"count", 2, 4, f_count},
-  {"cscope_connection",0,3, f_cscope_connection},
-  {"cursor", 1, 3, f_cursor},
-  {"deepcopy", 1, 2, f_deepcopy},
-  {"delete", 1, 1, f_delete},
-  {"dictwatcheradd", 3, 3, f_dictwatcheradd},
-  {"dictwatcherdel", 3, 3, f_dictwatcherdel},
-  {"did_filetype", 0, 0, f_did_filetype},
-  {"diff_filler", 1, 1, f_diff_filler},
-  {"diff_hlID", 2, 2, f_diff_hlID},
-  {"empty", 1, 1, f_empty},
-  {"escape", 2, 2, f_escape},
-  {"eval", 1, 1, f_eval},
-  {"eventhandler", 0, 0, f_eventhandler},
-  {"executable", 1, 1, f_executable},
-  {"exepath", 1, 1, f_exepath},
-  {"exists", 1, 1, f_exists},
-  {"exp", 1, 1, f_exp},
-  {"expand", 1, 3, f_expand},
-  {"extend", 2, 3, f_extend},
-  {"feedkeys", 1, 2, f_feedkeys},
-  {"file_readable", 1, 1, f_filereadable},
-  {"filereadable", 1, 1, f_filereadable},
-  {"filewritable", 1, 1, f_filewritable},
-  {"filter", 2, 2, f_filter},
-  {"finddir", 1, 3, f_finddir},
-  {"findfile", 1, 3, f_findfile},
-  {"float2nr", 1, 1, f_float2nr},
-  {"floor", 1, 1, f_floor},
-  {"fmod", 2, 2, f_fmod},
-  {"fnameescape", 1, 1, f_fnameescape},
-  {"fnamemodify", 2, 2, f_fnamemodify},
-  {"foldclosed", 1, 1, f_foldclosed},
-  {"foldclosedend", 1, 1, f_foldclosedend},
-  {"foldlevel", 1, 1, f_foldlevel},
-  {"foldtext", 0, 0, f_foldtext},
-  {"foldtextresult", 1, 1, f_foldtextresult},
-  {"foreground", 0, 0, f_foreground},
-  {"function", 1, 1, f_function},
-  {"garbagecollect", 0, 1, f_garbagecollect},
-  {"get", 2, 3, f_get},
-  {"getbufline", 2, 3, f_getbufline},
-  {"getbufvar", 2, 3, f_getbufvar},
-  {"getchar", 0, 1, f_getchar},
-  {"getcharmod", 0, 0, f_getcharmod},
-  {"getcharsearch", 0, 0, f_getcharsearch},
-  {"getcmdline", 0, 0, f_getcmdline},
-  {"getcmdpos", 0, 0, f_getcmdpos},
-  {"getcmdtype", 0, 0, f_getcmdtype},
-  {"getcmdwintype", 0, 0, f_getcmdwintype},
-  {"getcurpos", 0, 0, f_getcurpos},
-  {"getcwd", 0, 0, f_getcwd},
-  {"getfontname", 0, 1, f_getfontname},
-  {"getfperm", 1, 1, f_getfperm},
-  {"getfsize", 1, 1, f_getfsize},
-  {"getftime", 1, 1, f_getftime},
-  {"getftype", 1, 1, f_getftype},
-  {"getline", 1, 2, f_getline},
-  {"getloclist", 1, 1, f_getqflist},
-  {"getmatches", 0, 0, f_getmatches},
-  {"getpid", 0, 0, f_getpid},
-  {"getpos", 1, 1, f_getpos},
-  {"getqflist", 0, 0, f_getqflist},
-  {"getreg", 0, 3, f_getreg},
-  {"getregtype", 0, 1, f_getregtype},
-  {"gettabvar", 2, 3, f_gettabvar},
-  {"gettabwinvar", 3, 4, f_gettabwinvar},
-  {"getwinposx", 0, 0, f_getwinposx},
-  {"getwinposy", 0, 0, f_getwinposy},
-  {"getwinvar", 2, 3, f_getwinvar},
-  {"glob", 1, 3, f_glob},
-  {"glob2regpat", 1, 1, f_glob2regpat},
-  {"globpath", 2, 4, f_globpath},
-  {"has", 1, 1, f_has},
-  {"has_key", 2, 2, f_has_key},
-  {"haslocaldir", 0, 0, f_haslocaldir},
-  {"hasmapto", 1, 3, f_hasmapto},
-  {"highlightID", 1, 1, f_hlID},
-  {"highlight_exists",1, 1, f_hlexists},
-  {"histadd", 2, 2, f_histadd},
-  {"histdel", 1, 2, f_histdel},
-  {"histget", 1, 2, f_histget},
-  {"histnr", 1, 1, f_histnr},
-  {"hlID", 1, 1, f_hlID},
-  {"hlexists", 1, 1, f_hlexists},
-  {"hostname", 0, 0, f_hostname},
-  {"iconv", 3, 3, f_iconv},
-  {"indent", 1, 1, f_indent},
-  {"index", 2, 4, f_index},
-  {"input", 1, 3, f_input},
-  {"inputdialog", 1, 3, f_inputdialog},
-  {"inputlist", 1, 1, f_inputlist},
-  {"inputrestore", 0, 0, f_inputrestore},
-  {"inputsave", 0, 0, f_inputsave},
-  {"inputsecret", 1, 2, f_inputsecret},
-  {"insert", 2, 3, f_insert},
-  {"invert", 1, 1, f_invert},
-  {"isdirectory", 1, 1, f_isdirectory},
-  {"islocked", 1, 1, f_islocked},
-  {"items", 1, 1, f_items},
-  {"jobclose", 1, 2, f_jobclose},
-  {"jobresize", 3, 3, f_jobresize},
-  {"jobsend", 2, 2, f_jobsend},
-  {"jobstart", 1, 2, f_jobstart},
-  {"jobstop", 1, 1, f_jobstop},
-  {"jobwait", 1, 2, f_jobwait},
-  {"join", 1, 2, f_join},
-  {"keys", 1, 1, f_keys},
-  {"last_buffer_nr", 0, 0, f_last_buffer_nr},
-  {"len", 1, 1, f_len},
-  {"libcall", 3, 3, f_libcall},
-  {"libcallnr", 3, 3, f_libcallnr},
-  {"line", 1, 1, f_line},
-  {"line2byte", 1, 1, f_line2byte},
-  {"lispindent", 1, 1, f_lispindent},
-  {"localtime", 0, 0, f_localtime},
-  {"log", 1, 1, f_log},
-  {"log10", 1, 1, f_log10},
-  {"map", 2, 2, f_map},
-  {"maparg", 1, 4, f_maparg},
-  {"mapcheck", 1, 3, f_mapcheck},
-  {"match", 2, 4, f_match},
-  {"matchadd", 2, 4, f_matchadd},
-  {"matchaddpos", 2, 4, f_matchaddpos},
-  {"matcharg", 1, 1, f_matcharg},
-  {"matchdelete", 1, 1, f_matchdelete},
-  {"matchend", 2, 4, f_matchend},
-  {"matchlist", 2, 4, f_matchlist},
-  {"matchstr", 2, 4, f_matchstr},
-  {"max", 1, 1, f_max},
-  {"min", 1, 1, f_min},
-  {"mkdir", 1, 3, f_mkdir},
-  {"mode", 0, 1, f_mode},
-  {"msgpackdump", 1, 1, f_msgpackdump},
-  {"msgpackparse", 1, 1, f_msgpackparse},
-  {"nextnonblank", 1, 1, f_nextnonblank},
-  {"nr2char", 1, 2, f_nr2char},
-  {"or", 2, 2, f_or},
-  {"pathshorten", 1, 1, f_pathshorten},
-  {"pow", 2, 2, f_pow},
-  {"prevnonblank", 1, 1, f_prevnonblank},
-  {"printf", 2, 19, f_printf},
-  {"pumvisible", 0, 0, f_pumvisible},
-  {"py3eval", 1, 1, f_py3eval},
-  {"pyeval", 1, 1, f_pyeval},
-  {"range", 1, 3, f_range},
-  {"readfile", 1, 3, f_readfile},
-  {"reltime", 0, 2, f_reltime},
-  {"reltimestr", 1, 1, f_reltimestr},
-  {"remove", 2, 3, f_remove},
-  {"rename", 2, 2, f_rename},
-  {"repeat", 2, 2, f_repeat},
-  {"resolve", 1, 1, f_resolve},
-  {"reverse", 1, 1, f_reverse},
-  {"round", 1, 1, f_round},
-  {"rpcnotify", 2, 64, f_rpcnotify},
-  {"rpcrequest", 2, 64, f_rpcrequest},
-  {"rpcstart", 1, 2, f_rpcstart},
-  {"rpcstop", 1, 1, f_rpcstop},
-  {"screenattr", 2, 2, f_screenattr},
-  {"screenchar", 2, 2, f_screenchar},
-  {"screencol", 0, 0, f_screencol},
-  {"screenrow", 0, 0, f_screenrow},
-  {"search", 1, 4, f_search},
-  {"searchdecl", 1, 3, f_searchdecl},
-  {"searchpair", 3, 7, f_searchpair},
-  {"searchpairpos", 3, 7, f_searchpairpos},
-  {"searchpos", 1, 4, f_searchpos},
-  {"serverlist", 0, 0, f_serverlist},
-  {"serverstart", 0, 1, f_serverstart},
-  {"serverstop", 1, 1, f_serverstop},
-  {"setbufvar", 3, 3, f_setbufvar},
-  {"setcharsearch", 1, 1, f_setcharsearch},
-  {"setcmdpos", 1, 1, f_setcmdpos},
-  {"setline", 2, 2, f_setline},
-  {"setloclist", 2, 3, f_setloclist},
-  {"setmatches", 1, 1, f_setmatches},
-  {"setpos", 2, 2, f_setpos},
-  {"setqflist", 1, 2, f_setqflist},
-  {"setreg", 2, 3, f_setreg},
-  {"settabvar", 3, 3, f_settabvar},
-  {"settabwinvar", 4, 4, f_settabwinvar},
-  {"setwinvar", 3, 3, f_setwinvar},
-  {"sha256", 1, 1, f_sha256},
-  {"shellescape", 1, 2, f_shellescape},
-  {"shiftwidth", 0, 0, f_shiftwidth},
-  {"simplify", 1, 1, f_simplify},
-  {"sin", 1, 1, f_sin},
-  {"sinh", 1, 1, f_sinh},
-  {"sort", 1, 3, f_sort},
-  {"soundfold", 1, 1, f_soundfold},
-  {"spellbadword", 0, 1, f_spellbadword},
-  {"spellsuggest", 1, 3, f_spellsuggest},
-  {"split", 1, 3, f_split},
-  {"sqrt", 1, 1, f_sqrt},
-  {"str2float", 1, 1, f_str2float},
-  {"str2nr", 1, 2, f_str2nr},
-  {"strchars", 1, 1, f_strchars},
-  {"strdisplaywidth", 1, 2, f_strdisplaywidth},
-  {"strftime", 1, 2, f_strftime},
-  {"stridx", 2, 3, f_stridx},
-  {"string", 1, 1, f_string},
-  {"strlen", 1, 1, f_strlen},
-  {"strpart", 2, 3, f_strpart},
-  {"strridx", 2, 3, f_strridx},
-  {"strtrans", 1, 1, f_strtrans},
-  {"strwidth", 1, 1, f_strwidth},
-  {"submatch", 1, 2, f_submatch},
-  {"substitute", 4, 4, f_substitute},
-  {"synID", 3, 3, f_synID},
-  {"synIDattr", 2, 3, f_synIDattr},
-  {"synIDtrans", 1, 1, f_synIDtrans},
-  {"synconcealed", 2, 2, f_synconcealed},
-  {"synstack", 2, 2, f_synstack},
-  {"system", 1, 2, f_system},
-  {"systemlist", 1, 3, f_systemlist},
-  {"tabpagebuflist", 0, 1, f_tabpagebuflist},
-  {"tabpagenr", 0, 1, f_tabpagenr},
-  {"tabpagewinnr", 1, 2, f_tabpagewinnr},
-  {"tagfiles", 0, 0, f_tagfiles},
-  {"taglist", 1, 1, f_taglist},
-  {"tan", 1, 1, f_tan},
-  {"tanh", 1, 1, f_tanh},
-  {"tempname", 0, 0, f_tempname},
-  {"termopen", 1, 2, f_termopen},
-  {"test", 1, 1, f_test},
-  {"tolower", 1, 1, f_tolower},
-  {"toupper", 1, 1, f_toupper},
-  {"tr", 3, 3, f_tr},
-  {"trunc", 1, 1, f_trunc},
-  {"type", 1, 1, f_type},
-  {"undofile", 1, 1, f_undofile},
-  {"undotree", 0, 0, f_undotree},
-  {"uniq", 1, 3, f_uniq},
-  {"values", 1, 1, f_values},
-  {"virtcol", 1, 1, f_virtcol},
-  {"visualmode", 0, 1, f_visualmode},
-  {"wildmenumode", 0, 0, f_wildmenumode},
-  {"winbufnr", 1, 1, f_winbufnr},
-  {"wincol", 0, 0, f_wincol},
-  {"winheight", 1, 1, f_winheight},
-  {"winline", 0, 0, f_winline},
-  {"winnr", 0, 1, f_winnr},
-  {"winrestcmd", 0, 0, f_winrestcmd},
-  {"winrestview", 1, 1, f_winrestview},
-  {"winsaveview", 0, 0, f_winsaveview},
-  {"winwidth", 1, 1, f_winwidth},
-  {"writefile", 2, 3, f_writefile},
-  {"xor", 2, 2, f_xor},
+  { "abs", 1, 1, f_abs },
+  { "acos", 1, 1, f_acos },
+  { "add", 2, 2, f_add },
+  { "and", 2, 2, f_and },
+  { "append", 2, 2, f_append },
+  { "argc", 0, 0, f_argc },
+  { "argidx", 0, 0, f_argidx },
+  { "arglistid", 0, 2, f_arglistid },
+  { "argv", 0, 1, f_argv },
+  { "asin", 1, 1, f_asin },
+  { "assert_equal", 2, 3, f_assert_equal },
+  { "assert_false", 1, 2, f_assert_false },
+  { "assert_true", 1, 2, f_assert_true },
+  { "atan", 1, 1, f_atan },
+  { "atan2", 2, 2, f_atan2 },
+  { "browse", 4, 4, f_browse },
+  { "browsedir", 2, 2, f_browsedir },
+  { "bufexists", 1, 1, f_bufexists },
+  { "buffer_exists", 1, 1, f_bufexists },
+  { "buffer_name", 1, 1, f_bufname },
+  { "buffer_number", 1, 1, f_bufnr },
+  { "buflisted", 1, 1, f_buflisted },
+  { "bufloaded", 1, 1, f_bufloaded },
+  { "bufname", 1, 1, f_bufname },
+  { "bufnr", 1, 2, f_bufnr },
+  { "bufwinnr", 1, 1, f_bufwinnr },
+  { "byte2line", 1, 1, f_byte2line },
+  { "byteidx", 2, 2, f_byteidx },
+  { "byteidxcomp", 2, 2, f_byteidxcomp },
+  { "call", 2, 3, f_call },
+  { "ceil", 1, 1, f_ceil },
+  { "changenr", 0, 0, f_changenr },
+  { "char2nr", 1, 2, f_char2nr },
+  { "cindent", 1, 1, f_cindent },
+  { "clearmatches", 0, 0, f_clearmatches },
+  { "col", 1, 1, f_col },
+  { "complete", 2, 2, f_complete },
+  { "complete_add", 1, 1, f_complete_add },
+  { "complete_check", 0, 0, f_complete_check },
+  { "confirm", 1, 4, f_confirm },
+  { "copy", 1, 1, f_copy },
+  { "cos", 1, 1, f_cos },
+  { "cosh", 1, 1, f_cosh },
+  { "count", 2, 4, f_count },
+  { "cscope_connection", 0, 3, f_cscope_connection },
+  { "cursor", 1, 3, f_cursor },
+  { "deepcopy", 1, 2, f_deepcopy },
+  { "delete", 1, 1, f_delete },
+  { "dictwatcheradd", 3, 3, f_dictwatcheradd },
+  { "dictwatcherdel", 3, 3, f_dictwatcherdel },
+  { "did_filetype", 0, 0, f_did_filetype },
+  { "diff_filler", 1, 1, f_diff_filler },
+  { "diff_hlID", 2, 2, f_diff_hlID },
+  { "empty", 1, 1, f_empty },
+  { "escape", 2, 2, f_escape },
+  { "eval", 1, 1, f_eval },
+  { "eventhandler", 0, 0, f_eventhandler },
+  { "executable", 1, 1, f_executable },
+  { "exepath", 1, 1, f_exepath },
+  { "exists", 1, 1, f_exists },
+  { "exp", 1, 1, f_exp },
+  { "expand", 1, 3, f_expand },
+  { "extend", 2, 3, f_extend },
+  { "feedkeys", 1, 2, f_feedkeys },
+  { "file_readable", 1, 1, f_filereadable },
+  { "filereadable", 1, 1, f_filereadable },
+  { "filewritable", 1, 1, f_filewritable },
+  { "filter", 2, 2, f_filter },
+  { "finddir", 1, 3, f_finddir },
+  { "findfile", 1, 3, f_findfile },
+  { "float2nr", 1, 1, f_float2nr },
+  { "floor", 1, 1, f_floor },
+  { "fmod", 2, 2, f_fmod },
+  { "fnameescape", 1, 1, f_fnameescape },
+  { "fnamemodify", 2, 2, f_fnamemodify },
+  { "foldclosed", 1, 1, f_foldclosed },
+  { "foldclosedend", 1, 1, f_foldclosedend },
+  { "foldlevel", 1, 1, f_foldlevel },
+  { "foldtext", 0, 0, f_foldtext },
+  { "foldtextresult", 1, 1, f_foldtextresult },
+  { "foreground", 0, 0, f_foreground },
+  { "function", 1, 1, f_function },
+  { "garbagecollect", 0, 1, f_garbagecollect },
+  { "get", 2, 3, f_get },
+  { "getbufline", 2, 3, f_getbufline },
+  { "getbufvar", 2, 3, f_getbufvar },
+  { "getchar", 0, 1, f_getchar },
+  { "getcharmod", 0, 0, f_getcharmod },
+  { "getcharsearch", 0, 0, f_getcharsearch },
+  { "getcmdline", 0, 0, f_getcmdline },
+  { "getcmdpos", 0, 0, f_getcmdpos },
+  { "getcmdtype", 0, 0, f_getcmdtype },
+  { "getcmdwintype", 0, 0, f_getcmdwintype },
+  { "getcurpos", 0, 0, f_getcurpos },
+  { "getcwd", 0, 0, f_getcwd },
+  { "getfontname", 0, 1, f_getfontname },
+  { "getfperm", 1, 1, f_getfperm },
+  { "getfsize", 1, 1, f_getfsize },
+  { "getftime", 1, 1, f_getftime },
+  { "getftype", 1, 1, f_getftype },
+  { "getline", 1, 2, f_getline },
+  { "getloclist", 1, 1, f_getqflist },
+  { "getmatches", 0, 0, f_getmatches },
+  { "getpid", 0, 0, f_getpid },
+  { "getpos", 1, 1, f_getpos },
+  { "getqflist", 0, 0, f_getqflist },
+  { "getreg", 0, 3, f_getreg },
+  { "getregtype", 0, 1, f_getregtype },
+  { "gettabvar", 2, 3, f_gettabvar },
+  { "gettabwinvar", 3, 4, f_gettabwinvar },
+  { "getwinposx", 0, 0, f_getwinposx },
+  { "getwinposy", 0, 0, f_getwinposy },
+  { "getwinvar", 2, 3, f_getwinvar },
+  { "glob", 1, 4, f_glob },
+  { "glob2regpat", 1, 1, f_glob2regpat },
+  { "globpath", 2, 5, f_globpath },
+  { "has", 1, 1, f_has },
+  { "has_key", 2, 2, f_has_key },
+  { "haslocaldir", 0, 0, f_haslocaldir },
+  { "hasmapto", 1, 3, f_hasmapto },
+  { "highlightID", 1, 1, f_hlID },
+  { "highlight_exists", 1, 1, f_hlexists },
+  { "histadd", 2, 2, f_histadd },
+  { "histdel", 1, 2, f_histdel },
+  { "histget", 1, 2, f_histget },
+  { "histnr", 1, 1, f_histnr },
+  { "hlID", 1, 1, f_hlID },
+  { "hlexists", 1, 1, f_hlexists },
+  { "hostname", 0, 0, f_hostname },
+  { "iconv", 3, 3, f_iconv },
+  { "indent", 1, 1, f_indent },
+  { "index", 2, 4, f_index },
+  { "input", 1, 3, f_input },
+  { "inputdialog", 1, 3, f_inputdialog },
+  { "inputlist", 1, 1, f_inputlist },
+  { "inputrestore", 0, 0, f_inputrestore },
+  { "inputsave", 0, 0, f_inputsave },
+  { "inputsecret", 1, 2, f_inputsecret },
+  { "insert", 2, 3, f_insert },
+  { "invert", 1, 1, f_invert },
+  { "isdirectory", 1, 1, f_isdirectory },
+  { "islocked", 1, 1, f_islocked },
+  { "items", 1, 1, f_items },
+  { "jobclose", 1, 2, f_jobclose },
+  { "jobpid", 1, 1, f_jobpid },
+  { "jobresize", 3, 3, f_jobresize },
+  { "jobsend", 2, 2, f_jobsend },
+  { "jobstart", 1, 2, f_jobstart },
+  { "jobstop", 1, 1, f_jobstop },
+  { "jobwait", 1, 2, f_jobwait },
+  { "join", 1, 2, f_join },
+  { "keys", 1, 1, f_keys },
+  { "last_buffer_nr", 0, 0, f_last_buffer_nr },
+  { "len", 1, 1, f_len },
+  { "libcall", 3, 3, f_libcall },
+  { "libcallnr", 3, 3, f_libcallnr },
+  { "line", 1, 1, f_line },
+  { "line2byte", 1, 1, f_line2byte },
+  { "lispindent", 1, 1, f_lispindent },
+  { "localtime", 0, 0, f_localtime },
+  { "log", 1, 1, f_log },
+  { "log10", 1, 1, f_log10 },
+  { "map", 2, 2, f_map },
+  { "maparg", 1, 4, f_maparg },
+  { "mapcheck", 1, 3, f_mapcheck },
+  { "match", 2, 4, f_match },
+  { "matchadd", 2, 4, f_matchadd },
+  { "matchaddpos", 2, 4, f_matchaddpos },
+  { "matcharg", 1, 1, f_matcharg },
+  { "matchdelete", 1, 1, f_matchdelete },
+  { "matchend", 2, 4, f_matchend },
+  { "matchlist", 2, 4, f_matchlist },
+  { "matchstr", 2, 4, f_matchstr },
+  { "max", 1, 1, f_max },
+  { "min", 1, 1, f_min },
+  { "mkdir", 1, 3, f_mkdir },
+  { "mode", 0, 1, f_mode },
+  { "msgpackdump", 1, 1, f_msgpackdump },
+  { "msgpackparse", 1, 1, f_msgpackparse },
+  { "nextnonblank", 1, 1, f_nextnonblank },
+  { "nr2char", 1, 2, f_nr2char },
+  { "or", 2, 2, f_or },
+  { "pathshorten", 1, 1, f_pathshorten },
+  { "pow", 2, 2, f_pow },
+  { "prevnonblank", 1, 1, f_prevnonblank },
+  { "printf", 2, 19, f_printf },
+  { "pumvisible", 0, 0, f_pumvisible },
+  { "py3eval", 1, 1, f_py3eval },
+  { "pyeval", 1, 1, f_pyeval },
+  { "range", 1, 3, f_range },
+  { "readfile", 1, 3, f_readfile },
+  { "reltime", 0, 2, f_reltime },
+  { "reltimestr", 1, 1, f_reltimestr },
+  { "remove", 2, 3, f_remove },
+  { "rename", 2, 2, f_rename },
+  { "repeat", 2, 2, f_repeat },
+  { "resolve", 1, 1, f_resolve },
+  { "reverse", 1, 1, f_reverse },
+  { "round", 1, 1, f_round },
+  { "rpcnotify", 2, 64, f_rpcnotify },
+  { "rpcrequest", 2, 64, f_rpcrequest },
+  { "rpcstart", 1, 2, f_rpcstart },
+  { "rpcstop", 1, 1, f_rpcstop },
+  { "screenattr", 2, 2, f_screenattr },
+  { "screenchar", 2, 2, f_screenchar },
+  { "screencol", 0, 0, f_screencol },
+  { "screenrow", 0, 0, f_screenrow },
+  { "search", 1, 4, f_search },
+  { "searchdecl", 1, 3, f_searchdecl },
+  { "searchpair", 3, 7, f_searchpair },
+  { "searchpairpos", 3, 7, f_searchpairpos },
+  { "searchpos", 1, 4, f_searchpos },
+  { "serverlist", 0, 0, f_serverlist },
+  { "serverstart", 0, 1, f_serverstart },
+  { "serverstop", 1, 1, f_serverstop },
+  { "setbufvar", 3, 3, f_setbufvar },
+  { "setcharsearch", 1, 1, f_setcharsearch },
+  { "setcmdpos", 1, 1, f_setcmdpos },
+  { "setline", 2, 2, f_setline },
+  { "setloclist", 2, 3, f_setloclist },
+  { "setmatches", 1, 1, f_setmatches },
+  { "setpos", 2, 2, f_setpos },
+  { "setqflist", 1, 2, f_setqflist },
+  { "setreg", 2, 3, f_setreg },
+  { "settabvar", 3, 3, f_settabvar },
+  { "settabwinvar", 4, 4, f_settabwinvar },
+  { "setwinvar", 3, 3, f_setwinvar },
+  { "sha256", 1, 1, f_sha256 },
+  { "shellescape", 1, 2, f_shellescape },
+  { "shiftwidth", 0, 0, f_shiftwidth },
+  { "simplify", 1, 1, f_simplify },
+  { "sin", 1, 1, f_sin },
+  { "sinh", 1, 1, f_sinh },
+  { "sort", 1, 3, f_sort },
+  { "soundfold", 1, 1, f_soundfold },
+  { "spellbadword", 0, 1, f_spellbadword },
+  { "spellsuggest", 1, 3, f_spellsuggest },
+  { "split", 1, 3, f_split },
+  { "sqrt", 1, 1, f_sqrt },
+  { "str2float", 1, 1, f_str2float },
+  { "str2nr", 1, 2, f_str2nr },
+  { "strchars", 1, 1, f_strchars },
+  { "strdisplaywidth", 1, 2, f_strdisplaywidth },
+  { "strftime", 1, 2, f_strftime },
+  { "stridx", 2, 3, f_stridx },
+  { "string", 1, 1, f_string },
+  { "strlen", 1, 1, f_strlen },
+  { "strpart", 2, 3, f_strpart },
+  { "strridx", 2, 3, f_strridx },
+  { "strtrans", 1, 1, f_strtrans },
+  { "strwidth", 1, 1, f_strwidth },
+  { "submatch", 1, 2, f_submatch },
+  { "substitute", 4, 4, f_substitute },
+  { "synID", 3, 3, f_synID },
+  { "synIDattr", 2, 3, f_synIDattr },
+  { "synIDtrans", 1, 1, f_synIDtrans },
+  { "synconcealed", 2, 2, f_synconcealed },
+  { "synstack", 2, 2, f_synstack },
+  { "system", 1, 2, f_system },
+  { "systemlist", 1, 3, f_systemlist },
+  { "tabpagebuflist", 0, 1, f_tabpagebuflist },
+  { "tabpagenr", 0, 1, f_tabpagenr },
+  { "tabpagewinnr", 1, 2, f_tabpagewinnr },
+  { "tagfiles", 0, 0, f_tagfiles },
+  { "taglist", 1, 1, f_taglist },
+  { "tan", 1, 1, f_tan },
+  { "tanh", 1, 1, f_tanh },
+  { "tempname", 0, 0, f_tempname },
+  { "termopen", 1, 2, f_termopen },
+  { "test", 1, 1, f_test },
+  { "tolower", 1, 1, f_tolower },
+  { "toupper", 1, 1, f_toupper },
+  { "tr", 3, 3, f_tr },
+  { "trunc", 1, 1, f_trunc },
+  { "type", 1, 1, f_type },
+  { "undofile", 1, 1, f_undofile },
+  { "undotree", 0, 0, f_undotree },
+  { "uniq", 1, 3, f_uniq },
+  { "values", 1, 1, f_values },
+  { "virtcol", 1, 1, f_virtcol },
+  { "visualmode", 0, 1, f_visualmode },
+  { "wildmenumode", 0, 0, f_wildmenumode },
+  { "winbufnr", 1, 1, f_winbufnr },
+  { "wincol", 0, 0, f_wincol },
+  { "winheight", 1, 1, f_winheight },
+  { "winline", 0, 0, f_winline },
+  { "winnr", 0, 1, f_winnr },
+  { "winrestcmd", 0, 0, f_winrestcmd },
+  { "winrestview", 1, 1, f_winrestview },
+  { "winsaveview", 0, 0, f_winsaveview },
+  { "winwidth", 1, 1, f_winwidth },
+  { "writefile", 2, 3, f_writefile },
+  { "xor", 2, 2, f_xor },
 };
 
 
@@ -30633,7 +30784,7 @@ char_u *get_expr_name(expand_T *xp, int idx)
   }
   return get_user_var_name(xp, ++intidx);
 }
-# 7436 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 7448 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int
 find_internal_func (
     char_u *name
@@ -30883,7 +31034,7 @@ call_func (
         }
       }
     }
-# 7695 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 7707 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
     update_force_abort();
   }
   if (error == 5)
@@ -30951,7 +31102,7 @@ static int non_zero_arg(typval_T *argvars)
              && argvars[0].vval.v_string != ((void*)0)
              && *argvars[0].vval.v_string != '\000');
 }
-# 7772 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 7784 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static inline int get_float_arg(typval_T *argvars, float_T *f)
 {
   if (argvars[0].v_type == 6) {
@@ -31160,6 +31311,110 @@ static void f_argv(typval_T *argvars, typval_T *rettv)
       list_append_string(rettv->vval.v_list, alist_name(&((aentry_T *)(curwin)->w_alist->al_ga.ga_data)[idx]), -1);
     }
   }
+}
+
+
+static void prepare_assert_error(garray_T *gap)
+{
+  char buf[65];
+
+  ga_init(gap, 1, 100);
+  if (sourcing_name != ((void*)0)) {
+    ga_concat(gap, sourcing_name);
+    if (sourcing_lnum > 0) {
+      ga_concat(gap, (char_u *)" ");
+    }
+  }
+  if (sourcing_lnum > 0) {
+    vim_snprintf(buf, ((sizeof(buf)/sizeof((buf)[0])) / ((size_t)(!(sizeof(buf) % sizeof((buf)[0]))))), "line %" "ll" "d", (int64_t)sourcing_lnum);
+    ga_concat(gap, (char_u *)buf);
+  }
+  if (sourcing_name != ((void*)0) || sourcing_lnum > 0) {
+    ga_concat(gap, (char_u *)": ");
+  }
+}
+
+
+static void fill_assert_error(garray_T *gap, typval_T *opt_msg_tv,
+                              char_u *exp_str, typval_T *exp_tv,
+                              typval_T *got_tv)
+{
+  char_u *tofree;
+
+  if (opt_msg_tv->v_type != 0) {
+    tofree = (char_u *) tv2string(opt_msg_tv, ((void*)0));
+    ga_concat(gap, tofree);
+    xfree(tofree);
+  } else {
+    ga_concat(gap, (char_u *)"Expected ");
+    if (exp_str == ((void*)0)) {
+      tofree = (char_u *) tv2string(exp_tv, ((void*)0));
+      ga_concat(gap, tofree);
+      xfree(tofree);
+    } else {
+      ga_concat(gap, exp_str);
+    }
+    tofree = (char_u *) tv2string(got_tv, ((void*)0));
+    ga_concat(gap, (char_u *)" but got ");
+    ga_concat(gap, tofree);
+    xfree(tofree);
+  }
+}
+
+
+static void assert_error(garray_T *gap)
+{
+  struct vimvar *vp = &vimvars[VV_ERRORS];
+
+  if (vp->vv_di.di_tv.v_type != 4 || vimvars[VV_ERRORS].vv_di.di_tv.vval.v_list == ((void*)0)) {
+
+    set_vim_var_list(VV_ERRORS, list_alloc());
+  }
+  list_append_string(vimvars[VV_ERRORS].vv_di.di_tv.vval.v_list,
+                     gap->ga_data, gap->ga_len);
+}
+
+
+static void f_assert_equal(typval_T *argvars, typval_T *rettv)
+{
+  garray_T ga;
+
+  if (!tv_equal(&argvars[0], &argvars[1], 0, 0)) {
+    prepare_assert_error(&ga);
+    fill_assert_error(&ga, &argvars[2], ((void*)0),
+                      &argvars[0], &argvars[1]);
+    assert_error(&ga);
+    ga_clear(&ga);
+  }
+}
+
+
+static void assert_bool(typval_T *argvars, _Bool isTrue)
+{
+  int error = (int)0;
+  garray_T ga;
+
+  if (argvars[0].v_type != 1 ||
+      (get_tv_number_chk(&argvars[0], &error) == 0) == isTrue || error) {
+    prepare_assert_error(&ga);
+    fill_assert_error(&ga, &argvars[1],
+                      (char_u *)(isTrue ? "True" : "False"),
+                      ((void*)0), &argvars[0]);
+    assert_error(&ga);
+    ga_clear(&ga);
+  }
+}
+
+
+static void f_assert_false(typval_T *argvars, typval_T *rettv)
+{
+  assert_bool(argvars, 0);
+}
+
+
+static void f_assert_true(typval_T *argvars, typval_T *rettv)
+{
+  assert_bool(argvars, 1);
 }
 
 
@@ -31654,8 +31909,8 @@ static void f_confirm(typval_T *argvars, typval_T *rettv)
 {
   char_u *message;
   char_u *buttons = ((void*)0);
-  char_u buf[30];
-  char_u buf2[30];
+  char_u buf[65];
+  char_u buf2[65];
   int def = 1;
   int type = 0;
   char_u *typestr;
@@ -31792,7 +32047,7 @@ static void f_cscope_connection(typval_T *argvars, typval_T *rettv)
   int num = 0;
   char_u *dbpath = ((void*)0);
   char_u *prepend = ((void*)0);
-  char_u buf[30];
+  char_u buf[65];
 
   if (argvars[0].v_type != 0
       && argvars[1].v_type != 0) {
@@ -31909,7 +32164,7 @@ static void f_dictwatcheradd(typval_T *argvars, typval_T *rettv)
   }
 
   char *key_pattern = (char *)get_tv_string_chk(argvars + 1);
-  (__builtin_expect(!(key_pattern), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 8729, "key_pattern") : (void)0);
+  (__builtin_expect(!(key_pattern), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 8845, "key_pattern") : (void)0);
   const size_t key_len = strlen((char *)(argvars[1].vval.v_string));
 
   if (key_len == 0) {
@@ -31954,7 +32209,7 @@ static void f_dictwatcherdel(typval_T *argvars, typval_T *rettv)
   }
 
   char *key_pattern = (char *)get_tv_string_chk(argvars + 1);
-  (__builtin_expect(!(key_pattern), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 8774, "key_pattern") : (void)0);
+  (__builtin_expect(!(key_pattern), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 8890, "key_pattern") : (void)0);
   const size_t key_len = strlen((char *)(argvars[1].vval.v_string));
 
   if (key_len == 0) {
@@ -32095,7 +32350,7 @@ static void f_empty(typval_T *argvars, typval_T *rettv)
 
 static void f_escape(typval_T *argvars, typval_T *rettv)
 {
-  char_u buf[30];
+  char_u buf[65];
 
   rettv->vval.v_string = vim_strsave_escaped(get_tv_string(&argvars[0]),
       get_tv_string_buf(&argvars[1], buf));
@@ -32232,7 +32487,7 @@ static void f_expand(typval_T *argvars, typval_T *rettv)
   char_u *s;
   size_t len;
   char_u *errormsg;
-  int options = 64|4|1;
+  int options = 0x40|0x04|0x01;
   expand_T xpc;
   int error = 0;
   char_u *result;
@@ -32263,12 +32518,12 @@ static void f_expand(typval_T *argvars, typval_T *rettv)
 
     if (argvars[1].v_type != 0
         && get_tv_number_chk(&argvars[1], &error))
-      options |= 32;
+      options |= 0x20;
     if (!error) {
       ExpandInit(&xpc);
       xpc.xp_context = EXPAND_FILES;
       if (p_wic)
-        options += 256;
+        options += 0x100;
       if (rettv->v_type == 2)
         rettv->vval.v_string = ExpandOne(&xpc, s, ((void*)0),
             options, 6);
@@ -32297,6 +32552,7 @@ void dict_extend(dict_T *d1, dict_T *d2, char_u *action)
   hashitem_T *hi2;
   int todo;
   _Bool watched = is_watched(d1);
+  char *arg_errmsg = "extend() argument";
 
   todo = (int)d2->dv_hashtab.ht_used;
   for (hi2 = d2->dv_hashtab.ht_array; todo > 0; ++hi2) {
@@ -32329,6 +32585,11 @@ void dict_extend(dict_T *d1, dict_T *d2, char_u *action)
         break;
       } else if (*action == 'f' && ((dictitem_T *)((hi2)->hi_key - __builtin_offsetof(dictitem_T, di_key))) != di1) {
         typval_T oldtv;
+
+        if (tv_check_lock(di1->di_tv.v_lock, (char_u *)libintl_gettext((char *)(arg_errmsg)))
+            || var_check_ro(di1->di_flags, (char_u *)libintl_gettext((char *)(arg_errmsg)))) {
+          break;
+        }
 
         if (watched) {
           copy_tv(&di1->di_tv, &oldtv);
@@ -32425,7 +32686,7 @@ static void f_extend(typval_T *argvars, typval_T *rettv)
 static void f_feedkeys(typval_T *argvars, typval_T *rettv)
 {
   char_u *keys, *flags = ((void*)0);
-  char_u nbuf[30];
+  char_u nbuf[65];
 
 
 
@@ -32469,7 +32730,7 @@ static void findfilendir(typval_T *argvars, typval_T *rettv, int find_what)
   char_u *fresult = ((void*)0);
   char_u *path = *curbuf->b_p_path == '\000' ? p_path : curbuf->b_p_path;
   char_u *p;
-  char_u pathbuf[30];
+  char_u pathbuf[65];
   int count = 1;
   int first = 1;
   int error = 0;
@@ -32525,7 +32786,7 @@ static void findfilendir(typval_T *argvars, typval_T *rettv, int find_what)
 
 static void filter_map(typval_T *argvars, typval_T *rettv, int map)
 {
-  char_u buf[30];
+  char_u buf[65];
   char_u *expr;
   listitem_T *li, *nli;
   list_T *l = ((void*)0);
@@ -32545,12 +32806,14 @@ static void filter_map(typval_T *argvars, typval_T *rettv, int map)
 
   if (argvars[0].v_type == 4) {
     if ((l = argvars[0].vval.v_list) == ((void*)0)
-        || tv_check_lock(l->lv_lock, (char_u *)libintl_gettext((char *)(arg_errmsg))))
+        || (!map && tv_check_lock(l->lv_lock, (char_u *)libintl_gettext((char *)(arg_errmsg))))) {
       return;
+    }
   } else if (argvars[0].v_type == 5) {
     if ((d = argvars[0].vval.v_dict) == ((void*)0)
-        || tv_check_lock(d->dv_lock, (char_u *)libintl_gettext((char *)(arg_errmsg))))
+        || (!map && tv_check_lock(d->dv_lock, (char_u *)libintl_gettext((char *)(arg_errmsg))))) {
       return;
+    }
   } else {
     emsg2((char_u *)(libintl_gettext((char *)(e_listdictarg))), (char_u *)(ermsg));
     return;
@@ -32579,17 +32842,26 @@ static void filter_map(typval_T *argvars, typval_T *rettv, int map)
       for (hi = ht->ht_array; todo > 0; ++hi) {
         if (!((hi)->hi_key == ((void*)0) || (hi)->hi_key == &hash_removed)) {
           --todo;
+
           di = ((dictitem_T *)((hi)->hi_key - __builtin_offsetof(dictitem_T, di_key)));
-          if (tv_check_lock(di->di_tv.v_lock,
-                  (char_u *)libintl_gettext((char *)(arg_errmsg))))
+          if (map
+              && (tv_check_lock(di->di_tv.v_lock, (char_u *)libintl_gettext((char *)(arg_errmsg)))
+                  || var_check_ro(di->di_flags, (char_u *)libintl_gettext((char *)(arg_errmsg))))) {
             break;
+          }
+
           vimvars[VV_KEY].vv_di.di_tv.vval.v_string = vim_strsave(di->di_key);
           int r = filter_map_one(&di->di_tv, expr, map, &rem);
           clear_tv(&vimvars[VV_KEY].vv_di.di_tv);
           if (r == 0 || did_emsg)
             break;
-          if (!map && rem)
+          if (!map && rem) {
+            if (var_check_fixed(di->di_flags, (char_u *)libintl_gettext((char *)(arg_errmsg)))
+                || var_check_ro(di->di_flags, (char_u *)libintl_gettext((char *)(arg_errmsg)))) {
+              break;
+            }
             dictitem_remove(d, di);
+          }
         }
       }
       hash_unlock(ht);
@@ -32597,8 +32869,9 @@ static void filter_map(typval_T *argvars, typval_T *rettv, int map)
       vimvars[VV_KEY].vv_di.di_tv.v_type = 1;
 
       for (li = l->lv_first; li != ((void*)0); li = nli) {
-        if (tv_check_lock(li->li_tv.v_lock, (char_u *)libintl_gettext((char *)(arg_errmsg))))
+        if (map && tv_check_lock(li->li_tv.v_lock, (char_u *)libintl_gettext((char *)(arg_errmsg)))) {
           break;
+        }
         nli = li->li_next;
         vimvars[VV_KEY].vv_di.di_tv.vval.v_number = idx;
         if (filter_map_one(&li->li_tv, expr, map, &rem) == 0
@@ -32740,7 +33013,7 @@ static void f_fnamemodify(typval_T *argvars, typval_T *rettv)
   size_t usedlen = 0;
   size_t len;
   char_u *fbuf = ((void*)0);
-  char_u buf[30];
+  char_u buf[65];
 
   fname = get_tv_string_chk(&argvars[0]);
   mods = get_tv_string_buf_chk(&argvars[1], buf);
@@ -32975,7 +33248,7 @@ static void f_get(typval_T *argvars, typval_T *rettv)
   } else
     copy_tv(tv, rettv);
 }
-# 9803 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 9937 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static void get_buffer_lines(buf_T *buf, linenr_T start, linenr_T end, int retlist, typval_T *rettv)
 {
   char_u *p;
@@ -33363,7 +33636,7 @@ static void f_getftype(typval_T *argvars, typval_T *rettv)
 
     else
       t = "other";
-# 10219 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 10353 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
     type = vim_strsave((char_u *)t);
   }
   rettv->vval.v_string = type;
@@ -33548,7 +33821,7 @@ static void f_getregtype(typval_T *argvars, typval_T *rettv)
 {
   char_u *strregname;
   int regname;
-  char_u buf[30 + 2];
+  char_u buf[65 + 2];
   long reglen = 0;
 
   if (argvars[0].v_type != 0) {
@@ -33744,7 +34017,7 @@ getwinvar (
 
 static void f_glob(typval_T *argvars, typval_T *rettv)
 {
-  int options = 64|4;
+  int options = 0x40|0x04;
   expand_T xpc;
   int error = 0;
 
@@ -33753,18 +34026,23 @@ static void f_glob(typval_T *argvars, typval_T *rettv)
   rettv->v_type = 2;
   if (argvars[1].v_type != 0) {
     if (get_tv_number_chk(&argvars[1], &error))
-      options |= 32;
-    if (argvars[2].v_type != 0
-        && get_tv_number_chk(&argvars[2], &error)) {
-      rettv->v_type = 4;
-      rettv->vval.v_list = ((void*)0);
+      options |= 0x20;
+    if (argvars[2].v_type != 0) {
+      if (get_tv_number_chk(&argvars[2], &error)) {
+        rettv->v_type = 4;
+        rettv->vval.v_list = ((void*)0);
+      }
+      if (argvars[3].v_type != 0
+          && get_tv_number_chk(&argvars[3], &error)) {
+        options |= 0x200;
+      }
     }
   }
   if (!error) {
     ExpandInit(&xpc);
     xpc.xp_context = EXPAND_FILES;
     if (p_wic)
-      options += 256;
+      options += 0x100;
     if (rettv->v_type == 2)
       rettv->vval.v_string = ExpandOne(&xpc, get_tv_string(&argvars[0]),
           ((void*)0), options, 6);
@@ -33793,17 +34071,22 @@ static void f_globpath(typval_T *argvars, typval_T *rettv)
 
 
     if (get_tv_number_chk(&argvars[2], &error)) {
-      flags |= 32;
+      flags |= 0x20;
     }
 
-    if (argvars[3].v_type != 0
-        && get_tv_number_chk(&argvars[3], &error)) {
-      rettv->v_type = 4;
-      rettv->vval.v_list = ((void*)0);
+    if (argvars[3].v_type != 0) {
+      if (get_tv_number_chk(&argvars[3], &error)) {
+        rettv->v_type = 4;
+        rettv->vval.v_list = ((void*)0);
+      }
+      if (argvars[4].v_type != 0
+          && get_tv_number_chk(&argvars[4], &error)) {
+        flags |= 0x200;
+      }
     }
   }
 
-  char_u buf1[30];
+  char_u buf1[65];
   char_u *file = get_tv_string_buf_chk(&argvars[1], buf1);
   if (file != ((void*)0) && !error) {
     garray_T ga;
@@ -33827,14 +34110,14 @@ static void f_globpath(typval_T *argvars, typval_T *rettv)
 }
 
 
-
-
 static void f_glob2regpat(typval_T *argvars, typval_T *rettv)
 {
-    char_u *pat = get_tv_string_chk(&argvars[0]);
+  char_u *pat = get_tv_string_chk(&argvars[0]);
 
-    rettv->v_type = 2;
-    rettv->vval.v_string = file_pat_to_reg_pat(pat, ((void*)0), ((void*)0), 0);
+  rettv->v_type = 2;
+  rettv->vval.v_string = (pat == ((void*)0))
+    ? ((void*)0)
+    : file_pat_to_reg_pat(pat, ((void*)0), ((void*)0), 0);
 }
 
 
@@ -33934,6 +34217,7 @@ static void f_has(typval_T *argvars, typval_T *rettv)
 
 
 
+    "tablineat",
     "tag_binary",
     "tag_old_static",
     "termresponse",
@@ -33991,8 +34275,6 @@ static void f_has(typval_T *argvars, typval_T *rettv)
 
     } else if (strcasecmp((char *)(name), (char *)("syntax_items")) == 0) {
       n = syntax_present(curwin);
-    } else if (strcasecmp((char *)(name), (char *)("gui_running")) == 0) {
-      n = ui_rgb_attached();
     }
   }
 
@@ -34034,7 +34316,7 @@ static void f_hasmapto(typval_T *argvars, typval_T *rettv)
 {
   char_u *name;
   char_u *mode;
-  char_u buf[30];
+  char_u buf[65];
   int abbr = 0;
 
   name = get_tv_string(&argvars[0]);
@@ -34059,7 +34341,7 @@ static void f_histadd(typval_T *argvars, typval_T *rettv)
 {
   int histype;
   char_u *str;
-  char_u buf[30];
+  char_u buf[65];
 
   rettv->vval.v_number = 0;
   if (check_restricted() || check_secure())
@@ -34083,7 +34365,7 @@ static void f_histadd(typval_T *argvars, typval_T *rettv)
 static void f_histdel(typval_T *argvars, typval_T *rettv)
 {
   int n;
-  char_u buf[30];
+  char_u buf[65];
   char_u *str;
 
   str = get_tv_string_chk(&argvars[0]);
@@ -34177,8 +34459,8 @@ static void f_hostname(typval_T *argvars, typval_T *rettv)
 
 static void f_iconv(typval_T *argvars, typval_T *rettv)
 {
-  char_u buf1[30];
-  char_u buf2[30];
+  char_u buf1[65];
+  char_u buf2[65];
   char_u *from, *to, *str;
   vimconv_T vimconv;
 
@@ -34256,13 +34538,13 @@ static void f_index(typval_T *argvars, typval_T *rettv)
 }
 
 static int inputsecret_flag = 0;
-# 11119 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 11262 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static void get_user_input(typval_T *argvars, typval_T *rettv, int inputdialog)
 {
   char_u *prompt = get_tv_string_chk(&argvars[0]);
   char_u *p = ((void*)0);
   int c;
-  char_u buf[30];
+  char_u buf[65];
   int cmd_silent_save = cmd_silent;
   char_u *defstr = (char_u *)"";
   int xp_type = EXPAND_NOTHING;
@@ -34527,7 +34809,7 @@ static void f_islocked(typval_T *argvars, typval_T *rettv)
 
   clear_lval(&lv);
 }
-# 11397 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 11540 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static void dict_list(typval_T *argvars, typval_T *rettv, int what)
 {
   list_T *l2;
@@ -34635,6 +34917,31 @@ static void f_jobclose(typval_T *argvars, typval_T *rettv)
 }
 
 
+static void f_jobpid(typval_T *argvars, typval_T *rettv)
+{
+  rettv->v_type = 1;
+  rettv->vval.v_number = 0;
+
+  if (check_restricted() || check_secure()) {
+    return;
+  }
+
+  if (argvars[0].v_type != 1) {
+    emsg((char_u *)(libintl_gettext((char *)(e_invarg))));
+    return;
+  }
+
+  TerminalJobData *data = find_job(argvars[0].vval.v_number);
+  if (!data) {
+    emsg((char_u *)(libintl_gettext((char *)(e_invjob))));
+    return;
+  }
+
+  Process *proc = (Process *)&data->proc;
+  rettv->vval.v_number = proc->pid;
+}
+
+
 static void f_jobsend(typval_T *argvars, typval_T *rettv)
 {
   rettv->v_type = 1;
@@ -34730,7 +35037,7 @@ static char **tv_to_argv(typval_T *cmd_tv, char **cmd)
     return ((void*)0);
   }
 
-  (__builtin_expect(!(argl->lv_first), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 11599, "argl->lv_first") : (void)0);
+  (__builtin_expect(!(argl->lv_first), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 11767, "argl->lv_first") : (void)0);
 
   const char_u *exe = get_tv_string_chk(&argl->lv_first->li_tv);
   if (!exe || !os_can_exe(exe, ((void*)0))) {
@@ -34794,8 +35101,9 @@ static void f_jobstart(typval_T *argvars, typval_T *rettv)
   }
 
   _Bool pty = job_opts && get_dict_number(job_opts, (uint8_t *)"pty") != 0;
+  _Bool detach = job_opts && get_dict_number(job_opts, (uint8_t *)"detach") != 0;
   TerminalJobData *data = common_job_init(argv, on_stdout, on_stderr, on_exit,
-      job_opts, pty);
+                                          job_opts, pty, detach);
   Process *proc = (Process *)&data->proc;
 
   if (pty) {
@@ -35158,7 +35466,7 @@ static void get_maparg(typval_T *argvars, typval_T *rettv, int exact)
 {
   char_u *keys;
   char_u *which;
-  char_u buf[30];
+  char_u buf[65];
   char_u *keys_buf = ((void*)0);
   char_u *rhs;
   int mode;
@@ -35271,7 +35579,7 @@ static void find_some_match(typval_T *argvars, typval_T *rettv, int type)
   char_u *expr = ((void*)0);
   char_u *pat;
   regmatch_T regmatch;
-  char_u patbuf[30];
+  char_u patbuf[65];
   char_u *save_cpo;
   long start = 0;
   long nth = 1;
@@ -35432,7 +35740,7 @@ static void f_match(typval_T *argvars, typval_T *rettv)
 
 static void f_matchadd(typval_T *argvars, typval_T *rettv)
 {
-  char_u buf[30];
+  char_u buf[65];
   char_u *grp = get_tv_string_buf_chk(&argvars[0], buf);
   char_u *pat = get_tv_string_buf_chk(&argvars[1], buf);
   int prio = 10;
@@ -35462,7 +35770,7 @@ static void f_matchaddpos(typval_T *argvars, typval_T *rettv) FUNC_ATTR_NONNULL_
 {
     rettv->vval.v_number = -1;
 
-    char_u buf[30];
+    char_u buf[65];
     char_u *group;
     group = get_tv_string_buf_chk(&argvars[0], buf);
     if (group == ((void*)0)) {
@@ -35632,7 +35940,7 @@ static void f_min(typval_T *argvars, typval_T *rettv)
 static void f_mkdir(typval_T *argvars, typval_T *rettv)
 {
   char_u *dir;
-  char_u buf[30];
+  char_u buf[65];
   int prot = 0755;
 
   rettv->vval.v_number = 0;
@@ -35775,7 +36083,7 @@ static int msgpack_list_write(void *data, const char *buf, size_t len)
   } while (line_end < end);
   return 0;
 }
-# 12653 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 12822 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static inline _Bool vim_list_to_buf(const list_T *const list,
                                    size_t *const ret_len, char **const ret_buf)
   FUNC_ATTR_NONNULL_ARG(2,3) FUNC_ATTR_WARN_UNUSED_RESULT
@@ -35806,15 +36114,76 @@ static inline _Bool vim_list_to_buf(const list_T *const list,
   char *const buf = xmalloc(len);
   size_t read_bytes;
   if (read_from_list(&lrstate, buf, len, &read_bytes) != 1) {
-    (__builtin_expect(!(0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 12683, "false") : (void)0);
+    (__builtin_expect(!(0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 12852, "false") : (void)0);
   }
-  (__builtin_expect(!(len == read_bytes), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 12685, "len == read_bytes") : (void)0);
+  (__builtin_expect(!(len == read_bytes), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 12854, "len == read_bytes") : (void)0);
   *ret_buf = buf;
   return 1;
 }
-# 12783 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
-static int msgpack_convert_one_value(msgpack_packer *const packer, MPConvStack *const mpstack, typval_T *const tv, const int copyID) FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT { switch (tv->v_type) { case 2: { do { if (tv->vval.v_string == ((void*)0)) { msgpack_pack_bin(packer, 0); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); msgpack_pack_bin(packer, len_); msgpack_pack_bin_body(packer, tv->vval.v_string, len_); } } while (0); break; } case 1: { msgpack_pack_int64(packer, (int64_t) (tv->vval.v_number)); break; } case 6: { msgpack_pack_double(packer, (double) (tv->vval.v_float)); break; } case 3: { do { emsg2((char_u *)(libintl_gettext((char *)(e_invarg2))), (char_u *)("attempt to dump function reference")); return 0; } while (0); break; } case 4: { if (tv->vval.v_list == ((void*)0) || tv->vval.v_list->lv_len == 0) { msgpack_pack_array(packer, 0); break; } do { if ((tv->vval.v_list)->lv_copyID == copyID) { do { emsg2((char_u *)(libintl_gettext((char *)(e_invarg2))), (char_u *)("container references itself")); return 0; } while (0); } (tv->vval.v_list)->lv_copyID = copyID; } while (0); msgpack_pack_array(packer, (tv->vval.v_list)->lv_len); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = tv->vval.v_list, .li = tv->vval.v_list->lv_first, }, }, })); } while (0); break; } case 5: { if (tv->vval.v_dict == ((void*)0) || tv->vval.v_dict->dv_hashtab.ht_used == 0) { msgpack_pack_map(packer, 0); break; } const dictitem_T *type_di; const dictitem_T *val_di; if (1 && tv->vval.v_dict->dv_hashtab.ht_used == 2 && (type_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_TYPE", -1)) != ((void*)0) && type_di->di_tv.v_type == 4 && (val_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_VAL", -1)) != ((void*)0)) { size_t i; for (i = 0; i < ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0]))))); i++) { if (type_di->di_tv.vval.v_list == msgpack_type_lists[i]) { break; } } if (i == ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0])))))) { goto msgpack_convert_one_value_regular_dict; } switch ((MessagePackType) i) { case kMPNil: { msgpack_pack_nil(packer); break; } case kMPBoolean: { if (val_di->di_tv.v_type != 1) { goto msgpack_convert_one_value_regular_dict; } do { if ((val_di->di_tv.vval.v_number)) { msgpack_pack_true(packer); } else { msgpack_pack_false(packer); } } while (0); break; } case kMPInteger: { const list_T *val_list; varnumber_T sign; varnumber_T highest_bits; varnumber_T high_bits; varnumber_T low_bits; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 4 || val_list->lv_first->li_tv.v_type != 1 || (sign = val_list->lv_first->li_tv.vval.v_number) == 0 || val_list->lv_first->li_next->li_tv.v_type != 1 || (highest_bits = val_list->lv_first->li_next->li_tv.vval.v_number) < 0 || val_list->lv_last->li_prev->li_tv.v_type != 1 || (high_bits = val_list->lv_last->li_prev->li_tv.vval.v_number) < 0 || val_list->lv_last->li_tv.v_type != 1 || (low_bits = val_list->lv_last->li_tv.vval.v_number) < 0) { goto msgpack_convert_one_value_regular_dict; } uint64_t number = ((uint64_t) (((uint64_t) highest_bits) << 62) | (uint64_t) (((uint64_t) high_bits) << 31) | (uint64_t) low_bits); if (sign > 0) { msgpack_pack_uint64(packer, (number)); } else { msgpack_pack_int64(packer, (int64_t) (-number)); } break; } case kMPFloat: { if (val_di->di_tv.v_type != 6) { goto msgpack_convert_one_value_regular_dict; } msgpack_pack_double(packer, (double) (val_di->di_tv.vval.v_float)); break; } case kMPString: case kMPBinary: { const _Bool is_string = ((MessagePackType) i == kMPString); if (val_di->di_tv.v_type != 4) { goto msgpack_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_di->di_tv.vval.v_list, &len, &buf)) { goto msgpack_convert_one_value_regular_dict; } if (is_string) { do { if (buf == ((void*)0)) { msgpack_pack_str(packer, 0); } else { const size_t len_ = (len); msgpack_pack_str(packer, len_); msgpack_pack_str_body(packer, buf, len_); } } while (0); } else { do { if (buf == ((void*)0)) { msgpack_pack_bin(packer, 0); } else { const size_t len_ = (len); msgpack_pack_bin(packer, len_); msgpack_pack_bin_body(packer, buf, len_); } } while (0); } xfree(buf); break; } case kMPArray: { if (val_di->di_tv.v_type != 4) { goto msgpack_convert_one_value_regular_dict; } do { if ((val_di->di_tv.vval.v_list)->lv_copyID == copyID) { do { emsg2((char_u *)(libintl_gettext((char *)(e_invarg2))), (char_u *)("container references itself")); return 0; } while (0); } (val_di->di_tv.vval.v_list)->lv_copyID = copyID; } while (0); msgpack_pack_array(packer, (val_di->di_tv.vval.v_list)->lv_len); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = val_di->di_tv.vval.v_list, .li = val_di->di_tv.vval.v_list->lv_first, }, }, })); } while (0); break; } case kMPMap: { if (val_di->di_tv.v_type != 4) { goto msgpack_convert_one_value_regular_dict; } if (val_di->di_tv.vval.v_list == ((void*)0)) { msgpack_pack_map(packer, 0); break; } list_T *const val_list = val_di->di_tv.vval.v_list; for (const listitem_T *li = val_list->lv_first; li != ((void*)0); li = li->li_next) { if (li->li_tv.v_type != 4 || li->li_tv.vval.v_list->lv_len != 2) { goto msgpack_convert_one_value_regular_dict; } } do { if ((val_list)->lv_copyID == copyID) { do { emsg2((char_u *)(libintl_gettext((char *)(e_invarg2))), (char_u *)("container references itself")); return 0; } while (0); } (val_list)->lv_copyID = copyID; } while (0); msgpack_pack_map(packer, (val_list)->lv_len); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvPairs, .data = { .l = { .list = val_list, .li = val_list->lv_first, }, }, })); } while (0); break; } case kMPExt: { const list_T *val_list; varnumber_T type; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 2 || (val_list->lv_first->li_tv.v_type != 1) || (type = val_list->lv_first->li_tv.vval.v_number) > 127 || type < -128 || (val_list->lv_last->li_tv.v_type != 4)) { goto msgpack_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_list->lv_last->li_tv.vval.v_list, &len, &buf)) { goto msgpack_convert_one_value_regular_dict; } do { if (buf == ((void*)0)) { msgpack_pack_ext(packer, 0, type); } else { const size_t len_ = (len); msgpack_pack_ext(packer, len_, (int8_t) type); msgpack_pack_ext_body(packer, buf, len_); } } while (0); xfree(buf); break; } } break; } msgpack_convert_one_value_regular_dict: do { if ((tv->vval.v_dict)->dv_copyID == copyID) { do { emsg2((char_u *)(libintl_gettext((char *)(e_invarg2))), (char_u *)("container references itself")); return 0; } while (0); } (tv->vval.v_dict)->dv_copyID = copyID; } while (0); msgpack_pack_map(packer, (tv->vval.v_dict)->dv_hashtab.ht_used); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvDict, .data = { .d = { .dict = tv->vval.v_dict, .hi = tv->vval.v_dict->dv_hashtab.ht_array, .todo = tv->vval.v_dict->dv_hashtab.ht_used, }, }, })); } while (0); break; } default: { emsg2((char_u *)(libintl_gettext((char *)(e_intern2))), (char_u *)("msgpack" "_convert_one_value()")); return 0; } } return 1; } int vim_to_msgpack(msgpack_packer *const packer, typval_T *const tv) FUNC_ATTR_WARN_UNUSED_RESULT { current_copyID += 2; const int copyID = current_copyID; MPConvStack mpstack; ((mpstack).size = (mpstack).capacity = 0, (mpstack).items = 0); if ( msgpack_convert_one_value(packer, &mpstack, tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } while (((mpstack).size)) { MPConvStackVal *cur_mpsv = &((mpstack).items[(((mpstack).size) - 1)]); typval_T *cur_tv = ((void*)0); switch (cur_mpsv->type) { case kMPConvDict: { if (!cur_mpsv->data.d.todo) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.d.dict->dv_copyID = copyID - 1; ; continue; } else if (cur_mpsv->data.d.todo != cur_mpsv->data.d.dict->dv_hashtab.ht_used) { ; } while (((cur_mpsv->data.d.hi)->hi_key == ((void*)0) || (cur_mpsv->data.d.hi)->hi_key == &hash_removed)) { cur_mpsv->data.d.hi++; } dictitem_T *const di = ((dictitem_T *)((cur_mpsv->data.d.hi)->hi_key - __builtin_offsetof(dictitem_T, di_key))); cur_mpsv->data.d.todo--; cur_mpsv->data.d.hi++; do { if (&di->di_key[0] == ((void*)0)) { msgpack_pack_str(packer, 0); } else { const size_t len_ = (strlen((char *)(&di->di_key[0]))); msgpack_pack_str(packer, len_); msgpack_pack_str_body(packer, &di->di_key[0], len_); } } while (0); ; cur_tv = &di->di_tv; break; } case kMPConvList: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; ; continue; } else if (cur_mpsv->data.l.li != cur_mpsv->data.l.list->lv_first) { ; } cur_tv = &cur_mpsv->data.l.li->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } case kMPConvPairs: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; continue; } const list_T *const kv_pair = cur_mpsv->data.l.li->li_tv.vval.v_list; if ( msgpack_convert_one_value(packer, &mpstack, &kv_pair->lv_first->li_tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } cur_tv = &kv_pair->lv_last->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } } if ( msgpack_convert_one_value(packer, &mpstack, cur_tv, copyID) == 0) { goto vim_to_msgpack_error_ret; } } xfree((mpstack).items); return 1; vim_to_msgpack_error_ret: xfree((mpstack).items); return 0; }
-# 12808 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 12869 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+static int conv_error(const char *const msg, const MPConvStack *const mpstack,
+                      const char *const objname)
+  FUNC_ATTR_NONNULL_ALL
+{
+  garray_T msg_ga;
+  ga_init(&msg_ga, (int)sizeof(char), 80);
+  char *const key_msg = libintl_gettext((char *)("key %s"));
+  char *const key_pair_msg = libintl_gettext((char *)("key %s at index %i from special map"));
+  char *const idx_msg = libintl_gettext((char *)("index %i"));
+  for (size_t i = 0; i < ((*mpstack).size); i++) {
+    if (i != 0) {
+      ga_concat(&msg_ga, (char_u *) ", ");
+    }
+    MPConvStackVal v = ((*mpstack).items[(i)]);
+    switch (v.type) {
+      case kMPConvDict: {
+        typval_T key_tv = {
+            .v_type = 2,
+            .vval = { .v_string = (v.data.d.hi == ((void*)0)
+                                   ? v.data.d.dict->dv_hashtab.ht_array
+                                   : (v.data.d.hi - 1))->hi_key },
+        };
+        char *const key = tv2string(&key_tv, ((void*)0));
+        vim_snprintf((char *) IObuff, (1024+1), key_msg, key);
+        xfree(key);
+        ga_concat(&msg_ga, IObuff);
+        break;
+      }
+      case kMPConvPairs:
+      case kMPConvList: {
+        int idx = 0;
+        const listitem_T *li;
+        for (li = v.data.l.list->lv_first;
+             li != ((void*)0) && li->li_next != v.data.l.li;
+             li = li->li_next) {
+          idx++;
+        }
+        if (v.type == kMPConvList
+            || li == ((void*)0)
+            || (li->li_tv.v_type != 4
+                && li->li_tv.vval.v_list->lv_len <= 0)) {
+          vim_snprintf((char *) IObuff, (1024+1), idx_msg, idx);
+          ga_concat(&msg_ga, IObuff);
+        } else {
+          typval_T key_tv = li->li_tv.vval.v_list->lv_first->li_tv;
+          char *const key = echo_string(&key_tv, ((void*)0));
+          vim_snprintf((char *) IObuff, (1024+1), key_pair_msg, key, idx);
+          xfree(key);
+          ga_concat(&msg_ga, IObuff);
+        }
+        break;
+      }
+    }
+  }
+  emsg3((char_u *)(msg), (char_u *)(objname), (char_u *)((((*mpstack).size) == 0 ? libintl_gettext((char *)("itself")) : (char *) msg_ga.ga_data)));
+
+
+  ga_clear(&msg_ga);
+  return 0;
+}
+# 13021 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+static int msgpack_convert_one_value(msgpack_packer *const packer, MPConvStack *const mpstack, typval_T *const tv, const int copyID, const char *const objname) FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT { switch (tv->v_type) { case 2: { do { if (tv->vval.v_string == ((void*)0)) { msgpack_pack_bin(packer, 0); } else { const size_t len_ = (strlen((char *)(tv->vval.v_string))); msgpack_pack_bin(packer, len_); msgpack_pack_bin_body(packer, tv->vval.v_string, len_); } } while (0); break; } case 1: { msgpack_pack_int64(packer, (int64_t) (tv->vval.v_number)); break; } case 6: { msgpack_pack_double(packer, (double) (tv->vval.v_float)); break; } case 3: { return conv_error(libintl_gettext((char *)("E951: Error while dumping %s, %s: " "attempt to dump function reference")), mpstack, objname); break; } case 4: { if (tv->vval.v_list == ((void*)0) || tv->vval.v_list->lv_len == 0) { msgpack_pack_array(packer, 0); break; } do { if ((tv->vval.v_list)->lv_copyID == copyID) { return conv_error(libintl_gettext((char *)("E952: Unable to dump %s: " "container references itself in %s")), mpstack, objname); } (tv->vval.v_list)->lv_copyID = copyID; } while (0); msgpack_pack_array(packer, (tv->vval.v_list)->lv_len); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = tv->vval.v_list, .li = tv->vval.v_list->lv_first, }, }, })); } while (0); break; } case 5: { if (tv->vval.v_dict == ((void*)0) || tv->vval.v_dict->dv_hashtab.ht_used == 0) { msgpack_pack_map(packer, 0); break; } const dictitem_T *type_di; const dictitem_T *val_di; if (1 && tv->vval.v_dict->dv_hashtab.ht_used == 2 && (type_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_TYPE", -1)) != ((void*)0) && type_di->di_tv.v_type == 4 && (val_di = dict_find((dict_T *) tv->vval.v_dict, (char_u *) "_VAL", -1)) != ((void*)0)) { size_t i; for (i = 0; i < ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0]))))); i++) { if (type_di->di_tv.vval.v_list == msgpack_type_lists[i]) { break; } } if (i == ((sizeof(msgpack_type_lists)/sizeof((msgpack_type_lists)[0])) / ((size_t)(!(sizeof(msgpack_type_lists) % sizeof((msgpack_type_lists)[0])))))) { goto msgpack_convert_one_value_regular_dict; } switch ((MessagePackType) i) { case kMPNil: { msgpack_pack_nil(packer); break; } case kMPBoolean: { if (val_di->di_tv.v_type != 1) { goto msgpack_convert_one_value_regular_dict; } do { if ((val_di->di_tv.vval.v_number)) { msgpack_pack_true(packer); } else { msgpack_pack_false(packer); } } while (0); break; } case kMPInteger: { const list_T *val_list; varnumber_T sign; varnumber_T highest_bits; varnumber_T high_bits; varnumber_T low_bits; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 4 || val_list->lv_first->li_tv.v_type != 1 || (sign = val_list->lv_first->li_tv.vval.v_number) == 0 || val_list->lv_first->li_next->li_tv.v_type != 1 || (highest_bits = val_list->lv_first->li_next->li_tv.vval.v_number) < 0 || val_list->lv_last->li_prev->li_tv.v_type != 1 || (high_bits = val_list->lv_last->li_prev->li_tv.vval.v_number) < 0 || val_list->lv_last->li_tv.v_type != 1 || (low_bits = val_list->lv_last->li_tv.vval.v_number) < 0) { goto msgpack_convert_one_value_regular_dict; } uint64_t number = ((uint64_t) (((uint64_t) highest_bits) << 62) | (uint64_t) (((uint64_t) high_bits) << 31) | (uint64_t) low_bits); if (sign > 0) { msgpack_pack_uint64(packer, (number)); } else { msgpack_pack_int64(packer, (int64_t) (-number)); } break; } case kMPFloat: { if (val_di->di_tv.v_type != 6) { goto msgpack_convert_one_value_regular_dict; } msgpack_pack_double(packer, (double) (val_di->di_tv.vval.v_float)); break; } case kMPString: case kMPBinary: { const _Bool is_string = ((MessagePackType) i == kMPString); if (val_di->di_tv.v_type != 4) { goto msgpack_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_di->di_tv.vval.v_list, &len, &buf)) { goto msgpack_convert_one_value_regular_dict; } if (is_string) { do { if (buf == ((void*)0)) { msgpack_pack_str(packer, 0); } else { const size_t len_ = (len); msgpack_pack_str(packer, len_); msgpack_pack_str_body(packer, buf, len_); } } while (0); } else { do { if (buf == ((void*)0)) { msgpack_pack_bin(packer, 0); } else { const size_t len_ = (len); msgpack_pack_bin(packer, len_); msgpack_pack_bin_body(packer, buf, len_); } } while (0); } xfree(buf); break; } case kMPArray: { if (val_di->di_tv.v_type != 4) { goto msgpack_convert_one_value_regular_dict; } do { if ((val_di->di_tv.vval.v_list)->lv_copyID == copyID) { return conv_error(libintl_gettext((char *)("E952: Unable to dump %s: " "container references itself in %s")), mpstack, objname); } (val_di->di_tv.vval.v_list)->lv_copyID = copyID; } while (0); msgpack_pack_array(packer, (val_di->di_tv.vval.v_list)->lv_len); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvList, .data = { .l = { .list = val_di->di_tv.vval.v_list, .li = val_di->di_tv.vval.v_list->lv_first, }, }, })); } while (0); break; } case kMPMap: { if (val_di->di_tv.v_type != 4) { goto msgpack_convert_one_value_regular_dict; } if (val_di->di_tv.vval.v_list == ((void*)0)) { msgpack_pack_map(packer, 0); break; } list_T *const val_list = val_di->di_tv.vval.v_list; for (const listitem_T *li = val_list->lv_first; li != ((void*)0); li = li->li_next) { if (li->li_tv.v_type != 4 || li->li_tv.vval.v_list->lv_len != 2) { goto msgpack_convert_one_value_regular_dict; } } do { if ((val_list)->lv_copyID == copyID) { return conv_error(libintl_gettext((char *)("E952: Unable to dump %s: " "container references itself in %s")), mpstack, objname); } (val_list)->lv_copyID = copyID; } while (0); msgpack_pack_map(packer, (val_list)->lv_len); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvPairs, .data = { .l = { .list = val_list, .li = val_list->lv_first, }, }, })); } while (0); break; } case kMPExt: { const list_T *val_list; varnumber_T type; if (val_di->di_tv.v_type != 4 || (val_list = val_di->di_tv.vval.v_list) == ((void*)0) || val_list->lv_len != 2 || (val_list->lv_first->li_tv.v_type != 1) || (type = val_list->lv_first->li_tv.vval.v_number) > 127 || type < -128 || (val_list->lv_last->li_tv.v_type != 4)) { goto msgpack_convert_one_value_regular_dict; } size_t len; char *buf; if (!vim_list_to_buf(val_list->lv_last->li_tv.vval.v_list, &len, &buf)) { goto msgpack_convert_one_value_regular_dict; } do { if (buf == ((void*)0)) { msgpack_pack_ext(packer, 0, type); } else { const size_t len_ = (len); msgpack_pack_ext(packer, len_, (int8_t) type); msgpack_pack_ext_body(packer, buf, len_); } } while (0); xfree(buf); break; } } break; } msgpack_convert_one_value_regular_dict: do { if ((tv->vval.v_dict)->dv_copyID == copyID) { return conv_error(libintl_gettext((char *)("E952: Unable to dump %s: " "container references itself in %s")), mpstack, objname); } (tv->vval.v_dict)->dv_copyID = copyID; } while (0); msgpack_pack_map(packer, (tv->vval.v_dict)->dv_hashtab.ht_used); do { if ((*mpstack).size == (*mpstack).capacity) { (*mpstack).capacity = (*mpstack).capacity? (*mpstack).capacity<<1 : 8; (*mpstack).items = (MPConvStackVal*)xrealloc((*mpstack).items, sizeof(MPConvStackVal) * (*mpstack).capacity); } (*mpstack).items[(*mpstack).size++] = (((MPConvStackVal) { .type = kMPConvDict, .data = { .d = { .dict = tv->vval.v_dict, .hi = tv->vval.v_dict->dv_hashtab.ht_array, .todo = tv->vval.v_dict->dv_hashtab.ht_used, }, }, })); } while (0); break; } default: { emsg2((char_u *)(libintl_gettext((char *)(e_intern2))), (char_u *)("msgpack" "_convert_one_value()")); return 0; } } return 1; } int vim_to_msgpack(msgpack_packer *const packer, typval_T *const tv, const char *const objname) FUNC_ATTR_WARN_UNUSED_RESULT { current_copyID += 2; const int copyID = current_copyID; MPConvStack mpstack; ((mpstack).size = (mpstack).capacity = 0, (mpstack).items = 0); if ( msgpack_convert_one_value(packer, &mpstack, tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } while (((mpstack).size)) { MPConvStackVal *cur_mpsv = &((mpstack).items[(((mpstack).size) - 1)]); typval_T *cur_tv = ((void*)0); switch (cur_mpsv->type) { case kMPConvDict: { if (!cur_mpsv->data.d.todo) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.d.dict->dv_copyID = copyID - 1; ; continue; } else if (cur_mpsv->data.d.todo != cur_mpsv->data.d.dict->dv_hashtab.ht_used) { ; } while (((cur_mpsv->data.d.hi)->hi_key == ((void*)0) || (cur_mpsv->data.d.hi)->hi_key == &hash_removed)) { cur_mpsv->data.d.hi++; } dictitem_T *const di = ((dictitem_T *)((cur_mpsv->data.d.hi)->hi_key - __builtin_offsetof(dictitem_T, di_key))); cur_mpsv->data.d.todo--; cur_mpsv->data.d.hi++; do { if (&di->di_key[0] == ((void*)0)) { msgpack_pack_str(packer, 0); } else { const size_t len_ = (strlen((char *)(&di->di_key[0]))); msgpack_pack_str(packer, len_); msgpack_pack_str_body(packer, &di->di_key[0], len_); } } while (0); ; cur_tv = &di->di_tv; break; } case kMPConvList: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; ; continue; } else if (cur_mpsv->data.l.li != cur_mpsv->data.l.list->lv_first) { ; } cur_tv = &cur_mpsv->data.l.li->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } case kMPConvPairs: { if (cur_mpsv->data.l.li == ((void*)0)) { (void) ((mpstack).items[--(mpstack).size]); cur_mpsv->data.l.list->lv_copyID = copyID - 1; continue; } const list_T *const kv_pair = cur_mpsv->data.l.li->li_tv.vval.v_list; if ( msgpack_convert_one_value(packer, &mpstack, &kv_pair->lv_first->li_tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } cur_tv = &kv_pair->lv_last->li_tv; cur_mpsv->data.l.li = cur_mpsv->data.l.li->li_next; break; } } if ( msgpack_convert_one_value(packer, &mpstack, cur_tv, copyID, objname) == 0) { goto vim_to_msgpack_error_ret; } } xfree((mpstack).items); return 1; vim_to_msgpack_error_ret: xfree((mpstack).items); return 0; }
+# 13046 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static void f_msgpackdump(typval_T *argvars, typval_T *rettv)
   FUNC_ATTR_NONNULL_ALL
 {
@@ -35828,14 +36197,20 @@ static void f_msgpackdump(typval_T *argvars, typval_T *rettv)
     return;
   }
   msgpack_packer *lpacker = msgpack_packer_new(ret_list, &msgpack_list_write);
+  const char *const msg = libintl_gettext((char *)("msgpackdump() argument, index %i"));
+
+  char msgbuf[sizeof("msgpackdump() argument, index ") * 4 + 65];
+  int idx = 0;
   for (listitem_T *li = list->lv_first; li != ((void*)0); li = li->li_next) {
-    if (vim_to_msgpack(lpacker, &li->li_tv) == 0) {
+    vim_snprintf(msgbuf, sizeof(msgbuf), (char *) msg, idx);
+    idx++;
+    if (vim_to_msgpack(lpacker, &li->li_tv, msgbuf) == 0) {
       break;
     }
   }
   msgpack_packer_free(lpacker);
 }
-# 12841 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 13085 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int read_from_list(ListReaderState *const state, char *const buf,
                           const size_t nbuf, size_t *const read_bytes)
   FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT
@@ -35887,7 +36262,7 @@ static inline ListReaderState init_lrstate(const list_T *const list)
 int msgpack_to_vim(const msgpack_object mobj, typval_T *const rettv)
   FUNC_ATTR_NONNULL_ALL FUNC_ATTR_WARN_UNUSED_RESULT
 {
-# 12908 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 13152 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
   switch (mobj.type) {
     case MSGPACK_OBJECT_NIL: {
       do { dict_T *const dict = dict_alloc(); dictitem_T *const type_di = dictitem_alloc((char_u *) "_TYPE"); type_di->di_tv.v_type = 4; type_di->di_tv.v_lock = 0; type_di->di_tv.vval.v_list = (list_T *) msgpack_type_lists[kMPNil]; type_di->di_tv.vval.v_list->lv_refcount++; dict_add(dict, type_di); dictitem_T *const val_di = dictitem_alloc((char_u *) "_VAL"); val_di->di_tv = ((typval_T) { .v_type = 1, .v_lock = 0, .vval = { .v_number = 0 }, }); dict_add(dict, val_di); rettv->v_type = 5; dict->dv_refcount++; rettv->vval.v_dict = dict; } while (0);
@@ -36205,7 +36580,7 @@ static void f_nextnonblank(typval_T *argvars, typval_T *rettv)
 
 static void f_nr2char(typval_T *argvars, typval_T *rettv)
 {
-  char_u buf[30];
+  char_u buf[65];
 
   if (has_mbyte) {
     int utf8 = 0;
@@ -36291,7 +36666,7 @@ static void f_printf(typval_T *argvars, typval_T *rettv)
   rettv->v_type = 2;
   rettv->vval.v_string = ((void*)0);
   {
-    char_u buf[30];
+    char_u buf[65];
     int len;
     int saved_did_emsg = did_emsg;
     char *fmt;
@@ -36431,7 +36806,7 @@ static void f_readfile(typval_T *argvars, typval_T *rettv)
               --prevlen;
         }
         if (prevlen == 0) {
-          (__builtin_expect(!(len < 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 13451, "len < INT_MAX") : (void)0);
+          (__builtin_expect(!(len < 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 13695, "len < INT_MAX") : (void)0);
           s = vim_strnsave(start, (int)len);
         } else {
 
@@ -36530,7 +36905,7 @@ static void f_readfile(typval_T *argvars, typval_T *rettv)
   xfree(prev);
   fclose(fd);
 }
-# 13558 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 13802 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int list2proftime(typval_T *arg, proftime_T *tm) FUNC_ATTR_NONNULL_ALL
 {
   if (arg->v_type != 4
@@ -36645,9 +37020,10 @@ static void f_remove(typval_T *argvars, typval_T *rettv)
       key = get_tv_string_chk(&argvars[1]);
       if (key != ((void*)0)) {
         di = dict_find(d, key, -1);
-        if (di == ((void*)0))
+        if (di == ((void*)0)) {
           emsg2((char_u *)(libintl_gettext((char *)(e_dictkey))), (char_u *)(key));
-        else {
+        } else if (!var_check_fixed(di->di_flags, (char_u *)libintl_gettext((char *)(arg_errmsg)))
+                   && !var_check_ro(di->di_flags, (char_u *)libintl_gettext((char *)(arg_errmsg)))) {
           *rettv = di->di_tv;
           init_tv(&di->di_tv);
           dictitem_remove(d, di);
@@ -36711,7 +37087,7 @@ static void f_remove(typval_T *argvars, typval_T *rettv)
 
 static void f_rename(typval_T *argvars, typval_T *rettv)
 {
-  char_u buf[30];
+  char_u buf[65];
 
   if (check_restricted() || check_secure())
     rettv->vval.v_number = -1;
@@ -36765,7 +37141,7 @@ static void f_resolve(typval_T *argvars, typval_T *rettv)
 
 
   p = get_tv_string(&argvars[0]);
-# 13804 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 14049 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
   {
     char_u *cpy;
     int len;
@@ -36942,12 +37318,12 @@ static void f_reverse(typval_T *argvars, typval_T *rettv)
     l->lv_idx = l->lv_len - l->lv_idx - 1;
   }
 }
-# 13995 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 14240 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int get_search_arg(typval_T *varp, int *flagsp)
 {
   int dir = 1;
   char_u *flags;
-  char_u nbuf[30];
+  char_u nbuf[65];
   int mask;
 
   if (varp->v_type != 0) {
@@ -37386,9 +37762,9 @@ static int searchpair_cmn(typval_T *argvars, pos_T *match_pos)
   _Bool save_p_ws = p_ws;
   int dir;
   int flags = 0;
-  char_u nbuf1[30];
-  char_u nbuf2[30];
-  char_u nbuf3[30];
+  char_u nbuf1[65];
+  char_u nbuf2[65];
+  char_u nbuf3[65];
   int retval = 0;
   long lnum_stop = 0;
   long time_limit = 0;
@@ -37717,7 +38093,7 @@ static void f_setbufvar(typval_T *argvars, typval_T *rettv)
   aco_save_T aco;
   char_u *varname, *bufvarname;
   typval_T *varp;
-  char_u nbuf[30];
+  char_u nbuf[65];
 
   if (check_restricted() || check_secure())
     return;
@@ -37914,6 +38290,7 @@ static void f_setmatches(typval_T *argvars, typval_T *rettv)
   list_T *l;
   listitem_T *li;
   dict_T *d;
+  list_T *s = ((void*)0);
 
   rettv->vval.v_number = -1;
   if (argvars[0].v_type != 4) {
@@ -37932,7 +38309,8 @@ static void f_setmatches(typval_T *argvars, typval_T *rettv)
         return;
       }
       if (!(dict_find(d, (char_u *)"group", -1) != ((void*)0)
-            && dict_find(d, (char_u *)"pattern", -1) != ((void*)0)
+            && (dict_find(d, (char_u *)"pattern", -1) != ((void*)0)
+                || dict_find(d, (char_u *)"pos1", -1) != ((void*)0))
             && dict_find(d, (char_u *)"priority", -1) != ((void*)0)
             && dict_find(d, (char_u *)"id", -1) != ((void*)0))) {
         emsg((char_u *)(libintl_gettext((char *)(e_invarg))));
@@ -37944,11 +38322,47 @@ static void f_setmatches(typval_T *argvars, typval_T *rettv)
     clear_matches(curwin);
     li = l->lv_first;
     while (li != ((void*)0)) {
+      int i = 0;
+      char_u buf[5];
+      dictitem_T *di;
       d = li->li_tv.vval.v_dict;
-      match_add(curwin, get_dict_string(d, (char_u *)"group", 0),
-          get_dict_string(d, (char_u *)"pattern", 0),
-          (int)get_dict_number(d, (char_u *)"priority"),
-          (int)get_dict_number(d, (char_u *)"id"), ((void*)0));
+
+      if (dict_find(d, (char_u *)"pattern", -1) == ((void*)0)) {
+        if (s == ((void*)0)) {
+          s = list_alloc();
+          if (s == ((void*)0)) {
+            return;
+          }
+        }
+
+
+        for (i = 1; i < 9; ++i) {
+          __builtin___snprintf_chk ((char *)buf, sizeof(buf), 0, __builtin_object_size ((char *)buf, 2 > 1 ? 1 : 0), (char *)"pos%d", i);
+          if ((di = dict_find(d, (char_u *)buf, -1)) != ((void*)0)) {
+            if (di->di_tv.v_type != 4) {
+              return;
+            }
+
+            list_append_tv(s, &di->di_tv);
+            s->lv_refcount++;
+          } else {
+            break;
+          }
+        }
+      }
+
+      if (i == 0) {
+        match_add(curwin, get_dict_string(d, (char_u *)"group", 0),
+                  get_dict_string(d, (char_u *)"pattern", 0),
+                  (int)get_dict_number(d, (char_u *)"priority"),
+                  (int)get_dict_number(d, (char_u *)"id"), ((void*)0));
+      } else {
+        match_add(curwin, get_dict_string(d, (char_u *)"group", 0),
+                  ((void*)0), (int)get_dict_number(d, (char_u *)"priority"),
+                  (int)get_dict_number(d, (char_u *)"id"), s);
+        list_unref(s);
+        s = ((void*)0);
+      }
       li = li->li_next;
     }
     rettv->vval.v_number = 0;
@@ -38059,7 +38473,7 @@ static void f_setreg(typval_T *argvars, typval_T *rettv)
     char_u **allocval = lstval + len + 2;
     char_u **curallocval = allocval;
 
-    char_u buf[30];
+    char_u buf[65];
     for (listitem_T *li = argvars[1].vval.v_list->lv_first;
          li != ((void*)0);
          li = li->li_next) {
@@ -38157,7 +38571,7 @@ static void setwinvar(typval_T *argvars, typval_T *rettv, int off)
   tabpage_T *save_curtab;
   char_u *varname, *winvarname;
   typval_T *varp;
-  char_u nbuf[30];
+  char_u nbuf[65];
   tabpage_T *tp = ((void*)0);
 
   if (check_restricted() || check_secure())
@@ -38517,7 +38931,7 @@ static void do_sort_uniq(typval_T *argvars, typval_T *rettv, _Bool sort)
 
       if (!item_compare_func_err) {
         while (--i >= 0) {
-          (__builtin_expect(!(ptrs[i].item->li_next), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 15569, "ptrs[i].item->li_next") : (void)0);
+          (__builtin_expect(!(ptrs[i].item->li_next), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 15852, "ptrs[i].item->li_next") : (void)0);
           li = ptrs[i].item->li_next;
           ptrs[i].item->li_next = li->li_next;
           if (li->li_next != ((void*)0)) {
@@ -38593,7 +39007,7 @@ static void f_spellbadword(typval_T *argvars, typval_T *rettv)
     }
   }
 
-  (__builtin_expect(!(len <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 15645, "len <= INT_MAX") : (void)0);
+  (__builtin_expect(!(len <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 15928, "len <= INT_MAX") : (void)0);
   list_append_string(rettv->vval.v_list, word, (int)len);
   list_append_string(rettv->vval.v_list,
                      (char_u *)(attr == HLF_SPB ? "bad" :
@@ -38653,7 +39067,7 @@ static void f_split(typval_T *argvars, typval_T *rettv)
   char_u *end;
   char_u *pat = ((void*)0);
   regmatch_T regmatch;
-  char_u patbuf[30];
+  char_u patbuf[65];
   char_u *save_cpo;
   int match;
   colnr_T col = 0;
@@ -38737,26 +39151,39 @@ static void f_str2float(typval_T *argvars, typval_T *rettv)
 }
 
 
-
-
 static void f_str2nr(typval_T *argvars, typval_T *rettv)
 {
   int base = 10;
   char_u *p;
   long n;
+  int what;
 
   if (argvars[1].v_type != 0) {
     base = get_tv_number(&argvars[1]);
-    if (base != 8 && base != 10 && base != 16) {
+    if (base != 2 && base != 8 && base != 10 && base != 16) {
       emsg((char_u *)(libintl_gettext((char *)(e_invarg))));
       return;
     }
   }
 
   p = skipwhite(get_tv_string(&argvars[0]));
-  if (*p == '+')
+  if (*p == '+') {
     p = skipwhite(p + 1);
-  vim_str2nr(p, ((void*)0), ((void*)0), base == 8 ? 2 : 0, base == 16 ? 2 : 0, &n, ((void*)0));
+  }
+  switch (base) {
+    case 2:
+      what = 1 + 8;
+      break;
+    case 8:
+      what = 2 + 8;
+      break;
+    case 16:
+      what = 4 + 8;
+      break;
+    default:
+      what = 0;
+  }
+  vim_str2nr(p, ((void*)0), ((void*)0), what, &n, ((void*)0), 0);
   rettv->vval.v_number = n;
 }
 
@@ -38816,7 +39243,7 @@ static void f_strftime(typval_T *argvars, typval_T *rettv)
 
 static void f_stridx(typval_T *argvars, typval_T *rettv)
 {
-  char_u buf[30];
+  char_u buf[65];
   char_u *needle;
   char_u *haystack;
   char_u *save_haystack;
@@ -38946,7 +39373,7 @@ static void f_strpart(typval_T *argvars, typval_T *rettv)
 
 static void f_strridx(typval_T *argvars, typval_T *rettv)
 {
-  char_u buf[30];
+  char_u buf[65];
   char_u *needle;
   char_u *haystack;
   char_u *rest;
@@ -39030,9 +39457,9 @@ static void f_submatch(typval_T *argvars, typval_T *rettv)
 
 static void f_substitute(typval_T *argvars, typval_T *rettv)
 {
-  char_u patbuf[30];
-  char_u subbuf[30];
-  char_u flagsbuf[30];
+  char_u patbuf[65];
+  char_u subbuf[65];
+  char_u flagsbuf[65];
 
   char_u *str = get_tv_string_chk(&argvars[0]);
   char_u *pat = get_tv_string_buf_chk(&argvars[1], patbuf);
@@ -39077,7 +39504,7 @@ static void f_synIDattr(typval_T *argvars, typval_T *rettv)
   int id;
   char_u *what;
   char_u *mode;
-  char_u modebuf[30];
+  char_u modebuf[65];
   int modec;
 
   id = get_tv_number(&argvars[0]);
@@ -39171,7 +39598,7 @@ static void f_synconcealed(typval_T *argvars, typval_T *rettv)
   int syntax_flags = 0;
   int cchar;
   int matchid = 0;
-  char_u str[30];
+  char_u str[65];
 
   rettv->v_type = 4;
   rettv->vval.v_list = ((void*)0);
@@ -39280,7 +39707,7 @@ static void get_system_output_as_rettv(typval_T *argvars, typval_T *rettv,
   ssize_t input_len;
   char *input = (char *) save_tv_as_string(&argvars[1], &input_len, 0);
   if (input_len < 0) {
-    (__builtin_expect(!(input == ((void*)0)), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 16332, "input == NULL") : (void)0);
+    (__builtin_expect(!(input == ((void*)0)), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 16628, "input == NULL") : (void)0);
     return;
   }
 
@@ -39324,7 +39751,7 @@ static void get_system_output_as_rettv(typval_T *argvars, typval_T *rettv,
 
 
     memchrsub(res, '\000', 1, nread);
-# 16389 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 16685 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
     rettv->vval.v_string = (char_u *) res;
   }
 }
@@ -39529,7 +39956,7 @@ static void f_termopen(typval_T *argvars, typval_T *rettv)
   }
 
   TerminalJobData *data = common_job_init(argv, on_stdout, on_stderr, on_exit,
-      job_opts, 1);
+                                          job_opts, 1, 0);
   data->proc.pty.width = curwin->w_width;
   data->proc.pty.height = curwin->w_height;
   data->proc.pty.term_name = xstrdup("xterm-256color");
@@ -39652,8 +40079,8 @@ static void f_tr(typval_T *argvars, typval_T *rettv)
   char_u *cpstr;
   int cplen;
   int first = 1;
-  char_u buf[30];
-  char_u buf2[30];
+  char_u buf[65];
+  char_u buf2[65];
   garray_T ga;
 
   in_str = get_tv_string(&argvars[0]);
@@ -40039,7 +40466,7 @@ static _Bool write_list(FILE *fd, list_T *list, _Bool binary)
   }
   return ret;
 }
-# 17113 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 17409 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char_u *save_tv_as_string(typval_T *tv, ssize_t *len, _Bool endnl)
   FUNC_ATTR_MALLOC FUNC_ATTR_NONNULL_ALL
 {
@@ -40253,7 +40680,7 @@ var2fpos (
   }
   return ((void*)0);
 }
-# 17335 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 17631 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int list2fpos(typval_T *arg, pos_T *posp, int *fnump, colnr_T *curswantp)
 {
   list_T *l = arg->vval.v_list;
@@ -40341,7 +40768,7 @@ static int get_id_len(char_u **arg)
 
   return len;
 }
-# 17432 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 17728 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static int get_name_len(char_u **arg, char_u **alias, int evaluate, int verbose)
 {
   int len;
@@ -40395,7 +40822,7 @@ static int get_name_len(char_u **arg, char_u **alias, int evaluate, int verbose)
 
   return len;
 }
-# 17494 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 17790 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char_u *find_name_end(char_u *arg, char_u **expr_start, char_u **expr_end, int flags)
 {
   int mb_nest = 0;
@@ -40454,7 +40881,7 @@ static char_u *find_name_end(char_u *arg, char_u **expr_start, char_u **expr_end
 
   return p;
 }
-# 17566 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 17862 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char_u *make_expanded_name(char_u *in_start, char_u *expr_start, char_u *expr_end, char_u *in_end)
 {
   char_u c1;
@@ -40947,7 +41374,7 @@ static void init_tv(typval_T *varp)
   if (varp != ((void*)0))
     __builtin___memset_chk (varp, 0, sizeof(typval_T), __builtin_object_size (varp, 0));
 }
-# 18067 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 18363 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static long get_tv_number(typval_T *varp)
 {
   int error = 0;
@@ -40969,9 +41396,10 @@ long get_tv_number_chk(typval_T *varp, int *denote)
     emsg((char_u *)(libintl_gettext((char *)("E703: Using a Funcref as a Number"))));
     break;
   case 2:
-    if (varp->vval.v_string != ((void*)0))
+    if (varp->vval.v_string != ((void*)0)) {
       vim_str2nr(varp->vval.v_string, ((void*)0), ((void*)0),
-          1, 1, &n, ((void*)0));
+                 (1 + 2 + 4), &n, ((void*)0), 0);
+    }
     return n;
   case 4:
     emsg((char_u *)(libintl_gettext((char *)("E745: Using a List as a Number"))));
@@ -40983,10 +41411,12 @@ long get_tv_number_chk(typval_T *varp, int *denote)
     emsg2((char_u *)(libintl_gettext((char *)(e_intern2))), (char_u *)("get_tv_number()"));
     break;
   }
-  if (denote == ((void*)0))
+  if (denote == ((void*)0)) {
+
     n = -1;
-  else
+  } else {
     *denote = 1;
+  }
   return n;
 }
 
@@ -41024,11 +41454,11 @@ static linenr_T get_tv_lnum_buf(typval_T *argvars, buf_T *buf)
     return buf->b_ml.ml_line_count;
   return get_tv_number_chk(&argvars[0], ((void*)0));
 }
-# 18154 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 18453 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char_u *get_tv_string(const typval_T *varp)
   FUNC_ATTR_NONNULL_ALL FUNC_ATTR_NONNULL_RET
 {
-  static char_u mybuf[30];
+  static char_u mybuf[65];
 
   return get_tv_string_buf(varp, mybuf);
 }
@@ -41045,7 +41475,7 @@ static char_u *get_tv_string_buf(const typval_T *varp, char_u *buf)
 char_u *get_tv_string_chk(const typval_T *varp)
   FUNC_ATTR_NONNULL_ALL
 {
-  static char_u mybuf[30];
+  static char_u mybuf[65];
 
   return get_tv_string_buf_chk(varp, mybuf);
 }
@@ -41079,7 +41509,7 @@ static char_u *get_tv_string_buf_chk(const typval_T *varp, char_u *buf)
   }
   return ((void*)0);
 }
-# 18216 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 18515 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static dictitem_T *find_var(char_u *name, hashtab_T **htp, int no_autoload)
 {
   char_u *varname;
@@ -41304,10 +41734,12 @@ static void vars_clear_ext(hashtab_T *ht, int free_val)
 
 
       v = ((dictitem_T *)((hi)->hi_key - __builtin_offsetof(dictitem_T, di_key)));
-      if (free_val)
+      if (free_val) {
         clear_tv(&v->di_tv);
-      if ((v->di_flags & 4) == 0)
+      }
+      if (v->di_flags & 16) {
         xfree(v);
+      }
     }
   }
   hash_clear(ht);
@@ -41481,7 +41913,7 @@ set_var (
       xfree(v);
       return;
     }
-    v->di_flags = 0;
+    v->di_flags = 16;
   }
 
   if (copy || tv->v_type == 1 || tv->v_type == 6) {
@@ -41595,7 +42027,7 @@ static int tv_check_lock(int lock, char_u *name)
   }
   return 0;
 }
-# 18739 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 19040 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 void copy_tv(typval_T *from, typval_T *to)
 {
   to->v_type = from->v_type;
@@ -41638,7 +42070,7 @@ void copy_tv(typval_T *from, typval_T *to)
     break;
   }
 }
-# 18798 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 19099 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 int var_item_copy(const vimconv_T *const conv,
                   typval_T *const from,
                   typval_T *const to,
@@ -41813,7 +42245,7 @@ void ex_echohl(exarg_T *eap)
   else
     echo_attr = syn_id2attr(id);
 }
-# 18980 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 19281 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 void ex_execute(exarg_T *eap)
 {
   char_u *arg = eap->arg;
@@ -41994,7 +42426,7 @@ void ex_function(exarg_T *eap)
     eap->nextcmd = check_nextcmd(p);
     return;
   }
-# 19175 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 19476 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
   p = eap->arg;
   name = trans_function_name(&p, eap->skip, 0, &fudi);
   paren = (vim_strchr(p, '(') != ((void*)0));
@@ -42430,7 +42862,10 @@ void ex_function(exarg_T *eap)
 
 
     __builtin___strcpy_chk ((char *)(fp->uf_name), (char *)(name), __builtin_object_size ((char *)(fp->uf_name), 2 > 1 ? 1 : 0));
-    hash_add(&func_hashtab, ((fp)->uf_name));
+    if (hash_add(&func_hashtab, ((fp)->uf_name)) == 0) {
+        xfree(fp);
+        goto erret;
+    }
   }
   fp->uf_refcount = 1;
   fp->uf_args = newargs;
@@ -42457,7 +42892,7 @@ ret_free:
   did_emsg |= saved_did_emsg;
   need_wait_return |= saved_wait_return;
 }
-# 19648 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 19952 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 static char_u *
 trans_function_name (
     char_u **pp,
@@ -42712,7 +43147,7 @@ static ufunc_T *find_func(char_u *name)
     return ((ufunc_T *)((hi)->hi_key - (dumuf.uf_name - (char_u *)&dumuf)));
   return ((void*)0);
 }
-# 19920 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 20224 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 int translated_function_exists(char_u *name)
 {
   if (builtin_function(name, -1)) {
@@ -42999,7 +43434,7 @@ char_u *get_user_func_name(expand_T *xp, int idx)
     done = 0;
     hi = func_hashtab.ht_array;
   }
-  (__builtin_expect(!(hi), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 20206, "hi") : (void)0);
+  (__builtin_expect(!(hi), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 20510, "hi") : (void)0);
   if (done < func_hashtab.ht_used) {
     if (done++ > 0)
       ++hi;
@@ -43188,7 +43623,7 @@ call_user_func (
   dictitem_T *v;
   int fixvar_idx = 0;
   int ai;
-  char_u numbuf[30];
+  char_u numbuf[65];
   char_u *name;
   proftime_T wait_start;
   proftime_T call_start;
@@ -43224,7 +43659,7 @@ call_user_func (
 
   fc->breakpoint = dbg_find_breakpoint(0, fp->uf_name, (linenr_T)0);
   fc->dbg_tick = debug_tick;
-# 20440 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 20744 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
   init_var_dict(&fc->l_vars, &fc->l_vars_var, 2);
   if (selfdict != ((void*)0)) {
 
@@ -43290,7 +43725,7 @@ call_user_func (
       v->di_flags = 1 | 4;
     } else {
       v = xmalloc(sizeof(dictitem_T) + strlen((char *)(name)));
-      v->di_flags = 1;
+      v->di_flags = 1 | 4 | 16;
     }
     __builtin___strcpy_chk ((char *)(v->di_key), (char *)(name), __builtin_object_size ((char *)(v->di_key), 2 > 1 ? 1 : 0));
     hash_add(&fc->l_avars.dv_hashtab, ((v)->di_key));
@@ -43615,7 +44050,7 @@ void ex_return(exarg_T *eap)
   if (eap->skip)
     --emsg_skip;
 }
-# 20839 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 21143 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 int do_return(exarg_T *eap, int reanimate, int is_cmd, void *rettv)
 {
   int idx;
@@ -43644,7 +44079,7 @@ int do_return(exarg_T *eap, int reanimate, int is_cmd, void *rettv)
 
 
       if (reanimate) {
-        (__builtin_expect(!(current_funccal->rettv), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 20867, "current_funccal->rettv") : (void)0);
+        (__builtin_expect(!(current_funccal->rettv), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c", 21171, "current_funccal->rettv") : (void)0);
         rettv = current_funccal->rettv;
       }
 
@@ -43860,7 +44295,7 @@ static var_flavour_T var_flavour(char_u *varname)
     return VAR_FLAVOUR_DEFAULT;
   }
 }
-# 21095 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 21399 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 const void *var_shada_iter(const void *const iter, const char **const name,
                            typval_T *rettv)
   FUNC_ATTR_WARN_UNUSED_RESULT FUNC_ATTR_NONNULL_ARG(2, 3)
@@ -44016,7 +44451,15 @@ void ex_oldfiles(exarg_T *eap)
     }
   }
 }
-# 21262 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+
+
+void reset_v_option_vars(void)
+{
+  set_vim_var_string(VV_OPTION_NEW, ((void*)0), -1);
+  set_vim_var_string(VV_OPTION_OLD, ((void*)0), -1);
+  set_vim_var_string(VV_OPTION_TYPE, ((void*)0), -1);
+}
+# 21570 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
 int
 modify_fname (
     char_u *src,
@@ -44043,7 +44486,7 @@ repeat:
 
 
     if ((*fnamep)[0] == '~'
-# 21296 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 21604 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
         ) {
       *fnamep = expand_env_save(*fnamep);
       xfree(*bufp);
@@ -44297,7 +44740,7 @@ char_u *do_string_sub(char_u *str, char_u *pat, char_u *sub, char_u *flags)
         }
         zero_width = regmatch.startp[0];
       }
-# 21557 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 21865 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
       sublen = vim_regsub(&regmatch, sub, tail, 0, 1, 0);
       ga_grow(&ga, (int)((end - tail) + sublen -
                      (regmatch.endp[0] - regmatch.startp[0])));
@@ -44333,8 +44776,13 @@ char_u *do_string_sub(char_u *str, char_u *pat, char_u *sub, char_u *flags)
   return ret;
 }
 
-static inline TerminalJobData *common_job_init(char **argv, ufunc_T *on_stdout,
-    ufunc_T *on_stderr, ufunc_T *on_exit, dict_T *self, _Bool pty)
+static inline TerminalJobData *common_job_init(char **argv,
+                                               ufunc_T *on_stdout,
+                                               ufunc_T *on_stderr,
+                                               ufunc_T *on_exit,
+                                               dict_T *self,
+                                               _Bool pty,
+                                               _Bool detach)
 {
   TerminalJobData *data = xcalloc(1, sizeof(TerminalJobData));
   data->stopped = 0;
@@ -44357,6 +44805,7 @@ static inline TerminalJobData *common_job_init(char **argv, ufunc_T *on_stdout,
   }
   proc->cb = on_process_exit;
   proc->events = data->events;
+  proc->detach = detach;
   return data;
 }
 
@@ -44367,7 +44816,6 @@ static inline _Bool common_job_callbacks(dict_T *vopts, ufunc_T **on_stdout,
   if (get_dict_callback(vopts, "on_stdout", on_stdout)
       && get_dict_callback(vopts, "on_stderr", on_stderr)
       && get_dict_callback(vopts, "on_exit", on_exit)) {
-    vopts->internal_refcount++;
     vopts->dv_refcount++;
     return 1;
   }
@@ -44385,8 +44833,13 @@ static inline _Bool common_job_callbacks(dict_T *vopts, ufunc_T **on_stdout,
 
 static inline _Bool common_job_start(TerminalJobData *data, typval_T *rettv)
 {
-  data->refcount++;
   Process *proc = (Process *)&data->proc;
+  if (proc->type == kProcessTypePty && proc->detach) {
+    emsg2((char_u *)(libintl_gettext((char *)(e_invarg2))), (char_u *)("terminal/pty job cannot be detached"));
+    return 0;
+  }
+
+  data->refcount++;
   char *cmd = xstrdup(proc->argv[0]);
   if (!process_spawn(proc)) {
     emsg2((char_u *)(libintl_gettext((char *)(e_jobspawn))), (char_u *)(cmd));
@@ -44429,7 +44882,6 @@ static inline void free_term_job_data_event(void **argv)
   }
 
   if (data->self) {
-    data->self->internal_refcount--;
     dict_unref(data->self);
   }
   queue_free(data->events);
@@ -44680,7 +45132,7 @@ typval_T eval_call_provider(char *provider, char *method, list_T *arguments)
                   1,
                   ((void*)0));
 
-  arguments->lv_refcount--;
+  list_unref(arguments);
 
   restore_funccal(provider_caller_scope.funccalp);
   provider_caller_scope = saved_provider_caller_scope;
@@ -44691,7 +45143,7 @@ typval_T eval_call_provider(char *provider, char *method, list_T *arguments)
 
 _Bool eval_has_provider(char *name)
 {
-# 21960 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
+# 22277 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.c"
   static int has_clipboard = -1, has_python = -1, has_python3 = -1;
 
   if (!strcmp(name, "clipboard")) {

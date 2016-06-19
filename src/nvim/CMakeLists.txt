@@ -1,4 +1,5 @@
 include(CheckLibraryExists)
+include(CheckCCompilerFlag)
 
 option(USE_GCOV "Enable gcov support" OFF)
 
@@ -41,28 +42,43 @@ include_directories(${GENERATED_DIR})
 include_directories(${GENERATED_INCLUDES_DIR})
 
 file(MAKE_DIRECTORY ${GENERATED_DIR})
-file(MAKE_DIRECTORY ${GENERATED_DIR}/os)
-file(MAKE_DIRECTORY ${GENERATED_DIR}/api)
-file(MAKE_DIRECTORY ${GENERATED_DIR}/api/private)
-file(MAKE_DIRECTORY ${GENERATED_DIR}/msgpack_rpc)
-file(MAKE_DIRECTORY ${GENERATED_DIR}/tui)
-file(MAKE_DIRECTORY ${GENERATED_DIR}/event)
 file(MAKE_DIRECTORY ${GENERATED_INCLUDES_DIR})
-file(MAKE_DIRECTORY ${GENERATED_INCLUDES_DIR}/os)
-file(MAKE_DIRECTORY ${GENERATED_INCLUDES_DIR}/api)
-file(MAKE_DIRECTORY ${GENERATED_INCLUDES_DIR}/api/private)
-file(MAKE_DIRECTORY ${GENERATED_INCLUDES_DIR}/msgpack_rpc)
-file(MAKE_DIRECTORY ${GENERATED_INCLUDES_DIR}/tui)
-file(MAKE_DIRECTORY ${GENERATED_INCLUDES_DIR}/event)
 
-file(GLOB NEOVIM_SOURCES *.c os/*.c api/*.c api/private/*.c msgpack_rpc/*.c
-  tui/*.c event/*.c)
+file(GLOB NEOVIM_SOURCES *.c)
+
+foreach(subdir
+        os
+        api
+        api/private
+        msgpack_rpc
+        tui
+        event
+        eval
+       )
+  if(${subdir} MATCHES "tui" AND NOT FEAT_TUI)
+    continue()
+  endif()
+
+  file(MAKE_DIRECTORY ${GENERATED_DIR}/${subdir})
+  file(MAKE_DIRECTORY ${GENERATED_INCLUDES_DIR}/${subdir})
+  file(GLOB sources ${subdir}/*.c)
+  list(APPEND NEOVIM_SOURCES ${sources})
+endforeach()
+
 file(GLOB_RECURSE NEOVIM_HEADERS *.h)
 file(GLOB UNIT_TEST_FIXTURES ${PROJECT_SOURCE_DIR}/test/unit/fixtures/*.c)
+
+# Sort file lists to ensure generated files are created in the same order from
+# build to build.
+list(SORT NEOVIM_SOURCES)
+list(SORT NEOVIM_HEADERS)
 
 foreach(sfile ${NEOVIM_SOURCES})
   get_filename_component(f ${sfile} NAME)
   if(${f} MATCHES "^(regexp_nfa.c)$")
+    list(APPEND to_remove ${sfile})
+  endif()
+  if(WIN32 AND ${f} MATCHES "^(pty_process_unix.c)$")
     list(APPEND to_remove ${sfile})
   endif()
 endforeach()
@@ -72,23 +88,16 @@ list(REMOVE_ITEM NEOVIM_SOURCES ${to_remove})
 # Handle legacy files that don't yet pass -Wconversion.
 set(CONV_SOURCES
   buffer.c
-  charset.c
   diff.c
   edit.c
   eval.c
-  ex_cmds2.c
   ex_cmds.c
   ex_docmd.c
   ex_getln.c
   fileio.c
-  getchar.c
   mbyte.c
   memline.c
   message.c
-  misc1.c
-  ops.c
-  path.c
-  quickfix.c
   regexp.c
   screen.c
   search.c
@@ -228,7 +237,6 @@ endif()
 list(APPEND NVIM_LINK_LIBRARIES
   ${LIBUV_LIBRARIES}
   ${MSGPACK_LIBRARIES}
-  ${LUAJIT_LIBRARIES}
   ${LIBVTERM_LIBRARIES}
   ${LIBTERMKEY_LIBRARIES}
   ${UNIBILIUM_LIBRARIES}
@@ -256,8 +264,14 @@ install_helper(TARGETS nvim)
 
 if(CLANG_ASAN_UBSAN)
   message(STATUS "Enabling Clang address sanitizer and undefined behavior sanitizer for nvim.")
+  check_c_compiler_flag(-fno-sanitize-recover=all SANITIZE_RECOVER_ALL)
+  if(SANITIZE_RECOVER_ALL)
+    set(SANITIZE_RECOVER -fno-sanitize-recover=all)     # Clang 3.6+
+  else()
+    set(SANITIZE_RECOVER -fno-sanitize-recover)         # Clang 3.5-
+  endif()
   set_property(TARGET nvim APPEND_STRING PROPERTY COMPILE_FLAGS "-DEXITFREE ")
-  set_property(TARGET nvim APPEND_STRING PROPERTY COMPILE_FLAGS "-fno-sanitize-recover -fno-omit-frame-pointer -fno-optimize-sibling-calls -fsanitize=address -fsanitize=undefined -fsanitize-blacklist=${PROJECT_SOURCE_DIR}/.asan-blacklist")
+  set_property(TARGET nvim APPEND_STRING PROPERTY COMPILE_FLAGS "${SANITIZE_RECOVER} -fno-omit-frame-pointer -fno-optimize-sibling-calls -fsanitize=address -fsanitize=undefined -fsanitize-blacklist=${PROJECT_SOURCE_DIR}/src/.asan-blacklist")
   set_property(TARGET nvim APPEND_STRING PROPERTY LINK_FLAGS "-fsanitize=address -fsanitize=undefined ")
 elseif(CLANG_MSAN)
   message(STATUS "Enabling Clang memory sanitizer for nvim.")

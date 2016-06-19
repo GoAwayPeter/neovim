@@ -1,16 +1,20 @@
 require('coxpcall')
-local ffi = require('ffi')
 local lfs = require('lfs')
-local assert = require('luassert')
-local Loop = require('nvim.loop')
-local MsgpackStream = require('nvim.msgpack_stream')
-local AsyncSession = require('nvim.async_session')
+local ChildProcessStream = require('nvim.child_process_stream')
 local Session = require('nvim.session')
+local global_helpers = require('test.helpers')
+
+local check_logs = global_helpers.check_logs
+local neq = global_helpers.neq
+local eq = global_helpers.eq
+local ok = global_helpers.ok
 
 local nvim_prog = os.getenv('NVIM_PROG') or 'build/bin/nvim'
 local nvim_argv = {nvim_prog, '-u', 'NONE', '-i', 'NONE', '-N',
                    '--cmd', 'set shortmess+=I background=light noswapfile noautoindent laststatus=1 undodir=. directory=. viewdir=. backupdir=.',
                    '--embed'}
+
+local mpack = require('mpack')
 
 -- Formulate a path to the directory containing nvim.  We use this to
 -- help run test executables.  It helps to keep the tests working, even
@@ -31,7 +35,7 @@ if os.getenv('VALGRIND') then
   prepend_argv = {'valgrind', '-q', '--tool=memcheck',
                   '--leak-check=yes', '--track-origins=yes',
                   '--show-possibly-lost=no',
-                  '--suppressions=.valgrind.supp',
+                  '--suppressions=src/.valgrind.supp',
                   '--log-file='..log_file}
   if os.getenv('GDB') then
     table.insert(prepend_argv, '--vgdb=yes')
@@ -60,6 +64,9 @@ end
 local session, loop_running, last_error
 
 local function set_session(s)
+  if session then
+    session:close()
+  end
   session = s
 end
 
@@ -133,6 +140,22 @@ local function nvim_eval(expr)
   return request('vim_eval', expr)
 end
 
+local os_name = (function()
+  local name = nil
+  return (function()
+    if not name then
+      if nvim_eval('has("win32")') == 1 then
+        name = 'windows'
+      elseif nvim_eval('has("macunix")') == 1 then
+        name = 'osx'
+      else
+        name = 'unix'
+      end
+    end
+    return name
+  end)
+end)()
+
 local function nvim_call(name, ...)
   return request('vim_call_function', name, {...})
 end
@@ -158,7 +181,7 @@ local function dedent(str)
     return str
   end
   -- create a pattern for the indent
-  indent = indent:gsub('%s', '%%s')
+  indent = indent:gsub('%s', '[ \t]')
   -- strip it from the first line
   str = str:gsub('^'..indent, '')
   -- strip it from the remaining lines
@@ -194,24 +217,17 @@ local function merge_args(...)
 end
 
 local function spawn(argv, merge)
-  local loop = Loop.new()
-  local msgpack_stream = MsgpackStream.new(loop)
-  local async_session = AsyncSession.new(msgpack_stream)
-  local sess = Session.new(async_session)
-  loop:spawn(merge and merge_args(prepend_argv, argv) or argv)
-  return sess
+  local child_stream = ChildProcessStream.spawn(merge and merge_args(prepend_argv, argv) or argv)
+  return Session.new(child_stream)
 end
 
 local function clear(extra_cmd)
-  if session then
-    session:exit(0)
-  end
   local args = {unpack(nvim_argv)}
   if extra_cmd ~= nil then
     table.insert(args, '--cmd')
     table.insert(args, extra_cmd)
   end
-  session = spawn(args)
+  set_session(spawn(args))
 end
 
 local function insert(...)
@@ -247,25 +263,13 @@ end
 
 local function source(code)
   local tmpname = os.tmpname()
-  if ffi.os == 'OSX' and string.match(tmpname, '^/tmp') then
+  if os_name() == 'osx' and string.match(tmpname, '^/tmp') then
    tmpname = '/private'..tmpname
   end
   write_file(tmpname, code)
   nvim_command('source '..tmpname)
   os.remove(tmpname)
   return tmpname
-end
-
-local function eq(expected, actual)
-  return assert.are.same(expected, actual)
-end
-
-local function neq(expected, actual)
-  return assert.are_not.same(expected, actual)
-end
-
-local function ok(expr)
-  assert.is_true(expr)
 end
 
 local function nvim(method, ...)
@@ -305,7 +309,7 @@ local function curbuf_contents()
   -- previously sent keys are processed(vim_eval is a deferred function, and
   -- only processed after all input)
   wait()
-  return table.concat(curbuf('get_line_slice', 0, -1, true, true), '\n')
+  return table.concat(curbuf('get_lines', 0, -1, true), '\n')
 end
 
 local function curwin(method, ...)
@@ -328,24 +332,26 @@ local function expect(contents)
   return eq(dedent(contents), curbuf_contents())
 end
 
-local function os_is_windows()
-  return nvim_eval('has("win32")') == 1
-end
-
 local function rmdir(path)
   if lfs.attributes(path, 'mode') ~= 'directory' then
     return nil
   end
   for file in lfs.dir(path) do
-    if file == '.' or file == '..' then
-      goto continue
+    if file ~= '.' and file ~= '..' then
+      local abspath = path..'/'..file
+      if lfs.attributes(abspath, 'mode') == 'directory' then
+        local ret = rmdir(abspath)  -- recurse
+        if not ret then
+          return nil
+        end
+      else
+        local ret, err = os.remove(abspath)
+        if not ret then
+          error('os.remove: '..err)
+          return nil
+        end
+      end
     end
-    local ret, err = os.remove(path..'/'..file)
-    if not ret then
-      error('os.remove: '..err)
-      return nil
-    end
-    ::continue::
   end
   local ret, err = os.remove(path)
   if not ret then
@@ -399,53 +405,59 @@ local curbufmeths = create_callindex(curbuf)
 local curwinmeths = create_callindex(curwin)
 local curtabmeths = create_callindex(curtab)
 
-return {
-  prepend_argv = prepend_argv,
-  clear = clear,
-  spawn = spawn,
-  dedent = dedent,
-  source = source,
-  rawfeed = rawfeed,
-  insert = insert,
-  feed = feed,
-  execute = execute,
-  eval = nvim_eval,
-  call = nvim_call,
-  command = nvim_command,
-  request = request,
-  next_message = next_message,
-  run = run,
-  stop = stop,
-  eq = eq,
-  neq = neq,
-  expect = expect,
-  ok = ok,
-  nvim = nvim,
-  nvim_async = nvim_async,
-  nvim_prog = nvim_prog,
-  nvim_dir = nvim_dir,
-  buffer = buffer,
-  window = window,
-  tabpage = tabpage,
-  curbuf = curbuf,
-  curwin = curwin,
-  curtab = curtab,
-  curbuf_contents = curbuf_contents,
-  wait = wait,
-  set_session = set_session,
-  write_file = write_file,
-  os_is_windows = os_is_windows,
-  rmdir = rmdir,
-  mkdir = lfs.mkdir,
-  exc_exec = exc_exec,
-  redir_exec = redir_exec,
-  merge_args = merge_args,
-  funcs = funcs,
-  meths = meths,
-  bufmeths = bufmeths,
-  winmeths = winmeths,
-  tabmeths = tabmeths,
-  curbufmeths = curbufmeths,
-  curwinmeths = curwinmeths,
-  curtabmeths = curtabmeths,
-}
+return function(after_each)
+  if after_each then
+    after_each(check_logs)
+  end
+  return {
+    prepend_argv = prepend_argv,
+    clear = clear,
+    spawn = spawn,
+    dedent = dedent,
+    source = source,
+    rawfeed = rawfeed,
+    insert = insert,
+    feed = feed,
+    execute = execute,
+    eval = nvim_eval,
+    call = nvim_call,
+    command = nvim_command,
+    request = request,
+    next_message = next_message,
+    run = run,
+    stop = stop,
+    eq = eq,
+    neq = neq,
+    expect = expect,
+    ok = ok,
+    nvim = nvim,
+    nvim_async = nvim_async,
+    nvim_prog = nvim_prog,
+    nvim_dir = nvim_dir,
+    buffer = buffer,
+    window = window,
+    tabpage = tabpage,
+    curbuf = curbuf,
+    curwin = curwin,
+    curtab = curtab,
+    curbuf_contents = curbuf_contents,
+    wait = wait,
+    set_session = set_session,
+    write_file = write_file,
+    os_name = os_name,
+    rmdir = rmdir,
+    mkdir = lfs.mkdir,
+    exc_exec = exc_exec,
+    redir_exec = redir_exec,
+    merge_args = merge_args,
+    funcs = funcs,
+    meths = meths,
+    bufmeths = bufmeths,
+    winmeths = winmeths,
+    tabmeths = tabmeths,
+    curbufmeths = curbufmeths,
+    curwinmeths = curwinmeths,
+    curtabmeths = curtabmeths,
+    NIL = mpack.NIL,
+  }
+end

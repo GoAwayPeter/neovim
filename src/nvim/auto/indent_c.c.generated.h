@@ -4,6 +4,8 @@
 #include "nvim/func_attr.h"
 #undef DEFINE_FUNC_ATTRIBUTES
 static pos_T *ind_find_start_comment(void);
+static pos_T *ind_find_start_CORS(void);
+static pos_T *find_start_rawstring(int ind_maxcomment);
 static char_u *skip_string(char_u *p);
 static char_u *cin_skipcomment(char_u *s);
 static int cin_nocode(char_u *s);
@@ -31,7 +33,7 @@ static int cin_iswhileofdo(char_u *p, linenr_T lnum );
 static int cin_is_if_for_while_before_offset(char_u *line, int *poffset);
 static int cin_iswhileofdo_end(int terminated);
 static int cin_isbreak(char_u *p);
-static int cin_is_cpp_baseclass(colnr_T *col );
+static int cin_is_cpp_baseclass(cpp_baseclass_cache_T *cached);
 static int get_baseclass_amount(int col);
 static int cin_ends_in(char_u *s, char_u *find, char_u *ignore);
 static int cin_starts_with(char_u *s, char *word);

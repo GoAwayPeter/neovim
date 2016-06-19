@@ -1,6 +1,6 @@
 -- Tests for tag search with !_TAG_FILE_ENCODING.
 
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
 local insert, source, clear, expect, write_file = helpers.insert,
   helpers.source, helpers.clear, helpers.expect, helpers.write_file
 
@@ -24,7 +24,7 @@ describe('tag search with !_TAG_FILE_ENCODING', function()
       ]])
     write_file('test83-tags2',
       '!_TAG_FILE_ENCODING	cp932	//\n' ..
-      '\x82`\x82a\x82b	Xtags2.txt	/\x82`\x82a\x82b\n'
+      '\130`\130a\130b	Xtags2.txt	/\130`\130a\130b\n'
       )
     -- The last file is very long but repetetive and can be generated on the
     -- fly.
@@ -32,7 +32,7 @@ describe('tag search with !_TAG_FILE_ENCODING', function()
       !_TAG_FILE_SORTED	1	//
       !_TAG_FILE_ENCODING	cp932	//
       ]])
-    local line = '	Xtags3.txt	/\x82`\x82a\x82b\n'
+    local line = '	Xtags3.txt	/\130`\130a\130b\n'
     for i = 1, 100 do
       text = text .. 'abc' .. i .. line
     end

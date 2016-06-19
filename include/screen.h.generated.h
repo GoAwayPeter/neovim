@@ -35,6 +35,7 @@ void check_for_delay(int check_msg_scroll);
 int screen_valid(int doclear);
 void screenalloc(_Bool doclear);
 void free_screenlines(void);
+void clear_tab_page_click_defs(StlClickDefinition *const tpcd, const long tpcd_size);
 void screenclear(void);
 void setcursor(void);
 int win_ins_lines(win_T *wp, int row, int line_count, int invalid, int mayclear);

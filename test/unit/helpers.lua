@@ -1,9 +1,12 @@
-local assert = require('luassert')
 local ffi = require('ffi')
 local formatc = require('test.unit.formatc')
 local Set = require('test.unit.set')
 local Preprocess = require('test.unit.preprocess')
 local Paths = require('test.config.paths')
+local global_helpers = require('test.helpers')
+
+local neq = global_helpers.neq
+local eq = global_helpers.eq
 
 -- add some standard header locations
 for _, p in ipairs(Paths.include_paths) do
@@ -28,8 +31,10 @@ local function filter_complex_blocks(body)
   local result = {}
 
   for line in body:gmatch("[^\r\n]+") do
-    if not (string.find(line, "(^)", 1, true) ~= nil or
-      string.find(line, "_ISwupper", 1, true)) then
+    if not (string.find(line, "(^)", 1, true) ~= nil
+            or string.find(line, "_ISwupper", 1, true)
+            or string.find(line, "msgpack_zone_push_finalizer")
+            or string.find(line, "msgpack_unpacker_reserve_buffer")) then
       result[#result + 1] = line
     end
   end
@@ -103,6 +108,11 @@ local function cimport(...)
   -- request a sorted version of the new lines (same relative order as the
   -- original preprocessed file) and feed that to the LuaJIT ffi
   local new_lines = new_cdefs:to_table()
+  if os.getenv('NVIM_TEST_PRINT_CDEF') == '1' then
+    for lnum, line in ipairs(new_lines) do
+      print(lnum, line)
+    end
+  end
   ffi.cdef(table.concat(new_lines, "\n"))
 
   return libnvim
@@ -133,6 +143,7 @@ do
   local time = cimport('./src/nvim/os/time.h')
   time.time_init()
   main.early_init()
+  main.event_init()
 end
 
 -- C constants.
@@ -145,12 +156,8 @@ return {
   cimport = cimport,
   cppimport = cppimport,
   internalize = internalize,
-  eq = function(expected, actual)
-    return assert.are.same(expected, actual)
-  end,
-  neq = function(expected, actual)
-    return assert.are_not.same(expected, actual)
-  end,
+  eq = eq,
+  neq = neq,
   ffi = ffi,
   lib = libnvim,
   cstr = cstr,

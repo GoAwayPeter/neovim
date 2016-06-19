@@ -12,6 +12,9 @@
 #define ARCH_32
 #endif
 
+#define PROJECT_NAME "@PROJECT_NAME@"
+#define LOCALE_INSTALL_DIR "@CMAKE_INSTALL_FULL_LOCALEDIR@"
+
 #cmakedefine HAVE__NSGETENVIRON
 #cmakedefine HAVE_FD_CLOEXEC
 #cmakedefine HAVE_FSEEKO
@@ -46,7 +49,7 @@
 #cmakedefine UNIX
 #cmakedefine USE_FNAME_CASE
 
-#define FEAT_CSCOPE
+#cmakedefine FEAT_TUI
 
 #ifndef UNIT_TESTING
 #cmakedefine HAVE_JEMALLOC
@@ -54,5 +57,6 @@
 
 #cmakedefine HAVE_BE64TOH
 #cmakedefine ORDER_BIG_ENDIAN
+#define ENDIAN_INCLUDE_FILE <@ENDIAN_INCLUDE_FILE@>
 
 #endif  // AUTO_CONFIG_H

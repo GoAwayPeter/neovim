@@ -34,7 +34,6 @@
 #include "nvim/screen.h"
 #include "nvim/strings.h"
 #include "nvim/syntax.h"
-#include "nvim/tempfile.h"
 #include "nvim/ui.h"
 #include "nvim/types.h"
 #include "nvim/os/os.h"
@@ -136,26 +135,6 @@ void mch_free_acl(vim_acl_T aclent)
     return;
 }
 #endif
-
-/*
- * Check what "name" is:
- * NODE_NORMAL: file or directory (or doesn't exist)
- * NODE_WRITABLE: writable device, socket, fifo, etc.
- * NODE_OTHER: non-writable things
- */
-int mch_nodetype(char_u *name)
-{
-  struct stat st;
-
-  if (stat((char *)name, &st))
-    return NODE_NORMAL;
-  if (S_ISREG(st.st_mode) || S_ISDIR(st.st_mode))
-    return NODE_NORMAL;
-  if (S_ISBLK(st.st_mode))      /* block device isn't writable */
-    return NODE_OTHER;
-  /* Everything else is writable? */
-  return NODE_WRITABLE;
-}
 
 void mch_exit(int r)
 {
@@ -597,9 +576,11 @@ int mch_expand_wildcards(int num_pat, char_u **pat, int *num_file,
     if ((dir && !(flags & EW_DIR)) || (!dir && !(flags & EW_FILE)))
       continue;
 
-    /* Skip files that are not executable if we check for that. */
-    if (!dir && (flags & EW_EXEC) && !os_can_exe((*file)[i], NULL))
+    // Skip files that are not executable if we check for that.
+    if (!dir && (flags & EW_EXEC)
+        && !os_can_exe((*file)[i], NULL, !(flags & EW_SHELLCMD))) {
       continue;
+    }
 
     p = xmalloc(STRLEN((*file)[i]) + 1 + dir);
     STRCPY(p, (*file)[i]);

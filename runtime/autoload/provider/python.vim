@@ -1,5 +1,5 @@
 " The Python provider uses a Python host to emulate an environment for running
-" python-vim plugins. See ":help nvim-provider" for more information.
+" python-vim plugins. See ":help provider".
 "
 " Associating the plugin with the Python host is the first step because plugins
 " will be passed as command-line arguments
@@ -24,12 +24,10 @@ if s:prog == ''
   finish
 endif
 
-let s:plugin_path = expand('<sfile>:p:h').'/script_host.py'
-
 " The Python provider plugin will run in a separate instance of the Python
 " host.
 call remote#host#RegisterClone('legacy-python-provider', 'python')
-call remote#host#RegisterPlugin('legacy-python-provider', s:plugin_path, [])
+call remote#host#RegisterPlugin('legacy-python-provider', 'script_host.py', [])
 
 function! provider#python#Call(method, args)
   if s:err != ''

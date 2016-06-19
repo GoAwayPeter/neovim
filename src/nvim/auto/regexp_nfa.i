@@ -1,7 +1,7 @@
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 321 "<built-in>" 3
+# 325 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c" 2
@@ -27,9 +27,9 @@ void __assert_rtn(const char *, const char *, int, const char *) __attribute__((
 # 1 "/usr/include/inttypes.h" 1 3 4
 # 224 "/usr/include/inttypes.h" 3 4
 # 1 "/usr/include/Availability.h" 1 3 4
-# 164 "/usr/include/Availability.h" 3 4
+# 168 "/usr/include/Availability.h" 3 4
 # 1 "/usr/include/AvailabilityInternal.h" 1 3 4
-# 165 "/usr/include/Availability.h" 2 3 4
+# 169 "/usr/include/Availability.h" 2 3 4
 # 225 "/usr/include/inttypes.h" 2 3 4
 
 # 1 "/usr/include/_types.h" 1 3 4
@@ -212,8 +212,8 @@ typedef __uint32_t __darwin_wctype_t;
 typedef __darwin_wchar_t wchar_t;
 # 228 "/usr/include/inttypes.h" 2 3 4
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 1 3 4
-# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 1 3 4
+# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
 # 18 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/sys/_types/_int8_t.h" 1 3 4
@@ -295,7 +295,7 @@ typedef long int intmax_t;
 # 32 "/usr/include/_types/_uintmax_t.h" 3 4
 typedef long unsigned int uintmax_t;
 # 60 "/usr/include/stdint.h" 2 3 4
-# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h" 2 3 4
+# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 2 3 4
 # 230 "/usr/include/inttypes.h" 2 3 4
 
 
@@ -341,11 +341,11 @@ wcstoumax(const wchar_t * restrict __nptr,
    wchar_t ** restrict __endptr,
    int __base);
 # 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdbool.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdbool.h" 1 3 4
 # 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c" 2
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 1 3 4
-# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 1 3 4
+# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 64 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/machine/limits.h" 1 3 4
@@ -362,13 +362,17 @@ wcstoumax(const wchar_t * restrict __nptr,
 # 65 "/usr/include/limits.h" 2 3 4
 # 1 "/usr/include/sys/syslimits.h" 1 3 4
 # 66 "/usr/include/limits.h" 2 3 4
-# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/limits.h" 2 3 4
+# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 2 3 4
 # 12 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 1
-# 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+
+
+
+
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 1
 
 
@@ -1768,7 +1772,7 @@ unsigned long
 unsigned long long
   strtoull(const char *, char **, int);
 
-int system(const char *) __asm("_" "system" ) __attribute__((availability(macosx,introduced=10.0))) ;
+int system(const char *) __asm("_" "system" ) __attribute__((availability(macosx,introduced=10.0))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 size_t wcstombs(char * restrict, const wchar_t * restrict, size_t);
 int wctomb(char *, wchar_t);
 
@@ -1893,7 +1897,7 @@ int cgetset(const char *);
 int cgetstr(char *, const char *, char **);
 int cgetustr(char *, const char *, char **);
 
-int daemon(int, int) __asm("_" "daemon" "$1050") __attribute__((availability(macosx,introduced=10.0,deprecated=10.5,message="Use posix_spawn APIs instead."))) ;
+int daemon(int, int) __asm("_" "daemon" "$1050") __attribute__((availability(macosx,introduced=10.0,deprecated=10.5,message="Use posix_spawn APIs instead."))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 char *devname(dev_t, mode_t);
 char *devname_r(dev_t, mode_t, char *buf, int len);
 char *getbsize(int *, long *);
@@ -2260,6 +2264,8 @@ typedef __darwin_fsfilcnt_t fsfilcnt_t;
 
 
 
+
+
 # 1 "/usr/include/unistd.h" 1 3 4
 # 72 "/usr/include/unistd.h" 3 4
 # 1 "/usr/include/sys/unistd.h" 1 3 4
@@ -2298,13 +2304,13 @@ int close(int) __asm("_" "close" );
 
 int dup(int);
 int dup2(int, int);
-int execl(const char *, const char *, ...) ;
-int execle(const char *, const char *, ...) ;
-int execlp(const char *, const char *, ...) ;
-int execv(const char *, char * const *) ;
-int execve(const char *, char * const *, char * const *) ;
-int execvp(const char *, char * const *) ;
-pid_t fork(void) ;
+int execl(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execle(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execlp(const char *, const char *, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execv(const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execve(const char *, char * const *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int execvp(const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+pid_t fork(void) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 long fpathconf(int, int);
 char *getcwd(char *, size_t);
 gid_t getegid(void);
@@ -2362,7 +2368,7 @@ int getopt(int, char * const [], const char *) __asm("_" "getopt" );
 extern char *optarg;
 extern int optind, opterr, optopt;
 # 536 "/usr/include/unistd.h" 3 4
-__attribute__((deprecated))
+__attribute__((deprecated)) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 
 void *brk(const void *);
 int chroot(const char *) ;
@@ -2411,7 +2417,7 @@ ssize_t pwrite(int, const void *, size_t, off_t) __asm("_" "pwrite" );
 
 
 
-__attribute__((deprecated))
+__attribute__((deprecated)) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 
 void *sbrk(int);
 
@@ -2431,7 +2437,7 @@ void sync(void);
 int truncate(const char *, off_t);
 useconds_t ualarm(useconds_t, useconds_t);
 int usleep(useconds_t) __asm("_" "usleep" );
-pid_t vfork(void) ;
+pid_t vfork(void) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 
 
 int fsync(int) __asm("_" "fsync" );
@@ -2492,9 +2498,9 @@ typedef __darwin_uuid_t uuid_t;
 void _Exit(int) __attribute__((noreturn));
 int accessx_np(const struct accessx_descriptor *, size_t, int *, uid_t);
 int acct(const char *);
-int add_profil(char *, size_t, unsigned long, unsigned int) ;
+int add_profil(char *, size_t, unsigned long, unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 void endusershell(void);
-int execvP(const char *, const char *, char * const *) ;
+int execvP(const char *, const char *, char * const *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 char *fflagstostr(unsigned long);
 int getdomainname(char *, int);
 int getgrouplist(const char *, int, int *, int *);
@@ -2556,7 +2562,7 @@ void setusershell(void);
 int setwgroups_np(int, const uuid_t);
 int strtofflags(char **, unsigned long *, unsigned long *);
 int swapon(const char *);
-int syscall(int, ...) ;
+int syscall(int, ...) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 int ttyslot(void);
 int undelete(const char *);
 int unwhiteout(const char *);
@@ -2571,13 +2577,13 @@ int fgetattrlist(int,void*,void*,size_t,unsigned int) __attribute__((availabilit
 int fsetattrlist(int,void*,void*,size_t,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
 int getattrlist(const char*,void*,void*,size_t,unsigned int) __asm("_" "getattrlist" );
 int setattrlist(const char*,void*,void*,size_t,unsigned int) __asm("_" "setattrlist" );
-int exchangedata(const char*,const char*,unsigned int) ;
-int getdirentriesattr(int,void*,void*,size_t,unsigned int*,unsigned int*,unsigned int*,unsigned int) ;
+int exchangedata(const char*,const char*,unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int getdirentriesattr(int,void*,void*,size_t,unsigned int*,unsigned int*,unsigned int*,unsigned int) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 # 736 "/usr/include/unistd.h" 3 4
 struct fssearchblock;
 struct searchstate;
 
-int searchfs(const char *, struct fssearchblock *, unsigned long *, unsigned int, unsigned int, struct searchstate *) ;
+int searchfs(const char *, struct fssearchblock *, unsigned long *, unsigned int, unsigned int, struct searchstate *) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 int fsctl(const char *,unsigned long,void*,unsigned int);
 int ffsctl(int,unsigned long,void*,unsigned int) __attribute__((availability(macosx,introduced=10.6)));
 
@@ -2588,61 +2594,9 @@ int fsync_volume_np(int, int) __attribute__((availability(macosx,introduced=10.8
 int sync_volume_np(const char *, int) __attribute__((availability(macosx,introduced=10.8)));
 
 extern int optreset;
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
-# 1 "/usr/include/signal.h" 1 3 4
-# 69 "/usr/include/signal.h" 3 4
-extern const char *const sys_signame[32];
-extern const char *const sys_siglist[32];
-
-
-
-int raise(int);
-
-
-
-
-void (*bsd_signal(int, void (*)(int)))(int);
-int kill(pid_t, int) __asm("_" "kill" );
-int killpg(pid_t, int) __asm("_" "killpg" );
-int pthread_kill(pthread_t, int);
-int pthread_sigmask(int, const sigset_t *, sigset_t *) __asm("_" "pthread_sigmask" );
-int sigaction(int, const struct sigaction * restrict,
-     struct sigaction * restrict);
-int sigaddset(sigset_t *, int);
-int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" ) ;
-int sigdelset(sigset_t *, int);
-int sigemptyset(sigset_t *);
-int sigfillset(sigset_t *);
-int sighold(int);
-int sigignore(int);
-int siginterrupt(int, int);
-int sigismember(const sigset_t *, int);
-int sigpause(int) __asm("_" "sigpause" );
-int sigpending(sigset_t *);
-int sigprocmask(int, const sigset_t * restrict, sigset_t * restrict);
-int sigrelse(int);
-void (*sigset(int, void (*)(int)))(int);
-int sigsuspend(const sigset_t *) __asm("_" "sigsuspend" );
-int sigwait(const sigset_t * restrict, int * restrict) __asm("_" "sigwait" );
-
-void psignal(unsigned int, const char *);
-int sigblock(int);
-int sigsetmask(int);
-int sigvec(int, struct sigvec *, struct sigvec *);
-
-
-
-
-
-
-inline __attribute__ ((__always_inline__)) int
-__sigbits(int __signo)
-{
-    return __signo > 32 ? 0 : (1 << (__signo - 1));
-}
-# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-# 101 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h"
+# 39 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h"
 # 1 "/usr/include/string.h" 1 3 4
 # 70 "/usr/include/string.h" 3 4
 void *memchr(const void *, int, size_t);
@@ -2735,13 +2689,28 @@ int flsll(long long) __attribute__((availability(macosx,introduced=10.9)));
 # 186 "/usr/include/string.h" 3 4
 # 1 "/usr/include/secure/_string.h" 1 3 4
 # 187 "/usr/include/string.h" 2 3 4
-# 102 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
-# 95 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
-static inline _Bool ascii_iswhite(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isdigit(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isxdigit(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isspace(int) __attribute__((always_inline)) __attribute__((const));
+# 40 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
+# 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
+# 88 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+static inline _Bool ascii_iswhite(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isxdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isbdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isspace(int)
+  __attribute__((const))
+  __attribute__((always_inline));
 
 
 
@@ -2750,7 +2719,7 @@ static inline _Bool ascii_iswhite(int c)
 {
   return c == ' ' || c == '\t';
 }
-# 117 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+# 125 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 static inline _Bool ascii_isdigit(int c)
 {
   return c >= '0' && c <= '9';
@@ -2764,6 +2733,14 @@ static inline _Bool ascii_isxdigit(int c)
   return (c >= '0' && c <= '9')
          || (c >= 'a' && c <= 'f')
          || (c >= 'A' && c <= 'F');
+}
+
+
+
+
+static inline _Bool ascii_isbdigit(int c)
+{
+  return (c == '0' || c == '1');
 }
 
 
@@ -2784,7 +2761,12 @@ static inline _Bool ascii_isspace(int c)
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h"
+
+
+
+
+
+
 typedef void *vim_acl_T;
 
 
@@ -2811,9 +2793,14 @@ typedef enum {
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 1 3 4
-# 47 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
+# 51 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 3 4
 typedef long int ptrdiff_t;
+# 118 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/__stddef_max_align_t.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/__stddef_max_align_t.h" 3 4
+typedef long double max_align_t;
+# 119 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 2 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 2
 
 
@@ -4595,7 +4582,8 @@ static int nfa_regpiece(void)
 
 
 
-    if ((nfa_re_flags & RE_AUTO) && maxval > minval + 200) {
+
+    if ((nfa_re_flags & RE_AUTO) && (maxval > minval + 200 || maxval > 500)) {
       return FAIL;
     }
 
@@ -4644,7 +4632,7 @@ static int nfa_regpiece(void)
 
   return OK;
 }
-# 1962 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 1963 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int nfa_regconcat(void)
 {
   int cont = TRUE;
@@ -4705,7 +4693,7 @@ static int nfa_regconcat(void)
 
   return OK;
 }
-# 2035 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 2036 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int nfa_regbranch(void)
 {
   int ch;
@@ -4739,7 +4727,7 @@ static int nfa_regbranch(void)
 
   return OK;
 }
-# 2080 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 2081 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int
 nfa_reg (
     int paren
@@ -4792,7 +4780,7 @@ nfa_reg (
 
   return OK;
 }
-# 2484 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 2485 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int *re2post(void)
 {
   if (nfa_reg(REG_NOPAREN) == FAIL)
@@ -4800,7 +4788,7 @@ static int *re2post(void)
   do { if (post_ptr >= post_end) { realloc_post_list(); } *post_ptr++ = NFA_MOPEN; } while (0);
   return post_start;
 }
-# 2501 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 2502 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static nfa_state_T *state_ptr;
 
 
@@ -4826,7 +4814,7 @@ static nfa_state_T *alloc_state(int c, nfa_state_T *out, nfa_state_T *out1)
 
   return s;
 }
-# 2538 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 2539 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static Frag_T frag(nfa_state_T *start, Ptrlist *out)
 {
   Frag_T n;
@@ -4883,7 +4871,7 @@ static Frag_T empty;
 
 static void st_error(int *postfix, int *end, int *p)
 {
-# 2629 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 2630 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   EMSG(_("E874: (NFA) Could not pop the stack !"));
 }
 
@@ -5147,7 +5135,7 @@ static nfa_state_T *post2nfa(int *postfix, int *end, int nfa_calc_size)
 
   if (postfix == ((void*)0))
     return ((void*)0);
-# 2902 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 2903 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   if (nfa_calc_size == FALSE) {
 
     stack = xmalloc((nstate + 1) * sizeof(Frag_T));
@@ -5290,7 +5278,7 @@ static nfa_state_T *post2nfa(int *postfix, int *end, int nfa_calc_size)
     case NFA_OPT_CHARS:
     {
       int n;
-# 3057 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 3058 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
       n = *++p;
       if (nfa_calc_size == TRUE) {
         nstate += n;
@@ -5354,7 +5342,7 @@ static nfa_state_T *post2nfa(int *postfix, int *end, int nfa_calc_size)
 
       if (before)
         n = *++p;
-# 3128 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 3129 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
       if (nfa_calc_size == TRUE) {
         nstate += pattern ? 4 : 2;
         break;
@@ -5635,7 +5623,7 @@ static void nfa_postprocess(nfa_regprog_T *prog)
     }
   }
 }
-# 3467 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 3468 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int nfa_match;
 
 
@@ -5801,7 +5789,7 @@ static int sub_equal(regsub_T *sub1, regsub_T *sub2)
 
   return TRUE;
 }
-# 3659 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 3660 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int
 has_state_with_pos (
     nfa_list_T *l,
@@ -6658,7 +6646,7 @@ static int recursive_regmatch(nfa_state_T *state, nfa_pim_T *pim, nfa_regprog_T 
         reginput = regline;
     }
   }
-# 4523 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4524 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   if (nfa_ll_index == 1) {
 
 
@@ -6697,10 +6685,10 @@ static int recursive_regmatch(nfa_state_T *state, nfa_pim_T *pim, nfa_regprog_T 
   nfa_match = save_nfa_match;
   nfa_endp = save_nfa_endp;
   nfa_listid = save_nfa_listid;
-# 4576 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4577 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   return result;
 }
-# 4586 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4587 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int failure_chance(nfa_state_T *state, int depth)
 {
   int c = state->c;
@@ -6879,50 +6867,56 @@ static int skip_to_start(int c, colnr_T *colp)
 
 static long find_match_text(colnr_T startcol, int regstart, char_u *match_text)
 {
-  colnr_T col = startcol;
-  int c1, c2;
-  int len1, len2;
-  int match;
 
-  for (;; ) {
-    match = TRUE;
-    len2 = MB_CHAR2LEN(regstart);
-    for (len1 = 0; match_text[len1] != '\000'; len1 += MB_CHAR2LEN(c1)) {
-      c1 = PTR2CHAR(match_text + len1);
-      c2 = PTR2CHAR(regline + col + len2);
-      if (c1 != c2 && (!ireg_ic || vim_tolower(c1) != vim_tolower(c2))) {
-        match = FALSE;
+
+  colnr_T col = startcol;
+  int regstart_len = enc_utf8 ? utf_ptr2len(regline + startcol) : MB_PTR2LEN(regline + startcol);
+
+  for (;;) {
+    _Bool match = 1;
+    char_u *s1 = match_text;
+    char_u *s2 = regline + col + regstart_len;
+    while (*s1) {
+      int c1_len = enc_utf8 ? utf_ptr2len(s1) : MB_PTR2LEN(s1);
+      int c1 = PTR2CHAR(s1);
+      int c2_len = enc_utf8 ? utf_ptr2len(s2) : MB_PTR2LEN(s2);
+      int c2 = PTR2CHAR(s2);
+
+      if ((c1 != c2 && (!ireg_ic || vim_tolower(c1) != vim_tolower(c2))) ||
+          c1_len != c2_len) {
+        match = 0;
         break;
       }
-      len2 += MB_CHAR2LEN(c2);
+      s1 += c1_len;
+      s2 += c2_len;
     }
     if (match
 
-        && !(enc_utf8
-             && STRLEN(regline) > (size_t)(col + len2)
-             && utf_iscomposing(PTR2CHAR(regline + col + len2)))
-        ) {
+        && !(enc_utf8 && utf_iscomposing(PTR2CHAR(s2)))) {
       cleanup_subexpr();
       if (REG_MULTI) {
         reg_startpos[0].lnum = reglnum;
         reg_startpos[0].col = col;
         reg_endpos[0].lnum = reglnum;
-        reg_endpos[0].col = col + len2;
+        reg_endpos[0].col = s2 - regline;
       } else {
         reg_startp[0] = regline + col;
-        reg_endp[0] = regline + col + len2;
+        reg_endp[0] = s2;
       }
       return 1L;
     }
 
 
-    col += MB_CHAR2LEN(regstart);
-    if (skip_to_start(regstart, &col) == FAIL)
+    col += regstart_len;
+    if (skip_to_start(regstart, &col) == FAIL) {
       break;
+    }
   }
   return 0L;
+
+
 }
-# 4819 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4826 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *submatch, regsubs_T *m)
 {
   int result;
@@ -6939,7 +6933,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
   int add_count;
   int add_off = 0;
   int toplevel = start->c == NFA_MOPEN;
-# 4845 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4852 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   fast_breakcheck();
   if (got_int)
     return FALSE;
@@ -6952,7 +6946,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
   list[0].len = nstate + 1;
   list[1].t = xmalloc(size);
   list[1].len = nstate + 1;
-# 4873 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4880 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   thislist = &list[0];
   thislist->n = 0;
   thislist->has_pim = FALSE;
@@ -6976,7 +6970,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
     addstate(thislist, start->out, m, ((void*)0), 0);
   } else
     addstate(thislist, start, m, ((void*)0), 0);
-# 4906 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4913 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   for (;; ) {
     int curc;
     int clen;
@@ -7007,14 +7001,14 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
 
     thislist->id = nfa_listid;
     nextlist->id = nfa_listid + 1;
-# 4959 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4966 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
     if (thislist->n == 0)
       break;
 
 
     for (listidx = 0; listidx < thislist->n; ++listidx) {
       t = &thislist->t[listidx];
-# 4991 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 4998 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
       add_state = ((void*)0);
       add_here = 0;
       add_count = 0;
@@ -7045,7 +7039,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       case NFA_END_INVISIBLE:
       case NFA_END_INVISIBLE_NEG:
       case NFA_END_PATTERN:
-# 5050 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 5057 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
         if (nfa_endp != ((void*)0) && (REG_MULTI
                                  ? (reglnum != nfa_endp->se_u.pos.lnum
                                     || (int)(reginput - regline)
@@ -7722,7 +7716,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       case NFA_LNUM:
       case NFA_LNUM_GT:
       case NFA_LNUM_LT:
-        (__builtin_expect(!(t->state->val >= 0 && !((reg_firstlnum > 0 && reglnum > 9223372036854775807L - reg_firstlnum) || (reg_firstlnum <0 && reglnum < (-9223372036854775807L -1L) + reg_firstlnum)) && reglnum + reg_firstlnum >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5729, "t->state->val >= 0 && !((reg_firstlnum > 0 && reglnum > LONG_MAX - reg_firstlnum) || (reg_firstlnum <0 && reglnum < LONG_MIN + reg_firstlnum)) && reglnum + reg_firstlnum >= 0") : (void)0);
+        (__builtin_expect(!(t->state->val >= 0 && !((reg_firstlnum > 0 && reglnum > 9223372036854775807L - reg_firstlnum) || (reg_firstlnum <0 && reglnum < (-9223372036854775807L -1L) + reg_firstlnum)) && reglnum + reg_firstlnum >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5736, "t->state->val >= 0 && !((reg_firstlnum > 0 && reglnum > LONG_MAX - reg_firstlnum) || (reg_firstlnum <0 && reglnum < LONG_MIN + reg_firstlnum)) && reglnum + reg_firstlnum >= 0") : (void)0);
 
 
 
@@ -7739,7 +7733,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       case NFA_COL:
       case NFA_COL_GT:
       case NFA_COL_LT:
-        (__builtin_expect(!(t->state->val >= 0 && reginput >= regline && (uintmax_t)(reginput - regline) <= 18446744073709551615ULL - 1), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5745, "t->state->val >= 0 && reginput >= regline && (uintmax_t)(reginput - regline) <= UINTMAX_MAX - 1") : (void)0);
+        (__builtin_expect(!(t->state->val >= 0 && reginput >= regline && (uintmax_t)(reginput - regline) <= 18446744073709551615ULL - 1), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5752, "t->state->val >= 0 && reginput >= regline && (uintmax_t)(reginput - regline) <= UINTMAX_MAX - 1") : (void)0);
 
 
         result = nfa_re_num_cmp((uintmax_t)t->state->val,
@@ -7778,7 +7772,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
           }
           if (!result) {
             uintmax_t lts = win_linetabsize(wp, regline, col);
-            (__builtin_expect(!(t->state->val >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5782, "t->state->val >= 0") : (void)0);
+            (__builtin_expect(!(t->state->val >= 0), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c", 5789, "t->state->val >= 0") : (void)0);
             result = nfa_re_num_cmp((uintmax_t)t->state->val, op, lts + 1);
           }
           if (result) {
@@ -7873,7 +7867,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
 
 
         if (result && enc_utf8 && !ireg_icombine) {
-          clen = utf_char2len(curc);
+          clen = utf_ptr2len(reginput);
         }
 
         if (result) { add_state = t->state->out; add_off = clen; };
@@ -7919,7 +7913,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
             }
           } else {
             result = (pim->result == 2);
-# 5932 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 5939 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
           }
 
 
@@ -7960,7 +7954,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       }
 
     }
-# 5981 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 5988 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
     if (nfa_match == FALSE
         && ((toplevel
              && reglnum == 0
@@ -8022,7 +8016,7 @@ static int nfa_regmatch(nfa_regprog_T *prog, nfa_state_T *start, regsubs_T *subm
       } else
         addstate(nextlist, start, m, ((void*)0), clen);
     }
-# 6054 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6061 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 nextchar:
 
 
@@ -8074,7 +8068,7 @@ static long nfa_regtry(nfa_regprog_T *prog, colnr_T col)
 
 
   reginput = regline + col;
-# 6123 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6130 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   clear_sub(&subs.norm);
   clear_sub(&m.norm);
   clear_sub(&subs.synt);
@@ -8281,7 +8275,7 @@ static regprog_T *nfa_regcomp(char_u *expr, int re_flags)
             post_end - post_start);
     goto fail;
   }
-# 6353 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6360 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
   post2nfa(postfix, post_ptr, TRUE);
 
 
@@ -8346,7 +8340,7 @@ static void nfa_regfree(regprog_T *prog)
     xfree(prog);
   }
 }
-# 6426 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6433 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static int
 nfa_regexec_nl (
     regmatch_T *rmp,
@@ -8366,7 +8360,7 @@ nfa_regexec_nl (
   ireg_maxcol = 0;
   return nfa_regexec_both(line, col);
 }
-# 6480 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
+# 6487 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp_nfa.c"
 static long nfa_regexec_multi(regmmatch_T *rmp, win_T *win, buf_T *buf,
                               linenr_T lnum, colnr_T col, proftime_T *tm)
 {

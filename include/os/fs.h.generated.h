@@ -9,6 +9,7 @@ int os_dirname(char_u *buf, size_t len) FUNC_ATTR_NONNULL_ALL;
 _Bool os_isdir(const char_u *name) FUNC_ATTR_NONNULL_ALL;
 _Bool os_can_exe(const char_u *name, char_u **abspath) FUNC_ATTR_NONNULL_ARG(1);
 int os_open(const char *path, int flags, int mode) FUNC_ATTR_NONNULL_ALL;
+int os_fsync(int fd);
 int32_t os_getperm(const char_u *name) FUNC_ATTR_NONNULL_ALL;
 int os_setperm(const char_u *name, int perm) FUNC_ATTR_NONNULL_ALL;
 int os_fchown(int file_descriptor, uv_uid_t owner, uv_gid_t group) FUNC_ATTR_NONNULL_ALL;

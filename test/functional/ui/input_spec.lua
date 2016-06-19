@@ -1,4 +1,4 @@
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
 local clear, execute, nvim = helpers.clear, helpers.execute, helpers.nvim
 local feed, next_message, eq = helpers.feed, helpers.next_message, helpers.eq
 local expect = helpers.expect
@@ -25,6 +25,9 @@ describe('mappings', function()
     add_mapping('<s-up>', '<s-up>')
     add_mapping('<c-s-up>', '<c-s-up>')
     add_mapping('<c-s-a-up>', '<c-s-a-up>')
+    add_mapping('<c-s-a-d-up>', '<c-s-a-d-up>')
+    add_mapping('<c-d-a>', '<c-d-a>')
+    add_mapping('<d-1>', '<d-1>')
   end)
 
   it('ok', function()
@@ -37,6 +40,12 @@ describe('mappings', function()
     check_mapping('<s-a-c-up>', '<c-s-a-up>')
     check_mapping('<a-c-s-up>', '<c-s-a-up>')
     check_mapping('<a-s-c-up>', '<c-s-a-up>')
+    check_mapping('<c-s-a-d-up>', '<c-s-a-d-up>')
+    check_mapping('<s-a-d-c-up>', '<c-s-a-d-up>')
+    check_mapping('<d-s-a-c-up>', '<c-s-a-d-up>')
+    check_mapping('<c-d-a>', '<c-d-a>')
+    check_mapping('<d-c-a>', '<c-d-a>')
+    check_mapping('<d-1>', '<d-1>')
   end)
 end)
 

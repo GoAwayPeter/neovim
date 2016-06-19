@@ -56,8 +56,8 @@ CMAKE_BINARY_DIR = /Users/George/Documents/Programs/C/neovim
 # Target rules for target CMakeFiles/benchmark.dir
 
 # All Build rule for target.
-CMakeFiles/benchmark.dir/all: test/functional/fixtures/CMakeFiles/tty-test.dir/all
 CMakeFiles/benchmark.dir/all: src/nvim/CMakeFiles/nvim.dir/all
+CMakeFiles/benchmark.dir/all: test/functional/fixtures/CMakeFiles/tty-test.dir/all
 	$(MAKE) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/depend
 	$(MAKE) -f CMakeFiles/benchmark.dir/build.make CMakeFiles/benchmark.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles 
@@ -88,8 +88,8 @@ clean: CMakeFiles/benchmark.dir/clean
 # Target rules for target CMakeFiles/benchmark-prereqs.dir
 
 # All Build rule for target.
-CMakeFiles/benchmark-prereqs.dir/all: test/functional/fixtures/CMakeFiles/tty-test.dir/all
 CMakeFiles/benchmark-prereqs.dir/all: src/nvim/CMakeFiles/nvim.dir/all
+CMakeFiles/benchmark-prereqs.dir/all: test/functional/fixtures/CMakeFiles/tty-test.dir/all
 	$(MAKE) -f CMakeFiles/benchmark-prereqs.dir/build.make CMakeFiles/benchmark-prereqs.dir/depend
 	$(MAKE) -f CMakeFiles/benchmark-prereqs.dir/build.make CMakeFiles/benchmark-prereqs.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles 
@@ -120,9 +120,9 @@ clean: CMakeFiles/benchmark-prereqs.dir/clean
 # Target rules for target CMakeFiles/functionaltest.dir
 
 # All Build rule for target.
-CMakeFiles/functionaltest.dir/all: test/functional/fixtures/CMakeFiles/tty-test.dir/all
-CMakeFiles/functionaltest.dir/all: test/functional/fixtures/CMakeFiles/shell-test.dir/all
 CMakeFiles/functionaltest.dir/all: src/nvim/CMakeFiles/nvim.dir/all
+CMakeFiles/functionaltest.dir/all: test/functional/fixtures/CMakeFiles/shell-test.dir/all
+CMakeFiles/functionaltest.dir/all: test/functional/fixtures/CMakeFiles/tty-test.dir/all
 	$(MAKE) -f CMakeFiles/functionaltest.dir/build.make CMakeFiles/functionaltest.dir/depend
 	$(MAKE) -f CMakeFiles/functionaltest.dir/build.make CMakeFiles/functionaltest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles 
@@ -153,9 +153,9 @@ clean: CMakeFiles/functionaltest.dir/clean
 # Target rules for target CMakeFiles/functionaltest-prereqs.dir
 
 # All Build rule for target.
-CMakeFiles/functionaltest-prereqs.dir/all: test/functional/fixtures/CMakeFiles/tty-test.dir/all
-CMakeFiles/functionaltest-prereqs.dir/all: test/functional/fixtures/CMakeFiles/shell-test.dir/all
 CMakeFiles/functionaltest-prereqs.dir/all: src/nvim/CMakeFiles/nvim.dir/all
+CMakeFiles/functionaltest-prereqs.dir/all: test/functional/fixtures/CMakeFiles/shell-test.dir/all
+CMakeFiles/functionaltest-prereqs.dir/all: test/functional/fixtures/CMakeFiles/tty-test.dir/all
 	$(MAKE) -f CMakeFiles/functionaltest-prereqs.dir/build.make CMakeFiles/functionaltest-prereqs.dir/depend
 	$(MAKE) -f CMakeFiles/functionaltest-prereqs.dir/build.make CMakeFiles/functionaltest-prereqs.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles 
@@ -1707,43 +1707,43 @@ clean: src/nvim/po/CMakeFiles/translations.dir/clean
 # Target rules for target src/nvim/po/CMakeFiles/update-po.dir
 
 # All Build rule for target.
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-nb.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-zh_CN.cp936.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ko.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-vi.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-zh_CN.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ja.euc-jp.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-af.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-uk.cp1251.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-cs.cp1250.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-pl.UTF-8.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-sk.cp1250.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-pl.cp1250.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ru.cp1251.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ja.sjis.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ca.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-cs.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-de.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-en_GB.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-eo.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-fr.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-fi.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-es.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-eo.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ga.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-en_GB.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-zh_CN.cp936.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ja.euc-jp.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-cs.cp1250.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-pl.cp1250.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-pl.UTF-8.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ko.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ru.cp1251.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-sk.cp1250.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-uk.cp1251.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-sk.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-zh_TW.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-es.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-it.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ko.UTF-8.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ja.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-pt_BR.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-nl.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ko.UTF-8.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-no.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-pt_BR.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-pl.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ru.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-sk.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-sv.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-uk.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-zh_CN.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-vi.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-zh_CN.UTF-8.dir/all
-src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-zh_TW.dir/all
 src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-zh_TW.UTF-8.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-nb.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ca.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-ja.sjis.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-af.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-cs.dir/all
+src/nvim/po/CMakeFiles/update-po.dir/all: src/nvim/po/CMakeFiles/update-po-de.dir/all
 	$(MAKE) -f src/nvim/po/CMakeFiles/update-po.dir/build.make src/nvim/po/CMakeFiles/update-po.dir/depend
 	$(MAKE) -f src/nvim/po/CMakeFiles/update-po.dir/build.make src/nvim/po/CMakeFiles/update-po.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/George/Documents/Programs/C/neovim/CMakeFiles 

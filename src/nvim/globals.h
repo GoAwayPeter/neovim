@@ -4,17 +4,7 @@
 #include <stdbool.h>
 #include <inttypes.h>
 
-// EXTERN is only defined in main.c. That's where global variables are
-// actually defined and initialized.
-#ifndef EXTERN
-# define EXTERN extern
-# define INIT(...)
-#else
-# ifndef INIT
-#  define INIT(...) __VA_ARGS__
-# endif
-#endif
-
+#include "nvim/macros.h"
 #include "nvim/ex_eval.h"
 #include "nvim/iconv.h"
 #include "nvim/mbyte.h"
@@ -99,6 +89,12 @@
 #ifndef VIMRC_FILE
 # define VIMRC_FILE     ".nvimrc"
 #endif
+
+typedef enum {
+  kNone  = -1,
+  kFalse = 0,
+  kTrue  = 1,
+} TriState;
 
 /* Values for "starting" */
 #define NO_SCREEN       2       /* no screen updating yet */
@@ -208,6 +204,10 @@ EXTERN int compl_length INIT(= 0);
  * stop looking for matches. */
 EXTERN int compl_interrupted INIT(= FALSE);
 
+// Set when doing something for completion that may call edit() recursively,
+// which is not allowed. Also used to disable folding during completion
+EXTERN int compl_busy INIT(= false);
+
 /* List of flags for method of completion. */
 EXTERN int compl_cont_status INIT(= 0);
 # define CONT_ADDING    1       /* "normal" or "adding" expansion */
@@ -293,10 +293,11 @@ EXTERN int msg_no_more INIT(= FALSE);       /* don't use more prompt, truncate
 EXTERN char_u   *sourcing_name INIT( = NULL); /* name of error message source */
 EXTERN linenr_T sourcing_lnum INIT(= 0);    /* line number of the source file */
 
-EXTERN int ex_nesting_level INIT(= 0);          /* nesting level */
-EXTERN int debug_break_level INIT(= -1);        /* break below this level */
-EXTERN int debug_did_msg INIT(= FALSE);         /* did "debug mode" message */
-EXTERN int debug_tick INIT(= 0);                /* breakpoint change count */
+EXTERN int ex_nesting_level INIT(= 0);          // nesting level
+EXTERN int debug_break_level INIT(= -1);        // break below this level
+EXTERN int debug_did_msg INIT(= false);         // did "debug mode" message
+EXTERN int debug_tick INIT(= 0);                // breakpoint change count
+EXTERN int debug_backtrace_level INIT(= 0);     // breakpoint backtrace level
 
 /* Values for "do_profiling". */
 #define PROF_NONE       0       /* profiling not started */
@@ -503,6 +504,7 @@ EXTERN int cterm_normal_fg_bold INIT(= 0);
 EXTERN int cterm_normal_bg_color INIT(= 0);
 EXTERN RgbValue normal_fg INIT(= -1);
 EXTERN RgbValue normal_bg INIT(= -1);
+EXTERN RgbValue normal_sp INIT(= -1);
 
 EXTERN int autocmd_busy INIT(= FALSE);          /* Is apply_autocmds() busy? */
 EXTERN int autocmd_no_enter INIT(= FALSE);      /* *Enter autocmds disabled */
@@ -834,8 +836,8 @@ EXTERN int* (*iconv_errno)(void);
 EXTERN int State INIT(= NORMAL);        /* This is the current state of the
                                          * command interpreter. */
 
-EXTERN int finish_op INIT(= FALSE);     /* TRUE while an operator is pending */
-EXTERN long opcount INIT(= 0);          /* count for pending operator */
+EXTERN bool finish_op INIT(= false);    // true while an operator is pending
+EXTERN long opcount INIT(= 0);          // count for pending operator
 
 /*
  * ex mode (Q) state
@@ -912,8 +914,8 @@ EXTERN int KeyTyped;                     // TRUE if user typed current char
 EXTERN int KeyStuffed;                   // TRUE if current char from stuffbuf
 EXTERN int maptick INIT(= 0);            // tick for each non-mapped char
 
-EXTERN char_u chartab[256];             /* table used in charset.c; See
-                                           init_chartab() for explanation */
+EXTERN uint8_t chartab[256];             // table used in charset.c; See
+                                         // init_chartab() for explanation
 
 EXTERN int must_redraw INIT(= 0);           /* type of redraw necessary */
 EXTERN int skip_redraw INIT(= FALSE);       /* skip redraw once */
@@ -1241,7 +1243,6 @@ EXTERN char *ignoredp;
 
 // If a msgpack-rpc channel should be started over stdin/stdout
 EXTERN bool embedded_mode INIT(= false);
-EXTERN Loop loop;
 
 /// Used to track the status of external functions.
 /// Currently only used for iconv().

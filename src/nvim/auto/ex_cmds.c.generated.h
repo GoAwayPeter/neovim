@@ -5,7 +5,7 @@
 #undef DEFINE_FUNC_ATTRIBUTES
 static int linelen(int *has_tab);
 static int sort_compare(const void *s1, const void *s2);
-static void do_filter(linenr_T line1, linenr_T line2, exarg_T *eap, char_u *cmd, int do_in, int do_out );
+static void do_filter(linenr_T line1, linenr_T line2, exarg_T *eap, char_u *cmd, int do_in, int do_out);
 static int check_readonly(int *forceit, buf_T *buf);
 static void delbuf_msg(char_u *name);
 static int help_compare(const void *s1, const void *s2);

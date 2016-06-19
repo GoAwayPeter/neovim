@@ -27,12 +27,6 @@ Error: configure did not run properly.Check auto/config.log.
 # endif
 #endif
 
-
-/* Can't use "PACKAGE" here, conflicts with a Perl include file. */
-#ifndef VIMPACKAGE
-# define VIMPACKAGE     "vim"
-#endif
-
 #include "nvim/os/os_defs.h"       /* bring lots of system header files */
 
 /// length of a buffer to store a number in ASCII (64 bits binary + NUL)
@@ -207,15 +201,6 @@ enum {
 
 #define MAYBE   2           /* sometimes used for a variant on TRUE */
 
-/*
- * Motion types, used for operators and for yank/delete registers.
- */
-#define MCHAR   0               /* character-wise movement/register */
-#define MLINE   1               /* line-wise movement/register */
-#define MBLOCK  2               /* block-wise register */
-
-#define MAUTO   0xff            /* Decide between MLINE/MCHAR */
-
 #define STATUS_HEIGHT   1       /* height of a status line under a window */
 #define QF_WINHEIGHT    10      /* default height for quickfix window */
 
@@ -277,26 +262,11 @@ enum {
 
 # define vim_strpbrk(s, cs) (char_u *)strpbrk((char *)(s), (char *)(cs))
 
-#define MSG(s)                      msg((char_u *)(s))
-#define MSG_ATTR(s, attr)           msg_attr((char_u *)(s), (attr))
-#define EMSG(s)                     emsg((char_u *)(s))
-#define EMSG2(s, p)                 emsg2((char_u *)(s), (char_u *)(p))
-#define EMSG3(s, p, q)              emsg3((char_u *)(s), (char_u *)(p), \
-    (char_u *)(q))
-#define EMSGN(s, n)                 emsgn((char_u *)(s), (int64_t)(n))
-#define EMSGU(s, n)                 emsgu((char_u *)(s), (uint64_t)(n))
-#define OUT_STR(s)                  out_str((char_u *)(s))
-#define OUT_STR_NF(s)               out_str_nf((char_u *)(s))
-#define MSG_PUTS(s)                 msg_puts((char_u *)(s))
-#define MSG_PUTS_ATTR(s, a)         msg_puts_attr((char_u *)(s), (a))
-#define MSG_PUTS_TITLE(s)           msg_puts_title((char_u *)(s))
-#define MSG_PUTS_LONG(s)            msg_puts_long_attr((char_u *)(s), 0)
-#define MSG_PUTS_LONG_ATTR(s, a)    msg_puts_long_attr((char_u *)(s), (a))
+#include "nvim/message.h"
 
-/* Prefer using emsg3(), because perror() may send the output to the wrong
- * destination and mess up the screen. */
-#define PERROR(msg) \
-  (void) emsg3((char_u *) "%s: %s", (char_u *)msg, (char_u *)strerror(errno))
+// Prefer using emsgf(), because perror() may send the output to the wrong
+// destination and mess up the screen.
+#define PERROR(msg) (void) emsgf("%s: %s", msg, strerror(errno))
 
 #define SHOWCMD_COLS 10                 /* columns needed by shown command */
 #define STL_MAX_ITEM 80                 /* max nr of %<flag> in statusline */

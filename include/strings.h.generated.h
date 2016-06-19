@@ -7,6 +7,7 @@ char_u *vim_strsave(const char_u *string) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC
 char_u *vim_strnsave(const char_u *string, size_t len) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC FUNC_ATTR_NONNULL_ALL;
 char_u *vim_strsave_escaped(const char_u *string, const char_u *esc_chars) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC FUNC_ATTR_NONNULL_ALL;
 char_u *vim_strsave_escaped_ext(const char_u *string, const char_u *esc_chars, char_u cc, _Bool bsl) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC FUNC_ATTR_NONNULL_ALL;
+char *vim_strnsave_unquoted(const char *const string, const size_t length) FUNC_ATTR_MALLOC FUNC_ATTR_WARN_UNUSED_RESULT FUNC_ATTR_NONNULL_ALL FUNC_ATTR_NONNULL_RET;
 char_u *vim_strsave_shellescape(const char_u *string, _Bool do_special, _Bool do_newline) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC FUNC_ATTR_NONNULL_ALL;
 char_u *vim_strsave_up(const char_u *string) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC FUNC_ATTR_NONNULL_ALL;
 char_u *vim_strnsave_up(const char_u *string, size_t len) FUNC_ATTR_NONNULL_RET FUNC_ATTR_MALLOC FUNC_ATTR_NONNULL_ALL;

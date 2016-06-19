@@ -22,7 +22,6 @@ static int same_leader(linenr_T lnum, int leader1_len, char_u *leader1_flags, in
 static int ends_in_white(linenr_T lnum);
 static int fmt_check_par(linenr_T lnum, int *leader_len, char_u **leader_flags, int do_comments);
 static void block_prep(oparg_T *oap, struct block_def *bdp, linenr_T lnum, int is_del);
-static void reverse_line(char_u *s);
 static void *get_reg_wrap_one_line(char_u *s, int flags);
 static yankreg_T *init_write_reg(int name, yankreg_T **old_y_previous, _Bool must_append);
 static void finish_write_reg(int name, yankreg_T *reg, yankreg_T *old_y_previous);

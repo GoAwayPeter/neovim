@@ -20,9 +20,6 @@
 " If cleanup after each Test_ function is needed, define a TearDown function.
 " It will be called after each Test_ function.
 
-" Without the +eval feature we can't run these tests, bail out.
-so small.vim
-
 " Check that the screen size is at least 24 x 80 characters.
 if &lines < 24 || &columns < 80 
   let error = 'Screen size too small! Tests require at least 24 lines with 80 characters'
@@ -33,6 +30,15 @@ if &lines < 24 || &columns < 80
   cquit
 endif
 
+" This also enables use of line continuation.
+set viminfo+=nviminfo
+
+" Avoid stopping at the "hit enter" prompt
+set nomore
+
+" Output all messages in English.
+lang mess C
+
 " Source the test script.  First grab the file name, in case the script
 " navigates away.
 let testname = expand('%')
@@ -40,20 +46,28 @@ let done = 0
 let fail = 0
 let errors = []
 let messages = []
-try
+if expand('%') =~ 'test_viml.vim'
+  " this test has intentional errors, don't use try/catch.
   source %
-catch
-  let fail += 1
-  call add(errors, 'Caught exception: ' . v:exception . ' @ ' . v:throwpoint)
-endtry
+else
+  try
+    source %
+  catch
+    let fail += 1
+    call add(errors, 'Caught exception: ' . v:exception . ' @ ' . v:throwpoint)
+  endtry
+endif
 
 " Locate Test_ functions and execute them.
+set nomore
 redir @q
-function /^Test_
+silent function /^Test_
 redir END
 let tests = split(substitute(@q, 'function \(\k*()\)', '\1', 'g'))
 
-for test in tests
+" Execute the tests in alphabetical order.
+for test in sort(tests)
+  echo 'Executing ' . test
   if exists("*SetUp")
     call SetUp()
   endif

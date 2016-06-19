@@ -139,6 +139,7 @@ void var_set_global(const char *const name, typval_T vartv);
 int store_session_globals(FILE *fd);
 void last_set_msg(scid_T scriptID);
 void ex_oldfiles(exarg_T *eap);
+void reset_v_option_vars(void);
 int modify_fname(char_u *src, size_t *usedlen, char_u **fnamep, char_u **bufp, size_t *fnamelen );
 char_u *do_string_sub(char_u *str, char_u *pat, char_u *sub, char_u *flags);
 typval_T eval_call_provider(char *provider, char *method, list_T *arguments);

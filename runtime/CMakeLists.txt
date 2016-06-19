@@ -26,22 +26,25 @@ foreach(DF ${DOCFILES})
   list(APPEND BUILDDOCFILES ${GENERATED_RUNTIME_DIR}/doc/${F})
 endforeach()
 
-add_custom_command(OUTPUT copy_docfiles
-    COMMAND ${CMAKE_COMMAND} -E copy_directory
+add_custom_target(helptags
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
     ${PROJECT_SOURCE_DIR}/runtime/doc ${GENERATED_RUNTIME_DIR}/doc
+  COMMAND "${PROJECT_BINARY_DIR}/bin/nvim"
+    -u NONE -i NONE -e --headless -c "helptags ++t doc" -c quit
+  DEPENDS
+    nvim
+  WORKING_DIRECTORY "${GENERATED_RUNTIME_DIR}"
 )
 
 add_custom_command(OUTPUT ${GENERATED_HELP_TAGS}
-  COMMAND "${PROJECT_BINARY_DIR}/bin/nvim"
-    -u NONE
-    -i NONE
-    -es
-    --headless
-    -c "helptags ++t ."
-    -c quit
   DEPENDS
-    copy_docfiles
-    nvim
+    helptags
+)
+
+add_custom_target(doc_html
+  COMMAND make html
+  DEPENDS
+    ${GENERATED_HELP_TAGS}
   WORKING_DIRECTORY "${GENERATED_RUNTIME_DIR}/doc"
 )
 

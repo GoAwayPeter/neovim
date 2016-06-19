@@ -17,7 +17,7 @@ static void handle_tag(char_u *tagname);
 static void check_tty(mparm_T *parmp);
 static void read_stdin(void);
 static void create_windows(mparm_T *parmp);
-static void edit_buffers(mparm_T *parmp);
+static void edit_buffers(mparm_T *parmp, char_u *cwd);
 static void exe_pre_commands(mparm_T *parmp);
 static void exe_commands(mparm_T *parmp);
 static _Bool do_user_initialization(void) FUNC_ATTR_WARN_UNUSED_RESULT;

@@ -47,8 +47,18 @@ elseif exists('$DISPLAY') && executable('xclip')
   let s:paste['+'] = 'xclip -o -selection clipboard'
   let s:copy['*'] = 'xclip -quiet -i -selection primary'
   let s:paste['*'] = 'xclip -o -selection primary'
+elseif executable('lemonade')
+  let s:copy['+'] = 'lemonade copy'
+  let s:paste['+'] = 'lemonade paste'
+  let s:copy['*'] = 'lemonade copy'
+  let s:paste['*'] = 'lemonade paste'
+elseif executable('doitclient')
+  let s:copy['+'] = 'doitclient wclip'
+  let s:paste['+'] = 'doitclient wclip -r'
+  let s:copy['*'] = s:copy['+']
+  let s:paste['*'] = s:paste['+']
 else
-  echom 'clipboard: No clipboard tool available. See :help nvim-clipboard'
+  echom 'clipboard: No clipboard tool available. See :help clipboard'
   finish
 endif
 
@@ -84,6 +94,7 @@ function! s:clipboard.set(lines, regtype, reg)
   let selection.data = [a:lines, a:regtype]
   let argv = split(s:copy[a:reg], " ")
   let selection.detach = s:cache_enabled
+  let selection.cwd = "/"
   let jobid = jobstart(argv, selection)
   if jobid <= 0
     echohl WarningMsg

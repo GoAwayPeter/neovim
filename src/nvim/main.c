@@ -120,6 +120,8 @@ typedef struct {
 # include "main.c.generated.h"
 #endif
 
+Loop main_loop;
+
 static char *argv0;
 
 // Error messages
@@ -133,7 +135,7 @@ static const char *err_extra_cmd =
 
 void event_init(void)
 {
-  loop_init(&loop, NULL);
+  loop_init(&main_loop, NULL);
   // early msgpack-rpc initialization
   msgpack_rpc_init_method_table();
   msgpack_rpc_helpers_init();
@@ -151,19 +153,20 @@ void event_init(void)
 
 void event_teardown(void)
 {
-  if (!loop.events) {
+  if (!main_loop.events) {
     return;
   }
 
-  queue_process_events(loop.events);
+  queue_process_events(main_loop.events);
   input_stop();
   channel_teardown();
-  process_teardown(&loop);
+  process_teardown(&main_loop);
+  timer_teardown();
   server_teardown();
   signal_teardown();
   terminal_teardown();
 
-  loop_close(&loop);
+  loop_close(&main_loop);
 }
 
 /// Performs early initialization.
@@ -238,8 +241,8 @@ int main(int argc, char **argv)
   check_and_set_isatty(&params);
 
   // Get the name with which Nvim was invoked, with and without path.
-  set_vim_var_string(VV_PROGPATH, (char_u *)argv[0], -1);
-  set_vim_var_string(VV_PROGNAME, path_tail((char_u *)argv[0]), -1);
+  set_vim_var_string(VV_PROGPATH, argv[0], -1);
+  set_vim_var_string(VV_PROGNAME, (char *) path_tail((char_u *) argv[0]), -1);
 
   event_init();
   /*
@@ -317,20 +320,30 @@ int main(int argc, char **argv)
   }
 
   // open terminals when opening files that start with term://
-  do_cmdline_cmd("autocmd BufReadCmd term://* "
+#define PROTO "term://"
+  do_cmdline_cmd("autocmd BufReadCmd " PROTO "* nested "
                  ":call termopen( "
                  // Capture the command string
                  "matchstr(expand(\"<amatch>\"), "
-                 "'\\c\\mterm://\\%(.\\{-}//\\%(\\d\\+:\\)\\?\\)\\?\\zs.*'), "
+                 "'\\c\\m" PROTO "\\%(.\\{-}//\\%(\\d\\+:\\)\\?\\)\\?\\zs.*'), "
                  // capture the working directory
                  "{'cwd': get(matchlist(expand(\"<amatch>\"), "
-                 "'\\c\\mterm://\\(.\\{-}\\)//'), 1, '')})");
+                 "'\\c\\m" PROTO "\\(.\\{-}\\)//'), 1, '')})");
+#undef PROTO
 
   /* Execute --cmd arguments. */
   exe_pre_commands(&params);
 
   /* Source startup scripts. */
   source_startup_scripts(&params);
+
+  // If using the runtime (-u is not NONE), enable syntax & filetype plugins.
+  if (params.use_vimrc == NULL || strcmp(params.use_vimrc, "NONE") != 0) {
+    // Does ":filetype plugin indent on".
+    filetype_maybe_enable();
+    // Sources syntax/syntax.vim, which calls `:filetype on`.
+    syn_maybe_on();
+  }
 
   /*
    * Read all the plugin files.
@@ -649,6 +662,9 @@ static void init_locale(void)
   setlocale(LC_NUMERIC, "C");
 # endif
 
+# ifdef LOCALE_INSTALL_DIR    // gnu/linux standard: $prefix/share/locale
+  bindtextdomain(PROJECT_NAME, LOCALE_INSTALL_DIR);
+# else                        // old vim style: $runtime/lang
   {
     char_u  *p;
 
@@ -657,11 +673,12 @@ static void init_locale(void)
     p = (char_u *)vim_getenv("VIMRUNTIME");
     if (p != NULL && *p != NUL) {
       vim_snprintf((char *)NameBuff, MAXPATHL, "%s/lang", p);
-      bindtextdomain(VIMPACKAGE, (char *)NameBuff);
+      bindtextdomain(PROJECT_NAME, (char *)NameBuff);
     }
     xfree(p);
-    textdomain(VIMPACKAGE);
   }
+# endif
+  textdomain(PROJECT_NAME);
   TIME_MSG("locale set");
 }
 #endif
@@ -739,6 +756,7 @@ static void command_line_scan(mparm_T *parmp)
               putchar(b->data[i]);
             }
 
+            msgpack_packer_free(p);
             mch_exit(0);
           } else if (STRICMP(argv[0] + argv_idx, "headless") == 0) {
             parmp->headless = true;
@@ -1126,10 +1144,11 @@ scripterror:
   /* If there is a "+123" or "-c" command, set v:swapcommand to the first
    * one. */
   if (parmp->n_commands > 0) {
-    p = xmalloc(STRLEN(parmp->commands[0]) + 3);
-    sprintf((char *)p, ":%s\r", parmp->commands[0]);
-    set_vim_var_string(VV_SWAPCOMMAND, p, -1);
-    xfree(p);
+    const size_t swcmd_len = STRLEN(parmp->commands[0]) + 3;
+    char *const swcmd = xmalloc(swcmd_len);
+    snprintf(swcmd, swcmd_len, ":%s\r", parmp->commands[0]);
+    set_vim_var_string(VV_SWAPCOMMAND, swcmd, -1);
+    xfree(swcmd);
   }
   TIME_MSG("parsing arguments");
 }

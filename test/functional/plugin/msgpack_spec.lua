@@ -1,6 +1,9 @@
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
+local meths = helpers.meths
 local eq, nvim_eval, nvim_command, exc_exec =
   helpers.eq, helpers.eval, helpers.command, helpers.exc_exec
+local ok = helpers.ok
+local NIL = helpers.NIL
 
 local plugin_helpers = require('test.functional.plugin.helpers')
 local reset = plugin_helpers.reset
@@ -21,10 +24,8 @@ describe('In autoload/msgpack.vim', function()
   end
 
   local nan = -(1.0/0.0-1.0/0.0)
-  local minus_nan = 1.0/0.0-1.0/0.0
   local inf = 1.0/0.0
   local minus_inf = -(1.0/0.0)
-  local has_minus_nan = tostring(nan) ~= tostring(minus_nan)
 
   describe('function msgpack#equal', function()
     local msgpack_eq = function(expected, a, b)
@@ -160,9 +161,9 @@ describe('In autoload/msgpack.vim', function()
     it('compares raw floats correctly', function()
       msgpack_eq(1, '0.0', '0.0')
       msgpack_eq(1, '(1.0/0.0-1.0/0.0)', '(1.0/0.0-1.0/0.0)')
-      if has_minus_nan then
-        msgpack_eq(0, '(1.0/0.0-1.0/0.0)', '-(1.0/0.0-1.0/0.0)')
-      end
+      -- both (1.0/0.0-1.0/0.0) and -(1.0/0.0-1.0/0.0) now return
+      -- str2float('nan'). ref: @18d1ba3422d
+      msgpack_eq(1, '(1.0/0.0-1.0/0.0)', '-(1.0/0.0-1.0/0.0)')
       msgpack_eq(1, '-(1.0/0.0-1.0/0.0)', '-(1.0/0.0-1.0/0.0)')
       msgpack_eq(1, '1.0/0.0', '1.0/0.0')
       msgpack_eq(1, '-(1.0/0.0)', '-(1.0/0.0)')
@@ -178,10 +179,8 @@ describe('In autoload/msgpack.vim', function()
     it('compares float specials with raw floats correctly', function()
       msgpack_eq(1, sp('float', '0.0'), '0.0')
       msgpack_eq(1, sp('float', '(1.0/0.0-1.0/0.0)'), '(1.0/0.0-1.0/0.0)')
-      if has_minus_nan then
-        msgpack_eq(0, sp('float', '(1.0/0.0-1.0/0.0)'), '-(1.0/0.0-1.0/0.0)')
-        msgpack_eq(0, sp('float', '-(1.0/0.0-1.0/0.0)'), '(1.0/0.0-1.0/0.0)')
-      end
+      msgpack_eq(1, sp('float', '(1.0/0.0-1.0/0.0)'), '-(1.0/0.0-1.0/0.0)')
+      msgpack_eq(1, sp('float', '-(1.0/0.0-1.0/0.0)'), '(1.0/0.0-1.0/0.0)')
       msgpack_eq(1, sp('float', '-(1.0/0.0-1.0/0.0)'), '-(1.0/0.0-1.0/0.0)')
       msgpack_eq(1, sp('float', '1.0/0.0'), '1.0/0.0')
       msgpack_eq(1, sp('float', '-(1.0/0.0)'), '-(1.0/0.0)')
@@ -207,10 +206,8 @@ describe('In autoload/msgpack.vim', function()
       msgpack_eq(0, sp('float', '0.0'), sp('float', '-(1.0/0.0)'))
       msgpack_eq(0, sp('float', '1.0/0.0'), sp('float', '-(1.0/0.0)'))
       msgpack_eq(0, sp('float', '(1.0/0.0-1.0/0.0)'), sp('float', '-(1.0/0.0)'))
-      if has_minus_nan then
-        msgpack_eq(0, sp('float', '(1.0/0.0-1.0/0.0)'),
-                      sp('float', '-(1.0/0.0-1.0/0.0)'))
-      end
+      msgpack_eq(1, sp('float', '(1.0/0.0-1.0/0.0)'),
+                    sp('float', '-(1.0/0.0-1.0/0.0)'))
       msgpack_eq(1, sp('float', '-(1.0/0.0-1.0/0.0)'),
                     sp('float', '-(1.0/0.0-1.0/0.0)'))
       msgpack_eq(0, sp('float', '(1.0/0.0-1.0/0.0)'), sp('float', '1.0/0.0'))
@@ -392,9 +389,7 @@ describe('In autoload/msgpack.vim', function()
       string_eq('0.0', sp('float', '0.0'))
       string_eq('inf', sp('float', '(1.0/0.0)'))
       string_eq('-inf', sp('float', '-(1.0/0.0)'))
-      if has_minus_nan then
-        string_eq('-nan', sp('float', '(1.0/0.0-1.0/0.0)'))
-      end
+      string_eq('nan', sp('float', '(1.0/0.0-1.0/0.0)'))
       string_eq('nan', sp('float', '-(1.0/0.0-1.0/0.0)'))
       string_eq('FALSE', sp('boolean', '0'))
       string_eq('TRUE', sp('boolean', '1'))
@@ -413,10 +408,14 @@ describe('In autoload/msgpack.vim', function()
       string_eq('0.0', '0.0')
       string_eq('inf', '(1.0/0.0)')
       string_eq('-inf', '-(1.0/0.0)')
-      if has_minus_nan then
-        string_eq('-nan', '(1.0/0.0-1.0/0.0)')
-      end
+      string_eq('nan', '(1.0/0.0-1.0/0.0)')
       string_eq('nan', '-(1.0/0.0-1.0/0.0)')
+    end)
+
+    it('works for special v: values like v:true', function()
+      string_eq('TRUE', 'v:true')
+      string_eq('FALSE', 'v:false')
+      string_eq('NIL', 'v:null')
     end)
   end)
 
@@ -532,6 +531,20 @@ describe('In autoload/msgpack.vim', function()
       eq(2.0, nvim_eval('flt2'))
       eq('abc', nvim_eval('bin2'))
     end)
+
+    it('works for special v: values like v:true', function()
+      meths.set_var('true', true)
+      meths.set_var('false', false)
+      meths.set_var('nil', NIL)
+
+      nvim_command('let true2 = msgpack#deepcopy(true)')
+      nvim_command('let false2 = msgpack#deepcopy(false)')
+      nvim_command('let nil2 = msgpack#deepcopy(nil)')
+
+      eq(true, meths.get_var('true'))
+      eq(false, meths.get_var('false'))
+      eq(NIL, meths.get_var('nil'))
+    end)
   end)
 
   describe('function msgpack#eval', function()
@@ -547,8 +560,11 @@ describe('In autoload/msgpack.vim', function()
       end
       if expected_val_full == expected_val_full then
         eq(expected_val_full, nvim_eval('g:__val'))
-      else
-        eq(tostring(expected_val_full), tostring(nvim_eval('g:__val')))
+      else -- NaN
+        local nvim_nan = tostring(nvim_eval('g:__val'))
+        -- -NaN is a hardware-specific detail, there's no need to test for it.
+        -- Accept ether 'nan' or '-nan' as the response.
+        ok(nvim_nan == 'nan' or nvim_nan == '-nan')
       end
       nvim_command('unlet g:__val')
     end
@@ -615,7 +631,6 @@ describe('In autoload/msgpack.vim', function()
       eval_eq('float', inf, 'inf')
       eval_eq('float', minus_inf, '-inf')
       eval_eq('float', nan, 'nan')
-      eval_eq('float', minus_nan, '-nan')
       eval_eq('float', 1.0e10, '1.0e10')
       eval_eq('float', 1.0e10, '1.0e+10')
       eval_eq('float', -1.0e10, '-1.0e+10')

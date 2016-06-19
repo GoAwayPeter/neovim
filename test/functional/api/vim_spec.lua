@@ -1,9 +1,12 @@
 -- Sanity checks for vim_* API calls via msgpack-rpc
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
 local Screen = require('test.functional.ui.screen')
+local NIL = helpers.NIL
 local clear, nvim, eq, neq = helpers.clear, helpers.nvim, helpers.eq, helpers.neq
 local ok, nvim_async, feed = helpers.ok, helpers.nvim_async, helpers.feed
-local os_is_windows = helpers.os_is_windows
+local os_name = helpers.os_name
+local meths = helpers.meths
+local funcs = helpers.funcs
 
 describe('vim_* functions', function()
   before_each(clear)
@@ -17,7 +20,7 @@ describe('vim_* functions', function()
       nvim('command', 'w')
       local f = io.open(fname)
       ok(f ~= nil)
-      if os_is_windows() then
+      if os_name() == 'windows' then
         eq('testing\r\napi\r\n', f:read('*a'))
       else
         eq('testing\napi\n', f:read('*a'))
@@ -70,18 +73,29 @@ describe('vim_* functions', function()
     end)
   end)
 
-  describe('{get,set}_var', function()
+  describe('{get,set,del}_var', function()
     it('works', function()
       nvim('set_var', 'lua', {1, 2, {['3'] = 1}})
       eq({1, 2, {['3'] = 1}}, nvim('get_var', 'lua'))
       eq({1, 2, {['3'] = 1}}, nvim('eval', 'g:lua'))
+      eq(1, funcs.exists('g:lua'))
+      meths.del_var('lua')
+      eq(0, funcs.exists('g:lua'))
     end)
 
     it('set_var returns the old value', function()
       local val1 = {1, 2, {['3'] = 1}}
       local val2 = {4, 7}
-      eq(nil, nvim('set_var', 'lua', val1))
+      eq(NIL, nvim('set_var', 'lua', val1))
       eq(val1, nvim('set_var', 'lua', val2))
+    end)
+
+    it('del_var returns the old value', function()
+      local val1 = {1, 2, {['3'] = 1}}
+      local val2 = {4, 7}
+      eq(NIL, meths.set_var('lua', val1))
+      eq(val1, meths.set_var('lua', val2))
+      eq(val2, meths.del_var('lua'))
     end)
 
     it('truncates values with NULs in them', function()
@@ -144,15 +158,23 @@ describe('vim_* functions', function()
 
   describe('replace_termcodes', function()
     it('escapes K_SPECIAL as K_SPECIAL KS_SPECIAL KE_FILLER', function()
-      eq(helpers.nvim('replace_termcodes', '\128', true, true, true), '\128\254X')
+      eq('\128\254X', helpers.nvim('replace_termcodes', '\128', true, true, true))
     end)
 
-    it('leaves non K_SPECIAL string unchanged', function()
-      eq(helpers.nvim('replace_termcodes', 'abc', true, true, true), 'abc')
+    it('leaves non-K_SPECIAL string unchanged', function()
+      eq('abc', helpers.nvim('replace_termcodes', 'abc', true, true, true))
     end)
 
     it('converts <expressions>', function()
-      eq(helpers.nvim('replace_termcodes', '<Leader>', true, true, true), '\\')
+      eq('\\', helpers.nvim('replace_termcodes', '<Leader>', true, true, true))
+    end)
+
+    it('converts <LeftMouse> to K_SPECIAL KS_EXTRA KE_LEFTMOUSE', function()
+      -- K_SPECIAL KS_EXTRA KE_LEFTMOUSE
+      -- 0x80      0xfd     0x2c
+      -- 128       253      44
+      eq('\128\253\44', helpers.nvim('replace_termcodes',
+                                     '<LeftMouse>', true, true, true))
     end)
   end)
 

@@ -5,7 +5,7 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
-# 89 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 81 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 # 1 "/usr/include/assert.h" 1 3 4
 # 42 "/usr/include/assert.h" 3 4
 # 1 "/usr/include/sys/cdefs.h" 1 3 4
@@ -18,27 +18,13 @@
 # 43 "/usr/include/assert.h" 2 3 4
 # 76 "/usr/include/assert.h" 3 4
 void __assert_rtn(const char *, const char *, int, const char *) __attribute__((noreturn));
-# 90 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
-# 1 "/usr/include/errno.h" 1 3 4
-# 23 "/usr/include/errno.h" 3 4
-# 1 "/usr/include/sys/errno.h" 1 3 4
-# 76 "/usr/include/sys/errno.h" 3 4
-# 1 "/usr/include/sys/_types/_errno_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_errno_t.h" 3 4
-typedef int errno_t;
-# 77 "/usr/include/sys/errno.h" 2 3 4
-
-
-
-extern int * __error(void);
-# 24 "/usr/include/errno.h" 2 3 4
-# 91 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 82 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/usr/include/inttypes.h" 1 3 4
 # 224 "/usr/include/inttypes.h" 3 4
 # 1 "/usr/include/Availability.h" 1 3 4
-# 164 "/usr/include/Availability.h" 3 4
+# 168 "/usr/include/Availability.h" 3 4
 # 1 "/usr/include/AvailabilityInternal.h" 1 3 4
-# 165 "/usr/include/Availability.h" 2 3 4
+# 169 "/usr/include/Availability.h" 2 3 4
 # 225 "/usr/include/inttypes.h" 2 3 4
 
 # 1 "/usr/include/_types.h" 1 3 4
@@ -221,8 +207,8 @@ typedef __uint32_t __darwin_wctype_t;
 typedef __darwin_wchar_t wchar_t;
 # 228 "/usr/include/inttypes.h" 2 3 4
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 1 3 4
-# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 1 3 4
+# 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 3 4
 # 1 "/usr/include/stdint.h" 1 3 4
 # 18 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/sys/_types/_int8_t.h" 1 3 4
@@ -304,7 +290,7 @@ typedef long int intmax_t;
 # 32 "/usr/include/_types/_uintmax_t.h" 3 4
 typedef long unsigned int uintmax_t;
 # 60 "/usr/include/stdint.h" 2 3 4
-# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdint.h" 2 3 4
+# 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdint.h" 2 3 4
 # 230 "/usr/include/inttypes.h" 2 3 4
 
 
@@ -349,9 +335,9 @@ extern uintmax_t
 wcstoumax(const wchar_t * restrict __nptr,
    wchar_t ** restrict __endptr,
    int __base);
-# 92 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdbool.h" 1 3 4
-# 93 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 83 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdbool.h" 1 3 4
+# 84 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 64 "/usr/include/string.h" 3 4
 # 1 "/usr/include/sys/_types/_size_t.h" 1 3 4
@@ -409,7 +395,10 @@ char *strsignal(int sig);
 # 30 "/usr/include/sys/_types/_rsize_t.h" 3 4
 typedef __darwin_size_t rsize_t;
 # 142 "/usr/include/string.h" 2 3 4
-
+# 1 "/usr/include/sys/_types/_errno_t.h" 1 3 4
+# 30 "/usr/include/sys/_types/_errno_t.h" 3 4
+typedef int errno_t;
+# 143 "/usr/include/string.h" 2 3 4
 
 
 errno_t memset_s(void *, rsize_t, int, rsize_t) __attribute__((availability(macosx,introduced=10.9)));
@@ -482,12 +471,19 @@ int flsll(long long) __attribute__((availability(macosx,introduced=10.9)));
 # 1 "/usr/include/secure/_common.h" 1 3 4
 # 34 "/usr/include/secure/_string.h" 2 3 4
 # 187 "/usr/include/string.h" 2 3 4
-# 94 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 85 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 1
-# 11 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+
+
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/types.h"
+
+
+
+
+
+
 typedef void *vim_acl_T;
 
 
@@ -496,7 +492,7 @@ typedef unsigned char char_u;
 
 
 typedef uint32_t u8char_T;
-# 12 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/pos.h" 1
 
 
@@ -525,11 +521,11 @@ typedef struct {
   linenr_T lnum;
   colnr_T col;
 } lpos_T;
-# 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 24 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 17 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/config/auto/config.h" 1
-# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 46 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 36 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 1
 
 
@@ -2390,6 +2386,8 @@ typedef __darwin_fsfilcnt_t fsfilcnt_t;
 
 
 
+
+
 # 1 "/usr/include/unistd.h" 1 3 4
 # 72 "/usr/include/unistd.h" 3 4
 # 1 "/usr/include/sys/unistd.h" 1 3 4
@@ -2718,79 +2716,11 @@ int fsync_volume_np(int, int) __attribute__((availability(macosx,introduced=10.8
 int sync_volume_np(const char *, int) __attribute__((availability(macosx,introduced=10.8)));
 
 extern int optreset;
-# 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
-# 1 "/usr/include/signal.h" 1 3 4
-# 69 "/usr/include/signal.h" 3 4
-extern const char *const sys_signame[32];
-extern const char *const sys_siglist[32];
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
 
 
-
-int raise(int);
-
-
-
-
-void (*bsd_signal(int, void (*)(int)))(int);
-int kill(pid_t, int) __asm("_" "kill" );
-int killpg(pid_t, int) __asm("_" "killpg" );
-int pthread_kill(pthread_t, int);
-int pthread_sigmask(int, const sigset_t *, sigset_t *) __asm("_" "pthread_sigmask" );
-int sigaction(int, const struct sigaction * restrict,
-     struct sigaction * restrict);
-int sigaddset(sigset_t *, int);
-int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" ) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
-int sigdelset(sigset_t *, int);
-int sigemptyset(sigset_t *);
-int sigfillset(sigset_t *);
-int sighold(int);
-int sigignore(int);
-int siginterrupt(int, int);
-int sigismember(const sigset_t *, int);
-int sigpause(int) __asm("_" "sigpause" );
-int sigpending(sigset_t *);
-int sigprocmask(int, const sigset_t * restrict, sigset_t * restrict);
-int sigrelse(int);
-void (*sigset(int, void (*)(int)))(int);
-int sigsuspend(const sigset_t *) __asm("_" "sigsuspend" );
-int sigwait(const sigset_t * restrict, int * restrict) __asm("_" "sigwait" );
-
-void psignal(unsigned int, const char *);
-int sigblock(int);
-int sigsetmask(int);
-int sigvec(int, struct sigvec *, struct sigvec *);
-
-
-
-
-
-
-inline __attribute__ ((__always_inline__)) int
-__sigbits(int __signo)
-{
-    return __signo > 32 ? 0 : (1 << (__signo - 1));
-}
-# 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
-
-
-
-# 1 "/usr/include/sys/param.h" 1 3 4
-# 93 "/usr/include/sys/param.h" 3 4
-# 1 "/usr/include/sys/syslimits.h" 1 3 4
-# 94 "/usr/include/sys/param.h" 2 3 4
-# 107 "/usr/include/sys/param.h" 3 4
-# 1 "/usr/include/machine/param.h" 1 3 4
-# 35 "/usr/include/machine/param.h" 3 4
-# 1 "/usr/include/i386/param.h" 1 3 4
-# 75 "/usr/include/i386/param.h" 3 4
-# 1 "/usr/include/i386/_param.h" 1 3 4
-# 76 "/usr/include/i386/param.h" 2 3 4
-# 36 "/usr/include/machine/param.h" 2 3 4
-# 108 "/usr/include/sys/param.h" 2 3 4
-
-
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 1 3 4
-# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 1 3 4
+# 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 3 4
 # 1 "/usr/include/limits.h" 1 3 4
 # 64 "/usr/include/limits.h" 3 4
 # 1 "/usr/include/machine/limits.h" 1 3 4
@@ -2805,18 +2735,15 @@ __sigbits(int __signo)
 # 41 "/usr/include/i386/limits.h" 2 3 4
 # 7 "/usr/include/machine/limits.h" 2 3 4
 # 65 "/usr/include/limits.h" 2 3 4
-# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/limits.h" 2 3 4
-# 111 "/usr/include/sys/param.h" 2 3 4
+# 1 "/usr/include/sys/syslimits.h" 1 3 4
+# 66 "/usr/include/limits.h" 2 3 4
+# 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/limits.h" 2 3 4
 # 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/unix_defs.h" 2
 # 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/os/os_defs.h" 2
-# 47 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-
-
-
-
-
+# 37 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 52 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h" 1
-# 127 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h"
+# 120 "/Users/George/Documents/Programs/C/neovim/src/nvim/keymap.h"
 enum key_extra {
   KE_NAME = 3
 
@@ -3090,138 +3017,22 @@ enum {
   EXPAND_SYNTIME,
   EXPAND_USER_ADDR_TYPE,
 };
-# 243 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
-# 1 "/usr/include/fcntl.h" 1 3 4
-# 23 "/usr/include/fcntl.h" 3 4
-# 1 "/usr/include/sys/fcntl.h" 1 3 4
-# 116 "/usr/include/sys/fcntl.h" 3 4
-# 1 "/usr/include/sys/_types/_o_sync.h" 1 3 4
-# 117 "/usr/include/sys/fcntl.h" 2 3 4
-# 157 "/usr/include/sys/fcntl.h" 3 4
-# 1 "/usr/include/sys/_types/_o_dsync.h" 1 3 4
-# 158 "/usr/include/sys/fcntl.h" 2 3 4
-# 306 "/usr/include/sys/fcntl.h" 3 4
-# 1 "/usr/include/sys/_types/_seek_set.h" 1 3 4
-# 307 "/usr/include/sys/fcntl.h" 2 3 4
-# 331 "/usr/include/sys/fcntl.h" 3 4
-struct flock {
- off_t l_start;
- off_t l_len;
- pid_t l_pid;
- short l_type;
- short l_whence;
-};
-# 346 "/usr/include/sys/fcntl.h" 3 4
-struct flocktimeout {
- struct flock fl;
- struct timespec timeout;
-};
-# 359 "/usr/include/sys/fcntl.h" 3 4
-struct radvisory {
-       off_t ra_offset;
-       int ra_count;
-};
-
-
-
-typedef struct fcodeblobs {
- void *f_cd_hash;
- size_t f_hash_size;
- void *f_cd_buffer;
- size_t f_cd_size;
- unsigned int *f_out_size;
- int f_arch;
- int __padding;
-} fcodeblobs_t;
-# 383 "/usr/include/sys/fcntl.h" 3 4
-typedef struct fsignatures {
- off_t fs_file_start;
- void *fs_blob_start;
- size_t fs_blob_size;
-} fsignatures_t;
-# 397 "/usr/include/sys/fcntl.h" 3 4
-typedef struct fstore {
- unsigned int fst_flags;
- int fst_posmode;
- off_t fst_offset;
- off_t fst_length;
- off_t fst_bytesalloc;
-} fstore_t;
-
-
-
-typedef struct fbootstraptransfer {
-  off_t fbt_offset;
-  size_t fbt_length;
-  void *fbt_buffer;
-} fbootstraptransfer_t;
-# 435 "/usr/include/sys/fcntl.h" 3 4
-#pragma pack(4)
-
-struct log2phys {
- unsigned int l2p_flags;
- off_t l2p_contigbytes;
-
-
- off_t l2p_devoffset;
-
-
-};
-
-#pragma pack()
-# 460 "/usr/include/sys/fcntl.h" 3 4
-typedef enum {
- FILESEC_OWNER = 1,
- FILESEC_GROUP = 2,
- FILESEC_UUID = 3,
- FILESEC_MODE = 4,
- FILESEC_ACL = 5,
- FILESEC_GRPUUID = 6,
-
-
- FILESEC_ACL_RAW = 100,
- FILESEC_ACL_ALLOCSIZE = 101
-} filesec_property_t;
-
-
-
-
-
-
-int open(const char *, int, ...) __asm("_" "open" );
-
-int openat(int, const char *, int, ...) __asm("_" "openat" ) __attribute__((availability(macosx,introduced=10.10)));
-
-int creat(const char *, mode_t) __asm("_" "creat" );
-int fcntl(int, int, ...) __asm("_" "fcntl" );
-
-
-int openx_np(const char *, int, filesec_t);
-
-
-
-
-int open_dprotected_np ( const char *, int, int, int, ...);
-int flock(int, int);
-filesec_t filesec_init(void);
-filesec_t filesec_dup(filesec_t);
-void filesec_free(filesec_t);
-int filesec_get_property(filesec_t, filesec_property_t, void *);
-int filesec_query_property(filesec_t, filesec_property_t, int *);
-int filesec_set_property(filesec_t, filesec_property_t, const void *);
-int filesec_unset_property(filesec_t, filesec_property_t) __attribute__((availability(macosx,introduced=10.6)));
-# 24 "/usr/include/fcntl.h" 2 3 4
-# 244 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 342 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
+# 333 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 1
-# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 18 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_eval.h" 1
 
 
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
+
+
+
+
+
+
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/normal.h" 1
 
 
@@ -3245,14 +3056,14 @@ typedef struct file_buffer buf_T;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
-# 51 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
+# 51 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 3 4
 typedef long int ptrdiff_t;
-# 118 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 3 4
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/__stddef_max_align_t.h" 1 3 4
-# 32 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/__stddef_max_align_t.h" 3 4
+# 118 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/__stddef_max_align_t.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/__stddef_max_align_t.h" 3 4
 typedef long double max_align_t;
-# 119 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 2 3 4
+# 119 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 2 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/garray.h" 2
 
 
@@ -3283,7 +3094,47 @@ static inline void *ga_append_via_ptr(garray_T *gap, size_t item_size)
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h" 1
-# 268 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 213 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+enum {
+  STL_FILEPATH = 'f',
+  STL_FULLPATH = 'F',
+  STL_FILENAME = 't',
+  STL_COLUMN = 'c',
+  STL_VIRTCOL = 'v',
+  STL_VIRTCOL_ALT = 'V',
+  STL_LINE = 'l',
+  STL_NUMLINES = 'L',
+  STL_BUFNO = 'n',
+  STL_KEYMAP = 'k',
+  STL_OFFSET = 'o',
+  STL_OFFSET_X = 'O',
+  STL_BYTEVAL = 'b',
+  STL_BYTEVAL_X = 'B',
+  STL_ROFLAG = 'r',
+  STL_ROFLAG_ALT = 'R',
+  STL_HELPFLAG = 'h',
+  STL_HELPFLAG_ALT = 'H',
+  STL_FILETYPE = 'y',
+  STL_FILETYPE_ALT = 'Y',
+  STL_PREVIEWFLAG = 'w',
+  STL_PREVIEWFLAG_ALT = 'W',
+  STL_MODIFIED = 'm',
+  STL_MODIFIED_ALT = 'M',
+  STL_QUICKFIX = 'q',
+  STL_PERCENTAGE = 'p',
+  STL_ALTPERCENT = 'P',
+  STL_ARGLISTSTAT = 'a',
+  STL_PAGENUM = 'N',
+  STL_VIM_EXPR = '{',
+  STL_MIDDLEMARK = '=',
+  STL_TRUNCMARK = '<',
+  STL_USER_HL = '*',
+  STL_HIGHLIGHT = '#',
+  STL_TABPAGENR = 'T',
+  STL_TABCLOSENR = 'X',
+  STL_CLICK_FUNC = '@',
+};
+# 282 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern long p_aleph;
 extern _Bool p_acd;
 extern char_u *p_ambw;
@@ -3295,12 +3146,12 @@ extern char_u *p_bg;
 extern int p_bk;
 extern char_u *p_bkc;
 extern unsigned int bkc_flags;
-# 288 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 302 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_bdir;
 extern char_u *p_bex;
 extern char_u *p_bo;
 extern unsigned bo_flags;
-# 321 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 335 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_bsk;
 extern char_u *p_breakat;
 extern char_u *p_cmp;
@@ -3372,11 +3223,9 @@ extern char_u *p_fcl;
 extern long p_fdls;
 extern char_u *p_fdo;
 extern unsigned fdo_flags;
-# 408 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 422 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_fp;
-
 extern int p_fs;
-
 extern int p_gd;
 extern char_u *p_pdev;
 extern char_u *p_penc;
@@ -3470,7 +3319,7 @@ extern char_u *p_sel;
 extern char_u *p_slm;
 extern char_u *p_ssop;
 extern unsigned ssop_flags;
-# 529 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
+# 541 "/Users/George/Documents/Programs/C/neovim/src/nvim/option_defs.h"
 extern char_u *p_sh;
 extern char_u *p_shcf;
 extern char_u *p_sp;
@@ -3501,7 +3350,6 @@ extern char_u *p_sps;
 extern int p_spr;
 extern int p_sol;
 extern char_u *p_su;
-extern char_u *p_sws;
 extern char_u *p_swb;
 extern unsigned swb_flags;
 
@@ -3610,6 +3458,7 @@ enum {
   , BV_DEF
   , BV_INC
   , BV_EOL
+  , BV_FIXEOL
   , BV_EP
   , BV_ET
   , BV_FENC
@@ -3716,11 +3565,16 @@ typedef void* libiconv_t;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 52 "/opt/local/include/iconv.h" 2
 
 
 # 1 "/usr/include/errno.h" 1 3 4
+# 23 "/usr/include/errno.h" 3 4
+# 1 "/usr/include/sys/errno.h" 1 3 4
+# 80 "/usr/include/sys/errno.h" 3 4
+extern int * __error(void);
+# 24 "/usr/include/errno.h" 2 3 4
 # 55 "/opt/local/include/iconv.h" 2
 # 73 "/opt/local/include/iconv.h"
 extern libiconv_t libiconv_open (const char* tocode, const char* fromcode);
@@ -3744,10 +3598,10 @@ typedef __darwin_mbstate_t mbstate_t;
 # 1 "/usr/include/sys/_types/_wchar_t.h" 1 3 4
 # 80 "/usr/include/wchar.h" 2 3 4
 # 89 "/usr/include/wchar.h" 3 4
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 1 3 4
-# 30 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdarg.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdarg.h" 3 4
 typedef __builtin_va_list va_list;
-# 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stdarg.h" 3 4
+# 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 90 "/usr/include/wchar.h" 2 3 4
 
@@ -4130,14 +3984,14 @@ typedef uint64_t Timestamp;
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 1
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/hashtab.h" 2
 
 
@@ -4246,7 +4100,7 @@ struct dictitem_S {
 };
 
 typedef struct dictitem_S dictitem_T;
-# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
+# 113 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval_defs.h"
 struct dictvar_S {
   char dv_lock;
   char dv_scope;
@@ -4256,8 +4110,6 @@ struct dictvar_S {
   dict_T *dv_copydict;
   dict_T *dv_used_next;
   dict_T *dv_used_prev;
-  int internal_refcount;
-
   QUEUE watchers;
 };
 
@@ -4821,12 +4673,131 @@ struct signlist
 # 49 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-version.h" 1
 # 50 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 51 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h" 2
 # 61 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 1
 # 27 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h"
 # 1 "/usr/include/fcntl.h" 1 3 4
+# 23 "/usr/include/fcntl.h" 3 4
+# 1 "/usr/include/sys/fcntl.h" 1 3 4
+# 116 "/usr/include/sys/fcntl.h" 3 4
+# 1 "/usr/include/sys/_types/_o_sync.h" 1 3 4
+# 117 "/usr/include/sys/fcntl.h" 2 3 4
+# 157 "/usr/include/sys/fcntl.h" 3 4
+# 1 "/usr/include/sys/_types/_o_dsync.h" 1 3 4
+# 158 "/usr/include/sys/fcntl.h" 2 3 4
+# 306 "/usr/include/sys/fcntl.h" 3 4
+# 1 "/usr/include/sys/_types/_seek_set.h" 1 3 4
+# 307 "/usr/include/sys/fcntl.h" 2 3 4
+# 331 "/usr/include/sys/fcntl.h" 3 4
+struct flock {
+ off_t l_start;
+ off_t l_len;
+ pid_t l_pid;
+ short l_type;
+ short l_whence;
+};
+# 346 "/usr/include/sys/fcntl.h" 3 4
+struct flocktimeout {
+ struct flock fl;
+ struct timespec timeout;
+};
+# 359 "/usr/include/sys/fcntl.h" 3 4
+struct radvisory {
+       off_t ra_offset;
+       int ra_count;
+};
+
+
+
+typedef struct fcodeblobs {
+ void *f_cd_hash;
+ size_t f_hash_size;
+ void *f_cd_buffer;
+ size_t f_cd_size;
+ unsigned int *f_out_size;
+ int f_arch;
+ int __padding;
+} fcodeblobs_t;
+# 383 "/usr/include/sys/fcntl.h" 3 4
+typedef struct fsignatures {
+ off_t fs_file_start;
+ void *fs_blob_start;
+ size_t fs_blob_size;
+} fsignatures_t;
+# 397 "/usr/include/sys/fcntl.h" 3 4
+typedef struct fstore {
+ unsigned int fst_flags;
+ int fst_posmode;
+ off_t fst_offset;
+ off_t fst_length;
+ off_t fst_bytesalloc;
+} fstore_t;
+
+
+
+typedef struct fbootstraptransfer {
+  off_t fbt_offset;
+  size_t fbt_length;
+  void *fbt_buffer;
+} fbootstraptransfer_t;
+# 435 "/usr/include/sys/fcntl.h" 3 4
+#pragma pack(4)
+
+struct log2phys {
+ unsigned int l2p_flags;
+ off_t l2p_contigbytes;
+
+
+ off_t l2p_devoffset;
+
+
+};
+
+#pragma pack()
+# 460 "/usr/include/sys/fcntl.h" 3 4
+typedef enum {
+ FILESEC_OWNER = 1,
+ FILESEC_GROUP = 2,
+ FILESEC_UUID = 3,
+ FILESEC_MODE = 4,
+ FILESEC_ACL = 5,
+ FILESEC_GRPUUID = 6,
+
+
+ FILESEC_ACL_RAW = 100,
+ FILESEC_ACL_ALLOCSIZE = 101
+} filesec_property_t;
+
+
+
+
+
+
+int open(const char *, int, ...) __asm("_" "open" );
+
+int openat(int, const char *, int, ...) __asm("_" "openat" ) __attribute__((availability(macosx,introduced=10.10)));
+
+int creat(const char *, mode_t) __asm("_" "creat" );
+int fcntl(int, int, ...) __asm("_" "fcntl" );
+
+
+int openx_np(const char *, int, filesec_t);
+
+
+
+
+int open_dprotected_np ( const char *, int, int, int, ...);
+int flock(int, int);
+filesec_t filesec_init(void);
+filesec_t filesec_dup(filesec_t);
+void filesec_free(filesec_t);
+int filesec_get_property(filesec_t, filesec_property_t, void *);
+int filesec_query_property(filesec_t, filesec_property_t, int *);
+int filesec_set_property(filesec_t, filesec_property_t, const void *);
+int filesec_unset_property(filesec_t, filesec_property_t) __attribute__((availability(macosx,introduced=10.6)));
+# 24 "/usr/include/fcntl.h" 2 3 4
 # 28 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 2
 # 1 "/usr/include/dirent.h" 1 3 4
 # 65 "/usr/include/dirent.h" 3 4
@@ -4903,6 +4874,9 @@ DIR *__opendir2(const char *, int) __asm("_" "__opendir2" "$INODE64" );
 # 1 "/usr/include/sys/socket.h" 1 3 4
 # 77 "/usr/include/sys/socket.h" 3 4
 # 1 "/usr/include/machine/_param.h" 1 3 4
+# 29 "/usr/include/machine/_param.h" 3 4
+# 1 "/usr/include/i386/_param.h" 1 3 4
+# 30 "/usr/include/machine/_param.h" 2 3 4
 # 78 "/usr/include/sys/socket.h" 2 3 4
 # 93 "/usr/include/sys/socket.h" 3 4
 # 1 "/usr/include/sys/_types/_sa_family_t.h" 1 3 4
@@ -5944,7 +5918,58 @@ void pthread_yield_np(void);
 
 
 
+# 1 "/usr/include/signal.h" 1 3 4
+# 69 "/usr/include/signal.h" 3 4
+extern const char *const sys_signame[32];
+extern const char *const sys_siglist[32];
 
+
+
+int raise(int);
+
+
+
+
+void (*bsd_signal(int, void (*)(int)))(int);
+int kill(pid_t, int) __asm("_" "kill" );
+int killpg(pid_t, int) __asm("_" "killpg" );
+int pthread_kill(pthread_t, int);
+int pthread_sigmask(int, const sigset_t *, sigset_t *) __asm("_" "pthread_sigmask" );
+int sigaction(int, const struct sigaction * restrict,
+     struct sigaction * restrict);
+int sigaddset(sigset_t *, int);
+int sigaltstack(const stack_t * restrict, stack_t * restrict) __asm("_" "sigaltstack" ) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+int sigdelset(sigset_t *, int);
+int sigemptyset(sigset_t *);
+int sigfillset(sigset_t *);
+int sighold(int);
+int sigignore(int);
+int siginterrupt(int, int);
+int sigismember(const sigset_t *, int);
+int sigpause(int) __asm("_" "sigpause" );
+int sigpending(sigset_t *);
+int sigprocmask(int, const sigset_t * restrict, sigset_t * restrict);
+int sigrelse(int);
+void (*sigset(int, void (*)(int)))(int);
+int sigsuspend(const sigset_t *) __asm("_" "sigsuspend" );
+int sigwait(const sigset_t * restrict, int * restrict) __asm("_" "sigwait" );
+
+void psignal(unsigned int, const char *);
+int sigblock(int);
+int sigsetmask(int);
+int sigvec(int, struct sigvec *, struct sigvec *);
+
+
+
+
+
+
+inline __attribute__ ((__always_inline__)) int
+__sigbits(int __signo)
+{
+    return __signo > 32 ? 0 : (1 << (__signo - 1));
+}
+# 45 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-unix.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-threadpool.h" 1
 # 30 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/uv-threadpool.h"
@@ -7605,7 +7630,7 @@ struct thread_extended_info {
 };
 typedef struct thread_extended_info thread_extended_info_data_t;
 typedef struct thread_extended_info * thread_extended_info_t;
-# 184 "/usr/include/mach/thread_info.h" 3 4
+# 187 "/usr/include/mach/thread_info.h" 3 4
 struct io_stat_entry {
  uint64_t count;
  uint64_t size;
@@ -11048,7 +11073,8 @@ kern_return_t task_threads
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t mach_ports_register
 (
  task_t target_task,
@@ -11062,7 +11088,8 @@ kern_return_t mach_ports_register
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t mach_ports_lookup
 (
  task_t target_task,
@@ -11090,7 +11117,8 @@ kern_return_t task_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_info
 (
  task_t target_task,
@@ -11105,7 +11133,8 @@ kern_return_t task_set_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_suspend
 (
  task_t target_task
@@ -11117,7 +11146,8 @@ kern_return_t task_suspend
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_resume
 (
  task_t target_task
@@ -11129,7 +11159,8 @@ kern_return_t task_resume
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_special_port
 (
  task_t task,
@@ -11143,7 +11174,8 @@ kern_return_t task_get_special_port
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_special_port
 (
  task_t task,
@@ -11157,7 +11189,8 @@ kern_return_t task_set_special_port
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_create
 (
  task_t parent_task,
@@ -11170,7 +11203,8 @@ kern_return_t thread_create
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_create_running
 (
  task_t parent_task,
@@ -11186,7 +11220,8 @@ kern_return_t thread_create_running
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_exception_ports
 (
  task_t task,
@@ -11202,7 +11237,8 @@ kern_return_t task_set_exception_ports
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_exception_ports
 (
  task_t task,
@@ -11220,7 +11256,8 @@ kern_return_t task_get_exception_ports
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_swap_exception_ports
 (
  task_t task,
@@ -11293,7 +11330,8 @@ kern_return_t semaphore_destroy
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_policy_set
 (
  task_t task,
@@ -11308,7 +11346,8 @@ kern_return_t task_policy_set
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_policy_get
 (
  task_t task,
@@ -11406,7 +11445,8 @@ kern_return_t task_set_ras_pc
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_zone_info
 (
  task_t target_task,
@@ -11477,7 +11517,8 @@ kern_return_t task_set_policy
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_state
 (
  task_t task,
@@ -11492,7 +11533,8 @@ kern_return_t task_get_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_state
 (
  task_t task,
@@ -11507,7 +11549,8 @@ kern_return_t task_set_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_phys_footprint_limit
 (
  task_t task,
@@ -11521,7 +11564,8 @@ kern_return_t task_set_phys_footprint_limit
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_suspend2
 (
  task_t target_task,
@@ -11534,7 +11578,8 @@ kern_return_t task_suspend2
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_resume2
 (
  task_suspension_token_t suspend_token
@@ -11558,7 +11603,8 @@ kern_return_t task_purgable_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_get_mach_voucher
 (
  task_t task,
@@ -11572,7 +11618,8 @@ kern_return_t task_get_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_mach_voucher
 (
  task_t task,
@@ -11585,14 +11632,15 @@ kern_return_t task_set_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_swap_mach_voucher
 (
  task_t task,
  ipc_voucher_t new_voucher,
  ipc_voucher_t *old_voucher
 );
-# 655 "/usr/include/mach/task.h" 3 4
+# 678 "/usr/include/mach/task.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -12821,7 +12869,8 @@ union __ReplyUnion__task_subsystem {
 # 49 "/usr/include/mach/thread_act.h" 3 4
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_terminate
 (
  thread_act_t target_act
@@ -12833,7 +12882,8 @@ kern_return_t thread_terminate
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t act_get_state
 (
  thread_act_t target_act,
@@ -12848,7 +12898,8 @@ kern_return_t act_get_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t act_set_state
 (
  thread_act_t target_act,
@@ -12863,7 +12914,7 @@ kern_return_t act_set_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_get_state
 (
  thread_act_t target_act,
@@ -12878,7 +12929,7 @@ kern_return_t thread_get_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_set_state
 (
  thread_act_t target_act,
@@ -12893,7 +12944,7 @@ kern_return_t thread_set_state
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_suspend
 (
  thread_act_t target_act
@@ -12905,7 +12956,7 @@ kern_return_t thread_suspend
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_resume
 (
  thread_act_t target_act
@@ -12917,7 +12968,7 @@ kern_return_t thread_resume
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_abort
 (
  thread_act_t target_act
@@ -12929,7 +12980,7 @@ kern_return_t thread_abort
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
 kern_return_t thread_abort_safely
 (
  thread_act_t target_act
@@ -12941,7 +12992,8 @@ kern_return_t thread_abort_safely
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_depress_abort
 (
  thread_act_t thread
@@ -12953,7 +13005,8 @@ kern_return_t thread_depress_abort
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_special_port
 (
  thread_act_t thr_act,
@@ -12967,7 +13020,8 @@ kern_return_t thread_get_special_port
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_special_port
 (
  thread_act_t thr_act,
@@ -12995,7 +13049,8 @@ kern_return_t thread_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_exception_ports
 (
  thread_act_t thread,
@@ -13011,7 +13066,8 @@ kern_return_t thread_set_exception_ports
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_exception_ports
 (
  thread_act_t thread,
@@ -13029,7 +13085,8 @@ kern_return_t thread_get_exception_ports
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_swap_exception_ports
 (
  thread_act_t thread,
@@ -13170,7 +13227,8 @@ kern_return_t thread_set_policy
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_get_mach_voucher
 (
  thread_act_t thr_act,
@@ -13184,7 +13242,8 @@ kern_return_t thread_get_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_set_mach_voucher
 (
  thread_act_t thr_act,
@@ -13197,14 +13256,15 @@ kern_return_t thread_set_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t thread_swap_mach_voucher
 (
  thread_act_t thr_act,
  ipc_voucher_t new_voucher,
  ipc_voucher_t *old_voucher
 );
-# 454 "/usr/include/mach/thread_act.h" 3 4
+# 466 "/usr/include/mach/thread_act.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -14248,7 +14308,8 @@ kern_return_t vm_remap
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_wire
 (
  vm_map_t target_task,
@@ -14427,7 +14488,7 @@ kern_return_t vm_purgable_control
  vm_purgable_t control,
  int *state
 );
-# 480 "/usr/include/mach/vm_map.h" 3 4
+# 481 "/usr/include/mach/vm_map.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -15338,7 +15399,8 @@ kern_return_t mach_port_rename
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t mach_port_allocate_name
 (
  ipc_space_t task,
@@ -15593,7 +15655,8 @@ kern_return_t mach_port_allocate_full
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t task_set_port_space
 (
  ipc_space_t task,
@@ -15789,7 +15852,7 @@ kern_return_t mach_port_space_basic_info
  ipc_space_t task,
  ipc_info_space_basic_t *basic_info
 );
-# 564 "/usr/include/mach/mach_port.h" 3 4
+# 566 "/usr/include/mach/mach_port.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -17033,7 +17096,8 @@ extern int (*vprintf_stderr_func)(const char *format, va_list ap);
 # 52 "/usr/include/mach/mach_host.h" 3 4
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_info
 (
  host_t host,
@@ -17224,7 +17288,8 @@ kern_return_t host_statistics
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_request_notification
 (
  host_t host,
@@ -17280,7 +17345,8 @@ kern_return_t mach_zone_info
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_create_mach_voucher
 (
  host_t host,
@@ -17295,7 +17361,8 @@ kern_return_t host_create_mach_voucher
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_register_mach_voucher_attr_manager
 (
  host_t host,
@@ -17311,7 +17378,8 @@ kern_return_t host_register_mach_voucher_attr_manager
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_register_well_known_mach_voucher_attr_manager
 (
  host_t host,
@@ -17327,7 +17395,8 @@ kern_return_t host_register_well_known_mach_voucher_attr_manager
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_set_atm_diagnostic_flag
 (
  host_priv_t host_priv,
@@ -17340,7 +17409,8 @@ kern_return_t host_set_atm_diagnostic_flag
 
 extern
 
-__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+__attribute__((availability(watchos,unavailable)))
+__attribute__((availability(tvos,unavailable)))
 kern_return_t host_get_atm_diagnostic_flag
 (
  host_t host,
@@ -17363,7 +17433,7 @@ kern_return_t mach_memory_info
  mach_memory_info_array_t *memory_info,
  mach_msg_type_number_t *memory_infoCnt
 );
-# 404 "/usr/include/mach/mach_host.h" 3 4
+# 411 "/usr/include/mach/mach_host.h" 3 4
 #pragma pack(4)
 
  typedef struct {
@@ -19533,7 +19603,7 @@ typedef struct {
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/terminal.h" 2
 
 
@@ -19980,6 +20050,7 @@ struct file_buffer {
   char_u *b_p_cfu;
   char_u *b_p_ofu;
   int b_p_eol;
+  int b_p_fixeol;
   int b_p_et;
   int b_p_et_nobin;
   char_u *b_p_fenc;
@@ -20118,15 +20189,17 @@ struct file_buffer {
   Terminal *terminal;
 
   dict_T *additional_data;
+
+  int b_mapped_ctrl_c;
 };
-# 774 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 777 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct diffblock_S diff_T;
 struct diffblock_S {
   diff_T *df_next;
   linenr_T df_lnum[4];
   linenr_T df_count[4];
 };
-# 791 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 794 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct tabpage_S tabpage_T;
 struct tabpage_S {
   uint64_t handle;
@@ -20147,7 +20220,7 @@ struct tabpage_S {
   dictitem_T tp_winvar;
   dict_T *tp_vars;
 };
-# 824 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 827 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct w_line {
   linenr_T wl_lnum;
   uint16_t wl_size;
@@ -20175,7 +20248,7 @@ struct frame_S {
   frame_T *fr_child;
   win_T *fr_win;
 };
-# 862 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 865 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
 typedef struct {
   regmmatch_T rm;
 
@@ -20297,7 +20370,7 @@ struct window_S {
   int w_wincol;
   int w_width;
   int w_vsep_width;
-# 993 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 996 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_valid;
   pos_T w_valid_cursor;
 
@@ -20313,14 +20386,14 @@ struct window_S {
   int w_cline_row;
 
   colnr_T w_virtcol;
-# 1019 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1022 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_wrow, w_wcol;
 
   linenr_T w_botline;
 
   int w_empty_rows;
   int w_filler_rows;
-# 1037 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1040 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   int w_lines_valid;
   wline_T *w_lines;
 
@@ -20359,7 +20432,7 @@ struct window_S {
   int w_arg_idx_invalid;
 
   char_u *w_localdir;
-# 1083 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
+# 1086 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer_defs.h"
   winopt_T w_onebuf_opt;
   winopt_T w_allbuf_opt;
 
@@ -20454,7 +20527,6 @@ typedef struct oparg_S {
   _Bool empty;
 
   _Bool is_VIsual;
-  _Bool block_mode;
   colnr_T start_vcol;
   colnr_T end_vcol;
   long prev_opcount;
@@ -20479,8 +20551,8 @@ typedef struct cmdarg_S {
   int retval;
   char_u *searchbuf;
 } cmdarg_T;
-# 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h" 2
-# 82 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
+# 9 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h" 2
+# 77 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
 typedef struct exarg exarg_T;
 
 
@@ -20532,7 +20604,7 @@ struct exarg {
   void *cookie;
   struct condstack *cstack;
 };
-# 145 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
+# 140 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
 typedef struct expand {
   int xp_context;
   char_u *xp_pattern;
@@ -20550,7 +20622,7 @@ typedef struct expand {
   char_u *xp_line;
   int xp_col;
 } expand_T;
-# 173 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
+# 168 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds_defs.h"
 typedef struct {
   int hide;
   int split;
@@ -20625,10 +20697,10 @@ struct cleanup_stuff {
   int pending;
   except_T *exception;
 };
-# 26 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 19 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/mbyte.h" 1
-# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 21 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/menu.h" 1
 # 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/menu.h"
 typedef struct VimMenu vimmenu_T;
@@ -20652,7 +20724,7 @@ struct VimMenu {
   vimmenu_T *parent;
   vimmenu_T *next;
 };
-# 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 22 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/event/loop.h" 1
@@ -20675,7 +20747,7 @@ void __assert_rtn(const char *, const char *, int, const char *) __attribute__((
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 6 "/Users/George/Documents/Programs/C/neovim/src/nvim/memory.h" 2
 # 33 "/Users/George/Documents/Programs/C/neovim/src/nvim/lib/klist.h" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
@@ -20738,13 +20810,10 @@ typedef struct loop {
   uv_mutex_t mutex;
   int recursive;
 } Loop;
-# 32 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
-# 75 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
-extern long Rows
+# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h" 2
+# 119 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+extern long Rows ;
 
-
-
-;
 extern long Columns ;
 
 
@@ -20752,12 +20821,12 @@ extern long Columns ;
 
 typedef char_u schar_T;
 typedef unsigned short sattr_T;
-# 99 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 140 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern schar_T *ScreenLines ;
 extern sattr_T *ScreenAttrs ;
 extern unsigned *LineOffset ;
 extern char_u *LineWraps ;
-# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 153 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern u8char_T *ScreenLinesUC ;
 extern u8char_T *ScreenLinesC[6];
 extern int Screen_mco ;
@@ -20766,8 +20835,6 @@ extern int Screen_mco ;
 
 
 extern schar_T *ScreenLines2 ;
-# 128 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
-extern short *TabPageIdxs ;
 
 extern int screen_Rows ;
 extern int screen_Columns ;
@@ -20777,7 +20844,7 @@ extern int screen_Columns ;
 
 
 extern int mod_mask ;
-# 148 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 180 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int cmdline_row;
 
 extern int redraw_cmdline ;
@@ -20811,7 +20878,7 @@ extern int compl_interrupted ;
 
 
 extern int compl_cont_status ;
-# 196 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 228 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int cmdmsg_rl ;
 extern int msg_col;
 extern int msg_row;
@@ -20922,9 +20989,9 @@ extern int check_cstack ;
 
 
 extern int trylevel ;
-# 315 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 347 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int force_abort ;
-# 327 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 359 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern struct msglist **msg_list ;
 
 
@@ -20942,11 +21009,11 @@ extern int suppress_errthrow ;
 
 
 extern except_T *caught_stack ;
-# 354 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 386 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int may_garbage_collect ;
 extern int want_garbage_collect ;
 extern int garbage_collect_at_exit ;
-# 367 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 399 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern scid_T current_SID ;
 
 
@@ -21038,7 +21105,7 @@ typedef enum {
   , HLF_MC
   , HLF_COUNT
 } hlf_T;
-# 466 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 498 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int highlight_attr[HLF_COUNT];
 extern int highlight_user[9];
 extern int highlight_stlnc[9];
@@ -21103,7 +21170,7 @@ extern int updating_screen ;
 extern win_T *firstwin;
 extern win_T *lastwin;
 extern win_T *prevwin ;
-# 542 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 574 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern win_T *curwin;
 
 extern win_T *aucmd_win;
@@ -21122,7 +21189,7 @@ extern frame_T *topframe;
 extern tabpage_T *first_tabpage;
 extern tabpage_T *curtab;
 extern int redraw_tabline ;
-# 568 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 600 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern buf_T *firstbuf ;
 extern buf_T *lastbuf ;
 extern buf_T *curbuf ;
@@ -21264,11 +21331,8 @@ extern int can_si ;
 
 extern int can_si_back ;
 
-extern pos_T saved_cursor
 
-
-
-;
+extern pos_T saved_cursor ;
 
 
 
@@ -21286,7 +21350,7 @@ extern pos_T Insstart_orig;
 
 extern int orig_line_count ;
 extern int vr_lines_changed ;
-# 749 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 778 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int enc_dbcs ;
 
 extern int enc_unicode ;
@@ -21295,12 +21359,14 @@ extern int enc_latin1like ;
 extern int has_mbyte ;
 
 
+extern char_u *fenc_default ;
+
 
 
 
 
 extern char mb_bytelen_tab[256];
-# 770 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 801 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int (*mb_ptr2len)(const char_u *p) ;
 
 extern int (*mb_ptr2len_len)(const char_u *p, int size) ;
@@ -21316,7 +21382,7 @@ extern int (*mb_off2cells)(unsigned off, unsigned max_off) ;
 
 extern int (*mb_ptr2char)(const char_u *p) ;
 extern int (*mb_head_off)(const char_u *base, const char_u *p) ;
-# 803 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 834 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int State ;
 
 
@@ -21387,16 +21453,13 @@ extern int RedrawingDisabled ;
 extern int readonlymode ;
 extern int recoverymode ;
 
-extern typebuf_T typebuf
 
+extern typebuf_T typebuf ;
 
-
-;
 extern int ex_normal_busy ;
 extern int ex_normal_lock ;
 extern int ignore_script ;
 extern int stop_insert_mode;
-
 extern int KeyTyped;
 extern int KeyStuffed;
 extern int maptick ;
@@ -21447,11 +21510,9 @@ extern int autocmd_fname_full;
 extern int autocmd_bufnr ;
 extern char_u *autocmd_match ;
 extern int did_cursorhold ;
-extern pos_T last_cursormoved
 
+extern pos_T last_cursormoved ;
 
-
-;
 extern int last_changedtick ;
 extern buf_T *last_changedtick_buf ;
 
@@ -21558,7 +21619,7 @@ extern linenr_T printer_page_num;
 
 
 extern int typebuf_was_filled ;
-# 1059 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 1081 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern int virtual_op ;
 
 
@@ -21570,7 +21631,7 @@ extern linenr_T spell_redraw_lnum ;
 
 
 extern int need_cursor_line_redraw ;
-# 1086 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
+# 1104 "/Users/George/Documents/Programs/C/neovim/src/nvim/globals.h"
 extern char_u e_abort[] ;
 extern char_u e_afterinit[] ;
 
@@ -21683,6 +21744,7 @@ extern char_u e_intern2[] ;
 extern char_u e_maxmempat[] ;
 
 extern char_u e_emptybuf[] ;
+extern char_u e_nobufnr[] ;
 
 extern char_u e_invalpat[] ;
 
@@ -21719,17 +21781,36 @@ typedef enum {
   kWorking,
   kBroken
 } WorkingStatus;
-# 343 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
-# 96 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 334 "/Users/George/Documents/Programs/C/neovim/src/nvim/vim.h" 2
+# 87 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 1
-# 13 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+
+
+
+
+
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
-# 14 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
-# 95 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
-static inline _Bool ascii_iswhite(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isdigit(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isxdigit(int) __attribute__((always_inline)) __attribute__((const));
-static inline _Bool ascii_isspace(int) __attribute__((always_inline)) __attribute__((const));
+# 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h" 2
+# 88 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+static inline _Bool ascii_iswhite(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isxdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isbdigit(int)
+  __attribute__((const))
+  __attribute__((always_inline));
+
+static inline _Bool ascii_isspace(int)
+  __attribute__((const))
+  __attribute__((always_inline));
 
 
 
@@ -21738,7 +21819,7 @@ static inline _Bool ascii_iswhite(int c)
 {
   return c == ' ' || c == '\t';
 }
-# 117 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
+# 125 "/Users/George/Documents/Programs/C/neovim/src/nvim/ascii.h"
 static inline _Bool ascii_isdigit(int c)
 {
   return c >= '0' && c <= '9';
@@ -21757,12 +21838,20 @@ static inline _Bool ascii_isxdigit(int c)
 
 
 
+static inline _Bool ascii_isbdigit(int c)
+{
+  return (c == '0' || c == '1');
+}
+
+
+
+
 
 static inline _Bool ascii_isspace(int c)
 {
   return (c >= 9 && c <= 13) || c == ' ';
 }
-# 97 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 88 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/arabic.h" 1
 
 
@@ -21775,15 +21864,39 @@ static inline _Bool arabic_char(int c)
 
     return c >= 0x0621 && c <= 0x0670;
 }
-# 98 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 89 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.h" 1
-# 99 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 20 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.h"
+typedef struct {
+  enum {
+    kStlClickDisabled = 0,
+    kStlClickTabSwitch,
+    kStlClickTabClose,
+    kStlClickFuncRun,
+  } type;
+  int tabnr;
+  char *func;
+} StlClickDefinition;
+
+
+typedef struct {
+  StlClickDefinition def;
+  const char *start;
+} StlClickRecord;
+
+
+extern StlClickDefinition *tab_page_click_defs;
+
+
+extern long tab_page_click_defs_size;
+# 90 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h" 1
 
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/window.h" 1
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h" 2
+
 
 
 
@@ -21824,7 +21937,7 @@ enum bfa_values {
   BFA_WIPE = 2,
   BFA_KEEP_UNDO = 4,
 };
-# 54 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h"
+# 55 "/Users/George/Documents/Programs/C/neovim/src/nvim/buffer.h"
 static inline void switch_to_win_for_buf(buf_T *buf,
                                          win_T **save_curwinp,
                                          tabpage_T **save_curtabp,
@@ -21848,9 +21961,9 @@ static inline void restore_win_for_buf(win_T *save_curwin,
     restore_buffer(save_curbuf);
   }
 }
-# 100 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 91 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/charset.h" 1
-# 101 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 92 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/cursor.h" 1
 
 
@@ -21880,9 +21993,9 @@ typedef enum {
 } ShellOpts;
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc2.h" 2
 # 8 "/Users/George/Documents/Programs/C/neovim/src/nvim/cursor.h" 2
-# 102 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 93 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/diff.h" 1
-# 103 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 94 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/eval.h" 1
 
 
@@ -21897,7 +22010,7 @@ typedef enum {
 # 21 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/zone.h"
 # 1 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h" 1
 # 22 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h"
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 23 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h" 2
 # 59 "/Users/George/Documents/Programs/C/neovim/.deps/usr/include/msgpack/sysdep.h"
 typedef unsigned int _msgpack_atomic_counter_t;
@@ -23089,6 +23202,10 @@ enum {
     VV_PROGPATH,
     VV_COMMAND_OUTPUT,
     VV_COMPLETED_ITEM,
+    VV_OPTION_NEW,
+    VV_OPTION_OLD,
+    VV_OPTION_TYPE,
+    VV_ERRORS,
     VV_MSGPACK_TYPES,
     VV_LEN,
 };
@@ -23096,8 +23213,9 @@ enum {
 
 
 
-int vim_to_msgpack(msgpack_packer *const, typval_T *const);
-# 104 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+int vim_to_msgpack(msgpack_packer *const, typval_T *const,
+                   const char *const objname);
+# 95 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.h" 1
 # 23 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds.h"
 typedef struct {
@@ -23105,7 +23223,7 @@ typedef struct {
   Timestamp timestamp;
   list_T *additional_elements;
 } SubReplacementString;
-# 105 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 96 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.h" 1
 
 
@@ -23116,9 +23234,9 @@ typedef struct {
 # 7 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_cmds2.h" 2
 
 typedef void (*DoInRuntimepathCB)(char_u *, void *);
-# 106 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 97 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h" 1
-# 28 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h"
+# 29 "/Users/George/Documents/Programs/C/neovim/src/nvim/ex_getln.h"
 typedef enum {
   HIST_CMD,
   HIST_SEARCH,
@@ -23139,18 +23257,18 @@ typedef struct hist_entry {
   Timestamp timestamp;
   list_T *additional_elements;
 } histentry_T;
-# 107 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 98 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/edit.h" 1
 # 15 "/Users/George/Documents/Programs/C/neovim/src/nvim/edit.h"
 typedef int (*IndentGetter)(void);
-# 108 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 99 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/farsi.h" 1
 # 165 "/Users/George/Documents/Programs/C/neovim/src/nvim/farsi.h"
 extern const char_u farsi_text_1[];
 extern const char_u farsi_text_2[];
 extern const char_u farsi_text_3[];
 extern const char_u farsi_text_5[];
-# 109 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 100 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/fileio.h" 1
 
 
@@ -23188,7 +23306,7 @@ typedef struct {
   buf_T *new_curbuf;
   char_u *globaldir;
 } aco_save_T;
-# 110 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 101 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.h" 1
 # 10 "/Users/George/Documents/Programs/C/neovim/src/nvim/fold.h"
 typedef struct foldinfo {
@@ -23198,38 +23316,38 @@ typedef struct foldinfo {
   int fi_low_level;
 
 } foldinfo_T;
-# 111 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 102 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/indent.h" 1
-# 112 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 103 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/getchar.h" 1
-# 113 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 104 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/main.h" 1
-# 114 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 105 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/memline.h" 1
-# 116 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 107 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/message.h" 1
-# 119 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 110 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/misc1.h" 1
-# 120 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 111 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/move.h" 1
-# 123 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 114 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/option.h" 1
-# 125 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 116 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/os_unix.h" 1
-# 126 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 117 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/path.h" 1
 
 
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/func_attr.h" 1
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/path.h" 2
-# 25 "/Users/George/Documents/Programs/C/neovim/src/nvim/path.h"
+# 26 "/Users/George/Documents/Programs/C/neovim/src/nvim/path.h"
 typedef enum file_comparison {
   kEqualFiles = 1,
   kDifferentFiles = 2,
@@ -23237,7 +23355,7 @@ typedef enum file_comparison {
   kOneFileMissing = 6,
   kEqualFileNames = 7
 } FileComparison;
-# 127 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 118 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/popupmnu.h" 1
 
 
@@ -23249,11 +23367,11 @@ typedef struct {
   char_u *pum_extra;
   char_u *pum_info;
 } pumitem_T;
-# 128 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 119 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/quickfix.h" 1
-# 129 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 120 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/regexp.h" 1
-# 130 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 121 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/search.h" 1
 # 49 "/Users/George/Documents/Programs/C/neovim/src/nvim/search.h"
 typedef struct soffset {
@@ -23272,11 +23390,11 @@ typedef struct spat {
   SearchOffset off;
   dict_T *additional_data;
 } SearchPattern;
-# 131 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 122 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/spell.h" 1
-# 132 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 123 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/strings.h" 1
-# 133 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 124 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/syntax.h" 1
 # 40 "/Users/George/Documents/Programs/C/neovim/src/nvim/syntax.h"
 typedef struct {
@@ -23284,13 +23402,13 @@ typedef struct {
   RgbValue color;
 } color_name_table_T;
 extern color_name_table_T color_name_table[];
-# 134 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 125 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/ui.h" 1
 
 
 
-# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include/stddef.h" 1 3 4
 # 5 "/Users/George/Documents/Programs/C/neovim/src/nvim/ui.h" 2
 
 
@@ -23330,9 +23448,9 @@ struct ui_t {
   void (*set_icon)(UI *ui, char *icon);
   void (*stop)(UI *ui);
 };
-# 136 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 127 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/undo.h" 1
-# 137 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 128 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
 # 1 "/Users/George/Documents/Programs/C/neovim/src/nvim/version.h" 1
 
 
@@ -23340,8 +23458,8 @@ struct ui_t {
 
 extern char* Version;
 extern char* longVersion;
-# 138 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
-# 148 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 129 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c" 2
+# 139 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 static int screen_attr = 0;
 
 static match_T search_hl;
@@ -23352,7 +23470,10 @@ static foldinfo_T win_foldinfo;
 
 
 static schar_T *current_ScreenLine;
-# 170 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+
+StlClickDefinition *tab_page_click_defs = ((void*)0);
+long tab_page_click_defs_size = 0;
+# 164 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 void redraw_later(int type)
 {
   redraw_win_later(curwin, type);
@@ -23406,7 +23527,7 @@ void redraw_buf_later(buf_T *buf, int type)
     }
   }
 }
-# 232 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 226 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 void
 redrawWinline (
     linenr_T lnum,
@@ -23764,7 +23885,7 @@ static int draw_signcolumn(win_T *wp)
 {
     return (wp->w_buffer->b_signlist != ((void*)0));
 }
-# 618 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 612 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 static void win_update(win_T *wp)
 {
   buf_T *buf = wp->w_buffer;
@@ -23890,7 +24011,7 @@ static void win_update(win_T *wp)
     }
     if (mod_top != 0 && hasAnyFolding(wp)) {
       linenr_T lnumt, lnumb;
-# 756 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 750 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
       lnumt = wp->w_topline;
       lnumb = 0x7fffffff;
       for (i = 0; i < wp->w_lines_valid; ++i)
@@ -23901,8 +24022,9 @@ static void win_update(win_T *wp)
             lnumb = wp->w_lines[i].wl_lnum;
 
 
-            if (wp->w_onebuf_opt.wo_fdc > 0)
-              ++lnumb;
+            if (compute_foldcolumn(wp, 0) > 0) {
+              lnumb++;
+            }
           }
         }
 
@@ -23962,7 +24084,7 @@ static void win_update(win_T *wp)
 
   if (screen_cleared)
     screen_cleared = 2;
-# 836 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 831 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
   if ((type == 10 || type == 35
        || type == 20 || type == 25)
       && !wp->w_botfill && !wp->w_old_botfill
@@ -24259,7 +24381,7 @@ static void win_update(win_T *wp)
       if (to >= wp->w_botline)
         to = wp->w_botline - 1;
     }
-# 1142 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 1137 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
     if (mid_start > 0) {
       lnum = wp->w_topline;
       idx = 0;
@@ -24335,7 +24457,7 @@ static void win_update(win_T *wp)
 
 
     srow = row;
-# 1227 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 1222 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
     if (row < top_end
         || (row >= mid_start && row < mid_end)
         || top_to_mod
@@ -24645,7 +24767,7 @@ static void win_update(win_T *wp)
   wp->w_old_botfill = wp->w_botfill;
 
   if (dollar_vcol == -1) {
-# 1548 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 1543 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
     wp->w_valid |= 0x20;
     if (wp == curwin && wp->w_botline != old_botline && !recursive) {
       recursive = 1;
@@ -24677,10 +24799,11 @@ static void win_draw_end(win_T *wp, int c1, int c2, int row, int endrow, hlf_T h
 {
   int n = 0;
 
+  int fdc = compute_foldcolumn(wp, 0);
 
   if (wp->w_onebuf_opt.wo_rl) {
 
-    n = wp->w_onebuf_opt.wo_fdc;
+    n = fdc;
 
     if (n > 0) {
 
@@ -24720,8 +24843,8 @@ static void win_draw_end(win_T *wp, int c1, int c2, int row, int endrow, hlf_T h
                   wp->w_wincol, wp->w_wincol + n,
                   cmdwin_type, ' ', highlight_attr[(int)(HLF_AT)]);
     }
-    if (wp->w_onebuf_opt.wo_fdc > 0) {
-      int nn = n + wp->w_onebuf_opt.wo_fdc;
+    if (fdc > 0) {
+      int nn = n + fdc;
 
 
       if (nn > wp->w_width)
@@ -24766,6 +24889,20 @@ static int advance_color_col(int vcol, int **color_cols)
 
 
 
+static int compute_foldcolumn(win_T *wp, int col)
+{
+  int fdc = wp->w_onebuf_opt.wo_fdc;
+  int wmw = wp == curwin && p_wmw == 0 ? 1 : p_wmw;
+  int wwidth = wp->w_width;
+
+  if (fdc > wwidth - (col + wmw)) {
+    fdc = wwidth - (col + wmw);
+  }
+  return fdc;
+}
+
+
+
 
 static void fold_line(win_T *wp, long fold_count, foldinfo_T *foldinfo, linenr_T lnum, int row)
 {
@@ -24779,7 +24916,7 @@ static void fold_line(win_T *wp, long fold_count, foldinfo_T *foldinfo, linenr_T
   int txtcol;
   int off = (int)(current_ScreenLine - ScreenLines);
   int ri;
-# 1690 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 1700 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
   col = 0;
 
 
@@ -24796,10 +24933,7 @@ static void fold_line(win_T *wp, long fold_count, foldinfo_T *foldinfo, linenr_T
 
 
 
-
-  fdc = wp->w_onebuf_opt.wo_fdc;
-  if (fdc > wp->w_width - col)
-    fdc = wp->w_width - col;
+  fdc = compute_foldcolumn(wp, col);
   if (fdc > 0) {
     fill_foldcolumn(buf, wp, 1, lnum);
     if (wp->w_onebuf_opt.wo_rl) {
@@ -24814,7 +24948,7 @@ static void fold_line(win_T *wp, long fold_count, foldinfo_T *foldinfo, linenr_T
       copy_text_attr(off + col, buf, fdc, highlight_attr[(int)(HLF_FC)]);
     col += fdc;
   }
-# 1734 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 1741 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
   if (wp->w_onebuf_opt.wo_rl) for (ri = 0; ri < wp->w_width - col; ++ri) ScreenAttrs[off + (wp->w_width - (col) - (wp->w_width - col)) + ri] = highlight_attr[(int)(HLF_FL)]; else for (ri = 0; ri < wp->w_width - col; ++ri) ScreenAttrs[off + (col) + ri] = highlight_attr[(int)(HLF_FL)];
 
 
@@ -25111,39 +25245,44 @@ fill_foldcolumn (
   int level;
   int first_level;
   int empty;
+  int fdc = compute_foldcolumn(wp, 0);
 
 
-  __builtin___memset_chk (p, ' ', (size_t)wp->w_onebuf_opt.wo_fdc, __builtin_object_size (p, 0));
+  __builtin___memset_chk (p, ' ', (size_t)fdc, __builtin_object_size (p, 0));
 
   level = win_foldinfo.fi_level;
   if (level > 0) {
 
-    empty = (wp->w_onebuf_opt.wo_fdc == 1) ? 0 : 1;
+    empty = (fdc == 1) ? 0 : 1;
 
 
 
-    first_level = level - wp->w_onebuf_opt.wo_fdc - closed + 1 + empty;
-    if (first_level < 1)
+    first_level = level - fdc - closed + 1 + empty;
+    if (first_level < 1) {
       first_level = 1;
+    }
 
-    for (i = 0; i + empty < wp->w_onebuf_opt.wo_fdc; ++i) {
+    for (i = 0; i + empty < fdc; i++) {
       if (win_foldinfo.fi_lnum == lnum
-          && first_level + i >= win_foldinfo.fi_low_level)
+          && first_level + i >= win_foldinfo.fi_low_level) {
         p[i] = '-';
-      else if (first_level == 1)
+      } else if (first_level == 1) {
         p[i] = '|';
-      else if (first_level + i <= 9)
+      } else if (first_level + i <= 9) {
         p[i] = '0' + first_level + i;
-      else
+      } else {
         p[i] = '>';
-      if (first_level + i == level)
+      }
+      if (first_level + i == level) {
         break;
+      }
     }
   }
-  if (closed)
-    p[i >= wp->w_onebuf_opt.wo_fdc ? i - 1 : i] = '+';
+  if (closed) {
+    p[i >= fdc ? i - 1 : i] = '+';
+  }
 }
-# 2070 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 2082 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 static int
 win_line (
     win_T *wp,
@@ -25248,7 +25387,7 @@ win_line (
   int prev_c = 0;
   int prev_c1 = 0;
   int did_line_attr = 0;
-# 2184 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 2196 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
   int draw_state = 0;
 
   int syntax_flags = 0;
@@ -25261,7 +25400,7 @@ win_line (
   int vcol_off = 0;
   int did_wcol = 0;
   int old_boguscols = 0;
-# 2207 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 2219 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
   if (startrow > endrow)
     return startrow;
 
@@ -25501,7 +25640,7 @@ win_line (
       prev_ptr = ptr;
       (ptr += has_mbyte ? (*mb_ptr2len)((char_u *)ptr) : 1);
     }
-# 2454 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 2466 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
     if (vcol < v && (
           wp->w_onebuf_opt.wo_cuc
           || draw_color_col
@@ -25556,7 +25695,7 @@ win_line (
         word_end = (int)(spell_to_word_end(ptr, wp) - line + 1);
       } else {
 
-        (__builtin_expect(!(len <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c", 2508, "len <= INT_MAX") : (void)0);
+        (__builtin_expect(!(len <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c", 2520, "len <= INT_MAX") : (void)0);
         word_end = wp->w_cursor.col + (int)len + 1;
 
 
@@ -25689,11 +25828,13 @@ win_line (
       }
 
       if (draw_state == 0 + 1 + 1 - 1 && n_extra == 0) {
+        int fdc = compute_foldcolumn(wp, 0);
+
         draw_state = 0 + 1 + 1;
-        if (wp->w_onebuf_opt.wo_fdc > 0) {
+        if (fdc > 0) {
 
           fill_foldcolumn(extra, wp, 0, lnum);
-          n_extra = wp->w_onebuf_opt.wo_fdc;
+          n_extra = fdc;
           p_extra = extra;
           p_extra[n_extra] = '\000';
           c_extra = '\000';
@@ -25885,7 +26026,7 @@ win_line (
         area_attr = 0;
 
       if (!n_extra) {
-# 2845 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 2859 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
         v = (long)(ptr - line);
         cur = wp->w_match_head;
         shl_flag = 0;
@@ -25989,10 +26130,12 @@ win_line (
 
 
       attr_pri = 1;
-      if (area_attr != 0)
-        char_attr = area_attr;
-      else if (search_attr != 0)
-        char_attr = search_attr;
+
+      if (area_attr != 0) {
+        char_attr = hl_combine_attr(line_attr, area_attr);
+      } else if (search_attr != 0) {
+        char_attr = hl_combine_attr(line_attr, search_attr);
+      }
 
 
       else if (line_attr != 0 && ((fromcol == -10 && tocol == 0x7fffffff)
@@ -26007,7 +26150,7 @@ win_line (
           char_attr = 0;
       }
     }
-# 2978 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 2994 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
     if (n_extra > 0) {
       if (c_extra != '\000') {
         c = c_extra;
@@ -26222,7 +26365,8 @@ win_line (
 
 
       if (wp->w_onebuf_opt.wo_list
-          && (((c == 160 || (mb_utf8 && mb_c == 160)) && lcs_nbsp)
+          && (((c == 160 || (mb_utf8 && (mb_c == 160 || mb_c == 0x202f)))
+               && lcs_nbsp)
               || (c == ' ' && lcs_space && ptr - line <= trailcol))) {
         c = (c == ' ') ? lcs_space : lcs_nbsp;
         if (area_attr == 0 && search_attr == 0) {
@@ -26308,7 +26452,7 @@ win_line (
               p = prev_ptr;
             cap_col -= (int)(prev_ptr - line);
             size_t tmplen = spell_check(wp, p, &spell_hlf, &cap_col, nochange);
-            (__builtin_expect(!(tmplen <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c", 3278, "tmplen <= INT_MAX") : (void)0);
+            (__builtin_expect(!(tmplen <= 2147483647), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c", 3295, "tmplen <= INT_MAX") : (void)0);
             len = (int)tmplen;
             word_end = v + len;
 
@@ -26365,16 +26509,15 @@ win_line (
 
 
         if (wp->w_onebuf_opt.wo_lbr && (breakat_flags[(char_u)(c)]) && !(breakat_flags[(char_u)(*ptr)])) {
-          char_u *p = ptr - (
-              has_mbyte ? mb_l :
-              1);
+          int mb_off = has_mbyte ? (*mb_head_off)(line, ptr - 1) : 0;
+          char_u *p = ptr - (mb_off + 1);
 
           n_extra = win_lbr_chartabsize(wp, line, p, (colnr_T)vcol, ((void*)0)) - 1;
           if (c == '\011' && n_extra + col > wp->w_width) {
             n_extra = (int)wp->w_buffer->b_p_ts
                       - vcol % (int)wp->w_buffer->b_p_ts - 1;
           }
-          c_extra = ' ';
+          c_extra = mb_off > 0 ? '<' : ' ';
           if (ascii_iswhite(c)) {
             if (c == '\011')
 
@@ -26430,7 +26573,7 @@ win_line (
             int i;
             int saved_nextra = n_extra;
 
-            if ((is_concealing || boguscols > 0) && vcol_off > 0) {
+            if (vcol_off > 0) {
 
               tab_len += vcol_off;
             }
@@ -26460,25 +26603,31 @@ win_line (
 
 
 
-            if ((is_concealing || boguscols > 0) && vcol_off > 0) {
+            if (vcol_off > 0) {
               n_extra -= vcol_off;
             }
           }
 
+          {
+            int vc_saved = vcol_off;
 
 
 
 
 
-          { n_extra += vcol_off; vcol -= vcol_off; vcol_off = 0; col -= boguscols; old_boguscols = boguscols; boguscols = 0; };
+
+
+            { n_extra += vcol_off; vcol -= vcol_off; vcol_off = 0; col -= boguscols; old_boguscols = boguscols; boguscols = 0; };
 
 
 
-          if (old_boguscols > 0 && n_extra > tab_len && wp->w_onebuf_opt.wo_list
-              && lcs_tab1) {
-            tab_len += n_extra - tab_len;
+
+            if (n_extra == tab_len + vc_saved && wp->w_onebuf_opt.wo_list && lcs_tab1) {
+              tab_len += vc_saved;
+            }
           }
-          mb_utf8 = 0;
+
+          mb_utf8 = (int)0;
           if (wp->w_onebuf_opt.wo_list) {
             c = lcs_tab1;
             if (wp->w_onebuf_opt.wo_lbr) {
@@ -26500,7 +26649,7 @@ win_line (
             c = ' ';
           }
         } else if (c == '\000'
-                   && ((wp->w_onebuf_opt.wo_list && lcs_eol > 0)
+                   && (wp->w_onebuf_opt.wo_list
                        || ((fromcol >= 0 || fromcol_prev >= 0)
                            && tocol > vcol
                            && VIsual_mode != 22
@@ -26510,7 +26659,7 @@ win_line (
                            && !(noinvcur
                                 && lnum == wp->w_cursor.lnum
                                 && (colnr_T)vcol == wp->w_virtcol)))
-                   && lcs_eol_one >= 0) {
+                   && lcs_eol_one > 0) {
 
 
 
@@ -26527,10 +26676,11 @@ win_line (
               c_extra = '\000';
             }
           }
-          if (wp->w_onebuf_opt.wo_list)
+          if (wp->w_onebuf_opt.wo_list && lcs_eol > 0) {
             c = lcs_eol;
-          else
+          } else {
             c = ' ';
+          }
           lcs_eol_one = -1;
           --ptr;
           if (!attr_pri) {
@@ -26989,19 +27139,23 @@ win_line (
 
       if (has_mbyte && (*mb_char2cells)(mb_c) > 1) {
 
-        ++off;
-        ++col;
-        if (enc_utf8)
+        off++;
+        col++;
+        if (enc_utf8) {
 
           ScreenLines[off] = 0;
-        else
+        } else {
 
           ScreenLines[off] = mb_c & 0xff;
-        ++vcol;
+        }
+        if (draw_state > 0 + 1 + 1 + 1 + 1 && filler_todo <= 0) {
+          vcol++;
+        }
 
 
-        if (tocol == vcol)
-          ++tocol;
+        if (tocol == vcol) {
+          tocol++;
+        }
         if (wp->w_onebuf_opt.wo_rl) {
 
           --off;
@@ -27021,7 +27175,7 @@ win_line (
       if (n_extra > 0)
         vcol_off += n_extra;
       if (wp->w_onebuf_opt.wo_wrap) {
-# 4004 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 4031 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
         if (n_extra > 0) {
           vcol += n_extra;
           if (wp->w_onebuf_opt.wo_rl) {
@@ -27128,7 +27282,7 @@ win_line (
           && wp->w_width == Columns) {
 
         LineWraps[screen_row - 1] = 1;
-# 4123 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 4149 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
         if (!(has_mbyte
                  && ((*mb_off2cells)(LineOffset[screen_row],
                                      LineOffset[screen_row] + screen_Columns)
@@ -27213,7 +27367,7 @@ static int comp_char_differs(int off_from, int off_to)
   }
   return 0;
 }
-# 4215 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 4241 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 static int char_needs_redraw(int off_from, int off_to, int cols)
 {
   return (cols > 0
@@ -27234,7 +27388,7 @@ static int char_needs_redraw(int off_from, int off_to, int cols)
                       && ScreenLines[off_from + 1]
                       != ScreenLines[off_to + 1])))));
 }
-# 4247 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 4273 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 static void screen_line(int row, int coloff, int endcol, int clear_width, int rlflag)
 {
   unsigned off_from;
@@ -27557,7 +27711,7 @@ static int skip_status_match_char(expand_T *xp, char_u *s)
   }
   return 0;
 }
-# 4577 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 4603 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 void
 win_redr_status_matches (
     expand_T *xp,
@@ -27970,7 +28124,7 @@ win_redr_custom (
   char_u *stl;
   char_u *p;
   struct stl_hlrec hltab[80];
-  struct stl_hlrec tabtab[80];
+  StlClickRecord tabtab[80];
   int use_sandbox = 0;
   win_T *ewp;
   int p_crb_save;
@@ -28091,16 +28245,20 @@ win_redr_custom (
     col = 0;
     len = 0;
     p = buf;
-    fillchar = 0;
+    StlClickDefinition cur_click_def = {
+      .type = kStlClickDisabled,
+    };
     for (n = 0; tabtab[n].start != ((void*)0); n++) {
-      len += vim_strnsize(p, (int)(tabtab[n].start - p));
-      while (col < len)
-        TabPageIdxs[col++] = fillchar;
-      p = tabtab[n].start;
-      fillchar = tabtab[n].userhl;
+      len += vim_strnsize(p, (int)(tabtab[n].start - (char *) p));
+      while (col < len) {
+        tab_page_click_defs[col++] = cur_click_def;
+      }
+      p = (char_u *) tabtab[n].start;
+      cur_click_def = tabtab[n].def;
     }
-    while (col < Columns)
-      TabPageIdxs[col++] = fillchar;
+    while (col < Columns) {
+      tab_page_click_defs[col++] = cur_click_def;
+    }
   }
 
 theend:
@@ -28209,7 +28367,7 @@ void screen_puts_len(char_u *text, int textlen, int row, int col, int attr)
   const _Bool l_enc_utf8 = enc_utf8;
   const int l_enc_dbcs = enc_dbcs;
 
-  (__builtin_expect(!((l_has_mbyte == (l_enc_utf8 || l_enc_dbcs)) && !(l_enc_utf8 && l_enc_dbcs)), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c", 5229, "(l_has_mbyte == (l_enc_utf8 || l_enc_dbcs)) && !(l_enc_utf8 && l_enc_dbcs)") : (void)0);
+  (__builtin_expect(!((l_has_mbyte == (l_enc_utf8 || l_enc_dbcs)) && !(l_enc_utf8 && l_enc_dbcs)), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c", 5259, "(l_has_mbyte == (l_enc_utf8 || l_enc_dbcs)) && !(l_enc_utf8 && l_enc_dbcs)") : (void)0);
 
 
   if (ScreenLines == ((void*)0) || row >= screen_Rows)
@@ -28491,7 +28649,7 @@ static void prepare_search_hl(win_T *wp, linenr_T lnum)
       cur = cur->next;
   }
 }
-# 5519 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 5549 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 static void
 next_search_hl (
     win_T *win,
@@ -28887,7 +29045,7 @@ int screen_valid(int doclear)
   screenalloc(doclear);
   return ScreenLines != ((void*)0);
 }
-# 5925 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 5955 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 void screenalloc(_Bool doclear)
 {
   int new_row, old_row;
@@ -28901,9 +29059,9 @@ void screenalloc(_Bool doclear)
   sattr_T *new_ScreenAttrs;
   unsigned *new_LineOffset;
   char_u *new_LineWraps;
-  short *new_TabPageIdxs;
-  static int entered = 0;
-  static int done_outofmem_msg = 0;
+  StlClickDefinition *new_tab_page_click_defs;
+  static _Bool entered = 0;
+  static _Bool done_outofmem_msg = 0;
   int retry_count = 0;
   const _Bool l_enc_utf8 = enc_utf8;
   const int l_enc_dbcs = enc_dbcs;
@@ -28944,7 +29102,7 @@ retry:
   win_new_shellsize();
 
   comp_col();
-# 5993 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 6023 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
   for (tabpage_T *tp = first_tabpage; tp != ((void*)0); tp = tp->tp_next) for (win_T *wp = ((tp) == curtab) ? firstwin : (tp)->tp_firstwin; wp != ((void*)0); wp = wp->w_next) {
     win_free_lsize(wp);
   }
@@ -28965,7 +29123,8 @@ retry:
   new_ScreenAttrs = xmalloc((size_t)((Rows + 1) * Columns * sizeof(sattr_T)));
   new_LineOffset = xmalloc((size_t)(Rows * sizeof(unsigned)));
   new_LineWraps = xmalloc((size_t)(Rows * sizeof(char_u)));
-  new_TabPageIdxs = xmalloc((size_t)(Columns * sizeof(short)));
+  new_tab_page_click_defs = xcalloc(
+      (size_t) Columns, sizeof(*new_tab_page_click_defs));
 
   for (tabpage_T *tp = first_tabpage; tp != ((void*)0); tp = tp->tp_next) for (win_T *wp = ((tp) == curtab) ? firstwin : (tp)->tp_firstwin; wp != ((void*)0); wp = wp->w_next) {
     win_alloc_lines(wp);
@@ -28983,7 +29142,7 @@ retry:
       || new_ScreenAttrs == ((void*)0)
       || new_LineOffset == ((void*)0)
       || new_LineWraps == ((void*)0)
-      || new_TabPageIdxs == ((void*)0)
+      || new_tab_page_click_defs == ((void*)0)
       || outofmem) {
     if (ScreenLines != ((void*)0) || !done_outofmem_msg) {
 
@@ -29009,8 +29168,8 @@ retry:
     new_LineOffset = ((void*)0);
     xfree(new_LineWraps);
     new_LineWraps = ((void*)0);
-    xfree(new_TabPageIdxs);
-    new_TabPageIdxs = ((void*)0);
+    xfree(new_tab_page_click_defs);
+    new_tab_page_click_defs = ((void*)0);
   } else {
     done_outofmem_msg = 0;
 
@@ -29089,7 +29248,8 @@ retry:
   ScreenAttrs = new_ScreenAttrs;
   LineOffset = new_LineOffset;
   LineWraps = new_LineWraps;
-  TabPageIdxs = new_TabPageIdxs;
+  tab_page_click_defs = new_tab_page_click_defs;
+  tab_page_click_defs_size = Columns;
 
 
 
@@ -29128,7 +29288,25 @@ void free_screenlines(void)
   xfree(ScreenAttrs);
   xfree(LineOffset);
   xfree(LineWraps);
-  xfree(TabPageIdxs);
+  clear_tab_page_click_defs(tab_page_click_defs, tab_page_click_defs_size);
+  xfree(tab_page_click_defs);
+}
+
+
+
+
+
+void clear_tab_page_click_defs(StlClickDefinition *const tpcd,
+                               const long tpcd_size)
+{
+  if (tpcd != ((void*)0)) {
+    for (long i = 0; i < tpcd_size; i++) {
+      if (i == 0 || tpcd[i].func != tpcd[i - 1].func) {
+        xfree(tpcd[i].func);
+      }
+    }
+    __builtin___memset_chk (tpcd, 0, (size_t) tpcd_size * sizeof(tpcd[0]), __builtin_object_size (tpcd, 0));
+  }
 }
 
 void screenclear(void)
@@ -29230,7 +29408,7 @@ void setcursor(void)
           curwin->w_wcol));
   }
 }
-# 6286 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 6336 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 int win_ins_lines(win_T *wp, int row, int line_count, int invalid, int mayclear)
 {
   int did_delete;
@@ -29292,7 +29470,7 @@ int win_ins_lines(win_T *wp, int row, int line_count, int invalid, int mayclear)
 
   return 1;
 }
-# 6355 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 6405 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 int win_del_lines(win_T *wp, int row, int line_count, int invalid, int mayclear)
 {
   int retval;
@@ -29382,7 +29560,7 @@ static void win_rest_invalid(win_T *wp)
   }
   redraw_cmdline = 1;
 }
-# 6462 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 6512 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 int screen_ins_lines (
     int off,
     int row,
@@ -29485,7 +29663,7 @@ int screen_del_lines (
 
   return 1;
 }
-# 6573 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 6623 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 int showmode(void)
 {
   int need_clear;
@@ -29698,8 +29876,8 @@ static void draw_tabline(void)
 
 
 
-  for (scol = 0; scol < Columns; ++scol)
-    TabPageIdxs[scol] = 0;
+  (__builtin_expect(!(Columns == tab_page_click_defs_size), 0) ? __assert_rtn(__func__, "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c", 6835, "Columns == tab_page_click_defs_size") : (void)0);
+  clear_tab_page_click_defs(tab_page_click_defs, tab_page_click_defs_size);
 
 
   if (*p_tal != '\000') {
@@ -29799,9 +29977,14 @@ static void draw_tabline(void)
 
 
 
-      ++tabcount;
-      while (scol < col)
-        TabPageIdxs[scol++] = tabcount;
+      tabcount++;
+      while (scol < col) {
+        tab_page_click_defs[scol++] = (StlClickDefinition) {
+          .type = kStlClickTabSwitch,
+          .tabnr = tabcount,
+          .func = ((void*)0),
+        };
+      }
     }
 
     if (use_sep_chars)
@@ -29813,7 +29996,11 @@ static void draw_tabline(void)
 
     if (first_tabpage->tp_next != ((void*)0)) {
       screen_putchar('X', 0, (int)Columns - 1, attr_nosel);
-      TabPageIdxs[Columns - 1] = -999;
+      tab_page_click_defs[Columns - 1] = (StlClickDefinition) {
+        .type = kStlClickTabClose,
+        .tabnr = 999,
+        .func = ((void*)0),
+      };
     }
   }
 
@@ -30109,7 +30296,7 @@ int number_width(win_T *wp)
   wp->w_nrwidth_width = n;
   return n;
 }
-# 7204 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 7263 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
 void screen_resize(int width, int height)
 {
   static int busy = 0;
@@ -30158,7 +30345,7 @@ void screen_resize(int width, int height)
     maketitle();
     changed_line_abv_curs();
     invalidate_botline();
-# 7263 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
+# 7322 "/Users/George/Documents/Programs/C/neovim/src/nvim/screen.c"
     if (State == 0x300 || State == 0x600 || State == 0x800
         || exmode_active) {
       screenalloc(0);

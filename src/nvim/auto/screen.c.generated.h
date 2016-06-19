@@ -9,6 +9,7 @@ static int draw_signcolumn(win_T *wp);
 static void win_update(win_T *wp);
 static void win_draw_end(win_T *wp, int c1, int c2, int row, int endrow, hlf_T hl);
 static int advance_color_col(int vcol, int **color_cols);
+static int compute_foldcolumn(win_T *wp, int col);
 static void fold_line(win_T *wp, long fold_count, foldinfo_T *foldinfo, linenr_T lnum, int row);
 static void copy_text_attr(int off, char_u *buf, int len, int attr);
 static void fill_foldcolumn(char_u *p, win_T *wp, int closed, linenr_T lnum );

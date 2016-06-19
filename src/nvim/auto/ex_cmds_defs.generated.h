@@ -1,4 +1,4 @@
-static CommandDefinition cmdnames[522] = {
+static CommandDefinition cmdnames[525] = {
   [CMD_append] = {
     .cmd_name = (char_u *) "append",
     .cmd_func = &ex_append,
@@ -335,6 +335,12 @@ static CommandDefinition cmdnames[522] = {
     .cmd_argt = 1048862L,
     .cmd_addr_type = 0
   },
+  [CMD_cdo] = {
+    .cmd_name = (char_u *) "cdo",
+    .cmd_func = &ex_listdo,
+    .cmd_argt = 18599L,
+    .cmd_addr_type = 6
+  },
   [CMD_center] = {
     .cmd_name = (char_u *) "center",
     .cmd_func = &ex_align,
@@ -352,6 +358,12 @@ static CommandDefinition cmdnames[522] = {
     .cmd_func = &ex_cfile,
     .cmd_argt = 286L,
     .cmd_addr_type = 0
+  },
+  [CMD_cfdo] = {
+    .cmd_name = (char_u *) "cfdo",
+    .cmd_func = &ex_listdo,
+    .cmd_argt = 18599L,
+    .cmd_addr_type = 6
   },
   [CMD_cfirst] = {
     .cmd_name = (char_u *) "cfirst",
@@ -971,12 +983,6 @@ static CommandDefinition cmdnames[522] = {
     .cmd_argt = 17665L,
     .cmd_addr_type = 0
   },
-  [CMD_helpfind] = {
-    .cmd_name = (char_u *) "helpfind",
-    .cmd_func = &ex_ni,
-    .cmd_argt = 2052L,
-    .cmd_addr_type = 0
-  },
   [CMD_helpgrep] = {
     .cmd_name = (char_u *) "helpgrep",
     .cmd_func = &ex_helpgrep,
@@ -1247,6 +1253,12 @@ static CommandDefinition cmdnames[522] = {
     .cmd_argt = 2060L,
     .cmd_addr_type = 0
   },
+  [CMD_ldo] = {
+    .cmd_name = (char_u *) "ldo",
+    .cmd_func = &ex_listdo,
+    .cmd_argt = 18599L,
+    .cmd_addr_type = 6
+  },
   [CMD_left] = {
     .cmd_name = (char_u *) "left",
     .cmd_func = &ex_align,
@@ -1276,6 +1288,12 @@ static CommandDefinition cmdnames[522] = {
     .cmd_func = &ex_cfile,
     .cmd_argt = 286L,
     .cmd_addr_type = 0
+  },
+  [CMD_lfdo] = {
+    .cmd_name = (char_u *) "lfdo",
+    .cmd_func = &ex_listdo,
+    .cmd_argt = 18599L,
+    .cmd_addr_type = 6
   },
   [CMD_lfirst] = {
     .cmd_name = (char_u *) "lfirst",

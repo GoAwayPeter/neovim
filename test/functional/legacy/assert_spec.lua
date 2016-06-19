@@ -1,4 +1,4 @@
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
 local nvim, call = helpers.meths, helpers.call
 local clear, eq = helpers.clear, helpers.eq
 local source, execute = helpers.source, helpers.execute
@@ -140,6 +140,36 @@ describe('assert function:', function()
         tmpname_one .. " line 3: 'false assertion failed'",
         tmpname_two .. " line 1: 'file two'",
       })
+    end)
+
+    it('is reset to a list by assert functions', function()
+      source([[
+        let save_verrors = v:errors
+        let v:['errors'] = {'foo': 3}
+        call assert_equal('yes', 'no')
+        let verrors = v:errors
+        let v:errors = save_verrors
+        call assert_equal(type([]), type(verrors))
+      ]])
+      expected_empty()
+    end)
+  end)
+
+  -- assert_fails({cmd}, [, {error}])
+  describe('assert_fails', function()
+    it('should change v:errors when error does not match v:errmsg', function()
+      execute([[call assert_fails('xxx', {})]])
+      expected_errors({"Expected {} but got 'E731: using Dictionary as a String'"})
+    end)
+
+    it('should not change v:errors when cmd errors', function()
+      call('assert_fails', 'NonexistentCmd')
+      expected_empty()
+    end)
+
+    it('should change v:errors when cmd succeeds', function()
+      call('assert_fails', 'call empty("")')
+      expected_errors({'command did not fail: call empty("")'})
     end)
   end)
 end)

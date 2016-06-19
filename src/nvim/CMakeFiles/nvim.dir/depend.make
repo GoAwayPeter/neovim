@@ -109,6 +109,7 @@ src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: include/os/stdpaths.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: include/os/time.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: include/os/users.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: include/profile.h.generated.h
+src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: include/screen.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: include/terminal.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: include/undo.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: include/window.h.generated.h
@@ -163,6 +164,7 @@ src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: src/nvim/os/win_defs.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: src/nvim/pos.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: src/nvim/profile.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: src/nvim/regexp_defs.h
+src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: src/nvim/screen.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: src/nvim/sign_defs.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: src/nvim/syntax_defs.h
 src/nvim/CMakeFiles/nvim.dir/api/buffer.c.o: src/nvim/terminal.h
@@ -297,6 +299,7 @@ src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: include/normal.h.generated
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: include/option.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: include/os/time.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: include/profile.h.generated.h
+src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: include/screen.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: include/terminal.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: include/window.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/api/private/defs.h
@@ -345,6 +348,7 @@ src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/os/win_defs.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/pos.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/profile.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/regexp_defs.h
+src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/screen.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/sign_defs.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/syntax_defs.h
 src/nvim/CMakeFiles/nvim.dir/api/private/helpers.c.o: src/nvim/terminal.h
@@ -890,6 +894,7 @@ src/nvim/CMakeFiles/nvim.dir/buffer.c.o: include/window.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/buffer.c.o: src/nvim/api/private/defs.h
 src/nvim/CMakeFiles/nvim.dir/buffer.c.o: src/nvim/api/private/handle.h
 src/nvim/CMakeFiles/nvim.dir/buffer.c.o: src/nvim/ascii.h
+src/nvim/CMakeFiles/nvim.dir/buffer.c.o: src/nvim/assert.h
 src/nvim/CMakeFiles/nvim.dir/buffer.c.o: src/nvim/auto/buffer.c.generated.h
 src/nvim/CMakeFiles/nvim.dir/buffer.c.o: src/nvim/buffer.h
 src/nvim/CMakeFiles/nvim.dir/buffer.c.o: src/nvim/buffer_defs.h
@@ -4378,6 +4383,7 @@ src/nvim/CMakeFiles/nvim.dir/keymap.c.o: include/strings.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/keymap.c.o: include/terminal.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/keymap.c.o: src/nvim/api/private/defs.h
 src/nvim/CMakeFiles/nvim.dir/keymap.c.o: src/nvim/ascii.h
+src/nvim/CMakeFiles/nvim.dir/keymap.c.o: src/nvim/auto/keymap.c.generated.h
 src/nvim/CMakeFiles/nvim.dir/keymap.c.o: src/nvim/buffer_defs.h
 src/nvim/CMakeFiles/nvim.dir/keymap.c.o: src/nvim/charset.h
 src/nvim/CMakeFiles/nvim.dir/keymap.c.o: src/nvim/edit.h
@@ -4822,6 +4828,7 @@ src/nvim/CMakeFiles/nvim.dir/mark.c.o: include/os/users.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: include/path.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: include/profile.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: include/quickfix.h.generated.h
+src/nvim/CMakeFiles/nvim.dir/mark.c.o: include/screen.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: include/search.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: include/strings.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: include/terminal.h.generated.h
@@ -4881,6 +4888,7 @@ src/nvim/CMakeFiles/nvim.dir/mark.c.o: src/nvim/pos.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: src/nvim/profile.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: src/nvim/quickfix.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: src/nvim/regexp_defs.h
+src/nvim/CMakeFiles/nvim.dir/mark.c.o: src/nvim/screen.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: src/nvim/search.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: src/nvim/sign_defs.h
 src/nvim/CMakeFiles/nvim.dir/mark.c.o: src/nvim/strings.h
@@ -7312,11 +7320,13 @@ src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/mbyte.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/memory.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/menu.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/misc1.h.generated.h
+src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/misc2.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/normal.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/os/env.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/os/fs.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/os/input.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/os/mem.h.generated.h
+src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/os/shell.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/os/stdpaths.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/os/time.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: include/os/users.h.generated.h
@@ -7358,12 +7368,14 @@ src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/memline_defs.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/memory.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/menu.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/misc1.h
+src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/misc2.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/normal.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/option_defs.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/os/fs_defs.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/os/input.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/os/os.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/os/os_defs.h
+src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/os/shell.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/os/stdpaths_defs.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/os/time.h
 src/nvim/CMakeFiles/nvim.dir/os/input.c.o: src/nvim/os/unix_defs.h
@@ -9072,8 +9084,10 @@ src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/os/time.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/os/users.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/path.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/profile.h.generated.h
+src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/quickfix.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/rbuffer.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/regexp.h.generated.h
+src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/screen.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/search.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/shada.h.generated.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: include/strings.h.generated.h
@@ -9135,9 +9149,11 @@ src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/os/win_defs.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/path.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/pos.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/profile.h
+src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/quickfix.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/rbuffer.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/regexp.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/regexp_defs.h
+src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/screen.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/search.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/shada.h
 src/nvim/CMakeFiles/nvim.dir/shada.c.o: src/nvim/sign_defs.h

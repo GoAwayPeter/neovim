@@ -5,6 +5,32 @@ endif
 
 let s:loaded_pythonx_provider = 1
 
+function! provider#pythonx#Require(host) abort
+  let ver = (a:host.orig_name ==# 'python') ? 2 : 3
+
+  " Python host arguments
+  let args = ['-c', 'import sys; sys.path.remove(""); import neovim; neovim.start_host()']
+
+  " Collect registered Python plugins into args
+  let python_plugins = remote#host#PluginsForHost(a:host.name)
+  for plugin in python_plugins
+    call add(args, plugin.path)
+  endfor
+
+  try
+    let channel_id = rpcstart((ver ==# '2' ?
+          \ provider#python#Prog() : provider#python3#Prog()), args)
+    if rpcrequest(channel_id, 'poll') ==# 'ok'
+      return channel_id
+    endif
+  catch
+    echomsg v:throwpoint
+    echomsg v:exception
+  endtry
+  throw remote#host#LoadErrorForHost(a:host.orig_name,
+        \ '$NVIM_PYTHON_LOG_FILE')
+endfunction
+
 function! provider#pythonx#Detect(major_ver) abort
   let host_var = (a:major_ver == 2) ?
         \ 'g:python_host_prog' : 'g:python3_host_prog'
@@ -44,7 +70,7 @@ endfunction
 
 function! s:check_interpreter(prog, major_ver, skip) abort
   let prog_path = exepath(a:prog)
-  if prog_path == ''
+  if prog_path ==# ''
     return [0, a:prog . ' not found in search path or not executable.']
   endif
 
@@ -57,8 +83,8 @@ function! s:check_interpreter(prog, major_ver, skip) abort
   " Try to load neovim module, and output Python version.
   " Return codes:
   "   0  Neovim module can be loaded.
-  "   1  Something else went wrong.
   "   2  Neovim module cannot be loaded.
+  "   Otherwise something else went wrong (e.g. 1 or 127).
   let prog_ver = system([ a:prog , '-c' ,
         \ 'import sys; ' .
         \ 'sys.path.remove(""); ' .
@@ -67,7 +93,8 @@ function! s:check_interpreter(prog, major_ver, skip) abort
         \ 'exit(2*int(pkgutil.get_loader("neovim") is None))'
         \ ])
 
-  if prog_ver
+  if v:shell_error == 2 || v:shell_error == 0
+    " Check version only for expected return codes.
     if prog_ver !~ '^' . a:major_ver
       return [0, prog_path . ' is Python ' . prog_ver . ' and cannot provide Python '
             \ . a:major_ver . '.']
@@ -77,12 +104,16 @@ function! s:check_interpreter(prog, major_ver, skip) abort
     endif
   endif
 
-  if v:shell_error == 1
+  if v:shell_error == 2
+    return [0, prog_path . ' does not have the neovim module installed. '
+          \ . 'See ":help provider-python".']
+  elseif v:shell_error == 127
+    " This can happen with pyenv's shims.
+    return [0, prog_path . ' does not exist: ' . prog_ver]
+  elseif v:shell_error
     return [0, 'Checking ' . prog_path . ' caused an unknown error. '
-          \ . 'Please report this at github.com/neovim/neovim.']
-  elseif v:shell_error == 2
-    return [0, prog_path . ' does have not have the neovim module installed. '
-          \ . 'See ":help nvim-python".']
+          \ . '(' . v:shell_error . ', output: ' . prog_ver . ')'
+          \ . ' Please report this at github.com/neovim/neovim.']
   endif
 
   return [1, '']

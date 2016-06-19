@@ -4,6 +4,7 @@
 #include "nvim/api/vim.h"
 #include "nvim/api/private/helpers.h"
 #include "nvim/ascii.h"
+#include "nvim/main.h"
 #include "nvim/misc2.h"
 #include "nvim/os/os.h"
 #include "nvim/os/input.h"
@@ -92,7 +93,7 @@ static void flush_input(TermInput *input, bool wait_until_empty)
   size_t drain_boundary = wait_until_empty ? 0 : 0xff;
   do {
     uv_mutex_lock(&input->key_buffer_mutex);
-    loop_schedule(&loop, event_create(1, wait_input_enqueue, 1, input));
+    loop_schedule(&main_loop, event_create(1, wait_input_enqueue, 1, input));
     input->waiting = true;
     while (input->waiting) {
       uv_cond_wait(&input->key_buffer_cond, &input->key_buffer_mutex);
@@ -138,6 +139,9 @@ static void forward_modified_utf8(TermInput *input, TermKeyKey *key)
   if (key->type == TERMKEY_TYPE_KEYSYM
       && key->code.sym == TERMKEY_SYM_ESCAPE) {
     len = (size_t)snprintf(buf, sizeof(buf), "<Esc>");
+  } else if (key->type == TERMKEY_TYPE_KEYSYM
+      && key->code.sym == TERMKEY_SYM_SUSPEND) {
+    len = (size_t)snprintf(buf, sizeof(buf), "<C-Z>");
   } else {
     len = termkey_strfkey(input->tk, buf, sizeof(buf), key, TERMKEY_FORMAT_VIM);
   }
@@ -153,7 +157,8 @@ static void forward_mouse_event(TermInput *input, TermKeyKey *key)
   TermKeyMouseEvent ev;
   termkey_interpret_mouse(input->tk, key, &ev, &button, &row, &col);
 
-  if (ev != TERMKEY_MOUSE_PRESS && ev != TERMKEY_MOUSE_DRAG) {
+  if (ev != TERMKEY_MOUSE_PRESS && ev != TERMKEY_MOUSE_DRAG
+      && ev != TERMKEY_MOUSE_RELEASE) {
     return;
   }
 
@@ -190,6 +195,8 @@ static void forward_mouse_event(TermInput *input, TermKeyKey *key)
     }
   } else if (ev == TERMKEY_MOUSE_DRAG) {
     len += (size_t)snprintf(buf + len, sizeof(buf) - len, "Drag");
+  } else if (ev == TERMKEY_MOUSE_RELEASE) {
+    len += (size_t)snprintf(buf + len, sizeof(buf) - len, "Release");
   }
 
   len += (size_t)snprintf(buf + len, sizeof(buf) - len, "><%d,%d>", col, row);
@@ -224,9 +231,9 @@ static void tk_getkeys(TermInput *input, bool force)
   while ((result = tk_getkey(input->tk, &key, force)) == TERMKEY_RES_KEY) {
     if (key.type == TERMKEY_TYPE_UNICODE && !key.modifiers) {
       forward_simple_utf8(input, &key);
-    } else if (key.type == TERMKEY_TYPE_UNICODE ||
-               key.type == TERMKEY_TYPE_FUNCTION ||
-               key.type == TERMKEY_TYPE_KEYSYM) {
+    } else if (key.type == TERMKEY_TYPE_UNICODE
+               || key.type == TERMKEY_TYPE_FUNCTION
+               || key.type == TERMKEY_TYPE_KEYSYM) {
       forward_modified_utf8(input, &key);
     } else if (key.type == TERMKEY_TYPE_MOUSE) {
       forward_mouse_event(input, &key);
@@ -282,9 +289,9 @@ static bool handle_focus_event(TermInput *input)
 
 static bool handle_bracketed_paste(TermInput *input)
 {
-  if (rbuffer_size(input->read_stream.buffer) > 5 &&
-      (!rbuffer_cmp(input->read_stream.buffer, "\x1b[200~", 6) ||
-       !rbuffer_cmp(input->read_stream.buffer, "\x1b[201~", 6))) {
+  if (rbuffer_size(input->read_stream.buffer) > 5
+      && (!rbuffer_cmp(input->read_stream.buffer, "\x1b[200~", 6)
+          || !rbuffer_cmp(input->read_stream.buffer, "\x1b[201~", 6))) {
     bool enable = *rbuffer_get(input->read_stream.buffer, 4) == '0';
     // Advance past the sequence
     rbuffer_consumed(input->read_stream.buffer, 6);
@@ -336,7 +343,7 @@ static void read_cb(Stream *stream, RBuffer *buf, size_t c, void *data,
       stream_close(&input->read_stream, NULL);
       queue_put(input->loop->fast_events, restart_reading, 1, input);
     } else {
-      loop_schedule(&loop, event_create(1, input_done_event, 0));
+      loop_schedule(&main_loop, event_create(1, input_done_event, 0));
     }
     return;
   }

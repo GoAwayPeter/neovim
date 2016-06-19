@@ -65,7 +65,6 @@
 #include "nvim/strings.h"
 #include "nvim/ui.h"
 #include "nvim/version.h"
-#include "nvim/tempfile.h"
 #include "nvim/undo.h"
 #include "nvim/window.h"
 #include "nvim/os/os.h"
@@ -426,10 +425,8 @@ void ml_setname(buf_T *buf)
     /* try to rename the swap file */
     if (vim_rename(mfp->mf_fname, fname) == 0) {
       success = TRUE;
-      xfree(mfp->mf_fname);
-      mfp->mf_fname = fname;
-      xfree(mfp->mf_ffname);
-      mf_set_ffname(mfp);
+      mf_free_fnames(mfp);
+      mf_set_fnames(mfp, fname);
       ml_upd_block0(buf, UB_SAME_DIR);
       break;
     }
@@ -446,8 +443,9 @@ void ml_setname(buf_T *buf)
 #ifdef HAVE_FD_CLOEXEC
     {
       int fdflags = fcntl(mfp->mf_fd, F_GETFD);
-      if (fdflags >= 0 && (fdflags & FD_CLOEXEC) == 0)
-        fcntl(mfp->mf_fd, F_SETFD, fdflags | FD_CLOEXEC);
+      if (fdflags >= 0 && (fdflags & FD_CLOEXEC) == 0) {
+        (void)fcntl(mfp->mf_fd, F_SETFD, fdflags | FD_CLOEXEC);
+      }
     }
 #endif
   }
@@ -789,9 +787,8 @@ void ml_recover(void)
   if (fname == NULL)                /* When there is no file name */
     fname = (char_u *)"";
   len = (int)STRLEN(fname);
-  if (len >= 4 &&
-      STRNICMP(fname + len - 4, ".s", 2)
-      == 0
+  if (len >= 4
+      && STRNICMP(fname + len - 4, ".s", 2) == 0
       && vim_strchr((char_u *)"UVWuvw", fname[len - 2]) != NULL
       && ASCII_ISALPHA(fname[len - 1])) {
     directly = TRUE;
@@ -3196,7 +3193,7 @@ attention_message (
  */
 static int do_swapexists(buf_T *buf, char_u *fname)
 {
-  set_vim_var_string(VV_SWAPNAME, fname, -1);
+  set_vim_var_string(VV_SWAPNAME, (char *) fname, -1);
   set_vim_var_string(VV_SWAPCHOICE, NULL, -1);
 
   /* Trigger SwapExists autocommands with <afile> set to the file being

@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim(Esperanto)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-26 14:21+0200\n"
-"PO-Revision-Date: 2013-05-27 04:55+0200\n"
+"POT-Creation-Date: 2016-02-13 23:42+0100\n"
+"PO-Revision-Date: 2016-02-13 23:45+0100\n"
 "Last-Translator: Dominique PELLÉ <dominique.pelle@gmail.com>\n"
 "Language-Team: \n"
 "Language: eo\n"
@@ -114,11 +114,6 @@ msgstr "E84: Neniu modifita bufro trovita"
 #: ../buffer.c:903
 msgid "E85: There is no listed buffer"
 msgstr "E85: Estas neniu listigita bufro"
-
-#: ../buffer.c:913
-#, c-format
-msgid "E86: Buffer %<PRId64> does not exist"
-msgstr "E86: La bufro %<PRId64> ne ekzistas"
 
 #: ../buffer.c:915
 msgid "E87: Cannot go beyond last buffer"
@@ -509,10 +504,6 @@ msgstr "E686: Argumento de %s devas esti Listo"
 msgid "E712: Argument of %s must be a List or Dictionary"
 msgstr "E712: Argumento de %s devas esti Listo aŭ Vortaro"
 
-#: ../eval.c:144
-msgid "E713: Cannot use empty key for Dictionary"
-msgstr "E713: Ne eblas uzi malplenan ŝlosilon de Vortaro"
-
 #: ../eval.c:145
 msgid "E714: List required"
 msgstr "E714: Listo bezonata"
@@ -662,6 +653,9 @@ msgstr "E110: Mankas ')'"
 msgid "E695: Cannot index a Funcref"
 msgstr "E695: Ne eblas indeksi Funcref"
 
+msgid "E909: Cannot index a special variable"
+msgstr "E909: Ne eblas indeksi specialan variablon"
+
 #: ../eval.c:4839
 #, c-format
 msgid "E112: Option name missing: %s"
@@ -691,6 +685,10 @@ msgstr "E696: Mankas komo en Listo: %s"
 #, c-format
 msgid "E697: Missing end of List ']': %s"
 msgstr "E697: Mankas fino de Listo ']': %s"
+
+#: ../eval.c:5750
+msgid "Not enough memory to set references, garbage collection aborted!"
+msgstr "Ne sufiĉa memoro por valorigi referencojn, senrubigado ĉesigita!"
 
 #: ../eval.c:6475
 #, c-format
@@ -875,6 +873,18 @@ msgstr "E745: Uzo de Listo kiel Nombro"
 msgid "E728: Using a Dictionary as a Number"
 msgstr "E728: Uzo de Vortaro kiel Nombro"
 
+msgid "E891: Using a Funcref as a Float"
+msgstr "E891: Uzo de Funcref kiel Glitpunktnombro"
+
+msgid "E892: Using a String as a Float"
+msgstr "E892: Uzo de Ĉeno kiel Glitpunktnombro"
+
+msgid "E893: Using a List as a Float"
+msgstr "E893: Uzo de Listo kiel Glitpunktnombro"
+
+msgid "E894: Using a Dictionary as a Float"
+msgstr "E894: Uzo de Vortaro kiel Glitpunktnombro"
+
 #: ../eval.c:16259
 msgid "E729: using Funcref as a String"
 msgstr "E729: uzo de Funcref kiel Ĉeno"
@@ -886,6 +896,9 @@ msgstr "E730: uzo de Listo kiel Ĉeno"
 #: ../eval.c:16265
 msgid "E731: using Dictionary as a String"
 msgstr "E731: uzo de Vortaro kiel Ĉeno"
+
+msgid "E908: using an invalid value as a String"
+msgstr "E908: uzo de nevalida valoro kiel Ĉeno"
 
 #: ../eval.c:16619
 #, c-format
@@ -1392,6 +1405,13 @@ msgstr "linio %<PRId64>: %s"
 msgid "cmd: %s"
 msgstr "kmd: %s"
 
+msgid "frame is zero"
+msgstr "kadro estas nul"
+
+#, c-format
+msgid "frame at highest level: %d"
+msgstr "kadro je la plej alta nivelo: %d"
+
 #: ../ex_cmds2.c:322
 #, c-format
 msgid "Breakpoint in \"%s%s\" line %<PRId64>"
@@ -1616,14 +1636,13 @@ msgstr "E173: %<PRId64> pliaj redaktendaj dosieroj"
 msgid "E174: Command already exists: add ! to replace it"
 msgstr "E174: La komando jam ekzistas: aldonu ! por anstataŭigi ĝin"
 
-# DP: malfacilas traduki tion, kaj samtempe honori spacetojn
 #: ../ex_docmd.c:4432
 msgid ""
 "\n"
-"    Name        Args Range Complete  Definition"
+"    Name        Args       Address   Complete  Definition"
 msgstr ""
 "\n"
-"    Nomo        Arg Interv Kompleto  Difino"
+"    Nomo        Argumentoj Adreso    Kompleto  Difino"
 
 #: ../ex_docmd.c:4516
 msgid "No user-defined commands found"
@@ -1649,6 +1668,10 @@ msgstr "E178: Nevalida defaŭlta valoro de kvantoro"
 msgid "E179: argument required for -complete"
 msgstr "E179: argumento bezonata por -complete"
 
+#: ../ex_docmd.c:4933
+msgid "E179: argument required for -addr"
+msgstr "E179: argumento bezonata por -addr"
+
 #: ../ex_docmd.c:4635
 #, c-format
 msgid "E181: Invalid attribute: %s"
@@ -1670,6 +1693,11 @@ msgstr "E841: Rezervita nomo, neuzebla por komando difinita de uzanto"
 #, c-format
 msgid "E184: No such user-defined command: %s"
 msgstr "E184: Neniu komando-difinita-de-uzanto kiel: %s"
+
+#: ../ex_docmd.c:5516
+#, c-format
+msgid "E180: Invalid address type value: %s"
+msgstr "E180: Nevalida valoro de tipo de adreso: %s"
 
 #: ../ex_docmd.c:5219
 #, c-format
@@ -2854,6 +2882,9 @@ msgstr "E46: Ne eblas ŝanĝi nurlegeblan variablon \"%s\""
 msgid "E794: Cannot set variable in the sandbox: \"%s\""
 msgstr "E794: Ne eblas agordi variablon en la sabloludejo: \"%s\""
 
+msgid "E713: Cannot use empty key for Dictionary"
+msgstr "E713: Ne eblas uzi malplenan ŝlosilon de Vortaro"
+
 #: ../globals.h:1076
 msgid "E47: Error while reading errorfile"
 msgstr "E47: Eraro dum legado de erardosiero"
@@ -2950,6 +2981,11 @@ msgstr "E363: ŝablono uzas pli da memoro ol 'maxmempattern'"
 #: ../globals.h:1105
 msgid "E749: empty buffer"
 msgstr "E749: malplena bufro"
+
+#: ../globals.h:1226
+#, c-format
+msgid "E86: Buffer %<PRId64> does not exist"
+msgstr "E86: La bufro %<PRId64> ne ekzistas"
 
 #: ../globals.h:1108
 msgid "E682: Invalid search pattern or delimiter"
@@ -4078,12 +4114,12 @@ msgid ""
 "\n"
 "(1) Another program may be editing the same file.  If this is the case,\n"
 "    be careful not to end up with two different instances of the same\n"
-"    file when making changes."
+"    file when making changes.  Quit, or continue with caution.\n"
 msgstr ""
 "\n"
-"(1) Alia programo eble redaktas la saman dosieron.\n"
-"    Se jes, estu singarda por ne havi du malsamajn\n"
-"    aperojn de la sama dosiero, kiam vi faros ŝanĝojn."
+"(1) Alia programo eble redaktas la saman dosieron. Se jes, estu singarda\n"
+"    por ne havi du malsamajn aperojn de la sama dosiero, kiam vi faros\n"
+"    ŝanĝojn. Eliru aŭ daŭrigu singarde.\n"
 
 #: ../memline.c:3245
 msgid "  Quit, or continue with caution.\n"
@@ -4599,6 +4635,11 @@ msgstr "E522: Netrovita en termcap"
 msgid "E539: Illegal character <%s>"
 msgstr "E539: Nevalida signo <%s>"
 
+#: ../option.c:2253
+#, c-format
+msgid "For option %s"
+msgstr "Por opcio %s"
+
 #: ../option.c:3862
 msgid "E529: Cannot set 'term' to empty string"
 msgstr "E529: Ne eblas agordi 'term' al malplena ĉeno"
@@ -4774,6 +4815,15 @@ msgid ""
 msgstr ""
 "\n"
 "Ne povis ŝalti kuntekston de sekureco por "
+
+#, c-format
+msgid "Could not set security context %s for %s"
+msgstr "Ne povis ŝalti kuntekston de sekureco %s por %s"
+
+#, c-format
+msgid "Could not get security context %s for %s. Removing it!"
+msgstr ""
+"Ne povis akiri kuntekston de sekureco %s por %s. Gi nun estas forigata!"
 
 #: ../os_unix.c:1558 ../os_unix.c:1647
 #, c-format
@@ -5700,6 +5750,9 @@ msgstr "Neniu sintaksa elemento difinita por tiu bufro"
 msgid "E390: Illegal argument: %s"
 msgstr "E390: Nevalida argumento: %s"
 
+msgid "syntax iskeyword "
+msgstr "sintakso iskeyword "
+
 #: ../syntax.c:3299
 #, c-format
 msgid "E391: No such syntax cluster: %s"
@@ -5795,6 +5848,10 @@ msgstr "E847: Tro da sintaksaj inkluzivoj"
 #, c-format
 msgid "E789: Missing ']': %s"
 msgstr "E789: Mankas ']': %s"
+
+#, c-format
+msgid "E890: trailing char after ']': %s]%s"
+msgstr "E890: vosta signo post ']': %s]%s"
 
 #: ../syntax.c:4531
 #, c-format
@@ -6552,14 +6609,14 @@ msgstr "E446: Neniu dosiernomo sub la kursoro"
 #~ msgid "Reading from stdin..."
 #~ msgstr "Legado el stdin..."
 
-#~ msgid "[blowfish]"
-#~ msgstr "[blowfish]"
-
 #~ msgid "[crypted]"
 #~ msgstr "[ĉifrita]"
 
 #~ msgid "E821: File is encrypted with unknown method"
 #~ msgstr "E821: Dosiero estas ĉifrata per nekonata metodo"
+
+#~ msgid "Warning: Using a weak encryption method; see :help 'cm'"
+#~ msgstr "Averto: uzo de malfortika ĉifrada metodo; vidu :help 'cm'"
 
 #~ msgid "NetBeans disallows writes of unmodified buffers"
 #~ msgstr "NetBeans malpermesas skribojn de neŝanĝitaj bufroj"
@@ -6676,8 +6733,8 @@ msgstr "E446: Neniu dosiernomo sub la kursoro"
 #~ msgid "Vim: Received \"die\" request from session manager\n"
 #~ msgstr "Vim: Ricevis peton \"die\" (morti) el la seanca administrilo\n"
 
-#~ msgid "Close"
-#~ msgstr "Fermi"
+#~ msgid "Close tab"
+#~ msgstr "Fermi langeton"
 
 #~ msgid "New tab"
 #~ msgstr "Nova langeto"
@@ -6732,9 +6789,6 @@ msgstr "E446: Neniu dosiernomo sub la kursoro"
 
 #~ msgid "E672: Unable to open window inside MDI application"
 #~ msgstr "E672: Ne eblas malfermi fenestron interne de aplikaĵo MDI"
-
-#~ msgid "Close tab"
-#~ msgstr "Fermi langeton"
 
 #~ msgid "Open tab..."
 #~ msgstr "Malfermi langeton..."

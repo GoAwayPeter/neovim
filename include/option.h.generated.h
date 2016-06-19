@@ -28,7 +28,6 @@ int get_option_value(char_u *name, long *numval, char_u **stringval, int opt_fla
 int get_option_value_strict(char *name, int64_t *numval, char **stringval, int opt_type, void *from);
 char_u *set_option_value(char_u *name, long number, char_u *string, int opt_flags );
 char_u *get_highlight_default(void);
-char_u *get_encoding_default(void);
 int makeset(FILE *fd, int opt_flags, int local_only);
 int makefoldset(FILE *fd);
 void comp_col(void);

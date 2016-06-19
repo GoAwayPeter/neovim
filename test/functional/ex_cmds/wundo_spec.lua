@@ -1,6 +1,6 @@
 -- Specs for :wundo and underlying functions
 
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
 local execute, clear, eval, feed, spawn, nvim_prog, set_session =
   helpers.execute, helpers.clear, helpers.eval, helpers.feed, helpers.spawn,
   helpers.nvim_prog, helpers.set_session
@@ -24,6 +24,6 @@ describe('u_* functions', function()
                            '-c', 'set undodir=. undofile'})
     set_session(session)
     execute('echo "True"')  -- Should not error out due to crashed Neovim
-    session:exit(0)
+    session:close()
   end)
 end)

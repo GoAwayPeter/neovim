@@ -289,7 +289,9 @@ static uint8_t *command_line_enter(int firstc, long count, int indent)
 
   if (ccline.cmdbuff != NULL) {
     // Put line in history buffer (":" and "=" only when it was typed).
-    if (ccline.cmdlen && s->firstc != NUL
+    if (s->histype != HIST_INVALID
+        && ccline.cmdlen
+        && s->firstc != NUL
         && (s->some_key_typed || s->histype == HIST_SEARCH)) {
       add_to_history(s->histype, ccline.cmdbuff, true,
           s->histype == HIST_SEARCH ? s->firstc : NUL);
@@ -356,7 +358,8 @@ static int command_line_execute(VimState *state, int key)
   s->c = key;
 
   if (s->c == K_EVENT) {
-    queue_process_events(loop.events);
+    queue_process_events(main_loop.events);
+    redrawcmdline();
     return 1;
   }
 
@@ -622,8 +625,8 @@ static int command_line_execute(VimState *state, int key)
     // CTRL-\ e doesn't work when obtaining an expression, unless it
     // is in a mapping.
     if (s->c != Ctrl_N && s->c != Ctrl_G && (s->c != 'e'
-                                       || (ccline.cmdfirstc == '=' &&
-                                           KeyTyped))) {
+                                             || (ccline.cmdfirstc == '='
+                                                 && KeyTyped))) {
       vungetc(s->c);
       s->c = Ctrl_BSL;
     } else if (s->c == 'e') {
@@ -1130,7 +1133,7 @@ static int command_line_handle_key(CommandLineState *s)
     if (!mouse_has(MOUSE_COMMAND)) {
       return command_line_not_changed(s);                   // Ignore mouse
     }
-    cmdline_paste(0, true, true);
+    cmdline_paste(eval_has_provider("clipboard") ? '*' : 0, true, true);
     redrawcmd();
     return command_line_changed(s);
 
@@ -1268,7 +1271,7 @@ static int command_line_handle_key(CommandLineState *s)
   case K_KPAGEUP:
   case K_PAGEDOWN:
   case K_KPAGEDOWN:
-    if (hislen == 0 || s->firstc == NUL) {
+    if (s->histype == HIST_INVALID || hislen == 0 || s->firstc == NUL) {
       // no history
       return command_line_not_changed(s);
     }
@@ -2424,20 +2427,17 @@ void restore_cmdline_alloc(char_u *p)
   xfree(p);
 }
 
-/*
- * paste a yank register into the command line.
- * used by CTRL-R command in command-line mode
- * insert_reg() can't be used here, because special characters from the
- * register contents will be interpreted as commands.
- *
- * return FAIL for failure, OK otherwise
- */
-static int 
-cmdline_paste (
-    int regname,
-    int literally,          /* Insert text literally instead of "as typed" */
-    int remcr              /* remove trailing CR */
-)
+/// Paste a yank register into the command line.
+/// Used by CTRL-R command in command-line mode.
+/// insert_reg() can't be used here, because special characters from the
+/// register contents will be interpreted as commands.
+///
+/// @param regname   Register name.
+/// @param literally Insert text literally instead of "as typed".
+/// @param remcr     When true, remove trailing CR.
+///
+/// @returns FAIL for failure, OK otherwise
+static bool cmdline_paste(int regname, bool literally, bool remcr)
 {
   long i;
   char_u              *arg;
@@ -2957,20 +2957,37 @@ ExpandOne (
     }
   }
 
-  /* Find longest common part */
+  // Find longest common part
   if (mode == WILD_LONGEST && xp->xp_numfiles > 0) {
     size_t len;
-    for (len = 0; xp->xp_files[0][len]; ++len) {
-      for (i = 0; i < xp->xp_numfiles; ++i) {
+    size_t mb_len = 1;
+    int c0;
+    int ci;
+
+    for (len = 0; xp->xp_files[0][len]; len += mb_len) {
+      if (has_mbyte) {
+        mb_len = (* mb_ptr2len)(&xp->xp_files[0][len]);
+        c0 = (* mb_ptr2char)(&xp->xp_files[0][len]);
+      } else {
+        c0 = xp->xp_files[0][len];
+      }
+      for (i = 1; i < xp->xp_numfiles; ++i) {
+        if (has_mbyte) {
+          ci =(* mb_ptr2char)(&xp->xp_files[i][len]);
+        } else {
+          ci = xp->xp_files[i][len];
+        }
+
         if (p_fic && (xp->xp_context == EXPAND_DIRECTORIES
                       || xp->xp_context == EXPAND_FILES
                       || xp->xp_context == EXPAND_SHELLCMD
                       || xp->xp_context == EXPAND_BUFFERS)) {
-          if (TOLOWER_LOC(xp->xp_files[i][len]) !=
-              TOLOWER_LOC(xp->xp_files[0][len]))
+          if (vim_tolower(c0) != vim_tolower(ci)) {
             break;
-        } else if (xp->xp_files[i][len] != xp->xp_files[0][len])
+          }
+        } else if (c0 != ci) {
           break;
+        }
       }
       if (i < xp->xp_numfiles) {
         if (!(options & WILD_NO_BEEP)) {
@@ -2979,8 +2996,9 @@ ExpandOne (
         break;
       }
     }
+
     ss = (char_u *)xstrndup((char *)xp->xp_files[0], len);
-    findex = -1;                            /* next p_wc gets first one */
+    findex = -1;  // next p_wc gets first one
   }
 
   // Concatenate all matching names
@@ -3966,6 +3984,7 @@ static void expand_shellcmd(char_u *filepat, int *num_file, char_u ***file,
   char_u      *s, *e;
   int flags = flagsarg;
   int ret;
+  bool did_curdir = false;
 
   /* for ":set path=" and ":set tags=" halve backslashes for escaped
    * space */
@@ -3974,7 +3993,7 @@ static void expand_shellcmd(char_u *filepat, int *num_file, char_u ***file,
     if (pat[i] == '\\' && pat[i + 1] == ' ')
       STRMOVE(pat + i, pat + i + 1);
 
-  flags |= EW_FILE | EW_EXEC;
+  flags |= EW_FILE | EW_EXEC | EW_SHELLCMD;
 
   bool mustfree = false;  // Track memory allocation for *path.
   /* For an absolute name we don't use $PATH. */
@@ -3994,12 +4013,24 @@ static void expand_shellcmd(char_u *filepat, int *num_file, char_u ***file,
 
   /*
    * Go over all directories in $PATH.  Expand matches in that directory and
-   * collect them in "ga".
+   * collect them in "ga". When "." is not in $PATH also expaned for the
+   * current directory, to find "subdir/cmd".
    */
   ga_init(&ga, (int)sizeof(char *), 10);
-  for (s = path; *s != NUL; s = e) {
-    if (*s == ' ')
-      ++s;              /* Skip space used for absolute path name. */
+  for (s = path; ; s = e) {
+    if (*s == NUL) {
+      if (did_curdir) {
+        break;
+      }
+      // Find directories in the current directory, path is empty.
+      did_curdir = true;
+    } else if (*s == '.') {
+      did_curdir = true;
+    }
+
+    if (*s == ' ') {
+      s++;              // Skip space used for absolute path name.
+    }
 
     e = vim_strchr(s, ':');
     if (e == NULL)
@@ -4257,20 +4288,33 @@ void globpath(char_u *path, char_u *file, garray_T *ga, int expand_options)
 *  Command line history stuff	 *
 *********************************/
 
-/*
- * Translate a history character to the associated type number.
- */
-static int hist_char2type(int c)
+/// Translate a history character to the associated type number
+static HistoryType hist_char2type(const int c)
+  FUNC_ATTR_CONST FUNC_ATTR_WARN_UNUSED_RESULT
 {
-  if (c == ':')
-    return HIST_CMD;
-  if (c == '=')
-    return HIST_EXPR;
-  if (c == '@')
-    return HIST_INPUT;
-  if (c == '>')
-    return HIST_DEBUG;
-  return HIST_SEARCH;       /* must be '?' or '/' */
+  switch (c) {
+    case ':': {
+      return HIST_CMD;
+    }
+    case '=': {
+      return HIST_EXPR;
+    }
+    case '@': {
+      return HIST_INPUT;
+    }
+    case '>': {
+      return HIST_DEBUG;
+    }
+    case '/':
+    case '?': {
+      return HIST_SEARCH;
+    }
+    default: {
+      return HIST_INVALID;
+    }
+  }
+  // Silence -Wreturn-type
+  return 0;
 }
 
 /*
@@ -4439,28 +4483,38 @@ in_history (
   return false;
 }
 
-/*
- * Convert history name (from table above) to its HIST_ equivalent.
- * When "name" is empty, return "cmd" history.
- * Returns -1 for unknown history name.
- */
-int get_histtype(char_u *name)
+/// Convert history name to its HIST_ equivalent
+///
+/// Names are taken from the table above. When `name` is empty returns currently
+/// active history or HIST_DEFAULT, depending on `return_default` argument.
+///
+/// @param[in]  name            Converted name.
+/// @param[in]  len             Name length.
+/// @param[in]  return_default  Determines whether HIST_DEFAULT should be
+///                             returned or value based on `ccline.cmdfirstc`.
+///
+/// @return Any value from HistoryType enum, including HIST_INVALID. May not
+///         return HIST_DEFAULT unless return_default is true.
+HistoryType get_histtype(const char_u *const name, const size_t len,
+                         const bool return_default)
+  FUNC_ATTR_PURE FUNC_ATTR_WARN_UNUSED_RESULT
 {
-  int i;
-  int len = (int)STRLEN(name);
+  // No argument: use current history.
+  if (len == 0) {
+    return return_default ? HIST_DEFAULT : hist_char2type(ccline.cmdfirstc);
+  }
 
-  /* No argument: use current history. */
-  if (len == 0)
-    return hist_char2type(ccline.cmdfirstc);
-
-  for (i = 0; history_names[i] != NULL; ++i)
-    if (STRNICMP(name, history_names[i], len) == 0)
+  for (HistoryType i = 0; history_names[i] != NULL; i++) {
+    if (STRNICMP(name, history_names[i], len) == 0) {
       return i;
+    }
+  }
 
-  if (vim_strchr((char_u *)":=@>?/", name[0]) != NULL && name[1] == NUL)
+  if (vim_strchr((char_u *)":=@>?/", name[0]) != NULL && len == 1) {
     return hist_char2type(name[0]);
+  }
 
-  return -1;
+  return HIST_INVALID;
 }
 
 static int last_maptick = -1;           /* last seen maptick */
@@ -4481,8 +4535,10 @@ add_to_history (
   histentry_T *hisptr;
   int len;
 
-  if (hislen == 0)              /* no history */
+  if (hislen == 0 || histype == HIST_INVALID) {  // no history
     return;
+  }
+  assert(histype != HIST_DEFAULT);
 
   if (cmdmod.keeppatterns && histype == HIST_SEARCH)
     return;
@@ -4832,23 +4888,20 @@ void ex_history(exarg_T *eap)
     while (ASCII_ISALPHA(*end)
            || vim_strchr((char_u *)":=@>/?", *end) != NULL)
       end++;
-    i = *end;
-    *end = NUL;
-    histype1 = get_histtype(arg);
-    if (histype1 == -1) {
-      if (STRNICMP(arg, "all", STRLEN(arg)) == 0) {
+    histype1 = get_histtype(arg, end - arg, false);
+    if (histype1 == HIST_INVALID) {
+      if (STRNICMP(arg, "all", end - arg) == 0) {
         histype1 = 0;
         histype2 = HIST_COUNT-1;
       } else {
-        *end = i;
         EMSG(_(e_trailing));
         return;
       }
     } else
       histype2 = histype1;
-    *end = i;
-  } else
+  } else {
     end = arg;
+  }
   if (!get_list_range(&end, &hisidx1, &hisidx2) || *end != NUL) {
     EMSG(_(e_trailing));
     return;
@@ -4956,7 +5009,6 @@ static int ex_window(void)
   win_T               *wp;
   int i;
   linenr_T lnum;
-  int histtype;
   garray_T winsizes;
   char_u typestr[2];
   int save_restart_edit = restart_edit;
@@ -5005,7 +5057,7 @@ static int ex_window(void)
   /* Showing the prompt may have set need_wait_return, reset it. */
   need_wait_return = FALSE;
 
-  histtype = hist_char2type(cmdwin_type);
+  const int histtype = hist_char2type(cmdwin_type);
   if (histtype == HIST_CMD || histtype == HIST_DEBUG) {
     if (p_wc == TAB) {
       add_map((char_u *)"<buffer> <Tab> <C-X><C-V>", INSERT);
@@ -5020,7 +5072,7 @@ static int ex_window(void)
 
   /* Fill the buffer with the history. */
   init_history();
-  if (hislen > 0) {
+  if (hislen > 0 && histtype != HIST_INVALID) {
     i = hisidx[histtype];
     if (i >= 0) {
       lnum = 0;
@@ -5136,6 +5188,8 @@ static int ex_window(void)
 
     /* Don't execute autocommands while deleting the window. */
     block_autocmds();
+    // Avoid command-line window first character being concealed
+    curwin->w_p_cole = 0;
     wp = curwin;
     bp = curbuf;
     win_goto(old_curwin);

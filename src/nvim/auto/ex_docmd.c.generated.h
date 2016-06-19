@@ -15,7 +15,7 @@ static char_u *do_one_cmd(char_u **cmdlinep, int sourcing, struct condstack *cst
 static void append_command(char_u *cmd);
 static char_u *find_command(exarg_T *eap, int *full);
 static char_u *find_ucmd(exarg_T *eap, char_u *p, int *full, expand_T *xp, int *compl );
-static linenr_T get_address(char_u **ptr, int addr_type, int skip, int to_other_file );
+static linenr_T get_address(exarg_T *eap, char_u **ptr, int addr_type, int skip, int to_other_file );
 static void get_flags(exarg_T *eap);
 static void ex_script_ni(exarg_T *eap);
 static char_u *invalid_range(exarg_T *eap);

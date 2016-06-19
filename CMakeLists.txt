@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 2.8.7)
-project(NEOVIM)
+project(nvim)
+
+if(POLICY CMP0059)
+  cmake_policy(SET CMP0059 OLD)  # Needed until cmake 2.8.12. #4389
+endif()
 
 # Point CMake at any custom modules we may ship
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
@@ -55,7 +59,7 @@ set_property(CACHE CMAKE_BUILD_TYPE PROPERTY
 # version string, else it is combined with the result of `git describe`.
 set(NVIM_VERSION_MAJOR 0)
 set(NVIM_VERSION_MINOR 1)
-set(NVIM_VERSION_PATCH 2)
+set(NVIM_VERSION_PATCH 5)
 set(NVIM_VERSION_PRERELEASE "-dev") # for package maintainers
 
 file(TO_CMAKE_PATH ${CMAKE_CURRENT_LIST_DIR}/.git FORCED_GIT_DIR)
@@ -153,7 +157,11 @@ if(${INIT_FLAGS_NAME})
   set(CMAKE_REQUIRED_FLAGS "${${INIT_FLAGS_NAME}}")
 endif()
 
+# Include <string.h> because some toolchains define _FORTIFY_SOURCE=2 in
+# internal header files, which should in turn be #included by <string.h>.
 check_c_source_compiles("
+#include <string.h>
+
 #if defined(_FORTIFY_SOURCE) && _FORTIFY_SOURCE > 1
 #error \"_FORTIFY_SOURCE > 1\"
 #endif
@@ -202,6 +210,12 @@ if(MSVC)
 else()
   add_definitions(-Wall -Wextra -pedantic -Wno-unused-parameter
     -Wstrict-prototypes -std=gnu99)
+
+  # On FreeBSD 64 math.h uses unguarded C11 extension, which taints clang
+  # 3.4.1 used there.
+  if(CMAKE_SYSTEM_NAME STREQUAL "FreeBSD")
+    add_definitions(-Wno-c11-extensions)
+  endif()
 endif()
 
 if(MINGW)
@@ -254,6 +268,10 @@ if(CMAKE_COMPILER_IS_GNUCXX AND CMAKE_SYSTEM_NAME STREQUAL "Linux")
   set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--no-undefined")
   set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--no-undefined")
   set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} -Wl,--no-undefined")
+
+  # For O_CLOEXEC, O_DIRECTORY, and O_NOFOLLOW flags on older systems
+  # (pre POSIX.1-2008: glibc 2.11 and earlier). #4042
+  add_definitions(-D_GNU_SOURCE)
 endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX AND CMAKE_SYSTEM_NAME STREQUAL "SunOS")
@@ -282,14 +300,19 @@ include_directories(SYSTEM ${LIBUV_INCLUDE_DIRS})
 find_package(Msgpack 1.0.0 REQUIRED)
 include_directories(SYSTEM ${MSGPACK_INCLUDE_DIRS})
 
-find_package(LuaJit REQUIRED)
-include_directories(SYSTEM ${LUAJIT_INCLUDE_DIRS})
+if(UNIX)
+  option(FEAT_TUI "Enable the Terminal UI" ON)
+else()
+  option(FEAT_TUI "Enable the Terminal UI" OFF)
+endif()
 
-find_package(Unibilium REQUIRED)
-include_directories(SYSTEM ${UNIBILIUM_INCLUDE_DIRS})
+if(FEAT_TUI)
+  find_package(Unibilium REQUIRED)
+  include_directories(SYSTEM ${UNIBILIUM_INCLUDE_DIRS})
 
-find_package(LibTermkey REQUIRED)
-include_directories(SYSTEM ${LIBTERMKEY_INCLUDE_DIRS})
+  find_package(LibTermkey REQUIRED)
+  include_directories(SYSTEM ${LIBTERMKEY_INCLUDE_DIRS})
+endif()
 
 find_package(LibVterm REQUIRED)
 include_directories(SYSTEM ${LIBVTERM_INCLUDE_DIRS})
@@ -349,9 +372,9 @@ endforeach()
 
 # Find Lua interpreter
 include(LuaHelpers)
-set(LUA_DEPENDENCIES lpeg MessagePack bit)
+set(LUA_DEPENDENCIES lpeg mpack bit)
 if(NOT LUA_PRG)
-  foreach(CURRENT_LUA_PRG luajit lua)
+  foreach(CURRENT_LUA_PRG luajit lua5.1 lua5.2 lua)
     # If LUA_PRG is set find_program() will not search
     unset(LUA_PRG CACHE)
     unset(LUA_PRG_WORKS)
@@ -376,6 +399,7 @@ message(STATUS "Using the Lua interpreter ${LUA_PRG}.")
 
 # Setup busted.
 find_program(BUSTED_PRG busted)
+find_program(BUSTED_LUA_PRG busted-lua)
 if(NOT BUSTED_OUTPUT_TYPE)
   set(BUSTED_OUTPUT_TYPE "utfTerminal")
 endif()
@@ -432,6 +456,14 @@ if(BUSTED_PRG)
     get_target_property(TEST_LIBNVIM_PATH nvim-test LOCATION)
   endif()
 
+  # When running tests from 'ninja' we need to use the
+  # console pool: to do so we need to use the USES_TERMINAL
+  # option, but this is only available in CMake 3.2
+  set(TEST_TARGET_ARGS)
+  if(NOT (${CMAKE_VERSION} VERSION_LESS 3.2.0))
+    list(APPEND TEST_TARGET_ARGS "USES_TERMINAL")
+  endif()
+
   configure_file(
     test/config/paths.lua.in
     ${CMAKE_BINARY_DIR}/test/config/paths.lua)
@@ -450,17 +482,24 @@ if(BUSTED_PRG)
   add_custom_target(benchmark-prereqs
     DEPENDS ${BENCHMARK_PREREQS})
 
-  add_custom_target(unittest
-    COMMAND ${CMAKE_COMMAND}
-      -DBUSTED_PRG=${BUSTED_PRG}
-      -DLUA_PRG=${LUA_PRG}
-      -DWORKING_DIR=${CMAKE_CURRENT_SOURCE_DIR}
-      -DBUSTED_OUTPUT_TYPE=${BUSTED_OUTPUT_TYPE}
-      -DTEST_DIR=${CMAKE_CURRENT_SOURCE_DIR}/test
-      -DBUILD_DIR=${CMAKE_BINARY_DIR}
-      -DTEST_TYPE=unit
-      -P ${PROJECT_SOURCE_DIR}/cmake/RunTests.cmake
-    DEPENDS ${UNITTEST_PREREQS})
+  check_lua_module(${LUA_PRG} "ffi" LUA_HAS_FFI)
+  if(LUA_HAS_FFI)
+    add_custom_target(unittest
+      COMMAND ${CMAKE_COMMAND}
+        -DBUSTED_PRG=${BUSTED_PRG}
+        -DLUA_PRG=${LUA_PRG}
+        -DWORKING_DIR=${CMAKE_CURRENT_SOURCE_DIR}
+        -DBUSTED_OUTPUT_TYPE=${BUSTED_OUTPUT_TYPE}
+        -DTEST_DIR=${CMAKE_CURRENT_SOURCE_DIR}/test
+        -DBUILD_DIR=${CMAKE_BINARY_DIR}
+        -DTEST_TYPE=unit
+        -P ${PROJECT_SOURCE_DIR}/cmake/RunTests.cmake
+      DEPENDS ${UNITTEST_PREREQS}
+      ${TEST_TARGET_ARGS})
+  else()
+    message(WARNING "The Luajit ffi is not available in ${LUA_PRG}"
+	    ", disabling unit tests")
+  endif()
 
   add_custom_target(functionaltest
     COMMAND ${CMAKE_COMMAND}
@@ -472,7 +511,8 @@ if(BUSTED_PRG)
       -DBUILD_DIR=${CMAKE_BINARY_DIR}
       -DTEST_TYPE=functional
       -P ${PROJECT_SOURCE_DIR}/cmake/RunTests.cmake
-    DEPENDS ${FUNCTIONALTEST_PREREQS})
+    DEPENDS ${FUNCTIONALTEST_PREREQS}
+    ${TEST_TARGET_ARGS})
 
   add_custom_target(benchmark
     COMMAND ${CMAKE_COMMAND}
@@ -484,7 +524,23 @@ if(BUSTED_PRG)
       -DBUILD_DIR=${CMAKE_BINARY_DIR}
       -DTEST_TYPE=benchmark
       -P ${PROJECT_SOURCE_DIR}/cmake/RunTests.cmake
-    DEPENDS ${BENCHMARK_PREREQS})
+    DEPENDS ${BENCHMARK_PREREQS}
+    ${TEST_TARGET_ARGS})
+endif()
+
+if(BUSTED_LUA_PRG)
+  add_custom_target(functionaltest-lua
+    COMMAND ${CMAKE_COMMAND}
+      -DBUSTED_PRG=${BUSTED_LUA_PRG}
+      -DNVIM_PRG=$<TARGET_FILE:nvim>
+      -DWORKING_DIR=${CMAKE_CURRENT_SOURCE_DIR}
+      -DBUSTED_OUTPUT_TYPE=${BUSTED_OUTPUT_TYPE}
+      -DTEST_DIR=${CMAKE_CURRENT_SOURCE_DIR}/test
+      -DBUILD_DIR=${CMAKE_BINARY_DIR}
+      -DTEST_TYPE=functional
+      -P ${PROJECT_SOURCE_DIR}/cmake/RunTests.cmake
+    DEPENDS ${FUNCTIONALTEST_PREREQS}
+    ${TEST_TARGET_ARGS})
 endif()
 
 if(LUACHECK_PRG)

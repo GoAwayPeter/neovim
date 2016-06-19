@@ -762,6 +762,10 @@ void clearFolding(win_T *win)
  */
 void foldUpdate(win_T *wp, linenr_T top, linenr_T bot)
 {
+  if (compl_busy) {
+    return;
+  }
+
   fold_T      *fp;
   if (wp->w_buffer->terminal) {
     return;
@@ -1695,14 +1699,14 @@ char_u *get_foldtext(win_T *wp, linenr_T lnum, linenr_T lnume,
     did_emsg = FALSE;
 
   if (*wp->w_p_fdt != NUL) {
-    char_u dashes[MAX_LEVEL + 2];
+    char dashes[MAX_LEVEL + 2];
     win_T   *save_curwin;
     int level;
     char_u  *p;
 
-    /* Set "v:foldstart" and "v:foldend". */
-    set_vim_var_nr(VV_FOLDSTART, lnum);
-    set_vim_var_nr(VV_FOLDEND, lnume);
+    // Set "v:foldstart" and "v:foldend".
+    set_vim_var_nr(VV_FOLDSTART, (varnumber_T) lnum);
+    set_vim_var_nr(VV_FOLDEND, (varnumber_T) lnume);
 
     /* Set "v:folddashes" to a string of "level" dashes. */
     /* Set "v:foldlevel" to "level". */
@@ -1712,7 +1716,7 @@ char_u *get_foldtext(win_T *wp, linenr_T lnum, linenr_T lnume,
     memset(dashes, '-', (size_t)level);
     dashes[level] = NUL;
     set_vim_var_string(VV_FOLDDASHES, dashes, -1);
-    set_vim_var_nr(VV_FOLDLEVEL, (long)level);
+    set_vim_var_nr(VV_FOLDLEVEL, (varnumber_T) level);
 
     /* skip evaluating foldtext on errors */
     if (!got_fdt_error) {
@@ -2106,10 +2110,11 @@ static linenr_T foldUpdateIEMSRecurse(garray_T *gap, int level,
    */
   if (getlevel == foldlevelMarker && flp->start <= flp->lvl - level
       && flp->lvl > 0) {
-    foldFind(gap, startlnum - 1, &fp);
+    (void)foldFind(gap, startlnum - 1, &fp);
     if (fp >= ((fold_T *)gap->ga_data) + gap->ga_len
-        || fp->fd_top >= startlnum)
+        || fp->fd_top >= startlnum) {
       fp = NULL;
+    }
   }
 
   /*
@@ -2163,13 +2168,15 @@ static linenr_T foldUpdateIEMSRecurse(garray_T *gap, int level,
         }
       }
       if (lvl < level + i) {
-        foldFind(&fp->fd_nested, flp->lnum - fp->fd_top, &fp2);
-        if (fp2 != NULL)
+        (void)foldFind(&fp->fd_nested, flp->lnum - fp->fd_top, &fp2);
+        if (fp2 != NULL) {
           bot = fp2->fd_top + fp2->fd_len - 1 + fp->fd_top;
-      } else if (fp->fd_top + fp->fd_len <= flp->lnum && lvl >= level)
-        finish = TRUE;
-      else
+        }
+      } else if (fp->fd_top + fp->fd_len <= flp->lnum && lvl >= level) {
+        finish = true;
+      } else {
         break;
+      }
     }
 
     /* At the start of the first nested fold and at the end of the current
@@ -2672,7 +2679,7 @@ static void foldlevelExpr(fline_T *flp)
   win = curwin;
   curwin = flp->wp;
   curbuf = flp->wp->w_buffer;
-  set_vim_var_nr(VV_LNUM, lnum);
+  set_vim_var_nr(VV_LNUM, (varnumber_T) lnum);
 
   flp->start = 0;
   flp->had_end = flp->end;

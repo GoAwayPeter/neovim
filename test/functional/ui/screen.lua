@@ -105,7 +105,7 @@
 -- To generate a text-only test without highlight checks,
 -- use `screen:snapshot_util({},true)`
 
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(nil)
 local request, run = helpers.request, helpers.run
 local dedent = helpers.dedent
 
@@ -138,7 +138,7 @@ do
     -- this is just a helper to get any canonical name of a color
     colornames[rgb] = name
   end
-  session:exit(0)
+  session:close()
   Screen.colors = colors
   Screen.colornames = colornames
 end
@@ -219,12 +219,23 @@ function Screen:expect(expected, attr_ids, attr_ignore)
   local ids = attr_ids or self._default_attr_ids
   local ignore = attr_ignore or self._default_attr_ignore
   self:wait(function()
+    local actual_rows = {}
     for i = 1, self._height do
-      local expected_row = expected_rows[i]
-      local actual_row = self:_row_repr(self._rows[i], ids, ignore)
-      if expected_row ~= actual_row then
-        return 'Row '..tostring(i)..' didn\'t match.\nExpected: "'..
-               expected_row..'"\nActual:   "'..actual_row..'"'
+      actual_rows[i] = self:_row_repr(self._rows[i], ids, ignore)
+    end
+    for i = 1, self._height do
+      if expected_rows[i] ~= actual_rows[i] then
+        local msg_expected_rows = {}
+        for j = 1, #expected_rows do
+          msg_expected_rows[j] = expected_rows[j]
+        end
+        msg_expected_rows[i] = '*' .. msg_expected_rows[i]
+        actual_rows[i] = '*' .. actual_rows[i]
+        return (
+          'Row ' .. tostring(i) .. ' didn\'t match.\n'
+          .. 'Expected:\n|' .. table.concat(msg_expected_rows, '|\n|') .. '|\n'
+          .. 'Actual:\n|' .. table.concat(actual_rows, '|\n|') .. '|'
+        )
       end
     end
   end)
@@ -277,6 +288,10 @@ If everything else fails, use Screen:redraw_debug to help investigate what is
   if err then
     assert(false, err)
   end
+end
+
+function Screen:sleep(ms)
+  pcall(function() self:wait(function() return "error" end, ms) end)
 end
 
 function Screen:_redraw(updates)
@@ -414,6 +429,10 @@ function Screen:_handle_update_bg(bg)
   self._bg = bg
 end
 
+function Screen:_handle_update_sp(sp)
+  self._sp = sp
+end
+
 function Screen:_handle_suspend()
   self.suspended = true
 end
@@ -486,7 +505,7 @@ end
 
 function Screen:snapshot_util(attrs, ignore)
   -- util to generate screen test
-  pcall(function() self:wait(function() return "error" end, 250) end)
+  self:sleep(250)
   self:print_snapshot(attrs, ignore)
 end
 
@@ -562,7 +581,7 @@ function Screen:_pprint_attrs(attrs)
     local items = {}
     for f, v in pairs(attrs) do
       local desc = tostring(v)
-      if f == "foreground" or f == "background" then
+      if f == "foreground" or f == "background" or f == "special" then
         if Screen.colornames[v] ~= nil then
           desc = "Screen.colors."..Screen.colornames[v]
         end
@@ -603,7 +622,8 @@ function Screen:_equal_attrs(a, b)
        a.underline == b.underline and a.undercurl == b.undercurl and
        a.italic == b.italic and a.reverse == b.reverse and
        a.foreground == b.foreground and
-       a.background == b.background
+       a.background == b.background and
+       a.special == b.special
 end
 
 function Screen:_attr_index(attrs, attr)

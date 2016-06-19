@@ -27,6 +27,7 @@ static void qf_update_buffer(qf_info_T *qi);
 static void qf_set_title_var(qf_info_T *qi);
 static void qf_fill_buffer(qf_info_T *qi);
 static char_u *get_mef_name(void);
+static size_t qf_get_nth_valid_entry(qf_info_T *qi, size_t n, _Bool fdo) FUNC_ATTR_NONNULL_ALL;
 static void restore_start_dir(char_u *dirname_start);
 static buf_T *load_dummy_buffer(char_u *fname, char_u *dirname_start, char_u *resulting_dir );
 static void wipe_dummy_buffer(buf_T *buf, char_u *dirname_start);

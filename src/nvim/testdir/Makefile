@@ -7,30 +7,42 @@ export SHELL := sh
 VIMPROG := ../../../build/bin/nvim
 SCRIPTSOURCE := ../../../runtime
 
-SCRIPTS :=                                                             \
-                                   test8.out               test10.out  \
-           test11.out  test12.out  test13.out  test14.out              \
-                       test17.out                                      \
-                                               test24.out              \
-                                                           test30.out  \
-                       test32.out              test34.out              \
-           test36.out  test37.out                          test40.out  \
-                       test42.out                                      \
-                       test47.out  test48.out  test49.out              \
-                       test52.out  test53.out              test55.out  \
-                                               test64.out              \
-                                   test68.out  test69.out              \
-                                   test73.out                          \
-                                               test79.out              \
-                                   test88.out                          \
-           test_listlbr.out                                            \
-           test_breakindent.out                                        \
-           test_charsearch.out                                         \
-           test_close_count.out                                        \
-           test_command_count.out                                      \
-           test_marks.out                                              \
+SCRIPTS := \
+           test8.out              \
+           test12.out             \
+           test13.out             \
+           test14.out             \
+           test17.out             \
+           test24.out             \
+           test30.out             \
+           test32.out             \
+           test37.out             \
+           test40.out             \
+           test42.out             \
+           test47.out             \
+           test48.out             \
+           test49.out             \
+           test52.out             \
+           test53.out             \
+           test64.out             \
+           test69.out             \
+           test73.out             \
+           test79.out             \
+           test_marks.out         \
 
-NEW_TESTS =
+# Tests using runtest.vim.vim.
+# Keep test_alot*.res as the last one, sort the others.
+NEW_TESTS = \
+	    test_cursor_func.res \
+	    test_hardcopy.res \
+	    test_help_tagjump.res \
+	    test_langmap.res \
+	    test_menu.res \
+	    test_syntax.res \
+	    test_timers.res \
+	    test_unlet.res \
+	    test_viml.res \
+	    test_alot.res
 
 SCRIPTS_GUI := test16.out
 
@@ -48,7 +60,7 @@ ifdef USE_VALGRIND
 	TOOL := valgrind -q                                     \
 	                 -q                                     \
 	                 $(VALGRIND_TOOL)                       \
-	                 --suppressions=../../../.valgrind.supp \
+	                 --suppressions=../../.valgrind.supp \
 	                 --error-exitcode=123                   \
 	                 --log-file=valgrind.\%p.$*             \
 	                 $(VGDB)                                \
@@ -86,7 +98,7 @@ test1.out: $(VIMPROG)
 $(SCRIPTS) $(SCRIPTS_GUI): $(VIMPROG) test1.out
 
 RM_ON_RUN   := test.out X* viminfo
-RM_ON_START := tiny.vim small.vim mbyte.vim test.ok
+RM_ON_START := test.ok
 RUN_VIM     := VIMRUNTIME=$(SCRIPTSOURCE); export VIMRUNTIME; $(TOOL) $(VIMPROG) -u unix.vim -U NONE -i viminfo --noplugin -s dotest.in
 
 clean:

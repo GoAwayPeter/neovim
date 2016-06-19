@@ -12,9 +12,10 @@
 #include "nvim/eval.h"
 #include "nvim/garray.h"
 #include "nvim/vim.h"
+#include "nvim/main.h"
 #include "nvim/memory.h"
 #include "nvim/log.h"
-#include "nvim/tempfile.h"
+#include "nvim/fileio.h"
 #include "nvim/path.h"
 #include "nvim/strings.h"
 
@@ -59,7 +60,7 @@ static void set_vservername(garray_T *srvs)
   char *default_server = (srvs->ga_len > 0)
     ? ((SocketWatcher **)srvs->ga_data)[0]->addr
     : NULL;
-  set_vim_var_string(VV_SEND_SERVER, (char_u *)default_server, -1);
+  set_vim_var_string(VV_SEND_SERVER, default_server, -1);
 }
 
 /// Teardown the server module
@@ -108,7 +109,7 @@ int server_start(const char *endpoint)
   }
 
   SocketWatcher *watcher = xmalloc(sizeof(SocketWatcher));
-  socket_watcher_init(&loop, watcher, endpoint, NULL);
+  socket_watcher_init(&main_loop, watcher, endpoint, NULL);
 
   // Check if a watcher for the endpoint already exists
   for (int i = 0; i < watchers.ga_len; i++) {

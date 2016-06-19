@@ -12,8 +12,8 @@
 #define REMOTE_TYPE(type) typedef uint64_t type
 
 #ifdef INCLUDE_GENERATED_DECLARATIONS
-  #define ArrayOf(...) Array
-  #define DictionaryOf(...) Dictionary
+# define ArrayOf(...) Array
+# define DictionaryOf(...) Dictionary
 #endif
 
 // Basic types
@@ -99,4 +99,3 @@ struct key_value_pair {
 
 
 #endif  // NVIM_API_PRIVATE_DEFS_H
-

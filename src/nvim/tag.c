@@ -526,19 +526,17 @@ do_tag (
         taglen_advance(taglen);
         MSG_PUTS_ATTR(_("file\n"), hl_attr(HLF_T));
 
-        for (i = 0; i < num_matches && !got_int; ++i) {
+        for (i = 0; i < num_matches && !got_int; i++) {
           parse_match(matches[i], &tagp);
-          if (!new_tag && (
-                (g_do_tagpreview != 0
-                 && i == ptag_entry.cur_match) ||
-                (use_tagstack
-                 && i == tagstack[tagstackidx].cur_match)))
+          if (!new_tag && ((g_do_tagpreview != 0 && i == ptag_entry.cur_match)
+                           || (use_tagstack
+                               && i == tagstack[tagstackidx].cur_match))) {
             *IObuff = '>';
-          else
+          } else {
             *IObuff = ' ';
-          vim_snprintf((char *)IObuff + 1, IOSIZE - 1,
-              "%2d %s ", i + 1,
-              mt_names[matches[i][0] & MT_MASK]);
+          }
+          vim_snprintf((char *)IObuff + 1, IOSIZE - 1, "%2d %s ", i + 1,
+                       mt_names[matches[i][0] & MT_MASK]);
           msg_puts(IObuff);
           if (tagp.tagkind != NULL)
             msg_outtrans_len(tagp.tagkind,
@@ -872,7 +870,7 @@ do_tag (
 
       /* Let the SwapExists event know what tag we are jumping to. */
       vim_snprintf((char *)IObuff, IOSIZE, ":ta %s\r", name);
-      set_vim_var_string(VV_SWAPCOMMAND, IObuff, -1);
+      set_vim_var_string(VV_SWAPCOMMAND, (char *) IObuff, -1);
 
       /*
        * Jump to the desired match.
@@ -1147,6 +1145,22 @@ find_tags (
   int get_it_again = FALSE;
   int use_cscope = (flags & TAG_CSCOPE);
   int verbose = (flags & TAG_VERBOSE);
+  int save_p_ic = p_ic;
+
+  // Change the value of 'ignorecase' according to 'tagcase' for the
+  // duration of this function.
+  switch (curbuf->b_tc_flags ? curbuf->b_tc_flags : tc_flags) {
+    case TC_FOLLOWIC:
+      break;
+    case TC_IGNORE:
+      p_ic = true;
+      break;
+    case TC_MATCH:
+      p_ic = false;
+      break;
+    default:
+      assert(false);
+  }
 
   help_save = curbuf->b_help;
   orgpat.pat = pat;
@@ -1210,20 +1224,15 @@ find_tags (
   for (round = 1; round <= 2; ++round) {
     linear = (orgpat.headlen == 0 || !p_tbs || round == 2);
 
-    /*
-     * Try tag file names from tags option one by one.
-     */
-    for (first_file = TRUE;
-         use_cscope ||
-         get_tagfname(&tn, first_file, tag_fname) == OK;
-         first_file = FALSE) {
-      /*
-       * A file that doesn't exist is silently ignored.  Only when not a
-       * single file is found, an error message is given (further on).
-       */
-      if (use_cscope)
-        fp = NULL;          /* avoid GCC warning */
-      else {
+    // Try tag file names from tags option one by one.
+    for (first_file = true;
+         use_cscope || get_tagfname(&tn, first_file, tag_fname) == OK;
+         first_file = false) {
+      // A file that doesn't exist is silently ignored.  Only when not a
+      // single file is found, an error message is given (further on).
+      if (use_cscope) {
+        fp = NULL;  // avoid GCC warning
+      } else {
         if (curbuf->b_help) {
           /* Prefer help tags according to 'helplang'.  Put the
            * two-letter language name in help_lang[]. */
@@ -1954,6 +1963,8 @@ findtag_end:
 
   curbuf->b_help = help_save;
   xfree(saved_pat);
+
+  p_ic = save_p_ic;
 
   return retval;
 }

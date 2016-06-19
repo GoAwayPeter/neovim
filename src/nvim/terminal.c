@@ -63,6 +63,7 @@
 #include "nvim/map.h"
 #include "nvim/misc1.h"
 #include "nvim/move.h"
+#include "nvim/main.h"
 #include "nvim/state.h"
 #include "nvim/ex_docmd.h"
 #include "nvim/ex_cmds.h"
@@ -141,10 +142,6 @@ struct terminal {
   int pressed_button;
   // pending width/height
   bool pending_resize;
-  // color palette. this isn't set directly in the vterm instance because
-  // the default values are used to obtain the color numbers passed to cterm
-  // colors
-  RgbValue colors[256];
   // With a reference count of 0 the terminal can be freed.
   size_t refcount;
 };
@@ -167,9 +164,9 @@ static VTermColor default_vt_bg_rgb;
 void terminal_init(void)
 {
   invalidated_terminals = pmap_new(ptr_t)();
-  time_watcher_init(&loop, &refresh_timer, NULL);
+  time_watcher_init(&main_loop, &refresh_timer, NULL);
   // refresh_timer_cb will redraw the screen which can call vimscript
-  refresh_timer.events = queue_new_child(loop.events);
+  refresh_timer.events = queue_new_child(main_loop.events);
 
   // initialize a rgb->color index map for cterm attributes(VTermScreenCell
   // only has RGB information and we need color indexes for terminal UIs)
@@ -179,7 +176,16 @@ void terminal_init(void)
 
   for (int color_index = 0; color_index < 256; color_index++) {
     VTermColor color;
-    vterm_state_get_palette_color(state, color_index, &color);
+    // Some of the default 16 colors has the same color as the later
+    // 240 colors. To avoid collisions, we will use the custom colors
+    // below in non true color mode.
+    if (color_index < 16) {
+      color.red = 0;
+      color.green = 0;
+      color.blue = (uint8_t)(color_index + 1);
+    } else {
+      vterm_state_get_palette_color(state, color_index, &color);
+    }
     map_put(int, int)(color_indexes,
         RGB(color.red, color.green, color.blue), color_index + 1);
   }
@@ -205,6 +211,7 @@ void terminal_teardown(void)
 
 Terminal *terminal_open(TerminalOptions opts)
 {
+  bool true_color = ui_rgb_attached();
   // Create a new terminal instance and configure it
   Terminal *rv = xcalloc(1, sizeof(Terminal));
   rv->opts = opts;
@@ -220,7 +227,7 @@ Terminal *terminal_open(TerminalOptions opts)
   // Set up screen
   rv->vts = vterm_obtain_screen(rv->vt);
   vterm_screen_enable_altscreen(rv->vts, true);
-    // delete empty lines at the end of the buffer
+  // delete empty lines at the end of the buffer
   vterm_screen_set_callbacks(rv->vts, &vterm_screen_callbacks, rv);
   vterm_screen_set_damage_merge(rv->vts, VTERM_DAMAGE_SCROLL);
   vterm_screen_reset(rv->vts, 1);
@@ -236,7 +243,7 @@ Terminal *terminal_open(TerminalOptions opts)
   set_option_value((uint8_t *)"relativenumber", false, NULL, OPT_LOCAL);
   RESET_BINDING(curwin);
   // Apply TermOpen autocmds so the user can configure the terminal
-  apply_autocmds(EVENT_TERMOPEN, NULL, NULL, true, curbuf);
+  apply_autocmds(EVENT_TERMOPEN, NULL, NULL, false, curbuf);
 
   // Configure the scrollback buffer. Try to get the size from:
   //
@@ -250,12 +257,27 @@ Terminal *terminal_open(TerminalOptions opts)
   rv->sb_size = MIN(rv->sb_size, 100000);
   rv->sb_buffer = xmalloc(sizeof(ScrollbackLine *) * rv->sb_size);
 
+  if (!true_color) {
+    // Change the first 16 colors so we can easily get the correct color
+    // index from them.
+    for (int i = 0; i < 16; i++) {
+      VTermColor color;
+      color.red = 0;
+      color.green = 0;
+      color.blue = (uint8_t)(i + 1);
+      vterm_state_set_palette_color(state, i, &color);
+    }
+    return rv;
+  }
+
+  vterm_state_set_bold_highbright(state, true);
+
   // Configure the color palette. Try to get the color from:
   //
   // - b:terminal_color_{NUM}
   // - g:terminal_color_{NUM}
   // - the VTerm instance
-  for (int i = 0; i < (int)ARRAY_SIZE(rv->colors); i++) {
+  for (int i = 0; i < 16; i++) {
     RgbValue color_val = -1;
     char var[64];
     snprintf(var, sizeof(var), "terminal_color_%d", i);
@@ -265,15 +287,12 @@ Terminal *terminal_open(TerminalOptions opts)
       xfree(name);
 
       if (color_val != -1) {
-        rv->colors[i] = color_val;
+        VTermColor color;
+        color.red = (uint8_t)((color_val >> 16) & 0xFF);
+        color.green = (uint8_t)((color_val >> 8) & 0xFF);
+        color.blue = (uint8_t)((color_val >> 0) & 0xFF);
+        vterm_state_set_palette_color(state, i, &color);
       }
-    }
-
-    if (color_val == -1) {
-      // the default is taken from vterm
-      VTermColor color;
-      vterm_state_get_palette_color(state, i, &color);
-      rv->colors[i] = RGB(color.red, color.green, color.blue);
     }
   }
 
@@ -288,8 +307,9 @@ void terminal_close(Terminal *term, char *msg)
 
   term->forward_mouse = false;
   term->closed = true;
+  buf_T *buf = handle_get_buffer(term->buf_handle);
+
   if (!msg || exiting) {
-    buf_T *buf = handle_get_buffer(term->buf_handle);
     // If no msg was given, this was called by close_buffer(buffer.c).  Or if
     // exiting, we must inform the buffer the terminal no longer exists so that
     // close_buffer() doesn't call this again.
@@ -303,6 +323,10 @@ void terminal_close(Terminal *term, char *msg)
     }
   } else {
     terminal_receive(term, msg, strlen(msg));
+  }
+
+  if (buf) {
+    apply_autocmds(EVENT_TERMCLOSE, NULL, NULL, false, buf);
   }
 }
 
@@ -406,6 +430,10 @@ static int terminal_execute(VimState *state, int key)
       apply_autocmds(EVENT_FOCUSLOST, NULL, NULL, false, curbuf);
       break;
 
+    // Temporary fix until paste events gets implemented
+    case K_PASTE:
+      break;
+
     case K_LEFTMOUSE:
     case K_LEFTDRAG:
     case K_LEFTRELEASE:
@@ -425,7 +453,7 @@ static int terminal_execute(VimState *state, int key)
     case K_EVENT:
       // We cannot let an event free the terminal yet. It is still needed.
       s->term->refcount++;
-      queue_process_events(loop.events);
+      queue_process_events(main_loop.events);
       s->term->refcount--;
       if (s->term->buf_handle == 0) {
         s->close = true;
@@ -539,14 +567,10 @@ void terminal_get_line_attributes(Terminal *term, win_T *wp, int linenr,
     // Since libvterm does not expose the color index used by the program, we
     // use the rgb value to find the appropriate index in the cache computed by
     // `terminal_init`.
-    int vt_fg_idx = vt_fg != default_vt_fg ?
+    int vt_fg_idx = vt_fg != -1 ?
                     map_get(int, int)(color_indexes, vt_fg) : 0;
-    int vt_bg_idx = vt_bg != default_vt_bg ?
+    int vt_bg_idx = vt_bg != -1 ?
                     map_get(int, int)(color_indexes, vt_bg) : 0;
-    // The index is now used to get the final rgb value from the
-    // user-customizable palette.
-    int vt_fg_rgb = vt_fg_idx != 0 ? term->colors[vt_fg_idx - 1] : -1;
-    int vt_bg_rgb = vt_bg_idx != 0 ? term->colors[vt_bg_idx - 1] : -1;
 
     int hl_attrs = (cell.attrs.bold ? HL_BOLD : 0)
                  | (cell.attrs.italic ? HL_ITALIC : 0)
@@ -561,8 +585,8 @@ void terminal_get_line_attributes(Terminal *term, win_T *wp, int linenr,
         .cterm_fg_color = vt_fg_idx,
         .cterm_bg_color = vt_bg_idx,
         .rgb_ae_attr = (int16_t)hl_attrs,
-        .rgb_fg_color = vt_fg_rgb,
-        .rgb_bg_color = vt_bg_rgb,
+        .rgb_fg_color = vt_fg,
+        .rgb_bg_color = vt_bg,
       });
     }
 
@@ -622,6 +646,7 @@ static int term_settermprop(VTermProp prop, VTermValue *val, void *data)
       api_free_object(dict_set_value(buf->b_vars,
                                      cstr_as_string("term_title"),
                                      STRING_OBJ(cstr_as_string(val->string)),
+                                     false,
                                      &err));
       break;
     }
@@ -1134,15 +1159,15 @@ static bool is_focused(Terminal *term)
   return State & TERM_FOCUS && curbuf->terminal == term;
 }
 
-#define GET_CONFIG_VALUE(k, o)                                           \
-  do {                                                                   \
-    Error err;                                                           \
-    /* Only called from terminal_open where curbuf->terminal is the */   \
-    /* context  */                                                       \
-    o = dict_get_value(curbuf->b_vars, cstr_as_string(k), &err);         \
-    if (o.type == kObjectTypeNil) {                                      \
-      o = dict_get_value(&globvardict, cstr_as_string(k), &err);         \
-    }                                                                    \
+#define GET_CONFIG_VALUE(k, o) \
+  do { \
+    Error err; \
+    /* Only called from terminal_open where curbuf->terminal is the */ \
+    /* context  */ \
+    o = dict_get_value(curbuf->b_vars, cstr_as_string(k), &err); \
+    if (o.type == kObjectTypeNil) { \
+      o = dict_get_value(&globvardict, cstr_as_string(k), &err); \
+    } \
   } while (0)
 
 static char *get_config_string(char *key)

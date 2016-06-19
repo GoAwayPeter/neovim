@@ -9,7 +9,7 @@
 #include "nvim/event/wstream.h"
 #include "nvim/event/process.h"
 #include "nvim/event/libuv_process.h"
-#include "nvim/event/pty_process.h"
+#include "nvim/os/pty_process.h"
 #include "nvim/globals.h"
 #include "nvim/log.h"
 
@@ -22,11 +22,11 @@
 #define TERM_TIMEOUT 1000000000
 #define KILL_TIMEOUT (TERM_TIMEOUT * 2)
 
-#define CLOSE_PROC_STREAM(proc, stream)                             \
-  do {                                                              \
-    if (proc->stream && !proc->stream->closed) {                    \
-      stream_close(proc->stream, NULL);                             \
-    }                                                               \
+#define CLOSE_PROC_STREAM(proc, stream) \
+  do { \
+    if (proc->stream && !proc->stream->closed) { \
+      stream_close(proc->stream, NULL); \
+    } \
   } while (0)
 
 static bool process_is_tearing_down = false;
@@ -187,9 +187,9 @@ int process_wait(Process *proc, int ms, Queue *events) FUNC_ATTR_NONNULL_ARG(1)
   // being freed) before we have a chance to get the status.
   proc->refcount++;
   LOOP_PROCESS_EVENTS_UNTIL(proc->loop, events, ms,
-      // Until...
-      got_int ||             // interrupted by the user
-      proc->refcount == 1);  // job exited
+                            // Until...
+                            got_int                   // interrupted by the user
+                            || proc->refcount == 1);  // job exited
 
   // we'll assume that a user frantically hitting interrupt doesn't like
   // the current job. Signal that it has to be killed.

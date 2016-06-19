@@ -1,4 +1,4 @@
-local helpers = require('test.functional.helpers')
+local helpers = require('test.functional.helpers')(after_each)
 local Screen = require('test.functional.ui.screen')
 local thelpers = require('test.functional.terminal.helpers')
 local feed, clear, nvim = helpers.feed, helpers.clear, helpers.nvim
@@ -25,7 +25,7 @@ describe('terminal window highlighting', function()
       [5] = {background = 11},
       [6] = {foreground = 130},
       [7] = {reverse = true},
-      [8] = {background = 11}
+      [8] = {background = 11},
     })
     screen:attach(false)
     execute('enew | call termopen(["'..nvim_dir..'/tty-test"]) | startinsert')
@@ -121,7 +121,7 @@ describe('terminal window highlighting with custom palette', function()
     clear()
     screen = Screen.new(50, 7)
     screen:set_default_attr_ids({
-      [1] = {foreground = 1193046}
+      [1] = {foreground = 1193046, special = Screen.colors.Black}
     })
     screen:set_default_attr_ignore({
       [1] = {bold = true},
@@ -130,7 +130,7 @@ describe('terminal window highlighting with custom palette', function()
       [5] = {background = 11},
       [6] = {foreground = 130},
       [7] = {reverse = true},
-      [8] = {background = 11}
+      [8] = {background = 11},
     })
     screen:attach(true)
     nvim('set_var', 'terminal_color_3', '#123456')
@@ -165,24 +165,49 @@ end)
 
 describe('synIDattr()', function()
   local screen
-
   before_each(function()
     clear()
     screen = Screen.new(50, 7)
-    execute('highlight Normal ctermfg=1 guifg=#ff0000')
+    execute('highlight Normal ctermfg=252 guifg=#ff0000 guibg=Black')
+    -- Salmon #fa8072 Maroon #800000
+    execute('highlight Keyword ctermfg=79 guifg=Salmon guisp=Maroon')
   end)
 
-  after_each(function()
-    screen:detach()
+  it('returns cterm-color if RGB-capable UI is _not_ attached', function()
+    eq('252', eval('synIDattr(hlID("Normal"),  "fg")'))
+    eq('252', eval('synIDattr(hlID("Normal"),  "fg#")'))
+    eq('-1',  eval('synIDattr(hlID("Normal"),  "bg")'))
+    eq('-1',  eval('synIDattr(hlID("Normal"),  "bg#")'))
+    eq('79',  eval('synIDattr(hlID("Keyword"), "fg")'))
+    eq('79',  eval('synIDattr(hlID("Keyword"), "fg#")'))
+    eq('',    eval('synIDattr(hlID("Keyword"), "sp")'))
+    eq('',    eval('synIDattr(hlID("Keyword"), "sp#")'))
   end)
 
-  it('returns RGB number if GUI', function()
+  it('returns gui-color if "gui" arg is passed', function()
+    eq('Black',  eval('synIDattr(hlID("Normal"),  "bg", "gui")'))
+    eq('Maroon', eval('synIDattr(hlID("Keyword"), "sp", "gui")'))
+  end)
+
+  it('returns gui-color if RGB-capable UI is attached', function()
     screen:attach(true)
-    eq('#ff0000', eval('synIDattr(hlID("Normal"), "fg")'))
+    eq('#ff0000', eval('synIDattr(hlID("Normal"),  "fg")'))
+    eq('Black',   eval('synIDattr(hlID("Normal"),  "bg")'))
+    eq('Salmon',  eval('synIDattr(hlID("Keyword"), "fg")'))
+    eq('Maroon',  eval('synIDattr(hlID("Keyword"), "sp")'))
+  end)
+
+  it('returns #RRGGBB value for fg#/bg#/sp#', function()
+    screen:attach(true)
+    eq('#ff0000', eval('synIDattr(hlID("Normal"), "fg#")'))
+    eq('#000000', eval('synIDattr(hlID("Normal"), "bg#")'))
+    eq('#fa8072', eval('synIDattr(hlID("Keyword"), "fg#")'))
+    eq('#800000', eval('synIDattr(hlID("Keyword"), "sp#")'))
   end)
 
   it('returns color number if non-GUI', function()
     screen:attach(false)
-    eq('1', eval('synIDattr(hlID("Normal"), "fg")'))
+    eq('252', eval('synIDattr(hlID("Normal"), "fg")'))
+    eq('79', eval('synIDattr(hlID("Keyword"), "fg")'))
   end)
 end)

@@ -1,4 +1,4 @@
-*various.txt*   For Vim version 7.4.  Last change: 2014 Aug 06
+*various.txt*   For Vim version 7.4.  Last change: 2016 Feb 18
 
 
 		  VIM REFERENCE MANUAL    by Bram Moolenaar
@@ -220,8 +220,12 @@ g8			Print the hex values of the bytes used in the
 
 			Like |:enew|, it will fail if the current buffer is
 			modified, but can be forced with "!".  See |termopen()|
-			and |nvim-terminal-emulator| for more information.
+			and |terminal-emulator|.
 
+			To switch to terminal mode automatically:
+>
+			      autocmd BufEnter term://* startinsert
+<
 							*:!cmd* *:!* *E34*
 :!{cmd}			Execute {cmd} with 'shell'. See also |:terminal|.
 
@@ -315,8 +319,7 @@ N  *+dialog_con*	Support for |:confirm| with console dialog.
 N  *+dialog_con_gui*	Support for |:confirm| with GUI and console dialog.
 N  *+digraphs*		|digraphs| *E196*
 N  *+eval*		expression evaluation |eval.txt|
-N  *+ex_extra*		Vim's extra Ex commands: |:center|, |:left|,
-			|:normal|, |:retab| and |:right|
+N  *+ex_extra*		always on now, used to be for Vim's extra Ex commands
 N  *+extra_search*	|'hlsearch'| and |'incsearch'| options.
 B  *+farsi*		|farsi| language
 N  *+file_in_path*	|gf|, |CTRL-W_f| and |<cfile>|
@@ -367,6 +370,7 @@ N  *+tablineat*		'tabline' option recognizing %@Func@ items.
 N  *+tag_binary*	binary searching in tags file |tag-binary-search|
 N  *+tag_old_static*	old method for static tags |tag-old-static|
 m  *+tag_any_white*	any white space allowed in tags file |tag-any-white|
+B  *+termguicolors*	24-bit color in xterm-compatible terminals support
    *+terminfo*		uses |terminfo| instead of termcap
 N  *+termresponse*	support for |t_RV| and |v:termresponse|
 N  *+textobjects*	|text-objects| selection
@@ -450,7 +454,7 @@ m  *+xpm_w32*		Win32 GUI only: pixmap support |w32-xpm-support|
 
 :redi[r] END		End redirecting messages.
 
-						*:sil* *:silent*
+						*:sil* *:silent* *:silent!*
 :sil[ent][!] {command}	Execute {command} silently.  Normal messages will not
 			be given or added to the message history.
 			When [!] is added, error messages will also be
@@ -585,5 +589,13 @@ the whole screen.  But it works good enough for most uses, and you get syntax
 highlighting.
 
 The "h" key will give you a short overview of the available commands.
+
+If you want to set options differently when using less, define the
+LessInitFunc in your vimrc, for example: >
+
+	func LessInitFunc()
+	  set nocursorcolumn nocursorline
+	endfunc
+<
 
  vim:tw=78:ts=8:ft=help:norl:

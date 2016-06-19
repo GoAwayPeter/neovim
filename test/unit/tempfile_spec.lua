@@ -2,9 +2,12 @@ local lfs = require 'lfs'
 local helpers = require 'test.unit.helpers'
 
 local os = helpers.cimport './src/nvim/os/os.h'
-local tempfile = helpers.cimport './src/nvim/tempfile.h'
+local tempfile = helpers.cimport './src/nvim/fileio.h'
 
 describe('tempfile related functions', function()
+  before_each(function()
+    tempfile.vim_deltempdir()
+  end)
   after_each(function()
     tempfile.vim_deltempdir()
   end)

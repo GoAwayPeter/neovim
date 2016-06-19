@@ -356,6 +356,8 @@ let s:MSGPACK_STANDARD_TYPES = {
   \type(''): 'binary',
   \type([]): 'array',
   \type({}): 'map',
+  \type(v:true): 'boolean',
+  \type(v:null): 'nil',
 \}
 
 ""
@@ -379,7 +381,7 @@ endfunction
 ""
 " Dump boolean value.
 function s:msgpack_dump_boolean(v) abort
-  return a:v._VAL ? 'TRUE' : 'FALSE'
+  return (a:v is v:true || (a:v isnot v:false && a:v._VAL)) ? 'TRUE' : 'FALSE'
 endfunction
 
 ""
@@ -395,7 +397,8 @@ endfunction
 ""
 " Dump floating-point value.
 function s:msgpack_dump_float(v) abort
-  return string(type(a:v) == type({}) ? a:v._VAL : a:v)
+  return substitute(string(type(a:v) == type({}) ? a:v._VAL : a:v),
+                   \'\V\^\(-\)\?str2float(''\(inf\|nan\)'')\$', '\1\2', '')
 endfunction
 
 ""

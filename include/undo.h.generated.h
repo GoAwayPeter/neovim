@@ -8,7 +8,7 @@ int u_save(linenr_T top, linenr_T bot);
 int u_savesub(linenr_T lnum);
 int u_inssub(linenr_T lnum);
 int u_savedel(linenr_T lnum, long nlines);
-int undo_allowed(void);
+_Bool undo_allowed(void);
 int u_savecommon(linenr_T top, linenr_T bot, linenr_T newbot, int reload);
 void u_compute_hash(char_u *hash);
 char *u_get_undo_file_name(const char *const buf_ffname, const _Bool reading) FUNC_ATTR_WARN_UNUSED_RESULT;
@@ -28,7 +28,7 @@ void u_saveline(linenr_T lnum);
 void u_clearline(void);
 void u_undoline(void);
 void u_blockfree(buf_T *buf);
-int bufIsChanged(buf_T *buf);
-int curbufIsChanged(void);
+_Bool bufIsChanged(buf_T *buf);
+_Bool curbufIsChanged(void);
 void u_eval_tree(u_header_T *first_uhp, list_T *list);
 #include "nvim/func_attr.h"

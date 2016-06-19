@@ -327,9 +327,10 @@ int call_shell(char_u *cmd, ShellOpts opts, char_u *extra_shell_arg)
     }
   }
 
-  set_vim_var_nr(VV_SHELL_ERROR, (long)retval);
-  if (do_profiling == PROF_YES)
+  set_vim_var_nr(VV_SHELL_ERROR, (varnumber_T) retval);
+  if (do_profiling == PROF_YES) {
     prof_child_exit(&wait_time);
+  }
 
   return retval;
 }
@@ -466,11 +467,12 @@ bool put_bytes(FILE *fd, uintmax_t number, size_t len)
 }
 
 /// Writes time_t to file "fd" in 8 bytes.
-void put_time(FILE *fd, time_t time_)
+/// @returns FAIL when the write failed.
+int put_time(FILE *fd, time_t time_)
 {
   uint8_t buf[8];
   time_to_bytes(time_, buf);
-  (void)fwrite(buf, sizeof(uint8_t), ARRAY_SIZE(buf), fd);
+  return fwrite(buf, sizeof(uint8_t), ARRAY_SIZE(buf), fd) == 1 ? OK : FAIL;
 }
 
 /// Writes time_t to "buf[8]".

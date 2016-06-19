@@ -41,6 +41,8 @@
 #include "nvim/os/os.h"
 #include "nvim/os/time.h"
 
+static bool did_syntax_onoff = false;
+
 // Structure that stores information about a highlight group.
 // The ID of a highlight group is also called group ID.  It is the index in
 // the highlight_ga array PLUS ONE.
@@ -60,8 +62,10 @@ struct hl_group {
   int sg_gui;                   // "gui=" highlighting attributes
   RgbValue sg_rgb_fg;           // RGB foreground color
   RgbValue sg_rgb_bg;           // RGB background color
+  RgbValue sg_rgb_sp;           // RGB special color
   uint8_t *sg_rgb_fg_name;      // RGB foreground color name
   uint8_t *sg_rgb_bg_name;      // RGB background color name
+  uint8_t *sg_rgb_sp_name;      // RGB special color name
 };
 
 #define SG_CTERM        2       // cterm has been set
@@ -808,19 +812,39 @@ static void syn_sync(win_T *wp, linenr_T start_lnum, synstate_T *last_valid)
   validate_current_state();
 }
 
+static void save_chartab(char_u *chartab)
+{
+  if (syn_block->b_syn_isk != empty_option) {
+    memmove(chartab, syn_buf->b_chartab, (size_t)32);
+    memmove(syn_buf->b_chartab, syn_win->w_s->b_syn_chartab, (size_t)32);
+  }
+}
+
+static void restore_chartab(char_u *chartab)
+{
+  if (syn_win->w_s->b_syn_isk != empty_option) {
+    memmove(syn_buf->b_chartab, chartab, (size_t)32);
+  }
+}
+
 /*
  * Return TRUE if the line-continuation pattern matches in line "lnum".
  */
 static int syn_match_linecont(linenr_T lnum)
 {
-  regmmatch_T regmatch;
-
   if (syn_block->b_syn_linecont_prog != NULL) {
+    regmmatch_T regmatch;
+    // chartab array for syn iskeyword
+    char_u buf_chartab[32];
+    save_chartab(buf_chartab);
+
     regmatch.rmm_ic = syn_block->b_syn_linecont_ic;
     regmatch.regprog = syn_block->b_syn_linecont_prog;
     int r = syn_regexec(&regmatch, lnum, (colnr_T)0,
                         IF_SYN_TIME(&syn_block->b_syn_linecont_time));
     syn_block->b_syn_linecont_prog = regmatch.regprog;
+
+    restore_chartab(buf_chartab);
     return r;
   }
   return FALSE;
@@ -1613,8 +1637,9 @@ syn_current_attr (
   lpos_T pos;
   int lc_col;
   reg_extmatch_T *cur_extmatch = NULL;
-  char_u      *line;            /* current line.  NOTE: becomes invalid after
-                                   looking for a pattern match! */
+  char_u      buf_chartab[32];  // chartab array for syn iskeyword
+  char_u      *line;            // current line.  NOTE: becomes invalid after
+                                // looking for a pattern match!
 
   /* variables for zero-width matches that have a "nextgroup" argument */
   int keep_next_list;
@@ -1663,6 +1688,9 @@ syn_current_attr (
   /* Init the list of zero-width matches with a nextlist.  This is used to
    * avoid matching the same item in the same position twice. */
   ga_init(&zero_width_next_ga, (int)sizeof(int), 10);
+
+  // use syntax iskeyword option
+  save_chartab(buf_chartab);
 
   /*
    * Repeat matching keywords and patterns, to find contained items at the
@@ -1987,6 +2015,8 @@ syn_current_attr (
     }
 
   } while (found_match);
+
+  restore_chartab(buf_chartab);
 
   /*
    * Use attributes from the current state, if within its highlighting.
@@ -2518,7 +2548,8 @@ find_endpos (
   regmmatch_T best_regmatch;        /* startpos/endpos of best match */
   lpos_T pos;
   char_u      *line;
-  int had_match = FALSE;
+  int had_match = false;
+  char_u buf_chartab[32];  // chartab array for syn option iskeyword
 
   /* just in case we are invoked for a keyword */
   if (idx < 0)
@@ -2558,9 +2589,13 @@ find_endpos (
   unref_extmatch(re_extmatch_in);
   re_extmatch_in = ref_extmatch(start_ext);
 
-  matchcol = startpos->col;     /* start looking for a match at sstart */
-  start_idx = idx;              /* remember the first END pattern. */
-  best_regmatch.startpos[0].col = 0;            /* avoid compiler warning */
+  matchcol = startpos->col;     // start looking for a match at sstart
+  start_idx = idx;              // remember the first END pattern.
+  best_regmatch.startpos[0].col = 0;            // avoid compiler warning
+
+  // use syntax iskeyword option
+  save_chartab(buf_chartab);
+
   for (;; ) {
     /*
      * Find end pattern that matches first after "matchcol".
@@ -2613,33 +2648,37 @@ find_endpos (
                           IF_SYN_TIME(&spp_skip->sp_time));
       spp_skip->sp_prog = regmatch.regprog;
       if (r && regmatch.startpos[0].col <= best_regmatch.startpos[0].col) {
-        /* Add offset to skip pattern match */
+        // Add offset to skip pattern match
         syn_add_end_off(&pos, &regmatch, spp_skip, SPO_ME_OFF, 1);
 
-        /* If the skip pattern goes on to the next line, there is no
-         * match with an end pattern in this line. */
-        if (pos.lnum > startpos->lnum)
+        // If the skip pattern goes on to the next line, there is no
+        // match with an end pattern in this line.
+        if (pos.lnum > startpos->lnum) {
           break;
+        }
 
-        line = ml_get_buf(syn_buf, startpos->lnum, FALSE);
+        line = ml_get_buf(syn_buf, startpos->lnum, false);
+        int line_len = (int)STRLEN(line);
 
-        /* take care of an empty match or negative offset */
-        if (pos.col <= matchcol)
-          ++matchcol;
-        else if (pos.col <= regmatch.endpos[0].col)
+        // take care of an empty match or negative offset
+        if (pos.col <= matchcol) {
+          matchcol++;
+        } else if (pos.col <= regmatch.endpos[0].col) {
           matchcol = pos.col;
-        else
-          /* Be careful not to jump over the NUL at the end-of-line */
+        } else {
+          // Be careful not to jump over the NUL at the end-of-line
           for (matchcol = regmatch.endpos[0].col;
-               line[matchcol] != NUL && matchcol < pos.col;
-               ++matchcol)
-            ;
+               matchcol < line_len && matchcol < pos.col;
+               matchcol++) {
+          }
+        }
 
-        /* if the skip pattern includes end-of-line, break here */
-        if (line[matchcol] == NUL)
+        // if the skip pattern includes end-of-line, break here
+        if (matchcol >= line_len) {
           break;
+        }
 
-        continue;                   /* start with first end pattern again */
+        continue;  // start with first end pattern again
       }
     }
 
@@ -2698,6 +2737,8 @@ find_endpos (
   /* no match for an END pattern in this line */
   if (!had_match)
     m_endpos->lnum = 0;
+
+  restore_chartab(buf_chartab);
 
   /* Remove external matches. */
   unref_extmatch(re_extmatch_in);
@@ -3004,14 +3045,59 @@ static void syn_cmd_spell(exarg_T *eap, int syncing)
     return;
 
   next = skiptowhite(arg);
-  if (STRNICMP(arg, "toplevel", 8) == 0 && next - arg == 8)
+  if (STRNICMP(arg, "toplevel", 8) == 0 && next - arg == 8) {
     curwin->w_s->b_syn_spell = SYNSPL_TOP;
-  else if (STRNICMP(arg, "notoplevel", 10) == 0 && next - arg == 10)
+  } else if (STRNICMP(arg, "notoplevel", 10) == 0 && next - arg == 10) {
     curwin->w_s->b_syn_spell = SYNSPL_NOTOP;
-  else if (STRNICMP(arg, "default", 7) == 0 && next - arg == 7)
+  } else if (STRNICMP(arg, "default", 7) == 0 && next - arg == 7) {
     curwin->w_s->b_syn_spell = SYNSPL_DEFAULT;
-  else
+  } else {
     EMSG2(_("E390: Illegal argument: %s"), arg);
+    return;
+  }
+
+  // assume spell checking changed, force a redraw
+  redraw_win_later(curwin, NOT_VALID);
+}
+
+/// Handle ":syntax iskeyword" command.
+static void syn_cmd_iskeyword(exarg_T *eap, int syncing)
+{
+  char_u *arg = eap->arg;
+  char_u save_chartab[32];
+  char_u *save_isk;
+
+  if (eap->skip) {
+    return;
+  }
+
+  arg = skipwhite(arg);
+  if (*arg == NUL) {
+    MSG_PUTS("\n");
+    MSG_PUTS(_("syntax iskeyword "));
+    if (curwin->w_s->b_syn_isk != empty_option) {
+      msg_outtrans(curwin->w_s->b_syn_isk);
+    } else {
+      msg_outtrans((char_u *)"not set");
+    }
+  } else {
+    if (STRNICMP(arg, "clear", 5) == 0) {
+      memmove(curwin->w_s->b_syn_chartab, curbuf->b_chartab, (size_t)32);
+      clear_string_option(&curwin->w_s->b_syn_isk);
+    } else {
+      memmove(save_chartab, curbuf->b_chartab, (size_t)32);
+      save_isk = curbuf->b_p_isk;
+      curbuf->b_p_isk = vim_strsave(arg);
+
+      buf_init_chartab(curbuf, false);
+      memmove(curwin->w_s->b_syn_chartab, curbuf->b_chartab, (size_t)32);
+      memmove(curbuf->b_chartab, save_chartab, (size_t)32);
+      clear_string_option(&curwin->w_s->b_syn_isk);
+      curwin->w_s->b_syn_isk = curbuf->b_p_isk;
+      curbuf->b_p_isk = save_isk;
+    }
+  }
+  redraw_win_later(curwin, NOT_VALID);
 }
 
 /*
@@ -3052,6 +3138,7 @@ void syntax_clear(synblock_T *block)
   xfree(block->b_syn_linecont_pat);
   block->b_syn_linecont_pat = NULL;
   block->b_syn_folditems = 0;
+  clear_string_option(&block->b_syn_isk);
 
   /* free the stored states */
   syn_stack_free_all(block);
@@ -3094,6 +3181,7 @@ static void syntax_sync_clear(void)
   curwin->w_s->b_syn_linecont_prog = NULL;
   xfree(curwin->w_s->b_syn_linecont_pat);
   curwin->w_s->b_syn_linecont_pat = NULL;
+  clear_string_option(&curwin->w_s->b_syn_isk);
 
   syn_stack_free_all(curwin->w_s);              /* Need to recompute all syntax. */
 }
@@ -3253,6 +3341,7 @@ static void syn_cmd_enable(exarg_T *eap, int syncing)
 
 /*
  * Handle ":syntax reset" command.
+ * It actually resets highlighting, not syntax.
  */
 static void syn_cmd_reset(exarg_T *eap, int syncing)
 {
@@ -3281,14 +3370,25 @@ static void syn_cmd_off(exarg_T *eap, int syncing)
 }
 
 static void syn_cmd_onoff(exarg_T *eap, char *name)
+  FUNC_ATTR_NONNULL_ALL
 {
-  char buf[100];
-
+  did_syntax_onoff = true;
   eap->nextcmd = check_nextcmd(eap->arg);
   if (!eap->skip) {
-    strcpy(buf, "so ");
+    char buf[100];
+    strncpy(buf, "so ", 4);
     vim_snprintf(buf + 3, sizeof(buf) - 3, SYNTAX_FNAME, name);
     do_cmdline_cmd(buf);
+  }
+}
+
+void syn_maybe_on(void)
+{
+  if (!did_syntax_onoff) {
+    exarg_T ea;
+    ea.arg = (char_u *)"";
+    ea.skip = false;
+    syn_cmd_onoff(&ea, "syntax");
   }
 }
 
@@ -4183,12 +4283,16 @@ static void syn_cmd_keyword(exarg_T *eap, int syncing)
             break;
           if (p[1] == NUL) {
             EMSG2(_("E789: Missing ']': %s"), kw);
-            kw = p + 2;                       /* skip over the NUL */
-            break;
+            goto error;
           }
           if (p[1] == ']') {
-            kw = p + 1;                       /* skip over the "]" */
-            break;
+            if (p[2] != NUL) {
+              EMSG3(_("E890: trailing char after ']': %s]%s"),
+                    kw, &p[2]);
+              goto error;
+            }
+            kw = p + 1;
+            break;   // skip over the "]"
           }
           if (has_mbyte) {
             int l = (*mb_ptr2len)(p + 1);
@@ -4203,6 +4307,7 @@ static void syn_cmd_keyword(exarg_T *eap, int syncing)
       }
     }
 
+error:
     xfree(keyword_copy);
     xfree(syn_opt_arg.cont_in_list);
     xfree(syn_opt_arg.next_list);
@@ -4455,12 +4560,10 @@ syn_cmd_region (
   if (illegal || not_enough)
     rest = NULL;
 
-  /*
-   * Must have a "start" and "end" pattern.
-   */
-  if (rest != NULL && (pat_ptrs[ITEM_START] == NULL ||
-                       pat_ptrs[ITEM_END] == NULL)) {
-    not_enough = TRUE;
+  // Must have a "start" and "end" pattern.
+  if (rest != NULL && (pat_ptrs[ITEM_START] == NULL
+                       || pat_ptrs[ITEM_END] == NULL)) {
+    not_enough = true;
     rest = NULL;
   }
 
@@ -4843,9 +4946,10 @@ static char_u *get_syn_pattern(char_u *arg, synpat_T *ci)
   int idx;
   char_u      *cpo_save;
 
-  /* need at least three chars */
-  if (arg == NULL || arg[1] == NUL || arg[2] == NUL)
+  // need at least three chars
+  if (arg == NULL || arg[0] == NUL || arg[1] == NUL || arg[2] == NUL) {
     return NULL;
+  }
 
   end = skip_regexp(arg + 1, *arg, TRUE, NULL);
   if (*end != *arg) {                       /* end delimiter not found */
@@ -4982,6 +5086,10 @@ static void syn_cmd_sync(exarg_T *eap, int syncing)
         curwin->w_s->b_syn_sync_maxlines = 0;
       }
     } else if (STRCMP(key, "LINECONT") == 0)   {
+      if (*next_arg == NUL) {  // missing pattern
+        illegal = true;
+        break;
+      }
       if (curwin->w_s->b_syn_linecont_pat != NULL) {
         EMSG(_("E403: syntax sync: line continuations pattern specified twice"));
         finished = TRUE;
@@ -5331,24 +5439,25 @@ struct subcommand {
 
 static struct subcommand subcommands[] =
 {
-  {"case",            syn_cmd_case},
-  {"clear",           syn_cmd_clear},
-  {"cluster",         syn_cmd_cluster},
-  {"conceal",         syn_cmd_conceal},
-  {"enable",          syn_cmd_enable},
-  {"include",         syn_cmd_include},
-  {"keyword",         syn_cmd_keyword},
-  {"list",            syn_cmd_list},
-  {"manual",          syn_cmd_manual},
-  {"match",           syn_cmd_match},
-  {"on",              syn_cmd_on},
-  {"off",             syn_cmd_off},
-  {"region",          syn_cmd_region},
-  {"reset",           syn_cmd_reset},
-  {"spell",           syn_cmd_spell},
-  {"sync",            syn_cmd_sync},
-  {"",                syn_cmd_list},
-  {NULL, NULL}
+  { "case",      syn_cmd_case },
+  { "clear",     syn_cmd_clear },
+  { "cluster",   syn_cmd_cluster },
+  { "conceal",   syn_cmd_conceal },
+  { "enable",    syn_cmd_enable },
+  { "include",   syn_cmd_include },
+  { "iskeyword", syn_cmd_iskeyword },
+  { "keyword",   syn_cmd_keyword },
+  { "list",      syn_cmd_list },
+  { "manual",    syn_cmd_manual },
+  { "match",     syn_cmd_match },
+  { "on",        syn_cmd_on },
+  { "off",       syn_cmd_off },
+  { "region",    syn_cmd_region },
+  { "reset",     syn_cmd_reset },
+  { "spell",     syn_cmd_spell },
+  { "sync",      syn_cmd_sync },
+  { "",          syn_cmd_list },
+  { NULL, NULL }
 };
 
 /*
@@ -5395,11 +5504,14 @@ void ex_ownsyntax(exarg_T *eap)
   if (curwin->w_s == &curwin->w_buffer->b_s) {
     curwin->w_s = xmalloc(sizeof(synblock_T));
     memset(curwin->w_s, 0, sizeof(synblock_T));
-    // TODO: Keep the spell checking as it was.
-    curwin->w_p_spell = FALSE;          /* No spell checking */
+    hash_init(&curwin->w_s->b_keywtab);
+    hash_init(&curwin->w_s->b_keywtab_ic);
+    // TODO: Keep the spell checking as it was. NOLINT(readability/todo)
+    curwin->w_p_spell = false;  // No spell checking
     clear_string_option(&curwin->w_s->b_p_spc);
     clear_string_option(&curwin->w_s->b_p_spf);
     clear_string_option(&curwin->w_s->b_p_spl);
+    clear_string_option(&curwin->w_s->b_syn_isk);
   }
 
   /* save value of b:current_syntax */
@@ -5507,25 +5619,29 @@ char_u *get_syntax_name(expand_T *xp, int idx)
 }
 
 
-/*
- * Function called for expression evaluation: get syntax ID at file position.
- */
-int 
-syn_get_id (
+// Function called for expression evaluation: get syntax ID at file position.
+int syn_get_id(
     win_T *wp,
     long lnum,
     colnr_T col,
-    int trans,                  /* remove transparency */
-    bool *spellp,               /* return: can do spell checking */
-    int keep_state              /* keep state of char at "col" */
+    int trans,      // remove transparency
+    bool *spellp,   // return: can do spell checking
+    int keep_state  // keep state of char at "col"
 )
 {
-  /* When the position is not after the current position and in the same
-   * line of the same buffer, need to restart parsing. */
+  // When the position is not after the current position and in the same
+  // line of the same buffer, need to restart parsing.
   if (wp->w_buffer != syn_buf
       || lnum != current_lnum
-      || col < current_col)
+      || col < current_col) {
     syntax_start(wp, lnum);
+  } else if (wp->w_buffer == syn_buf
+             && lnum == current_lnum
+             && col > current_col) {
+      // next_match may not be correct when moving around, e.g. with the
+      // "skip" expression in searchpair()
+      next_match_idx = -1;
+  }
 
   (void)get_syntax_attr(col, spellp, keep_state);
 
@@ -6133,12 +6249,11 @@ do_highlight (
         break;
       }
 
-      /*
-       * Isolate the key ("term", "ctermfg", "ctermbg", "font", "guifg" or
-       * "guibg").
-       */
-      while (*linep && !ascii_iswhite(*linep) && *linep != '=')
-        ++linep;
+      // Isolate the key ("term", "ctermfg", "ctermbg", "font", "guifg",
+      // "guibg" or "guisp").
+      while (*linep && !ascii_iswhite(*linep) && *linep != '=') {
+        linep++;
+      }
       xfree(key);
       key = vim_strnsave_up(key_start, (int)(linep - key_start));
       linep = skipwhite(linep);
@@ -6334,18 +6449,14 @@ do_highlight (
                   } else
                     HL_TABLE()[idx].sg_cterm &= ~HL_BOLD;
                 }
-                color &= 7;             /* truncate to 8 colors */
-              } else if (t_colors == 16 || t_colors == 88 || t_colors == 256) {
-                switch (t_colors) {
-                case 16:
-                  color = color_numbers_8[i];
-                  break;
-                case 88:
-                  color = color_numbers_88[i];
-                  break;
-                case 256:
-                  color = color_numbers_256[i];
-                  break;
+                color &= 7;             // truncate to 8 colors
+              } else if (t_colors == 16 || t_colors == 88 || t_colors >= 256) {
+                if (t_colors == 88) {
+                    color = color_numbers_88[i];
+                } else if (t_colors >= 256) {
+                    color = color_numbers_256[i];
+                } else {
+                    color = color_numbers_8[i];
                 }
               }
             }
@@ -6365,7 +6476,7 @@ do_highlight (
             HL_TABLE()[idx].sg_cterm_bg = color + 1;
             if (is_normal_group) {
               cterm_normal_bg_color = color + 1;
-              {
+              if (!ui_rgb_attached()) {
                 must_redraw = CLEAR;
                 if (color >= 0) {
                   if (t_colors < 16)
@@ -6420,7 +6531,23 @@ do_highlight (
           normal_bg = HL_TABLE()[idx].sg_rgb_bg;
         }
       } else if (STRCMP(key, "GUISP") == 0)   {
-        // Ignored for now
+        if (!init || !(HL_TABLE()[idx].sg_set & SG_GUI)) {
+          if (!init)
+            HL_TABLE()[idx].sg_set |= SG_GUI;
+
+          xfree(HL_TABLE()[idx].sg_rgb_sp_name);
+          if (STRCMP(arg, "NONE") != 0) {
+            HL_TABLE()[idx].sg_rgb_sp_name = (uint8_t *)xstrdup((char *)arg);
+            HL_TABLE()[idx].sg_rgb_sp = name_to_color(arg);
+          } else {
+            HL_TABLE()[idx].sg_rgb_sp_name = NULL;
+            HL_TABLE()[idx].sg_rgb_sp = -1;
+          }
+        }
+
+        if (is_normal_group) {
+          normal_sp = HL_TABLE()[idx].sg_rgb_sp;
+        }
       } else if (STRCMP(key, "START") == 0 || STRCMP(key, "STOP") == 0)   {
         // Ignored for now
       } else {
@@ -6484,6 +6611,7 @@ void restore_cterm_colors(void)
 {
   normal_fg = -1;
   normal_bg = -1;
+  normal_sp = -1;
   cterm_normal_fg_color = 0;
   cterm_normal_fg_bold = 0;
   cterm_normal_bg_color = 0;
@@ -6500,6 +6628,7 @@ static int hl_has_settings(int idx, int check_link)
          || HL_TABLE()[idx].sg_cterm_bg != 0
          || HL_TABLE()[idx].sg_rgb_fg_name != NULL
          || HL_TABLE()[idx].sg_rgb_bg_name != NULL
+         || HL_TABLE()[idx].sg_rgb_sp_name != NULL
          || (check_link && (HL_TABLE()[idx].sg_set & SG_LINK));
 }
 
@@ -6516,14 +6645,18 @@ static void highlight_clear(int idx)
   HL_TABLE()[idx].sg_gui = 0;
   HL_TABLE()[idx].sg_rgb_fg = -1;
   HL_TABLE()[idx].sg_rgb_bg = -1;
+  HL_TABLE()[idx].sg_rgb_sp = -1;
   xfree(HL_TABLE()[idx].sg_rgb_fg_name);
   HL_TABLE()[idx].sg_rgb_fg_name = NULL;
   xfree(HL_TABLE()[idx].sg_rgb_bg_name);
   HL_TABLE()[idx].sg_rgb_bg_name = NULL;
-  /* Clear the script ID only when there is no link, since that is not
-   * cleared. */
-  if (HL_TABLE()[idx].sg_link == 0)
+  xfree(HL_TABLE()[idx].sg_rgb_sp_name);
+  HL_TABLE()[idx].sg_rgb_sp_name = NULL;
+  // Clear the script ID only when there is no link, since that is not
+  // cleared.
+  if (HL_TABLE()[idx].sg_link == 0) {
     HL_TABLE()[idx].sg_scriptID = 0;
+  }
 }
 
 
@@ -6565,7 +6698,8 @@ int get_attr_entry(attrentry_T *aep)
         && aep->cterm_bg_color == taep->cterm_bg_color
         && aep->rgb_ae_attr == taep->rgb_ae_attr
         && aep->rgb_fg_color == taep->rgb_fg_color
-        && aep->rgb_bg_color == taep->rgb_bg_color) {
+        && aep->rgb_bg_color == taep->rgb_bg_color
+        && aep->rgb_sp_color == taep->rgb_sp_color) {
       return i + ATTR_OFF;
     }
   }
@@ -6603,6 +6737,7 @@ int get_attr_entry(attrentry_T *aep)
   taep->rgb_ae_attr = aep->rgb_ae_attr;
   taep->rgb_fg_color = aep->rgb_fg_color;
   taep->rgb_bg_color = aep->rgb_bg_color;
+  taep->rgb_sp_color = aep->rgb_sp_color;
 
   return table->ga_len - 1 + ATTR_OFF;
 }
@@ -6664,6 +6799,10 @@ int hl_combine_attr(int char_attr, int prim_attr)
     if (spell_aep->rgb_bg_color >= 0) {
       new_en.rgb_bg_color = spell_aep->rgb_bg_color;
     }
+
+    if (spell_aep->rgb_sp_color >= 0) {
+      new_en.rgb_sp_color = spell_aep->rgb_sp_color;
+    }
   }
   return get_attr_entry(&new_en);
 }
@@ -6701,7 +6840,7 @@ static void highlight_list_one(int id)
   didh = highlight_list_arg(id, didh, LIST_STRING,
       0, sgp->sg_rgb_bg_name, "guibg");
   didh = highlight_list_arg(id, didh, LIST_STRING,
-      0, NULL, "guisp");
+                            0, sgp->sg_rgb_sp_name, "guisp");
 
   if (sgp->sg_link && !got_int) {
     (void)syn_list_header(didh, 9999, id);
@@ -6813,10 +6952,26 @@ highlight_color (
   else if (!(TOLOWER_ASC(what[0]) == 'b' && TOLOWER_ASC(what[1]) == 'g'))
     return NULL;
   if (modec == 'g') {
-    if (fg)
+    if (what[2] == '#' && ui_rgb_attached()) {
+      if (fg) {
+          n = HL_TABLE()[id - 1].sg_rgb_fg;
+      } else if (sp) {
+          n = HL_TABLE()[id - 1].sg_rgb_sp;
+      } else {
+          n = HL_TABLE()[id - 1].sg_rgb_bg;
+      }
+      if (n < 0 || n > 0xffffff) {
+        return NULL;
+      }
+      snprintf((char *)name, sizeof(name), "#%06x", n);
+      return name;
+    }
+    if (fg) {
       return HL_TABLE()[id - 1].sg_rgb_fg_name;
-    if (sp)
-      return NULL;
+    }
+    if (sp) {
+      return HL_TABLE()[id - 1].sg_rgb_sp_name;
+    }
     return HL_TABLE()[id - 1].sg_rgb_bg_name;
   }
   if (font || sp)
@@ -6903,7 +7058,17 @@ set_hl_attr (
   // before setting attr_entry->{f,g}g_color to a other than -1
   at_en.rgb_fg_color = sgp->sg_rgb_fg_name ? sgp->sg_rgb_fg : -1;
   at_en.rgb_bg_color = sgp->sg_rgb_bg_name ? sgp->sg_rgb_bg : -1;
-  sgp->sg_attr = get_attr_entry(&at_en);
+  at_en.rgb_sp_color = sgp->sg_rgb_sp_name ? sgp->sg_rgb_sp : -1;
+
+  if (at_en.cterm_fg_color != 0 || at_en.cterm_bg_color != 0
+      || at_en.rgb_fg_color != -1 || at_en.rgb_bg_color != -1
+      || at_en.rgb_sp_color != -1 || at_en.cterm_ae_attr != 0
+      || at_en.rgb_ae_attr != 0) {
+    sgp->sg_attr = get_attr_entry(&at_en);
+  } else {
+    // If all the fields are cleared, clear the attr field back to default value
+    sgp->sg_attr = 0;
+  }
 }
 
 /*
@@ -7232,6 +7397,10 @@ int highlight_changed(void)
 
       if (hlt[id - 1].sg_rgb_bg != hlt[id_S - 1].sg_rgb_bg) {
         hlt[hlcnt + i].sg_rgb_bg = hlt[id - 1].sg_rgb_bg;
+      }
+
+      if (hlt[id - 1].sg_rgb_sp != hlt[id_S - 1].sg_rgb_sp) {
+        hlt[hlcnt + i].sg_rgb_sp = hlt[id - 1].sg_rgb_sp;
       }
 
       highlight_ga.ga_len = hlcnt + i + 1;
